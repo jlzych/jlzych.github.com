@@ -5,10 +5,61 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2013-08-02T07:00:00Z</updated>
+  <updated>2013-08-16T05:40:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>Performance comparison of serving fonts through Typekit vs Cloud.typography</title>
+    <link rel="alternate" href="/2013/08/15/performance-comparison-of-serving-fonts-through-typekit-vs-cloud-typography/"/>
+    <id>/2013/08/15/performance-comparison-of-serving-fonts-through-typekit-vs-cloud-typography/</id>
+    <published>2013-08-16T05:40:00Z</published>
+    <updated>2013-08-16T05:40:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;On &lt;a href="https://www.optimizely.com"&gt;optimizely.com&lt;/a&gt;, we just switched our typeface from Proxima Nova (via &lt;a href="http://typekit.com"&gt;Typekit&lt;/a&gt;), to Gotham (via Hoefler &amp;amp; Frere-Jones &lt;a href="http://typography.com"&gt;Cloud.typography&lt;/a&gt;). Gotham has long been what we used in Photoshop mocks, but we made the switch mostly because it just looks better. We&amp;rsquo;ve long known that Typekit can be a bottleneck to our page load, so I took this opportunity to compare the performance impact of each service.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Note: these are just some quick comparisons of the speeds based on my machine using optimizely.com. Your experience may vary.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2&gt;Typekit&lt;/h2&gt;
+
+&lt;p&gt;To use Typekit, you must insert JS in the head of your page, like so:&lt;/p&gt;
+&lt;pre class="highlight html"&gt;&lt;span class="nt"&gt;&amp;lt;script &lt;/span&gt;&lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;//use.typekit.net/abc1def.js&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;script &lt;/span&gt;&lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;&lt;span class="k"&gt;try&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nx"&gt;Typekit&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;load&lt;/span&gt;&lt;span class="p"&gt;();}&lt;/span&gt;&lt;span class="k"&gt;catch&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;e&lt;/span&gt;&lt;span class="p"&gt;){}&lt;/span&gt;&lt;span class="nt"&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;
+&lt;p&gt;It&amp;rsquo;s well known that script tags in the &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; of the document block page rendering. If the Typekit service is down, or slow, the page can take a significantly long time to render.&lt;/p&gt;
+
+&lt;p&gt;This script determines which fonts to serve to the user &lt;a href="http://blog.typekit.com/2012/08/16/performance-improvements-to-font-serving/"&gt;based on their OS and browser&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Based on a few pageloads on my Macbook Pro and looking through Chrome&amp;rsquo;s timeline, Typekit&amp;rsquo;s JS takes about 300ms to download and 900ms to download the actual fonts, for a total of about 1100ms. Additionally, the script sets a timeout fires until the fonts have loaded, consuming processing power (typically not an issue, but could potentially be significant on mobile). Finally, 410kb of fonts are downloaded (font size and download time both depends on the OS and browser).&lt;/p&gt;
+
+&lt;h2&gt;Cloud.typography&lt;/h2&gt;
+
+&lt;p&gt;To use Cloud.typography, you need to add a &lt;code&gt;&amp;lt;link&amp;gt;&lt;/code&gt; tag in the &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; of your page, like so:&lt;/p&gt;
+&lt;pre class="highlight html"&gt;&lt;span class="nt"&gt;&amp;lt;link&lt;/span&gt; &lt;span class="na"&gt;rel=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/css&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;//Cloud.typography.com/1234567/123456/css/fonts.css&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;
+&lt;p&gt;Unlike Typekit, Cloud.typography requires you to host the font files on your own servers (CDN, web server, etc.). Depending on your infrastructure, this could be a big advantage over Typekit. But Typekit also servers its fonts over a CDN, so this is unlikely to be much of a gamechanger, speed-wise.&lt;/p&gt;
+
+&lt;p&gt;When the page loads, one request is made to &lt;code&gt;fonts.css&lt;/code&gt;. Their server then does some work to determine which CSS file to redirect to (based on OS and browser), and then sends back a response of &lt;code&gt;302 Moved Temporarily&lt;/code&gt; with the &lt;code&gt;Location&lt;/code&gt; header set to the path of one of the CSS files you uploaded. Most fonts are encoded as data-uris in the stylesheets (unless you&amp;rsquo;re IE and need references to &lt;code&gt;.eot&lt;/code&gt; files). This means there are 2 requests (for most browsers), and all the work of determining which fonts to return to the user is done on their servers (instead of on the user&amp;rsquo;s machine via JS with Typekit).&lt;/p&gt;
+
+&lt;p&gt;Based on a few pageloads in Chrome on my computer, the fonts took about 800ms to load (~200ms for &lt;code&gt;fonts.css&lt;/code&gt;, and another 600ms for the CSS file with the actual fonts). The fonts are 251kb in Chrome, but are between 100 and 500kb depending on the OS and browser.&lt;/p&gt;
+
+&lt;p&gt;I also did some tests on &lt;a href="http://webpagetest.org"&gt;webpagetest.org&lt;/a&gt; from various locations, and found in total the fonts take between 300ms (France and Russia) and 1000ms (Brazil and San Jose) to download (this includes the 302 response from &lt;code&gt;fonts.css&lt;/code&gt; and downloading the CSS file from your servers). Unfortunately I don&amp;rsquo;t have this comparison data for Typekit.&lt;/p&gt;
+
+&lt;h2&gt;Takeaways&lt;/h2&gt;
+
+&lt;p&gt;On &lt;a href="https://www.optimizely.com"&gt;optimizely.com&lt;/a&gt;, Cloud.typography edges out Typekit for load times (about 800ms vs 1100ms on my computer, or about 27% faster). Part of this can be attributed to the obvious fact that the size of the fonts is smaller with Cloud.typography, which is largely because we&amp;rsquo;re serving fewer fonts to the user than we did with Typekit.&lt;/p&gt;
+
+&lt;p&gt;However, Typekit blocks rendering by having a &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt; tag in the head of the document, whereas Cloud.typography uses a &lt;code&gt;&amp;lt;link&amp;gt;&lt;/code&gt; tag that allows the page to continue &lt;a href="http://developer.yahoo.com/performance/rules.html#css_top"&gt;rendering progressively&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Additionally, Typekit taxes the user&amp;rsquo;s machine by executing Javascript to determine which fonts to load, whereas Cloud.typography does this on their servers. Although the JS is pretty minimal, it could impact older or more resource-constrained machines. Personally, I like that Cloud.typography moved this logic off of users&amp;#39; machines and onto their servers.&lt;/p&gt;
+
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;In the end, both services are solid and the speed difference is minimal. I like Cloud.typography&amp;rsquo;s approach of only having a link to a CSS file instead of executing javascript, and the ability to host files yourself is nice. But which service you choose should ultimately come down to whichever fonts you like more.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Everyone’s Reading This: Increase Conversions With Social Proof</title>
     <link rel="alternate" href="/2013/08/02/everyones-reading-this-increase-conversions-with-social-proof/"/>
