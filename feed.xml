@@ -5,10 +5,71 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2013-08-16T05:40:00Z</updated>
+  <updated>2013-08-27T04:24:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>A More Semantic Approach to Spriting Images</title>
+    <link rel="alternate" href="/2013/08/26/a-more-semantic-approach-to-spriting-images/"/>
+    <id>/2013/08/26/a-more-semantic-approach-to-spriting-images/</id>
+    <published>2013-08-27T04:24:00Z</published>
+    <updated>2013-08-27T04:24:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;Spriting images is a well-known, well-documented way to speed up page load times. The standard technique is to set a sprite sheet image as the &lt;code&gt;background-image&lt;/code&gt; of an element, and position it so the proper sprite shows through. This works great for icons and other images that aren&amp;rsquo;t part of the actual content, but not so great for images that belong in the page content.&lt;/p&gt;
+
+&lt;h2&gt;The problem&lt;/h2&gt;
+
+&lt;p&gt;Images that are part of the content should be in &lt;code&gt;img&lt;/code&gt; tags. This is correct semantically, good for accessibility, and good for interoperability. With the typical approach to spriting images, you would need empty container elements that have a &lt;code&gt;background-image&lt;/code&gt; property. Those empty elements have no semantic meaning, and are worthless to screenreaders and other crawlers that may access your page. This is the situation I found myself in on &lt;a href="https://www.optimizely.com"&gt;Optimizely&amp;rsquo;s homepage&lt;/a&gt; when I sprited the customer logos and benefits graphics.&lt;/p&gt;
+
+&lt;h2&gt;The solution&lt;/h2&gt;
+
+&lt;p&gt;Solving this problem is actually fairly simple. First, you&amp;rsquo;ll need markup similar to the following:&lt;/p&gt;
+&lt;pre class="highlight html"&gt;&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;sprite-container sprite-track&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;img&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;sprites.png&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;alt=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Graphic of tracking elements on a web page&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;
+&lt;p&gt;&lt;a href="http://codepen.io/jlzych/pen/ExLzG"&gt;View the Codepen&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;.sprite-container&lt;/code&gt; element acts as a window that only lets one sprite show through. It has the same width and height as the sprite, and has &lt;code&gt;overflow: hidden&lt;/code&gt; to prevent the other sprites from showing through.&lt;/p&gt;
+
+&lt;p&gt;Then the image needs to be positioned so the sprite we want shown is at the top left corner of the window, which is accomplished by setting &lt;code&gt;position: absolute&lt;/code&gt; and the &lt;code&gt;top&lt;/code&gt; and &lt;code&gt;left&lt;/code&gt; properties correctly. SCSS:&lt;/p&gt;
+&lt;pre class="highlight scss"&gt;&lt;span class="nc"&gt;.sprite-container&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="nl"&gt;display&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;inline-block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;  &lt;span class="c1"&gt;// or block
+&lt;/span&gt;  &lt;span class="nl"&gt;height&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="m"&gt;275px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;          &lt;span class="c1"&gt;// size of the image we want to show
+&lt;/span&gt;  &lt;span class="nl"&gt;width&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="m"&gt;400px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="nl"&gt;overflow&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;hidden&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;       &lt;span class="c1"&gt;// prevent the other sprites from showing
+&lt;/span&gt;  &lt;span class="nl"&gt;position&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;relative&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;     &lt;span class="c1"&gt;// so the image can be positioned absolutely
+&lt;/span&gt;
+  &lt;span class="nt"&gt;img&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="nl"&gt;position&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;absolute&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+
+  &lt;span class="k"&gt;&amp;amp;&lt;/span&gt;&lt;span class="nc"&gt;.sprite-track&lt;/span&gt; &lt;span class="nt"&gt;img&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="nl"&gt;left&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="nl"&gt;top&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="m"&gt;-210px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+
+  &lt;span class="c1"&gt;// other sprites
+&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;
+&lt;p&gt;Codepen:&lt;/p&gt;
+
+&lt;p data-height="268" data-theme-id="0" data-slug-hash="ExLzG" data-user="jlzych" data-default-tab="result" class='codepen'&gt;See the Pen &lt;a href='http://codepen.io/jlzych/pen/ExLzG'&gt;ExLzG&lt;/a&gt; by Jeff (&lt;a href='http://codepen.io/jlzych'&gt;@jlzych&lt;/a&gt;) on &lt;a href='http://codepen.io'&gt;CodePen&lt;/a&gt;&lt;/p&gt;
+
+&lt;script async src="http://codepen.io/assets/embed/ei.js"&gt;&lt;/script&gt;
+
+&lt;p&gt;Generating this CSS can be a pain, but I will discuss how to accomplish this with Compass in my next blog post.&lt;/p&gt;
+
+&lt;h2&gt;Closing Thoughts&lt;/h2&gt;
+
+&lt;p&gt;This method lets us use sprites in &lt;code&gt;img&lt;/code&gt; tags, which is more semantic than empty &lt;code&gt;div&lt;/code&gt;s or &lt;code&gt;span&lt;/code&gt;s (depending on the use case). However, it has a couple of drawbacks. First, it requires a container element around your image. This could add unneccessary bloat to your markup (in my case the image already had a parent element). Second, and greatest of all, the image &lt;code&gt;src&lt;/code&gt; attribute now references an entire sprite sheet, when technically it should only reference the actual image that it&amp;rsquo;s showing. Screenreaders won&amp;rsquo;t care at all, but some services may use this image for other purposes. For example, Facebook grabs a representative image of your page when a link is shared, and it could grab a sprite sheet instead of the actual image. That&amp;rsquo;s no good.&lt;/p&gt;
+
+&lt;p&gt;Ultimately it&amp;rsquo;s a tradeoff between having a container element and actual &lt;code&gt;img&lt;/code&gt; tag in your markup versus an empty element whose background image is a sprite. Overall, I think the pros (semantic HTML; better accessibility) outweigh the cons (container element; &lt;code&gt;src&lt;/code&gt; attribute is a sprite sheet). If you want to use sprites with actual &lt;code&gt;img&lt;/code&gt; tags, this is a solid technique. If anyone has any thoughts on how to overcome the drawbacks, hit me up &lt;a href="http://twitter.com/jlzych"&gt;@jlzych&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Performance comparison of serving fonts through Typekit vs Cloud.typography</title>
     <link rel="alternate" href="/2013/08/15/performance-comparison-of-serving-fonts-through-typekit-vs-cloud-typography/"/>
