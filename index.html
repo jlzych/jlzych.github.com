@@ -34,11 +34,62 @@
       </header>
       <div class='content'>
         <article>
+          <time datetime='2013-09-01'>
+            <i>Posted on</i>
+            Sep  1, 2013
+          </time>
+          <h1><a href="/2013/09/01/automating-semantic-sprites-with-compass/">Automating Semantic Sprites with Compass</a></h1>
+          <p>In my <a href="http://jlzych.com/2013/08/26/a-more-semantic-approach-to-spriting-images/">previous post</a>, I explained how to use image sprites semantically. But as with all image spriting, setting each sprite&rsquo;s size and position is a pain. <a href="http://compass-style.org">Compass</a> can automate this, but it&rsquo;s designed with the assumption that all your sprites will be background images of elements. Even so, Compass provides a number of under-documented functions that can help automate my technique.</p>
+          
+          <h2>Refresher</h2>
+          
+          <p>First, a quick summary of my <a href="http://jlzych.com/2013/08/26/a-more-semantic-approach-to-spriting-images/">previous post</a>. The <a href="http://css-tricks.com/css-sprites/">standard way to sprite images</a> is to set the sprite sheet as the <code>background-image</code> of an element, and set its <code>background-position</code> to the coordinates of the image you want to display. But if your image is part of the content, then semantically it should be in the markup as an <code>img</code> tag. To accomplish this, set the <code>img</code> tag&rsquo;s <code>src</code> to the sprite sheet, and use a container element as a &ldquo;window&rdquo; to let one sprite show through at a time. For the specifics of how to do this, <a href="http://jlzych.com/2013/08/26/a-more-semantic-approach-to-spriting-images/">read my post</a>.</p>
+          
+          <h2>Automate this with Compass</h2>
+          
+          <p>As I mentioned, the most difficult part of spriting is setting the image size and position for each sprite. Luckily, Compass can help us, but their <a href="http://compass-style.org/help/tutorials/spriting/">spriting documentation</a> is geared towards the standard technique, and thus doesn&rsquo;t provide much help to accomplish my method. But fear not! Compass can still help us.</p>
+          
+          <h3>Create the sprite sheet</h3>
+          
+          <p>The first step to doing any spriting in Compass is to <code>@import</code> a folder of images. Compass will generate a sprite sheet image, and create a number of variables that we can use to get the size and position of each sprite.</p>
+          <pre class="highlight scss"><span class="k">@import</span> <span class="s2">&quot;sprites/*.png&quot;</span><span class="p">;</span></pre>
+          <h3>Sprite Dimensions</h3>
+          
+          <p>Next, we need to get the dimensions of each sprite, and set the container element to that size. Compass provides a <code>sprite-dimensions</code> function, which takes 2 parameters: the sprite map Compass generated, and the name of the sprite (i.e. the filename, sans extension). Then it outputs the <code>width</code> and <code>height</code> of the sprite. If you have no idea what you&rsquo;re supposed to pass as the sprite map parameter, you&rsquo;re not alone. After <a href="https://github.com/chriseppstein/compass/blob/stable/lib/compass/sprite_importer/content.erb#L16">some digging</a>, I discovered Compass assigns the sprite map to a variable named <code>$&lt;folder&gt;-sprites</code>. In this example, that makes the variable the awkwardly named <code>$sprites-sprites</code>.</p>
+          <pre class="highlight scss"><span class="k">@include</span> <span class="nd">sprite-dimensions</span><span class="p">(</span><span class="nv">$sprites-sprites</span><span class="o">,</span> <span class="s2">&quot;my-sprite&quot;</span><span class="p">);</span></pre>
+          <h3>Sprite Position</h3>
+          
+          <p>The next step is to set the <code>top</code> and <code>left</code> properties of the image tag. Once again, Compass provides us a helper function: the aptly named <code>sprite-position</code>. Like <code>sprite-dimensions</code>, it also takes the sprite map and sprite name as parameters. But unlike <code>sprite-dimensions</code>, it provides us the <code>left</code> and <code>top</code> properties concatenated in a string, e.g. &ldquo;20px 120px&rdquo;. This seems weird and inconsistent at first, until you realize it&rsquo;s designed to be used as the value of the <code>background-position</code> property. To help us access each value individually, SASS has a function named <code>nth</code>, which returns the value at the position you pass it (starting from 1). And don&rsquo;t worry about converting that string to an array &mdash; SASS will automatically convert strings to arrays, splitting the string on spaces. So that gives us:</p>
+          <pre class="highlight scss"><span class="nc">.my-sprite</span> <span class="nt">img</span> <span class="p">{</span>&#x000A;  <span class="nv">$position</span><span class="p">:</span> <span class="nf">sprite-position</span><span class="p">(</span><span class="nv">$sprites-sprites</span><span class="o">,</span> <span class="s2">&quot;my-sprite&quot;</span><span class="p">);</span>&#x000A;  <span class="nl">left</span><span class="p">:</span> <span class="nf">nth</span><span class="p">(</span><span class="nv">$position</span><span class="o">,</span> <span class="m">1</span><span class="p">);</span>&#x000A;  <span class="nl">top</span><span class="p">:</span> <span class="nf">nth</span><span class="p">(</span><span class="nv">$position</span><span class="o">,</span> <span class="m">2</span><span class="p">);</span>&#x000A;<span class="p">}</span></pre>
+          <h3>Putting it All Together</h3>
+          
+          <p>So now we have all the pieces in place to position each individual sprite, and all we need is the name of each image. For example:</p>
+          <pre class="highlight scss"><span class="k">@import</span> <span class="s2">&quot;sprites/*.png&quot;</span><span class="p">;</span>&#x000A;&#x000A;<span class="nc">.sprite-container</span> <span class="p">{</span>&#x000A;  <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span> <span class="c1">// or inline-block&#x000A;</span>  <span class="nl">overflow</span><span class="p">:</span> <span class="nb">hidden</span><span class="p">;</span>&#x000A;  <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>&#x000A;&#x000A;  <span class="k">&amp;</span><span class="nc">.my-sprite</span> <span class="p">{</span>&#x000A;    <span class="k">@include</span> <span class="nd">sprite-dimensions</span><span class="p">(</span><span class="nv">$sprites-sprites</span><span class="o">,</span> <span class="s2">&quot;my-sprite&quot;</span><span class="p">);</span>&#x000A;&#x000A;    <span class="nt">img</span> <span class="p">{</span>&#x000A;      <span class="nv">$position</span><span class="p">:</span> <span class="nf">sprite-position</span><span class="p">(</span><span class="nv">$sprites-sprites</span><span class="o">,</span> <span class="s2">&quot;my-sprite&quot;</span><span class="p">);</span>&#x000A;      <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>&#x000A;      <span class="nl">left</span><span class="p">:</span> <span class="nf">nth</span><span class="p">(</span><span class="nv">$position</span><span class="o">,</span> <span class="m">1</span><span class="p">);</span>&#x000A;      <span class="nl">top</span><span class="p">:</span> <span class="nf">nth</span><span class="p">(</span><span class="nv">$position</span><span class="o">,</span> <span class="m">2</span><span class="p">);</span>&#x000A;    <span class="p">}</span>&#x000A;  <span class="p">}</span>&#x000A;&#x000A;  <span class="c1">// ...etc. for each sprite&#x000A;</span><span class="p">}</span></pre>
+          <p>The obvious flaw here is that you need to write code for each sprite in the sprite sheet. Luckily for us, Compass has one more trick up its sleeve to help automate this: the <a href="https://github.com/chriseppstein/compass/blob/stable/lib/compass/sass_extensions/functions/sprites.rb#L14"><code>sprite_names</code></a> function. Pass it a sprite map, and it outputs a list of sprite names. Then we can use <code>@each</code> to loop through the list, and generate the size and position of each. Bringing it all together, our code looks like this:</p>
+          <pre class="highlight scss"><span class="k">@import</span> <span class="s2">&quot;sprites/*.png&quot;</span><span class="p">;</span>&#x000A;<span class="nv">$sprite-names</span><span class="p">:</span> <span class="nf">sprite_names</span><span class="p">(</span><span class="nv">$sprites-sprites</span><span class="p">);</span>&#x000A;&#x000A;<span class="nc">.sprite-container</span> <span class="p">{</span>&#x000A;  <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span> <span class="c1">// or inline-block&#x000A;</span>  <span class="nl">overflow</span><span class="p">:</span> <span class="nb">hidden</span><span class="p">;</span>&#x000A;  <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>&#x000A;&#x000A;  <span class="k">@each</span> <span class="err">$</span><span class="nt">sprite</span> <span class="nt">in</span> <span class="err">$</span><span class="nt">sprite-names</span> <span class="p">{</span>&#x000A;    <span class="k">&amp;</span><span class="nc">.sprite-</span><span class="si">#{</span><span class="nv">$sprite</span><span class="si">}</span> <span class="p">{</span>&#x000A;      <span class="k">@include</span> <span class="nd">sprite-dimensions</span><span class="p">(</span><span class="nv">$sprites-sprites</span><span class="o">,</span> <span class="nv">$sprite</span><span class="p">);</span>&#x000A;&#x000A;      <span class="nt">img</span> <span class="p">{</span>&#x000A;        <span class="nv">$position</span><span class="p">:</span> <span class="nf">sprite-position</span><span class="p">(</span><span class="nv">$sprites-sprites</span><span class="o">,</span> <span class="nv">$sprite</span><span class="p">);</span>&#x000A;        <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>&#x000A;        <span class="nl">left</span><span class="p">:</span> <span class="nf">nth</span><span class="p">(</span><span class="nv">$position</span><span class="o">,</span> <span class="m">1</span><span class="p">);</span>&#x000A;        <span class="nl">top</span><span class="p">:</span> <span class="nf">nth</span><span class="p">(</span><span class="nv">$position</span><span class="o">,</span> <span class="m">2</span><span class="p">);</span>&#x000A;      <span class="p">}</span>&#x000A;    <span class="p">}</span>&#x000A;  <span class="p">}</span> <span class="c1">// @each&#x000A;</span><span class="p">}</span> <span class="c1">// .sprite-container&#x000A;</span></pre>
+          <h2>Conclusion</h2>
+          
+          <p>Whew, that was a whirlwind of Compass code. But once you get it all set up, it works quite well. You can add and remove sprites as you please, without needing to update a single line of SCSS. Happy spriting!</p>
+          <p class='follow-me'>
+            Thoughts? Reply
+            <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
+          </p>
+          <footer class='tags'>
+            Tags:
+            <span class='tag'>html</span>
+            <span class='tag'>css</span>
+            <span class='tag'>spriting</span>
+            <span class='tag'>compass</span>
+          </footer>
+        </article>
+        <article>
           <time datetime='2013-08-26'>
             <i>Posted on</i>
             Aug 26, 2013
           </time>
           <h1><a href="/2013/08/26/a-more-semantic-approach-to-spriting-images/">A More Semantic Approach to Spriting Images</a></h1>
+          <p><em>Update (9/1/2013): Read my <a href="/2013/09/01/automating-semantic-sprites-with-compass/">follow up</a> on how to automate this with Compass.</em></p>
+          
           <p>Spriting images is a well-known, well-documented way to speed up page load times. The standard technique is to set a sprite sheet image as the <code>background-image</code> of an element, and position it so the proper sprite shows through. This works great for icons and other images that aren&rsquo;t part of the actual content, but not so great for images that belong in the page content.</p>
           
           <h2>The problem</h2>
@@ -61,21 +112,24 @@
           
           <script async src="http://codepen.io/assets/embed/ei.js"></script>
           
-          <p>Generating this CSS can be a pain, but I will discuss how to accomplish this with Compass in my next blog post.</p>
+          <p>Generating this CSS can be a pain, but I will discuss how to accomplish this with Compass in my <a href="/2013/09/01/automating-semantic-sprites-with-compass/">next blog post</a>.</p>
           
           <h2>Closing Thoughts</h2>
           
           <p>This method lets us use sprites in <code>img</code> tags, which is more semantic than empty <code>div</code>s or <code>span</code>s (depending on the use case). However, it has a couple of drawbacks. First, it requires a container element around your image. This could add unneccessary bloat to your markup (in my case the image already had a parent element). Second, and greatest of all, the image <code>src</code> attribute now references an entire sprite sheet, when technically it should only reference the actual image that it&rsquo;s showing. Screenreaders won&rsquo;t care at all, but some services may use this image for other purposes. For example, Facebook grabs a representative image of your page when a link is shared, and it could grab a sprite sheet instead of the actual image. That&rsquo;s no good.</p>
           
           <p>Ultimately it&rsquo;s a tradeoff between having a container element and actual <code>img</code> tag in your markup versus an empty element whose background image is a sprite. Overall, I think the pros (semantic HTML; better accessibility) outweigh the cons (container element; <code>src</code> attribute is a sprite sheet). If you want to use sprites with actual <code>img</code> tags, this is a solid technique. If anyone has any thoughts on how to overcome the drawbacks, hit me up <a href="http://twitter.com/jlzych">@jlzych</a>.</p>
+          
+          <p><em>Update (9/1/2013): Read my <a href="/2013/09/01/automating-semantic-sprites-with-compass/">follow up</a> on how to automate this with Compass.</em></p>
           <p class='follow-me'>
             Thoughts? Reply
-            <a href="http://twitter.com/jlzych">@jlzych</a>
+            <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
           </p>
           <footer class='tags'>
             Tags:
             <span class='tag'>html</span>
             <span class='tag'>css</span>
+            <span class='tag'>spriting</span>
           </footer>
         </article>
         <article>
@@ -123,7 +177,7 @@
           <p>In the end, both services are solid and the speed difference is minimal. I like Cloud.typography&rsquo;s approach of only having a link to a CSS file instead of executing javascript, and the ability to host files yourself is nice. But which service you choose should ultimately come down to whichever fonts you like more.</p>
           <p class='follow-me'>
             Thoughts? Reply
-            <a href="http://twitter.com/jlzych">@jlzych</a>
+            <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
           </p>
           <footer class='tags'>
             Tags:
@@ -170,7 +224,7 @@
           <p><a href="http://online.wsj.com/article/SB10001424052748704575304575296243891721972.html">&ldquo;The Secret to Turning Consumers Green&rdquo;</a> &mdash; The Wall Street Journal</p>
           <p class='follow-me'>
             Thoughts? Reply
-            <a href="http://twitter.com/jlzych">@jlzych</a>
+            <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
           </p>
           <footer class='tags'>
             Tags:
