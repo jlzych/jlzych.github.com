@@ -5,10 +5,46 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2013-09-02T04:15:00Z</updated>
+  <updated>2013-09-10T01:32:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>The Importance of Good Defaults</title>
+    <link rel="alternate" href="/2013/09/09/the-importance-of-good-defaults/"/>
+    <id>/2013/09/09/the-importance-of-good-defaults/</id>
+    <published>2013-09-10T01:32:00Z</published>
+    <updated>2013-09-10T01:32:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;One of the simplest and most robust findings from &lt;a href="http://en.wikipedia.org/wiki/Behavioral_economics"&gt;behavioral economics&lt;/a&gt; is that when people are faced with a choice they tend to stick with the default option. This sounds like something that shouldn’t have any effect on people. Common sense leads us to believe we&amp;rsquo;ll always choose whichever option benefits us the most, regardless of the default. Although this intuitively makes sense, numerous studies show that&amp;rsquo;s not the case. For example, most countries have an option for people to donate their organs upon their death. In America, the default choice is to not donate organs, meaning they must specifically check a box on a form (an &amp;ldquo;opt-in&amp;rdquo; system). As a result, the consent rate is only about 28%. In contrast, Belgium’s default option is to donate organs (an &amp;ldquo;opt-out&amp;rdquo; system), in which about 98% of the population consent to donation (&lt;a href="http://www.dangoldstein.com/papers/DefaultsScience.pdf"&gt;read the fully study here [pdf]&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;There are many explanations for this behavior. One reason is that making a choice takes effort (even if it’s only checking a box), whereas sticking with the default is effortless. Another reason is when decisions have unclear costs and benefits that are difficult to evaluate (such as organ donation), defaults can imply the &amp;ldquo;recommended&amp;rdquo; option, thus saving people the time of thinking through the choice themselves. It also sends the signal that this is the option most people choose and is a safe bet (which reinforces the idea of &lt;a href="http://jlzych.com/2013/08/02/everyones-reading-this-increase-conversions-with-social-proof/"&gt;social proof&lt;/a&gt;).&lt;/p&gt;
+
+&lt;h2&gt;Applications to Web Design&lt;/h2&gt;
+
+&lt;p&gt;Applying this insight to web pages is fairly straightforward: when presenting people with a choice, provide a default option. The simplest method is to pre-populate form fields with the most common choice. For example, the checkout form of an ecommerce store whose customers are mainly American should have &amp;ldquo;United States&amp;rdquo; already chosen as the default country. Obviously, there may be customers from other countries, but they would have to select an option were it left blank anyway. This decreases friction when completing a form, decreases errors, and &lt;a href="http://www.nngroup.com/articles/the-power-of-defaults/"&gt;increases usability&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The previous scenario is useful, but unlikely to increase conversions significantly. Defaults really shine when people are faced with a less clear-cut choice. For example, if you have multiple service plans, highlighting one will guide people to that option. Deciding which option to make the default is something you should A/B test, but a good approach is to use existing customer data to preselect the most popular option. For example, if you have multiple pricing tiers, you could highlight the most common one.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="No default plan highlighted" src="http://jlzych.com/images/2013-09-09-the-importance-of-good-defaults/no-default.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;No recommended plan&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="The most popular plan is highlighted" src="http://jlzych.com/images/2013-09-09-the-importance-of-good-defaults/default.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The most popular &amp;ldquo;Plus&amp;rdquo; plan is highlighted&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Another strategy is to select the option you want your potential customers to select (such as the one that earns you the most profit). This will subtly nudge potential customers towards this option. For example, &lt;a href="https://www.optimizely.com"&gt;Optimizely&lt;/a&gt; ran an experiment recommending their Gold plan and saw a 20% increase in signups to that option.&lt;/p&gt;
+
+&lt;p&gt;Recommending pricing plans is just one way that default options can be applied to web design. Consider experimenting with your forms, account settings, preferences, or anywhere else people face a choice. By providing a default option to fall back on, you&amp;rsquo;re doing a favor for your customers and yourself.&lt;/p&gt;
+
+&lt;h2&gt;Further Reading&lt;/h2&gt;
+
+&lt;p&gt;Read Eric Johnson and Daniel Goldstein&amp;rsquo;s full study on defaults, titled &lt;a href="http://www.dangoldstein.com/papers/DefaultsScience.pdf"&gt;&amp;ldquo;Do defaults save lives?&amp;rdquo;&lt;/a&gt; (2003).&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Automating Semantic Sprites with Compass</title>
     <link rel="alternate" href="/2013/09/01/automating-semantic-sprites-with-compass/"/>
