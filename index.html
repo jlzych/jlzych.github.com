@@ -34,6 +34,43 @@
       </header>
       <div class='content'>
         <article>
+          <time datetime='2013-09-30'>
+            <i>Posted on</i>
+            Sep 30, 2013
+          </time>
+          <h1><a href="/2013/09/30/framing-your-message-for-maximum-impact/">Framing your message for maximum impact</a></h1>
+          <p>A common piece of advice in the website optimization space is to test headlines and copy to find the optimal messaging. But there are endless possibilities and it’s not feasible to test them all, so how do you focus your tests on only the content that’s most likely to have an impact? Having a good hypothesis of why a change will be effective is key, and one such theory is <strong>framing</strong>.</p>
+          
+          <p>Framing is the simple idea that <strong>different ways of presenting the same information will evoke different emotional responses</strong>, and thus influence a person’s decision. A simple example is the statement, &ldquo;the odds of survival one month after surgery are 90%&rdquo; is more reassuring than the equivalent statement of, &ldquo;mortality within one month of surgery is 10%.&rdquo; Although these statements present the same information, they bring drastically different associations to mind. With the former it’s easy to envision an outcome of survival (and thus be willing to go through with the surgery), whereas the latter evokes death (and will be less likely to take the perceived risk).</p>
+          
+          <p>The subtleties of framing a message are well known to marketers. For example, <a href="http://www.citycliq.com/">CityCliq</a> saw an <a href="http://www.abtests.com/test/284001/landing-for-citycliq">89% conversion increase</a> by changing their headline from, &ldquo;Businesses grow faster online!&rdquo; to, &ldquo;Create a webpage for your business.&rdquo; (They have since further optimized their homepage to have a different headline). The original headline is abstract and framed passively, whereas the winning variation is framed in an action-oriented way.</p>
+          
+          <p>This idea can be used more widely than for just selling products &mdash; any organization that’s trying to spur people to action can make use of it as well. Convincing people to volunteer for a cause, sign a petition, donate money, etc., can all be greatly influenced by the way the message is framed. For example, <a href="http://www.ncbi.nlm.nih.gov/pubmed/7789354">Banks, et al.</a>, studied how this phenomenon affects behavior by showing two groups of women videos on breast cancer and mammography in order to convince them to get screened. The first group&rsquo;s video was gain-framed, espousing the benefits of having a mammogram, whereas the second group&rsquo;s video was loss-framed and emphasized the risks of not having one. Only 51.5% of those who saw the gain-framed video got a mammography, compared to 61.2% of the latter group (an 18% increase). The information presented was equivalent, but receiving it in a loss-framed context forced people to imagine the scenario of having breast cancer, which spurred them to action.</p>
+          
+          <p>So how do you know which way to frame your message? There are no one-size-fits-all rules &mdash; it’s still important to test variations. But now instead of arbitrarily changing words (which could go on ad infinitum) you have a narrower and more focused approach to crafting messages. What you want to avoid is testing essentially equivalent phrases that are unlikely to have any significant impact on your goals. For example, the phrases, &ldquo;the odds of survival one month after surgery are 90%&rdquo; and, &ldquo;there is a 90% chance you will be alive a month after surgery&rdquo; contain the same information and are framed equivalently, and thus aren’t likely to change your visitors’ behavior. Instead, <strong>you should think about strikingly different ways you can frame your value proposition</strong> and test each of them. Try asking yourself:</p>
+          
+          <ul>
+          <li>Is this positive or negative (e.g. the odds of survival example)?</li>
+          <li>Is this loss-framed or gain-framed (e.g. the mammography study)?</li>
+          <li>Is this action-oriented or passive (e.g. the CityCliq create a web page example)?</li>
+          <li>More generally, what associations are brought to mind? For example, deli meats that advertise &ldquo;95% fat free&rdquo; sounds healthy, whereas &ldquo;Only 5% fat&rdquo; sounds unhealthy. This is tricky to ascertain a priori, but you can read messages to people around you (co-workers, friends, family) and ask what first comes to mind when they hear it.</li>
+          </ul>
+          
+          <p>Your message may not have a clear answer for all of these, but for the pertinent questions you should <strong>test messages with the opposite framing</strong>. More likely than not, one of them will resonate better with your audience.</p>
+          
+          <p><em>For more on this topic, read chapter 7 of Daniel Kahneman’s book, &ldquo;<a href="http://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374275637/">Thinking, Fast and Slow.</a>&rdquo;</em></p>
+          <p class='follow-me'>
+            Thoughts? Reply
+            <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
+          </p>
+          <footer class='tags'>
+            Tags:
+            <span class='tag'>testing theory</span>
+            <span class='tag'>A/B testing</span>
+            <span class='tag'>framing</span>
+          </footer>
+        </article>
+        <article>
           <time datetime='2013-09-22'>
             <i>Posted on</i>
             Sep 22, 2013
@@ -229,58 +266,6 @@
             <span class='tag'>html</span>
             <span class='tag'>css</span>
             <span class='tag'>spriting</span>
-          </footer>
-        </article>
-        <article>
-          <time datetime='2013-08-15'>
-            <i>Posted on</i>
-            Aug 15, 2013
-          </time>
-          <h1><a href="/2013/08/15/performance-comparison-of-serving-fonts-through-typekit-vs-cloud-typography/">Performance comparison of serving fonts through Typekit vs Cloud.typography</a></h1>
-          <p>On <a href="https://www.optimizely.com">optimizely.com</a>, we just switched our typeface from Proxima Nova (via <a href="http://typekit.com">Typekit</a>), to Gotham (via Hoefler &amp; Frere-Jones <a href="http://typography.com">Cloud.typography</a>). Gotham has long been what we used in Photoshop mocks, but we made the switch mostly because it just looks better. We&rsquo;ve long known that Typekit can be a bottleneck to our page load, so I took this opportunity to compare the performance impact of each service.</p>
-          
-          <p><em>Note: these are just some quick comparisons of the speeds based on my machine using optimizely.com. Your experience may vary.</em></p>
-          
-          <h2>Typekit</h2>
-          
-          <p>To use Typekit, you must insert JS in the head of your page, like so:</p>
-          <pre class="highlight html"><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;//use.typekit.net/abc1def.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>&#x000A;<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span><span class="k">try</span><span class="p">{</span><span class="nx">Typekit</span><span class="p">.</span><span class="nx">load</span><span class="p">();}</span><span class="k">catch</span><span class="p">(</span><span class="nx">e</span><span class="p">){}</span><span class="nt">&lt;/script&gt;</span></pre>
-          <p>It&rsquo;s well known that script tags in the <code>&lt;head&gt;</code> of the document block page rendering. If the Typekit service is down, or slow, the page can take a significantly long time to render.</p>
-          
-          <p>This script determines which fonts to serve to the user <a href="http://blog.typekit.com/2012/08/16/performance-improvements-to-font-serving/">based on their OS and browser</a>.</p>
-          
-          <p>Based on a few pageloads on my Macbook Pro and looking through Chrome&rsquo;s timeline, Typekit&rsquo;s JS takes about 300ms to download and 900ms to download the actual fonts, for a total of about 1100ms. Additionally, the script sets a timeout fires until the fonts have loaded, consuming processing power (typically not an issue, but could potentially be significant on mobile). Finally, 410kb of fonts are downloaded (font size and download time both depends on the OS and browser).</p>
-          
-          <h2>Cloud.typography</h2>
-          
-          <p>To use Cloud.typography, you need to add a <code>&lt;link&gt;</code> tag in the <code>&lt;head&gt;</code> of your page, like so:</p>
-          <pre class="highlight html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span> <span class="na">href=</span><span class="s">&quot;//Cloud.typography.com/1234567/123456/css/fonts.css&quot;</span><span class="nt">&gt;</span></pre>
-          <p>Unlike Typekit, Cloud.typography requires you to host the font files on your own servers (CDN, web server, etc.). Depending on your infrastructure, this could be a big advantage over Typekit. But Typekit also servers its fonts over a CDN, so this is unlikely to be much of a gamechanger, speed-wise.</p>
-          
-          <p>When the page loads, one request is made to <code>fonts.css</code>. Their server then does some work to determine which CSS file to redirect to (based on OS and browser), and then sends back a response of <code>302 Moved Temporarily</code> with the <code>Location</code> header set to the path of one of the CSS files you uploaded. Most fonts are encoded as data-uris in the stylesheets (unless you&rsquo;re IE and need references to <code>.eot</code> files). This means there are 2 requests (for most browsers), and all the work of determining which fonts to return to the user is done on their servers (instead of on the user&rsquo;s machine via JS with Typekit).</p>
-          
-          <p>Based on a few pageloads in Chrome on my computer, the fonts took about 800ms to load (~200ms for <code>fonts.css</code>, and another 600ms for the CSS file with the actual fonts). The fonts are 251kb in Chrome, but are between 100 and 500kb depending on the OS and browser.</p>
-          
-          <p>I also did some tests on <a href="http://webpagetest.org">webpagetest.org</a> from various locations, and found in total the fonts take between 300ms (France and Russia) and 1000ms (Brazil and San Jose) to download (this includes the 302 response from <code>fonts.css</code> and downloading the CSS file from your servers). Unfortunately I don&rsquo;t have this comparison data for Typekit.</p>
-          
-          <h2>Takeaways</h2>
-          
-          <p>On <a href="https://www.optimizely.com">optimizely.com</a>, Cloud.typography edges out Typekit for load times (about 800ms vs 1100ms on my computer, or about 27% faster). Part of this can be attributed to the obvious fact that the size of the fonts is smaller with Cloud.typography, which is largely because we&rsquo;re serving fewer fonts to the user than we did with Typekit.</p>
-          
-          <p>However, Typekit blocks rendering by having a <code>&lt;script&gt;</code> tag in the head of the document, whereas Cloud.typography uses a <code>&lt;link&gt;</code> tag that allows the page to continue <a href="http://developer.yahoo.com/performance/rules.html#css_top">rendering progressively</a>.</p>
-          
-          <p>Additionally, Typekit taxes the user&rsquo;s machine by executing Javascript to determine which fonts to load, whereas Cloud.typography does this on their servers. Although the JS is pretty minimal, it could impact older or more resource-constrained machines. Personally, I like that Cloud.typography moved this logic off of users&#39; machines and onto their servers.</p>
-          
-          <h2>Conclusion</h2>
-          
-          <p>In the end, both services are solid and the speed difference is minimal. I like Cloud.typography&rsquo;s approach of only having a link to a CSS file instead of executing javascript, and the ability to host files yourself is nice. But which service you choose should ultimately come down to whichever fonts you like more.</p>
-          <p class='follow-me'>
-            Thoughts? Reply
-            <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
-          </p>
-          <footer class='tags'>
-            Tags:
-            <span class='tag'>performance</span>
           </footer>
         </article>
         <a class="view-all-link" href="/archives">View all posts &raquo;</a>
