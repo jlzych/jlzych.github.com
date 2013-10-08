@@ -5,10 +5,101 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2013-10-01T04:09:00Z</updated>
+  <updated>2013-10-08T16:47:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>Extend - SASS's Awkward Stepchild</title>
+    <link rel="alternate" href="/2013/10/08/extend-sass-s-awkward-stepchild/"/>
+    <id>/2013/10/08/extend-sass-s-awkward-stepchild/</id>
+    <published>2013-10-08T16:47:00Z</published>
+    <updated>2013-10-08T16:47:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;SASS has a lot of really powerful features to help you write &lt;a href="http://en.wikipedia.org/wiki/Don&amp;#x27;t_repeat_yourself"&gt;DRY&lt;/a&gt; code quickly. One such feature is &lt;code&gt;@extend&lt;/code&gt;, which I find is overlooked by many developers but can be very useful when used properly.&lt;/p&gt;
+
+&lt;h2&gt;@-what?&lt;/h2&gt;
+
+&lt;p&gt;First, a little background on &lt;code&gt;@extend&lt;/code&gt;. It allows a selector to &lt;em&gt;extend&lt;/em&gt; the styles of another selector, essentially providing a form of sub-classing. &lt;code&gt;@extend&lt;/code&gt; works by combining selectors into a single comma-separated selector. A simple example:&lt;/p&gt;
+&lt;pre class="highlight scss"&gt;&lt;span class="nc"&gt;.button&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="nl"&gt;color&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mh"&gt;#bada55&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="nl"&gt;font-size&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nc"&gt;.button-small&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="k"&gt;@extend&lt;/span&gt; &lt;span class="nc"&gt;.button&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="nl"&gt;font-size&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="mi"&gt;.8em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;
+&lt;p&gt;Which outputs:&lt;/p&gt;
+&lt;pre class="highlight css"&gt;&lt;span class="nc"&gt;.button&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;
+&lt;span class="nc"&gt;.button-small&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="nl"&gt;color&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#bada55&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="nl"&gt;font-size&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nc"&gt;.button-small&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="nl"&gt;font-size&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0.8em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;
+&lt;p&gt;The &lt;a href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#extend"&gt;SASS docs&lt;/a&gt; give a fuller explanation of how it works, and its limitations.&lt;/p&gt;
+
+&lt;h2&gt;Why it&amp;rsquo;s great&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;@extend&lt;/code&gt; can cut down duplicate styles and selectors. Modules derived from a base style can all &lt;code&gt;@extend&lt;/code&gt; the parent, and all the sub-classes will be added to the base selector. Alternative ways to achieve this in SASS include using mixins to output the base styles (which just adds bloat to the stylesheet, since the same set of rules is output multiple places in the final CSS); duplicate the properties in each selector (violates the principle of DRY and is a maintenance nightmare); or manually add each new selector to the base selector (also violates DRY and also is a maintenance nightmare, and the exact problem &lt;code&gt;@extend&lt;/code&gt; was designed to solve).&lt;/p&gt;
+
+&lt;h3&gt;Placeholder selectors&lt;/h3&gt;
+
+&lt;p&gt;Placeholder selectors make &lt;code&gt;@extend&lt;/code&gt; even sweeter. They are selectors that aren&amp;rsquo;t output unless extended by another selector (also known as &lt;a href="http://en.wikipedia.org/wiki/Abstract_type"&gt;abstract classes&lt;/a&gt; in OOP). It doesn&amp;rsquo;t sound like much, but I often run into situations where I have some classes (or elements) that share common styles, but I don&amp;rsquo;t need the base class in the HTML or CSS. For example:&lt;/p&gt;
+&lt;pre class="highlight scss"&gt;&lt;span class="nc"&gt;.container-blue&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;
+&lt;span class="nc"&gt;.container-red&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="nl"&gt;padding&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="m"&gt;3em&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="nl"&gt;width&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="m"&gt;100%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nc"&gt;.container-blue&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="nl"&gt;background-color&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="no"&gt;blue&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nc"&gt;.container-red&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="nl"&gt;background-color&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="no"&gt;red&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;
+&lt;p&gt;Each container selector has to be typed out twice &amp;ndash; once for their shared styles, and again for their specific styles. Not a big deal here, but quickly becomes unweildy the more sub-containers you add. Placeholder selectors can help us here:&lt;/p&gt;
+&lt;pre class="highlight scss"&gt;&lt;span class="nv"&gt;%container-common-styles&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="nl"&gt;padding&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="m"&gt;3em&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="nl"&gt;width&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="m"&gt;100%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nc"&gt;.container-blue&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="k"&gt;@extend&lt;/span&gt; &lt;span class="nv"&gt;%container-common-styles&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="nl"&gt;background-color&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="no"&gt;blue&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nc"&gt;.container-red&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="k"&gt;@extend&lt;/span&gt; &lt;span class="nv"&gt;%container-common-styles&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="nl"&gt;background-color&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="no"&gt;red&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;
+&lt;p&gt;Now the common styles are in one place, and each class is in one place. This pays off the more selectors you have extending the placeholder.&lt;/p&gt;
+
+&lt;p&gt;You can also feel guilt-free about using unsemantic, descriptive names, since the placeholder itself isn&amp;rsquo;t output in the final CSS. They are purely for yourself and other developers.&lt;/p&gt;
+
+&lt;h2&gt;Dangers of @extend&lt;/h2&gt;
+
+&lt;p&gt;As with any SASS you write, you need to keep an eye on the final CSS it outputs. If you &lt;code&gt;@extend&lt;/code&gt; a class that&amp;rsquo;s used in many places, the selector will be copied to every instance of that class (even if it&amp;rsquo;s nested in other selectors). This is often unnecessary, and can cause unintended side effects (I ran into a nasty styling bug because of this once).&lt;/p&gt;
+
+&lt;p&gt;For example, a &lt;code&gt;.button&lt;/code&gt; class is originally defined in one place, but modified to look slightly different in a dialog. When extending it, you only wanted the original styles, but the new selector is copied into the dialog button as well. This wasn&amp;rsquo;t what you intended, isn&amp;rsquo;t necessary, and bloated your final CSS. Before extending classes, check everywhere they&amp;rsquo;re defined and make sure you want your selector to be duplicated in all of those places. (Arguably, this is bad CSS to begin with [you shouldn&amp;rsquo;t change a button style based on the dialog context in the first place], but in real world CSS it happens).&lt;/p&gt;
+
+&lt;p&gt;Additionally, the depth and breadth of selectors you have nested under the base selector, combined with the number of selectors extending the base, can create some &lt;em&gt;very&lt;/em&gt; long selectors, not all of which are necessary. Once again, pay attention to the CSS that&amp;rsquo;s being compiled. And once again, this is arguably bad SASS (mind the &lt;a href="http://thesassway.com/beginner/the-inception-rule"&gt;Inception Rule&lt;/a&gt;), but these things happen in legacy codebases with multiple developers.&lt;/p&gt;
+
+&lt;h2&gt;Closing Thoughts&lt;/h2&gt;
+
+&lt;p&gt;Extending selectors can save you time and DRY out your code, when used properly. As with most SASS features, it can be abused and create some pretty hairy CSS, but as long as you keep an eye on the final CSS you&amp;rsquo;ll be fine.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Framing your message for maximum impact</title>
     <link rel="alternate" href="/2013/09/30/framing-your-message-for-maximum-impact/"/>
@@ -341,57 +432,6 @@
 &lt;p&gt;Ultimately it&amp;rsquo;s a tradeoff between having a container element and actual &lt;code&gt;img&lt;/code&gt; tag in your markup versus an empty element whose background image is a sprite. Overall, I think the pros (semantic HTML; better accessibility) outweigh the cons (container element; &lt;code&gt;src&lt;/code&gt; attribute is a sprite sheet). If you want to use sprites with actual &lt;code&gt;img&lt;/code&gt; tags, this is a solid technique. If anyone has any thoughts on how to overcome the drawbacks, hit me up &lt;a href="http://twitter.com/jlzych"&gt;@jlzych&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Update (9/1/2013): Read my &lt;a href="/2013/09/01/automating-semantic-sprites-with-compass/"&gt;follow up&lt;/a&gt; on how to automate this with Compass.&lt;/em&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Performance comparison of serving fonts through Typekit vs Cloud.typography</title>
-    <link rel="alternate" href="/2013/08/15/performance-comparison-of-serving-fonts-through-typekit-vs-cloud-typography/"/>
-    <id>/2013/08/15/performance-comparison-of-serving-fonts-through-typekit-vs-cloud-typography/</id>
-    <published>2013-08-16T05:40:00Z</published>
-    <updated>2013-08-16T05:40:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;On &lt;a href="https://www.optimizely.com"&gt;optimizely.com&lt;/a&gt;, we just switched our typeface from Proxima Nova (via &lt;a href="http://typekit.com"&gt;Typekit&lt;/a&gt;), to Gotham (via Hoefler &amp;amp; Frere-Jones &lt;a href="http://typography.com"&gt;Cloud.typography&lt;/a&gt;). Gotham has long been what we used in Photoshop mocks, but we made the switch mostly because it just looks better. We&amp;rsquo;ve long known that Typekit can be a bottleneck to our page load, so I took this opportunity to compare the performance impact of each service.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Note: these are just some quick comparisons of the speeds based on my machine using optimizely.com. Your experience may vary.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2&gt;Typekit&lt;/h2&gt;
-
-&lt;p&gt;To use Typekit, you must insert JS in the head of your page, like so:&lt;/p&gt;
-&lt;pre class="highlight html"&gt;&lt;span class="nt"&gt;&amp;lt;script &lt;/span&gt;&lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;//use.typekit.net/abc1def.js&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;span class="nt"&gt;&amp;lt;script &lt;/span&gt;&lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;&lt;span class="k"&gt;try&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nx"&gt;Typekit&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;load&lt;/span&gt;&lt;span class="p"&gt;();}&lt;/span&gt;&lt;span class="k"&gt;catch&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;e&lt;/span&gt;&lt;span class="p"&gt;){}&lt;/span&gt;&lt;span class="nt"&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;
-&lt;p&gt;It&amp;rsquo;s well known that script tags in the &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; of the document block page rendering. If the Typekit service is down, or slow, the page can take a significantly long time to render.&lt;/p&gt;
-
-&lt;p&gt;This script determines which fonts to serve to the user &lt;a href="http://blog.typekit.com/2012/08/16/performance-improvements-to-font-serving/"&gt;based on their OS and browser&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Based on a few pageloads on my Macbook Pro and looking through Chrome&amp;rsquo;s timeline, Typekit&amp;rsquo;s JS takes about 300ms to download and 900ms to download the actual fonts, for a total of about 1100ms. Additionally, the script sets a timeout fires until the fonts have loaded, consuming processing power (typically not an issue, but could potentially be significant on mobile). Finally, 410kb of fonts are downloaded (font size and download time both depends on the OS and browser).&lt;/p&gt;
-
-&lt;h2&gt;Cloud.typography&lt;/h2&gt;
-
-&lt;p&gt;To use Cloud.typography, you need to add a &lt;code&gt;&amp;lt;link&amp;gt;&lt;/code&gt; tag in the &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; of your page, like so:&lt;/p&gt;
-&lt;pre class="highlight html"&gt;&lt;span class="nt"&gt;&amp;lt;link&lt;/span&gt; &lt;span class="na"&gt;rel=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/css&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;//Cloud.typography.com/1234567/123456/css/fonts.css&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;
-&lt;p&gt;Unlike Typekit, Cloud.typography requires you to host the font files on your own servers (CDN, web server, etc.). Depending on your infrastructure, this could be a big advantage over Typekit. But Typekit also servers its fonts over a CDN, so this is unlikely to be much of a gamechanger, speed-wise.&lt;/p&gt;
-
-&lt;p&gt;When the page loads, one request is made to &lt;code&gt;fonts.css&lt;/code&gt;. Their server then does some work to determine which CSS file to redirect to (based on OS and browser), and then sends back a response of &lt;code&gt;302 Moved Temporarily&lt;/code&gt; with the &lt;code&gt;Location&lt;/code&gt; header set to the path of one of the CSS files you uploaded. Most fonts are encoded as data-uris in the stylesheets (unless you&amp;rsquo;re IE and need references to &lt;code&gt;.eot&lt;/code&gt; files). This means there are 2 requests (for most browsers), and all the work of determining which fonts to return to the user is done on their servers (instead of on the user&amp;rsquo;s machine via JS with Typekit).&lt;/p&gt;
-
-&lt;p&gt;Based on a few pageloads in Chrome on my computer, the fonts took about 800ms to load (~200ms for &lt;code&gt;fonts.css&lt;/code&gt;, and another 600ms for the CSS file with the actual fonts). The fonts are 251kb in Chrome, but are between 100 and 500kb depending on the OS and browser.&lt;/p&gt;
-
-&lt;p&gt;I also did some tests on &lt;a href="http://webpagetest.org"&gt;webpagetest.org&lt;/a&gt; from various locations, and found in total the fonts take between 300ms (France and Russia) and 1000ms (Brazil and San Jose) to download (this includes the 302 response from &lt;code&gt;fonts.css&lt;/code&gt; and downloading the CSS file from your servers). Unfortunately I don&amp;rsquo;t have this comparison data for Typekit.&lt;/p&gt;
-
-&lt;h2&gt;Takeaways&lt;/h2&gt;
-
-&lt;p&gt;On &lt;a href="https://www.optimizely.com"&gt;optimizely.com&lt;/a&gt;, Cloud.typography edges out Typekit for load times (about 800ms vs 1100ms on my computer, or about 27% faster). Part of this can be attributed to the obvious fact that the size of the fonts is smaller with Cloud.typography, which is largely because we&amp;rsquo;re serving fewer fonts to the user than we did with Typekit.&lt;/p&gt;
-
-&lt;p&gt;However, Typekit blocks rendering by having a &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt; tag in the head of the document, whereas Cloud.typography uses a &lt;code&gt;&amp;lt;link&amp;gt;&lt;/code&gt; tag that allows the page to continue &lt;a href="http://developer.yahoo.com/performance/rules.html#css_top"&gt;rendering progressively&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Additionally, Typekit taxes the user&amp;rsquo;s machine by executing Javascript to determine which fonts to load, whereas Cloud.typography does this on their servers. Although the JS is pretty minimal, it could impact older or more resource-constrained machines. Personally, I like that Cloud.typography moved this logic off of users&amp;#39; machines and onto their servers.&lt;/p&gt;
-
-&lt;h2&gt;Conclusion&lt;/h2&gt;
-
-&lt;p&gt;In the end, both services are solid and the speed difference is minimal. I like Cloud.typography&amp;rsquo;s approach of only having a link to a CSS file instead of executing javascript, and the ability to host files yourself is nice. But which service you choose should ultimately come down to whichever fonts you like more.&lt;/p&gt;
 </content>
   </entry>
 </feed>

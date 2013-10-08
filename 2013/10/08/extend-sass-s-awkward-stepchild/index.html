@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset='utf-8'>
+    <title>
+      Jeff Zych
+       - Extend - SASS's Awkward Stepchild
+    </title>
+    <meta content="Jeff Zych's homepage" name='description'>
+    <meta content='Jeff Zych' name='author'>
+    <meta content='width=device-width, initial-scale=1.0, user-scalable=yes' name='viewport'>
+    <meta content='black' name='apple-mobile-web-app-status-bar-style'>
+    <meta content='yes' name='apple-mobile-web-app-capable'>
+    <link href="/favicon.ico?v=1" rel="icon" type="image/ico?v=1" />
+    <link href="/stylesheets/application.css?1378781622" media="screen" rel="stylesheet" type="text/css" />
+    <link href='/feed.xml' rel='alternate' title='RSS for Jeff Zych' type='application/rss+xml'>
+    <script src='//use.typekit.net/kbr8kzk.js' type='text/javascript'></script>
+    <script>
+      try{Typekit.load();}catch(e){}
+    </script>
+  </head><body>
+    <div id='main' role='main'>
+      <header>
+        <h1 class='monogram'>
+                    <a title="Home" href="/"><img alt="JZ" src="/images/monogram.svg?1378005138" />
+          Jeff Zych
+          </a>
+
+        </h1>
+        <nav class='nav-main'>
+          <ul>
+            <li><a title="About Jeff Zych" href="/about">About</a></li>
+            <li><a href="/archives">Archives</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class='content'>
+        <article>
+          <time datetime='2013-10-08'>
+            <i>Posted on</i>
+            Oct  8, 2013
+          </time>
+          <h1><a href="/2013/10/08/extend-sass-s-awkward-stepchild/">Extend - SASS's Awkward Stepchild</a></h1>
+          <p>SASS has a lot of really powerful features to help you write <a href="http://en.wikipedia.org/wiki/Don&#x27;t_repeat_yourself">DRY</a> code quickly. One such feature is <code>@extend</code>, which I find is overlooked by many developers but can be very useful when used properly.</p>
+          
+          <h2>@-what?</h2>
+          
+          <p>First, a little background on <code>@extend</code>. It allows a selector to <em>extend</em> the styles of another selector, essentially providing a form of sub-classing. <code>@extend</code> works by combining selectors into a single comma-separated selector. A simple example:</p>
+          <pre class="highlight scss"><span class="nc">.button</span> <span class="p">{</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="mh">#bada55</span><span class="p">;</span>&#x000A;  <span class="nl">font-size</span><span class="p">:</span> <span class="m">1em</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;&#x000A;<span class="nc">.button-small</span> <span class="p">{</span>&#x000A;  <span class="k">@extend</span> <span class="nc">.button</span><span class="p">;</span>&#x000A;  <span class="nl">font-size</span><span class="p">:</span> <span class="m">0</span><span class="mi">.8em</span><span class="p">;</span>&#x000A;<span class="p">}</span></pre>
+          <p>Which outputs:</p>
+          <pre class="highlight css"><span class="nc">.button</span><span class="o">,</span>&#x000A;<span class="nc">.button-small</span> <span class="p">{</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="m">#bada55</span><span class="p">;</span>&#x000A;  <span class="nl">font-size</span><span class="p">:</span> <span class="m">1em</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;&#x000A;<span class="nc">.button-small</span> <span class="p">{</span>&#x000A;  <span class="nl">font-size</span><span class="p">:</span> <span class="m">0.8em</span><span class="p">;</span>&#x000A;<span class="p">}</span></pre>
+          <p>The <a href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#extend">SASS docs</a> give a fuller explanation of how it works, and its limitations.</p>
+          
+          <h2>Why it&rsquo;s great</h2>
+          
+          <p><code>@extend</code> can cut down duplicate styles and selectors. Modules derived from a base style can all <code>@extend</code> the parent, and all the sub-classes will be added to the base selector. Alternative ways to achieve this in SASS include using mixins to output the base styles (which just adds bloat to the stylesheet, since the same set of rules is output multiple places in the final CSS); duplicate the properties in each selector (violates the principle of DRY and is a maintenance nightmare); or manually add each new selector to the base selector (also violates DRY and also is a maintenance nightmare, and the exact problem <code>@extend</code> was designed to solve).</p>
+          
+          <h3>Placeholder selectors</h3>
+          
+          <p>Placeholder selectors make <code>@extend</code> even sweeter. They are selectors that aren&rsquo;t output unless extended by another selector (also known as <a href="http://en.wikipedia.org/wiki/Abstract_type">abstract classes</a> in OOP). It doesn&rsquo;t sound like much, but I often run into situations where I have some classes (or elements) that share common styles, but I don&rsquo;t need the base class in the HTML or CSS. For example:</p>
+          <pre class="highlight scss"><span class="nc">.container-blue</span><span class="o">,</span>&#x000A;<span class="nc">.container-red</span> <span class="p">{</span>&#x000A;  <span class="nl">padding</span><span class="p">:</span> <span class="m">3em</span> <span class="m">0</span><span class="p">;</span>&#x000A;  <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;&#x000A;<span class="nc">.container-blue</span> <span class="p">{</span>&#x000A;  <span class="nl">background-color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;&#x000A;<span class="nc">.container-red</span> <span class="p">{</span>&#x000A;  <span class="nl">background-color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>&#x000A;<span class="p">}</span></pre>
+          <p>Each container selector has to be typed out twice &ndash; once for their shared styles, and again for their specific styles. Not a big deal here, but quickly becomes unweildy the more sub-containers you add. Placeholder selectors can help us here:</p>
+          <pre class="highlight scss"><span class="nv">%container-common-styles</span> <span class="p">{</span>&#x000A;  <span class="nl">padding</span><span class="p">:</span> <span class="m">3em</span> <span class="m">0</span><span class="p">;</span>&#x000A;  <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;&#x000A;<span class="nc">.container-blue</span> <span class="p">{</span>&#x000A;  <span class="k">@extend</span> <span class="nv">%container-common-styles</span><span class="p">;</span>&#x000A;  <span class="nl">background-color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;&#x000A;<span class="nc">.container-red</span> <span class="p">{</span>&#x000A;  <span class="k">@extend</span> <span class="nv">%container-common-styles</span><span class="p">;</span>&#x000A;  <span class="nl">background-color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>&#x000A;<span class="p">}</span></pre>
+          <p>Now the common styles are in one place, and each class is in one place. This pays off the more selectors you have extending the placeholder.</p>
+          
+          <p>You can also feel guilt-free about using unsemantic, descriptive names, since the placeholder itself isn&rsquo;t output in the final CSS. They are purely for yourself and other developers.</p>
+          
+          <h2>Dangers of @extend</h2>
+          
+          <p>As with any SASS you write, you need to keep an eye on the final CSS it outputs. If you <code>@extend</code> a class that&rsquo;s used in many places, the selector will be copied to every instance of that class (even if it&rsquo;s nested in other selectors). This is often unnecessary, and can cause unintended side effects (I ran into a nasty styling bug because of this once).</p>
+          
+          <p>For example, a <code>.button</code> class is originally defined in one place, but modified to look slightly different in a dialog. When extending it, you only wanted the original styles, but the new selector is copied into the dialog button as well. This wasn&rsquo;t what you intended, isn&rsquo;t necessary, and bloated your final CSS. Before extending classes, check everywhere they&rsquo;re defined and make sure you want your selector to be duplicated in all of those places. (Arguably, this is bad CSS to begin with [you shouldn&rsquo;t change a button style based on the dialog context in the first place], but in real world CSS it happens).</p>
+          
+          <p>Additionally, the depth and breadth of selectors you have nested under the base selector, combined with the number of selectors extending the base, can create some <em>very</em> long selectors, not all of which are necessary. Once again, pay attention to the CSS that&rsquo;s being compiled. And once again, this is arguably bad SASS (mind the <a href="http://thesassway.com/beginner/the-inception-rule">Inception Rule</a>), but these things happen in legacy codebases with multiple developers.</p>
+          
+          <h2>Closing Thoughts</h2>
+          
+          <p>Extending selectors can save you time and DRY out your code, when used properly. As with most SASS features, it can be abused and create some pretty hairy CSS, but as long as you keep an eye on the final CSS you&rsquo;ll be fine.</p>
+          <p class='follow-me'>
+            Thoughts? Reply
+            <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
+          </p>
+          <footer class='tags'>
+            Tags:
+            <span class='tag'>SASS</span>
+            <span class='tag'>css</span>
+            <span class='tag'>extend</span>
+          </footer>
+        </article>
+      </div>
+      <footer id='site-footer'>
+        <p>
+          &copy; 2010&ndash;2013 Jeff Zych
+          &bull; Hand-crafted with
+          <a href="http://middlemanapp.com/">Middleman</a>
+        </p>
+      </footer>
+    </div>
+    <!-- Google Analytics tracking -->
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-21389659-1']);
+      _gaq.push(['_trackPageview']);
+      
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
+
