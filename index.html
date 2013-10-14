@@ -10,7 +10,7 @@
     <meta content='black' name='apple-mobile-web-app-status-bar-style'>
     <meta content='yes' name='apple-mobile-web-app-capable'>
     <link href="/favicon.ico?v=1" rel="icon" type="image/ico?v=1" />
-    <link href="/stylesheets/application.css?1378781622" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/application.css?1381713378" media="screen" rel="stylesheet" type="text/css" />
     <link href='/feed.xml' rel='alternate' title='RSS for Jeff Zych' type='application/rss+xml'>
     <script src='//use.typekit.net/kbr8kzk.js' type='text/javascript'></script>
     <script>
@@ -33,6 +33,44 @@
         </nav>
       </header>
       <div class='content'>
+        <article>
+          <time datetime='2013-10-13'>
+            <i>Posted on</i>
+            Oct 13, 2013
+          </time>
+          <h1><a href="/2013/10/13/fostering-creative-environments/">Fostering creative environments</a></h1>
+          <p>I recently read <a href="http://www.smashingmagazine.com">Smashing Magazine&rsquo;s</a> article <a href="http://www.smashingmagazine.com/2013/08/28/on-creative-leadership/">&ldquo;On Creative Leadership&rdquo;</a> that talks about creating an environment in which people can be creative. This section really resonated with me because it&rsquo;s something we do occasionally at Optimizely, and talk about doing more of:</p>
+          
+          <blockquote>
+          <p>Every month, my team and I enter our planning room for at least three hours. We lock the doors, opening it only for pizza and beer deliveries. Our mission is to solve one problem. In past sessions, we have redesigned the user interface that powers our systems, solved marketing problems by “remarketing,” and found new and creative ways to present information. The role of an impresario has had such a direct and positive impact on the way we do business that I am now introducing the role to every team in our 100+ person company.</p>
+          
+          <p>Why does having an impresario work? Well, certain rules guide the team to moments of insight:</p>
+          
+          <ul>
+          <li>Identify a very specific problem to solve, and stay focused.</li>
+          <li>Provide the necessary tools to spark inspiration (white boards, markers, paper, etc.).</li>
+          <li>Be technology-agnostic! Don’t worry about how you will solve the problem; focus only on the why.</li>
+          <li>There are no wrong answers; some are just better than others.</li>
+          <li>Celebrate failures.</li>
+          </ul>
+          
+          <p>My team looks forward to their time spent locked up together because it gives us an opportunity to be creative in front of each other. Support their ideas, and help them grow. Don’t force your opinions and thoughts. If the group is moving in the wrong direction, ask them questions until they find the right path.</p>
+          </blockquote>
+          
+          <p>The design team at Optimizely has done this a few times, and it&rsquo;s always been extremely rewarding and productive. For example, recently another designer and myself locked ourselves in a room all day to redesign our jobs page. By the end of the day, the page was almost fully coded.</p>
+          
+          <p>This setting allowed us to be productive for two key reasons. First, we were insulated from distractions, which can quickly kill productivity and focus. Second, we had instant, high-bandwidth communication that enabled quick feedback and input from each other when needed. No waiting around for emails or responses via IM.</p>
+          
+          <p>Given the success of this and other similar sessions, we intend to do more of these focused work sessions in the future to foster our creativity and productivity.</p>
+          <p class='follow-me'>
+            Thoughts? Reply
+            <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
+          </p>
+          <footer class='tags'>
+            Tags:
+            <span class='tag'>creativity</span>
+          </footer>
+        </article>
         <article>
           <time datetime='2013-10-08'>
             <i>Posted on</i>
@@ -219,55 +257,6 @@
             <span class='tag'>testing theory</span>
             <span class='tag'>A/B testing</span>
             <span class='tag'>usability</span>
-          </footer>
-        </article>
-        <article>
-          <time datetime='2013-09-01'>
-            <i>Posted on</i>
-            Sep  1, 2013
-          </time>
-          <h1><a href="/2013/09/01/automating-semantic-sprites-with-compass/">Automating Semantic Sprites with Compass</a></h1>
-          <p>In my <a href="http://jlzych.com/2013/08/26/a-more-semantic-approach-to-spriting-images/">previous post</a>, I explained how to use image sprites semantically. But as with all image spriting, setting each sprite&rsquo;s size and position is a pain. <a href="http://compass-style.org">Compass</a> can automate this, but it&rsquo;s designed with the assumption that all your sprites will be background images of elements. Even so, Compass provides a number of under-documented functions that can help automate my technique.</p>
-          
-          <h2>Refresher</h2>
-          
-          <p>First, a quick summary of my <a href="http://jlzych.com/2013/08/26/a-more-semantic-approach-to-spriting-images/">previous post</a>. The <a href="http://css-tricks.com/css-sprites/">standard way to sprite images</a> is to set the sprite sheet as the <code>background-image</code> of an element, and set its <code>background-position</code> to the coordinates of the image you want to display. But if your image is part of the content, then semantically it should be in the markup as an <code>img</code> tag. To accomplish this, set the <code>img</code> tag&rsquo;s <code>src</code> to the sprite sheet, and use a container element as a &ldquo;window&rdquo; to let one sprite show through at a time. For the specifics of how to do this, <a href="http://jlzych.com/2013/08/26/a-more-semantic-approach-to-spriting-images/">read my post</a>.</p>
-          
-          <h2>Automate this with Compass</h2>
-          
-          <p>As I mentioned, the most difficult part of spriting is setting the image size and position for each sprite. Luckily, Compass can help us, but their <a href="http://compass-style.org/help/tutorials/spriting/">spriting documentation</a> is geared towards the standard technique, and thus doesn&rsquo;t provide much help to accomplish my method. But fear not! Compass can still help us.</p>
-          
-          <h3>Create the sprite sheet</h3>
-          
-          <p>The first step to doing any spriting in Compass is to <code>@import</code> a folder of images. Compass will generate a sprite sheet image, and create a number of variables that we can use to get the size and position of each sprite.</p>
-          <pre class="highlight scss"><span class="k">@import</span> <span class="s2">&quot;sprites/*.png&quot;</span><span class="p">;</span></pre>
-          <h3>Sprite Dimensions</h3>
-          
-          <p>Next, we need to get the dimensions of each sprite, and set the container element to that size. Compass provides a <code>sprite-dimensions</code> function, which takes 2 parameters: the sprite map Compass generated, and the name of the sprite (i.e. the filename, sans extension). Then it outputs the <code>width</code> and <code>height</code> of the sprite. If you have no idea what you&rsquo;re supposed to pass as the sprite map parameter, you&rsquo;re not alone. After <a href="https://github.com/chriseppstein/compass/blob/stable/lib/compass/sprite_importer/content.erb#L16">some digging</a>, I discovered Compass assigns the sprite map to a variable named <code>$&lt;folder&gt;-sprites</code>. In this example, that makes the variable the awkwardly named <code>$sprites-sprites</code>.</p>
-          <pre class="highlight scss"><span class="k">@include</span> <span class="nd">sprite-dimensions</span><span class="p">(</span><span class="nv">$sprites-sprites</span><span class="o">,</span> <span class="s2">&quot;my-sprite&quot;</span><span class="p">);</span></pre>
-          <h3>Sprite Position</h3>
-          
-          <p>The next step is to set the <code>top</code> and <code>left</code> properties of the image tag. Once again, Compass provides us a helper function: the aptly named <code>sprite-position</code>. Like <code>sprite-dimensions</code>, it also takes the sprite map and sprite name as parameters. But unlike <code>sprite-dimensions</code>, it provides us the <code>left</code> and <code>top</code> properties concatenated in a string, e.g. &ldquo;20px 120px&rdquo;. This seems weird and inconsistent at first, until you realize it&rsquo;s designed to be used as the value of the <code>background-position</code> property. To help us access each value individually, SASS has a function named <code>nth</code>, which returns the value at the position you pass it (starting from 1). And don&rsquo;t worry about converting that string to an array &mdash; SASS will automatically convert strings to arrays, splitting the string on spaces. So that gives us:</p>
-          <pre class="highlight scss"><span class="nc">.my-sprite</span> <span class="nt">img</span> <span class="p">{</span>&#x000A;  <span class="nv">$position</span><span class="p">:</span> <span class="nf">sprite-position</span><span class="p">(</span><span class="nv">$sprites-sprites</span><span class="o">,</span> <span class="s2">&quot;my-sprite&quot;</span><span class="p">);</span>&#x000A;  <span class="nl">left</span><span class="p">:</span> <span class="nf">nth</span><span class="p">(</span><span class="nv">$position</span><span class="o">,</span> <span class="m">1</span><span class="p">);</span>&#x000A;  <span class="nl">top</span><span class="p">:</span> <span class="nf">nth</span><span class="p">(</span><span class="nv">$position</span><span class="o">,</span> <span class="m">2</span><span class="p">);</span>&#x000A;<span class="p">}</span></pre>
-          <h3>Putting it All Together</h3>
-          
-          <p>So now we have all the pieces in place to position each individual sprite, and all we need is the name of each image. For example:</p>
-          <pre class="highlight scss"><span class="k">@import</span> <span class="s2">&quot;sprites/*.png&quot;</span><span class="p">;</span>&#x000A;&#x000A;<span class="nc">.sprite-container</span> <span class="p">{</span>&#x000A;  <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span> <span class="c1">// or inline-block&#x000A;</span>  <span class="nl">overflow</span><span class="p">:</span> <span class="nb">hidden</span><span class="p">;</span>&#x000A;  <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>&#x000A;&#x000A;  <span class="k">&amp;</span><span class="nc">.my-sprite</span> <span class="p">{</span>&#x000A;    <span class="k">@include</span> <span class="nd">sprite-dimensions</span><span class="p">(</span><span class="nv">$sprites-sprites</span><span class="o">,</span> <span class="s2">&quot;my-sprite&quot;</span><span class="p">);</span>&#x000A;&#x000A;    <span class="nt">img</span> <span class="p">{</span>&#x000A;      <span class="nv">$position</span><span class="p">:</span> <span class="nf">sprite-position</span><span class="p">(</span><span class="nv">$sprites-sprites</span><span class="o">,</span> <span class="s2">&quot;my-sprite&quot;</span><span class="p">);</span>&#x000A;      <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>&#x000A;      <span class="nl">left</span><span class="p">:</span> <span class="nf">nth</span><span class="p">(</span><span class="nv">$position</span><span class="o">,</span> <span class="m">1</span><span class="p">);</span>&#x000A;      <span class="nl">top</span><span class="p">:</span> <span class="nf">nth</span><span class="p">(</span><span class="nv">$position</span><span class="o">,</span> <span class="m">2</span><span class="p">);</span>&#x000A;    <span class="p">}</span>&#x000A;  <span class="p">}</span>&#x000A;&#x000A;  <span class="c1">// ...etc. for each sprite&#x000A;</span><span class="p">}</span></pre>
-          <p>The obvious flaw here is that you need to write code for each sprite in the sprite sheet. Luckily for us, Compass has one more trick up its sleeve to help automate this: the <a href="https://github.com/chriseppstein/compass/blob/stable/lib/compass/sass_extensions/functions/sprites.rb#L14"><code>sprite_names</code></a> function. Pass it a sprite map, and it outputs a list of sprite names. Then we can use <code>@each</code> to loop through the list, and generate the size and position of each. Bringing it all together, our code looks like this:</p>
-          <pre class="highlight scss"><span class="k">@import</span> <span class="s2">&quot;sprites/*.png&quot;</span><span class="p">;</span>&#x000A;<span class="nv">$sprite-names</span><span class="p">:</span> <span class="nf">sprite_names</span><span class="p">(</span><span class="nv">$sprites-sprites</span><span class="p">);</span>&#x000A;&#x000A;<span class="nc">.sprite-container</span> <span class="p">{</span>&#x000A;  <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span> <span class="c1">// or inline-block&#x000A;</span>  <span class="nl">overflow</span><span class="p">:</span> <span class="nb">hidden</span><span class="p">;</span>&#x000A;  <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>&#x000A;&#x000A;  <span class="k">@each</span> <span class="err">$</span><span class="nt">sprite</span> <span class="nt">in</span> <span class="err">$</span><span class="nt">sprite-names</span> <span class="p">{</span>&#x000A;    <span class="k">&amp;</span><span class="nc">.sprite-</span><span class="si">#{</span><span class="nv">$sprite</span><span class="si">}</span> <span class="p">{</span>&#x000A;      <span class="k">@include</span> <span class="nd">sprite-dimensions</span><span class="p">(</span><span class="nv">$sprites-sprites</span><span class="o">,</span> <span class="nv">$sprite</span><span class="p">);</span>&#x000A;&#x000A;      <span class="nt">img</span> <span class="p">{</span>&#x000A;        <span class="nv">$position</span><span class="p">:</span> <span class="nf">sprite-position</span><span class="p">(</span><span class="nv">$sprites-sprites</span><span class="o">,</span> <span class="nv">$sprite</span><span class="p">);</span>&#x000A;        <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>&#x000A;        <span class="nl">left</span><span class="p">:</span> <span class="nf">nth</span><span class="p">(</span><span class="nv">$position</span><span class="o">,</span> <span class="m">1</span><span class="p">);</span>&#x000A;        <span class="nl">top</span><span class="p">:</span> <span class="nf">nth</span><span class="p">(</span><span class="nv">$position</span><span class="o">,</span> <span class="m">2</span><span class="p">);</span>&#x000A;      <span class="p">}</span>&#x000A;    <span class="p">}</span>&#x000A;  <span class="p">}</span> <span class="c1">// @each&#x000A;</span><span class="p">}</span> <span class="c1">// .sprite-container&#x000A;</span></pre>
-          <h2>Conclusion</h2>
-          
-          <p>Whew, that was a whirlwind of Compass code. But once you get it all set up, it works quite well. You can add and remove sprites as you please, without needing to update a single line of SCSS. Happy spriting!</p>
-          <p class='follow-me'>
-            Thoughts? Reply
-            <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
-          </p>
-          <footer class='tags'>
-            Tags:
-            <span class='tag'>html</span>
-            <span class='tag'>css</span>
-            <span class='tag'>spriting</span>
-            <span class='tag'>compass</span>
           </footer>
         </article>
         <a class="view-all-link" href="/archives">View all posts &raquo;</a>
