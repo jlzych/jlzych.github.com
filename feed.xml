@@ -5,10 +5,53 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2013-10-13T20:56:00Z</updated>
+  <updated>2013-10-23T04:25:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>Using Channel Factors to Increase Offline Conversions</title>
+    <link rel="alternate" href="/2013/10/22/using-channel-factors-to-increase-offline-conversions/"/>
+    <id>/2013/10/22/using-channel-factors-to-increase-offline-conversions/</id>
+    <published>2013-10-23T04:25:00Z</published>
+    <updated>2013-10-23T04:25:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;Anyone who has ever ignored to-do lists knows that any friction between yourself and your goal leads to frustration and potentially giving up altogether. This lesson applies to real life equally as well as it does to visitors on your website.&lt;/p&gt;
+
+&lt;p&gt;If people sign up for something, how do you get them to actually follow through? Of course, anything that reduces friction is good for everyone involved, but there are often limitations to how much you can realistically remove. So how do you optimize these kinds of experiences? One technique is to explicitly spell out the next steps. Knowing the steps ahead of time makes the process easier to finish and overall less daunting. This theory is known as &lt;strong&gt;channel factors&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;In 1965, psychologist Howard Levanthal &lt;a href="http://www.canyons.edu/faculty/rafterm/0%200lli%20Social%20Psychology/Social%20Day%20Pages/Day%203%20Info%20Pages/Effects%20of%20fear%20and%20specificity%20of%20recommendation%20upon%20attitudes%20and%20behavior.pdf"&gt;studied this phenomenon&lt;/a&gt; [pdf] by trying to persuade college students to get a tetanus vaccination. He distributed documents describing the risks of tetanus and the value of inoculation among two groups of people. The first group received just the information sheet, whereas the second group received the information sheet along with a campus map with the infirmary circled. Follow up surveys showed the communication was effective in changing beliefs and attitudes in both groups, but the number of people who actually followed through varied drastically. Only 3% of the first group got inoculated, compared to 28% of the group that also received a map.&lt;/p&gt;
+
+&lt;p&gt;The key difference is that the map reduced the friction to following through. Just telling students to get vaccinated created a barrier: where do I go? Showing the students where to get the shot and urging them to pencil time on their calendar eliminated this barrier. In contrast, the group that only received the info sheet had no clear plan of how to get vaccinated. This made the task more abstract and difficult to complete, so fewer people followed through with an appointment.&lt;/p&gt;
+
+&lt;p&gt;The implication for a website is clear: remove barriers to success. Make the next steps explicit, and provide as much information as possible to enable people to follow through. A great example of this is &lt;a href="http://www.crateandbarrel.com/"&gt;Create&amp;amp;Barrel’s&lt;/a&gt; checkout funnel, which was ranked as the top e-commerce checkout user experience by the &lt;a href="http://baymard.com/"&gt;Baymard Institute&lt;/a&gt;. (Note: since this rating, Crate&amp;amp;Barrel has done more A/B testing to further improve their checkout funnel). First of all, they reduced the funnel to as few steps as possible: Shipping; Payment; and Review &amp;amp; Place Order. Second, they clearly spell out each of these steps from the start, telling the user what they’ll need to do to place their order. Without this, people don’t have any expectation of how long the checkout process could take, and are more likely to drop out partway through.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Crate &amp; Barrel's checkout funnel" src="http://jlzych.com/images/2013-10-22-using-channel-factors-to-increase-offline-conversions/crate-barrel-checkout.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Crate&amp;amp;Barrel’s checkout funnel spells out each step for the user, which helps them complete their purchase.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This technique is especially useful for actions that take place off of the website, such as installing software. Firefox does a great job of this by listing each step with screenshots. This helps all users, technical and non-technical, successfully install their browser.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Firefox's download page walks the user through installation steps" src="http://jlzych.com/images/2013-10-22-using-channel-factors-to-increase-offline-conversions/firefox-download.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Firefox’s download page walks the user through the exact steps they must go through to install their browser, which increases the chances users will install their product.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;These examples just scratch the surface of how channel factors can help you increase conversions. They key is to put yourself in the shoes of your users and ask yourself, “What additional information do I need to complete this task? What barriers are preventing me from reaching my goal?” Although they may look obvious to you, it won’t to your customers.
+Do you want your users to:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Call, email, or write a politician? Provide a pre-written template that they just need to populate with their name.&lt;/li&gt;
+&lt;li&gt;Volunteer for a cause? Show them a map of the closest location and the next time they can attend.&lt;/li&gt;
+&lt;li&gt;Attend a live webcast? Provide an “Add to Calendar” button.&lt;/li&gt;
+&lt;li&gt;Use your product or service? List each of the steps users have to go through to use it.&lt;/li&gt;
+&lt;li&gt;Use a new (or even existing) feature? Figure out where in the flow of using your product this feature fits, and explicitly tell them to use it at the end of the previous step.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Any objective on your site that requires completing a series of steps can potentially benefit from applying the lessons behind channel factors. Increase the chances that a visitor follows through on what they signed up for by providing all the help you can. When in doubt, over explain and be direct — even when the directions may seem obvious to you and your team. By A/B testing, you will ultimately find an optimized design somewhere between hit-you-over-the-head-obvious and confusion.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Fostering creative environments</title>
     <link rel="alternate" href="/2013/10/13/fostering-creative-environments/"/>
@@ -311,96 +354,6 @@
 &lt;h2&gt;Further Reading&lt;/h2&gt;
 
 &lt;p&gt;Read Eric Johnson and Daniel Goldstein&amp;rsquo;s full study on defaults, titled &lt;a href="http://www.dangoldstein.com/papers/DefaultsScience.pdf"&gt;&amp;ldquo;Do defaults save lives?&amp;rdquo;&lt;/a&gt; (2003).&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Automating Semantic Sprites with Compass</title>
-    <link rel="alternate" href="/2013/09/01/automating-semantic-sprites-with-compass/"/>
-    <id>/2013/09/01/automating-semantic-sprites-with-compass/</id>
-    <published>2013-09-02T04:15:00Z</published>
-    <updated>2013-09-02T04:15:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;In my &lt;a href="http://jlzych.com/2013/08/26/a-more-semantic-approach-to-spriting-images/"&gt;previous post&lt;/a&gt;, I explained how to use image sprites semantically. But as with all image spriting, setting each sprite&amp;rsquo;s size and position is a pain. &lt;a href="http://compass-style.org"&gt;Compass&lt;/a&gt; can automate this, but it&amp;rsquo;s designed with the assumption that all your sprites will be background images of elements. Even so, Compass provides a number of under-documented functions that can help automate my technique.&lt;/p&gt;
-
-&lt;h2&gt;Refresher&lt;/h2&gt;
-
-&lt;p&gt;First, a quick summary of my &lt;a href="http://jlzych.com/2013/08/26/a-more-semantic-approach-to-spriting-images/"&gt;previous post&lt;/a&gt;. The &lt;a href="http://css-tricks.com/css-sprites/"&gt;standard way to sprite images&lt;/a&gt; is to set the sprite sheet as the &lt;code&gt;background-image&lt;/code&gt; of an element, and set its &lt;code&gt;background-position&lt;/code&gt; to the coordinates of the image you want to display. But if your image is part of the content, then semantically it should be in the markup as an &lt;code&gt;img&lt;/code&gt; tag. To accomplish this, set the &lt;code&gt;img&lt;/code&gt; tag&amp;rsquo;s &lt;code&gt;src&lt;/code&gt; to the sprite sheet, and use a container element as a &amp;ldquo;window&amp;rdquo; to let one sprite show through at a time. For the specifics of how to do this, &lt;a href="http://jlzych.com/2013/08/26/a-more-semantic-approach-to-spriting-images/"&gt;read my post&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2&gt;Automate this with Compass&lt;/h2&gt;
-
-&lt;p&gt;As I mentioned, the most difficult part of spriting is setting the image size and position for each sprite. Luckily, Compass can help us, but their &lt;a href="http://compass-style.org/help/tutorials/spriting/"&gt;spriting documentation&lt;/a&gt; is geared towards the standard technique, and thus doesn&amp;rsquo;t provide much help to accomplish my method. But fear not! Compass can still help us.&lt;/p&gt;
-
-&lt;h3&gt;Create the sprite sheet&lt;/h3&gt;
-
-&lt;p&gt;The first step to doing any spriting in Compass is to &lt;code&gt;@import&lt;/code&gt; a folder of images. Compass will generate a sprite sheet image, and create a number of variables that we can use to get the size and position of each sprite.&lt;/p&gt;
-&lt;pre class="highlight scss"&gt;&lt;span class="k"&gt;@import&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;sprites/*.png&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;/pre&gt;
-&lt;h3&gt;Sprite Dimensions&lt;/h3&gt;
-
-&lt;p&gt;Next, we need to get the dimensions of each sprite, and set the container element to that size. Compass provides a &lt;code&gt;sprite-dimensions&lt;/code&gt; function, which takes 2 parameters: the sprite map Compass generated, and the name of the sprite (i.e. the filename, sans extension). Then it outputs the &lt;code&gt;width&lt;/code&gt; and &lt;code&gt;height&lt;/code&gt; of the sprite. If you have no idea what you&amp;rsquo;re supposed to pass as the sprite map parameter, you&amp;rsquo;re not alone. After &lt;a href="https://github.com/chriseppstein/compass/blob/stable/lib/compass/sprite_importer/content.erb#L16"&gt;some digging&lt;/a&gt;, I discovered Compass assigns the sprite map to a variable named &lt;code&gt;$&amp;lt;folder&amp;gt;-sprites&lt;/code&gt;. In this example, that makes the variable the awkwardly named &lt;code&gt;$sprites-sprites&lt;/code&gt;.&lt;/p&gt;
-&lt;pre class="highlight scss"&gt;&lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;sprite-dimensions&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;$sprites-sprites&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;my-sprite&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;/pre&gt;
-&lt;h3&gt;Sprite Position&lt;/h3&gt;
-
-&lt;p&gt;The next step is to set the &lt;code&gt;top&lt;/code&gt; and &lt;code&gt;left&lt;/code&gt; properties of the image tag. Once again, Compass provides us a helper function: the aptly named &lt;code&gt;sprite-position&lt;/code&gt;. Like &lt;code&gt;sprite-dimensions&lt;/code&gt;, it also takes the sprite map and sprite name as parameters. But unlike &lt;code&gt;sprite-dimensions&lt;/code&gt;, it provides us the &lt;code&gt;left&lt;/code&gt; and &lt;code&gt;top&lt;/code&gt; properties concatenated in a string, e.g. &amp;ldquo;20px 120px&amp;rdquo;. This seems weird and inconsistent at first, until you realize it&amp;rsquo;s designed to be used as the value of the &lt;code&gt;background-position&lt;/code&gt; property. To help us access each value individually, SASS has a function named &lt;code&gt;nth&lt;/code&gt;, which returns the value at the position you pass it (starting from 1). And don&amp;rsquo;t worry about converting that string to an array &amp;mdash; SASS will automatically convert strings to arrays, splitting the string on spaces. So that gives us:&lt;/p&gt;
-&lt;pre class="highlight scss"&gt;&lt;span class="nc"&gt;.my-sprite&lt;/span&gt; &lt;span class="nt"&gt;img&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="nv"&gt;$position&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nf"&gt;sprite-position&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;$sprites-sprites&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;my-sprite&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-  &lt;span class="nl"&gt;left&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nf"&gt;nth&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;$position&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-  &lt;span class="nl"&gt;top&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nf"&gt;nth&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;$position&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="m"&gt;2&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;
-&lt;h3&gt;Putting it All Together&lt;/h3&gt;
-
-&lt;p&gt;So now we have all the pieces in place to position each individual sprite, and all we need is the name of each image. For example:&lt;/p&gt;
-&lt;pre class="highlight scss"&gt;&lt;span class="k"&gt;@import&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;sprites/*.png&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-
-&lt;span class="nc"&gt;.sprite-container&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="nl"&gt;display&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c1"&gt;// or inline-block
-&lt;/span&gt;  &lt;span class="nl"&gt;overflow&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;hidden&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="nl"&gt;position&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;relative&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-
-  &lt;span class="k"&gt;&amp;amp;&lt;/span&gt;&lt;span class="nc"&gt;.my-sprite&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;sprite-dimensions&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;$sprites-sprites&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;my-sprite&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-
-    &lt;span class="nt"&gt;img&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-      &lt;span class="nv"&gt;$position&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nf"&gt;sprite-position&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;$sprites-sprites&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;my-sprite&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-      &lt;span class="nl"&gt;position&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;absolute&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-      &lt;span class="nl"&gt;left&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nf"&gt;nth&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;$position&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-      &lt;span class="nl"&gt;top&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nf"&gt;nth&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;$position&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="m"&gt;2&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-    &lt;span class="p"&gt;}&lt;/span&gt;
-  &lt;span class="p"&gt;}&lt;/span&gt;
-
-  &lt;span class="c1"&gt;// ...etc. for each sprite
-&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;
-&lt;p&gt;The obvious flaw here is that you need to write code for each sprite in the sprite sheet. Luckily for us, Compass has one more trick up its sleeve to help automate this: the &lt;a href="https://github.com/chriseppstein/compass/blob/stable/lib/compass/sass_extensions/functions/sprites.rb#L14"&gt;&lt;code&gt;sprite_names&lt;/code&gt;&lt;/a&gt; function. Pass it a sprite map, and it outputs a list of sprite names. Then we can use &lt;code&gt;@each&lt;/code&gt; to loop through the list, and generate the size and position of each. Bringing it all together, our code looks like this:&lt;/p&gt;
-&lt;pre class="highlight scss"&gt;&lt;span class="k"&gt;@import&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;sprites/*.png&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="nv"&gt;$sprite-names&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nf"&gt;sprite_names&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;$sprites-sprites&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-
-&lt;span class="nc"&gt;.sprite-container&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="nl"&gt;display&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c1"&gt;// or inline-block
-&lt;/span&gt;  &lt;span class="nl"&gt;overflow&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;hidden&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="nl"&gt;position&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;relative&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-
-  &lt;span class="k"&gt;@each&lt;/span&gt; &lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="nt"&gt;sprite&lt;/span&gt; &lt;span class="nt"&gt;in&lt;/span&gt; &lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="nt"&gt;sprite-names&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="k"&gt;&amp;amp;&lt;/span&gt;&lt;span class="nc"&gt;.sprite-&lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="nv"&gt;$sprite&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-      &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;sprite-dimensions&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;$sprites-sprites&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nv"&gt;$sprite&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-
-      &lt;span class="nt"&gt;img&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-        &lt;span class="nv"&gt;$position&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nf"&gt;sprite-position&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;$sprites-sprites&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nv"&gt;$sprite&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-        &lt;span class="nl"&gt;position&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;absolute&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-        &lt;span class="nl"&gt;left&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nf"&gt;nth&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;$position&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-        &lt;span class="nl"&gt;top&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nf"&gt;nth&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;$position&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="m"&gt;2&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-      &lt;span class="p"&gt;}&lt;/span&gt;
-    &lt;span class="p"&gt;}&lt;/span&gt;
-  &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="c1"&gt;// @each
-&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="c1"&gt;// .sprite-container
-&lt;/span&gt;&lt;/pre&gt;
-&lt;h2&gt;Conclusion&lt;/h2&gt;
-
-&lt;p&gt;Whew, that was a whirlwind of Compass code. But once you get it all set up, it works quite well. You can add and remove sprites as you please, without needing to update a single line of SCSS. Happy spriting!&lt;/p&gt;
 </content>
   </entry>
 </feed>
