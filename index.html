@@ -34,6 +34,53 @@
       </header>
       <div class='content'>
         <article>
+          <time datetime='2013-11-11'>
+            <i>Posted on</i>
+            Nov 11, 2013
+          </time>
+          <h1><a href="/2013/11/11/why-we-built-the-optimizely-styleguide/">Why we built the Optimizely Styleguide</a></h1>
+          <p>A few months ago, myself and the design team created the <a href="http://styleguide.optimizely.com">Optimizely Stylguide</a>. It&rsquo;s a living document of our brand standards and the visual style of our site. Designing, building, and writing the content for it took a significant amount of time, but it was worth the effort. In this post I&rsquo;m going to explain why we did it.</p>
+          
+          <h2>Why build a styleguide?</h2>
+          
+          <h3>A branding one-stop-shop</h3>
+          
+          <p>The original reason we wanted to build a styleguide was because we often get requests from people around the company for our logo. They also like to ask us which blue is our official blue. (It&rsquo;s <code>#1964af</code>). Providing one place for everyone to access this information, and explaining when and how to use our logos, saves both parties time.</p>
+          
+          <p>To achieve this goal, we put the full Optimizely logo, the Optimizely O, and our official brand colors on the styleguide&rsquo;s home page. We provided the logos in png, psd, svg, and eps formats in black, white, and Optimizely blue, which covers the widest use cases. Since this is the primary information that most people are looking for, it makes sense to have it be the most immediately available.</p>
+          
+          <h3>Document our visual style</h3>
+          
+          <p>The second biggest driving force was to provide developers (including myself) documentation of the modules, classes, and mixins that exist in the codebase. It&rsquo;s important that we maintain a consistent visual style, and re-using classes and mixins helps ensure we&rsquo;re consistent. It also speeds up development. There have been a lot of times that I&rsquo;ve written a mixin or class that someone didn&rsquo;t know about, and they re-implemented it in a different area of our code. Documenting these styles helps prevent this.</p>
+          
+          <p>Furthermore, complex widgets that require a combination of HTML, CSS, and JS to function properly (such as popovers and dialog boxes) are hard to figure out just from reading source code. Explaining how to add these modules to a page, and all of their styling and JS options, is invaluable.</p>
+          
+          <p>In addition to just explaining how something works, we also wanted to document when it&rsquo;s appropriate to use these various modules. You also can&rsquo;t get this from reading code alone. This helps both engineers and designers understand when to use a popover instead of a tooltip, for example.</p>
+          
+          <p>This content is the meat of the site, and the parts that change most frequently (in fact, many still need to be written). We decided the most effective way to document these elements was to create real, working examples with HTML, CSS, and JS, rather than just provide static screenshots. This allows developers to interact with the widgets, see how they behave, and inspect the code. It also makes it easier to communicate complex modules, such as popovers and dialog boxes. We took a lot of inspiration from <a href="http://getbootstrap.com/">Twitter&rsquo;s Bootstrap</a> and <a href="http://foundation.zurb.com/">Zurb&rsquo;s Foundation</a>, which are both fantastic examples of using working code as documentation.</p>
+          
+          <h3>Code conventions</h3>
+          
+          <p>Along with documenting the various modules and classes we have available, we also wanted a place to explain our frontend code conventions (e.g. how to name classes, how files are organized, etc.). This is especially useful for new developers who are getting up to speed, but is also beneficial as a reference for all developers.</p>
+          
+          <h3>Shake out inconsistencies</h3>
+          
+          <p>Finally, a secondary goal and benefit of documenting our styles is that it brings us face to face with inconsistencies that need to be ironed out. There have been numerous times that writing down how something works made these inconsistencies obvious. This acts as a great forcing function to get us to have consistent styles (although we haven&rsquo;t had time to fix all of them).</p>
+          
+          <h2>Conclusion</h2>
+          
+          <p>In the months since the guide was released, it has been successful at achieving each of these goals. Various people around the company consult it regularly for our logos and colors; developers refer to it when implementing common modules; new developers have learned our coding conventions on their own; and we&rsquo;ve found many ways to improve our visual style and code. Taking the time to build and document our brand guidelines and frontend code was well worth the effort, and I recommend anyone else who works on a moderately complex site build their own styleguide.</p>
+          <p class='follow-me'>
+            Thoughts? Reply
+            <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
+          </p>
+          <footer class='tags'>
+            Tags:
+            <span class='tag'>styleguide</span>
+            <span class='tag'>Optimizely</span>
+          </footer>
+        </article>
+        <article>
           <time datetime='2013-10-22'>
             <i>Posted on</i>
             Oct 22, 2013
@@ -207,63 +254,6 @@
             <span class='tag'>testing theory</span>
             <span class='tag'>A/B testing</span>
             <span class='tag'>framing</span>
-          </footer>
-        </article>
-        <article>
-          <time datetime='2013-09-22'>
-            <i>Posted on</i>
-            Sep 22, 2013
-          </time>
-          <h1><a href="/2013/09/22/using-gradients-in-place-of-images/">Using Gradients In Place of Images</a></h1>
-          <p>Recently at <a href="https://www.optimizely.com">Optimizely</a>, I needed to create ribbons as part of the design of our <a href="https://www.optimizely.com/ecommerce-ab-testing">Summertime Christmas</a> campaign (see image below). The easy way would have been to throw a repeating background image on some <code>div</code>s, but then I remembered CSS3 gradients can be used to create some pretty interesting patterns (for example, see <a href="http://lea.verou.me/">Lea Verou</a>&rsquo;s <a href="http://lea.verou.me/css3patterns/">CSS3 patterns gallery</a>). Besides being a novel use of gradients, it also makes my markup more semantic (no empty container <code>div</code>s required), and makes the design more flexible (everything is generated programmatically, and thus easily changeable, unlike images).</p>
-          
-          <p><img alt="Summertime Christmas campaign with ribbon background" src="http://jlzych.com/images/2013-09-22-using-gradients-in-place-of-images/summertime-xmas.png" /></p>
-          
-          <p><em>The ribbons of Summertime Christmas</em></p>
-          
-          <h2>The Technique</h2>
-          
-          <p>The basic technique is to make the color stops end and start at the same place, thus creating hard lines between colors. Then, set the <code>background-size</code> so the ribbon occupies a specific width instead of spreading across the entire element.</p>
-          
-          <p>Here&rsquo;s the code for the vertical ribbon (vendor-specific properties left out deliberately):</p>
-          <pre class="highlight css"><span class="nt">background</span><span class="o">:</span> <span class="nt">linear-gradient</span><span class="o">(</span>&#x000A;  <span class="nt">to</span> <span class="nt">right</span><span class="o">,</span>&#x000A;  <span class="nf">#4783bf</span> <span class="nt">8</span><span class="o">%,</span>&#x000A;  <span class="nt">transparent</span> <span class="nt">8</span><span class="o">%,</span> <span class="o">//</span> <span class="nt">transparent</span> <span class="nt">starts</span> <span class="nt">at</span> <span class="nt">the</span> <span class="nt">same</span> <span class="nt">spot</span> <span class="nt">the</span> <span class="nt">blue</span>&#x000A;                  <span class="o">//</span> <span class="nt">ends</span><span class="o">,</span> <span class="nt">creating</span> <span class="nt">a</span> <span class="nt">hard</span> <span class="nt">line</span><span class="o">.</span>&#x000A;  <span class="nt">transparent</span> <span class="nt">12</span><span class="o">%,</span>&#x000A;  <span class="nf">#4783bf</span> <span class="nt">12</span><span class="o">%,</span>&#x000A;  <span class="nf">#4783bf</span> <span class="nt">88</span><span class="o">%,</span>&#x000A;  <span class="nt">transparent</span> <span class="nt">88</span><span class="o">%,</span>&#x000A;  <span class="nt">transparent</span> <span class="nt">92</span><span class="o">%,</span>&#x000A;  <span class="nf">#4783bf</span> <span class="nt">92</span><span class="o">%</span>&#x000A;<span class="o">);</span>&#x000A;<span class="nt">background-repeat</span><span class="o">:</span> <span class="nt">no-repeat</span><span class="o">;</span>&#x000A;<span class="nt">background-size</span><span class="o">:</span> <span class="nt">80px</span> <span class="nt">100</span><span class="o">%;</span></pre>
-          <p data-height="268" data-theme-id="0" data-slug-hash="DhIJp" data-user="jlzych" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/jlzych/pen/DhIJp'>Vertical ribbon</a> by Jeff (<a href='http://codepen.io/jlzych'>@jlzych</a>) on <a href='http://codepen.io'>CodePen</a></p>
-          
-          <script async src="http://codepen.io/assets/embed/ei.js"></script>
-          
-          <p>Using percentages for the color stops (instead of hard-coded pixel values) allowed me to adjust the width of the ribbon by changing just one number — the first parameter of the <code>background-size</code>. (One thing to be careful of is that the ribbon can render imprecisely in certain browsers when the width gets small, so you may need to use pixel values in these situations.)</p>
-          
-          <p>To add the horizontal ribbon, it&rsquo;s a simple matter of layering multiple <code>background-image</code>s on top of each other (by providing a comma-separated list of values, the first of which is on top), and switching the vertical and horizontal values of the <code>background-size</code>.</p>
-          <pre class="highlight css"><span class="nc">.ribbons</span> <span class="p">{</span>&#x000A;  <span class="nl">background</span><span class="p">:</span> <span class="n">linear-gradient</span><span class="p">(</span>&#x000A;    <span class="n">to</span> <span class="nb">right</span><span class="p">,</span>&#x000A;    <span class="m">#4783bf</span> <span class="m">8</span><span class="err">%</span><span class="p">,</span>&#x000A;    <span class="nb">transparent</span> <span class="m">8</span><span class="err">%</span><span class="p">,</span>&#x000A;    <span class="nb">transparent</span> <span class="m">12</span><span class="err">%</span><span class="p">,</span>&#x000A;    <span class="m">#4783bf</span> <span class="m">12</span><span class="err">%</span><span class="p">,</span>&#x000A;    <span class="m">#4783bf</span> <span class="m">88</span><span class="err">%</span><span class="p">,</span>&#x000A;    <span class="nb">transparent</span> <span class="m">88</span><span class="err">%</span><span class="p">,</span>&#x000A;    <span class="nb">transparent</span> <span class="m">92</span><span class="err">%</span><span class="p">,</span>&#x000A;    <span class="m">#4783bf</span> <span class="m">92</span><span class="err">%</span>&#x000A;  <span class="p">),</span>&#x000A;  <span class="n">linear-gradient</span><span class="p">(</span>&#x000A;    <span class="n">to</span> <span class="nb">bottom</span><span class="p">,</span>&#x000A;    <span class="m">#4783bf</span> <span class="m">8</span><span class="err">%</span><span class="p">,</span>&#x000A;    <span class="nb">transparent</span> <span class="m">8</span><span class="err">%</span><span class="p">,</span>&#x000A;    <span class="nb">transparent</span> <span class="m">12</span><span class="err">%</span><span class="p">,</span>&#x000A;    <span class="m">#4783bf</span> <span class="m">12</span><span class="err">%</span><span class="p">,</span>&#x000A;    <span class="m">#4783bf</span> <span class="m">88</span><span class="err">%</span><span class="p">,</span>&#x000A;    <span class="nb">transparent</span> <span class="m">88</span><span class="err">%</span><span class="p">,</span>&#x000A;    <span class="nb">transparent</span> <span class="m">92</span><span class="err">%</span><span class="p">,</span>&#x000A;    <span class="m">#4783bf</span> <span class="m">92</span><span class="err">%</span>&#x000A;  <span class="p">),</span>&#x000A;  <span class="m">#1964af</span><span class="p">;</span> <span class="err">//</span> <span class="err">the</span> <span class="err">darker</span> <span class="err">blue</span> <span class="err">behind</span> <span class="err">the</span> <span class="err">ribbons</span>&#x000A;&#x000A;  <span class="nl">background-repeat</span><span class="p">:</span> <span class="nb">no-repeat</span><span class="p">;</span>&#x000A;  <span class="nl">background-position</span><span class="p">:</span> <span class="nb">center</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span> <span class="nb">center</span><span class="p">,</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>&#x000A;  <span class="nl">background-size</span><span class="p">:</span> <span class="m">80px</span> <span class="m">100</span><span class="err">%</span><span class="p">,</span> <span class="m">100</span><span class="err">%</span> <span class="m">80px</span><span class="p">,</span> <span class="n">cover</span><span class="p">;</span>&#x000A;<span class="p">}</span></pre>
-          <p data-height="268" data-theme-id="0" data-slug-hash="pBwLs" data-user="jlzych" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/jlzych/pen/pBwLs'>Vertical and horizontal ribbon</a> by Jeff (<a href='http://codepen.io/jlzych'>@jlzych</a>) on <a href='http://codepen.io'>CodePen</a></p>
-          
-          <script async src="http://codepen.io/assets/embed/ei.js"></script>
-          
-          <h2>Some SCSS to Save Us</h2>
-          
-          <p>You&rsquo;ve probably noticed there are a lot of repeated values within each <code>linear-gradient</code>. You also probably noticed that the vertical and horizontal ribbons use the same <code>linear-gradient</code>, except for the direction they&rsquo;re rendered (the first parameter). As I was developing this, it quickly became cumbersome to fiddle with the ribbon&rsquo;s sizing and color, so I leveraged SCSS to help me out. I&rsquo;m not going to explain everything that&rsquo;s going on here, but am providing this code for anyone who finds it useful (and for my own future reference).</p>
-          <pre class="highlight scss"><span class="nc">.ribbons</span> <span class="p">{</span>&#x000A;  <span class="c1">// Variable declarations&#x000A;</span>  <span class="nv">$ribbon-blue</span><span class="p">:</span> <span class="mh">#4783bf</span><span class="p">;</span>&#x000A;  <span class="nv">$ribbon-width</span><span class="p">:</span> <span class="m">80px</span><span class="p">;</span>&#x000A;  <span class="nv">$stops</span><span class="p">:</span> <span class="p">(</span><span class="m">8%</span><span class="o">,</span> <span class="m">12%</span><span class="o">,</span> <span class="m">88%</span><span class="o">,</span> <span class="m">92%</span><span class="p">);</span>&#x000A;  <span class="nv">$ribbon-gradient</span><span class="p">:</span> <span class="nv">$ribbon-blue</span> <span class="nf">nth</span><span class="p">(</span><span class="nv">$stops</span><span class="o">,</span> <span class="m">1</span><span class="p">)</span><span class="o">,</span> <span class="nb">transparent</span> <span class="nf">nth</span><span class="p">(</span><span class="nv">$stops</span><span class="o">,</span> <span class="m">1</span><span class="p">)</span><span class="o">,</span> <span class="nb">transparent</span> <span class="nf">nth</span><span class="p">(</span><span class="nv">$stops</span><span class="o">,</span> <span class="m">2</span><span class="p">)</span><span class="o">,</span> <span class="nv">$ribbon-blue</span> <span class="nf">nth</span><span class="p">(</span><span class="nv">$stops</span><span class="o">,</span> <span class="m">2</span><span class="p">)</span><span class="o">,</span> <span class="nv">$ribbon-blue</span> <span class="nf">nth</span><span class="p">(</span><span class="nv">$stops</span><span class="o">,</span> <span class="m">3</span><span class="p">)</span><span class="o">,</span> <span class="nb">transparent</span> <span class="nf">nth</span><span class="p">(</span><span class="nv">$stops</span><span class="o">,</span> <span class="m">3</span><span class="p">)</span><span class="o">,</span> <span class="nb">transparent</span> <span class="nf">nth</span><span class="p">(</span><span class="nv">$stops</span><span class="o">,</span> <span class="m">4</span><span class="p">)</span><span class="o">,</span> <span class="nv">$ribbon-blue</span> <span class="nf">nth</span><span class="p">(</span><span class="nv">$stops</span><span class="o">,</span> <span class="m">4</span><span class="p">);</span>&#x000A;&#x000A;  <span class="c1">// Ribbon background stuff&#x000A;</span>  <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$new-blue</span><span class="p">;</span>&#x000A;  <span class="k">@include</span> <span class="nd">background</span><span class="p">(</span>&#x000A;    <span class="nf">linear-gradient</span><span class="p">(</span><span class="n">to</span> <span class="nb">right</span><span class="o">,</span> <span class="nv">$ribbon-gradient</span><span class="p">)</span><span class="o">,</span>&#x000A;    <span class="nf">linear-gradient</span><span class="p">(</span><span class="n">to</span> <span class="nb">bottom</span><span class="o">,</span> <span class="nv">$ribbon-gradient</span><span class="p">)</span><span class="o">,</span>&#x000A;    <span class="nv">$new-blue</span><span class="p">);</span>&#x000A;  <span class="k">@include</span> <span class="nd">background-size</span><span class="p">(</span><span class="nv">$ribbon-width</span> <span class="m">100%</span><span class="o">,</span> <span class="m">100%</span> <span class="nv">$ribbon-width</span><span class="o">,</span> <span class="n">cover</span><span class="p">);</span>&#x000A;  <span class="nl">background-position</span><span class="p">:</span> <span class="nb">center</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span> <span class="nb">center</span><span class="o">,</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>&#x000A;  <span class="nl">background-repeat</span><span class="p">:</span> <span class="nb">no-repeat</span><span class="p">;</span>&#x000A;<span class="p">}</span></pre>
-          <p>Ah, so much cleaner and compact! And it puts every value in one place, making it easy to tweak any aspect of the ribbon.</p>
-          
-          <h2>One More Example</h2>
-          
-          <p>I also recently used this technique on the <a href="http://styleguide.optimizely.com">Optimizely styleguide</a> to create the light blue stripe in our navigation, instead of creating a background image or using multiple elements.</p>
-          
-          <p><img alt="Optimizely styleguide navigation" src="http://jlzych.com/images/2013-09-22-using-gradients-in-place-of-images/styleguide-nav.png" /></p>
-          
-          <p><em>Optimizely&rsquo;s styleguide navigation</em></p>
-          
-          <h2>Conclusion</h2>
-          
-          <p>This technique is handy for avoiding image creation, which improves page performance (by avoiding HTTP requests and reducing bandwidth usage), and makes the design easier to modify (no need to fire up Photoshop to make changes!). This example is just scratching the surface of novel ways gradients can be used to draw images in the browser.</p>
-          <p class='follow-me'>
-            Thoughts? Reply
-            <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
-          </p>
-          <footer class='tags'>
-            Tags:
-            <span class='tag'>css3</span>
-            <span class='tag'>gradients</span>
           </footer>
         </article>
         <a class="view-all-link" href="/archives">View all posts &raquo;</a>

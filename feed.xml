@@ -5,10 +5,52 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2013-10-23T04:25:00Z</updated>
+  <updated>2013-11-11T20:16:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>Why we built the Optimizely Styleguide</title>
+    <link rel="alternate" href="/2013/11/11/why-we-built-the-optimizely-styleguide/"/>
+    <id>/2013/11/11/why-we-built-the-optimizely-styleguide/</id>
+    <published>2013-11-11T20:16:00Z</published>
+    <updated>2013-11-11T20:16:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;A few months ago, myself and the design team created the &lt;a href="http://styleguide.optimizely.com"&gt;Optimizely Stylguide&lt;/a&gt;. It&amp;rsquo;s a living document of our brand standards and the visual style of our site. Designing, building, and writing the content for it took a significant amount of time, but it was worth the effort. In this post I&amp;rsquo;m going to explain why we did it.&lt;/p&gt;
+
+&lt;h2&gt;Why build a styleguide?&lt;/h2&gt;
+
+&lt;h3&gt;A branding one-stop-shop&lt;/h3&gt;
+
+&lt;p&gt;The original reason we wanted to build a styleguide was because we often get requests from people around the company for our logo. They also like to ask us which blue is our official blue. (It&amp;rsquo;s &lt;code&gt;#1964af&lt;/code&gt;). Providing one place for everyone to access this information, and explaining when and how to use our logos, saves both parties time.&lt;/p&gt;
+
+&lt;p&gt;To achieve this goal, we put the full Optimizely logo, the Optimizely O, and our official brand colors on the styleguide&amp;rsquo;s home page. We provided the logos in png, psd, svg, and eps formats in black, white, and Optimizely blue, which covers the widest use cases. Since this is the primary information that most people are looking for, it makes sense to have it be the most immediately available.&lt;/p&gt;
+
+&lt;h3&gt;Document our visual style&lt;/h3&gt;
+
+&lt;p&gt;The second biggest driving force was to provide developers (including myself) documentation of the modules, classes, and mixins that exist in the codebase. It&amp;rsquo;s important that we maintain a consistent visual style, and re-using classes and mixins helps ensure we&amp;rsquo;re consistent. It also speeds up development. There have been a lot of times that I&amp;rsquo;ve written a mixin or class that someone didn&amp;rsquo;t know about, and they re-implemented it in a different area of our code. Documenting these styles helps prevent this.&lt;/p&gt;
+
+&lt;p&gt;Furthermore, complex widgets that require a combination of HTML, CSS, and JS to function properly (such as popovers and dialog boxes) are hard to figure out just from reading source code. Explaining how to add these modules to a page, and all of their styling and JS options, is invaluable.&lt;/p&gt;
+
+&lt;p&gt;In addition to just explaining how something works, we also wanted to document when it&amp;rsquo;s appropriate to use these various modules. You also can&amp;rsquo;t get this from reading code alone. This helps both engineers and designers understand when to use a popover instead of a tooltip, for example.&lt;/p&gt;
+
+&lt;p&gt;This content is the meat of the site, and the parts that change most frequently (in fact, many still need to be written). We decided the most effective way to document these elements was to create real, working examples with HTML, CSS, and JS, rather than just provide static screenshots. This allows developers to interact with the widgets, see how they behave, and inspect the code. It also makes it easier to communicate complex modules, such as popovers and dialog boxes. We took a lot of inspiration from &lt;a href="http://getbootstrap.com/"&gt;Twitter&amp;rsquo;s Bootstrap&lt;/a&gt; and &lt;a href="http://foundation.zurb.com/"&gt;Zurb&amp;rsquo;s Foundation&lt;/a&gt;, which are both fantastic examples of using working code as documentation.&lt;/p&gt;
+
+&lt;h3&gt;Code conventions&lt;/h3&gt;
+
+&lt;p&gt;Along with documenting the various modules and classes we have available, we also wanted a place to explain our frontend code conventions (e.g. how to name classes, how files are organized, etc.). This is especially useful for new developers who are getting up to speed, but is also beneficial as a reference for all developers.&lt;/p&gt;
+
+&lt;h3&gt;Shake out inconsistencies&lt;/h3&gt;
+
+&lt;p&gt;Finally, a secondary goal and benefit of documenting our styles is that it brings us face to face with inconsistencies that need to be ironed out. There have been numerous times that writing down how something works made these inconsistencies obvious. This acts as a great forcing function to get us to have consistent styles (although we haven&amp;rsquo;t had time to fix all of them).&lt;/p&gt;
+
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;In the months since the guide was released, it has been successful at achieving each of these goals. Various people around the company consult it regularly for our logos and colors; developers refer to it when implementing common modules; new developers have learned our coding conventions on their own; and we&amp;rsquo;ve found many ways to improve our visual style and code. Taking the time to build and document our brand guidelines and frontend code was well worth the effort, and I recommend anyone else who works on a moderately complex site build their own styleguide.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Using Channel Factors to Increase Offline Conversions</title>
     <link rel="alternate" href="/2013/10/22/using-channel-factors-to-increase-offline-conversions/"/>
@@ -318,42 +360,6 @@ Do you want your users to:&lt;/p&gt;
 &lt;h2&gt;Conclusion&lt;/h2&gt;
 
 &lt;p&gt;This technique is handy for avoiding image creation, which improves page performance (by avoiding HTTP requests and reducing bandwidth usage), and makes the design easier to modify (no need to fire up Photoshop to make changes!). This example is just scratching the surface of novel ways gradients can be used to draw images in the browser.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>The Importance of Good Defaults</title>
-    <link rel="alternate" href="/2013/09/09/the-importance-of-good-defaults/"/>
-    <id>/2013/09/09/the-importance-of-good-defaults/</id>
-    <published>2013-09-10T01:32:00Z</published>
-    <updated>2013-09-10T01:32:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;One of the simplest and most robust findings from &lt;a href="http://en.wikipedia.org/wiki/Behavioral_economics"&gt;behavioral economics&lt;/a&gt; is that when people are faced with a choice they tend to stick with the default option. This sounds like something that shouldn’t have any effect on people. Common sense leads us to believe we&amp;rsquo;ll always choose whichever option benefits us the most, regardless of the default. Although this intuitively makes sense, numerous studies show that&amp;rsquo;s not the case. For example, most countries have an option for people to donate their organs upon their death. In America, the default choice is to not donate organs, meaning they must specifically check a box on a form (an &amp;ldquo;opt-in&amp;rdquo; system). As a result, the consent rate is only about 28%. In contrast, Belgium’s default option is to donate organs (an &amp;ldquo;opt-out&amp;rdquo; system), in which about 98% of the population consent to donation (&lt;a href="http://www.dangoldstein.com/papers/DefaultsScience.pdf"&gt;read the fully study here [pdf]&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;There are many explanations for this behavior. One reason is that making a choice takes effort (even if it’s only checking a box), whereas sticking with the default is effortless. Another reason is when decisions have unclear costs and benefits that are difficult to evaluate (such as organ donation), defaults can imply the &amp;ldquo;recommended&amp;rdquo; option, thus saving people the time of thinking through the choice themselves. It also sends the signal that this is the option most people choose and is a safe bet (which reinforces the idea of &lt;a href="http://jlzych.com/2013/08/02/everyones-reading-this-increase-conversions-with-social-proof/"&gt;social proof&lt;/a&gt;).&lt;/p&gt;
-
-&lt;h2&gt;Applications to Web Design&lt;/h2&gt;
-
-&lt;p&gt;Applying this insight to web pages is fairly straightforward: when presenting people with a choice, provide a default option. The simplest method is to pre-populate form fields with the most common choice. For example, the checkout form of an ecommerce store whose customers are mainly American should have &amp;ldquo;United States&amp;rdquo; already chosen as the default country. Obviously, there may be customers from other countries, but they would have to select an option were it left blank anyway. This decreases friction when completing a form, decreases errors, and &lt;a href="http://www.nngroup.com/articles/the-power-of-defaults/"&gt;increases usability&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The previous scenario is useful, but unlikely to increase conversions significantly. Defaults really shine when people are faced with a less clear-cut choice. For example, if you have multiple service plans, highlighting one will guide people to that option. Deciding which option to make the default is something you should A/B test, but a good approach is to use existing customer data to preselect the most popular option. For example, if you have multiple pricing tiers, you could highlight the most common one.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="No default plan highlighted" src="http://jlzych.com/images/2013-09-09-the-importance-of-good-defaults/no-default.png" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;No recommended plan&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="The most popular plan is highlighted" src="http://jlzych.com/images/2013-09-09-the-importance-of-good-defaults/default.png" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;The most popular &amp;ldquo;Plus&amp;rdquo; plan is highlighted&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Another strategy is to select the option you want your potential customers to select (such as the one that earns you the most profit). This will subtly nudge potential customers towards this option. For example, &lt;a href="https://www.optimizely.com"&gt;Optimizely&lt;/a&gt; ran an experiment recommending their Gold plan and saw a 20% increase in signups to that option.&lt;/p&gt;
-
-&lt;p&gt;Recommending pricing plans is just one way that default options can be applied to web design. Consider experimenting with your forms, account settings, preferences, or anywhere else people face a choice. By providing a default option to fall back on, you&amp;rsquo;re doing a favor for your customers and yourself.&lt;/p&gt;
-
-&lt;h2&gt;Further Reading&lt;/h2&gt;
-
-&lt;p&gt;Read Eric Johnson and Daniel Goldstein&amp;rsquo;s full study on defaults, titled &lt;a href="http://www.dangoldstein.com/papers/DefaultsScience.pdf"&gt;&amp;ldquo;Do defaults save lives?&amp;rdquo;&lt;/a&gt; (2003).&lt;/p&gt;
 </content>
   </entry>
 </feed>
