@@ -5,10 +5,38 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2014-01-13T00:07:00Z</updated>
+  <updated>2014-02-09T20:49:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>Response to CSS Regions Considered Harmful</title>
+    <link rel="alternate" href="/2014/02/09/response-to-css-regions-considered-harmful/"/>
+    <id>/2014/02/09/response-to-css-regions-considered-harmful/</id>
+    <published>2014-02-09T20:49:00Z</published>
+    <updated>2014-02-09T20:49:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;a href="http://people.opera.com/howcome/"&gt;Håkon Wium Lie&lt;/a&gt;, the father of CSS, wrote a &lt;a href="http://alistapart.com/blog/post/css-regions-considered-harmful"&gt;great critique&lt;/a&gt; of the &lt;a href="http://www.w3.org/TR/2013/WD-css3-regions-20130528/"&gt;CSS Regions spec&lt;/a&gt;. His article pointed out many of the same flaws that I&amp;rsquo;ve noticed.&lt;/p&gt;
+
+&lt;p&gt;My biggest complaint is it requires empty, dummy HTML elements to flow content into. I can think of nothing more un-semantic than having to place empty elements in your document purely for presentational purposes. As Håkon says, &amp;ldquo;it’s not regions per se that are harmful to web semantics, it’s the fact that they are encoded as presentational HTML elements.&amp;rdquo; Exactly. HTML is supposed to provide a meaningful, semantic structure to the content. Empty elements provide no meaning or structure whatsoever.&lt;/p&gt;
+
+&lt;p&gt;Håkon goes on to say, &amp;ldquo;If we want regions on the web, we should find a way to write them in CSS and not in HTML.&amp;rdquo; Ideally, the spec would allow us to break text up into multiple regions through CSS alone. The spec, as it&amp;rsquo;s written today, breaks HTML and CSS&amp;rsquo;s &lt;a href="http://en.wikipedia.org/wiki/Separation_of_presentation_and_content"&gt;separation of presentation and content&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;A few people have &lt;a href="http://flippinawesome.org/2014/01/27/css-regions-matter/"&gt;proposed using pseudo elements&lt;/a&gt; to overcome the empty element issue. While this is a good idea, it only covers a limited number of use cases. Complex layouts, like &lt;a href="http://www.w3.org/TR/2013/WD-css3-regions-20130528/#named-flows-and-regions"&gt;the sample&lt;/a&gt; provided in the spec, are not possible with pseudo-elements alone.&lt;/p&gt;
+
+&lt;p&gt;Empty HTML elements are the result of another issue I have with the spec: it&amp;rsquo;s applying a desktop publishing solution to the problem of creating rich magazine layouts on the web. The spec is analogous to laying out a page in InDesign by creating text boxes and flowing content from one box to the next. This works great when you control the page size and typography, and can add and resize text boxes as necessary. Unfortunately, the web is more dynamic than this. There&amp;rsquo;s no given page size, and browsers render pages differently depending on a person&amp;rsquo;s type preferences and device. Many of the demos I&amp;rsquo;ve seen, such as &lt;a href="http://sarasoueidan.com/blog/css-regions-with-shapes-for-readability/"&gt;this example&lt;/a&gt; from &lt;a href="http://sarasoueidan.com/"&gt;Sara Soueidan&lt;/a&gt; (pictured below), have a design that is tightly coupled to the amount of text, the typeface, and the font size. If the reader set their type size to large, or the fall back font is loaded, this layout will not render as designed.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Complex CSS Regions example" src="/images/2014-02-09-response-to-css-regions-considered-harmful/regions-demo.png?1391981971" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;This regions example presents a design that is tightly coupled to the typeface and font size.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Of course, as web developers part of our job is to find solutions to these problems. But I used this example to illustrate my larger point, which is &lt;strong&gt;the spec awkwardly applies a desktop publishing solution to the web, the result of which is unsemantic HTML&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;The web would benefit from more complex layouts, and I commend the goal of the proposal. Unfortunately, it encourages unsemantic markup, and tries to use a solution from the static desktop publishing world to the dynamic web. We need a solution designed for the fluid nature of the web that maintains HTML and CSS&amp;rsquo;s separation of concerns.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Using Data for Social Proof</title>
     <link rel="alternate" href="/2014/01/12/using-data-for-social-proof/"/>
@@ -20,7 +48,7 @@
     </author>
     <content type="html">&lt;p&gt;I recently ran a test on Optimizely&amp;rsquo;s &lt;a href="https://www.optimizely.com/free-trial"&gt;free trial signup page&lt;/a&gt; that&amp;rsquo;s a great example of using social proof to increase conversions. I&amp;rsquo;ve &lt;a href="/2013/08/02/everyones-reading-this-increase-conversions-with-social-proof/"&gt;written about social proof&lt;/a&gt; before, but the gist of the idea is that telling a person other people are already using your product or service makes them more likely to also use it. Knowing other people have already taken a particular action reduces perceived risk.&lt;/p&gt;
 
-&lt;p&gt;The free trial signup page is a search engine marketing page that people land on when coming from an ad. The page started out as a simple signup form with an image to illustrate A/B testing, whose primary goal is to get people to sign up for &lt;a href="https://www.optimizely.com"&gt;Optimizely&lt;/a&gt;. I created a variation that displayed the total number of visitors tested and experiments run with Optimizely, which are live counters that tick up in real time. I wanted to see if using data to demonstrate how many people are already using Optimizely was an effective form of social proof.&lt;/p&gt;
+&lt;p&gt;The free trial signup page is a search engine marketing page that people land on when coming from an ad. The page started out as a simple signup form with an image to illustrate &lt;a href="https://www.optimizely.com/split-testing"&gt;split testing&lt;/a&gt;, whose primary goal is to get people to sign up for &lt;a href="https://www.optimizely.com"&gt;Optimizely&lt;/a&gt;. I created a variation that displayed the total number of visitors tested and experiments run with Optimizely, which are live counters that tick up in real time. I wanted to see if using data to demonstrate how many people are already using Optimizely was an effective form of social proof.&lt;/p&gt;
 
 &lt;p&gt;&lt;img alt="Original page with no social proof" src="http://jlzych.com/images/2014-01-12-using-data-for-social-proof/1-original.png" /&gt;&lt;/p&gt;
 
@@ -241,37 +269,6 @@ Do you want your users to:&lt;/p&gt;
 &lt;h2&gt;Closing Thoughts&lt;/h2&gt;
 
 &lt;p&gt;Extending selectors can save you time and DRY out your code, when used properly. As with most SASS features, it can be abused and create some pretty hairy CSS, but as long as you keep an eye on the final CSS you&amp;rsquo;ll be fine.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Framing your message for maximum impact</title>
-    <link rel="alternate" href="/2013/09/30/framing-your-message-for-maximum-impact/"/>
-    <id>/2013/09/30/framing-your-message-for-maximum-impact/</id>
-    <published>2013-10-01T04:09:00Z</published>
-    <updated>2013-10-01T04:09:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;A common piece of advice in the website optimization space is to test headlines and copy to find the optimal messaging. But there are endless possibilities and it’s not feasible to test them all, so how do you focus your tests on only the content that’s most likely to have an impact? Having a good hypothesis of why a change will be effective is key, and one such theory is &lt;strong&gt;framing&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Framing is the simple idea that &lt;strong&gt;different ways of presenting the same information will evoke different emotional responses&lt;/strong&gt;, and thus influence a person’s decision. A simple example is the statement, &amp;ldquo;the odds of survival one month after surgery are 90%&amp;rdquo; is more reassuring than the equivalent statement of, &amp;ldquo;mortality within one month of surgery is 10%.&amp;rdquo; Although these statements present the same information, they bring drastically different associations to mind. With the former it’s easy to envision an outcome of survival (and thus be willing to go through with the surgery), whereas the latter evokes death (and will be less likely to take the perceived risk).&lt;/p&gt;
-
-&lt;p&gt;The subtleties of framing a message are well known to marketers. For example, &lt;a href="http://www.citycliq.com/"&gt;CityCliq&lt;/a&gt; saw an &lt;a href="http://www.abtests.com/test/284001/landing-for-citycliq"&gt;89% conversion increase&lt;/a&gt; by changing their headline from, &amp;ldquo;Businesses grow faster online!&amp;rdquo; to, &amp;ldquo;Create a webpage for your business.&amp;rdquo; (They have since further optimized their homepage to have a different headline). The original headline is abstract and framed passively, whereas the winning variation is framed in an action-oriented way.&lt;/p&gt;
-
-&lt;p&gt;This idea can be used more widely than for just selling products &amp;mdash; any organization that’s trying to spur people to action can make use of it as well. Convincing people to volunteer for a cause, sign a petition, donate money, etc., can all be greatly influenced by the way the message is framed. For example, &lt;a href="http://www.ncbi.nlm.nih.gov/pubmed/7789354"&gt;Banks, et al.&lt;/a&gt;, studied how this phenomenon affects behavior by showing two groups of women videos on breast cancer and mammography in order to convince them to get screened. The first group&amp;rsquo;s video was gain-framed, espousing the benefits of having a mammogram, whereas the second group&amp;rsquo;s video was loss-framed and emphasized the risks of not having one. Only 51.5% of those who saw the gain-framed video got a mammography, compared to 61.2% of the latter group (an 18% increase). The information presented was equivalent, but receiving it in a loss-framed context forced people to imagine the scenario of having breast cancer, which spurred them to action.&lt;/p&gt;
-
-&lt;p&gt;So how do you know which way to frame your message? There are no one-size-fits-all rules &amp;mdash; it’s still important to test variations. But now instead of arbitrarily changing words (which could go on ad infinitum) you have a narrower and more focused approach to crafting messages. What you want to avoid is testing essentially equivalent phrases that are unlikely to have any significant impact on your goals. For example, the phrases, &amp;ldquo;the odds of survival one month after surgery are 90%&amp;rdquo; and, &amp;ldquo;there is a 90% chance you will be alive a month after surgery&amp;rdquo; contain the same information and are framed equivalently, and thus aren’t likely to change your visitors’ behavior. Instead, &lt;strong&gt;you should think about strikingly different ways you can frame your value proposition&lt;/strong&gt; and test each of them. Try asking yourself:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Is this positive or negative (e.g. the odds of survival example)?&lt;/li&gt;
-&lt;li&gt;Is this loss-framed or gain-framed (e.g. the mammography study)?&lt;/li&gt;
-&lt;li&gt;Is this action-oriented or passive (e.g. the CityCliq create a web page example)?&lt;/li&gt;
-&lt;li&gt;More generally, what associations are brought to mind? For example, deli meats that advertise &amp;ldquo;95% fat free&amp;rdquo; sounds healthy, whereas &amp;ldquo;Only 5% fat&amp;rdquo; sounds unhealthy. This is tricky to ascertain a priori, but you can read messages to people around you (co-workers, friends, family) and ask what first comes to mind when they hear it.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Your message may not have a clear answer for all of these, but for the pertinent questions you should &lt;strong&gt;test messages with the opposite framing&lt;/strong&gt;. More likely than not, one of them will resonate better with your audience.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;For more on this topic, read chapter 7 of Daniel Kahneman’s book, &amp;ldquo;&lt;a href="http://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374275637/"&gt;Thinking, Fast and Slow.&lt;/a&gt;&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
 </content>
   </entry>
 </feed>
