@@ -3,6 +3,7 @@
     <meta charset='utf-8'>
     <title>
       Jeff Zych
+       - Re-Designing Optimizely's Preview Tool
     </title>
     <meta content="Jeff Zych's homepage" name='description'>
     <meta content='Jeff Zych' name='author'>
@@ -208,164 +209,6 @@
             <span class='tag'>design process</span>
           </footer>
         </article>
-        <article>
-          <time datetime='2014-02-09'>
-            <i>Posted on</i>
-            Feb  9, 2014
-          </time>
-          <h1><a href="/2014/02/09/response-to-css-regions-considered-harmful/">Response to CSS Regions Considered Harmful</a></h1>
-          <p><a href="http://people.opera.com/howcome/">Håkon Wium Lie</a>, the father of CSS, wrote a <a href="http://alistapart.com/blog/post/css-regions-considered-harmful">great critique</a> of the <a href="http://www.w3.org/TR/2013/WD-css3-regions-20130528/">CSS Regions spec</a>. His article pointed out many of the same flaws that I&rsquo;ve noticed.</p>
-          
-          <p>My biggest complaint is it requires empty, dummy HTML elements to flow content into. I can think of nothing more un-semantic than having to place empty elements in your document purely for presentational purposes. As Håkon says, &ldquo;it’s not regions per se that are harmful to web semantics, it’s the fact that they are encoded as presentational HTML elements.&rdquo; Exactly. HTML is supposed to provide a meaningful, semantic structure to the content. Empty elements provide no meaning or structure whatsoever.</p>
-          
-          <p>Håkon goes on to say, &ldquo;If we want regions on the web, we should find a way to write them in CSS and not in HTML.&rdquo; Ideally, the spec would allow us to break text up into multiple regions through CSS alone. The spec, as it&rsquo;s written today, breaks HTML and CSS&rsquo;s <a href="http://en.wikipedia.org/wiki/Separation_of_presentation_and_content">separation of presentation and content</a>.</p>
-          
-          <p>A few people have <a href="http://flippinawesome.org/2014/01/27/css-regions-matter/">proposed using pseudo elements</a> to overcome the empty element issue. While this is a good idea, it only covers a limited number of use cases. Complex layouts, like <a href="http://www.w3.org/TR/2013/WD-css3-regions-20130528/#named-flows-and-regions">the sample</a> provided in the spec, are not possible with pseudo-elements alone.</p>
-          
-          <p>Empty HTML elements are the result of another issue I have with the spec: it&rsquo;s applying a desktop publishing solution to the problem of creating rich magazine layouts on the web. The spec is analogous to laying out a page in InDesign by creating text boxes and flowing content from one box to the next. This works great when you control the page size and typography, and can add and resize text boxes as necessary. Unfortunately, the web is more dynamic than this. There&rsquo;s no given page size, and browsers render pages differently depending on a person&rsquo;s type preferences and device. Many of the demos I&rsquo;ve seen, such as <a href="http://sarasoueidan.com/blog/css-regions-with-shapes-for-readability/">this example</a> from <a href="http://sarasoueidan.com/">Sara Soueidan</a> (pictured below), have a design that is tightly coupled to the amount of text, the typeface, and the font size. If the reader set their type size to large, or the fall back font is loaded, this layout will not render as designed.</p>
-          
-          <p><img alt="Complex CSS Regions example" src="/images/2014-02-09-response-to-css-regions-considered-harmful/regions-demo.png?1391981971" /></p>
-          
-          <p><em>This regions example presents a design that is tightly coupled to the typeface and font size.</em></p>
-          
-          <p>Of course, as web developers part of our job is to find solutions to these problems. But I used this example to illustrate my larger point, which is <strong>the spec awkwardly applies a desktop publishing solution to the web, the result of which is unsemantic HTML</strong>.</p>
-          
-          <p>The web would benefit from more complex layouts, and I commend the goal of the proposal. Unfortunately, it encourages unsemantic markup, and tries to use a solution from the static desktop publishing world to the dynamic web. We need a solution designed for the fluid nature of the web that maintains HTML and CSS&rsquo;s separation of concerns.</p>
-          <p class='follow-me'>
-            Thoughts? Reply
-            <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
-          </p>
-          <footer class='tags'>
-            Tags:
-            <span class='tag'>css</span>
-          </footer>
-        </article>
-        <article>
-          <time datetime='2014-01-12'>
-            <i>Posted on</i>
-            Jan 12, 2014
-          </time>
-          <h1><a href="/2014/01/12/using-data-for-social-proof/">Using Data for Social Proof</a></h1>
-          <p>I recently ran a test on Optimizely&rsquo;s <a href="https://www.optimizely.com/free-trial">free trial signup page</a> that&rsquo;s a great example of using social proof to increase conversions. I&rsquo;ve <a href="/2013/08/02/everyones-reading-this-increase-conversions-with-social-proof/">written about social proof</a> before, but the gist of the idea is that telling a person other people are already using your product or service makes them more likely to also use it. Knowing other people have already taken a particular action reduces perceived risk.</p>
-          
-          <p>The free trial signup page is a search engine marketing page that people land on when coming from an ad. The page started out as a simple signup form with an image to illustrate <a href="https://www.optimizely.com/split-testing">split testing</a>, whose primary goal is to get people to sign up for <a href="https://www.optimizely.com">Optimizely</a>. I created a variation that displayed the total number of visitors tested and experiments run with Optimizely, which are live counters that tick up in real time. I wanted to see if using data to demonstrate how many people are already using Optimizely was an effective form of social proof.</p>
-          
-          <p><img alt="Original page with no social proof" src="http://jlzych.com/images/2014-01-12-using-data-for-social-proof/1-original.png" /></p>
-          
-          <p><em>Original page with no social proof.</em></p>
-          
-          <p><img alt="Variation with social proof" src="http://jlzych.com/images/2014-01-12-using-data-for-social-proof/2-variation.png" /></p>
-          
-          <p><em>Variation with the total visitors tested and experiments run as social proof.</em></p>
-          
-          <p>The test was a definitive win that resulted in an 8.7% lift in sign ups. The change itself was relatively simple (i.e. easy to design, easy to implement), but the test further proved the power of social proof.</p>
-          <p class='follow-me'>
-            Thoughts? Reply
-            <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
-          </p>
-          <footer class='tags'>
-            Tags:
-            <span class='tag'>testing theory</span>
-            <span class='tag'>A/B testing</span>
-          </footer>
-        </article>
-        <article>
-          <time datetime='2013-11-11'>
-            <i>Posted on</i>
-            Nov 11, 2013
-          </time>
-          <h1><a href="/2013/11/11/why-we-built-the-optimizely-styleguide/">Why we built the Optimizely Styleguide</a></h1>
-          <p>A few months ago, myself and the design team created the <a href="http://styleguide.optimizely.com">Optimizely Stylguide</a>. It&rsquo;s a living document of our brand standards and the visual style of our site. Designing, building, and writing the content for it took a significant amount of time, but it was worth the effort. In this post I&rsquo;m going to explain why we did it.</p>
-          
-          <h2>Why build a styleguide?</h2>
-          
-          <h3>A branding one-stop-shop</h3>
-          
-          <p>The original reason we wanted to build a styleguide was because we often get requests from people around the company for our logo. They also like to ask us which blue is our official blue. (It&rsquo;s <code>#1964af</code>). Providing one place for everyone to access this information, and explaining when and how to use our logos, saves both parties time.</p>
-          
-          <p>To achieve this goal, we put the full Optimizely logo, the Optimizely O, and our official brand colors on the styleguide&rsquo;s home page. We provided the logos in png, psd, svg, and eps formats in black, white, and Optimizely blue, which covers the widest use cases. Since this is the primary information that most people are looking for, it makes sense to have it be the most immediately available.</p>
-          
-          <h3>Document our visual style</h3>
-          
-          <p>The second biggest driving force was to provide developers (including myself) documentation of the modules, classes, and mixins that exist in the codebase. It&rsquo;s important that we maintain a consistent visual style, and re-using classes and mixins helps ensure we&rsquo;re consistent. It also speeds up development. There have been a lot of times that I&rsquo;ve written a mixin or class that someone didn&rsquo;t know about, and they re-implemented it in a different area of our code. Documenting these styles helps prevent this.</p>
-          
-          <p>Furthermore, complex widgets that require a combination of HTML, CSS, and JS to function properly (such as popovers and dialog boxes) are hard to figure out just from reading source code. Explaining how to add these modules to a page, and all of their styling and JS options, is invaluable.</p>
-          
-          <p>In addition to just explaining how something works, we also wanted to document when it&rsquo;s appropriate to use these various modules. You also can&rsquo;t get this from reading code alone. This helps both engineers and designers understand when to use a popover instead of a tooltip, for example.</p>
-          
-          <p>This content is the meat of the site, and the parts that change most frequently (in fact, many still need to be written). We decided the most effective way to document these elements was to create real, working examples with HTML, CSS, and JS, rather than just provide static screenshots. This allows developers to interact with the widgets, see how they behave, and inspect the code. It also makes it easier to communicate complex modules, such as popovers and dialog boxes. We took a lot of inspiration from <a href="http://getbootstrap.com/">Twitter&rsquo;s Bootstrap</a> and <a href="http://foundation.zurb.com/">Zurb&rsquo;s Foundation</a>, which are both fantastic examples of using working code as documentation.</p>
-          
-          <h3>Code conventions</h3>
-          
-          <p>Along with documenting the various modules and classes we have available, we also wanted a place to explain our frontend code conventions (e.g. how to name classes, how files are organized, etc.). This is especially useful for new developers who are getting up to speed, but is also beneficial as a reference for all developers.</p>
-          
-          <h3>Shake out inconsistencies</h3>
-          
-          <p>Finally, a secondary goal and benefit of documenting our styles is that it brings us face to face with inconsistencies that need to be ironed out. There have been numerous times that writing down how something works made these inconsistencies obvious. This acts as a great forcing function to get us to have consistent styles (although we haven&rsquo;t had time to fix all of them).</p>
-          
-          <h2>Conclusion</h2>
-          
-          <p>In the months since the guide was released, it has been successful at achieving each of these goals. Various people around the company consult it regularly for our logos and colors; developers refer to it when implementing common modules; new developers have learned our coding conventions on their own; and we&rsquo;ve found many ways to improve our visual style and code. Taking the time to build and document our brand guidelines and frontend code was well worth the effort, and I recommend anyone else who works on a moderately complex site build their own styleguide.</p>
-          <p class='follow-me'>
-            Thoughts? Reply
-            <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
-          </p>
-          <footer class='tags'>
-            Tags:
-            <span class='tag'>styleguide</span>
-            <span class='tag'>Optimizely</span>
-          </footer>
-        </article>
-        <article>
-          <time datetime='2013-10-22'>
-            <i>Posted on</i>
-            Oct 22, 2013
-          </time>
-          <h1><a href="/2013/10/22/using-channel-factors-to-increase-offline-conversions/">Using Channel Factors to Increase Offline Conversions</a></h1>
-          <p>Anyone who has ever ignored to-do lists knows that any friction between yourself and your goal leads to frustration and potentially giving up altogether. This lesson applies to real life equally as well as it does to visitors on your website.</p>
-          
-          <p>If people sign up for something, how do you get them to actually follow through? Of course, anything that reduces friction is good for everyone involved, but there are often limitations to how much you can realistically remove. So how do you optimize these kinds of experiences? One technique is to explicitly spell out the next steps. Knowing the steps ahead of time makes the process easier to finish and overall less daunting. This theory is known as <strong>channel factors</strong>.</p>
-          
-          <p>In 1965, psychologist Howard Levanthal <a href="http://www.canyons.edu/faculty/rafterm/0%200lli%20Social%20Psychology/Social%20Day%20Pages/Day%203%20Info%20Pages/Effects%20of%20fear%20and%20specificity%20of%20recommendation%20upon%20attitudes%20and%20behavior.pdf">studied this phenomenon</a> [pdf] by trying to persuade college students to get a tetanus vaccination. He distributed documents describing the risks of tetanus and the value of inoculation among two groups of people. The first group received just the information sheet, whereas the second group received the information sheet along with a campus map with the infirmary circled. Follow up surveys showed the communication was effective in changing beliefs and attitudes in both groups, but the number of people who actually followed through varied drastically. Only 3% of the first group got inoculated, compared to 28% of the group that also received a map.</p>
-          
-          <p>The key difference is that the map reduced the friction to following through. Just telling students to get vaccinated created a barrier: where do I go? Showing the students where to get the shot and urging them to pencil time on their calendar eliminated this barrier. In contrast, the group that only received the info sheet had no clear plan of how to get vaccinated. This made the task more abstract and difficult to complete, so fewer people followed through with an appointment.</p>
-          
-          <p>The implication for a website is clear: remove barriers to success. Make the next steps explicit, and provide as much information as possible to enable people to follow through. A great example of this is <a href="http://www.crateandbarrel.com/">Create&amp;Barrel’s</a> checkout funnel, which was ranked as the top e-commerce checkout user experience by the <a href="http://baymard.com/">Baymard Institute</a>. (Note: since this rating, Crate&amp;Barrel has done more A/B testing to further improve their checkout funnel). First of all, they reduced the funnel to as few steps as possible: Shipping; Payment; and Review &amp; Place Order. Second, they clearly spell out each of these steps from the start, telling the user what they’ll need to do to place their order. Without this, people don’t have any expectation of how long the checkout process could take, and are more likely to drop out partway through.</p>
-          
-          <p><img alt="Crate & Barrel's checkout funnel" src="http://jlzych.com/images/2013-10-22-using-channel-factors-to-increase-offline-conversions/crate-barrel-checkout.png" /></p>
-          
-          <p><em>Crate&amp;Barrel’s checkout funnel spells out each step for the user, which helps them complete their purchase.</em></p>
-          
-          <p>This technique is especially useful for actions that take place off of the website, such as installing software. Firefox does a great job of this by listing each step with screenshots. This helps all users, technical and non-technical, successfully install their browser.</p>
-          
-          <p><img alt="Firefox's download page walks the user through installation steps" src="http://jlzych.com/images/2013-10-22-using-channel-factors-to-increase-offline-conversions/firefox-download.png" /></p>
-          
-          <p><em>Firefox’s download page walks the user through the exact steps they must go through to install their browser, which increases the chances users will install their product.</em></p>
-          
-          <p>These examples just scratch the surface of how channel factors can help you increase conversions. They key is to put yourself in the shoes of your users and ask yourself, “What additional information do I need to complete this task? What barriers are preventing me from reaching my goal?” Although they may look obvious to you, it won’t to your customers.
-          Do you want your users to:</p>
-          
-          <ul>
-          <li>Call, email, or write a politician? Provide a pre-written template that they just need to populate with their name.</li>
-          <li>Volunteer for a cause? Show them a map of the closest location and the next time they can attend.</li>
-          <li>Attend a live webcast? Provide an “Add to Calendar” button.</li>
-          <li>Use your product or service? List each of the steps users have to go through to use it.</li>
-          <li>Use a new (or even existing) feature? Figure out where in the flow of using your product this feature fits, and explicitly tell them to use it at the end of the previous step.</li>
-          </ul>
-          
-          <p>Any objective on your site that requires completing a series of steps can potentially benefit from applying the lessons behind channel factors. Increase the chances that a visitor follows through on what they signed up for by providing all the help you can. When in doubt, over explain and be direct — even when the directions may seem obvious to you and your team. By A/B testing, you will ultimately find an optimized design somewhere between hit-you-over-the-head-obvious and confusion.</p>
-          <p class='follow-me'>
-            Thoughts? Reply
-            <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
-          </p>
-          <footer class='tags'>
-            Tags:
-            <span class='tag'>A/B testing</span>
-            <span class='tag'>channel factors</span>
-            <span class='tag'>testing theory</span>
-          </footer>
-        </article>
-        <a class="view-all-link" href="/archives">View all posts &raquo;</a>
       </div>
       <footer id='site-footer'>
         <p>
@@ -389,3 +232,4 @@
     </script>
   </body>
 </html>
+
