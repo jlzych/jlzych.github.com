@@ -9,6 +9,15 @@
     <meta content='width=device-width, initial-scale=1.0, user-scalable=yes' name='viewport'>
     <meta content='black' name='apple-mobile-web-app-status-bar-style'>
     <meta content='yes' name='apple-mobile-web-app-capable'>
+    <!-- FB Open Graph meta tags -->
+    <meta content='blog' property='og:type'>
+    <meta content="Jeff Zych's Blog" property='og:site_name'>
+    <meta content='http://jlzych.com/monogram.png' property='og:image'>
+    <meta content='image/png' property='og:image:type'>
+    <meta content='1024' property='og:image:width'>
+    <meta content='1024' property='og:image:height'>
+    <meta content='http://jlzych.com/' property='og:url'>
+    <meta content='Jeff Zych' property='og:title'>
     <link href="/favicon.ico?v=1" rel="icon" type="image/ico?v=1" />
     <link href="/stylesheets/application.css?1381713378" media="screen" rel="stylesheet" type="text/css" />
     <link href='/feed.xml' rel='alternate' title='RSS for Jeff Zych' type='application/rss+xml'>
@@ -33,6 +42,54 @@
         </nav>
       </header>
       <div class='content'>
+        <article>
+          <time datetime='2014-03-02'>
+            <i>Posted on</i>
+            Mar  2, 2014
+          </time>
+          <h1><a href="/2014/03/02/when-we-do-user-testing/">When Do You Do User Testing?</a></h1>
+          <p>In response to my <a href="/2014/02/11/re-designing-optimizely-s-preview-tool/">preview redesign post</a>, my uncle asked, &ldquo;When does the designer go with their own analysis of a design and when do they do a usability test?&rdquo; I&rsquo;ve been asked this question a lot, and we often discuss it in product development meetings. It&rsquo;s also something I wanted to elaborate on more in the post, but it didn&rsquo;t fit. So I will take this opportunity to roughly outline when we do user testing and why.</p>
+          
+          <h2>The Ideal</h2>
+          
+          <p>In an ideal world, we would be testing all the time. Having a tight feedback loop is invaluable. By which I mean, being able to design a solution to a problem and validating that it solves said problem immediately would be amazing. And in product design, the best validation is almost always user testing.</p>
+          
+          <h2>The Reality</h2>
+          
+          <p>In reality, there&rsquo;s no such thing as instant feedback. You can&rsquo;t design something and receive immediate feedback. There&rsquo;s no automated process that tells you if a UI is good or not. You have to talk to actual humans, which takes time and effort.</p>
+          
+          <p>This means there&rsquo;s a trade-off between getting as much feedback as possible, and actually releasing something. The more user testing you do, the longer it will take to release.</p>
+          
+          <h3>What we do at Optimizely</h3>
+          
+          <p>At <a href="https://www.optimizely.com">Optimizely</a>, we weigh the decision to do user testing against deadlines, how important the questions are (e.g. are they core to the experience, or an edge case), how likely we are to get actionable insights (e.g. testing colors will usually give you a bunch of conflicting opinions), and what other research we could be doing instead (i.e. opportunity cost).</p>
+          
+          <p>With the preview redesign, we started with exploratory research to get us on the right track, but didn&rsquo;t do much testing beyond that. This was mainly because we didn&rsquo;t make time for it. It was clear from our generative research that adding impersonation to the preview tool would be a step in the right direction. But it&rsquo;s only one part of a larger solution, and won&rsquo;t be used by everyone. We didn&rsquo;t want to slow down our overall progress by spending too much time trying to perfect one piece of a much larger puzzle.</p>
+          
+          <p>So with the preview tool, I had to rely on my instincts and feedback from other designers, engineers, and product managers to make decisions. One such example is when I decided to hide the impersonation feature by default, and it would slide out when an icon is clicked. Of this solution I said:</p>
+          
+          <blockquote>
+          <p>But it worked <em>too</em> well [at solving the problem of the impersonation UI being distracting]. The icon was too cryptic, and overall the impersonate functionality was too hidden for anyone to find.</p>
+          </blockquote>
+          
+          <p>As my uncle pointed out, I didn&rsquo;t do any user testing to make this call. I looked at what I had created, and could tell it wasn&rsquo;t a great solution (which was also confirmed by my teammates). I was confident the decision to keep iterating was right based on established <a href="http://www.nngroup.com/articles/ten-usability-heuristics/">usability heuristics</a> and my own experience.</p>
+          
+          <p>However, not all design decisions can be guided by general usability guidelines. One such example is when I went in circles designing how a person sets impersonation values. I tried using established best practices and talking to other designers, but neither method led me to an answer. At this point, user testing was my only out.</p>
+          
+          <p>In this case, we opted for <a href="http://www.nngroup.com/articles/guerrilla-hci/">guerrilla usability testing</a>. Recruiting actual users would have required more time and resources than we wanted to spend. So I called in two of our sales guys, who made for good proxies of semi-experienced users that are technically middle-of-the-road (i.e. they have some basic code knowledge, but aren&rsquo;t developers), which covers the majority of our users. Their feedback made the decision easy, and successfully got me out of this jam.</p>
+          
+          <h2>In Summary</h2>
+          
+          <p>In a perfect world we would be testing all the time, but in reality that just isn&rsquo;t feasible. So we do our best to balance the time and resources required to test a UI against the overall importance of that feature. But usability testing won&rsquo;t find every flaw. Eventually you have to ship — you can&rsquo;t refine forever, and no design is perfect.</p>
+          <p class='follow-me'>
+            Thoughts? Reply
+            <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
+          </p>
+          <footer class='tags'>
+            Tags:
+            <span class='tag'>Optimizely</span>
+          </footer>
+        </article>
         <article>
           <time datetime='2014-02-11'>
             <i>Posted on</i>
@@ -316,55 +373,6 @@
             <span class='tag'>Optimizely</span>
           </footer>
         </article>
-        <article>
-          <time datetime='2013-10-22'>
-            <i>Posted on</i>
-            Oct 22, 2013
-          </time>
-          <h1><a href="/2013/10/22/using-channel-factors-to-increase-offline-conversions/">Using Channel Factors to Increase Offline Conversions</a></h1>
-          <p>Anyone who has ever ignored to-do lists knows that any friction between yourself and your goal leads to frustration and potentially giving up altogether. This lesson applies to real life equally as well as it does to visitors on your website.</p>
-          
-          <p>If people sign up for something, how do you get them to actually follow through? Of course, anything that reduces friction is good for everyone involved, but there are often limitations to how much you can realistically remove. So how do you optimize these kinds of experiences? One technique is to explicitly spell out the next steps. Knowing the steps ahead of time makes the process easier to finish and overall less daunting. This theory is known as <strong>channel factors</strong>.</p>
-          
-          <p>In 1965, psychologist Howard Levanthal <a href="http://www.canyons.edu/faculty/rafterm/0%200lli%20Social%20Psychology/Social%20Day%20Pages/Day%203%20Info%20Pages/Effects%20of%20fear%20and%20specificity%20of%20recommendation%20upon%20attitudes%20and%20behavior.pdf">studied this phenomenon</a> [pdf] by trying to persuade college students to get a tetanus vaccination. He distributed documents describing the risks of tetanus and the value of inoculation among two groups of people. The first group received just the information sheet, whereas the second group received the information sheet along with a campus map with the infirmary circled. Follow up surveys showed the communication was effective in changing beliefs and attitudes in both groups, but the number of people who actually followed through varied drastically. Only 3% of the first group got inoculated, compared to 28% of the group that also received a map.</p>
-          
-          <p>The key difference is that the map reduced the friction to following through. Just telling students to get vaccinated created a barrier: where do I go? Showing the students where to get the shot and urging them to pencil time on their calendar eliminated this barrier. In contrast, the group that only received the info sheet had no clear plan of how to get vaccinated. This made the task more abstract and difficult to complete, so fewer people followed through with an appointment.</p>
-          
-          <p>The implication for a website is clear: remove barriers to success. Make the next steps explicit, and provide as much information as possible to enable people to follow through. A great example of this is <a href="http://www.crateandbarrel.com/">Create&amp;Barrel’s</a> checkout funnel, which was ranked as the top e-commerce checkout user experience by the <a href="http://baymard.com/">Baymard Institute</a>. (Note: since this rating, Crate&amp;Barrel has done more A/B testing to further improve their checkout funnel). First of all, they reduced the funnel to as few steps as possible: Shipping; Payment; and Review &amp; Place Order. Second, they clearly spell out each of these steps from the start, telling the user what they’ll need to do to place their order. Without this, people don’t have any expectation of how long the checkout process could take, and are more likely to drop out partway through.</p>
-          
-          <p><img alt="Crate & Barrel's checkout funnel" src="http://jlzych.com/images/2013-10-22-using-channel-factors-to-increase-offline-conversions/crate-barrel-checkout.png" /></p>
-          
-          <p><em>Crate&amp;Barrel’s checkout funnel spells out each step for the user, which helps them complete their purchase.</em></p>
-          
-          <p>This technique is especially useful for actions that take place off of the website, such as installing software. Firefox does a great job of this by listing each step with screenshots. This helps all users, technical and non-technical, successfully install their browser.</p>
-          
-          <p><img alt="Firefox's download page walks the user through installation steps" src="http://jlzych.com/images/2013-10-22-using-channel-factors-to-increase-offline-conversions/firefox-download.png" /></p>
-          
-          <p><em>Firefox’s download page walks the user through the exact steps they must go through to install their browser, which increases the chances users will install their product.</em></p>
-          
-          <p>These examples just scratch the surface of how channel factors can help you increase conversions. They key is to put yourself in the shoes of your users and ask yourself, “What additional information do I need to complete this task? What barriers are preventing me from reaching my goal?” Although they may look obvious to you, it won’t to your customers.
-          Do you want your users to:</p>
-          
-          <ul>
-          <li>Call, email, or write a politician? Provide a pre-written template that they just need to populate with their name.</li>
-          <li>Volunteer for a cause? Show them a map of the closest location and the next time they can attend.</li>
-          <li>Attend a live webcast? Provide an “Add to Calendar” button.</li>
-          <li>Use your product or service? List each of the steps users have to go through to use it.</li>
-          <li>Use a new (or even existing) feature? Figure out where in the flow of using your product this feature fits, and explicitly tell them to use it at the end of the previous step.</li>
-          </ul>
-          
-          <p>Any objective on your site that requires completing a series of steps can potentially benefit from applying the lessons behind channel factors. Increase the chances that a visitor follows through on what they signed up for by providing all the help you can. When in doubt, over explain and be direct — even when the directions may seem obvious to you and your team. By A/B testing, you will ultimately find an optimized design somewhere between hit-you-over-the-head-obvious and confusion.</p>
-          <p class='follow-me'>
-            Thoughts? Reply
-            <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
-          </p>
-          <footer class='tags'>
-            Tags:
-            <span class='tag'>A/B testing</span>
-            <span class='tag'>channel factors</span>
-            <span class='tag'>testing theory</span>
-          </footer>
-        </article>
         <a class="view-all-link" href="/archives">View all posts &raquo;</a>
       </div>
       <footer id='site-footer'>
@@ -373,6 +381,7 @@
           &bull; Hand-crafted with
           <a href="http://middlemanapp.com/">Middleman</a>
         </p>
+        <a style="display: none;" href="http://google.com/+JeffZych?rel=author">Google+ profile</a>
       </footer>
     </div>
     <!-- Google Analytics tracking -->

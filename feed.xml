@@ -5,10 +5,54 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2014-02-11T18:14:00Z</updated>
+  <updated>2014-03-02T23:37:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>When Do You Do User Testing?</title>
+    <link rel="alternate" href="/2014/03/02/when-we-do-user-testing/"/>
+    <id>/2014/03/02/when-we-do-user-testing/</id>
+    <published>2014-03-02T23:37:00Z</published>
+    <updated>2014-03-02T23:37:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;In response to my &lt;a href="/2014/02/11/re-designing-optimizely-s-preview-tool/"&gt;preview redesign post&lt;/a&gt;, my uncle asked, &amp;ldquo;When does the designer go with their own analysis of a design and when do they do a usability test?&amp;rdquo; I&amp;rsquo;ve been asked this question a lot, and we often discuss it in product development meetings. It&amp;rsquo;s also something I wanted to elaborate on more in the post, but it didn&amp;rsquo;t fit. So I will take this opportunity to roughly outline when we do user testing and why.&lt;/p&gt;
+
+&lt;h2&gt;The Ideal&lt;/h2&gt;
+
+&lt;p&gt;In an ideal world, we would be testing all the time. Having a tight feedback loop is invaluable. By which I mean, being able to design a solution to a problem and validating that it solves said problem immediately would be amazing. And in product design, the best validation is almost always user testing.&lt;/p&gt;
+
+&lt;h2&gt;The Reality&lt;/h2&gt;
+
+&lt;p&gt;In reality, there&amp;rsquo;s no such thing as instant feedback. You can&amp;rsquo;t design something and receive immediate feedback. There&amp;rsquo;s no automated process that tells you if a UI is good or not. You have to talk to actual humans, which takes time and effort.&lt;/p&gt;
+
+&lt;p&gt;This means there&amp;rsquo;s a trade-off between getting as much feedback as possible, and actually releasing something. The more user testing you do, the longer it will take to release.&lt;/p&gt;
+
+&lt;h3&gt;What we do at Optimizely&lt;/h3&gt;
+
+&lt;p&gt;At &lt;a href="https://www.optimizely.com"&gt;Optimizely&lt;/a&gt;, we weigh the decision to do user testing against deadlines, how important the questions are (e.g. are they core to the experience, or an edge case), how likely we are to get actionable insights (e.g. testing colors will usually give you a bunch of conflicting opinions), and what other research we could be doing instead (i.e. opportunity cost).&lt;/p&gt;
+
+&lt;p&gt;With the preview redesign, we started with exploratory research to get us on the right track, but didn&amp;rsquo;t do much testing beyond that. This was mainly because we didn&amp;rsquo;t make time for it. It was clear from our generative research that adding impersonation to the preview tool would be a step in the right direction. But it&amp;rsquo;s only one part of a larger solution, and won&amp;rsquo;t be used by everyone. We didn&amp;rsquo;t want to slow down our overall progress by spending too much time trying to perfect one piece of a much larger puzzle.&lt;/p&gt;
+
+&lt;p&gt;So with the preview tool, I had to rely on my instincts and feedback from other designers, engineers, and product managers to make decisions. One such example is when I decided to hide the impersonation feature by default, and it would slide out when an icon is clicked. Of this solution I said:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;But it worked &lt;em&gt;too&lt;/em&gt; well [at solving the problem of the impersonation UI being distracting]. The icon was too cryptic, and overall the impersonate functionality was too hidden for anyone to find.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;As my uncle pointed out, I didn&amp;rsquo;t do any user testing to make this call. I looked at what I had created, and could tell it wasn&amp;rsquo;t a great solution (which was also confirmed by my teammates). I was confident the decision to keep iterating was right based on established &lt;a href="http://www.nngroup.com/articles/ten-usability-heuristics/"&gt;usability heuristics&lt;/a&gt; and my own experience.&lt;/p&gt;
+
+&lt;p&gt;However, not all design decisions can be guided by general usability guidelines. One such example is when I went in circles designing how a person sets impersonation values. I tried using established best practices and talking to other designers, but neither method led me to an answer. At this point, user testing was my only out.&lt;/p&gt;
+
+&lt;p&gt;In this case, we opted for &lt;a href="http://www.nngroup.com/articles/guerrilla-hci/"&gt;guerrilla usability testing&lt;/a&gt;. Recruiting actual users would have required more time and resources than we wanted to spend. So I called in two of our sales guys, who made for good proxies of semi-experienced users that are technically middle-of-the-road (i.e. they have some basic code knowledge, but aren&amp;rsquo;t developers), which covers the majority of our users. Their feedback made the decision easy, and successfully got me out of this jam.&lt;/p&gt;
+
+&lt;h2&gt;In Summary&lt;/h2&gt;
+
+&lt;p&gt;In a perfect world we would be testing all the time, but in reality that just isn&amp;rsquo;t feasible. So we do our best to balance the time and resources required to test a UI against the overall importance of that feature. But usability testing won&amp;rsquo;t find every flaw. Eventually you have to ship — you can&amp;rsquo;t refine forever, and no design is perfect.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Re-Designing Optimizely's Preview Tool</title>
     <link rel="alternate" href="/2014/02/11/re-designing-optimizely-s-preview-tool/"/>
@@ -315,40 +359,6 @@ Do you want your users to:&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Any objective on your site that requires completing a series of steps can potentially benefit from applying the lessons behind channel factors. Increase the chances that a visitor follows through on what they signed up for by providing all the help you can. When in doubt, over explain and be direct — even when the directions may seem obvious to you and your team. By A/B testing, you will ultimately find an optimized design somewhere between hit-you-over-the-head-obvious and confusion.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Fostering creative environments</title>
-    <link rel="alternate" href="/2013/10/13/fostering-creative-environments/"/>
-    <id>/2013/10/13/fostering-creative-environments/</id>
-    <published>2013-10-13T20:56:00Z</published>
-    <updated>2013-10-13T20:56:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;I recently read &lt;a href="http://www.smashingmagazine.com"&gt;Smashing Magazine&amp;rsquo;s&lt;/a&gt; article &lt;a href="http://www.smashingmagazine.com/2013/08/28/on-creative-leadership/"&gt;&amp;ldquo;On Creative Leadership&amp;rdquo;&lt;/a&gt; that talks about creating an environment in which people can be creative. This section really resonated with me because it&amp;rsquo;s something we do occasionally at Optimizely, and talk about doing more of:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Every month, my team and I enter our planning room for at least three hours. We lock the doors, opening it only for pizza and beer deliveries. Our mission is to solve one problem. In past sessions, we have redesigned the user interface that powers our systems, solved marketing problems by “remarketing,” and found new and creative ways to present information. The role of an impresario has had such a direct and positive impact on the way we do business that I am now introducing the role to every team in our 100+ person company.&lt;/p&gt;
-
-&lt;p&gt;Why does having an impresario work? Well, certain rules guide the team to moments of insight:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Identify a very specific problem to solve, and stay focused.&lt;/li&gt;
-&lt;li&gt;Provide the necessary tools to spark inspiration (white boards, markers, paper, etc.).&lt;/li&gt;
-&lt;li&gt;Be technology-agnostic! Don’t worry about how you will solve the problem; focus only on the why.&lt;/li&gt;
-&lt;li&gt;There are no wrong answers; some are just better than others.&lt;/li&gt;
-&lt;li&gt;Celebrate failures.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;My team looks forward to their time spent locked up together because it gives us an opportunity to be creative in front of each other. Support their ideas, and help them grow. Don’t force your opinions and thoughts. If the group is moving in the wrong direction, ask them questions until they find the right path.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The design team at Optimizely has done this a few times, and it&amp;rsquo;s always been extremely rewarding and productive. For example, recently another designer and myself locked ourselves in a room all day to redesign our jobs page. By the end of the day, the page was almost fully coded.&lt;/p&gt;
-
-&lt;p&gt;This setting allowed us to be productive for two key reasons. First, we were insulated from distractions, which can quickly kill productivity and focus. Second, we had instant, high-bandwidth communication that enabled quick feedback and input from each other when needed. No waiting around for emails or responses via IM.&lt;/p&gt;
-
-&lt;p&gt;Given the success of this and other similar sessions, we intend to do more of these focused work sessions in the future to foster our creativity and productivity.&lt;/p&gt;
 </content>
   </entry>
 </feed>
