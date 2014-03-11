@@ -43,10 +43,61 @@
       </header>
       <div class='content'>
         <article>
+          <time datetime='2014-03-11'>
+            <i>Posted on</i>
+            Mar 11, 2014
+          </time>
+          <p style='display: none'>
+            By Jeff Zych
+          </p>
+          <h1><a href="/2014/03/11/did-you-a-b-test-the-redesigned-preview-tool/">Did you A/B test the redesigned preview tool?</a></h1>
+          <p>A lot of people have asked me if we <a href="https://www.optimizely.com/ab-testing">A/B tested</a> the <a href="/2014/02/11/re-designing-optimizely-s-preview-tool/">redesigned preview tool</a>. The question comes in two flavors: did we use A/B testing to validate impersonation was worth building (a.k.a. fake door testing); and, did we A/B test the redesigned UI against the old UI? Both are good questions, but the short answer is no. In this post I&rsquo;m going to dig into both and explain why.</p>
+          
+          <h2>Fake Door Testing</h2>
+          
+          <p><a href="http://www.slideshare.net/JessLee4/fake-doors-how-to-test-product-ideas-quickly-hustlecon-2013">Fake door testing</a> (<a href="http://vimeo.com/24744647">video</a>) is a technique to measure interest in a new feature by building a &ldquo;fake door&rdquo; version of it that looks like the final version (but doesn&rsquo;t actually work) and measuring how many people engage with it. Trying to use the feature gives users an explanation of what it is, that it&rsquo;s &ldquo;Coming soon&rdquo;, and usually the ability to &ldquo;vote&rdquo; on it or send feedback (the specifics vary depending on the context). This doesn&rsquo;t need to be run as an A/B test, but setting it up as one lets you compare user behavior.</p>
+          
+          <p>We could have added an &ldquo;Impersonate&rdquo; tab to the old UI, measured how many people tried to use it, and gathered feedback. This would have been cheap and easy. But we didn&rsquo;t do this because the feature was inspired by our broader research around personalization. Our data pointed us towards this feature, so we were confident it would be worthwhile.</p>
+          
+          <p>But more than that, measuring clicks and votes doesn&rsquo;t tell you much. People can click out of curiosity, which doesn&rsquo;t tell you if they&rsquo;d actually use the feature or if it solves a real problem. Even if people send feedback saying they&rsquo;d love it, <a href="http://www.nngroup.com/articles/first-rule-of-usability-dont-listen-to-users/">what users say and what they do is different</a>. Actually talking to users to find pain points yields robust data that leads to richer solutions. The new impersonate functionality is one such example — no one had thought of it before, and it wasn&rsquo;t on our feature request list or product roadmap.</p>
+          
+          <p>However, not everyone has the resources to conduct user research. In that situation, fake door testing is a good way of cheaply getting feedback on a specific idea. After all, some data is better than no data.</p>
+          
+          <h2>A/B Testing the Redesigned UI</h2>
+          
+          <p>The second question is, &ldquo;Did you A/B test the redesigned preview against the previous one?&rdquo; We didn&rsquo;t, primarily because there&rsquo;s no good metric to use as a conversion goal. We added completely new functionality to the preview tool, so most metrics are the equivalent of comparing apples to oranges. For example, measuring how many people impersonate a visitor is meaningless because the old UI doesn&rsquo;t even have that feature.</p>
+          
+          <p>So at an interface level, there isn&rsquo;t a good measurement. But what about at the product level? We could measure larger metrics, such as the number of targeted experiments being created, to see if the new UI has an effect. There are two problems with this. First, it will take a long time (many months) to reach a statistically significant difference because the conversion rate on most product metrics are low. Second, if we eventually measured a difference, there&rsquo;s no guarantee it was caused by adding impersonation. The broader the metric, the more factors that influence it (such as other product updates). To overcome this you could freeze people in the &ldquo;A&rdquo; and &ldquo;B&rdquo; versions of the product, but given how long it takes to reach significance, this isn&rsquo;t a good idea.</p>
+          
+          <p>Companies like Facebook and Google have enough traffic that they actually are able to roll out new features to a small percentage of users (say, 5%), and measure the impact on their core metrics. If any take a plunge, they revert users to the previous UI and keep iterating. When you have the scale of Facebook and Google, you can get significant data in a day. Unfortunately, like most companies, we don&rsquo;t have this scale, so it isn&rsquo;t an option.</p>
+          
+          <h2>So How Do You Know The Redesign Was Worth It?</h2>
+          
+          <p>What people are really asking is how do we know the redesign was worth the effort? Being at an A/B testing company, everyone wants to A/B test everything. But in this case, there wasn&rsquo;t a place for it. Like any method, <a href="http://www.nngroup.com/articles/ab-testing-usability-engineering/">split testing has its strengths and weaknesses</a>.</p>
+          
+          <h2>No, Really — How <em>Do</em> You Know The Redesign Was Worth It?</h2>
+          
+          <p>Primarily via qualitative feedback (i.e. talking to users), which at a high level has been positive (but there are some improvements we can make). We&rsquo;re also measuring people&rsquo;s activities in the preview tool (e.g. changing tabs, impersonating visitors, etc.). So far, those are healthy. Finally, we&rsquo;re keeping an eye on some product-level metrics, like the number of targeted experiments created. These metrics are part of our long-term personalization efforts, and we hope in the long run to see them go up. But the preview tool is just one piece of that puzzle, so we don&rsquo;t expect anything noticeable from that alone.</p>
+          
+          <p>The important theme here is that gathering data is important to ensure you&rsquo;re making the best use of limited resources (time, people, etc.). But there&rsquo;s a whole world of data beyond A/B testing, such as user research, surveys, product analytics, and so on. It&rsquo;s important to keep in mind the advantages and disadvantages of each, and use the most appropriate ones at your disposal.</p>
+          <p class='follow-me'>
+            Thoughts? Reply
+            <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
+          </p>
+          <footer class='tags'>
+            Tags:
+            <span class='tag'>a/b testing</span>
+            <span class='tag'>Optimizely</span>
+          </footer>
+        </article>
+        <article>
           <time datetime='2014-03-02'>
             <i>Posted on</i>
             Mar  2, 2014
           </time>
+          <p style='display: none'>
+            By Jeff Zych
+          </p>
           <h1><a href="/2014/03/02/when-we-do-user-testing/">When Do You Do User Testing?</a></h1>
           <p>In response to my <a href="/2014/02/11/re-designing-optimizely-s-preview-tool/">preview redesign post</a>, my uncle asked, &ldquo;When does the designer go with their own analysis of a design and when do they do a usability test?&rdquo; I&rsquo;ve been asked this question a lot, and we often discuss it in product development meetings. It&rsquo;s also something I wanted to elaborate on more in the post, but it didn&rsquo;t fit. So I will take this opportunity to roughly outline when we do user testing and why.</p>
           
@@ -95,6 +146,9 @@
             <i>Posted on</i>
             Feb 11, 2014
           </time>
+          <p style='display: none'>
+            By Jeff Zych
+          </p>
           <h1><a href="/2014/02/11/re-designing-optimizely-s-preview-tool/">Re-Designing Optimizely's Preview Tool</a></h1>
           <p>We just <a href="http://blog.optimizely.com/2014/01/23/introducing-preview-as/">released a major addition</a> to Optimizely&rsquo;s preview tool: the ability to impersonate visitors. This lets our customers see content they&rsquo;re targeting to different audiences. Designing and developing this was a larger undertaking than any of us expected. In this post, I am going to describe our design process and the design decisions we made along the way. My hope is this post will serve as a record of the work that went into it, as well as provide a glimpse into the black box of design.</p>
           
@@ -270,6 +324,9 @@
             <i>Posted on</i>
             Feb  9, 2014
           </time>
+          <p style='display: none'>
+            By Jeff Zych
+          </p>
           <h1><a href="/2014/02/09/response-to-css-regions-considered-harmful/">Response to CSS Regions Considered Harmful</a></h1>
           <p><a href="http://people.opera.com/howcome/">Håkon Wium Lie</a>, the father of CSS, wrote a <a href="http://alistapart.com/blog/post/css-regions-considered-harmful">great critique</a> of the <a href="http://www.w3.org/TR/2013/WD-css3-regions-20130528/">CSS Regions spec</a>. His article pointed out many of the same flaws that I&rsquo;ve noticed.</p>
           
@@ -302,6 +359,9 @@
             <i>Posted on</i>
             Jan 12, 2014
           </time>
+          <p style='display: none'>
+            By Jeff Zych
+          </p>
           <h1><a href="/2014/01/12/using-data-for-social-proof/">Using Data for Social Proof</a></h1>
           <p>I recently ran a test on Optimizely&rsquo;s <a href="https://www.optimizely.com/free-trial">free trial signup page</a> that&rsquo;s a great example of using social proof to increase conversions. I&rsquo;ve <a href="/2013/08/02/everyones-reading-this-increase-conversions-with-social-proof/">written about social proof</a> before, but the gist of the idea is that telling a person other people are already using your product or service makes them more likely to also use it. Knowing other people have already taken a particular action reduces perceived risk.</p>
           
@@ -324,53 +384,6 @@
             Tags:
             <span class='tag'>testing theory</span>
             <span class='tag'>A/B testing</span>
-          </footer>
-        </article>
-        <article>
-          <time datetime='2013-11-11'>
-            <i>Posted on</i>
-            Nov 11, 2013
-          </time>
-          <h1><a href="/2013/11/11/why-we-built-the-optimizely-styleguide/">Why we built the Optimizely Styleguide</a></h1>
-          <p>A few months ago, myself and the design team created the <a href="http://styleguide.optimizely.com">Optimizely Stylguide</a>. It&rsquo;s a living document of our brand standards and the visual style of our site. Designing, building, and writing the content for it took a significant amount of time, but it was worth the effort. In this post I&rsquo;m going to explain why we did it.</p>
-          
-          <h2>Why build a styleguide?</h2>
-          
-          <h3>A branding one-stop-shop</h3>
-          
-          <p>The original reason we wanted to build a styleguide was because we often get requests from people around the company for our logo. They also like to ask us which blue is our official blue. (It&rsquo;s <code>#1964af</code>). Providing one place for everyone to access this information, and explaining when and how to use our logos, saves both parties time.</p>
-          
-          <p>To achieve this goal, we put the full Optimizely logo, the Optimizely O, and our official brand colors on the styleguide&rsquo;s home page. We provided the logos in png, psd, svg, and eps formats in black, white, and Optimizely blue, which covers the widest use cases. Since this is the primary information that most people are looking for, it makes sense to have it be the most immediately available.</p>
-          
-          <h3>Document our visual style</h3>
-          
-          <p>The second biggest driving force was to provide developers (including myself) documentation of the modules, classes, and mixins that exist in the codebase. It&rsquo;s important that we maintain a consistent visual style, and re-using classes and mixins helps ensure we&rsquo;re consistent. It also speeds up development. There have been a lot of times that I&rsquo;ve written a mixin or class that someone didn&rsquo;t know about, and they re-implemented it in a different area of our code. Documenting these styles helps prevent this.</p>
-          
-          <p>Furthermore, complex widgets that require a combination of HTML, CSS, and JS to function properly (such as popovers and dialog boxes) are hard to figure out just from reading source code. Explaining how to add these modules to a page, and all of their styling and JS options, is invaluable.</p>
-          
-          <p>In addition to just explaining how something works, we also wanted to document when it&rsquo;s appropriate to use these various modules. You also can&rsquo;t get this from reading code alone. This helps both engineers and designers understand when to use a popover instead of a tooltip, for example.</p>
-          
-          <p>This content is the meat of the site, and the parts that change most frequently (in fact, many still need to be written). We decided the most effective way to document these elements was to create real, working examples with HTML, CSS, and JS, rather than just provide static screenshots. This allows developers to interact with the widgets, see how they behave, and inspect the code. It also makes it easier to communicate complex modules, such as popovers and dialog boxes. We took a lot of inspiration from <a href="http://getbootstrap.com/">Twitter&rsquo;s Bootstrap</a> and <a href="http://foundation.zurb.com/">Zurb&rsquo;s Foundation</a>, which are both fantastic examples of using working code as documentation.</p>
-          
-          <h3>Code conventions</h3>
-          
-          <p>Along with documenting the various modules and classes we have available, we also wanted a place to explain our frontend code conventions (e.g. how to name classes, how files are organized, etc.). This is especially useful for new developers who are getting up to speed, but is also beneficial as a reference for all developers.</p>
-          
-          <h3>Shake out inconsistencies</h3>
-          
-          <p>Finally, a secondary goal and benefit of documenting our styles is that it brings us face to face with inconsistencies that need to be ironed out. There have been numerous times that writing down how something works made these inconsistencies obvious. This acts as a great forcing function to get us to have consistent styles (although we haven&rsquo;t had time to fix all of them).</p>
-          
-          <h2>Conclusion</h2>
-          
-          <p>In the months since the guide was released, it has been successful at achieving each of these goals. Various people around the company consult it regularly for our logos and colors; developers refer to it when implementing common modules; new developers have learned our coding conventions on their own; and we&rsquo;ve found many ways to improve our visual style and code. Taking the time to build and document our brand guidelines and frontend code was well worth the effort, and I recommend anyone else who works on a moderately complex site build their own styleguide.</p>
-          <p class='follow-me'>
-            Thoughts? Reply
-            <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
-          </p>
-          <footer class='tags'>
-            Tags:
-            <span class='tag'>styleguide</span>
-            <span class='tag'>Optimizely</span>
           </footer>
         </article>
         <a class="view-all-link" href="/archives">View all posts &raquo;</a>
