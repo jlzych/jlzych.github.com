@@ -43,6 +43,25 @@
       </header>
       <div class='content'>
         <article>
+          <time datetime='2014-05-03'>
+            <i>Posted on</i>
+            May  3, 2014
+            <i>by</i>
+            Jeff Zych
+          </time>
+          <h1><a href="/2014/05/03/matthew-carters-my-life-in-typefaces/">Matthew Carter&#8217;s &ldquo;My Life in Typefaces&rdquo;</a></h1>
+          <p>I just got around to watching Matthew Carter&rsquo;s excellent TED talk, <a href="http://on.ted.com/sqLe">&ldquo;My Life in Typefaces&rdquo;</a>. In it, he talks about his experience designing type for the past 5 decades, and how technical constraints influenced his designs. The central question he tries to answer is, &ldquo;Does a constraint force a compromise? By accepting a constraint, are you working to a lower standard?&rdquo; This is a question that comes up in every discipline, and with every technological change. Matthew Carter&rsquo;s take on this subject is interesting because he&rsquo;s experienced numerous technological changes, and has designed superb typefaces for all of them.</p>
+          
+          <p>At first blush, it&rsquo;s easy to conclude that constraints force designers to compromise their vision. But design isn&rsquo;t produced in a vacuum, and ultimately must be realized through one or more mediums (print, screen, radio, etc.). Therefore, one must work within constraints to produce the best designs. To do so, designers must understand the technology that enables their designs to be experienced, be it code, the printing process, and so on. As Matthew Carter said in this talk, &ldquo;I&rsquo;m a pragmatist, not an idealist, out of necessity,&rdquo; which is a valuable lesson that all designers should take to heart.</p>
+          <p class='follow-me'>
+            Thoughts? Reply
+            <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
+          </p>
+          <footer class='tags'>
+            Tags:
+          </footer>
+        </article>
+        <article>
           <time datetime='2014-04-16'>
             <i>Posted on</i>
             Apr 16, 2014
@@ -334,40 +353,6 @@
           <footer class='tags'>
             Tags:
             <span class='tag'>design process</span>
-          </footer>
-        </article>
-        <article>
-          <time datetime='2014-02-09'>
-            <i>Posted on</i>
-            Feb  9, 2014
-            <i>by</i>
-            Jeff Zych
-          </time>
-          <h1><a href="/2014/02/09/response-to-css-regions-considered-harmful/">Response to CSS Regions Considered Harmful</a></h1>
-          <p><a href="http://people.opera.com/howcome/">Håkon Wium Lie</a>, the father of CSS, wrote a <a href="http://alistapart.com/blog/post/css-regions-considered-harmful">great critique</a> of the <a href="http://www.w3.org/TR/2013/WD-css3-regions-20130528/">CSS Regions spec</a>. His article pointed out many of the same flaws that I&rsquo;ve noticed.</p>
-          
-          <p>My biggest complaint is it requires empty, dummy HTML elements to flow content into. I can think of nothing more un-semantic than having to place empty elements in your document purely for presentational purposes. As Håkon says, &ldquo;it’s not regions per se that are harmful to web semantics, it’s the fact that they are encoded as presentational HTML elements.&rdquo; Exactly. HTML is supposed to provide a meaningful, semantic structure to the content. Empty elements provide no meaning or structure whatsoever.</p>
-          
-          <p>Håkon goes on to say, &ldquo;If we want regions on the web, we should find a way to write them in CSS and not in HTML.&rdquo; Ideally, the spec would allow us to break text up into multiple regions through CSS alone. The spec, as it&rsquo;s written today, breaks HTML and CSS&rsquo;s <a href="http://en.wikipedia.org/wiki/Separation_of_presentation_and_content">separation of presentation and content</a>.</p>
-          
-          <p>A few people have <a href="http://flippinawesome.org/2014/01/27/css-regions-matter/">proposed using pseudo elements</a> to overcome the empty element issue. While this is a good idea, it only covers a limited number of use cases. Complex layouts, like <a href="http://www.w3.org/TR/2013/WD-css3-regions-20130528/#named-flows-and-regions">the sample</a> provided in the spec, are not possible with pseudo-elements alone.</p>
-          
-          <p>Empty HTML elements are the result of another issue I have with the spec: it&rsquo;s applying a desktop publishing solution to the problem of creating rich magazine layouts on the web. The spec is analogous to laying out a page in InDesign by creating text boxes and flowing content from one box to the next. This works great when you control the page size and typography, and can add and resize text boxes as necessary. Unfortunately, the web is more dynamic than this. There&rsquo;s no given page size, and browsers render pages differently depending on a person&rsquo;s type preferences and device. Many of the demos I&rsquo;ve seen, such as <a href="http://sarasoueidan.com/blog/css-regions-with-shapes-for-readability/">this example</a> from <a href="http://sarasoueidan.com/">Sara Soueidan</a> (pictured below), have a design that is tightly coupled to the amount of text, the typeface, and the font size. If the reader set their type size to large, or the fall back font is loaded, this layout will not render as designed.</p>
-          
-          <p><img alt="Complex CSS Regions example" src="/images/2014-02-09-response-to-css-regions-considered-harmful/regions-demo.png?1391981971" /></p>
-          
-          <p><em>This regions example presents a design that is tightly coupled to the typeface and font size.</em></p>
-          
-          <p>Of course, as web developers part of our job is to find solutions to these problems. But I used this example to illustrate my larger point, which is <strong>the spec awkwardly applies a desktop publishing solution to the web, the result of which is unsemantic HTML</strong>.</p>
-          
-          <p>The web would benefit from more complex layouts, and I commend the goal of the proposal. Unfortunately, it encourages unsemantic markup, and tries to use a solution from the static desktop publishing world to the dynamic web. We need a solution designed for the fluid nature of the web that maintains HTML and CSS&rsquo;s separation of concerns.</p>
-          <p class='follow-me'>
-            Thoughts? Reply
-            <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
-          </p>
-          <footer class='tags'>
-            Tags:
-            <span class='tag'>css</span>
           </footer>
         </article>
         <a class="view-all-link" href="/archives">View all posts &raquo;</a>
