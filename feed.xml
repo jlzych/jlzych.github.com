@@ -5,10 +5,22 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2014-05-04T03:24:00Z</updated>
+  <updated>2014-05-12T04:13:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>Why We Hire UI Engineers on the Design Team</title>
+    <link rel="alternate" href="/2014/05/11/why-we-hire-ui-engineers-on-the-design-team/"/>
+    <id>/2014/05/11/why-we-hire-ui-engineers-on-the-design-team/</id>
+    <published>2014-05-12T04:13:00Z</published>
+    <updated>2014-05-12T04:13:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;This &lt;a href="http://cognition.happycog.com/article/why-developers-need-to-learn-design"&gt;Happy Cog article&lt;/a&gt; by &lt;a href="http://stephencaver.com/"&gt;Stephen Caver&lt;/a&gt; perfectly encapsulates why we hire &lt;a href="http://jobsco.re/1oHhZGz"&gt;UI Engineers&lt;/a&gt; on the design team at &lt;a href="https://www.optimizely.com"&gt;Optimizely&lt;/a&gt; (as opposed to the engineering team). We want the folks coding a UI to be involved in the design process from the beginning, to understand the design system that underlies a user experience, and to be empowered to make design decisions while developing a UI. Successful designs must adapt to various contexts and degrade gracefully. The people most qualified to make those kinds of decisions are the ones writing the code. As said in the article, &amp;ldquo;In this new world, the best thing a developer can do is to acquire an eye for design—to be able to take design aesthetic, realize its essential components, and reinterpret them on the fly.&amp;rdquo; By embracing this mindset in our hiring and design process, we&amp;rsquo;ve found the end result is a higher quality product.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Matthew Carter&amp;#8217;s &amp;ldquo;My Life in Typefaces&amp;rdquo;</title>
     <link rel="alternate" href="/2014/05/03/matthew-carters-my-life-in-typefaces/"/>
@@ -290,34 +302,6 @@
 &lt;h2&gt;Ship it!&lt;/h2&gt;
 
 &lt;p&gt;If you made it this far, congratulations! What I just described only scratches the surface of all the design decisions that were made. In writing this post, a lot of little decisions and early, incorrect assumptions came back to me. But if I went any deeper this post would be a novel, so instead I focused on the most difficult aspects of the impersonation feature. Design is often seen as a black box, and as writing this post has shown me, that&amp;rsquo;s because documenting the thought process and decision making can be exhausting. It&amp;rsquo;s amazing how some little detail you obsessed over for days can be so quickly forgotten. So this post acts as a historical record to help remind myself and the larger team all the work that went into this feature, in addition to providing a glimpse into the process of design.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Response to CSS Regions Considered Harmful</title>
-    <link rel="alternate" href="/2014/02/09/response-to-css-regions-considered-harmful/"/>
-    <id>/2014/02/09/response-to-css-regions-considered-harmful/</id>
-    <published>2014-02-09T20:49:00Z</published>
-    <updated>2014-02-09T20:49:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;&lt;a href="http://people.opera.com/howcome/"&gt;Håkon Wium Lie&lt;/a&gt;, the father of CSS, wrote a &lt;a href="http://alistapart.com/blog/post/css-regions-considered-harmful"&gt;great critique&lt;/a&gt; of the &lt;a href="http://www.w3.org/TR/2013/WD-css3-regions-20130528/"&gt;CSS Regions spec&lt;/a&gt;. His article pointed out many of the same flaws that I&amp;rsquo;ve noticed.&lt;/p&gt;
-
-&lt;p&gt;My biggest complaint is it requires empty, dummy HTML elements to flow content into. I can think of nothing more un-semantic than having to place empty elements in your document purely for presentational purposes. As Håkon says, &amp;ldquo;it’s not regions per se that are harmful to web semantics, it’s the fact that they are encoded as presentational HTML elements.&amp;rdquo; Exactly. HTML is supposed to provide a meaningful, semantic structure to the content. Empty elements provide no meaning or structure whatsoever.&lt;/p&gt;
-
-&lt;p&gt;Håkon goes on to say, &amp;ldquo;If we want regions on the web, we should find a way to write them in CSS and not in HTML.&amp;rdquo; Ideally, the spec would allow us to break text up into multiple regions through CSS alone. The spec, as it&amp;rsquo;s written today, breaks HTML and CSS&amp;rsquo;s &lt;a href="http://en.wikipedia.org/wiki/Separation_of_presentation_and_content"&gt;separation of presentation and content&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;A few people have &lt;a href="http://flippinawesome.org/2014/01/27/css-regions-matter/"&gt;proposed using pseudo elements&lt;/a&gt; to overcome the empty element issue. While this is a good idea, it only covers a limited number of use cases. Complex layouts, like &lt;a href="http://www.w3.org/TR/2013/WD-css3-regions-20130528/#named-flows-and-regions"&gt;the sample&lt;/a&gt; provided in the spec, are not possible with pseudo-elements alone.&lt;/p&gt;
-
-&lt;p&gt;Empty HTML elements are the result of another issue I have with the spec: it&amp;rsquo;s applying a desktop publishing solution to the problem of creating rich magazine layouts on the web. The spec is analogous to laying out a page in InDesign by creating text boxes and flowing content from one box to the next. This works great when you control the page size and typography, and can add and resize text boxes as necessary. Unfortunately, the web is more dynamic than this. There&amp;rsquo;s no given page size, and browsers render pages differently depending on a person&amp;rsquo;s type preferences and device. Many of the demos I&amp;rsquo;ve seen, such as &lt;a href="http://sarasoueidan.com/blog/css-regions-with-shapes-for-readability/"&gt;this example&lt;/a&gt; from &lt;a href="http://sarasoueidan.com/"&gt;Sara Soueidan&lt;/a&gt; (pictured below), have a design that is tightly coupled to the amount of text, the typeface, and the font size. If the reader set their type size to large, or the fall back font is loaded, this layout will not render as designed.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Complex CSS Regions example" src="/images/2014-02-09-response-to-css-regions-considered-harmful/regions-demo.png?1391981971" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;This regions example presents a design that is tightly coupled to the typeface and font size.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Of course, as web developers part of our job is to find solutions to these problems. But I used this example to illustrate my larger point, which is &lt;strong&gt;the spec awkwardly applies a desktop publishing solution to the web, the result of which is unsemantic HTML&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;The web would benefit from more complex layouts, and I commend the goal of the proposal. Unfortunately, it encourages unsemantic markup, and tries to use a solution from the static desktop publishing world to the dynamic web. We need a solution designed for the fluid nature of the web that maintains HTML and CSS&amp;rsquo;s separation of concerns.&lt;/p&gt;
 </content>
   </entry>
 </feed>
