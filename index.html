@@ -43,6 +43,37 @@
       </header>
       <div class='content'>
         <article>
+          <time datetime='2014-05-19'>
+            <i>Posted on</i>
+            May 19, 2014
+            <i>by</i>
+            Jeff Zych
+          </time>
+          <h1><a href="/2014/05/19/on-being-a-generalist/">On Being a Generalist</a></h1>
+          <p>I recently read <a href="http://frankchimero.com/intros/quilt/">Frank Chimero</a>&rsquo;s excellent article, <a href="http://frankchimero.com/talks/designing-in-the-borderlands/transcript/">&ldquo;Designing in the Borderlands&rdquo;</a>. The gist of it is that we (designers, and the larger tech community) have constructed walls between various disciplines that we see as opposites, such as print vs. digital, text vs. image, and so on. However, the most interesting design happens in the borderlands, where these different mediums connect. He cites examples that combine physical and digital media, but the most interesting bit for me was his thoughts on roles that span disciplines:</p>
+          
+          <blockquote>
+          <p>For a long time, I perceived my practice’s sprawl as a defect—evidence of an itchy mind or a fear of commitment—but I am starting to learn that a disadvantage can turn into an advantage with a change of venue. The ability to cross borders is an asset. Who else could go from group to group and be welcomed? The pattern happens over and over: if you’re not a part of any group, you can move amongst them all by tip-toeing across the lines that connect them.</p>
+          </blockquote>
+          
+          <p>I have felt this way many times throughout my career (especially that &ldquo;fear of commitment&rdquo; part). I have long felt like a generalist who works in both design and engineering, and I label myself to help people understand what I do (not to mention the necessity of a title). But I&rsquo;ve never cleanly fit into any discipline.</p>
+          
+          <p>This line was further blurred by my graduate degree from UC Berkeley&rsquo;s <a href="http://ischool.berkeley.edu">School of Information</a>. The program brings together folks with diverse backgrounds, and produces <a href="http://en.wikipedia.org/wiki/T-shaped_skills">T-shaped people</a> who can think across disciplines and understand the broader context of their work, whether it be in engineering, design, policy &amp; law, sociology, or dozens of other fields in which our alumni call home.</p>
+          
+          <blockquote>
+          <p>These borderlands are the best place for a designer like me, and maybe like you, because the borderlands are where things connect. If you’re in the borderlands, your different tongues, your scattered thoughts, your lack of identification with a group, and all the things that used to be thought of as drawbacks in a specialist enclave become the hardened armor of a shrewd generalist in the borderlands.</p>
+          </blockquote>
+          
+          <p>Couldn&rsquo;t have said it any better. Being able to move between groups and think across disciplines is more of an advantage than a disadvantage.</p>
+          <p class='follow-me'>
+            Thoughts? Reply
+            <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
+          </p>
+          <footer class='tags'>
+            Tags:
+          </footer>
+        </article>
+        <article>
           <time datetime='2014-05-11'>
             <i>Posted on</i>
             May 11, 2014
@@ -143,56 +174,6 @@
           <footer class='tags'>
             Tags:
             <span class='tag'>a/b testing</span>
-            <span class='tag'>Optimizely</span>
-          </footer>
-        </article>
-        <article>
-          <time datetime='2014-03-02'>
-            <i>Posted on</i>
-            Mar  2, 2014
-            <i>by</i>
-            Jeff Zych
-          </time>
-          <h1><a href="/2014/03/02/when-we-do-user-testing/">When Do You Do User Testing?</a></h1>
-          <p>In response to my <a href="/2014/02/11/re-designing-optimizely-s-preview-tool/">preview redesign post</a>, my uncle asked, &ldquo;When does the designer go with their own analysis of a design and when do they do a usability test?&rdquo; I&rsquo;ve been asked this question a lot, and we often discuss it in product development meetings. It&rsquo;s also something I wanted to elaborate on more in the post, but it didn&rsquo;t fit. So I will take this opportunity to roughly outline when we do user testing and why.</p>
-          
-          <h2>The Ideal</h2>
-          
-          <p>In an ideal world, we would be testing all the time. Having a tight feedback loop is invaluable. By which I mean, being able to design a solution to a problem and validating that it solves said problem immediately would be amazing. And in product design, the best validation is almost always user testing.</p>
-          
-          <h2>The Reality</h2>
-          
-          <p>In reality, there&rsquo;s no such thing as instant feedback. You can&rsquo;t design something and receive immediate feedback. There&rsquo;s no automated process that tells you if a UI is good or not. You have to talk to actual humans, which takes time and effort.</p>
-          
-          <p>This means there&rsquo;s a trade-off between getting as much feedback as possible, and actually releasing something. The more user testing you do, the longer it will take to release.</p>
-          
-          <h3>What we do at Optimizely</h3>
-          
-          <p>At <a href="https://www.optimizely.com">Optimizely</a>, we weigh the decision to do user testing against deadlines, how important the questions are (e.g. are they core to the experience, or an edge case), how likely we are to get actionable insights (e.g. testing colors will usually give you a bunch of conflicting opinions), and what other research we could be doing instead (i.e. opportunity cost).</p>
-          
-          <p>With the preview redesign, we started with exploratory research to get us on the right track, but didn&rsquo;t do much testing beyond that. This was mainly because we didn&rsquo;t make time for it. It was clear from our generative research that adding impersonation to the preview tool would be a step in the right direction. But it&rsquo;s only one part of a larger solution, and won&rsquo;t be used by everyone. We didn&rsquo;t want to slow down our overall progress by spending too much time trying to perfect one piece of a much larger puzzle.</p>
-          
-          <p>So with the preview tool, I had to rely on my instincts and feedback from other designers, engineers, and product managers to make decisions. One such example is when I decided to hide the impersonation feature by default, and it would slide out when an icon is clicked. Of this solution I said:</p>
-          
-          <blockquote>
-          <p>But it worked <em>too</em> well [at solving the problem of the impersonation UI being distracting]. The icon was too cryptic, and overall the impersonate functionality was too hidden for anyone to find.</p>
-          </blockquote>
-          
-          <p>As my uncle pointed out, I didn&rsquo;t do any user testing to make this call. I looked at what I had created, and could tell it wasn&rsquo;t a great solution (which was also confirmed by my teammates). I was confident the decision to keep iterating was right based on established <a href="http://www.nngroup.com/articles/ten-usability-heuristics/">usability heuristics</a> and my own experience.</p>
-          
-          <p>However, not all design decisions can be guided by general usability guidelines. One such example is when I went in circles designing how a person sets impersonation values. I tried using established best practices and talking to other designers, but neither method led me to an answer. At this point, user testing was my only out.</p>
-          
-          <p>In this case, we opted for <a href="http://www.nngroup.com/articles/guerrilla-hci/">guerrilla usability testing</a>. Recruiting actual users would have required more time and resources than we wanted to spend. So I called in two of our sales guys, who made for good proxies of semi-experienced users that are technically middle-of-the-road (i.e. they have some basic code knowledge, but aren&rsquo;t developers), which covers the majority of our users. Their feedback made the decision easy, and successfully got me out of this jam.</p>
-          
-          <h2>In Summary</h2>
-          
-          <p>In a perfect world we would be testing all the time, but in reality that just isn&rsquo;t feasible. So we do our best to balance the time and resources required to test a UI against the overall importance of that feature. But usability testing won&rsquo;t find every flaw. Eventually you have to ship — you can&rsquo;t refine forever, and no design is perfect.</p>
-          <p class='follow-me'>
-            Thoughts? Reply
-            <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
-          </p>
-          <footer class='tags'>
-            Tags:
             <span class='tag'>Optimizely</span>
           </footer>
         </article>

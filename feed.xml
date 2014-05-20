@@ -5,10 +5,36 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2014-05-12T04:13:00Z</updated>
+  <updated>2014-05-20T04:02:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>On Being a Generalist</title>
+    <link rel="alternate" href="/2014/05/19/on-being-a-generalist/"/>
+    <id>/2014/05/19/on-being-a-generalist/</id>
+    <published>2014-05-20T04:02:00Z</published>
+    <updated>2014-05-20T04:02:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;I recently read &lt;a href="http://frankchimero.com/intros/quilt/"&gt;Frank Chimero&lt;/a&gt;&amp;rsquo;s excellent article, &lt;a href="http://frankchimero.com/talks/designing-in-the-borderlands/transcript/"&gt;&amp;ldquo;Designing in the Borderlands&amp;rdquo;&lt;/a&gt;. The gist of it is that we (designers, and the larger tech community) have constructed walls between various disciplines that we see as opposites, such as print vs. digital, text vs. image, and so on. However, the most interesting design happens in the borderlands, where these different mediums connect. He cites examples that combine physical and digital media, but the most interesting bit for me was his thoughts on roles that span disciplines:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;For a long time, I perceived my practice’s sprawl as a defect—evidence of an itchy mind or a fear of commitment—but I am starting to learn that a disadvantage can turn into an advantage with a change of venue. The ability to cross borders is an asset. Who else could go from group to group and be welcomed? The pattern happens over and over: if you’re not a part of any group, you can move amongst them all by tip-toeing across the lines that connect them.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I have felt this way many times throughout my career (especially that &amp;ldquo;fear of commitment&amp;rdquo; part). I have long felt like a generalist who works in both design and engineering, and I label myself to help people understand what I do (not to mention the necessity of a title). But I&amp;rsquo;ve never cleanly fit into any discipline.&lt;/p&gt;
+
+&lt;p&gt;This line was further blurred by my graduate degree from UC Berkeley&amp;rsquo;s &lt;a href="http://ischool.berkeley.edu"&gt;School of Information&lt;/a&gt;. The program brings together folks with diverse backgrounds, and produces &lt;a href="http://en.wikipedia.org/wiki/T-shaped_skills"&gt;T-shaped people&lt;/a&gt; who can think across disciplines and understand the broader context of their work, whether it be in engineering, design, policy &amp;amp; law, sociology, or dozens of other fields in which our alumni call home.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;These borderlands are the best place for a designer like me, and maybe like you, because the borderlands are where things connect. If you’re in the borderlands, your different tongues, your scattered thoughts, your lack of identification with a group, and all the things that used to be thought of as drawbacks in a specialist enclave become the hardened armor of a shrewd generalist in the borderlands.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Couldn&amp;rsquo;t have said it any better. Being able to move between groups and think across disciplines is more of an advantage than a disadvantage.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Why We Hire UI Engineers on the Design Team</title>
     <link rel="alternate" href="/2014/05/11/why-we-hire-ui-engineers-on-the-design-team/"/>
@@ -131,177 +157,6 @@
 &lt;h2&gt;In Summary&lt;/h2&gt;
 
 &lt;p&gt;In a perfect world we would be testing all the time, but in reality that just isn&amp;rsquo;t feasible. So we do our best to balance the time and resources required to test a UI against the overall importance of that feature. But usability testing won&amp;rsquo;t find every flaw. Eventually you have to ship — you can&amp;rsquo;t refine forever, and no design is perfect.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Re-Designing Optimizely's Preview Tool</title>
-    <link rel="alternate" href="/2014/02/11/re-designing-optimizely-s-preview-tool/"/>
-    <id>/2014/02/11/re-designing-optimizely-s-preview-tool/</id>
-    <published>2014-02-11T18:14:00Z</published>
-    <updated>2014-02-11T18:14:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;We just &lt;a href="http://blog.optimizely.com/2014/01/23/introducing-preview-as/"&gt;released a major addition&lt;/a&gt; to Optimizely&amp;rsquo;s preview tool: the ability to impersonate visitors. This lets our customers see content they&amp;rsquo;re targeting to different audiences. Designing and developing this was a larger undertaking than any of us expected. In this post, I am going to describe our design process and the design decisions we made along the way. My hope is this post will serve as a record of the work that went into it, as well as provide a glimpse into the black box of design.&lt;/p&gt;
-
-&lt;h2&gt;Impersonate what? Preview who?&lt;/h2&gt;
-
-&lt;p&gt;Optimizely&amp;rsquo;s Preview tool has been around for many years as a QA tool for our customers to view draft experiments on their live site. Its proven itself useful, but until now it wasn&amp;rsquo;t possible to view experiments targeted to users whose conditions you didn&amp;rsquo;t match, such as people in another country. The new impersonation functionality lets you do just that.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Optimizely's redesigned preview tool" src="/images/2014-02-11-re-designing-optimizely-s-preview-tool/preview-final.png?1392147052" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Optimizely&amp;rsquo;s newly redesigned preview tool&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2&gt;The problem&lt;/h2&gt;
-
-&lt;p&gt;Our broad goal was to make it easy for our customers to personalize content to their audiences. Like any good design process, we started by asking questions and doing research. We sought to answer questions such as: &amp;ldquo;Do our customers even want to do this at all? Do they do this now? Why do they do this?&amp;rdquo; We began by looking at usage metrics, which taught us that a small number of people already target content to audiences.&lt;/p&gt;
-
-&lt;p&gt;But why do they do this? What are their difficulties? Why aren&amp;rsquo;t more people doing this? To answer these questions, we switched into qualitative mode and spoke with customers. After a few interviews, the most consistent and actionable insight we had was that the biggest pain point is managing these targeted experiments. Among other issues, it&amp;rsquo;s especially hard to preview and test content that&amp;rsquo;s served to different audiences.&lt;/p&gt;
-
-&lt;h2&gt;A seedling of an idea&lt;/h2&gt;
-
-&lt;p&gt;With our research in hand, we brainstormed a bunch of different ways of tackling this problem. The most obvious improvement that everyone agreed on was augmenting the preview tool with the ability to impersonate different users. Adding this to the preview tool was a natural fit, since it&amp;rsquo;s meant to be a QA tool. It doesn&amp;rsquo;t solve every problem, but it&amp;rsquo;s a good first step.&lt;/p&gt;
-
-&lt;p&gt;During the brainstorming sessions we sketched a (very) rough mockup on a whiteboard (see below). The functionality of the previous preview tool would remain the same, and we&amp;rsquo;d just add the ability to view your site as a different audience member.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="First sketch of the new preview" src="/images/2014-02-11-re-designing-optimizely-s-preview-tool/2013-10-01-first-preview-sketch.jpg?1392147053" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;The first sketch outlining the new impersonate functionality.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2&gt;Better sketches&lt;/h2&gt;
-
-&lt;p&gt;After we had a basic idea of how this would work, it became my job to fully design the feature. This meant thinking through all the user interactions, layout, and visual design. My first step was to sketch more detailed interfaces. The original sketch relied on an overly simplistic assumption of how impersonation would work: users would select an audience to view the page as. Unfortunately, Optimizely doesn&amp;rsquo;t (yet) have the concept of an &amp;ldquo;audience&amp;rdquo; in the product. Since an audience is basically a collection of targeting criteria (location, cookies, browser, etc.), impersonating a visitor morphed into setting values for targeting attributes. These values are evaluated against each experiment&amp;rsquo;s targeting conditions, and the experiments that match are displayed on the page.&lt;/p&gt;
-
-&lt;p&gt;This is a pretty major change from the original concept. Instead of a simple dropdown to select a predefined audience, a person would have to set targeting attribute values to define their audience (for example, set browser to &amp;ldquo;Firefox&amp;rdquo; and location to &amp;ldquo;Bulgaria&amp;rdquo;). This change made the interface and user interactions significantly more complicated than the original sketch.&lt;/p&gt;
-
-&lt;p&gt;As a result, my early wireframes only focused on how people would set their targeting values. I threw down a bunch of different ways of doing this on a big sheet of poster paper (see picture below). My goal here was to figure out where this new UI would go, and how people would interact with it. It wasn&amp;rsquo;t meant to think through every corner of the tool. It simply got me to the point where I felt confident putting impersonation in a sidebar alongside the other panes. The form didn&amp;rsquo;t need to be very wide, and the different targeting attributes fit pretty easily in this constrained space.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="More detailed preview sketches" src="/images/2014-02-11-re-designing-optimizely-s-preview-tool/2013-10-10-refined-sketches.jpg?1392147053" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;More refined sketches of the new preview tool.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2&gt;Interactive mockups&lt;/h2&gt;
-
-&lt;p&gt;Now that I felt comfortable with the basic layout of the new preview, I moved into high fidelity interactive mockups. At this stage it was important for me to get my ideas into a form that I could actually interact with. It&amp;rsquo;s one thing to look at a static sketch, but it&amp;rsquo;s completely different to actually click through and interact with it. I could have sketched more, but I couldn&amp;rsquo;t be sure of my design decisions until I could use them.&lt;/p&gt;
-
-&lt;p&gt;My goal with the interactive mockup was to decide the major user interactions that shape how the product works. This would essentially act as a skeleton, to which I&amp;rsquo;d add the &amp;ldquo;skin&amp;rdquo; of visual design later. To achieve this, I coded a static HTML page that would look and act like the final product, but not actually do anything. I decided to build an HTML prototype because:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;It&amp;rsquo;s quick and easy to make changes (for me),&lt;/li&gt;
-&lt;li&gt;It runs in the browser, the medium through which actual users will interact with it, and&lt;/li&gt;
-&lt;li&gt;Large portions of the HTML, CSS, and JS can be re-used in the final version.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;While working on the interactive mockup, I proceeded in a very iterative fashion. I would identify the worst part of the UI, work on it until it was no longer the worst part of the UI, and then move on to the new worst part. Eventually, the original worst part would be the worst again, and I would improve it more. Working in this manner, nothing is ever &amp;ldquo;done&amp;rdquo;, and I&amp;rsquo;m continuously in the mindset of asking, &amp;ldquo;what can be better?&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;The other advantage of this approach is it lets me sit with a portion of the UI in an imperfect state for awhile. This lets me focus my attention elsewhere, which is helpful because it&amp;rsquo;s easy to get dragged down in details and lose objectivity. I&amp;rsquo;ve noticed that by focusing on another part of the UI, problems with what I was working on naturally pop out. And just as often, some detail I was sweating becomes a distant memory. A design decision ends up being more minor than I thought, or the solution just works in the overall context of the UI.&lt;/p&gt;
-
-&lt;p&gt;Although my process consisted of lots of iterations on every part of the interface, the rest of this post will focus on each part of the UI in isolation, as if I worked on each section straight from start to finish (even though I didn&amp;rsquo;t).&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Warning: this post isn&amp;rsquo;t even halfway done, so if you don&amp;rsquo;t care to read through a bunch of design decisions, I recommend you skip through my work-in-progress screenshots all the way to the end.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h3&gt;Where to put the new impersonation feature?&lt;/h3&gt;
-
-&lt;p&gt;The worst part that first jumped out at me was the location of the impersonation feature — it was too front and center. This is the new feature we were building, so naturally my sketches focused primarily on that. But in doing so, I lost sight of the larger picture: users will be coming from the editor to view a draft variation on their live site. Impersonating visitors is a secondary (maybe even tertiary) activity. And today, most users won&amp;rsquo;t find it useful (from our previous research, we knew only about 12% of running experiments are targeted).&lt;/p&gt;
-
-&lt;p&gt;My first attempt to solve this problem was to hide the impersonation sidebar by default. To open it, users would need to click a &amp;ldquo;targeting&amp;rdquo; icon. At the core of it, this approach worked. It got the impersonation pane out of people&amp;rsquo;s faces, while still being just a click away. But it worked &lt;em&gt;too&lt;/em&gt; well. The icon was too cryptic, and overall the impersonate functionality was too hidden for anyone to find.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Screenshot of another early interactive mockup" src="/images/2014-02-11-re-designing-optimizely-s-preview-tool/2013-10-29-early-interactive-warning.png?1392147052" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;This early screenshot shows how prominent the new impersonation feature was. It also shows one possible solution to this problem — toggling it by clicking a &amp;ldquo;targeting&amp;rdquo; icon (the cross hairs).&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;It also had another, more subtle problem. By being next to the experiments list, it implies a strong relationship between the two. For a long time, I thought this relationship was important. After all, changing targeting values affects which experiments are visible. And the targeting conditions of your experiments influence the custom visitor you&amp;rsquo;re trying to impersonate. Therefore, experiments must be next to the impersonation attributes!&lt;/p&gt;
-
-&lt;p&gt;For a long time, that reasoning made sense to myself and the larger group. I even tried to get cute and show a warning icon next to experiments that would not be visible after loading th epage as the custom visitor (with an option to pre-emptively ignore the targeting conditions — see screenshot above. Foreshadowing: I recycle this idea later). But after using this UI for awhile, I realized the relationship between these two is not as important as I originally thought. In general, having the list of experiments next to the impersonation UI (with icons turning on and off) was actually more distracting than helpful. It was complex and clever in a way that wasn&amp;rsquo;t benefiting users.&lt;/p&gt;
-
-&lt;p&gt;So I decided to simplify things by putting the impersonation feature in its own tab. This proved to be a good decision that solved a lot of problems beyond this immediate one. For one thing, it kept the user&amp;rsquo;s focus on setting targeting values, rather than splitting their attention between targeting values and experiments. And putting the UI behind a tab provided a label in the UI that hinted at its functionality (instead of an obtuse icon). Next, it allowed for some extra room to provide in-context help and an explanation of this new feature&amp;rsquo;s use. And finally, it provided a place to communicate when a person was in &amp;ldquo;impersonation mode&amp;rdquo;. I could use the tab for double duty by updating the text to say when a person was viewing the page as themselves, or impersonating a custom visitor.&lt;/p&gt;
-
-&lt;h3&gt;Custom visitor attributes&lt;/h3&gt;
-
-&lt;p&gt;The next issue to solve was how to set custom visitor attributes. I saw two major branches for this UI: have all of them available to set from the beginning; or, start with a blank slate and choose the attributes to set from a list. My sketches had potential solutions, but this was a question I could only answer by interacting with each interface.&lt;/p&gt;
-
-&lt;p&gt;There were advantages to each method. Having everything already in the UI laid all the cards on the table: all 11 possible attributes were already there, and you can see the fields you&amp;rsquo;ll need to fill in before interacting with anything. You just need to set the ones relevant for the custom visitor you want to impersonate. But it had some serious drawbacks: it looked visually cluttered and overwhelming; some attributes will be used a lot, while others will barely be used at all; and not all users understand what all the attributes are (e.g. custom tags? query parameters?).&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Screenshot of an early interactive mockup" src="/images/2014-02-11-re-designing-optimizely-s-preview-tool/2013-11-05-early-interactive.png?1392147052" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;This early interactive mockup shows one attempt at placing all the targeting attributes in the UI from the start.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;The other branch — inserting attributes by selecting them from a list — was also a mixed bag. The advantages are that the interface starts with a blank slate, which puts the user in control of what&amp;rsquo;s in the UI. It also doesn&amp;rsquo;t look overwhelming, and is less distracting (since only the attributes they want to see are present). The interaction is also split into two simple, discrete steps: first, choose the attribute you want to set; and second, set its value. But this is more clicks (at least 2, versus 1). And starting with a blank slate means a person must figure out how to insert the attribute(s) they want (since they&amp;rsquo;re not already on the screen).&lt;/p&gt;
-
-&lt;p&gt;Then I went in circles for weeks trying out different variations of each branch. Nothing felt quite right, and I couldn&amp;rsquo;t find a creative way to minimize the disadvantages of either idea. At this point I was pretty deep in the weeds, and my usual technique of focusing on another aspect of the UI for awhile wasn&amp;rsquo;t yielding any insights. So I decided I needed a fresh perspective. Using the mockup below, I ran some guerrilla usability studies with two of our sales people to see how they reacted to the UI. The results were pretty clear: they found it intimidating. One of them said, &amp;ldquo;it looks developer-y&amp;rdquo;. And in fact, my inspiration for this version came from the Chrome Developer tools.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Screenshot of another early interactive mockup" src="/images/2014-02-11-re-designing-optimizely-s-preview-tool/2013-11-12-impersonate-separate-tab.png?1392147052" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;This screenshot illustrates one possible method of setting custom visitor attributes – have all of them available in the UI from the start.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Getting qualitative data at this point was immensely valuable. Additionally, I thought back to some of the quantitative data we had gathered, and knew that most targeted experiments use fewer than 4 targeting criteria. This means most people will only need to set between 1 and 3 attributes when impersonating a visitor. From this I felt confident that inserting attributes from a list was the best approach. And after using the version pictured below for a few days, it felt about right. (But as you can see, it still needed a lot of refinement before going live).&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Almost final screenshot of adding custom visitor attributes" src="/images/2014-02-11-re-designing-optimizely-s-preview-tool/2013-11-19-impersonate-refined.png?1392147053" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;This version of adding custom visitor attributes is close to the final version, but still needed a lot of refinement.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h3&gt;Experiment activation&lt;/h3&gt;
-
-&lt;p&gt;The original preview had &amp;ldquo;Activate&amp;rdquo; links next to each of the inactive experiments in the experiment list, which was a big source of confusion. What does &amp;ldquo;activate&amp;rdquo; mean? Does clicking it mean the experiment is now &amp;ldquo;Running&amp;rdquo;? Is it a permanent change? In reality, it just makes it visible on the page for the duration of the preview session. I knew this interaction had to improve, but it required more than just a simple name change and better visual design (both of which were also necessary).&lt;/p&gt;
-
-&lt;p&gt;To find a solution, I started with two key questions: first, why do people click that button; and two, why do experiments need to be activated at all? I started with the second question, which turned out to be more complicated than I expected. An experiment may need to be activated for the following reasons:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;It&amp;rsquo;s running on a different page (the most obvious reason, but also the least likely scenario in which a person would want to make it visible)&lt;/li&gt;
-&lt;li&gt;It&amp;rsquo;s paused or draft (second most obvious, and also the most likely reason for a person to make it visible)&lt;/li&gt;
-&lt;li&gt;It&amp;rsquo;s manually activated (i.e. a piece of javascript on the user&amp;rsquo;s site triggers the experiment to run via our javascript API)&lt;/li&gt;
-&lt;li&gt;The user doesn&amp;rsquo;t match the experiment&amp;rsquo;s targeting conditions&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;To make things more confusing, an experiment may not be visible for all of these reasons, or any combination of them. For example, a paused experiment running on this page might also fail the targeting conditions, making it not run for two separate reasons. When clicking &amp;ldquo;Activate&amp;rdquo;, which action is supposed to happen? Ignore the experiment&amp;rsquo;s status, or the targeting conditions, or both?&lt;/p&gt;
-
-&lt;p&gt;Initially I assumed anytime &amp;ldquo;Activate&amp;rdquo; was clicked, the experiment should be visible, regardless of the reason it&amp;rsquo;s not visible. After all, the user&amp;rsquo;s intent was to make the experiment visible, right? Well, after some discussions with the larger group, the answer was &amp;ldquo;maybe&amp;rdquo; for the old UI, but &amp;ldquo;probably not&amp;rdquo; for the new one.&lt;/p&gt;
-
-&lt;p&gt;To understand why, we need to start with the goal of the new preview tool: give people impersonation capabilities, so they can preview targeted experiments. Put another way, it&amp;rsquo;s a testing tool to help you be confident that your targeting conditions are set correctly, and that your end-users are seeing the proper content. Viewed in this light, an experiment that&amp;rsquo;s not visible because it fails the targeting criteria becomes a lot more important. For example, lets say you have a draft experiment that is also targeted to an audience. While impersonating a visitor, you want to make sure this experiment&amp;rsquo;s targeting conditions are set properly. If clicking &amp;ldquo;Activate&amp;rdquo; were to override everything and make the experiment visible, there would be no way to know if you actually met the targeting conditions.&lt;/p&gt;
-
-&lt;p&gt;At this point there was clear motivation for separating out the actions, but there are still a lot of reasons an experiment may not be visible. Luckily, having a well-defined use case helped guide me. Rather than have buttons for every possibility, I could group the user&amp;rsquo;s intent into two categories: override targeting conditions (i.e. targeted URL and visitor targeting criteria), and everything else (e.g. ignore a paused experiment&amp;rsquo;s status). This meant I only needed two buttons.&lt;/p&gt;
-
-&lt;h4&gt;Button labels&lt;/h4&gt;
-
-&lt;p&gt;Next, I had to figure out what to label the buttons, and where to put them. What to label each button took a lot of discussion, and we ended up with three verbs to use (for only two buttons). The first was to use &amp;ldquo;Activate&amp;rdquo; to view manually activated experiments. Ironically, this is the same as the old UI, which I said needed to change, but in this case it&amp;rsquo;s consistent with the way we talk about manually activated experiments throughout the product (and is, in fact, the reason the original UI used &amp;ldquo;Activate&amp;rdquo; in the first place).&lt;/p&gt;
-
-&lt;p&gt;The action to view paused and draft experiments was more difficult. It couldn&amp;rsquo;t conflict with existing product terminology (e.g. running or active), but it needed to indicate you&amp;rsquo;re taking a non-permanent, temporary action. We felt &amp;ldquo;Stage&amp;rdquo; hit both of those requirements.&lt;/p&gt;
-
-&lt;p&gt;For the second button, my mockups used &amp;ldquo;Ignore targeting conditions&amp;rdquo; since I needed something for development purposes, and in the end that&amp;rsquo;s what we shipped. Everyone agreed it was clear and we felt there was no reason to over think it. Usability studies further confirmed that these label choices made sense.&lt;/p&gt;
-
-&lt;h4&gt;Button placement&lt;/h4&gt;
-
-&lt;p&gt;Now the only issue remaining was where to put the buttons. An obvious approach is to put them next to each experiment in the list (as the old UI did). I didn&amp;rsquo;t like this for two reasons: first, it&amp;rsquo;s visually heavy and repetitive (the same button is repeated again and again); and second, it&amp;rsquo;s not a common enough activity to have them always present (remember, the core use case is still coming from the editor to view the variation you&amp;rsquo;re working on).&lt;/p&gt;
-
-&lt;p&gt;I decided to hide them in a popover that appears when you click the name of an experiment. I tried a similar idea earlier in my iterations (remember the warning icon popover?), and liked the concept of only exposing secondary functionality when the user asks for it. It also provided another advantage: a place to put contextual information about the experiment. I could state the experiment status (paused, running, draft), and describe why an experiment was visible (or not).&lt;/p&gt;
-
-&lt;p&gt;Finding a solution that solves multiple problems always feels good. This is also a good example of how a scrapped idea can still be valuable. Rather than being a waste of time, it came back later to inspire me.&lt;/p&gt;
-
-&lt;p&gt;But it wasn&amp;rsquo;t perfect yet. My first iteration had both buttons in the popover, leaving it up to the user to decide which action they wanted (activate/stage an experiment, or ignore targeting conditions). But I could tell immediately that having two buttons of equal importance was confusing. As &lt;a href="http://www.sensible.com/about/"&gt;Steve Krug&lt;/a&gt; says, &lt;a href="http://www.sensible.com/dmmt.html"&gt;&amp;ldquo;Don&amp;rsquo;t make me think&amp;rdquo;&lt;/a&gt;, and this definitely made the user think.&lt;/p&gt;
-
-&lt;p&gt;In thinking through this problem, I knew both buttons were not required for every experiment (e.g. a paused, un-targeted experiment will never need to ignore targeting conditions). So for the complex case where an experiment needs both buttons to make it visible, I decided to make the actions sequential. First, the popover explains the experiment isn&amp;rsquo;t visible because it&amp;rsquo;s paused or draft, and to make it visible you must click &amp;ldquo;Stage&amp;rdquo;. Then, if it&amp;rsquo;s still not visible, the popover informs you why, and provides you an override button.&lt;/p&gt;
-
-&lt;p&gt;Although this is technically more work (i.e. more clicks), it&amp;rsquo;s less of a cognitive burden on the user. They are presented with one decision at a time. And they don&amp;rsquo;t need to figure out what&amp;rsquo;s happening – the system tells them.&lt;/p&gt;
-
-&lt;p&gt;After using this UI for awhile, an obvious improvement popped out at me: adding a label next to experiments that are staged/actived, and ignoring targeting conditions. This information was previously only available in the popover, which makes it cumbersome to access. With labels, it&amp;rsquo;s easy to see at a glance which experiments were forced to be visible. I also added a label for the experiment being previewed from the editor, which is really nice for orienting the user when they first arrive in the preview tool.&lt;/p&gt;
-
-&lt;h3&gt;Path field interaction&lt;/h3&gt;
-
-&lt;p&gt;One of the last things I worked on was the URL path field. This field exists to give people the ability to continue impersonating visitors and previewing experiments on other pages of their site. We considered just letting a person click through their site and have the preview tool follow them around, but this behavior isn&amp;rsquo;t always desirable (e.g. what if they navigate to a new domain?). Plus, there were technical issues with implementing this. And since it isn&amp;rsquo;t a common action, we went with giving people the ability to type new URL paths, even though it&amp;rsquo;s not ideal.&lt;/p&gt;
-
-&lt;p&gt;So at a minimum I knew there had to be an input field with a button to load the page. And that&amp;rsquo;s exactly what it was during the prototyping phase and most of the implementation phase. But after awhile it became clear to me that it was going to need a bit more polish. The main problem was it was too squished between the tabs and rightmost edge. If you&amp;rsquo;re typing a really long path, you won&amp;rsquo;t be able to see the whole thing at once, which can lead to errors. Plus, it just &amp;ldquo;feels&amp;rdquo; cramped to use.&lt;/p&gt;
-
-&lt;p&gt;My first attempt was to move it out of the header completely — give it a dedicated space to live and breath. And since it&amp;rsquo;s not something that will be used frequently, it&amp;rsquo;s better to put it in a less prominent spot. Unfortunately, it didn&amp;rsquo;t make sense in any of the tabs. It&amp;rsquo;s a global action, unspecific to anything in the tabs. And putting it in its own dedicated tab was overkill since it would be the only field there.&lt;/p&gt;
-
-&lt;p&gt;So with that option off the table, I had to find a way to make it work in the header. The only reasonable approach I came up with was to keep it small and unobtrusive until someone started interacting with it. I experimented with a few different ways of doing this, but the one that felt best was hiding the domain name and keeping the field small until the user clicked into it, at which point the field expands, the tabs disappear, and the domain name pops out. This put all of the focus on the URL field, and provided a lot of room for editing the path.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Animated gif of the path interaction" src="/images/2014-02-11-re-designing-optimizely-s-preview-tool/preview-path.gif?1392147053" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;When clicking into the path field, the input expands and the tabs duck down out of the way.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2&gt;Ship it!&lt;/h2&gt;
-
-&lt;p&gt;If you made it this far, congratulations! What I just described only scratches the surface of all the design decisions that were made. In writing this post, a lot of little decisions and early, incorrect assumptions came back to me. But if I went any deeper this post would be a novel, so instead I focused on the most difficult aspects of the impersonation feature. Design is often seen as a black box, and as writing this post has shown me, that&amp;rsquo;s because documenting the thought process and decision making can be exhausting. It&amp;rsquo;s amazing how some little detail you obsessed over for days can be so quickly forgotten. So this post acts as a historical record to help remind myself and the larger team all the work that went into this feature, in addition to providing a glimpse into the process of design.&lt;/p&gt;
 </content>
   </entry>
 </feed>
