@@ -43,6 +43,32 @@
       </header>
       <div class='content'>
         <article>
+          <time datetime='2014-05-25'>
+            <i>Posted on</i>
+            May 25, 2014
+            <i>by</i>
+            Jeff Zych
+          </time>
+          <h1><a href="/2014/05/25/i-too-only-work-on-unshiny-products/">I, Too, Only Work On Unshiny Products</a></h1>
+          <p><a href="https://medium.com/design-founders/847701785dae">Jeff Domke&rsquo;s article</a> about working on &ldquo;unshiny&rdquo; products sums up my view of my own work at <a href="https://www.optimizely.com">Optimizely</a>. The crux of his argument is that many designers are drawn to working on &ldquo;shiny&rdquo; products — products that are pretty and lauded in the design community — but &ldquo;unshiny&rdquo; products are a lot more interesting to work on. They&rsquo;re often solving difficult problems, and have more room for you to make an impact. You&rsquo;re working to make the product reach its potential. Shiny products, on the other hand, have reached that potential, and you are less able to make your mark.</p>
+          
+          <p>Optimizely sits right in the sweet spot. We aren&rsquo;t &ldquo;shiny&rdquo; (compared to sexy products like Square and Medium, we have a long way to go); nor are we &ldquo;unshiny&rdquo; (our customers describe us as well-designed and easy-to-use). Rather, we land more in the middle — we have a solid user experience that has a lot of room for improvement.</p>
+          
+          <p>We&rsquo;re also solving really hairy, complex problems. Apps that get mounds of praise tend to solve relatively simple problems (such as to-do list apps). It&rsquo;s much more interesting to work on a problem space that is unexplored and is full of murky, vague, conflicting goals that must be untangled. And once you&rsquo;ve made sense of the mess, you know you&rsquo;ve enabled someone to do their job better.</p>
+          
+          <p>And that&rsquo;s the most exciting part of working at Optimizely — making the product fulfill its potential, and solving tough problems that impact businesses&#39; bottom lines.</p>
+          
+          <p><em>Want to come work on hard problems with me at Optimizely? Check out our <a href="https://www.optimizely.com/jobs">jobs</a>, or reach out <a href="https://twitter.com/jlzych">@jlzych</a>.</em></p>
+          <p class='follow-me'>
+            Thoughts? Reply
+            <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
+          </p>
+          <footer class='tags'>
+            Tags:
+            <span class='tag'>design</span>
+          </footer>
+        </article>
+        <article>
           <time datetime='2014-05-19'>
             <i>Posted on</i>
             May 19, 2014
@@ -128,53 +154,6 @@
           <footer class='tags'>
             Tags:
             <span class='tag'>product design</span>
-          </footer>
-        </article>
-        <article>
-          <time datetime='2014-03-11'>
-            <i>Posted on</i>
-            Mar 11, 2014
-            <i>by</i>
-            Jeff Zych
-          </time>
-          <h1><a href="/2014/03/11/did-you-a-b-test-the-redesigned-preview-tool/">Did you A/B test the redesigned preview tool?</a></h1>
-          <p>A lot of people have asked me if we <a href="https://www.optimizely.com/ab-testing">A/B tested</a> the <a href="/2014/02/11/re-designing-optimizely-s-preview-tool/">redesigned preview tool</a>. The question comes in two flavors: did we use A/B testing to validate impersonation was worth building (a.k.a. fake door testing); and, did we A/B test the redesigned UI against the old UI? Both are good questions, but the short answer is no. In this post I&rsquo;m going to dig into both and explain why.</p>
-          
-          <h2>Fake Door Testing</h2>
-          
-          <p><a href="http://www.slideshare.net/JessLee4/fake-doors-how-to-test-product-ideas-quickly-hustlecon-2013">Fake door testing</a> (<a href="http://vimeo.com/24744647">video</a>) is a technique to measure interest in a new feature by building a &ldquo;fake door&rdquo; version of it that looks like the final version (but doesn&rsquo;t actually work) and measuring how many people engage with it. Trying to use the feature gives users an explanation of what it is, that it&rsquo;s &ldquo;Coming soon&rdquo;, and usually the ability to &ldquo;vote&rdquo; on it or send feedback (the specifics vary depending on the context). This doesn&rsquo;t need to be run as an A/B test, but setting it up as one lets you compare user behavior.</p>
-          
-          <p>We could have added an &ldquo;Impersonate&rdquo; tab to the old UI, measured how many people tried to use it, and gathered feedback. This would have been cheap and easy. But we didn&rsquo;t do this because the feature was inspired by our broader research around personalization. Our data pointed us towards this feature, so we were confident it would be worthwhile.</p>
-          
-          <p>But more than that, measuring clicks and votes doesn&rsquo;t tell you much. People can click out of curiosity, which doesn&rsquo;t tell you if they&rsquo;d actually use the feature or if it solves a real problem. Even if people send feedback saying they&rsquo;d love it, <a href="http://www.nngroup.com/articles/first-rule-of-usability-dont-listen-to-users/">what users say and what they do is different</a>. Actually talking to users to find pain points yields robust data that leads to richer solutions. The new impersonate functionality is one such example — no one had thought of it before, and it wasn&rsquo;t on our feature request list or product roadmap.</p>
-          
-          <p>However, not everyone has the resources to conduct user research. In that situation, fake door testing is a good way of cheaply getting feedback on a specific idea. After all, some data is better than no data.</p>
-          
-          <h2>A/B Testing the Redesigned UI</h2>
-          
-          <p>The second question is, &ldquo;Did you A/B test the redesigned preview against the previous one?&rdquo; We didn&rsquo;t, primarily because there&rsquo;s no good metric to use as a conversion goal. We added completely new functionality to the preview tool, so most metrics are the equivalent of comparing apples to oranges. For example, measuring how many people impersonate a visitor is meaningless because the old UI doesn&rsquo;t even have that feature.</p>
-          
-          <p>So at an interface level, there isn&rsquo;t a good measurement. But what about at the product level? We could measure larger metrics, such as the number of targeted experiments being created, to see if the new UI has an effect. There are two problems with this. First, it will take a long time (many months) to reach a statistically significant difference because the conversion rate on most product metrics are low. Second, if we eventually measured a difference, there&rsquo;s no guarantee it was caused by adding impersonation. The broader the metric, the more factors that influence it (such as other product updates). To overcome this you could freeze people in the &ldquo;A&rdquo; and &ldquo;B&rdquo; versions of the product, but given how long it takes to reach significance, this isn&rsquo;t a good idea.</p>
-          
-          <p>Companies like Facebook and Google have enough traffic that they actually are able to roll out new features to a small percentage of users (say, 5%), and measure the impact on their core metrics. If any take a plunge, they revert users to the previous UI and keep iterating. When you have the scale of Facebook and Google, you can get significant data in a day. Unfortunately, like most companies, we don&rsquo;t have this scale, so it isn&rsquo;t an option.</p>
-          
-          <h2>So How Do You Know The Redesign Was Worth It?</h2>
-          
-          <p>What people are really asking is how do we know the redesign was worth the effort? Being at an A/B testing company, everyone wants to A/B test everything. But in this case, there wasn&rsquo;t a place for it. Like any method, <a href="http://www.nngroup.com/articles/ab-testing-usability-engineering/">split testing has its strengths and weaknesses</a>.</p>
-          
-          <h2>No, Really — How <em>Do</em> You Know The Redesign Was Worth It?</h2>
-          
-          <p>Primarily via qualitative feedback (i.e. talking to users), which at a high level has been positive (but there are some improvements we can make). We&rsquo;re also measuring people&rsquo;s activities in the preview tool (e.g. changing tabs, impersonating visitors, etc.). So far, those are healthy. Finally, we&rsquo;re keeping an eye on some product-level metrics, like the number of targeted experiments created. These metrics are part of our long-term personalization efforts, and we hope in the long run to see them go up. But the preview tool is just one piece of that puzzle, so we don&rsquo;t expect anything noticeable from that alone.</p>
-          
-          <p>The important theme here is that gathering data is important to ensure you&rsquo;re making the best use of limited resources (time, people, etc.). But there&rsquo;s a whole world of data beyond A/B testing, such as user research, surveys, product analytics, and so on. It&rsquo;s important to keep in mind the advantages and disadvantages of each, and use the most appropriate ones at your disposal.</p>
-          <p class='follow-me'>
-            Thoughts? Reply
-            <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
-          </p>
-          <footer class='tags'>
-            Tags:
-            <span class='tag'>a/b testing</span>
-            <span class='tag'>Optimizely</span>
           </footer>
         </article>
         <a class="view-all-link" href="/archives">View all posts &raquo;</a>

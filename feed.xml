@@ -5,10 +5,30 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2014-05-20T04:02:00Z</updated>
+  <updated>2014-05-25T18:55:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>I, Too, Only Work On Unshiny Products</title>
+    <link rel="alternate" href="/2014/05/25/i-too-only-work-on-unshiny-products/"/>
+    <id>/2014/05/25/i-too-only-work-on-unshiny-products/</id>
+    <published>2014-05-25T18:55:00Z</published>
+    <updated>2014-05-25T18:55:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;a href="https://medium.com/design-founders/847701785dae"&gt;Jeff Domke&amp;rsquo;s article&lt;/a&gt; about working on &amp;ldquo;unshiny&amp;rdquo; products sums up my view of my own work at &lt;a href="https://www.optimizely.com"&gt;Optimizely&lt;/a&gt;. The crux of his argument is that many designers are drawn to working on &amp;ldquo;shiny&amp;rdquo; products — products that are pretty and lauded in the design community — but &amp;ldquo;unshiny&amp;rdquo; products are a lot more interesting to work on. They&amp;rsquo;re often solving difficult problems, and have more room for you to make an impact. You&amp;rsquo;re working to make the product reach its potential. Shiny products, on the other hand, have reached that potential, and you are less able to make your mark.&lt;/p&gt;
+
+&lt;p&gt;Optimizely sits right in the sweet spot. We aren&amp;rsquo;t &amp;ldquo;shiny&amp;rdquo; (compared to sexy products like Square and Medium, we have a long way to go); nor are we &amp;ldquo;unshiny&amp;rdquo; (our customers describe us as well-designed and easy-to-use). Rather, we land more in the middle — we have a solid user experience that has a lot of room for improvement.&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;re also solving really hairy, complex problems. Apps that get mounds of praise tend to solve relatively simple problems (such as to-do list apps). It&amp;rsquo;s much more interesting to work on a problem space that is unexplored and is full of murky, vague, conflicting goals that must be untangled. And once you&amp;rsquo;ve made sense of the mess, you know you&amp;rsquo;ve enabled someone to do their job better.&lt;/p&gt;
+
+&lt;p&gt;And that&amp;rsquo;s the most exciting part of working at Optimizely — making the product fulfill its potential, and solving tough problems that impact businesses&amp;#39; bottom lines.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Want to come work on hard problems with me at Optimizely? Check out our &lt;a href="https://www.optimizely.com/jobs"&gt;jobs&lt;/a&gt;, or reach out &lt;a href="https://twitter.com/jlzych"&gt;@jlzych&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>On Being a Generalist</title>
     <link rel="alternate" href="/2014/05/19/on-being-a-generalist/"/>
@@ -113,50 +133,6 @@
 &lt;p&gt;Primarily via qualitative feedback (i.e. talking to users), which at a high level has been positive (but there are some improvements we can make). We&amp;rsquo;re also measuring people&amp;rsquo;s activities in the preview tool (e.g. changing tabs, impersonating visitors, etc.). So far, those are healthy. Finally, we&amp;rsquo;re keeping an eye on some product-level metrics, like the number of targeted experiments created. These metrics are part of our long-term personalization efforts, and we hope in the long run to see them go up. But the preview tool is just one piece of that puzzle, so we don&amp;rsquo;t expect anything noticeable from that alone.&lt;/p&gt;
 
 &lt;p&gt;The important theme here is that gathering data is important to ensure you&amp;rsquo;re making the best use of limited resources (time, people, etc.). But there&amp;rsquo;s a whole world of data beyond A/B testing, such as user research, surveys, product analytics, and so on. It&amp;rsquo;s important to keep in mind the advantages and disadvantages of each, and use the most appropriate ones at your disposal.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>When Do You Do User Testing?</title>
-    <link rel="alternate" href="/2014/03/02/when-we-do-user-testing/"/>
-    <id>/2014/03/02/when-we-do-user-testing/</id>
-    <published>2014-03-02T23:37:00Z</published>
-    <updated>2014-03-02T23:37:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;In response to my &lt;a href="/2014/02/11/re-designing-optimizely-s-preview-tool/"&gt;preview redesign post&lt;/a&gt;, my uncle asked, &amp;ldquo;When does the designer go with their own analysis of a design and when do they do a usability test?&amp;rdquo; I&amp;rsquo;ve been asked this question a lot, and we often discuss it in product development meetings. It&amp;rsquo;s also something I wanted to elaborate on more in the post, but it didn&amp;rsquo;t fit. So I will take this opportunity to roughly outline when we do user testing and why.&lt;/p&gt;
-
-&lt;h2&gt;The Ideal&lt;/h2&gt;
-
-&lt;p&gt;In an ideal world, we would be testing all the time. Having a tight feedback loop is invaluable. By which I mean, being able to design a solution to a problem and validating that it solves said problem immediately would be amazing. And in product design, the best validation is almost always user testing.&lt;/p&gt;
-
-&lt;h2&gt;The Reality&lt;/h2&gt;
-
-&lt;p&gt;In reality, there&amp;rsquo;s no such thing as instant feedback. You can&amp;rsquo;t design something and receive immediate feedback. There&amp;rsquo;s no automated process that tells you if a UI is good or not. You have to talk to actual humans, which takes time and effort.&lt;/p&gt;
-
-&lt;p&gt;This means there&amp;rsquo;s a trade-off between getting as much feedback as possible, and actually releasing something. The more user testing you do, the longer it will take to release.&lt;/p&gt;
-
-&lt;h3&gt;What we do at Optimizely&lt;/h3&gt;
-
-&lt;p&gt;At &lt;a href="https://www.optimizely.com"&gt;Optimizely&lt;/a&gt;, we weigh the decision to do user testing against deadlines, how important the questions are (e.g. are they core to the experience, or an edge case), how likely we are to get actionable insights (e.g. testing colors will usually give you a bunch of conflicting opinions), and what other research we could be doing instead (i.e. opportunity cost).&lt;/p&gt;
-
-&lt;p&gt;With the preview redesign, we started with exploratory research to get us on the right track, but didn&amp;rsquo;t do much testing beyond that. This was mainly because we didn&amp;rsquo;t make time for it. It was clear from our generative research that adding impersonation to the preview tool would be a step in the right direction. But it&amp;rsquo;s only one part of a larger solution, and won&amp;rsquo;t be used by everyone. We didn&amp;rsquo;t want to slow down our overall progress by spending too much time trying to perfect one piece of a much larger puzzle.&lt;/p&gt;
-
-&lt;p&gt;So with the preview tool, I had to rely on my instincts and feedback from other designers, engineers, and product managers to make decisions. One such example is when I decided to hide the impersonation feature by default, and it would slide out when an icon is clicked. Of this solution I said:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;But it worked &lt;em&gt;too&lt;/em&gt; well [at solving the problem of the impersonation UI being distracting]. The icon was too cryptic, and overall the impersonate functionality was too hidden for anyone to find.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;As my uncle pointed out, I didn&amp;rsquo;t do any user testing to make this call. I looked at what I had created, and could tell it wasn&amp;rsquo;t a great solution (which was also confirmed by my teammates). I was confident the decision to keep iterating was right based on established &lt;a href="http://www.nngroup.com/articles/ten-usability-heuristics/"&gt;usability heuristics&lt;/a&gt; and my own experience.&lt;/p&gt;
-
-&lt;p&gt;However, not all design decisions can be guided by general usability guidelines. One such example is when I went in circles designing how a person sets impersonation values. I tried using established best practices and talking to other designers, but neither method led me to an answer. At this point, user testing was my only out.&lt;/p&gt;
-
-&lt;p&gt;In this case, we opted for &lt;a href="http://www.nngroup.com/articles/guerrilla-hci/"&gt;guerrilla usability testing&lt;/a&gt;. Recruiting actual users would have required more time and resources than we wanted to spend. So I called in two of our sales guys, who made for good proxies of semi-experienced users that are technically middle-of-the-road (i.e. they have some basic code knowledge, but aren&amp;rsquo;t developers), which covers the majority of our users. Their feedback made the decision easy, and successfully got me out of this jam.&lt;/p&gt;
-
-&lt;h2&gt;In Summary&lt;/h2&gt;
-
-&lt;p&gt;In a perfect world we would be testing all the time, but in reality that just isn&amp;rsquo;t feasible. So we do our best to balance the time and resources required to test a UI against the overall importance of that feature. But usability testing won&amp;rsquo;t find every flaw. Eventually you have to ship — you can&amp;rsquo;t refine forever, and no design is perfect.&lt;/p&gt;
 </content>
   </entry>
 </feed>
