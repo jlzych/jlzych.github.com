@@ -5,10 +5,34 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2014-06-18T15:24:00Z</updated>
+  <updated>2014-08-10T22:50:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>DRY isn't the One True Principle of CSS</title>
+    <link rel="alternate" href="/2014/08/10/dry-isn-t-the-one-true-principle-of-css/"/>
+    <id>/2014/08/10/dry-isn-t-the-one-true-principle-of-css/</id>
+    <published>2014-08-10T22:50:00Z</published>
+    <updated>2014-08-10T22:50:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;a href="http://benfrain.com/"&gt;Ben Frain&lt;/a&gt; wrote a &lt;a href="http://benfrain.com/enduring-css-writing-style-sheets-rapidly-changing-long-lived-projects/"&gt;great article&lt;/a&gt; of recommendations for writing long-living CSS that&amp;rsquo;s authored by many people (e.g. CSS for a product). The whole thing is worth reading, but I especially agree with his argument against writing &lt;a href="http://en.wikipedia.org/wiki/Don&amp;#x27;t_repeat_yourself"&gt;DRY&lt;/a&gt; (Don&amp;rsquo;t Repeat Yourself) code at the expense of maintainability. He says:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;As a concrete example; being able to delete an entire Sass partial (say 9KB) in six months time with impunity (in that I know what will and won’t be affected by the removal) is far more valuable to me than a 1KB saving enjoyed because I re-used or extended some vague abstracted styles.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Essentially, by abstracting styles as much as possible and maximizing re-use, you&amp;rsquo;re creating an invisible web of dependencies. If you ever want to change or remove styles, you will cause a ripple effect throughout your site. Tasks that should have been 30 or 60 minutes balloon into multi-hour endeavors. As Ben says, being able to delete (or modify) with impunity is far more valuable than the small savings you get by abstracting your code.&lt;/p&gt;
+
+&lt;p&gt;I have made this mistake many times in my career, and it took me a long time to distinguish between good and bad code reuse. The trick I use is to ask, &amp;ldquo;If I were to later change the style of this component, would I want the others that depend on it to be updated, too?&amp;rdquo; More often than not, the answer is no, and the styles should be written separately. It took some time for me to be comfortable having duplicate CSS in order to increase maintainability.&lt;/p&gt;
+
+&lt;p&gt;Another way of thinking about this is to figure out why two components look the same. If it&amp;rsquo;s because one is a modification of a base module (e.g. a small version of a button), it&amp;rsquo;s a good candidate for code reuse. If not (e.g. a tab that looks similar to a button, but behaves differently), then you&amp;rsquo;re just setting yourself up for a maintainability nightmare.&lt;/p&gt;
+
+&lt;p&gt;As beneficial as DRY code is, it isn&amp;rsquo;t the One True Principle of CSS. At best, it saves some time and bytes, but at worst, it&amp;rsquo;s a hindrance to CSS maintainability.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Design Process of Optimizely's Sample Size Calculator</title>
     <link rel="alternate" href="/2014/06/18/design-process-of-optimizely-s-sample-size-calculator/"/>
@@ -125,20 +149,6 @@
     <content type="html">&lt;p&gt;I just got around to watching Matthew Carter&amp;rsquo;s excellent TED talk, &lt;a href="http://on.ted.com/sqLe"&gt;&amp;ldquo;My Life in Typefaces&amp;rdquo;&lt;/a&gt;. In it, he talks about his experience designing type for the past 5 decades, and how technical constraints influenced his designs. The central question he tries to answer is, &amp;ldquo;Does a constraint force a compromise? By accepting a constraint, are you working to a lower standard?&amp;rdquo; This is a question that comes up in every discipline, and with every technological change. Matthew Carter&amp;rsquo;s take on this subject is interesting because he&amp;rsquo;s experienced numerous technological changes, and has designed superb typefaces for all of them.&lt;/p&gt;
 
 &lt;p&gt;At first blush, it&amp;rsquo;s easy to conclude that constraints force designers to compromise their vision. But design isn&amp;rsquo;t produced in a vacuum, and ultimately must be realized through one or more mediums (print, screen, radio, etc.). Therefore, one must work within constraints to produce the best designs. To do so, designers must understand the technology that enables their designs to be experienced, be it code, the printing process, and so on. As Matthew Carter said in this talk, &amp;ldquo;I&amp;rsquo;m a pragmatist, not an idealist, out of necessity,&amp;rdquo; which is a valuable lesson that all designers should take to heart.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Designing with instinct vs. data</title>
-    <link rel="alternate" href="/2014/04/16/designing-with-instinct-vs-data/"/>
-    <id>/2014/04/16/designing-with-instinct-vs-data/</id>
-    <published>2014-04-17T05:27:00Z</published>
-    <updated>2014-04-17T05:27:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;&lt;a href="http://www.gv.com/team/braden-kowitz"&gt;Braden Kowitz&lt;/a&gt; wrote a &lt;a href="http://www.gv.com/lib/design-instinct-vs-data"&gt;great article&lt;/a&gt; exploring the ever increasing tension between making design decisions based on instinct versus data. As he says, &amp;ldquo;It’s common to think of data and instincts as being opposing forces in design decisions.&amp;rdquo; This is especially true at an &lt;a href="https://www.optimizely.com"&gt;A/B testing company&lt;/a&gt; — we have a tendency to quantify and measure everything.&lt;/p&gt;
-
-&lt;p&gt;He goes on to say, &amp;ldquo;In reality, there’s a blurry line between the two,&amp;rdquo; and I couldn&amp;rsquo;t agree more. When I&amp;rsquo;m designing, I&amp;rsquo;m in the habit of always asking, &amp;ldquo;What data would help me make this decision?&amp;rdquo; Sometimes it&amp;rsquo;s usage logs, sometimes it&amp;rsquo;s user testing, sometimes it&amp;rsquo;s market research, and sometimes there isn&amp;rsquo;t anything but my own intuition. Even when there is data, it&amp;rsquo;s all just input I use to help me reach a decision. It&amp;rsquo;s not a good idea to blindly follow data, but it&amp;rsquo;s equally bad to only use your gut. As Braden said, it&amp;rsquo;s important to balance the two.&lt;/p&gt;
 </content>
   </entry>
 </feed>
