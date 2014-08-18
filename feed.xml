@@ -5,10 +5,60 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2014-08-10T22:50:00Z</updated>
+  <updated>2014-08-18T04:13:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>1-year Retrospective</title>
+    <link rel="alternate" href="/2014/08/17/1-year-retrospective/"/>
+    <id>/2014/08/17/1-year-retrospective/</id>
+    <published>2014-08-18T04:13:00Z</published>
+    <updated>2014-08-18T04:13:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;August 2nd marked the 1-year anniversary of &lt;a href="http://jlzych.com/2013/08/02/everyones-reading-this-increase-conversions-with-social-proof/"&gt;my first post&lt;/a&gt;, so it seems appropriate to do a quick retrospective of my first year blogging on my personal site.&lt;/p&gt;
+
+&lt;h2&gt;Writing Stats&lt;/h2&gt;
+
+&lt;p&gt;I&amp;rsquo;ve written 22 posts in that time, which is a rate of 1.83 per month. My (unstated) goal was 2 per month, so I wasn&amp;rsquo;t far off. My most prolific month is a tie between September 2013 and May 2014, in which I wrote 4 articles each. But in September I re-used some posts I had written previously for &lt;a href="https://www.optimizely.com"&gt;Optimizely&lt;/a&gt;, so May wins for more original content.&lt;/p&gt;
+
+&lt;p&gt;Sadly, there were two months in which I didn&amp;rsquo;t write any articles: Dec 2013, and July 2014. In December I was in India, so that&amp;rsquo;s a pretty legitimate reason. July, however, has no good reason. It was generally a busy month, but I should have made time to write at least one post. And looking closer, just saying &amp;ldquo;July&amp;rdquo; makes it sound better than it actually was - I had a seven week stretch of no posts then!&lt;/p&gt;
+
+&lt;p&gt;My longest article was &lt;a href="http://jlzych.com/2014/02/11/re-designing-optimizely-s-preview-tool/"&gt;&amp;ldquo;Re-Designing Optimizely&amp;rsquo;s Preview Tool&amp;rdquo;&lt;/a&gt;, clocking in at 4,158 words!&lt;/p&gt;
+
+&lt;h2&gt;Site Analytics&lt;/h2&gt;
+
+&lt;p&gt;Diving into Google Analytics, I&amp;rsquo;ve had 3,092 page views, 2,158 sessions, and 1,778 users. I seem to get a steady trickle of traffic every day, with a few occasional spikes in activity (which are caused by retweets, Facebook posts, or sending posts to all of Optimizely). All of which I find pretty surprising since I don&amp;rsquo;t write very regularly, and I don&amp;rsquo;t do much to actively seek readers.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Google Analytics stats for the past year" src="http://jlzych.com/images/2014-08-17-1-year-retrospective/ga.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;So where do these visitors (i.e. you) come from? Google Analytics tells me that, even more surprisingly, the top two sources are organic search and direct, respectively. From looking through the search terms used to find me, they can be grouped into three categories:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;My name: this is most likely people who are interviewing at Optimizely.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://jlzych.com/2013/08/15/performance-comparison-of-serving-fonts-through-typekit-vs-cloud-typography/"&gt;Cloud.typography and Typekit comparison&lt;/a&gt;: people are interested in a performance comparison of these two services. And in fact, I wrote this article precisely because I was searching for that information myself, but there weren&amp;rsquo;t any posts about it.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://jlzych.com/2013/09/30/framing-your-message-for-maximum-impact/"&gt;Framing messages&lt;/a&gt;: I wrote a post about the behavioral economics principle of framing, and how you can use it to generate A/B testing ideas. Apparently people want help writing headlines!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Top Posts&lt;/h2&gt;
+
+&lt;p&gt;Continuing to dig into Google Analytics, these are my three most popular posts:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="http://jlzych.com/2013/10/08/extend-sass-s-awkward-stepchild/"&gt;&amp;ldquo;Extend – SASS&amp;rsquo;s Awkward Stepchild&amp;rdquo;&lt;/a&gt;, with 354 page views.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://jlzych.com/2014/02/11/re-designing-optimizely-s-preview-tool/"&gt;&amp;ldquo;Re-Designing Optimizely&amp;rsquo;s Preview Tool&amp;rdquo;&lt;/a&gt;, with 306 page views.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://jlzych.com/2013/08/15/performance-comparison-of-serving-fonts-through-typekit-vs-cloud-typography/"&gt;&amp;ldquo;Performance comparison of serving fonts through Typekit vs Cloud.typography&amp;rdquo;&lt;/a&gt;, with 302 page views.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;They&amp;rsquo;re all pretty close in terms of traffic, but quite different in terms of content. So what does this tell me about what&amp;rsquo;s resonating with you, the reader, and what I should continue doing going forward? The main commonality is that all of those articles are original, in-depth content. In fact, this holds true past the top 10. My shorter posts that are responses to other people&amp;rsquo;s posts don&amp;rsquo;t receive as much mind share. I&amp;rsquo;ll have to think more about whether they&amp;rsquo;re worth doing at all anymore.&lt;/p&gt;
+
+&lt;h2&gt;End&lt;/h2&gt;
+
+&lt;p&gt;Overall I&amp;rsquo;m pretty satisfied with those numbers, and the content I&amp;rsquo;ve been able to produce. Going forward I hope I can write more in-depth content, especially about the design process of my projects (which are my favorite to write). Here&amp;rsquo;s to the upcoming year!&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>DRY isn't the One True Principle of CSS</title>
     <link rel="alternate" href="/2014/08/10/dry-isn-t-the-one-true-principle-of-css/"/>
@@ -135,20 +185,6 @@
       <name>Jeff Zych</name>
     </author>
     <content type="html">&lt;p&gt;This &lt;a href="http://cognition.happycog.com/article/why-developers-need-to-learn-design"&gt;Happy Cog article&lt;/a&gt; by &lt;a href="http://stephencaver.com/"&gt;Stephen Caver&lt;/a&gt; perfectly encapsulates why we hire &lt;a href="http://jobsco.re/1oHhZGz"&gt;UI Engineers&lt;/a&gt; on the design team at &lt;a href="https://www.optimizely.com"&gt;Optimizely&lt;/a&gt; (as opposed to the engineering team). We want the folks coding a UI to be involved in the design process from the beginning, to understand the design system that underlies a user experience, and to be empowered to make design decisions while developing a UI. Successful designs must adapt to various contexts and degrade gracefully. The people most qualified to make those kinds of decisions are the ones writing the code. As said in the article, &amp;ldquo;In this new world, the best thing a developer can do is to acquire an eye for design—to be able to take design aesthetic, realize its essential components, and reinterpret them on the fly.&amp;rdquo; By embracing this mindset in our hiring and design process, we&amp;rsquo;ve found the end result is a higher quality product.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Matthew Carter&amp;#8217;s &amp;ldquo;My Life in Typefaces&amp;rdquo;</title>
-    <link rel="alternate" href="/2014/05/03/matthew-carters-my-life-in-typefaces/"/>
-    <id>/2014/05/03/matthew-carters-my-life-in-typefaces/</id>
-    <published>2014-05-04T03:24:00Z</published>
-    <updated>2014-05-04T03:24:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;I just got around to watching Matthew Carter&amp;rsquo;s excellent TED talk, &lt;a href="http://on.ted.com/sqLe"&gt;&amp;ldquo;My Life in Typefaces&amp;rdquo;&lt;/a&gt;. In it, he talks about his experience designing type for the past 5 decades, and how technical constraints influenced his designs. The central question he tries to answer is, &amp;ldquo;Does a constraint force a compromise? By accepting a constraint, are you working to a lower standard?&amp;rdquo; This is a question that comes up in every discipline, and with every technological change. Matthew Carter&amp;rsquo;s take on this subject is interesting because he&amp;rsquo;s experienced numerous technological changes, and has designed superb typefaces for all of them.&lt;/p&gt;
-
-&lt;p&gt;At first blush, it&amp;rsquo;s easy to conclude that constraints force designers to compromise their vision. But design isn&amp;rsquo;t produced in a vacuum, and ultimately must be realized through one or more mediums (print, screen, radio, etc.). Therefore, one must work within constraints to produce the best designs. To do so, designers must understand the technology that enables their designs to be experienced, be it code, the printing process, and so on. As Matthew Carter said in this talk, &amp;ldquo;I&amp;rsquo;m a pragmatist, not an idealist, out of necessity,&amp;rdquo; which is a valuable lesson that all designers should take to heart.&lt;/p&gt;
 </content>
   </entry>
 </feed>
