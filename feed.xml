@@ -5,10 +5,22 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2014-10-06T00:13:00Z</updated>
+  <updated>2014-10-18T21:10:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>What Does Computer Science and Typography Have in Common?</title>
+    <link rel="alternate" href="/2014/10/18/what-does-computer-science-and-typography-have-in-common/"/>
+    <id>/2014/10/18/what-does-computer-science-and-typography-have-in-common/</id>
+    <published>2014-10-18T21:10:00Z</published>
+    <updated>2014-10-18T21:10:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;a href="http://www.frerejones.com/blog/scrambled-eggs-and-serifs/"&gt;Naming is the hardest part.&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>How Tina Fey’s “Lessons From Late Night” Apply to Product Design</title>
     <link rel="alternate" href="/2014/10/05/how-tina-fey-s-lessons-from-late-night-apply-to-product-design/"/>
@@ -194,32 +206,6 @@ You can’t be that kid standing at the top of the waterslide, overthinking it. 
 &lt;p&gt;And that&amp;rsquo;s the most exciting part of working at Optimizely — making the product fulfill its potential, and solving tough problems that impact businesses&amp;#39; bottom lines.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Want to come work on hard problems with me at Optimizely? Check out our &lt;a href="https://www.optimizely.com/jobs"&gt;jobs&lt;/a&gt;, or reach out &lt;a href="https://twitter.com/jlzych"&gt;@jlzych&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>On Being a Generalist</title>
-    <link rel="alternate" href="/2014/05/19/on-being-a-generalist/"/>
-    <id>/2014/05/19/on-being-a-generalist/</id>
-    <published>2014-05-20T04:02:00Z</published>
-    <updated>2014-05-20T04:02:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;I recently read &lt;a href="http://frankchimero.com/intros/quilt/"&gt;Frank Chimero&lt;/a&gt;&amp;rsquo;s excellent article, &lt;a href="http://frankchimero.com/talks/designing-in-the-borderlands/transcript/"&gt;&amp;ldquo;Designing in the Borderlands&amp;rdquo;&lt;/a&gt;. The gist of it is that we (designers, and the larger tech community) have constructed walls between various disciplines that we see as opposites, such as print vs. digital, text vs. image, and so on. However, the most interesting design happens in the borderlands, where these different media connect. He cites examples that combine physical and digital media, but the most interesting bit for me was his thoughts on roles that span disciplines:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;For a long time, I perceived my practice’s sprawl as a defect—evidence of an itchy mind or a fear of commitment—but I am starting to learn that a disadvantage can turn into an advantage with a change of venue. The ability to cross borders is an asset. Who else could go from group to group and be welcomed? The pattern happens over and over: if you’re not a part of any group, you can move amongst them all by tip-toeing across the lines that connect them.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I have felt this way many times throughout my career (especially that &amp;ldquo;fear of commitment&amp;rdquo; part). I have long felt like a generalist who works in both design and engineering, and I label myself to help people understand what I do (not to mention the necessity of a title). But I&amp;rsquo;ve never cleanly fit into any discipline.&lt;/p&gt;
-
-&lt;p&gt;This line was further blurred by my graduate degree from UC Berkeley&amp;rsquo;s &lt;a href="http://ischool.berkeley.edu"&gt;School of Information&lt;/a&gt;. The program brings together folks with diverse backgrounds, and produces &lt;a href="http://en.wikipedia.org/wiki/T-shaped_skills"&gt;T-shaped people&lt;/a&gt; who can think across disciplines and understand the broader context of their work, whether it be in engineering, design, policy &amp;amp; law, sociology, or dozens of other fields in which our alumni call home.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;These borderlands are the best place for a designer like me, and maybe like you, because the borderlands are where things connect. If you’re in the borderlands, your different tongues, your scattered thoughts, your lack of identification with a group, and all the things that used to be thought of as drawbacks in a specialist enclave become the hardened armor of a shrewd generalist in the borderlands.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Couldn&amp;rsquo;t have said it any better. Being able to move between groups and think across disciplines is more of an advantage than a disadvantage.&lt;/p&gt;
 </content>
   </entry>
 </feed>
