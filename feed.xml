@@ -5,10 +5,63 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2014-10-18T21:10:00Z</updated>
+  <updated>2014-10-25T20:17:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>Testing Theory: Mo' Choices, Mo' Problems</title>
+    <link rel="alternate" href="/2014/10/25/testing-theory-mo-choices-mo-problems/"/>
+    <id>/2014/10/25/testing-theory-mo-choices-mo-problems/</id>
+    <published>2014-10-25T20:17:00Z</published>
+    <updated>2014-10-25T20:17:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;When asked, most of us would say we’d prefer more options to choose from, rather than fewer. We want to make the best possible choice, so more options should increase the likelihood we’ll choose correctly. But in actuality, research shows that more choice usually leads to worse decisions, or the abandonment of choice altogether. In this post, I will describe how we can use this knowledge to generate &lt;a href="https://www.optimizely.com/ab-testing/"&gt;A/B test&lt;/a&gt; ideas.&lt;/p&gt;
+
+&lt;h2&gt;Cognitive Overload&lt;/h2&gt;
+
+&lt;p&gt;More choices are more mentally taxing to compare and evaluate, leading to cognitive overload and a decrease in decision making skills. Anecdotally, it&amp;rsquo;s the experience of walking into a supermarket to buy toothpaste, only to be confronted by an endless wall of brands and specialized types that all seem roughly the same. You&amp;rsquo;re quickly overwhelmed, and with no distinguishing characteristics to help you choose, you just grab whatever you bought last time and get the hell out of there.&lt;/p&gt;
+
+&lt;p&gt;This common experience was formally studied by &lt;a href="http://www.columbia.edu/~ss957/articles/Choice_is_Demotivating.pdf"&gt;Iyengar and Lepper&lt;/a&gt; (pdf) (2000), who compared buying rates when shoppers were presented 24 jams to sample, versus just 6. They found when 24 jams were available, only 3% of people bought a jar. But when only 6 jams were available, 30% bought a jar. By providing fewer jams to sample, it was easier for shoppers to compare them to each other and make a decision.&lt;/p&gt;
+
+&lt;h2&gt;Generating Test Ideas&lt;/h2&gt;
+
+&lt;p&gt;From these findings you can apply a simple rule to your site or mobile app to generate test ideas: any time a user has to make a choice (e.g. deciding which product to buy; clicking a navigation link; etc.), reduce the number of available options. Here are some examples:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Have just one call-to-action.&lt;/strong&gt; If you have “Sign Up” and “Learn More” buttons, for example, try removing the “Learn More” button. (See below for an example).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Remove navigation items.&lt;/strong&gt; For example, Amazon has been continually simplifying its homepage by hiding its store categories in favor of search. Shoppers don&amp;rsquo;t need to think about which category might have their desired item; rather, they just search for it. (For help simplifying your navigation, check out this &lt;a href="http://www.smashingmagazine.com/2013/12/03/efficiently-simplifying-navigation-information-architecture/"&gt;series of articles on Smashing Magazine&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Try offering fewer products.&lt;/strong&gt; See if hiding unpopular or similar products increases purchases of the few that remain.&lt;/li&gt;
+&lt;li&gt;If removing products isn’t feasible, try asking people to make a series of simple choices to narrow down their options. Returning to the toothpaste example, you could ask people to choose a flavor, then a type (whitening, no-fluoride, baking soda, etc.), and present toothpastes that only match those choices. The key is to make sure your customers understand each facet, and the answers are distinct and not too numerous (i.e. less than 6).&lt;/li&gt;
+&lt;li&gt;Break up checkout forms into discrete steps.&lt;/li&gt;
+&lt;li&gt;Remove navigation from checkout funnels. Many eCommerce sites (like Crate&amp;amp;Barrel and Amazon) do this because it leaves one option to the user — completing the purchase (see below).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img alt="&amp;quot;Crate&amp;Barrel checkout flow comparison&amp;quot;" src="http://jlzych.com/images/2014-10-25-testing-theory-mo-choices-mo-problems/crateandbarrel-noNav.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;By removing the main navigation from their checkout flow, Crate&amp;amp;Barrel increased average order value by 2% and revenue per visitor by 1%.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="&amp;quot;SeeClickFix call-to-action comparison&amp;quot;" src="http://jlzych.com/images/2014-10-25-testing-theory-mo-choices-mo-problems/SeeClickFix.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;By removing extraneous calls-to-action (“Free Sign Up” and “Go Pro! Free Trial”), SeeClickFix (a service for reporting neighborhood issues) focused users’ attention on the search bar and increased engagement by 8%.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2&gt;Know your audience&lt;/h2&gt;
+
+&lt;p&gt;Of course, there are times when more choice is better. Broadly speaking, experts typically know what they&amp;rsquo;re looking for, and are able to evaluate many options because they understand all the distinguishing minutia. For example, professional tennis players can rapidly narrow down the choice of thousands of racquets to just a few because they understand the difference between different materials, weights, head sizes, lengths, and so on. If you don&amp;rsquo;t offer what they&amp;rsquo;re looking for, or make it easy to get to what they want, they&amp;rsquo;ll look elsewhere. For this reason, it&amp;rsquo;s important that you understand your audience and cater to their buying habits.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;We&amp;rsquo;re trained from an early age to believe that more choice is always better. But in actuality, more choices are mentally taxing, and lead to poor decision making or the abandonment of choice altogether. By testing the removal or simplification of options, you can increase sales, conversions, and overall customer satisfaction.&lt;/p&gt;
+
+&lt;h3&gt;Further Reading&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Botti and Iynegar – &lt;a href="http://faculty.london.edu/sbotti/assets/documents/Dark_side_of_choice.pdf"&gt;The Dark Side of Choice&lt;/a&gt; (pdf)&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
   <entry>
     <title>What Does Computer Science and Typography Have in Common?</title>
     <link rel="alternate" href="/2014/10/18/what-does-computer-science-and-typography-have-in-common/"/>
@@ -186,26 +239,6 @@ You can’t be that kid standing at the top of the waterslide, overthinking it. 
 &lt;h2&gt;Conclusion&lt;/h2&gt;
 
 &lt;p&gt;This project was a fun cross-collaboration between product and communication design at Optimizely. I focused on the interactions and implementation, while Jon focused on the visual design, but we sat side-by-side and talked through each decision together, sketching and pushing each other along the way. Ultimately, the finished product landed in a better place from this collaboration. It was a fun little side project that we hope adds value to the customer experience.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>I, Too, Only Work On Unshiny Products</title>
-    <link rel="alternate" href="/2014/05/25/i-too-only-work-on-unshiny-products/"/>
-    <id>/2014/05/25/i-too-only-work-on-unshiny-products/</id>
-    <published>2014-05-25T18:55:00Z</published>
-    <updated>2014-05-25T18:55:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;&lt;a href="https://medium.com/design-founders/847701785dae"&gt;Jeff Domke&amp;rsquo;s article&lt;/a&gt; about working on &amp;ldquo;unshiny&amp;rdquo; products sums up my view of my own work at &lt;a href="https://www.optimizely.com"&gt;Optimizely&lt;/a&gt;. The crux of his argument is that many designers are drawn to working on &amp;ldquo;shiny&amp;rdquo; products — products that are pretty and lauded in the design community — but &amp;ldquo;unshiny&amp;rdquo; products are a lot more interesting to work on. They&amp;rsquo;re often solving difficult problems, and have more room for you to make an impact. You&amp;rsquo;re working to make the product reach its potential. Shiny products, on the other hand, have reached that potential, and you are less able to make your mark.&lt;/p&gt;
-
-&lt;p&gt;Optimizely sits right in the sweet spot. We aren&amp;rsquo;t &amp;ldquo;shiny&amp;rdquo; (compared to sexy products like Square and Medium, we have a long way to go); nor are we &amp;ldquo;unshiny&amp;rdquo; (our customers describe us as well-designed and easy-to-use). Rather, we land more in the middle — we have a solid user experience that has a lot of room for improvement.&lt;/p&gt;
-
-&lt;p&gt;We&amp;rsquo;re also solving really hairy, complex problems. Apps that get mounds of praise tend to solve relatively simple problems (such as to-do list apps). It&amp;rsquo;s much more interesting to work on a problem space that is unexplored and is full of murky, vague, conflicting goals that must be untangled. And once you&amp;rsquo;ve made sense of the mess, you know you&amp;rsquo;ve enabled someone to do their job better.&lt;/p&gt;
-
-&lt;p&gt;And that&amp;rsquo;s the most exciting part of working at Optimizely — making the product fulfill its potential, and solving tough problems that impact businesses&amp;#39; bottom lines.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Want to come work on hard problems with me at Optimizely? Check out our &lt;a href="https://www.optimizely.com/jobs"&gt;jobs&lt;/a&gt;, or reach out &lt;a href="https://twitter.com/jlzych"&gt;@jlzych&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 </content>
   </entry>
 </feed>
