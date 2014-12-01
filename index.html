@@ -44,6 +44,29 @@
       </header>
       <div class='content'>
         <article>
+          <time datetime='2014-11-30'>
+            <i>Posted on</i>
+            Nov 30, 2014
+            <i>by</i>
+            Jeff Zych
+          </time>
+          <h1><a href="/2014/11/30/optimizely-s-ios-sdk-hits-version-1-0/">Optimizely's iOS SDK Hits Version 1.0!</a></h1>
+          <p>On Novemeber 18th, 2014, Optimizely officially released version 1.0 of our <a href="https://www.optimizely.com/mobile">iOS SDK</a> and a new mobile editing experience. As the lead designer of this project, I&rsquo;m extremely proud of the progress we&rsquo;ve made. This is just the beginning — there&rsquo;s a lot more work to come! Check out the product video below:</p>
+          
+          <iframe width="560" height="315" src="//www.youtube.com/embed/pjnHonrJykg" frameborder="0" allowfullscreen></iframe>
+          
+          <p>Stay tuned for future posts about the design process.</p>
+          <p class='follow-me'>
+            Thoughts? Reply
+            <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
+          </p>
+          <footer class='tags text-uppercase text-small'>
+            Tags:
+            <span class='tag'>optimizely</span>
+            <span class='tag'>ios</span>
+          </footer>
+        </article>
+        <article>
           <time datetime='2014-10-25'>
             <i>Posted on</i>
             Oct 25, 2014
@@ -228,35 +251,6 @@
           <footer class='tags text-uppercase text-small'>
             Tags:
             <span class='tag'>retrospective</span>
-          </footer>
-        </article>
-        <article>
-          <time datetime='2014-08-10'>
-            <i>Posted on</i>
-            Aug 10, 2014
-            <i>by</i>
-            Jeff Zych
-          </time>
-          <h1><a href="/2014/08/10/dry-isn-t-the-one-true-principle-of-css/">DRY isn't the One True Principle of CSS</a></h1>
-          <p><a href="http://benfrain.com/">Ben Frain</a> wrote a <a href="http://benfrain.com/enduring-css-writing-style-sheets-rapidly-changing-long-lived-projects/">great article</a> of recommendations for writing long-living CSS that&rsquo;s authored by many people (e.g. CSS for a product). The whole thing is worth reading, but I especially agree with his argument against writing <a href="http://en.wikipedia.org/wiki/Don&#x27;t_repeat_yourself">DRY</a> (Don&rsquo;t Repeat Yourself) code at the expense of maintainability. He says:</p>
-          
-          <blockquote>
-          <p>As a concrete example; being able to delete an entire Sass partial (say 9KB) in six months time with impunity (in that I know what will and won’t be affected by the removal) is far more valuable to me than a 1KB saving enjoyed because I re-used or extended some vague abstracted styles.</p>
-          </blockquote>
-          
-          <p>Essentially, by abstracting styles as much as possible and maximizing re-use, you&rsquo;re creating an invisible web of dependencies. If you ever want to change or remove styles, you will cause a ripple effect throughout your site. Tasks that should have been 30 or 60 minutes balloon into multi-hour endeavors. As Ben says, being able to delete (or modify) with impunity is far more valuable than the small savings you get by abstracting your code.</p>
-          
-          <p>I have made this mistake many times in my career, and it took me a long time to distinguish between good and bad code reuse. The trick I use is to ask, &ldquo;If I were to later change the style of this component, would I want the others that depend on it to be updated, too?&rdquo; More often than not, the answer is no, and the styles should be written separately. It took some time for me to be comfortable having duplicate CSS in order to increase maintainability.</p>
-          
-          <p>Another way of thinking about this is to figure out why two components look the same. If it&rsquo;s because one is a modification of a base module (e.g. a small version of a button), it&rsquo;s a good candidate for code reuse. If not (e.g. a tab that looks similar to a button, but behaves differently), then you&rsquo;re just setting yourself up for a maintainability nightmare.</p>
-          
-          <p>As beneficial as DRY code is, it isn&rsquo;t the One True Principle of CSS. At best, it saves some time and bytes, but at worst, it&rsquo;s a hindrance to CSS maintainability.</p>
-          <p class='follow-me'>
-            Thoughts? Reply
-            <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
-          </p>
-          <footer class='tags text-uppercase text-small'>
-            Tags:
           </footer>
         </article>
         <a class="view-all-link" href="/archives">View all posts &raquo;</a>
