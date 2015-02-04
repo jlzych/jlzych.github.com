@@ -5,10 +5,81 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2015-01-19T20:32:00Z</updated>
+  <updated>2015-02-04T04:20:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>Building an MVPP - A Minimum Viable Product we're Proud of</title>
+    <link rel="alternate" href="/2015/02/03/building-an-mvpp-a-minimum-viable-product-we-re-proud-of/"/>
+    <id>/2015/02/03/building-an-mvpp-a-minimum-viable-product-we-re-proud-of/</id>
+    <published>2015-02-04T04:20:00Z</published>
+    <updated>2015-02-04T04:20:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;On November 18th, 2014, we publicly released &lt;a href="https://www.optimizely.com/mobile"&gt;Optimizely&amp;rsquo;s iOS editor&lt;/a&gt;. This was a big release for us because it marked the end of a months-long public beta in which we received a ton of customer feedback and built a lot of missing features. But before we launched, there was one problem the whole team rallied behind to fix: we weren’t &lt;em&gt;proud&lt;/em&gt; of the product. To fix this issue, we went beyond a Minimum Viable Product (MVP) to an MVPP — the Minimum Viable Product we&amp;rsquo;re Proud of.&lt;/p&gt;
+
+&lt;p&gt;What follows is the story of how we pulled this off, what we learned along the way, and product development tips to help you ship great products, from the perspective of someone who just did it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Finished iOS editor" src="http://jlzych.com/images/2015-02-03-building-an-mvpp-a-minimum-viable-product-we-re-proud-of/1-finished-editor.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The finished iOS editor.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2&gt;Genesis of the MVPP&lt;/h2&gt;
+
+&lt;p&gt;We released a &lt;a href="http://blog.optimizely.com/2014/06/16/optimizely-for-ios-now-available-in-public-beta/"&gt;public beta&lt;/a&gt; of Optimizely&amp;rsquo;s iOS editor in June 2014. At that time, the product wasn&amp;rsquo;t complete yet, but it was important for us to get real customer feedback to inform its growth and find bugs. So after months of incorporating user feedback, the beta product felt complete enough to publicly launch. There was just one problem: &lt;strong&gt;the entire team wasn&amp;rsquo;t proud of the product&lt;/strong&gt;. It didn&amp;rsquo;t meet our quality bar; it felt like a bunch of features bolted together without a holistic vision. To fix this, we decided to overhaul the user experience, an ambiguous goal that could easily go on forever, never reaching a clear “done” state.&lt;/p&gt;
+
+&lt;p&gt;We did two things to be more directed in the overhaul. First, we committed to a deadline to prevent us from endlessly polishing the UI. Second, we took inspiration from the Lean Startup methodology and chose a set of features that made up a &lt;a href="http://theleanstartup.com/principles"&gt;Minimum Viable Product&lt;/a&gt; (MVP). An MVP makes it clear that we&amp;rsquo;ll cut scope to make the deadline, but nothing about quality. So to make it explicit that we were focusing on quality and wanted the whole team to be proud of the final product, we added an extra &amp;ldquo;P&amp;rdquo; to MVP. And thus, the &lt;strong&gt;Minimum Viable Product we&amp;rsquo;re Proud of — our MVPP&lt;/strong&gt; — was born.&lt;/p&gt;
+
+&lt;h2&gt;Create the vision&lt;/h2&gt;
+
+&lt;p&gt;Once we had agreed on a feature set for the MVPP, a fellow Product Designer and I locked ourselves in a &lt;a href="http://www.fastcodesign.com/3028471/google-ventures-your-design-team-needs-a-war-room-heres-how-to-set-one-up"&gt;war room&lt;/a&gt; for the better part of a week to flesh out the user experience. We mapped out user flows and created rough mock ups that we could use to communicate our vision to the larger development team. Fortunately, we had some pre-existing usability test findings to inform our design decisions.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Picture of our war room in action" src="http://jlzych.com/images/2015-02-03-building-an-mvpp-a-minimum-viable-product-we-re-proud-of/2-war-room.jpg" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Sketches, mockups, and user flows from our war room.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;These mockups were immensely helpful in planning the engineering and design work ahead. Instead of talking about ideas in the abstract, we had concrete features and visuals to point to. For example, everyone knew what we meant when we said &amp;ldquo;Improved Onboarding Flow.&amp;rdquo; With mockups in hand, communication between team members became much more concrete and people felt inspired to work hard to achieve our vision.&lt;/p&gt;
+
+&lt;h2&gt;Put 6 weeks on the clock… and go!&lt;/h2&gt;
+
+&lt;p&gt;We had 3 sprints (6 weeks) to complete the MVPP (most teams at Optimizely work in 2 week cycles called “sprints”). It was an aggressive timeline, but it felt achievable — exactly where a good deadline should be.&lt;/p&gt;
+
+&lt;p&gt;In the first sprint, the team made amazing progress. All the major pieces had been built, without any major re-scoping or redesigns. There were still bugs to fix, polish to apply, and edge cases to consider, but the big pieces core to our vision were in place.&lt;/p&gt;
+
+&lt;p&gt;That momentum carried over into the second sprint, which we spent fixing the biggest bugs, filling functional holes, and polishing the UI.&lt;/p&gt;
+
+&lt;p&gt;For the third and final sprint, we gave ourselves a new goal: ship a week early. We were already focused on launching the MVPP, but at this point we became laser focused. During daily standups, we looked at our JIRA board and asked, “If we were launching tomorrow, what would we work on today?”&lt;/p&gt;
+
+&lt;p&gt;We were ruthless about prioritizing tasks and moved a lot of items that were important, but not launch-critical, to the backlog.&lt;/p&gt;
+
+&lt;p&gt;During the first week of sprint 3, we also did end-to-end product walkthroughs after every standup to ensure the team was proud of the new iOS editor. We all got to experience the product from the customer&amp;rsquo;s perspective, and caught user experience bugs that were degrading the quality of our work. We also found and fixed a lot of functional bugs during this time. By the end of the week, everyone was proud of the final product and felt confident launching.&lt;/p&gt;
+
+&lt;h2&gt;The adrenaline rush &amp;amp; benefit of an early release&lt;/h2&gt;
+
+&lt;p&gt;On 11/10, we quietly released our MVPP to the world — a full week early! Not only did shipping early feel great, it also gave us breathing room to further polish the design, fix bugs, and give the rest of the company time to organize all the components to launch the MVPP.&lt;/p&gt;
+
+&lt;p&gt;Product teams don’t launch products alone; it takes full collaboration between marketing, sales, and success to create materials to promote it, sell it, and enable our customers to use it. By the time the public announcement on 11/18 rolled around, the whole company was extremely proud of the final result.&lt;/p&gt;
+
+&lt;h2&gt;Lessons learned&lt;/h2&gt;
+
+&lt;p&gt;While writing this post and reflecting on the project as a whole, a number of techniques became clear to me that can help any team ensure a high quality, on-time launch:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Add a “P” to “MVP” to make quality a launch requirement:&lt;/strong&gt; Referring to the project as the “Minimum Viable Product we’re Proud of” made sure everyone on the team approached the product with quality in mind. Every project has trade-offs between the ship date, quality, and scope. It’s very hard to do all three. Realistically, you can do two. By calling our project an MVPP, we were explicit that quality would not be sacrificed.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Set a deadline:&lt;/strong&gt; Having a deadline focused everyone’s efforts, preventing designers from endlessly polishing interfaces and developers spinning their wheels imagining every possible edge case. Make it aggressive, yet realistic, to instill a sense of urgency in the team.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Focus on the smallest set of features that provide the largest customer impact:&lt;/strong&gt; We were explicit about what features needed to be redesigned, and just as importantly, which were off limits. This prevented scope-creep, and increased the team’s focus.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Make mockups before starting development:&lt;/strong&gt; This is well-known in the industry, but it’s worth repeating. Creating tangible user flows and mockups ahead of time keeps planning discussions on track, removes ambiguity, and quickly explains the product vision. It also inspires the team by rallying them to achieve a concrete goal.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Do daily product walkthroughs:&lt;/strong&gt; Our product walkthroughs had two key benefits. First, numerous design and code bugs were discovered and fixed. And second, they ensured we lived up to the extra “P” in “MVPP.” Everyone had a place to verbally agree that they were proud of the final product and confident launching. Although these walkthroughs made our standups ~30 minutes longer, it was worth the cost.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ask: “If we were shipping tomorrow, what would you work on today?”:&lt;/strong&gt; When the launch date is approaching, asking this question separates the critical, pre-launch tasks from the post-launch tasks.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Lather, Rinse, and Repeat&lt;/h2&gt;
+
+&lt;p&gt;By going beyond an MVP to a Minimum Viable Product we’re Proud of, we guaranteed that quality was the requirement for launching. And by using a deadline, we stayed focused only on the tasks that were absolutely critical to shipping. With a well-scoped vision, mockups, and a date not too far in the future, you too can rally teams to create product experiences they’re proud of. And then do it again.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Why I Became a Design Manager</title>
     <link rel="alternate" href="/2015/01/19/why-i-became-a-design-manager/"/>
@@ -448,53 +519,6 @@ Knows concepts -&gt; Can design effectively w/coach -&gt; Can design solo -&gt; 
       <name>Jeff Zych</name>
     </author>
     <content type="html">&lt;p&gt;&lt;a href="http://www.frerejones.com/blog/scrambled-eggs-and-serifs/"&gt;Naming is the hardest part.&lt;/a&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>How Tina Fey’s “Lessons From Late Night” Apply to Product Design</title>
-    <link rel="alternate" href="/2014/10/05/how-tina-fey-s-lessons-from-late-night-apply-to-product-design/"/>
-    <id>/2014/10/05/how-tina-fey-s-lessons-from-late-night-apply-to-product-design/</id>
-    <published>2014-10-06T00:13:00Z</published>
-    <updated>2014-10-06T00:13:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;In “&lt;a href="http://www.newyorker.com/magazine/2011/03/14/lessons-from-late-night"&gt;Lessons From Late Night&lt;/a&gt;”, Tina Fey discusses the lessons she learned from Lorne Michaels while working at SNL. Turns out most of them are lessons I’ve learned in product design while working at &lt;a href="https://www.optimizely.com"&gt;Optimizely&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2&gt;“Producing is about discouraging creativity.”&lt;/h2&gt;
-
-&lt;p&gt;She goes on to say, “A TV show comprises many departments — costumes, props, talent, graphics, set dressing, transportation. Everyone in every department wants to show off his or her skills and contribute creatively to the show, which is a blessing.” But this creative energy must be harnessed and directed in a way that contributes positively to the sketch.&lt;/p&gt;
-
-&lt;p&gt;Applied to design, this basically means you need to say “no” a lot. Everyone’s full of ideas and will suggest things like, “Why don’t we just add a toggle so the user can choose their preference? More choice is good, right?” And then you need to explain that actually, users typically stick with the defaults, and don’t spend time configuring their software, and letting them toggle this option has all kinds of other product implications, so, no, sorry, lets try this other solution instead.&lt;/p&gt;
-
-&lt;h2&gt;“The show doesn’t go on because it’s ready; it goes on because it’s eleven-thirty.”&lt;/h2&gt;
-
-&lt;p&gt;This is a lesson in perfection. She elaborates:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;You have to try your hardest to be at the top of your game and improve every joke until the last possible second, but then you have to let it go.
-You can’t be that kid standing at the top of the waterslide, overthinking it. You have to go down the chute. […] You have to let people see what you wrote. It will never be perfect, but perfect is overrated. Perfect is boring on live television.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Just change a few words to “design” and “the web,” and this applies perfectly to product design. Designers can polish forever, but perfect is the enemy of done. But unlike SNL, Optimizely (and I imagine most startups) doesn’t often have hard 11:30 PM Saturday night deadlines, which means we have a tendency to let dates slip. I used to think that was great (“I can spend time polishing!”), but I’ve found that deadlines force you to make tough decisions in order to release product (such as cutting the scope of a feature). And that extra “polish” I think I’m adding is just me overthinking decisions I’ve already made and, oh, guess what, now that actual human beings are using it we need to cut or change those corners of the UI you’ve polished because actually they don’t matter at all now that it’s being used in the real world.&lt;/p&gt;
-
-&lt;h2&gt;“When hiring, mix Harvard nerds with Chicago improvisers and stir.”&lt;/h2&gt;
-
-&lt;p&gt;The gist of this lesson is that diversity of thought is important when hiring. Having a variety of designers with different backgrounds and skills results in a better product.&lt;/p&gt;
-
-&lt;p&gt;At Optimizely, we have a mix of visual-designers-turned-UX-designers, designers formally trained in human–computer interaction and psychology (the Harvard nerds of the group, such as yours truly), and developers turned designers. We all push and learn from each other. “The Harvard guys check the logic and grammatical construction of every joke, and the improvisers teach them how to be human. It’s Spock and Kirk.” In our case, the HCI folks make sure designs are usable and don’t violate established interaction patterns, and the visual designers make sure we aren’t shipping a bunch of gray boxes.&lt;/p&gt;
-
-&lt;h2&gt;“Never cut to a closed door.”&lt;/h2&gt;
-
-&lt;p&gt;As applied to user experience design, this is a way of saying, “don’t leave the user at a dead end”. If users get to a screen where they can’t do anything, then you’ve lost them. Products often dump users in empty screens that have no content (we’ve made this mistake plenty at Optimizely), which lowers engagement and increases churn. Marketing pages can lack a call to action, leading to a high bounce rate. You should always provide clear next steps.&lt;/p&gt;
-
-&lt;h2&gt;“Don’t hire anyone you wouldn’t want to run into in the hallway at three in the morning.”&lt;/h2&gt;
-
-&lt;p&gt;This is a way of saying hire people you enjoy working with. At Optimizely, culture is a huge part of the hiring process. Work is easier, more fun, and turns out better when you’re working with people you like and respect.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;Writing comedy and designing product don’t sound related, but there’s a lot of overlap in the creative process. As Tina’s lessons show, they each have a lot they can learn from each other.&lt;/p&gt;
 </content>
   </entry>
 </feed>
