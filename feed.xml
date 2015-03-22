@@ -5,10 +5,172 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2015-02-21T22:54:00Z</updated>
+  <updated>2015-03-22T20:57:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>Hiring Designers: Advice from Twitter, Uber, and GoPro</title>
+    <link rel="alternate" href="/2015/03/22/hiring-designers-advice-from-twitter-uber-and-gopro/"/>
+    <id>/2015/03/22/hiring-designers-advice-from-twitter-uber-and-gopro/</id>
+    <published>2015-03-22T20:57:00Z</published>
+    <updated>2015-03-22T20:57:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;em&gt;&lt;a href="https://www.gv.com/design/"&gt;Google Ventures&lt;/a&gt; invited design leaders from Twitter, Uber, and GoPro to discuss the topic of hiring designers. What follows are my aggregated and summarized notes.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2&gt;Finding Designers&lt;/h2&gt;
+
+&lt;p&gt;Everyone agrees, finding designers is hard. They&amp;rsquo;re in high demand, and the best ones are never on the market for long (if at all). &amp;ldquo;If the job is good enough, everyone is available.&amp;rdquo; There are a few pieces of advice for finding them, though:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;If you&amp;rsquo;re having trouble getting a full-time designer, start with contractors. If they&amp;rsquo;re good, you can try to woo them into joining full-time. Some designers like the freedom of contracting and don&amp;rsquo;t think they want to be full-time anywhere, but if you can show them how awesome your team and culture and product are, you can lure them over.&lt;/li&gt;
+&lt;li&gt;Look for people who are finishing up a big project, or have been at the same place for 2+ years. These people might be looking for a new challenge, and you can nab them before they&amp;rsquo;re officially on the market.&lt;/li&gt;
+&lt;li&gt;Dedicate hours each day to sourcing and recruiting. Work closely with your recruiters (if you have any) to train them on what to look for in portfolios and CVs. Include them in interview debriefs so they can understand what was good and bad about candidates, and tune who they reach out to accordingly. I.e. iterate on your hiring process. &lt;em&gt;We&amp;rsquo;ve done this a lot of Optimizely.&lt;/em&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Even better is to have dedicated design recruiter(s) who understand the market and designers.&lt;/li&gt;
+&lt;li&gt;If you have no recruiters, you could consider outsourcing recruiting to an agency.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;When reaching out to designers, get creative. Use common connections, use info from their site or blog posts, follow people on Twitter, etc.&lt;/li&gt;
+&lt;li&gt;Typically you&amp;rsquo;ll have the highest chance for success if you, as the hiring manager, reach out, rather than a recruiter.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As a designer, this is what hiring managers will be looking for:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Have a high word-to-picture ratio. Product Design is all about communication, understanding the problem, solutions, and context. If you can&amp;rsquo;t clearly communicate that, you aren&amp;rsquo;t a good designer.
+
+&lt;ul&gt;
+&lt;li&gt;An exception is visual designers, who can get away with more visually-oriented portfolios.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;What about your design is exceptional? Why should I care? Make sure to make this clear when writing about your work.&lt;/li&gt;
+&lt;li&gt;When looking at a portfolio, hiring managers will be wondering, &amp;ldquo;What&amp;rsquo;s the complexity of the problem being solved? Can they tell a story? Are they self critical? What would they do differently or what could be better?&amp;rdquo; Write about all of these things in your portfolio; don&amp;rsquo;t just have pictures of the final result.
+
+&lt;ul&gt;
+&lt;li&gt;An exception to the above is high demand designers, who don&amp;rsquo;t have time for a portfolio because they don&amp;rsquo;t need one to get work. Hiring these people is all based on reputation.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Don&amp;rsquo;t have spelling errors. Spelling errors are an automatic no-go. Designers need to be sticklers for details, and have &amp;ldquo;pride of ownership.&amp;rdquo;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;One million percent agree&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;On Interviewing Designers&lt;/h2&gt;
+
+&lt;p&gt;Pretty much everyone has a portfolio presentation, followed by 3–6 one-on-one interviews. Everyone must be a &amp;ldquo;Yes&amp;rdquo; for an offer to be made. (&lt;em&gt;Optimizely is the same.&lt;/em&gt;)&lt;/p&gt;
+
+&lt;p&gt;Look for curiosity in designers. Designers should be motivated to learn, grow, read blogs/industry news, and use apps/products just to see what the UX and design is like. They should have a mental inventory of patterns and how they&amp;rsquo;re used.&lt;/p&gt;
+
+&lt;p&gt;In portfolio review, designers should NEVER play the victim. Don&amp;rsquo;t blame the PM, the organization, engineering, etc. (even if it&amp;rsquo;s true.) Don&amp;rsquo;t talk shit about the constraints. Design is all about constraints. Instead, talk about how you worked within those constraints (e.g. &amp;ldquo;there was limited budget, therefore&amp;hellip;&amp;rdquo;)&lt;/p&gt;
+
+&lt;h2&gt;On Design Exercises&lt;/h2&gt;
+
+&lt;p&gt;People were pretty mixed about whether design exercises are useful during the interview process or not. Arguments against them include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;They can be ethically wrong if you&amp;rsquo;re having candidates do spec work for the company. You&amp;rsquo;re asking people to work for free, and you open yourself up to lawsuits.
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;I wholeheartedly agree&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;They don&amp;rsquo;t mimic the way people actually work. Designers aren&amp;rsquo;t usually at a board being forced to create UIs and make design decisions.
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;I disagree with this sentiment. A lot of work I do with our designers is at whiteboards. Decisions and final designs aren&amp;rsquo;t always being made, but we&amp;rsquo;re exploring ideas and thinking through our options. Doing this in an interview simulates what it&amp;rsquo;s like to work with someone, and how they approach design. It isn&amp;rsquo;t about the final whiteboarded designs, it&amp;rsquo;s about their process, questions they ask, solutions they propose, how they think about those solutions, etc. Plus, you get to experience what they&amp;rsquo;re like to interact with.&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Take home exercises aren&amp;rsquo;t recommended. People are too busy for them, and senior candidates won&amp;rsquo;t do them.
+
+&lt;ul&gt;
+&lt;li&gt;The exception to this is junior designers who don&amp;rsquo;t have much of a portfolio yet so you can see how they actually design UIs&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;All of this has been true in my experience, as well.&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Arguments for design exercises:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;You get to see how candidates approach a problem and explore solutions&lt;/li&gt;
+&lt;li&gt;You get a sense of what it&amp;rsquo;s like to work with them&lt;/li&gt;
+&lt;li&gt;You hear them evaluate ideas, which tells you how self-critical they are and how well they know best practices&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;Personally, I find design exercises very useful. They tell me a lot about how a candidate thinks, and what they&amp;rsquo;re like to work with. The key is to find a good exercise that isn&amp;rsquo;t spec work. &lt;a href="https://www.gv.com/lib/how-to-interview-a-designer-with-the-perfect-design-exercise"&gt;GV wrote a great article on this topic&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2&gt;On Making a Hiring Decision&lt;/h2&gt;
+
+&lt;p&gt;It&amp;rsquo;s easy when candidates are great or awful — the yes and no decisions are easy. The hard ones are when people are mixed. Typically this means you shouldn&amp;rsquo;t extend an offer, but there are reasons to give them a second chance:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;They were nervous&lt;/li&gt;
+&lt;li&gt;English is their second language&lt;/li&gt;
+&lt;li&gt;They were stressed from interviewing&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In these cases, try bringing the person back in a more relaxed environment; for example, have lunch or coffee together.&lt;/p&gt;
+
+&lt;p&gt;Some people have great work, but some sort of personality flaw (e.g. they don&amp;rsquo;t make eye contact with women). These people are a &amp;ldquo;no&amp;rdquo; — remember, &amp;ldquo;No assholes, no delicate geniuses&amp;rdquo;, and avoid drama at all costs.&lt;/p&gt;
+
+&lt;p&gt;When making an offer, you&amp;rsquo;ll sometimes have to sell them on the company, team, product, and challenges. One technique is to explain why they&amp;rsquo;ll be a great fit on the team (you&amp;rsquo;ll flatter them while simultaneously demonstrating the challenges they&amp;rsquo;ll face and impact they&amp;rsquo;ll have). If you have a big company and team, you can explain all the growth and learning opportunities a large team provides. And you don&amp;rsquo;t need to be small to move fast and make impactful decisions.&lt;/p&gt;
+
+&lt;h2&gt;On Design Managers&lt;/h2&gt;
+
+&lt;p&gt;Hiring design managers is hard. They&amp;rsquo;re hard to find, hard to attract, and most designers want to continue making cool shit rather than manage people. But if you&amp;rsquo;re searching for one, your best bet is to promote a senior designer to manager. They already understand the company, market, culture, and team, so they&amp;rsquo;re an easy fit. The art of management is often custom to the team and company.&lt;/p&gt;
+
+&lt;p&gt;If that isn&amp;rsquo;t an option, go through your network to find folks. You aren&amp;rsquo;t likely to have good luck from randos applying via the company website, or sourcing strangers.&lt;/p&gt;
+
+&lt;p&gt;Great managers are like great coaches — they&amp;rsquo;re ex-players who worked really hard to learn the game, and thus can teach it to others. Players that are naturally gifted, e.g. Michael Jordan, aren&amp;rsquo;t good coaches because they didn&amp;rsquo;t have to work hard to understand the game — it came naturally to them.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;I feel like I fit this description. I worked hard to learn a lot of the skills that go into design. It took me a long time to feel comfortable calling myself a &amp;ldquo;designer&amp;rdquo;; it didn&amp;rsquo;t come naturally.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Management is a mix of creative direction, people management, and process. They should be able to partner with a senior designer to ship great product. Managers shouldn&amp;rsquo;t evaluate designers based on outcomes/impact. People can&amp;rsquo;t always control which project they&amp;rsquo;re on, some projects are cancelled, not all projects are equal, etc. Instead, reward behavior and process (e.g. &amp;ldquo;&amp;lsquo;A&amp;rsquo; for effort&amp;rdquo;.)&lt;/p&gt;
+
+&lt;p&gt;There are 4 things to look for in good managers:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;They Get Shit Done&lt;/li&gt;
+&lt;li&gt;They improve the team, e.g. via recruiting, events, coaching/mentoring&lt;/li&gt;
+&lt;li&gt;They have, or can build, good relationships in the organization&lt;/li&gt;
+&lt;li&gt;They have hard design skills, empathy, and vision&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;On Generalists vs Specialists and Team Formation&lt;/h2&gt;
+
+&lt;p&gt;The consensus is to hire 80/20 designers, i.e. generalists who have deep skills in one area (e.g. visual design, UX, etc.). They help teams move faster, and can work with specialists (e.g. content strategists) to ship high quality products quickly. Good ones will know what they don&amp;rsquo;t know, and seek help when they need it (e.g. getting input from visual designers if that isn&amp;rsquo;t their strength). &amp;ldquo;No assholes, no delicate geniuses&amp;rdquo;. Avoid drama at all costs.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;This is the type of person we seek to hire as well. I&amp;rsquo;ve also seen firsthand that good designers are self-aware enough to know what their weaknesses are, and to seek help when necessary.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Cross-functional teams should be as small as possible while covering the breadth of skills needed to ship features. More people means more complexity and extra communication overhead. (&lt;em&gt;I have certainly seen this mistake made at Optimizely.&lt;/em&gt;)&lt;/p&gt;
+
+&lt;p&gt;Having designers on a separate team (e.g. Comm/marketing designers on marketing) makes for sad designers. They become isolated, disgruntled, and unhappy. Ideally, they shouldn&amp;rsquo;t be on marketing. If they are separate, make bridges for the teams to communicate. Include them in larger design team meetings and crits and stuff so they feel included.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;I totally agree. At Optimizely, we fought hard to keep our Communication Designers on the Design team for all the reasons listed here (Marketing wanted to hire their own designers). Our Marketing department ended up hiring their own developers to build and maintain our website, but earlier this year they moved over to the Design team so they could be closer to other developers and the Communication Designers working on the website. So far, they&amp;rsquo;re much happier on Design.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2&gt;Should designers code?&lt;/h2&gt;
+
+&lt;p&gt;People were somewhat mixed on this question. It was mostly agreed that it&amp;rsquo;s probably not a good use of their time, but it&amp;rsquo;s always a trade-off depending on what a specific team needs to launch high quality product. A potential danger is that they may only design what&amp;rsquo;s easy to code, or what they know they can build. That is, it&amp;rsquo;s a conflict of interest that leads to them artificially limiting themselves and the design.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;As a designer who codes, I only partially agree with what was said here. It&amp;rsquo;s true that you can fall into the trap of designing what&amp;rsquo;s easy to build, but it doesn&amp;rsquo;t have to be that way. I overcame this by focusing on explicitly splitting out the ideation/exploration phase from the evaluation/convergence phase (something that good designers should be doing anyway). When designing, I explore as many ideas as I can without thinking at all about implementation, then I evaluate which idea(s) are best. One of those criteria (among many) is implementation cost and whether it used existing UI components we&amp;rsquo;ve already built. I&amp;rsquo;ve found this to be effective at not limiting myself to only what I know is easy to build, but it took a lot of work to compartmentalize my thinking this way.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Artificially constraining the solution space is also a trap any designer can fall into, regardless of whether or not you know how to code. I&amp;rsquo;ve heard designers object to ideas with, &amp;ldquo;But that will be hard to build!&amp;rdquo;, or, &amp;ldquo;This idea re-uses an existing frontend component!&amp;rdquo; Whenever I hear that, I always tell them that they&amp;rsquo;re in the &lt;strong&gt;ideation phase&lt;/strong&gt;, and they shouldn&amp;rsquo;t limit their thinking. Any idea is a good idea at this point. Once you&amp;rsquo;ve explored enough ideas, then you can start evaluating them and thinking about implementation costs. And if you have a great idea that&amp;rsquo;s hard to implement, you can argue for why it&amp;rsquo;s worth building.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2&gt;Design-to-Engineering Ratio&lt;/h2&gt;
+
+&lt;p&gt;It depends on the work, and what the frontend or implementation challenges are. For example, apps with lots of complex interactions will need more engineers to build. A common ratio is about 1:10.&lt;/p&gt;
+
+&lt;p&gt;More important than the specific ratio is to not form teams without a designer. Those teams get into bad habits, won&amp;rsquo;t ship quality product, and will dig a hole of design debt that a future designer will have to climb out of. (&lt;em&gt;I&amp;rsquo;ve been through this, and it takes a lot of time and effort to correct broken processes of teams that lack design resources&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;One way of knowing if you don&amp;rsquo;t have enough designers is if engineering complains about design being a bottleneck, although this is typically a lagging indicator. A great response to this was that the phrase &amp;ldquo;Blocked on design&amp;rdquo; is terrible. Design is a necessary creative endeavor! Why don&amp;rsquo;t we say that engineering is blocking product from being released? (&lt;em&gt;In fact, for the first time ever, we have been saying this at Optimizely, since we need more engineers to implement some finished designs. Interested in joining the &lt;a href="https://www.optimizely.com/jobs"&gt;Engineering team at Optimizely&lt;/a&gt;? Drop me a line &lt;a href="https://twitter.com/intent/tweet?screen_name=jlzych"&gt;@jlzych&lt;/a&gt;&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;Another good quote: &amp;ldquo;There&amp;rsquo;s nothing more dangerous than an idle designer.&amp;rdquo; An idle designer can go off the deep end redesigning things, and eventually get frustrated when their work isn&amp;rsquo;t getting used. So there should always be a bit more work than available people to do it. &lt;em&gt;True dat.&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;This was a great event with fun speakers, good attendees, and excellent advice. The most interesting discussion topic for me was on design managers, since we&amp;rsquo;re actively searching for a manager now (&lt;a href="https://twitter.com/intent/tweet?screen_name=jlzych"&gt;let me know if you&amp;rsquo;re interested!&lt;/a&gt;) Overall, Optimizely&amp;rsquo;s hiring practices are in line with the best practices recommended here, so it&amp;rsquo;s nice to know we&amp;rsquo;re in good company.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Behind the Design: Optimizely's Mobile Editor</title>
     <link rel="alternate" href="/2015/02/21/behind-the-design-optimizely-s-mobile-editor/"/>
@@ -289,7 +451,7 @@
 &lt;li&gt;Turn these 2 lists into a job posting (avoid listing tools in the hiring criteria - that is dumb)&lt;/li&gt;
 &lt;li&gt;DON&amp;rsquo;T look for someone who has experience designing your exact product in your industry already. The best designers can quickly adapt to different contexts (better to hire a skilled designer with no mobile experience than a junior/mid designer with ONLY mobile experience - there&amp;rsquo;s ramp-up time, but that&amp;rsquo;s negligible for a skilled designer)&lt;/li&gt;
 &lt;li&gt;Junior to senior folks progress through this:
-Knows concepts -&gt; Can design effectively w/coach -&gt; Can design solo -&gt; Can teach others&lt;/li&gt;
+Knows concepts -&amp;gt; Can design effectively w/coach -&amp;gt; Can design solo -&amp;gt; Can teach others&lt;/li&gt;
 &lt;li&gt;On small/inexperienced teams, watch out for the &amp;ldquo;Similar to me&amp;rdquo; effect. Designers new to hiring/interviewing will evaluate people against themselves, rather than evaluate their actual skills or potential. (Can ask, &amp;ldquo;Where were you relative to this person when you were hired?&amp;rdquo; to combat this).&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Evaluate Based on Skills You Need
@@ -492,7 +654,7 @@ Knows concepts -&gt; Can design effectively w/coach -&gt; Can design solo -&gt; 
 &lt;li&gt;Contextual: gather feedback in context of use&lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
 &lt;li&gt;They changed their feedback mechanism slightly by asking users to bucket the feedback first (e.g. &amp;ldquo;Billing problems&amp;rdquo;, &amp;ldquo;Positive feedback&amp;rdquo;, etc.), then emailed it to different places. This made it more actionable.&lt;/li&gt;
-&lt;li&gt;Doesn&amp;rsquo;t need to be &amp;ldquo;Ready -&gt; Fire -&gt; Aim&amp;rdquo;: we can use data and the double diamond approach to inform the problem, and make our best guess.
+&lt;li&gt;Doesn&amp;rsquo;t need to be &amp;ldquo;Ready -&amp;gt; Fire -&amp;gt; Aim&amp;rdquo;: we can use data and the double diamond approach to inform the problem, and make our best guess.
 
 &lt;ul&gt;
 &lt;li&gt;This limits collateral damage from not aiming. A poorly aimed guess can mar the user experience, which users don&amp;rsquo;t easily forget.&lt;/li&gt;
@@ -541,7 +703,7 @@ Knows concepts -&gt; Can design effectively w/coach -&gt; Can design solo -&gt; 
 &lt;li&gt;Listen
 
 &lt;ul&gt;
-&lt;li&gt;Listen to stakeholders&amp;#39; and outside team members opinions and feedback (you don&amp;rsquo;t have to incorporate it, but make sure they know they&amp;rsquo;re being heard)&lt;/li&gt;
+&lt;li&gt;Listen to stakeholders&amp;rsquo; and outside team members opinions and feedback (you don&amp;rsquo;t have to incorporate it, but make sure they know they&amp;rsquo;re being heard)&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Be a Person
 
@@ -580,59 +742,6 @@ Knows concepts -&gt; Can design effectively w/coach -&gt; Can design solo -&gt; 
 &lt;iframe width="560" height="315" src="//www.youtube.com/embed/pjnHonrJykg" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;Stay tuned for future posts about the design process.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Testing Theory: Mo' Choices, Mo' Problems</title>
-    <link rel="alternate" href="/2014/10/25/testing-theory-mo-choices-mo-problems/"/>
-    <id>/2014/10/25/testing-theory-mo-choices-mo-problems/</id>
-    <published>2014-10-25T20:17:00Z</published>
-    <updated>2014-10-25T20:17:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;When asked, most of us would say we’d prefer more options to choose from, rather than fewer. We want to make the best possible choice, so more options should increase the likelihood we’ll choose correctly. But in actuality, research shows that more choice usually leads to worse decisions, or the abandonment of choice altogether. In this post, I will describe how we can use this knowledge to generate &lt;a href="https://www.optimizely.com/ab-testing/"&gt;A/B test&lt;/a&gt; ideas.&lt;/p&gt;
-
-&lt;h2&gt;Cognitive Overload&lt;/h2&gt;
-
-&lt;p&gt;More choices are more mentally taxing to compare and evaluate, leading to cognitive overload and a decrease in decision making skills. Anecdotally, it&amp;rsquo;s the experience of walking into a supermarket to buy toothpaste, only to be confronted by an endless wall of brands and specialized types that all seem roughly the same. You&amp;rsquo;re quickly overwhelmed, and with no distinguishing characteristics to help you choose, you just grab whatever you bought last time and get the hell out of there.&lt;/p&gt;
-
-&lt;p&gt;This common experience was formally studied by &lt;a href="http://www.columbia.edu/~ss957/articles/Choice_is_Demotivating.pdf"&gt;Iyengar and Lepper&lt;/a&gt; (pdf) (2000), who compared buying rates when shoppers were presented 24 jams to sample, versus just 6. They found when 24 jams were available, only 3% of people bought a jar. But when only 6 jams were available, 30% bought a jar. By providing fewer jams to sample, it was easier for shoppers to compare them to each other and make a decision.&lt;/p&gt;
-
-&lt;h2&gt;Generating Test Ideas&lt;/h2&gt;
-
-&lt;p&gt;From these findings you can apply a simple rule to your site or mobile app to generate test ideas: any time a user has to make a choice (e.g. deciding which product to buy; clicking a navigation link; etc.), reduce the number of available options. Here are some examples:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Have just one call-to-action.&lt;/strong&gt; If you have “Sign Up” and “Learn More” buttons, for example, try removing the “Learn More” button. (See below for an example).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Remove navigation items.&lt;/strong&gt; For example, Amazon has been continually simplifying its homepage by hiding its store categories in favor of search. Shoppers don&amp;rsquo;t need to think about which category might have their desired item; rather, they just search for it. (For help simplifying your navigation, check out this &lt;a href="http://www.smashingmagazine.com/2013/12/03/efficiently-simplifying-navigation-information-architecture/"&gt;series of articles on Smashing Magazine&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Try offering fewer products.&lt;/strong&gt; See if hiding unpopular or similar products increases purchases of the few that remain.&lt;/li&gt;
-&lt;li&gt;If removing products isn’t feasible, try asking people to make a series of simple choices to narrow down their options. Returning to the toothpaste example, you could ask people to choose a flavor, then a type (whitening, no-fluoride, baking soda, etc.), and present toothpastes that only match those choices. The key is to make sure your customers understand each facet, and the answers are distinct and not too numerous (i.e. less than 6).&lt;/li&gt;
-&lt;li&gt;Break up checkout forms into discrete steps.&lt;/li&gt;
-&lt;li&gt;Remove navigation from checkout funnels. Many eCommerce sites (like Crate&amp;amp;Barrel and Amazon) do this because it leaves one option to the user — completing the purchase (see below).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img alt="&amp;quot;Crate&amp;Barrel checkout flow comparison&amp;quot;" src="http://jlzych.com/images/2014-10-25-testing-theory-mo-choices-mo-problems/crateandbarrel-noNav.png" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;By removing the main navigation from their checkout flow, Crate&amp;amp;Barrel increased average order value by 2% and revenue per visitor by 1%.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="&amp;quot;SeeClickFix call-to-action comparison&amp;quot;" src="http://jlzych.com/images/2014-10-25-testing-theory-mo-choices-mo-problems/SeeClickFix.png" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;By removing extraneous calls-to-action (“Free Sign Up” and “Go Pro! Free Trial”), SeeClickFix (a service for reporting neighborhood issues) focused users’ attention on the search bar and increased engagement by 8%.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2&gt;Know your audience&lt;/h2&gt;
-
-&lt;p&gt;Of course, there are times when more choice is better. Broadly speaking, experts typically know what they&amp;rsquo;re looking for, and are able to evaluate many options because they understand all the distinguishing minutia. For example, professional tennis players can rapidly narrow down the choice of thousands of racquets to just a few because they understand the difference between different materials, weights, head sizes, lengths, and so on. If you don&amp;rsquo;t offer what they&amp;rsquo;re looking for, or make it easy to get to what they want, they&amp;rsquo;ll look elsewhere. For this reason, it&amp;rsquo;s important that you understand your audience and cater to their buying habits.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;We&amp;rsquo;re trained from an early age to believe that more choice is always better. But in actuality, more choices are mentally taxing, and lead to poor decision making or the abandonment of choice altogether. By testing the removal or simplification of options, you can increase sales, conversions, and overall customer satisfaction.&lt;/p&gt;
-
-&lt;h3&gt;Further Reading&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Botti and Iynegar – &lt;a href="http://faculty.london.edu/sbotti/assets/documents/Dark_side_of_choice.pdf"&gt;The Dark Side of Choice&lt;/a&gt; (pdf)&lt;/li&gt;
-&lt;/ul&gt;
 </content>
   </entry>
 </feed>
