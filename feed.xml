@@ -5,10 +5,24 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2015-03-22T20:57:00Z</updated>
+  <updated>2015-05-18T15:38:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>Link: The Notebooks of Optimizely's Design Team</title>
+    <link rel="alternate" href="/2015/05/18/link-the-notebooks-of-optimizely-s-design-team/"/>
+    <id>/2015/05/18/link-the-notebooks-of-optimizely-s-design-team/</id>
+    <published>2015-05-18T15:38:00Z</published>
+    <updated>2015-05-18T15:38:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;Over on &lt;a href="https://medium.com/design-optimizely"&gt;Design @ Optimizely&lt;/a&gt; (the Optimizely Design team&amp;rsquo;s Medium publication), I posted a photo essay documenting the unique sketching and note taking styles of our team members.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://medium.com/design-optimizely/the-notebooks-of-optimizely-s-design-team-a-photo-essay-73adcf127fe2"&gt;Check it out on Medium.&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Hiring Designers: Advice from Twitter, Uber, and GoPro</title>
     <link rel="alternate" href="/2015/03/22/hiring-designers-advice-from-twitter-uber-and-gopro/"/>
@@ -726,22 +740,6 @@ Knows concepts -&amp;gt; Can design effectively w/coach -&amp;gt; Can design sol
 &lt;hr&gt;
 
 &lt;p&gt;And that&amp;rsquo;s all! (Actually, I missed the last talk&amp;hellip;). Overall, a great conference that I intend to go back to next year.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Optimizely's iOS SDK Hits Version 1.0!</title>
-    <link rel="alternate" href="/2014/11/30/optimizely-s-ios-sdk-hits-version-1-0/"/>
-    <id>/2014/11/30/optimizely-s-ios-sdk-hits-version-1-0/</id>
-    <published>2014-12-01T02:13:00Z</published>
-    <updated>2014-12-01T02:13:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;On Novemeber 18th, 2014, Optimizely officially released version 1.0 of our &lt;a href="https://www.optimizely.com/mobile"&gt;iOS SDK&lt;/a&gt; and a new mobile editing experience. As the lead designer of this project, I&amp;rsquo;m extremely proud of the progress we&amp;rsquo;ve made. This is just the beginning — there&amp;rsquo;s a lot more work to come! Check out the product video below:&lt;/p&gt;
-
-&lt;iframe width="560" height="315" src="//www.youtube.com/embed/pjnHonrJykg" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Stay tuned for future posts about the design process.&lt;/p&gt;
 </content>
   </entry>
 </feed>
