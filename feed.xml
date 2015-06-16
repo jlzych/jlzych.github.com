@@ -5,10 +5,97 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2015-05-18T15:38:00Z</updated>
+  <updated>2015-06-16T15:49:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>“Did You A/B Test It?”</title>
+    <link rel="alternate" href="/2015/06/16/did-you-a-b-test-it/"/>
+    <id>/2015/06/16/did-you-a-b-test-it/</id>
+    <published>2015-06-16T15:49:00Z</published>
+    <updated>2015-06-16T15:49:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;After launching a feature, coworkers often ask me, &amp;ldquo;Did you A/B test it?&amp;rdquo; While the question is well-meaning, A/B testing isn’t the only way, or even the best way, of making data-informed decisions in product development. In this post, I’ll explain why, and provide other ways of validating hypotheses to assure your coworkers that a feature was worth building.&lt;/p&gt;
+
+&lt;h2&gt;Implied Development Process&lt;/h2&gt;
+
+&lt;p&gt;My coworker’s simple question implies a development process that looks like this:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;You have an idea for a new feature&lt;/li&gt;
+&lt;li&gt;You build the new feature&lt;/li&gt;
+&lt;li&gt;You A/B test it to prove its success&lt;/li&gt;
+&lt;li&gt;Profit! High fives! Release party!&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;While this looks reasonable on the surface, it has a few flaws.&lt;/p&gt;
+
+&lt;h3&gt;Flaw 1: What metric are you measuring?&lt;/h3&gt;
+
+&lt;p&gt;The A/B test in step 3 implies that you’re comparing a version of the product with the new feature to a version without the new feature. But a key part of running an A/B test is choosing a metric to call the winner, which is where things get tricky. Your instinct is probably to measure usage of the new feature. But this doesn’t work because the control lacks the feature, so it loses before the test even begins.&lt;/p&gt;
+
+&lt;p&gt;There are, however, higher-level metrics you care about. These could range from broad business metrics, like revenue or time in product, to more narrow metrics, like completing a specific task (such as successfully booking a place to stay in the case of AirBnB). Generally speaking, broader metrics are slower to move and influenced by more factors, so narrow metrics are better.&lt;/p&gt;
+
+&lt;p&gt;Even so, this type of experiment isn’t what A/B tests excels at. At its core, &lt;a href="https://www.optimizely.com/ab-testing/"&gt;A/B testing&lt;/a&gt; is a hill climbing technique. This means it’s good at telling you if small, incremental changes are an improvement (in other words, each test is a step up a hill). Launching a feature is more like exploring a new hill. You’re giving users the ability to do something they couldn’t do before. A/B testing isn’t good at comparing hills to each other, nor will it help you find new hills.&lt;/p&gt;
+
+&lt;h3&gt;Flaw 2: What if the new feature loses?&lt;/h3&gt;
+
+&lt;p&gt;Let’s say you have good metrics to measure, and enough traffic to run the test in a reasonable timeframe. But the results come back, and the unthinkable happened: your new feature lost. There’s no profit, high fives, or launch party. Now what do you do?&lt;/p&gt;
+
+&lt;p&gt;Because of sunk costs, your instinct is going to be to try to improve the feature until it wins. But an A/B test doesn’t tell you &lt;em&gt;why&lt;/em&gt; it lost. Maybe there was a minor usability problem, or maybe it’s fundamentally flawed. Whatever the problem may be, an A/B test won’t tell you what it is, which doesn’t help you improve it.&lt;/p&gt;
+
+&lt;p&gt;The worst-case scenario is that the feature doesn’t solve a real problem, in which case you should remove it. But this is an expensive option because you spent the time to design, build, and launch it &lt;em&gt;before&lt;/em&gt; learning it wasn&amp;rsquo;t worth building. Ideally you’d discover this earlier.&lt;/p&gt;
+
+&lt;h2&gt;Revised Development Process&lt;/h2&gt;
+
+&lt;p&gt;When our well-meaning coworker asked if we A/B tested the new feature, what they really wanted to know is if we have data to back up that it was worth building. To them, an A/B test is the only way they know how to answer that question. But as user experience professionals, we know there are plenty of methods for gathering data to guide our designs. Let’s revise our product development process from above:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;You have an idea for a new feature.&lt;/li&gt;
+&lt;li&gt;You scope the problem the feature is supposed to solve by interviewing users, sending out surveys, analyzing product usage, or using other research methods.&lt;/li&gt;
+&lt;li&gt;You create prototypes and show them to users.&lt;/li&gt;
+&lt;li&gt;You refine the design based on user feedback.&lt;/li&gt;
+&lt;li&gt;You repeat steps 3 and 4 until you’re confident the design solves the problem you set out to solve.&lt;/li&gt;
+&lt;li&gt;You build the feature.&lt;/li&gt;
+&lt;li&gt;You do user testing to find and fix usability flaws.&lt;/li&gt;
+&lt;li&gt;You release the feature via a phased rollout (or a private/public/opt-in beta) and measure your key metrics to make sure they’re within normal parameters.
+
+&lt;ul&gt;
+&lt;li&gt;This can be run as an A/B test, but doesn’t need to be.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Once you’re confident the feature is working as expected, fully launch it to everyone.&lt;/li&gt;
+&lt;li&gt;Profit! High fives! Release party!&lt;/li&gt;
+&lt;li&gt;Optimize the feature by A/B testing incremental changes.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;In this revised development process (commonly called &lt;a href="http://www.usability.gov/what-and-why/user-centered-design.html"&gt;user-centered design&lt;/a&gt;), you’re gathering data every step of the way. Rather than building a feature and &amp;ldquo;validating&amp;rdquo; it at the end with an A/B test, you’re continually refining what you’re building based on user feedback. By the time you release it, you’ve iterated countless times and are confident it’s solving a real problem. And once it’s built, you can use A/B testing to do what A/B testing does best — optimization.&lt;/p&gt;
+
+&lt;p&gt;A longer process? Yes. A more confident, higher quality launch? Also yes.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Now when your coworkers ask if you A/B tested your feature, you can reply, &amp;ldquo;No, but we made data-informed decisions that told us users really want this feature. Let me show you all of our data!&amp;rdquo; By using research and A/B testing appropriately, you’ll build features that your users &lt;em&gt;and&lt;/em&gt; your bottom line will love.&lt;/p&gt;
+
+&lt;h4&gt;Further Reading&lt;/h4&gt;
+
+&lt;p&gt;If you’d like to learn how other companies incorporate A/B testing into their development process, or about user-centered design in general, these articles are great resources:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://codeascraft.com/2012/06/21/building-websites-with-science/"&gt;&amp;ldquo;Building websites with science&amp;rdquo;&lt;/a&gt; by Peter Seibel — A broad overview with examples of how Etsy incorporates A/B testing into the development process.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://mcfunley.com/design-for-continuous-experimentation"&gt;&amp;ldquo;Design for Continuous Experimentation: Talk and Slides&amp;rdquo;&lt;/a&gt; by Dan McKinley — Good and bad examples of how Etsy has experimented while building features.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://nerds.airbnb.com/experiments-at-airbnb/"&gt;&amp;ldquo;Experiments at Airbnb&amp;rdquo;&lt;/a&gt; by Jan Overgoor — A great overview of how AirBnB incorporates A/B testing into feature development, complete with best practices.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.nngroup.com/articles/ab-testing-usability-engineering/"&gt;&amp;ldquo;A/B Testing, Usability Engineering, Radical Innovation: What Pays Best?&amp;rdquo;&lt;/a&gt; by Jakob Nielsen — Compares A/B testing, usability testing, and radical innovation to each other, with advice for when to use each method.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.nngroup.com/articles/which-ux-research-methods/"&gt;&amp;ldquo;When to Use Which User-Experience Research Methods&amp;rdquo;&lt;/a&gt; by Christian Rohrer — A run down of all the user-experience research methods, and when to use each one.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.usability.gov/what-and-why/user-centered-design.html"&gt;&amp;ldquo;User-Centered Design Basics&amp;rdquo;&lt;/a&gt; on usability.gov — A good introduction to the user-centered design process.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.evanmiller.org/how-not-to-run-an-ab-test.html"&gt;&amp;ldquo;How Not to Run an A/B Test&amp;rdquo;&lt;/a&gt; by Evan Miller — Best practices for running an A/B test, which are especially important to get right when testing in product.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;Thanks to &lt;a href="http://kylerush.net/"&gt;Kyle Rush&lt;/a&gt;, &lt;a href="https://twitter.com/olgavyoung"&gt;Olga Antonenko Young&lt;/a&gt;, and &lt;a href="https://twitter.com/hiSilv"&gt;Silvia Amtmann&lt;/a&gt; for providing feedback on earlier drafts of this post.&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Link: The Notebooks of Optimizely's Design Team</title>
     <link rel="alternate" href="/2015/05/18/link-the-notebooks-of-optimizely-s-design-team/"/>
@@ -404,342 +491,6 @@
 &lt;p&gt;I also realized the things I love about design (problem solving, ideating, etc.) would still be present in my new role. But instead of applying those skills to concrete visual interfaces, I would apply them to abstract team and personnel issues. I’d be using the design process to solve a different set of problems.&lt;/p&gt;
 
 &lt;p&gt;So when my manager got back from vacation, I told him my decision and we started transitioning me into a managerial role. As of the start of 2015, I’ve been managing full time and loving it. I’m still a bit sad to leave design work behind, and worry about my skills atrophying, but I look forward to the new challenges that await. It was a difficult decision that took me a long time to come around to, but I’m excited to make the team, product, and company as great as possible.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Warm Gun 2014 Conference Notes</title>
-    <link rel="alternate" href="/2014/12/06/warm-gun-2014-conference-notes/"/>
-    <id>/2014/12/06/warm-gun-2014-conference-notes/</id>
-    <published>2014-12-07T02:53:00Z</published>
-    <updated>2014-12-07T02:53:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;This year&amp;rsquo;s &lt;a href="http://www.warmgun.com/"&gt;Warm Gun&lt;/a&gt; conference was great, just like last year&amp;rsquo;s. This year generally seemed to be about using design to generate and validate product insights, e.g. through MVPs, prototyping, researching, etc.&lt;/p&gt;
-
-&lt;h2&gt;Kickoff (Jared Spool)&lt;/h2&gt;
-
-&lt;p&gt;Jared Spool&amp;rsquo;s opening talk focused mostly on MVPs and designing delight into products. To achieve this, he recommended the &lt;a href="http://en.wikipedia.org/wiki/Kano_model"&gt;Kano Model&lt;/a&gt; and Dana Chisnell&amp;rsquo;s &lt;a href="http://www.uie.com/articles/pleasure_flow_and_meaning/"&gt;Three Approaches to Delight&lt;/a&gt; (adding &lt;strong&gt;pleasure&lt;/strong&gt; e.g. through humorous copy, improving the &lt;strong&gt;flow&lt;/strong&gt;, and &lt;strong&gt;meaning&lt;/strong&gt; e.g. believing in a company&amp;rsquo;s mission [hardest to achieve]).&lt;/p&gt;
-
-&lt;h2&gt;You&amp;rsquo;re Hired! Strategies for Finding the Perfect Fit (Kim Goodwin)&lt;/h2&gt;
-
-&lt;p&gt;This was a great talk about how to hire a great design team, which is certainly no easy task (as I&amp;rsquo;ve seen at Optimizely).&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Hiring is like dating on a deadline – after a couple of dates, you have to decide whether or not to marry the person!&lt;/li&gt;
-&lt;li&gt;You should worry more about missing the right opportunity, rather than avoiding the wrong choice&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;5 Lessons She&amp;rsquo;s Learned&lt;/h3&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Hire with a long-term growth plan in mind
-
-&lt;ul&gt;
-&lt;li&gt;Waiting until you need someone to start looking is too late (it takes months to find the right person)&lt;/li&gt;
-&lt;li&gt;What kind of will you need? Do you want generalists (can do everything, but not &lt;strong&gt;great&lt;/strong&gt; at any one thing; typically needed by small startups) or specialists (great at one narrow thing, like visual design; typically needed by larger companies)&lt;/li&gt;
-&lt;li&gt;Grow (i.e. mentor junior people) or buy talent? Training junior people isn&amp;rsquo;t cheap - it takes a senior person&amp;rsquo;s time.
-
-&lt;ul&gt;
-&lt;li&gt;A healthy team has a mix of skills levels (she recommends a ratio of 1 senior:4 mid:2 junior). (Optimizely isn&amp;rsquo;t far off – we mostly lack a senior member!)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;A big mistake she sees a lot of startups make is to hire too junior of a person too early&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Understand the Market
-
-&lt;ul&gt;
-&lt;li&gt;The market has 5 cohorts: low skill junior folks (think design is knowing tools); spotty/developing skills; skilled specialists; generalists; and team leads&lt;/li&gt;
-&lt;li&gt;Senior == able to teach others, NOT a title (there&amp;rsquo;s lots of title inflation in the startup industry). Years of experience does NOT make a person senior. Many people with &amp;ldquo;senior&amp;rdquo; in their title have holes in their skills (especially if they&amp;rsquo;ve only worked on small teams at startups)&lt;/li&gt;
-&lt;li&gt;5 years experience only at a design consultancy == somewhat valuable (lots of mentorship opportunities from senior folks, but lack working continuously/iteratively on a product)&lt;/li&gt;
-&lt;li&gt;5 years experience mixed at design consultancy and on an in-house team == best mix of skills (worked with senior folks, and on a single product continuously)&lt;/li&gt;
-&lt;li&gt;5 years only on small startup teams == less valuable than the other two; is a red flag. There are often holes in the skills. They&amp;rsquo;re often &amp;ldquo;lone rangers&amp;rdquo; who haven&amp;rsquo;t worked with senior designers, or a team, and probably developed bad habits. Often have an inflated self-assessment of their skills and don&amp;rsquo;t know how to take feedback. (uh-oh! I&amp;rsquo;m kind of in this group)&lt;/li&gt;
-&lt;li&gt;It takes craft to assess craft&lt;/li&gt;
-&lt;li&gt;Alternate between hiring leads and those who can learn from the leads (i.e. a mix of skill levels)&lt;/li&gt;
-&lt;li&gt;Education matters - school can fill in gaps of knowledge. Schools have different types of people they product (HCI, visual, etc.). (yay for me!)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Make 2 lists before posting the job
-
-&lt;ul&gt;
-&lt;li&gt;First, list the responsibilities a person will have (what will they do?)&lt;/li&gt;
-&lt;li&gt;Second, list the skills they need to achieve the first list.&lt;/li&gt;
-&lt;li&gt;Turn these 2 lists into a job posting (avoid listing tools in the hiring criteria - that is dumb)&lt;/li&gt;
-&lt;li&gt;DON&amp;rsquo;T look for someone who has experience designing your exact product in your industry already. The best designers can quickly adapt to different contexts (better to hire a skilled designer with no mobile experience than a junior/mid designer with ONLY mobile experience - there&amp;rsquo;s ramp-up time, but that&amp;rsquo;s negligible for a skilled designer)&lt;/li&gt;
-&lt;li&gt;Junior to senior folks progress through this:
-Knows concepts -&amp;gt; Can design effectively w/coach -&amp;gt; Can design solo -&amp;gt; Can teach others&lt;/li&gt;
-&lt;li&gt;On small/inexperienced teams, watch out for the &amp;ldquo;Similar to me&amp;rdquo; effect. Designers new to hiring/interviewing will evaluate people against themselves, rather than evaluate their actual skills or potential. (Can ask, &amp;ldquo;Where were you relative to this person when you were hired?&amp;rdquo; to combat this).&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Evaluate Based on Skills You Need
-
-&lt;ul&gt;
-&lt;li&gt;Resumes == bozo filter&lt;/li&gt;
-&lt;li&gt;Look at the goals, process, role, results, lessons learned, things they&amp;rsquo;d do differently (we&amp;rsquo;re pretty good at this at Optimizely!)&lt;/li&gt;
-&lt;li&gt;Do &amp;ldquo;behavioral interviewing&amp;rdquo;, i.e. focus on specifics of actual behavior. Look at their actual work, do design exercises, ask &amp;ldquo;Tell me about a time when&amp;hellip;&amp;rdquo;. It&amp;rsquo;s a &lt;em&gt;conversation&lt;/em&gt;, not an interrogation. (Optimizely is also good at this!)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Be Real to Close the Deal
-
-&lt;ul&gt;
-&lt;li&gt;Be honest about what you&amp;rsquo;re looking for&lt;/li&gt;
-&lt;li&gt;If you have doubts about a person, discuss them directly with the candidate to try overcome them (or confirm them). (We need to do this more at Optimizely)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3&gt;Product Strategy in a Growing Company (Des Traynor)&lt;/h3&gt;
-
-&lt;p&gt;This was one of my favorite talks. Product strategy is hard, and it&amp;rsquo;s really easy to say &amp;ldquo;Yes&amp;rdquo; to every idea and feature request. One of my favorite bits was you need to say &amp;ldquo;No&amp;rdquo; because somethings not in the product vision. If you don&amp;rsquo;t ever say this, then you have no product vision. (This has been a challenge at Optimizely at times).&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Software is eating the world!&lt;/li&gt;
-&lt;li&gt;We&amp;rsquo;re the ones who control the software that&amp;rsquo;s available to everyone.&lt;/li&gt;
-&lt;li&gt;Niece asked, &amp;ldquo;Where do products come from?&amp;rdquo;. There are 5 reasons a product is built:
-
-&lt;ol&gt;
-&lt;li&gt;Product visionary&lt;/li&gt;
-&lt;li&gt;Customer-focused (built to solve pain point(s))&lt;/li&gt;
-&lt;li&gt;Auter (art + business)&lt;/li&gt;
-&lt;li&gt;Scratching own itch (you see a need in the marketplace)&lt;/li&gt;
-&lt;li&gt;Copy a pattern (e.g. &amp;ldquo;Uber for X!&amp;rdquo;)&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;(Optimizely started as scratching own itch, but is adapting to customer-focused)&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Scope: scalpel vs. swiss army knife
-
-&lt;ul&gt;
-&lt;li&gt;When first starting, build a scalpel (it&amp;rsquo;s the only way to achieve marketshare when starting)&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://en.wikipedia.org/wiki/John_Gall_(author)#Gall.27s_law"&gt;Gall&amp;rsquo;s Law&lt;/a&gt;: complex systems evolve from simple ones (like WWW. Optimizely is also evolving towards complexity!). You can&amp;rsquo;t set out to design a complex system from scratch (think Google Wave)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;A simple product !== making a product simple (i.e. an easy to use product isn&amp;rsquo;t necessarily simple [difference between designing a whole UX vs. polishing a specific UI]).
-
-&lt;ul&gt;
-&lt;li&gt;Simplify a product by removing steps. Watch out for Scopi-locks (i.e. scope the problem just right – not too big, not too small). You don&amp;rsquo;t want to solve steps of a flow that are already solved by a market leader, or when there are multiple solutions already in use by people (e.g. don&amp;rsquo;t rebuild email, there&amp;rsquo;s already Gmail and Outlook and Mailbox, etc.)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;How to fight feature creep
-
-&lt;ul&gt;
-&lt;li&gt;Say &amp;ldquo;No&amp;rdquo; by default&lt;/li&gt;
-&lt;li&gt;Have a checklist new ideas must go through before you build them, e.g. (this is a subset):
-
-&lt;ul&gt;
-&lt;li&gt;Does it benefit all customers?&lt;/li&gt;
-&lt;li&gt;Is the value worth the effort?&lt;/li&gt;
-&lt;li&gt;Does it improve existing features? Does it increase engagement across the system, or divide it?&lt;/li&gt;
-&lt;li&gt;If a feature takes off, can we afford it? (E.g. if you have a contractor build an Android app, how will you respond to customer feedback and bugs?)&lt;/li&gt;
-&lt;li&gt;Is it low effort for the customer to use, and result in high value? (E.g. Circles in G+ fail this criteria - no one wants to manage friends like this)&lt;/li&gt;
-&lt;li&gt;It&amp;rsquo;s been talked about forever; it&amp;rsquo;s easy to build; we&amp;rsquo;ve put a lot of effort in already == all &lt;strong&gt;bad&lt;/strong&gt; reasons to ship a new feature&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;(Optimizely has failed at this a couple of times. E.g. Preview As. On the other hand, Audiences met these criteria)&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Once you ship something, it&amp;rsquo;s &lt;strong&gt;really&lt;/strong&gt; hard to take back. Even if customers complain about it, there is always a minority that will be really angry if you take it away.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;Hunches, Instincts, and Trusting Your Gut (Leah Buley)&lt;/h3&gt;
-
-&lt;p&gt;This was probably my least favorite talk. The gist of it is that as a designer, there are times you need to be an expert and just make a call using your gut (colleagues and upper management need you to be this person sometimes). We have design processes to follow, but there are always points at which you need to make a leap of faith and trust your gut. I agree with those main points, but this talk lost me by focusing only on visual design. She barely mentioned anything about user goals or UX design.&lt;/p&gt;
-
-&lt;p&gt;Her talk was mainly about &amp;ldquo;The Gut Test&amp;rdquo;, which is a way of looking at a UI (or print piece, or anything that has visual design) and assessing your gut reaction to it. This is useful for visual design, but won&amp;rsquo;t find issues like, &amp;ldquo;Can the user accomplish their goal? Is the product/feature easy to use?&amp;rdquo; (Something can be easy to use, but fail her gut test). It&amp;rsquo;s fine that she didn&amp;rsquo;t tackle these issues, but I wish she would have acknowledged more explicitly that the talk was only addressing a thin slice of product design.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;In the first 50ms of seeing something, we have an immediate visceral reaction to things&lt;/li&gt;
-&lt;li&gt;Exposure effect: the more we see something, the more we like it (we lose our gut reaction to it)&lt;/li&gt;
-&lt;li&gt;To combat this, close your eyes for 5 seconds, then look at a UI and ask these questions:
-
-&lt;ul&gt;
-&lt;li&gt;What do you notice first?&lt;/li&gt;
-&lt;li&gt;How does it make you feel (if anything)? What words would you use to describe it?&lt;/li&gt;
-&lt;li&gt;Is it prototypical? (i.e. does it conform to known patterns). Non-conformity == dislike and distrust&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Then figure out what you can do to address any issues discovered.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;Real Life Trust Online (Mara Zepeda)&lt;/h3&gt;
-
-&lt;p&gt;This talk was interesting, but not directly applicable to my everyday job at Optimizely. The gist of it was how do we increase trust in the world, and not just in the specific product or company we&amp;rsquo;re using? For example, when you buy or sell something successfully on Craigslist, your faith in humanity increases a little bit. But reviews on Amazon, for example, increases your trust in that product and Amazon, but not necessarily in your fellow human beings.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Before trust is earned, there&amp;rsquo;s a moment of vulnerability and an optimism about the future.&lt;/li&gt;
-&lt;li&gt;Trust gets built up in specific companies (e.g. Craigslist - there&amp;rsquo;s no reason to trust the company or site, but trust in humans and universe increases when a transaction is successful).&lt;/li&gt;
-&lt;li&gt;Social networks don&amp;rsquo;t create networks of trust in the real world&lt;/li&gt;
-&lt;li&gt;Switchboard MVP was a phone hotline
-
-&lt;ul&gt;
-&lt;li&gt;LinkedIn: ask for job connections, no one responds. But if you call via Switchboard, people are more likely to respond (there&amp;rsquo;s a real human connection)&lt;/li&gt;
-&lt;li&gt;They&amp;rsquo;re trying to create a trust network online&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;To build trust:
-
-&lt;ul&gt;
-&lt;li&gt;Humanize the transaction (e.g. make it person to person)&lt;/li&gt;
-&lt;li&gt;Give a victory lap (i.e. celebrate when the system works)&lt;/li&gt;
-&lt;li&gt;Provide allies / mentors along the journey (i.e. people who are invested in the journey being successful, and can celebrate the win)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;She brought up the USDA&amp;rsquo;s &lt;a href="http://www.fsa.usda.gov/FSA/webapp?area=online&amp;amp;subject=landing&amp;amp;topic=hay"&gt;&amp;ldquo;Hay Net&amp;rdquo;&lt;/a&gt; as an example of this. It connects those who have Hay with those who need Hay (and vice versa). UI had two options: &amp;ldquo;Have Hay&amp;rdquo; and &amp;ldquo;Need Hay&amp;rdquo;, which I find hilarious and amazing.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;Designing for Unmet Needs (Steve Portigal)&lt;/h3&gt;
-
-&lt;p&gt;Steve Portigal&amp;rsquo;s talk was solid, but it didn&amp;rsquo;t really tell me anything I didn&amp;rsquo;t already know. The gist of it was there are different types of research (generative v. evaluative), you need to know which is appropriate for your goals (although it&amp;rsquo;s a spectrum, not a dichotomy), and there are ways around anything you think is stopping you (e.g. no resources; no users; no product; etc.). The two most interesting points to me were:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Create provocative examples/prototypes/mocks to show people and gather responses (he likened this to a scientist measuring reactions to new stimuli). Create a vision of the future and see what people think of it, find needs, iterate, adapt. Go beyond iterative improvements to an existing product or UI (we&amp;rsquo;re starting to explore this technique at Optimizely now).&lt;/li&gt;
-&lt;li&gt;Build an infrastructure for ongoing research. This is something that&amp;rsquo;s been on my mind for awhile, since we&amp;rsquo;re very reactive in our research needs at Optimizely. I&amp;rsquo;d like us to have more continual, ongoing research that&amp;rsquo;s constantly informing product decisions.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;Redesigning with Confidence (Jessica Harllee)&lt;/h3&gt;
-
-&lt;p&gt;This was a cool talk that described the process Etsy went through to redesign the seller onboarding experience, and how they used data to be confident in the final result. The primary goal was increasing the shop open rate, while maintaining the products listed per seller. They a/b tested a new design that increased the open rate, but had fewer products listed per seller. They made some tweaks, a/b tested again, and found a design that increased the shop open rate while maintaining the number of products listed per seller. Which means more products are listed on Etsy overall!&lt;/p&gt;
-
-&lt;p&gt;I didn&amp;rsquo;t learn much new from this talk, but enjoy hearing these stories. It also got me thinking about how we don&amp;rsquo;t a/b test much in the product at Optimizely. A big reason is because it takes too long to get significant results (as Jessica mentioned in her talk, they had to run both tests for months, and the overall project took over a year). Another reason is that when developing new features, there aren&amp;rsquo;t any direct metrics to compare. Since Jessica&amp;rsquo;s example was a redesign, they could directly compare behavior of the redesign to the original.&lt;/p&gt;
-
-&lt;h3&gt;Designing for Startups Problems (Braden Kowitz)&lt;/h3&gt;
-
-&lt;p&gt;Braden&amp;rsquo;s talk was solid, as usual, but since I&amp;rsquo;ve seen him talk before and read his blog I didn&amp;rsquo;t get much new out of it. His talk was about how Design (and therefore, designers) can help build a great &lt;em&gt;company&lt;/em&gt; (beyond just UIs). Most companies think of design at the &amp;ldquo;surface level&amp;rdquo;, i.e. visual design, logos, etc., but at its core design is about product and process and problem solving. Design can help at the highest levels.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;4 Skills Designers Need:
-
-&lt;ol&gt;
-&lt;li&gt;Know where to dig
-
-&lt;ul&gt;
-&lt;li&gt;Map the problem&lt;/li&gt;
-&lt;li&gt;Identify the riskiest part (e.g. does anyone need this product or feature at all?)&lt;/li&gt;
-&lt;li&gt;Design to answer that question. Find the cheapest/simplest/fastest thing you can create to answer this question (fake as much as you can to avoid building a fully working artifact)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Get dirty
-
-&lt;ul&gt;
-&lt;li&gt;Prototype as quickly as possible (colors, polish, etc., aren&amp;rsquo;t important)&lt;/li&gt;
-&lt;li&gt;Focus on the most important part, e.g. the user flow, layout, copy, etc. Use templates/libraries to save time&lt;/li&gt;
-&lt;li&gt;Use deadlines (it&amp;rsquo;s really easy to polish a prototype forever)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Pump in fresh data
-
-&lt;ul&gt;
-&lt;li&gt;Your brain fills in gaps in data, so have regular research and testing (reinforces Portigal&amp;rsquo;s points nicely)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Take big leaps
-
-&lt;ul&gt;
-&lt;li&gt;Combine the above 3 steps to generate innovative solutions to problems&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;Accomplish Big Goals with Objective &amp;amp; Key Results (Christina Wodtke)&lt;/h3&gt;
-
-&lt;p&gt;This was an illuminating talk about the right way to create and evaluate OKRs. I didn&amp;rsquo;t hear much I hadn&amp;rsquo;t already heard (we use OKRs at Optimizely and have discussed best practices). But to recap:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Objective == Your Dream, Your Goal. It&amp;rsquo;s hard. It&amp;rsquo;s qualitative.&lt;/li&gt;
-&lt;li&gt;Key Results == How you know you reached your goal. They&amp;rsquo;re quantitative. They&amp;rsquo;re measurable. They&amp;rsquo;re &lt;strong&gt;not&lt;/strong&gt; tasks (it&amp;rsquo;s something you can put on a dashboard and measure over time, e.g. sales numbers, adoption, etc.).&lt;/li&gt;
-&lt;li&gt;Focus: only have ONE Objective at a time, and measure it with 3 Key Results. &lt;em&gt;(She didn&amp;rsquo;t talk about how to scale this as companies get bigger. I wish she did).&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Measure it throughout the quarter so you can know how you&amp;rsquo;re tracking. Don&amp;rsquo;t wait until the end of the quarter.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;Thought Experiments for Data-Driven Design (Aviva Rosenstein)&lt;/h3&gt;
-
-&lt;p&gt;This was an illuminating talk about the right way to incorporate data into the decision making process. You need to find a balance between researching/measuring to death, and making a decision. She used DocuSign&amp;rsquo;s feedback button as a good example of this.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Don&amp;rsquo;t research to death — try something and measure the result (but make an educated guess).&lt;/li&gt;
-&lt;li&gt;DocuSign tried to roll their own &amp;ldquo;Feedback&amp;rdquo; button (rather than using an existing service). They gave the user a text box to enter feedback, and submitting it sent it to an email alias (not stored anywhere; not categorized at all).
-
-&lt;ul&gt;
-&lt;li&gt;This approach became a data deluge&lt;/li&gt;
-&lt;li&gt;There was no owner of the feedback&lt;/li&gt;
-&lt;li&gt;Users entered all kinds of stuff in that box that shouldn&amp;rsquo;t have gone there (e.g. asking for product help). People use the path of least resistance to get what they want. &lt;em&gt;(I experienced this with the feedback button in the Preview tool)&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Data should lead to insight (via analysis and interpretation)&lt;/li&gt;
-&lt;li&gt;Collecting feedback by itself has no ROI (can be negative because if people feel their feedback is being ignored they get upset)&lt;/li&gt;
-&lt;li&gt;Aviva&amp;rsquo;s goal: find a feedback mechanism that&amp;rsquo;s actually useful&lt;/li&gt;
-&lt;li&gt;Other feedback approaches:
-
-&lt;ul&gt;
-&lt;li&gt;Phone/email conversation (inefficient, hard to track)&lt;/li&gt;
-&lt;li&gt;Social media (same as above; biased)&lt;/li&gt;
-&lt;li&gt;Ad hoc survey/focus groups (not systematic; creating good surveys is time consuming)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Feedback goals:
-
-&lt;ol&gt;
-&lt;li&gt;Valid: trustworthy and unbiased&lt;/li&gt;
-&lt;li&gt;Delivery: goes to the right person/people&lt;/li&gt;
-&lt;li&gt;Retention: increase overall company knowledge; make it available when needed&lt;/li&gt;
-&lt;li&gt;Usable: can&amp;rsquo;t pollute customer feedback&lt;/li&gt;
-&lt;li&gt;Scalable: easy to implement&lt;/li&gt;
-&lt;li&gt;Contextual: gather feedback in context of use&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;They changed their feedback mechanism slightly by asking users to bucket the feedback first (e.g. &amp;ldquo;Billing problems&amp;rdquo;, &amp;ldquo;Positive feedback&amp;rdquo;, etc.), then emailed it to different places. This made it more actionable.&lt;/li&gt;
-&lt;li&gt;Doesn&amp;rsquo;t need to be &amp;ldquo;Ready -&amp;gt; Fire -&amp;gt; Aim&amp;rdquo;: we can use data and the double diamond approach to inform the problem, and make our best guess.
-
-&lt;ul&gt;
-&lt;li&gt;This limits collateral damage from not aiming. A poorly aimed guess can mar the user experience, which users don&amp;rsquo;t easily forget.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;Growing Your Userbase with Better Onboarding (Samuel Hulick)&lt;/h3&gt;
-
-&lt;p&gt;This was one of my favorite talks of the day (and not only because Samuel gave Optimizely a sweet shout out). I didn&amp;rsquo;t learn a ton new from it, but Samuel is an entertaining speaker. His pitch is basically that the first run experience is important, and needs to be thought about at the start of developing a product (not tacked on right before launch).&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&amp;ldquo;Onboarding&amp;rdquo; is often just overlaying an UI with coach&amp;rsquo;s marks. But there&amp;rsquo;s very little utility in this.&lt;/li&gt;
-&lt;li&gt;Product design tends to focus on the &amp;ldquo;flying&amp;rdquo; state, once someone is using a system. Empty states, and new user experiences, are often tacked on.&lt;/li&gt;
-&lt;li&gt;You need to start design with where the users start&lt;/li&gt;
-&lt;li&gt;Design Recommendations
-
-&lt;ul&gt;
-&lt;li&gt;Show a single, action-oriented tooltip at a time (Optimizely was his example of choice here!)
-
-&lt;ul&gt;
-&lt;li&gt;Ask for signup when there&amp;rsquo;s something to lose (e.g. after you&amp;rsquo;ve already created an experiment)&lt;/li&gt;
-&lt;li&gt;Assume guided tours will be skipped, i.e. don&amp;rsquo;t rely on them to make your product usable&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Use completion meters to get people fully using a product&lt;/li&gt;
-&lt;li&gt;Keep in mind that users don&amp;rsquo;t buy products, they &lt;a href="http://www.useronboard.com/features-vs-benefits/"&gt;buy better versions of themselves&lt;/a&gt; (Mario + fire flower), and use this as the driving force to get people fully engaged with your product&lt;/li&gt;
-&lt;li&gt;Provide positive reinforcement when they complete steps! (Emails can help push them along)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;Fostering Effective Collaboration in a Global Environment (PJ McCormick)&lt;/h3&gt;
-
-&lt;p&gt;PJ&amp;rsquo;s talk was just as good this year as it was last year. He gave lots of great tips for increasing collaboration and trust among teams (especially the engineering and design teams), which is also a topic that has been on my mind recently.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;His UX team designs retail pages (e.g. discover new music page). In one case, he presented work to the stakeholders and dev team, who then essentially killed the project. What went wrong? Essentially, it was a breakdown of communication and he didn&amp;rsquo;t include the dev team early enough.&lt;/li&gt;
-&lt;li&gt;Steps to increasing collaboration:
-
-&lt;ol&gt;
-&lt;li&gt;Be accessible and transparent
-
-&lt;ul&gt;
-&lt;li&gt;Put work up on public walls so everyone can see progress &lt;em&gt;(this is something I want to do more of)&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Get comfortable showing work in progress&lt;/li&gt;
-&lt;li&gt;Demystify the black box of design&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Listen
-
-&lt;ul&gt;
-&lt;li&gt;Listen to stakeholders&amp;rsquo; and outside team members opinions and feedback (you don&amp;rsquo;t have to incorporate it, but make sure they know they&amp;rsquo;re being heard)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Be a Person
-
-&lt;ul&gt;
-&lt;li&gt;On this project, the communication was primarily through email or bug tracking, which lacks tone of voice, body language, etc.&lt;/li&gt;
-&lt;li&gt;There was no real dialog. Talk more face to face, or over phone. &lt;em&gt;(I have learned this again and again, and regularly walk over to someone to hash things out at the first hint of contention in an email chain. It&amp;rsquo;s both faster to resolve and maintains good relations among team members)&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Work with people, not &lt;strong&gt;at&lt;/strong&gt; them
-
-&lt;ul&gt;
-&lt;li&gt;He should have included stakeholders and outside team members in the design process.&lt;/li&gt;
-&lt;li&gt;Show them the wall; show UX studies; show work in progress&lt;/li&gt;
-&lt;li&gt;Help teach people what design is &lt;em&gt;(this is hard. I want to get better at this)&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;A question came up about distributed teams, since much of his advice hinges on face to face communication. I&amp;rsquo;ve been struggling with this (actually, the whole company has), and his recommendations are in line with what we&amp;rsquo;ve been trying: use a webcam + video chat to show walls (awkward; not as effective as in person), and take pictures/digitize artifacts to share with people (has the side effect of being archived for future, but introduces the problem of discoverability).&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;And that&amp;rsquo;s all! (Actually, I missed the last talk&amp;hellip;). Overall, a great conference that I intend to go back to next year.&lt;/p&gt;
 </content>
   </entry>
 </feed>
