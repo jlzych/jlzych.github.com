@@ -44,6 +44,31 @@
       </header>
       <div class='content'>
         <article>
+          <time datetime='2015-08-30'>
+            <i>Posted on</i>
+            Aug 30, 2015
+            <i>by</i>
+            Jeff Zych
+          </time>
+          <h1><a href="/2015/08/30/get-comfortable-sharing-shitty-work/">Get Comfortable Sharing Your Shitty Work</a></h1>
+          <p>After jamming with a friend, she commented that she felt emotionally spent afterwards. Not quite sure what she meant, I asked her to elaborate. She said that improvising music makes you feel vulnerable. You’ve got to put yourself out there, which opens you up to judgement and criticism.</p>
+          
+          <p>And she’s right. In that moment I realized that being a designer trained me to get over that fear. I know I have to start somewhere shitty before I can get somewhere good. Putting myself and my ideas out there is part of that process. My work only becomes good through feedback and iteration.</p>
+          
+          <p>So my advice to you, young designer, is to accept the fact that before your work becomes great, it&rsquo;s going to be shitty. This will be hard at first. You&rsquo;ll feel vulnerable. You’ll fear judgement. You’ll worry about losing the respect of your colleagues.</p>
+          
+          <p><strong>But get over it</strong>. We&rsquo;ve all felt this way before. Just remember that we&rsquo;re all in this together. We all want to produce great work for our customers. We all want to make great music together.</p>
+          
+          <p>So get comfortable sharing your shitty work. You’ll start off discordant, but through the process of iteration and refinement you’ll eventually hit your groove.</p>
+          <p class='follow-me'>
+            Thoughts? Reply
+            <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
+          </p>
+          <footer class='tags text-uppercase text-small'>
+            Tags:
+          </footer>
+        </article>
+        <article>
           <time datetime='2015-06-16'>
             <i>Posted on</i>
             Jun 16, 2015
@@ -457,83 +482,6 @@
             Tags:
             <span class='tag'>design process</span>
             <span class='tag'>Optimizely</span>
-          </footer>
-        </article>
-        <article>
-          <time datetime='2015-02-03'>
-            <i>Posted on</i>
-            Feb  3, 2015
-            <i>by</i>
-            Jeff Zych
-          </time>
-          <h1><a href="/2015/02/03/building-an-mvpp-a-minimum-viable-product-we-re-proud-of/">Building an MVPP - A Minimum Viable Product we're Proud of</a></h1>
-          <p>On November 18th, 2014, we publicly released <a href="https://www.optimizely.com/mobile">Optimizely&rsquo;s iOS editor</a>. This was a big release for us because it marked the end of a months-long public beta in which we received a ton of customer feedback and built a lot of missing features. But before we launched, there was one problem the whole team rallied behind to fix: we weren’t <em>proud</em> of the product. To fix this issue, we went beyond a Minimum Viable Product (MVP) to an MVPP — the Minimum Viable Product we&rsquo;re Proud of.</p>
-          
-          <p>What follows is the story of how we pulled this off, what we learned along the way, and product development tips to help you ship great products, from the perspective of someone who just did it.</p>
-          
-          <p><img alt="Finished iOS editor" src="http://jlzych.com/images/2015-02-03-building-an-mvpp-a-minimum-viable-product-we-re-proud-of/1-finished-editor.png" /></p>
-          
-          <p><em>The finished iOS editor.</em></p>
-          
-          <h2>Genesis of the MVPP</h2>
-          
-          <p>We released a <a href="http://blog.optimizely.com/2014/06/16/optimizely-for-ios-now-available-in-public-beta/">public beta</a> of Optimizely&rsquo;s iOS editor in June 2014. At that time, the product wasn&rsquo;t complete yet, but it was important for us to get real customer feedback to inform its growth and find bugs. So after months of incorporating user feedback, the beta product felt complete enough to publicly launch. There was just one problem: <strong>the entire team wasn&rsquo;t proud of the product</strong>. It didn&rsquo;t meet our quality bar; it felt like a bunch of features bolted together without a holistic vision. To fix this, we decided to overhaul the user experience, an ambiguous goal that could easily go on forever, never reaching a clear “done” state.</p>
-          
-          <p>We did two things to be more directed in the overhaul. First, we committed to a deadline to prevent us from endlessly polishing the UI. Second, we took inspiration from the Lean Startup methodology and chose a set of features that made up a <a href="http://theleanstartup.com/principles">Minimum Viable Product</a> (MVP). An MVP makes it clear that we&rsquo;ll cut scope to make the deadline, but nothing about quality. So to make it explicit that we were focusing on quality and wanted the whole team to be proud of the final product, we added an extra &ldquo;P&rdquo; to MVP. And thus, the <strong>Minimum Viable Product we&rsquo;re Proud of — our MVPP</strong> — was born.</p>
-          
-          <h2>Create the vision</h2>
-          
-          <p>Once we had agreed on a feature set for the MVPP, a fellow Product Designer and I locked ourselves in a <a href="http://www.fastcodesign.com/3028471/google-ventures-your-design-team-needs-a-war-room-heres-how-to-set-one-up">war room</a> for the better part of a week to flesh out the user experience. We mapped out user flows and created rough mock ups that we could use to communicate our vision to the larger development team. Fortunately, we had some pre-existing usability test findings to inform our design decisions.</p>
-          
-          <p><img alt="Picture of our war room in action" src="http://jlzych.com/images/2015-02-03-building-an-mvpp-a-minimum-viable-product-we-re-proud-of/2-war-room.jpg" /></p>
-          
-          <p><em>Sketches, mockups, and user flows from our war room.</em></p>
-          
-          <p>These mockups were immensely helpful in planning the engineering and design work ahead. Instead of talking about ideas in the abstract, we had concrete features and visuals to point to. For example, everyone knew what we meant when we said &ldquo;Improved Onboarding Flow.&rdquo; With mockups in hand, communication between team members became much more concrete and people felt inspired to work hard to achieve our vision.</p>
-          
-          <h2>Put 6 weeks on the clock… and go!</h2>
-          
-          <p>We had 3 sprints (6 weeks) to complete the MVPP (most teams at Optimizely work in 2 week cycles called “sprints”). It was an aggressive timeline, but it felt achievable — exactly where a good deadline should be.</p>
-          
-          <p>In the first sprint, the team made amazing progress. All the major pieces had been built, without any major re-scoping or redesigns. There were still bugs to fix, polish to apply, and edge cases to consider, but the big pieces core to our vision were in place.</p>
-          
-          <p>That momentum carried over into the second sprint, which we spent fixing the biggest bugs, filling functional holes, and polishing the UI.</p>
-          
-          <p>For the third and final sprint, we gave ourselves a new goal: ship a week early. We were already focused on launching the MVPP, but at this point we became laser focused. During daily standups, we looked at our JIRA board and asked, “If we were launching tomorrow, what would we work on today?”</p>
-          
-          <p>We were ruthless about prioritizing tasks and moved a lot of items that were important, but not launch-critical, to the backlog.</p>
-          
-          <p>During the first week of sprint 3, we also did end-to-end product walkthroughs after every standup to ensure the team was proud of the new iOS editor. We all got to experience the product from the customer&rsquo;s perspective, and caught user experience bugs that were degrading the quality of our work. We also found and fixed a lot of functional bugs during this time. By the end of the week, everyone was proud of the final product and felt confident launching.</p>
-          
-          <h2>The adrenaline rush &amp; benefit of an early release</h2>
-          
-          <p>On 11/10, we quietly released our MVPP to the world — a full week early! Not only did shipping early feel great, it also gave us breathing room to further polish the design, fix bugs, and give the rest of the company time to organize all the components to launch the MVPP.</p>
-          
-          <p>Product teams don’t launch products alone; it takes full collaboration between marketing, sales, and success to create materials to promote it, sell it, and enable our customers to use it. By the time the public announcement on 11/18 rolled around, the whole company was extremely proud of the final result.</p>
-          
-          <h2>Lessons learned</h2>
-          
-          <p>While writing this post and reflecting on the project as a whole, a number of techniques became clear to me that can help any team ensure a high quality, on-time launch:</p>
-          
-          <ul>
-          <li><strong>Add a “P” to “MVP” to make quality a launch requirement:</strong> Referring to the project as the “Minimum Viable Product we’re Proud of” made sure everyone on the team approached the product with quality in mind. Every project has trade-offs between the ship date, quality, and scope. It’s very hard to do all three. Realistically, you can do two. By calling our project an MVPP, we were explicit that quality would not be sacrificed.</li>
-          <li><strong>Set a deadline:</strong> Having a deadline focused everyone’s efforts, preventing designers from endlessly polishing interfaces and developers spinning their wheels imagining every possible edge case. Make it aggressive, yet realistic, to instill a sense of urgency in the team.</li>
-          <li><strong>Focus on the smallest set of features that provide the largest customer impact:</strong> We were explicit about what features needed to be redesigned, and just as importantly, which were off limits. This prevented scope-creep, and increased the team’s focus.</li>
-          <li><strong>Make mockups before starting development:</strong> This is well-known in the industry, but it’s worth repeating. Creating tangible user flows and mockups ahead of time keeps planning discussions on track, removes ambiguity, and quickly explains the product vision. It also inspires the team by rallying them to achieve a concrete goal.</li>
-          <li><strong>Do daily product walkthroughs:</strong> Our product walkthroughs had two key benefits. First, numerous design and code bugs were discovered and fixed. And second, they ensured we lived up to the extra “P” in “MVPP.” Everyone had a place to verbally agree that they were proud of the final product and confident launching. Although these walkthroughs made our standups ~30 minutes longer, it was worth the cost.</li>
-          <li><strong>Ask: “If we were shipping tomorrow, what would you work on today?”:</strong> When the launch date is approaching, asking this question separates the critical, pre-launch tasks from the post-launch tasks.</li>
-          </ul>
-          
-          <h2>Lather, Rinse, and Repeat</h2>
-          
-          <p>By going beyond an MVP to a Minimum Viable Product we’re Proud of, we guaranteed that quality was the requirement for launching. And by using a deadline, we stayed focused only on the tasks that were absolutely critical to shipping. With a well-scoped vision, mockups, and a date not too far in the future, you too can rally teams to create product experiences they’re proud of. And then do it again.</p>
-          <p class='follow-me'>
-            Thoughts? Reply
-            <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
-          </p>
-          <footer class='tags text-uppercase text-small'>
-            Tags:
-            <span class='tag'>design process</span>
           </footer>
         </article>
         <a class="view-all-link" href="/archives">View all posts &raquo;</a>
