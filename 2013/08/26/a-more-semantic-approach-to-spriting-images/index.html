@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html><head>
+<html>
+  <head>
     <meta charset='utf-8'>
     <title>
+      A More Semantic Approach to Spriting Images by
       Jeff Zych
-       - A More Semantic Approach to Spriting Images
     </title>
     <meta content="Jeff Zych's website" name='description'>
     <meta content='Jeff Zych' name='author'>
@@ -21,13 +22,14 @@
     <meta content='A More Semantic Approach to Spriting Images' property='og:title'>
     <link href="/favicon.ico?v=1" rel="icon" type="image/ico?v=1" />
     <script src='//cdn.optimizely.com/js/1111070510.js'></script>
-    <link href="/stylesheets/application.css?1427062590" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/application.css?1448858998" media="screen" rel="stylesheet" type="text/css" />
     <link href='/feed.xml' rel='alternate' title='RSS for Jeff Zych' type='application/rss+xml'>
     <script src='//use.typekit.net/kbr8kzk.js' type='text/javascript'></script>
     <script>
       try{Typekit.load();}catch(e){}
     </script>
-  </head><body>
+  </head>
+  <body>
     <div id='main' role='main'>
       <header>
         <h1 class='monogram'>
@@ -56,11 +58,11 @@
           
           <p>Spriting images is a well-known, well-documented way to speed up page load times. The standard technique is to set a sprite sheet image as the <code>background-image</code> of an element, and position it so the proper sprite shows through. This works great for icons and other images that aren&rsquo;t part of the actual content, but not so great for images that belong in the page content.</p>
           
-          <h2>The problem</h2>
+          <h2 id="the-problem">The problem</h2>
           
           <p>Images that are part of the content should be in <code>img</code> tags. This is correct semantically, good for accessibility, and good for interoperability. With the typical approach to spriting images, you would need empty container elements that have a <code>background-image</code> property. Those empty elements have no semantic meaning, and are worthless to screenreaders and other crawlers that may access your page. This is the situation I found myself in on <a href="https://www.optimizely.com">Optimizely&rsquo;s homepage</a> when I sprited the customer logos and benefits graphics.</p>
           
-          <h2>The solution</h2>
+          <h2 id="the-solution">The solution</h2>
           
           <p>Solving this problem is actually fairly simple. First, you&rsquo;ll need markup similar to the following:</p>
           <pre class="highlight html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;sprite-container sprite-track&quot;</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;sprites.png&quot;</span> <span class="na">alt=</span><span class="s">&quot;Graphic of tracking elements on a web page&quot;</span><span class="nt">&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span></pre>
@@ -78,7 +80,7 @@
           
           <p>Generating this CSS can be a pain, but I will discuss how to accomplish this with Compass in my <a href="/2013/09/01/automating-semantic-sprites-with-compass/">next blog post</a>.</p>
           
-          <h2>Closing Thoughts</h2>
+          <h2 id="closing-thoughts">Closing Thoughts</h2>
           
           <p>This method lets us use sprites in <code>img</code> tags, which is more semantic than empty <code>div</code>s or <code>span</code>s (depending on the use case). However, it has a couple of drawbacks. First, it requires a container element around your image. This could add unneccessary bloat to your markup (in my case the image already had a parent element). Second, and greatest of all, the image <code>src</code> attribute now references an entire sprite sheet, when technically it should only reference the actual image that it&rsquo;s showing. Screenreaders won&rsquo;t care at all, but some services may use this image for other purposes. For example, Facebook grabs a representative image of your page when a link is shared, and it could grab a sprite sheet instead of the actual image. That&rsquo;s no good.</p>
           

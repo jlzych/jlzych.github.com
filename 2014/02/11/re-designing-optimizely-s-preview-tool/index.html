@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html><head>
+<html>
+  <head>
     <meta charset='utf-8'>
     <title>
+      Re-Designing Optimizely's Preview Tool by
       Jeff Zych
-       - Re-Designing Optimizely's Preview Tool
     </title>
     <meta content="Jeff Zych's website" name='description'>
     <meta content='Jeff Zych' name='author'>
@@ -21,13 +22,14 @@
     <meta content="Re-Designing Optimizely's Preview Tool" property='og:title'>
     <link href="/favicon.ico?v=1" rel="icon" type="image/ico?v=1" />
     <script src='//cdn.optimizely.com/js/1111070510.js'></script>
-    <link href="/stylesheets/application.css?1427062590" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/application.css?1448858998" media="screen" rel="stylesheet" type="text/css" />
     <link href='/feed.xml' rel='alternate' title='RSS for Jeff Zych' type='application/rss+xml'>
     <script src='//use.typekit.net/kbr8kzk.js' type='text/javascript'></script>
     <script>
       try{Typekit.load();}catch(e){}
     </script>
-  </head><body>
+  </head>
+  <body>
     <div id='main' role='main'>
       <header>
         <h1 class='monogram'>
@@ -54,7 +56,7 @@
           <h1><a href="/2014/02/11/re-designing-optimizely-s-preview-tool/">Re-Designing Optimizely's Preview Tool</a></h1>
           <p>We just <a href="http://blog.optimizely.com/2014/01/23/introducing-preview-as/">released a major addition</a> to Optimizely&rsquo;s preview tool: the ability to impersonate visitors. This lets our customers see content they&rsquo;re targeting to different audiences. Designing and developing this was a larger undertaking than any of us expected. In this post, I am going to describe our design process and the design decisions we made along the way. My hope is this post will serve as a record of the work that went into it, as well as provide a glimpse into the black box of design.</p>
           
-          <h2>Impersonate what? Preview who?</h2>
+          <h2 id="impersonate-what-preview-who">Impersonate what? Preview who?</h2>
           
           <p>Optimizely&rsquo;s Preview tool has been around for many years as a QA tool for our customers to view draft experiments on their live site. Its proven itself useful, but until now it wasn&rsquo;t possible to view experiments targeted to users whose conditions you didn&rsquo;t match, such as people in another country. The new impersonation functionality lets you do just that.</p>
           
@@ -62,13 +64,13 @@
           
           <p><em>Optimizely&rsquo;s newly redesigned preview tool</em></p>
           
-          <h2>The problem</h2>
+          <h2 id="the-problem">The problem</h2>
           
           <p>Our broad goal was to make it easy for our customers to personalize content to their audiences. Like any good design process, we started by asking questions and doing research. We sought to answer questions such as: &ldquo;Do our customers even want to do this at all? Do they do this now? Why do they do this?&rdquo; We began by looking at usage metrics, which taught us that a small number of people already target content to audiences.</p>
           
           <p>But why do they do this? What are their difficulties? Why aren&rsquo;t more people doing this? To answer these questions, we switched into qualitative mode and spoke with customers. After a few interviews, the most consistent and actionable insight we had was that the biggest pain point is managing these targeted experiments. Among other issues, it&rsquo;s especially hard to preview and test content that&rsquo;s served to different audiences.</p>
           
-          <h2>A seedling of an idea</h2>
+          <h2 id="a-seedling-of-an-idea">A seedling of an idea</h2>
           
           <p>With our research in hand, we brainstormed a bunch of different ways of tackling this problem. The most obvious improvement that everyone agreed on was augmenting the preview tool with the ability to impersonate different users. Adding this to the preview tool was a natural fit, since it&rsquo;s meant to be a QA tool. It doesn&rsquo;t solve every problem, but it&rsquo;s a good first step.</p>
           
@@ -78,7 +80,7 @@
           
           <p><em>The first sketch outlining the new impersonate functionality.</em></p>
           
-          <h2>Better sketches</h2>
+          <h2 id="better-sketches">Better sketches</h2>
           
           <p>After we had a basic idea of how this would work, it became my job to fully design the feature. This meant thinking through all the user interactions, layout, and visual design. My first step was to sketch more detailed interfaces. The original sketch relied on an overly simplistic assumption of how impersonation would work: users would select an audience to view the page as. Unfortunately, Optimizely doesn&rsquo;t (yet) have the concept of an &ldquo;audience&rdquo; in the product. Since an audience is basically a collection of targeting criteria (location, cookies, browser, etc.), impersonating a visitor morphed into setting values for targeting attributes. These values are evaluated against each experiment&rsquo;s targeting conditions, and the experiments that match are displayed on the page.</p>
           
@@ -90,7 +92,7 @@
           
           <p><em>More refined sketches of the new preview tool.</em></p>
           
-          <h2>Interactive mockups</h2>
+          <h2 id="interactive-mockups">Interactive mockups</h2>
           
           <p>Now that I felt comfortable with the basic layout of the new preview, I moved into high fidelity interactive mockups. At this stage it was important for me to get my ideas into a form that I could actually interact with. It&rsquo;s one thing to look at a static sketch, but it&rsquo;s completely different to actually click through and interact with it. I could have sketched more, but I couldn&rsquo;t be sure of my design decisions until I could use them.</p>
           
@@ -110,7 +112,7 @@
           
           <p><em>Warning: this post isn&rsquo;t even halfway done, so if you don&rsquo;t care to read through a bunch of design decisions, I recommend you skip through my work-in-progress screenshots all the way to the end.</em></p>
           
-          <h3>Where to put the new impersonation feature?</h3>
+          <h3 id="where-to-put-the-new-impersonation-feature">Where to put the new impersonation feature?</h3>
           
           <p>The worst part that first jumped out at me was the location of the impersonation feature — it was too front and center. This is the new feature we were building, so naturally my sketches focused primarily on that. But in doing so, I lost sight of the larger picture: users will be coming from the editor to view a draft variation on their live site. Impersonating visitors is a secondary (maybe even tertiary) activity. And today, most users won&rsquo;t find it useful (from our previous research, we knew only about 12% of running experiments are targeted).</p>
           
@@ -126,7 +128,7 @@
           
           <p>So I decided to simplify things by putting the impersonation feature in its own tab. This proved to be a good decision that solved a lot of problems beyond this immediate one. For one thing, it kept the user&rsquo;s focus on setting targeting values, rather than splitting their attention between targeting values and experiments. And putting the UI behind a tab provided a label in the UI that hinted at its functionality (instead of an obtuse icon). Next, it allowed for some extra room to provide in-context help and an explanation of this new feature&rsquo;s use. And finally, it provided a place to communicate when a person was in &ldquo;impersonation mode&rdquo;. I could use the tab for double duty by updating the text to say when a person was viewing the page as themselves, or impersonating a custom visitor.</p>
           
-          <h3>Custom visitor attributes</h3>
+          <h3 id="custom-visitor-attributes">Custom visitor attributes</h3>
           
           <p>The next issue to solve was how to set custom visitor attributes. I saw two major branches for this UI: have all of them available to set from the beginning; or, start with a blank slate and choose the attributes to set from a list. My sketches had potential solutions, but this was a question I could only answer by interacting with each interface.</p>
           
@@ -150,7 +152,7 @@
           
           <p><em>This version of adding custom visitor attributes is close to the final version, but still needed a lot of refinement.</em></p>
           
-          <h3>Experiment activation</h3>
+          <h3 id="experiment-activation">Experiment activation</h3>
           
           <p>The original preview had &ldquo;Activate&rdquo; links next to each of the inactive experiments in the experiment list, which was a big source of confusion. What does &ldquo;activate&rdquo; mean? Does clicking it mean the experiment is now &ldquo;Running&rdquo;? Is it a permanent change? In reality, it just makes it visible on the page for the duration of the preview session. I knew this interaction had to improve, but it required more than just a simple name change and better visual design (both of which were also necessary).</p>
           
@@ -171,7 +173,7 @@
           
           <p>At this point there was clear motivation for separating out the actions, but there are still a lot of reasons an experiment may not be visible. Luckily, having a well-defined use case helped guide me. Rather than have buttons for every possibility, I could group the user&rsquo;s intent into two categories: override targeting conditions (i.e. targeted URL and visitor targeting criteria), and everything else (e.g. ignore a paused experiment&rsquo;s status). This meant I only needed two buttons.</p>
           
-          <h4>Button labels</h4>
+          <h4 id="button-labels">Button labels</h4>
           
           <p>Next, I had to figure out what to label the buttons, and where to put them. What to label each button took a lot of discussion, and we ended up with three verbs to use (for only two buttons). The first was to use &ldquo;Activate&rdquo; to view manually activated experiments. Ironically, this is the same as the old UI, which I said needed to change, but in this case it&rsquo;s consistent with the way we talk about manually activated experiments throughout the product (and is, in fact, the reason the original UI used &ldquo;Activate&rdquo; in the first place).</p>
           
@@ -179,7 +181,7 @@
           
           <p>For the second button, my mockups used &ldquo;Ignore targeting conditions&rdquo; since I needed something for development purposes, and in the end that&rsquo;s what we shipped. Everyone agreed it was clear and we felt there was no reason to over think it. Usability studies further confirmed that these label choices made sense.</p>
           
-          <h4>Button placement</h4>
+          <h4 id="button-placement">Button placement</h4>
           
           <p>Now the only issue remaining was where to put the buttons. An obvious approach is to put them next to each experiment in the list (as the old UI did). I didn&rsquo;t like this for two reasons: first, it&rsquo;s visually heavy and repetitive (the same button is repeated again and again); and second, it&rsquo;s not a common enough activity to have them always present (remember, the core use case is still coming from the editor to view the variation you&rsquo;re working on).</p>
           
@@ -195,7 +197,7 @@
           
           <p>After using this UI for awhile, an obvious improvement popped out at me: adding a label next to experiments that are staged/actived, and ignoring targeting conditions. This information was previously only available in the popover, which makes it cumbersome to access. With labels, it&rsquo;s easy to see at a glance which experiments were forced to be visible. I also added a label for the experiment being previewed from the editor, which is really nice for orienting the user when they first arrive in the preview tool.</p>
           
-          <h3>Path field interaction</h3>
+          <h3 id="path-field-interaction">Path field interaction</h3>
           
           <p>One of the last things I worked on was the URL path field. This field exists to give people the ability to continue impersonating visitors and previewing experiments on other pages of their site. We considered just letting a person click through their site and have the preview tool follow them around, but this behavior isn&rsquo;t always desirable (e.g. what if they navigate to a new domain?). Plus, there were technical issues with implementing this. And since it isn&rsquo;t a common action, we went with giving people the ability to type new URL paths, even though it&rsquo;s not ideal.</p>
           
@@ -209,7 +211,7 @@
           
           <p><em>When clicking into the path field, the input expands and the tabs duck down out of the way.</em></p>
           
-          <h2>Ship it!</h2>
+          <h2 id="ship-it">Ship it!</h2>
           
           <p>If you made it this far, congratulations! What I just described only scratches the surface of all the design decisions that were made. In writing this post, a lot of little decisions and early, incorrect assumptions came back to me. But if I went any deeper this post would be a novel, so instead I focused on the most difficult aspects of the impersonation feature. Design is often seen as a black box, and as writing this post has shown me, that&rsquo;s because documenting the thought process and decision making can be exhausting. It&rsquo;s amazing how some little detail you obsessed over for days can be so quickly forgotten. So this post acts as a historical record to help remind myself and the larger team all the work that went into this feature, in addition to providing a glimpse into the process of design.</p>
           <p class='follow-me'>
