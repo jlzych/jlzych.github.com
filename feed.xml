@@ -5,10 +5,24 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2015-08-30T22:34:00Z</updated>
+  <updated>2015-11-30T16:47:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>Principles of Writing Well</title>
+    <link rel="alternate" href="/2015/11/30/principles-of-writing-well/"/>
+    <id>/2015/11/30/principles-of-writing-well/</id>
+    <published>2015-11-30T16:47:00Z</published>
+    <updated>2015-11-30T16:47:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;Writing, like design, is a craft that can be practiced and improved. To do so, I&amp;rsquo;ve been compiling a collection of principles from books and articles. I decided to share them online to crystallize my own understanding of what I&amp;rsquo;ve learned so far, and to help others who want to improve at the craft of writing as well. I will continue to update the page as I learn more.&lt;/p&gt;
+
+&lt;p&gt;So if you want to become a better writer, or are just curious, check out my &lt;a href="/writing"&gt;principles of writing well&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Get Comfortable Sharing Your Shitty Work</title>
     <link rel="alternate" href="/2015/08/30/get-comfortable-sharing-shitty-work/"/>
@@ -416,77 +430,6 @@
 &lt;hr&gt;
 
 &lt;p&gt;On 11/18/14, the team was proud to announce Optimizely&amp;rsquo;s mobile A/B testing product to the world. Week-over-week usage has been steadily rising, and customer feedback has been positive, with people saying the new editor is much easier and faster to use. This was a difficult product to design, for both technical and user experience reasons, but I had a great time doing it and learned a ton along the way. And this is only the beginning — we have a lot more work to do before we&amp;rsquo;re truly the best mobile A/B testing product on the planet.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Building an MVPP - A Minimum Viable Product we're Proud of</title>
-    <link rel="alternate" href="/2015/02/03/building-an-mvpp-a-minimum-viable-product-we-re-proud-of/"/>
-    <id>/2015/02/03/building-an-mvpp-a-minimum-viable-product-we-re-proud-of/</id>
-    <published>2015-02-04T04:20:00Z</published>
-    <updated>2015-02-04T04:20:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;On November 18th, 2014, we publicly released &lt;a href="https://www.optimizely.com/mobile"&gt;Optimizely&amp;rsquo;s iOS editor&lt;/a&gt;. This was a big release for us because it marked the end of a months-long public beta in which we received a ton of customer feedback and built a lot of missing features. But before we launched, there was one problem the whole team rallied behind to fix: we weren’t &lt;em&gt;proud&lt;/em&gt; of the product. To fix this issue, we went beyond a Minimum Viable Product (MVP) to an MVPP — the Minimum Viable Product we&amp;rsquo;re Proud of.&lt;/p&gt;
-
-&lt;p&gt;What follows is the story of how we pulled this off, what we learned along the way, and product development tips to help you ship great products, from the perspective of someone who just did it.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Finished iOS editor" src="http://jlzych.com/images/2015-02-03-building-an-mvpp-a-minimum-viable-product-we-re-proud-of/1-finished-editor.png" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;The finished iOS editor.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id="genesis-of-the-mvpp"&gt;Genesis of the MVPP&lt;/h2&gt;
-
-&lt;p&gt;We released a &lt;a href="http://blog.optimizely.com/2014/06/16/optimizely-for-ios-now-available-in-public-beta/"&gt;public beta&lt;/a&gt; of Optimizely&amp;rsquo;s iOS editor in June 2014. At that time, the product wasn&amp;rsquo;t complete yet, but it was important for us to get real customer feedback to inform its growth and find bugs. So after months of incorporating user feedback, the beta product felt complete enough to publicly launch. There was just one problem: &lt;strong&gt;the entire team wasn&amp;rsquo;t proud of the product&lt;/strong&gt;. It didn&amp;rsquo;t meet our quality bar; it felt like a bunch of features bolted together without a holistic vision. To fix this, we decided to overhaul the user experience, an ambiguous goal that could easily go on forever, never reaching a clear “done” state.&lt;/p&gt;
-
-&lt;p&gt;We did two things to be more directed in the overhaul. First, we committed to a deadline to prevent us from endlessly polishing the UI. Second, we took inspiration from the Lean Startup methodology and chose a set of features that made up a &lt;a href="http://theleanstartup.com/principles"&gt;Minimum Viable Product&lt;/a&gt; (MVP). An MVP makes it clear that we&amp;rsquo;ll cut scope to make the deadline, but nothing about quality. So to make it explicit that we were focusing on quality and wanted the whole team to be proud of the final product, we added an extra &amp;ldquo;P&amp;rdquo; to MVP. And thus, the &lt;strong&gt;Minimum Viable Product we&amp;rsquo;re Proud of — our MVPP&lt;/strong&gt; — was born.&lt;/p&gt;
-
-&lt;h2 id="create-the-vision"&gt;Create the vision&lt;/h2&gt;
-
-&lt;p&gt;Once we had agreed on a feature set for the MVPP, a fellow Product Designer and I locked ourselves in a &lt;a href="http://www.fastcodesign.com/3028471/google-ventures-your-design-team-needs-a-war-room-heres-how-to-set-one-up"&gt;war room&lt;/a&gt; for the better part of a week to flesh out the user experience. We mapped out user flows and created rough mock ups that we could use to communicate our vision to the larger development team. Fortunately, we had some pre-existing usability test findings to inform our design decisions.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Picture of our war room in action" src="http://jlzych.com/images/2015-02-03-building-an-mvpp-a-minimum-viable-product-we-re-proud-of/2-war-room.jpg" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Sketches, mockups, and user flows from our war room.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;These mockups were immensely helpful in planning the engineering and design work ahead. Instead of talking about ideas in the abstract, we had concrete features and visuals to point to. For example, everyone knew what we meant when we said &amp;ldquo;Improved Onboarding Flow.&amp;rdquo; With mockups in hand, communication between team members became much more concrete and people felt inspired to work hard to achieve our vision.&lt;/p&gt;
-
-&lt;h2 id="put-6-weeks-on-the-clock…-and-go"&gt;Put 6 weeks on the clock… and go!&lt;/h2&gt;
-
-&lt;p&gt;We had 3 sprints (6 weeks) to complete the MVPP (most teams at Optimizely work in 2 week cycles called “sprints”). It was an aggressive timeline, but it felt achievable — exactly where a good deadline should be.&lt;/p&gt;
-
-&lt;p&gt;In the first sprint, the team made amazing progress. All the major pieces had been built, without any major re-scoping or redesigns. There were still bugs to fix, polish to apply, and edge cases to consider, but the big pieces core to our vision were in place.&lt;/p&gt;
-
-&lt;p&gt;That momentum carried over into the second sprint, which we spent fixing the biggest bugs, filling functional holes, and polishing the UI.&lt;/p&gt;
-
-&lt;p&gt;For the third and final sprint, we gave ourselves a new goal: ship a week early. We were already focused on launching the MVPP, but at this point we became laser focused. During daily standups, we looked at our JIRA board and asked, “If we were launching tomorrow, what would we work on today?”&lt;/p&gt;
-
-&lt;p&gt;We were ruthless about prioritizing tasks and moved a lot of items that were important, but not launch-critical, to the backlog.&lt;/p&gt;
-
-&lt;p&gt;During the first week of sprint 3, we also did end-to-end product walkthroughs after every standup to ensure the team was proud of the new iOS editor. We all got to experience the product from the customer&amp;rsquo;s perspective, and caught user experience bugs that were degrading the quality of our work. We also found and fixed a lot of functional bugs during this time. By the end of the week, everyone was proud of the final product and felt confident launching.&lt;/p&gt;
-
-&lt;h2 id="the-adrenaline-rush-amp-benefit-of-an-early-release"&gt;The adrenaline rush &amp;amp; benefit of an early release&lt;/h2&gt;
-
-&lt;p&gt;On 11/10, we quietly released our MVPP to the world — a full week early! Not only did shipping early feel great, it also gave us breathing room to further polish the design, fix bugs, and give the rest of the company time to organize all the components to launch the MVPP.&lt;/p&gt;
-
-&lt;p&gt;Product teams don’t launch products alone; it takes full collaboration between marketing, sales, and success to create materials to promote it, sell it, and enable our customers to use it. By the time the public announcement on 11/18 rolled around, the whole company was extremely proud of the final result.&lt;/p&gt;
-
-&lt;h2 id="lessons-learned"&gt;Lessons learned&lt;/h2&gt;
-
-&lt;p&gt;While writing this post and reflecting on the project as a whole, a number of techniques became clear to me that can help any team ensure a high quality, on-time launch:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Add a “P” to “MVP” to make quality a launch requirement:&lt;/strong&gt; Referring to the project as the “Minimum Viable Product we’re Proud of” made sure everyone on the team approached the product with quality in mind. Every project has trade-offs between the ship date, quality, and scope. It’s very hard to do all three. Realistically, you can do two. By calling our project an MVPP, we were explicit that quality would not be sacrificed.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Set a deadline:&lt;/strong&gt; Having a deadline focused everyone’s efforts, preventing designers from endlessly polishing interfaces and developers spinning their wheels imagining every possible edge case. Make it aggressive, yet realistic, to instill a sense of urgency in the team.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Focus on the smallest set of features that provide the largest customer impact:&lt;/strong&gt; We were explicit about what features needed to be redesigned, and just as importantly, which were off limits. This prevented scope-creep, and increased the team’s focus.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Make mockups before starting development:&lt;/strong&gt; This is well-known in the industry, but it’s worth repeating. Creating tangible user flows and mockups ahead of time keeps planning discussions on track, removes ambiguity, and quickly explains the product vision. It also inspires the team by rallying them to achieve a concrete goal.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Do daily product walkthroughs:&lt;/strong&gt; Our product walkthroughs had two key benefits. First, numerous design and code bugs were discovered and fixed. And second, they ensured we lived up to the extra “P” in “MVPP.” Everyone had a place to verbally agree that they were proud of the final product and confident launching. Although these walkthroughs made our standups ~30 minutes longer, it was worth the cost.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Ask: “If we were shipping tomorrow, what would you work on today?”:&lt;/strong&gt; When the launch date is approaching, asking this question separates the critical, pre-launch tasks from the post-launch tasks.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id="lather-rinse-and-repeat"&gt;Lather, Rinse, and Repeat&lt;/h2&gt;
-
-&lt;p&gt;By going beyond an MVP to a Minimum Viable Product we’re Proud of, we guaranteed that quality was the requirement for launching. And by using a deadline, we stayed focused only on the tasks that were absolutely critical to shipping. With a well-scoped vision, mockups, and a date not too far in the future, you too can rally teams to create product experiences they’re proud of. And then do it again.&lt;/p&gt;
 </content>
   </entry>
 </feed>
