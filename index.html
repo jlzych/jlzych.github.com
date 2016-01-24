@@ -46,6 +46,32 @@
       </header>
       <div class='content'>
         <article>
+          <time datetime='2016-01-24'>
+            <i>Posted on</i>
+            Jan 24, 2016
+            <i>by</i>
+            Jeff Zych
+          </time>
+          <h1><a href="/2016/01/24/color-saver/">Color Saver</a></h1>
+          <p>This weekend I built a quick Mac screensaver that displays the current time as a color. The hour is mapped onto the red channel, the minute onto the green channel, and the second onto the blue channel.</p>
+          
+          <p>I was inspired by <a href="http://whatcolourisit.scn9a.org/">What Colour Is It</a>, which converts the current time into a hex value (e.g. 11:02:47 is <code>#110247</code>). But What Colour Is It doesn&rsquo;t map to every hex value. Its range is limited to <code>#000000</code> (midnight, AKA black) to <code>#235959</code> (11:59:59 PM, a darkish blue green), which misses brighter colors closer to white (<code>#FFFFFF</code>). Instead, Color Saver maps the time component onto the full range (0–255) of each color channel.</p>
+          
+          <p>I experimented with mapping the time components onto hue, saturation, and lightness instead, but that resulted in more ugly colors more often. For example, when seconds represent the color&rsquo;s lightness, the color will go from completely black to white in the course of a minute, every minute of the day. I found this to be jarring and unpleasant. Mapping onto the RGB channels instead is more calming and mesmerizing.</p>
+          
+          <p><a href="https://dl.dropboxusercontent.com/u/13747810/ColorSaver.saver.zip">Download Color Saver from Dropbox.</a> <em>Note: I didn&rsquo;t code sign the screensaver, so when you double-click to install it you&rsquo;ll get a warning that it&rsquo;s from an untrusted source. You&rsquo;ll have to make an exception in the &ldquo;Security &amp; Privacy&rdquo; section of System Preferences to install it.</em></p>
+          
+          <p>Feel free to check out the <a href="https://github.com/jlzych/ColorSaver">source code on Github</a>.</p>
+          <p class='follow-me'>
+            Thoughts? Reply
+            <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
+          </p>
+          <footer class='tags text-uppercase text-small'>
+            Tags:
+            <span class='tag'>projects</span>
+          </footer>
+        </article>
+        <article>
           <time datetime='2015-12-29'>
             <i>Posted on</i>
             Dec 29, 2015
@@ -188,100 +214,6 @@
           </p>
           <footer class='tags text-uppercase text-small'>
             Tags:
-          </footer>
-        </article>
-        <article>
-          <time datetime='2015-06-16'>
-            <i>Posted on</i>
-            Jun 16, 2015
-            <i>by</i>
-            Jeff Zych
-          </time>
-          <h1><a href="/2015/06/16/did-you-a-b-test-it/">“Did You A/B Test It?”</a></h1>
-          <p>After launching a feature, coworkers often ask me, &ldquo;Did you A/B test it?&rdquo; While the question is well-meaning, A/B testing isn’t the only way, or even the best way, of making data-informed decisions in product development. In this post, I’ll explain why, and provide other ways of validating hypotheses to assure your coworkers that a feature was worth building.</p>
-          
-          <h2 id="implied-development-process">Implied Development Process</h2>
-          
-          <p>My coworker’s simple question implies a development process that looks like this:</p>
-          
-          <ol>
-          <li>You have an idea for a new feature</li>
-          <li>You build the new feature</li>
-          <li>You A/B test it to prove its success</li>
-          <li>Profit! High fives! Release party!</li>
-          </ol>
-          
-          <p>While this looks reasonable on the surface, it has a few flaws.</p>
-          
-          <h3 id="flaw-1-what-metric-are-you-measuring">Flaw 1: What metric are you measuring?</h3>
-          
-          <p>The A/B test in step 3 implies that you’re comparing a version of the product with the new feature to a version without the new feature. But a key part of running an A/B test is choosing a metric to call the winner, which is where things get tricky. Your instinct is probably to measure usage of the new feature. But this doesn’t work because the control lacks the feature, so it loses before the test even begins.</p>
-          
-          <p>There are, however, higher-level metrics you care about. These could range from broad business metrics, like revenue or time in product, to more narrow metrics, like completing a specific task (such as successfully booking a place to stay in the case of AirBnB). Generally speaking, broader metrics are slower to move and influenced by more factors, so narrow metrics are better.</p>
-          
-          <p>Even so, this type of experiment isn’t what A/B tests excels at. At its core, <a href="https://www.optimizely.com/ab-testing/">A/B testing</a> is a hill climbing technique. This means it’s good at telling you if small, incremental changes are an improvement (in other words, each test is a step up a hill). Launching a feature is more like exploring a new hill. You’re giving users the ability to do something they couldn’t do before. A/B testing isn’t good at comparing hills to each other, nor will it help you find new hills.</p>
-          
-          <h3 id="flaw-2-what-if-the-new-feature-loses">Flaw 2: What if the new feature loses?</h3>
-          
-          <p>Let’s say you have good metrics to measure, and enough traffic to run the test in a reasonable timeframe. But the results come back, and the unthinkable happened: your new feature lost. There’s no profit, high fives, or launch party. Now what do you do?</p>
-          
-          <p>Because of sunk costs, your instinct is going to be to try to improve the feature until it wins. But an A/B test doesn’t tell you <em>why</em> it lost. Maybe there was a minor usability problem, or maybe it’s fundamentally flawed. Whatever the problem may be, an A/B test won’t tell you what it is, which doesn’t help you improve it.</p>
-          
-          <p>The worst-case scenario is that the feature doesn’t solve a real problem, in which case you should remove it. But this is an expensive option because you spent the time to design, build, and launch it <em>before</em> learning it wasn&rsquo;t worth building. Ideally you’d discover this earlier.</p>
-          
-          <h2 id="revised-development-process">Revised Development Process</h2>
-          
-          <p>When our well-meaning coworker asked if we A/B tested the new feature, what they really wanted to know is if we have data to back up that it was worth building. To them, an A/B test is the only way they know how to answer that question. But as user experience professionals, we know there are plenty of methods for gathering data to guide our designs. Let’s revise our product development process from above:</p>
-          
-          <ol>
-          <li>You have an idea for a new feature.</li>
-          <li>You scope the problem the feature is supposed to solve by interviewing users, sending out surveys, analyzing product usage, or using other research methods.</li>
-          <li>You create prototypes and show them to users.</li>
-          <li>You refine the design based on user feedback.</li>
-          <li>You repeat steps 3 and 4 until you’re confident the design solves the problem you set out to solve.</li>
-          <li>You build the feature.</li>
-          <li>You do user testing to find and fix usability flaws.</li>
-          <li>You release the feature via a phased rollout (or a private/public/opt-in beta) and measure your key metrics to make sure they’re within normal parameters.
-          
-          <ul>
-          <li>This can be run as an A/B test, but doesn’t need to be.</li>
-          </ul></li>
-          <li>Once you’re confident the feature is working as expected, fully launch it to everyone.</li>
-          <li>Profit! High fives! Release party!</li>
-          <li>Optimize the feature by A/B testing incremental changes.</li>
-          </ol>
-          
-          <p>In this revised development process (commonly called <a href="http://www.usability.gov/what-and-why/user-centered-design.html">user-centered design</a>), you’re gathering data every step of the way. Rather than building a feature and &ldquo;validating&rdquo; it at the end with an A/B test, you’re continually refining what you’re building based on user feedback. By the time you release it, you’ve iterated countless times and are confident it’s solving a real problem. And once it’s built, you can use A/B testing to do what A/B testing does best — optimization.</p>
-          
-          <p>A longer process? Yes. A more confident, higher quality launch? Also yes.</p>
-          
-          <hr>
-          
-          <p>Now when your coworkers ask if you A/B tested your feature, you can reply, &ldquo;No, but we made data-informed decisions that told us users really want this feature. Let me show you all of our data!&rdquo; By using research and A/B testing appropriately, you’ll build features that your users <em>and</em> your bottom line will love.</p>
-          
-          <h4 id="further-reading">Further Reading</h4>
-          
-          <p>If you’d like to learn how other companies incorporate A/B testing into their development process, or about user-centered design in general, these articles are great resources:</p>
-          
-          <ul>
-          <li><a href="https://codeascraft.com/2012/06/21/building-websites-with-science/">&ldquo;Building websites with science&rdquo;</a> by Peter Seibel — A broad overview with examples of how Etsy incorporates A/B testing into the development process.</li>
-          <li><a href="http://mcfunley.com/design-for-continuous-experimentation">&ldquo;Design for Continuous Experimentation: Talk and Slides&rdquo;</a> by Dan McKinley — Good and bad examples of how Etsy has experimented while building features.</li>
-          <li><a href="http://nerds.airbnb.com/experiments-at-airbnb/">&ldquo;Experiments at Airbnb&rdquo;</a> by Jan Overgoor — A great overview of how AirBnB incorporates A/B testing into feature development, complete with best practices.</li>
-          <li><a href="http://www.nngroup.com/articles/ab-testing-usability-engineering/">&ldquo;A/B Testing, Usability Engineering, Radical Innovation: What Pays Best?&rdquo;</a> by Jakob Nielsen — Compares A/B testing, usability testing, and radical innovation to each other, with advice for when to use each method.</li>
-          <li><a href="http://www.nngroup.com/articles/which-ux-research-methods/">&ldquo;When to Use Which User-Experience Research Methods&rdquo;</a> by Christian Rohrer — A run down of all the user-experience research methods, and when to use each one.</li>
-          <li><a href="http://www.usability.gov/what-and-why/user-centered-design.html">&ldquo;User-Centered Design Basics&rdquo;</a> on usability.gov — A good introduction to the user-centered design process.</li>
-          <li><a href="http://www.evanmiller.org/how-not-to-run-an-ab-test.html">&ldquo;How Not to Run an A/B Test&rdquo;</a> by Evan Miller — Best practices for running an A/B test, which are especially important to get right when testing in product.</li>
-          </ul>
-          
-          <p><em>Thanks to <a href="http://kylerush.net/">Kyle Rush</a>, <a href="https://twitter.com/olgavyoung">Olga Antonenko Young</a>, and <a href="https://twitter.com/hiSilv">Silvia Amtmann</a> for providing feedback on earlier drafts of this post.</em></p>
-          <p class='follow-me'>
-            Thoughts? Reply
-            <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
-          </p>
-          <footer class='tags text-uppercase text-small'>
-            Tags:
-            <span class='tag'>ab testing</span>
-            <span class='tag'>user-centered design</span>
           </footer>
         </article>
         <a class="view-all-link" href="/archives">View all posts &raquo;</a>

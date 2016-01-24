@@ -5,10 +5,30 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2015-12-29T22:52:00Z</updated>
+  <updated>2016-01-24T23:33:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>Color Saver</title>
+    <link rel="alternate" href="/2016/01/24/color-saver/"/>
+    <id>/2016/01/24/color-saver/</id>
+    <published>2016-01-24T23:33:00Z</published>
+    <updated>2016-01-24T23:33:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;This weekend I built a quick Mac screensaver that displays the current time as a color. The hour is mapped onto the red channel, the minute onto the green channel, and the second onto the blue channel.&lt;/p&gt;
+
+&lt;p&gt;I was inspired by &lt;a href="http://whatcolourisit.scn9a.org/"&gt;What Colour Is It&lt;/a&gt;, which converts the current time into a hex value (e.g. 11:02:47 is &lt;code&gt;#110247&lt;/code&gt;). But What Colour Is It doesn&amp;rsquo;t map to every hex value. Its range is limited to &lt;code&gt;#000000&lt;/code&gt; (midnight, AKA black) to &lt;code&gt;#235959&lt;/code&gt; (11:59:59 PM, a darkish blue green), which misses brighter colors closer to white (&lt;code&gt;#FFFFFF&lt;/code&gt;). Instead, Color Saver maps the time component onto the full range (0–255) of each color channel.&lt;/p&gt;
+
+&lt;p&gt;I experimented with mapping the time components onto hue, saturation, and lightness instead, but that resulted in more ugly colors more often. For example, when seconds represent the color&amp;rsquo;s lightness, the color will go from completely black to white in the course of a minute, every minute of the day. I found this to be jarring and unpleasant. Mapping onto the RGB channels instead is more calming and mesmerizing.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://dl.dropboxusercontent.com/u/13747810/ColorSaver.saver.zip"&gt;Download Color Saver from Dropbox.&lt;/a&gt; &lt;em&gt;Note: I didn&amp;rsquo;t code sign the screensaver, so when you double-click to install it you&amp;rsquo;ll get a warning that it&amp;rsquo;s from an untrusted source. You&amp;rsquo;ll have to make an exception in the &amp;ldquo;Security &amp;amp; Privacy&amp;rdquo; section of System Preferences to install it.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Feel free to check out the &lt;a href="https://github.com/jlzych/ColorSaver"&gt;source code on Github&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Things I Learned in 2015</title>
     <link rel="alternate" href="/2015/12/29/things-i-learned-in-2015/"/>
@@ -216,20 +236,6 @@
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;em&gt;Thanks to &lt;a href="http://kylerush.net/"&gt;Kyle Rush&lt;/a&gt;, &lt;a href="https://twitter.com/olgavyoung"&gt;Olga Antonenko Young&lt;/a&gt;, and &lt;a href="https://twitter.com/hiSilv"&gt;Silvia Amtmann&lt;/a&gt; for providing feedback on earlier drafts of this post.&lt;/em&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Link: The Notebooks of Optimizely's Design Team</title>
-    <link rel="alternate" href="/2015/05/18/link-the-notebooks-of-optimizely-s-design-team/"/>
-    <id>/2015/05/18/link-the-notebooks-of-optimizely-s-design-team/</id>
-    <published>2015-05-18T15:38:00Z</published>
-    <updated>2015-05-18T15:38:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;Over on &lt;a href="https://medium.com/design-optimizely"&gt;Design @ Optimizely&lt;/a&gt; (the Optimizely Design team&amp;rsquo;s Medium publication), I posted a photo essay documenting the unique sketching and note taking styles of our team members.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="https://medium.com/design-optimizely/the-notebooks-of-optimizely-s-design-team-a-photo-essay-73adcf127fe2"&gt;Check it out on Medium.&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>
 </feed>
