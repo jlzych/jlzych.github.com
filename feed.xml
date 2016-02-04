@@ -5,10 +5,42 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2016-01-24T23:33:00Z</updated>
+  <updated>2016-02-04T16:29:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>Play the Right Note</title>
+    <link rel="alternate" href="/2016/02/04/play-the-right-note/"/>
+    <id>/2016/02/04/play-the-right-note/</id>
+    <published>2016-02-04T16:29:00Z</published>
+    <updated>2016-02-04T16:29:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;Like many Americans, I started learning guitar back in high school. I began where everyone did – strumming basic chords and melodies and building up my finger strength. I got a little better every day, and could eventually play simple songs.&lt;/p&gt;
+
+&lt;p&gt;I kept practicing and getting better and pushed myself to learn advanced techniques. I wanted to know how to play &lt;em&gt;all the notes&lt;/em&gt; — every scale, every chord, alternate picking, sweep picking, tapping, and so on. I didn’t want my technical proficiency to limit what I could play.&lt;/p&gt;
+
+&lt;p&gt;Over time I built up a repertoire of techniques to use. Even though I could play a lot of technically advanced parts, I didn’t necessarily know how to play the guitar &lt;em&gt;well&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;When he was developing as a writer, David Foster Wallace (author of &lt;em&gt;Infinite Jest&lt;/em&gt;) had a similar focus on the advanced stuff. In his multi-day interview of the author, &lt;em&gt;Although of Course You End Up Becoming Yourself&lt;/em&gt;, interviewer David Lipsky asks Wallace what his younger self would think of his new work, and if he thought things like character were pointless. Wallace responded with:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Not pointless but that they were easy. And that the hard stuff was more, you know, front of the head. It’s never as stark as pointless or not pointless. It’s, you know, what’s interesting, what’s advanced, what’s &lt;em&gt;next&lt;/em&gt;? It’s gotta be — right? Not what’s &lt;em&gt;true&lt;/em&gt;, but what’s fresh and novel and whatever. It’s very difficult to get out of that.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In his early work, David pushed himself to produce advanced work that would be considered “fresh” and “novel.” Not because that helped him communicate a larger truth to his readers, but because he wanted to push himself as a writer.&lt;/p&gt;
+
+&lt;p&gt;I’ve observed this focus on technical mastery in every creative field. Young filmmakers care more about getting the perfect lighting and shooting on film (rather than digital) than they do about story (check out the HBO series &lt;em&gt;Project Greenlight&lt;/em&gt; for great examples of this). Digital product designers create slick UIs that look great on Dribbble, but aren&amp;rsquo;t usable or feasible or valuable. Programmers build technically impressive solutions to problems that don&amp;rsquo;t exist.&lt;/p&gt;
+
+&lt;p&gt;It’s easy to focus on this “hard” stuff because it has a clear path forward. Just practice what you aren’t good at and you’ll improve. And by learning the &amp;ldquo;hard&amp;rdquo; stuff, you’ll distinguish yourself from amateurs and beginners. When I was in high school, this is what I thought it meant to “master” the guitar.&lt;/p&gt;
+
+&lt;p&gt;As a result, I overlooked the “easy” stuff. The “easy” stuff is knowing when to use advanced techniques, and when to do something simple. It’s using your skills in service of achieving a higher goal – writing a song, communicating a truth to the reader, telling a good story, building something useful for people, etc.&lt;/p&gt;
+
+&lt;p&gt;I’ve since learned that to truly master your craft, you need to know the “hard” technical skills, &lt;em&gt;and&lt;/em&gt; how to use those skills. So don’t just focus on learning all the notes. Learn when to play the right note, too.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Color Saver</title>
     <link rel="alternate" href="/2016/01/24/color-saver/"/>
@@ -149,93 +181,6 @@
 &lt;p&gt;&lt;strong&gt;But get over it&lt;/strong&gt;. We&amp;rsquo;ve all felt this way before. Just remember that we&amp;rsquo;re all in this together. We all want to produce great work for our customers. We all want to make great music together.&lt;/p&gt;
 
 &lt;p&gt;So get comfortable sharing your shitty work. You’ll start off discordant, but through the process of iteration and refinement you’ll eventually hit your groove.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>“Did You A/B Test It?”</title>
-    <link rel="alternate" href="/2015/06/16/did-you-a-b-test-it/"/>
-    <id>/2015/06/16/did-you-a-b-test-it/</id>
-    <published>2015-06-16T15:49:00Z</published>
-    <updated>2015-06-16T15:49:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;After launching a feature, coworkers often ask me, &amp;ldquo;Did you A/B test it?&amp;rdquo; While the question is well-meaning, A/B testing isn’t the only way, or even the best way, of making data-informed decisions in product development. In this post, I’ll explain why, and provide other ways of validating hypotheses to assure your coworkers that a feature was worth building.&lt;/p&gt;
-
-&lt;h2 id="implied-development-process"&gt;Implied Development Process&lt;/h2&gt;
-
-&lt;p&gt;My coworker’s simple question implies a development process that looks like this:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;You have an idea for a new feature&lt;/li&gt;
-&lt;li&gt;You build the new feature&lt;/li&gt;
-&lt;li&gt;You A/B test it to prove its success&lt;/li&gt;
-&lt;li&gt;Profit! High fives! Release party!&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;While this looks reasonable on the surface, it has a few flaws.&lt;/p&gt;
-
-&lt;h3 id="flaw-1-what-metric-are-you-measuring"&gt;Flaw 1: What metric are you measuring?&lt;/h3&gt;
-
-&lt;p&gt;The A/B test in step 3 implies that you’re comparing a version of the product with the new feature to a version without the new feature. But a key part of running an A/B test is choosing a metric to call the winner, which is where things get tricky. Your instinct is probably to measure usage of the new feature. But this doesn’t work because the control lacks the feature, so it loses before the test even begins.&lt;/p&gt;
-
-&lt;p&gt;There are, however, higher-level metrics you care about. These could range from broad business metrics, like revenue or time in product, to more narrow metrics, like completing a specific task (such as successfully booking a place to stay in the case of AirBnB). Generally speaking, broader metrics are slower to move and influenced by more factors, so narrow metrics are better.&lt;/p&gt;
-
-&lt;p&gt;Even so, this type of experiment isn’t what A/B tests excels at. At its core, &lt;a href="https://www.optimizely.com/ab-testing/"&gt;A/B testing&lt;/a&gt; is a hill climbing technique. This means it’s good at telling you if small, incremental changes are an improvement (in other words, each test is a step up a hill). Launching a feature is more like exploring a new hill. You’re giving users the ability to do something they couldn’t do before. A/B testing isn’t good at comparing hills to each other, nor will it help you find new hills.&lt;/p&gt;
-
-&lt;h3 id="flaw-2-what-if-the-new-feature-loses"&gt;Flaw 2: What if the new feature loses?&lt;/h3&gt;
-
-&lt;p&gt;Let’s say you have good metrics to measure, and enough traffic to run the test in a reasonable timeframe. But the results come back, and the unthinkable happened: your new feature lost. There’s no profit, high fives, or launch party. Now what do you do?&lt;/p&gt;
-
-&lt;p&gt;Because of sunk costs, your instinct is going to be to try to improve the feature until it wins. But an A/B test doesn’t tell you &lt;em&gt;why&lt;/em&gt; it lost. Maybe there was a minor usability problem, or maybe it’s fundamentally flawed. Whatever the problem may be, an A/B test won’t tell you what it is, which doesn’t help you improve it.&lt;/p&gt;
-
-&lt;p&gt;The worst-case scenario is that the feature doesn’t solve a real problem, in which case you should remove it. But this is an expensive option because you spent the time to design, build, and launch it &lt;em&gt;before&lt;/em&gt; learning it wasn&amp;rsquo;t worth building. Ideally you’d discover this earlier.&lt;/p&gt;
-
-&lt;h2 id="revised-development-process"&gt;Revised Development Process&lt;/h2&gt;
-
-&lt;p&gt;When our well-meaning coworker asked if we A/B tested the new feature, what they really wanted to know is if we have data to back up that it was worth building. To them, an A/B test is the only way they know how to answer that question. But as user experience professionals, we know there are plenty of methods for gathering data to guide our designs. Let’s revise our product development process from above:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;You have an idea for a new feature.&lt;/li&gt;
-&lt;li&gt;You scope the problem the feature is supposed to solve by interviewing users, sending out surveys, analyzing product usage, or using other research methods.&lt;/li&gt;
-&lt;li&gt;You create prototypes and show them to users.&lt;/li&gt;
-&lt;li&gt;You refine the design based on user feedback.&lt;/li&gt;
-&lt;li&gt;You repeat steps 3 and 4 until you’re confident the design solves the problem you set out to solve.&lt;/li&gt;
-&lt;li&gt;You build the feature.&lt;/li&gt;
-&lt;li&gt;You do user testing to find and fix usability flaws.&lt;/li&gt;
-&lt;li&gt;You release the feature via a phased rollout (or a private/public/opt-in beta) and measure your key metrics to make sure they’re within normal parameters.
-
-&lt;ul&gt;
-&lt;li&gt;This can be run as an A/B test, but doesn’t need to be.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Once you’re confident the feature is working as expected, fully launch it to everyone.&lt;/li&gt;
-&lt;li&gt;Profit! High fives! Release party!&lt;/li&gt;
-&lt;li&gt;Optimize the feature by A/B testing incremental changes.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;In this revised development process (commonly called &lt;a href="http://www.usability.gov/what-and-why/user-centered-design.html"&gt;user-centered design&lt;/a&gt;), you’re gathering data every step of the way. Rather than building a feature and &amp;ldquo;validating&amp;rdquo; it at the end with an A/B test, you’re continually refining what you’re building based on user feedback. By the time you release it, you’ve iterated countless times and are confident it’s solving a real problem. And once it’s built, you can use A/B testing to do what A/B testing does best — optimization.&lt;/p&gt;
-
-&lt;p&gt;A longer process? Yes. A more confident, higher quality launch? Also yes.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;Now when your coworkers ask if you A/B tested your feature, you can reply, &amp;ldquo;No, but we made data-informed decisions that told us users really want this feature. Let me show you all of our data!&amp;rdquo; By using research and A/B testing appropriately, you’ll build features that your users &lt;em&gt;and&lt;/em&gt; your bottom line will love.&lt;/p&gt;
-
-&lt;h4 id="further-reading"&gt;Further Reading&lt;/h4&gt;
-
-&lt;p&gt;If you’d like to learn how other companies incorporate A/B testing into their development process, or about user-centered design in general, these articles are great resources:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://codeascraft.com/2012/06/21/building-websites-with-science/"&gt;&amp;ldquo;Building websites with science&amp;rdquo;&lt;/a&gt; by Peter Seibel — A broad overview with examples of how Etsy incorporates A/B testing into the development process.&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://mcfunley.com/design-for-continuous-experimentation"&gt;&amp;ldquo;Design for Continuous Experimentation: Talk and Slides&amp;rdquo;&lt;/a&gt; by Dan McKinley — Good and bad examples of how Etsy has experimented while building features.&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://nerds.airbnb.com/experiments-at-airbnb/"&gt;&amp;ldquo;Experiments at Airbnb&amp;rdquo;&lt;/a&gt; by Jan Overgoor — A great overview of how AirBnB incorporates A/B testing into feature development, complete with best practices.&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.nngroup.com/articles/ab-testing-usability-engineering/"&gt;&amp;ldquo;A/B Testing, Usability Engineering, Radical Innovation: What Pays Best?&amp;rdquo;&lt;/a&gt; by Jakob Nielsen — Compares A/B testing, usability testing, and radical innovation to each other, with advice for when to use each method.&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.nngroup.com/articles/which-ux-research-methods/"&gt;&amp;ldquo;When to Use Which User-Experience Research Methods&amp;rdquo;&lt;/a&gt; by Christian Rohrer — A run down of all the user-experience research methods, and when to use each one.&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.usability.gov/what-and-why/user-centered-design.html"&gt;&amp;ldquo;User-Centered Design Basics&amp;rdquo;&lt;/a&gt; on usability.gov — A good introduction to the user-centered design process.&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.evanmiller.org/how-not-to-run-an-ab-test.html"&gt;&amp;ldquo;How Not to Run an A/B Test&amp;rdquo;&lt;/a&gt; by Evan Miller — Best practices for running an A/B test, which are especially important to get right when testing in product.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;em&gt;Thanks to &lt;a href="http://kylerush.net/"&gt;Kyle Rush&lt;/a&gt;, &lt;a href="https://twitter.com/olgavyoung"&gt;Olga Antonenko Young&lt;/a&gt;, and &lt;a href="https://twitter.com/hiSilv"&gt;Silvia Amtmann&lt;/a&gt; for providing feedback on earlier drafts of this post.&lt;/em&gt;&lt;/p&gt;
 </content>
   </entry>
 </feed>
