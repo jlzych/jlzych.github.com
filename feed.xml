@@ -5,10 +5,54 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2016-02-04T16:29:00Z</updated>
+  <updated>2016-03-14T02:19:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>Designing Backwards</title>
+    <link rel="alternate" href="/2016/03/13/designing-backwards/"/>
+    <id>/2016/03/13/designing-backwards/</id>
+    <published>2016-03-14T02:19:00Z</published>
+    <updated>2016-03-14T02:19:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;Action is the bedrock of drama. Action drives the play forward and makes for a compelling story that propels the audience to the end. And an engaging play is just a series of connected actions, according to David Ball in &lt;em&gt;&lt;a href="http://www.amazon.com/Backwards-Forwards-Technical-Manual-Reading/dp/0809311100"&gt;Backwards &amp;amp; Forwards&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Like a play, the user’s journey through your product is also a series of connected actions. Every click, tap, and swipe is an action users take. But unlike the audience of a play, which is just along for the ride, your users are in the driver’s seat trying to reach a specific goal. If you, as the designer, don’t make the series of actions to reach that goal clear, your users will get lost and your product will fail.&lt;/p&gt;
+
+&lt;p&gt;To help authors write engaging plays, David Ball recommends starting at the end of the play and identifying each preceding action, all the way back to the beginning. By looking backwards, you can see the specific steps that led to a particular outcome. “The present demands and reveals a specific past. One particular, identifiable event lies immediately before any other,” he says.&lt;/p&gt;
+
+&lt;p&gt;Looking forward, on the other hand, presents unlimited possibilities. The outcome of an action can trigger any number of other actions. You can only know which specific action comes next by looking backwards from the end.&lt;/p&gt;
+
+&lt;p&gt;This technique applies just as well to designing user experiences as it does to writing plays. Start by &lt;strong&gt;identifying the user&amp;rsquo;s goal&lt;/strong&gt;, then &lt;strong&gt;walk backwards through each action&lt;/strong&gt; they must take to get there.&lt;/p&gt;
+
+&lt;p&gt;An example makes this clearer. Before we launched &lt;a href="https://www.optimizely.com/mobile"&gt;native mobile A/B testing at Optimizely&lt;/a&gt;, my colleague Silvia and I re-designed the onboarding flow using this technique. &lt;em&gt;(&lt;a href="https://medium.com/design-optimizely/behind-the-design-of-optimizely-s-mobile-onboarding-c47ad1d2748e#.6ipk86q2y"&gt;Silvia wrote about the onboarding flow on Medium.&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;We identified the user’s goal as &lt;strong&gt;creating their first A/B test&lt;/strong&gt;. We arrived there by understanding the problem that A/B testing solves for our customers, which is to improve their app and ultimately make their business more successful.&lt;/p&gt;
+
+&lt;p&gt;If we had started at the beginning and worked our way forward, it would have been easy to stop once they installed our mobile SDK. But installing an SDK isn’t the customer’s goal. There’s no inherit value in that – it&amp;rsquo;s just a stepping stone to getting value out of our product.&lt;/p&gt;
+
+&lt;p&gt;Then we walked backwards through each step a user must take to reach that goal:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Goal: create your first A/B test.&lt;/li&gt;
+&lt;li&gt;To create an A/B test, you must install the SDK.&lt;/li&gt;
+&lt;li&gt;To install the SDK, you need to download it and add an account-specific identifier to your app.&lt;/li&gt;
+&lt;li&gt;To download and set up the SDK, you need an account and a project ID.&lt;/li&gt;
+&lt;li&gt;To create an account and a project, you must sign up by entering your info (name, email, billing info, etc.) in a form on our website.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Just by writing out each step like this, we eliminated excess steps and didn’t get distracted by edge cases or side flows. We had a focused list of tasks to design for. And at the conclusion of each task, we knew the next task to lead the user to.&lt;/p&gt;
+
+&lt;p&gt;Using this series of steps as a skeleton, we were able to design an onboarding flow that seamlessly led users to their goal. The experience has been praised by customers, and none of them have needed any help from our support team to create their first test.&lt;/p&gt;
+
+&lt;p&gt;So next time you’re designing a complex flow, start with the user’s goal and work your way backwards through each action they must take to get there. This technique will put you in an empathetic mindset that will result in user experiences that are clear and focused.&lt;/p&gt;
+
+&lt;p&gt;“Of such adjacent links is life — and drama — made up,” says David Ball. And so is product design.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Play the Right Note</title>
     <link rel="alternate" href="/2016/02/04/play-the-right-note/"/>
@@ -161,26 +205,6 @@
     <content type="html">&lt;p&gt;Writing, like design, is a craft that can be practiced and improved. To do so, I&amp;rsquo;ve been compiling a collection of principles from books and articles. I decided to share them online to crystallize my own understanding of what I&amp;rsquo;ve learned so far, and to help others who want to improve at the craft of writing as well. I will continue to update the page as I learn more.&lt;/p&gt;
 
 &lt;p&gt;So if you want to become a better writer, or are just curious, check out my &lt;a href="/writing"&gt;principles of writing well&lt;/a&gt;.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Get Comfortable Sharing Your Shitty Work</title>
-    <link rel="alternate" href="/2015/08/30/get-comfortable-sharing-shitty-work/"/>
-    <id>/2015/08/30/get-comfortable-sharing-shitty-work/</id>
-    <published>2015-08-30T22:34:00Z</published>
-    <updated>2015-08-30T22:34:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;After jamming with a friend, she commented that she felt emotionally spent afterwards. Not quite sure what she meant, I asked her to elaborate. She said that improvising music makes you feel vulnerable. You’ve got to put yourself out there, which opens you up to judgement and criticism.&lt;/p&gt;
-
-&lt;p&gt;And she’s right. In that moment I realized that being a designer trained me to get over that fear. I know I have to start somewhere shitty before I can get somewhere good. Putting myself and my ideas out there is part of that process. My work only becomes good through feedback and iteration.&lt;/p&gt;
-
-&lt;p&gt;So my advice to you, young designer, is to accept the fact that before your work becomes great, it&amp;rsquo;s going to be shitty. This will be hard at first. You&amp;rsquo;ll feel vulnerable. You’ll fear judgement. You’ll worry about losing the respect of your colleagues.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;But get over it&lt;/strong&gt;. We&amp;rsquo;ve all felt this way before. Just remember that we&amp;rsquo;re all in this together. We all want to produce great work for our customers. We all want to make great music together.&lt;/p&gt;
-
-&lt;p&gt;So get comfortable sharing your shitty work. You’ll start off discordant, but through the process of iteration and refinement you’ll eventually hit your groove.&lt;/p&gt;
 </content>
   </entry>
 </feed>
