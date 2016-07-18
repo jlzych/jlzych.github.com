@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>
+      Discovery Kanban at Optimizely by
+      Jeff Zych
+    </title>
+    <meta content="Jeff Zych's website" name='description'>
+    <meta content='Jeff Zych' name='author'>
+    <meta content='width=device-width, initial-scale=1.0, user-scalable=yes' name='viewport'>
+    <meta content='black' name='apple-mobile-web-app-status-bar-style'>
+    <meta content='yes' name='apple-mobile-web-app-capable'>
+    <!-- FB Open Graph meta tags -->
+    <meta content='blog' property='og:type'>
+    <meta content="Jeff Zych's Blog" property='og:site_name'>
+    <meta content='http://jlzych.com/images/monogram.png' property='og:image'>
+    <meta content='image/png' property='og:image:type'>
+    <meta content='1024' property='og:image:width'>
+    <meta content='1024' property='og:image:height'>
+    <meta content='http://jlzych.com/2016/07/17/discovery-kanban-at-optimizely/' property='og:url'>
+    <meta content='Discovery Kanban at Optimizely' property='og:title'>
+    <link href="/favicon.ico?v=1" rel="icon" type="image/ico?v=1" />
+    <script src='//cdn.optimizely.com/js/1111070510.js'></script>
+    <link href="/stylesheets/application.css?1460328991" media="screen" rel="stylesheet" type="text/css" />
+    <link href='/feed.xml' rel='alternate' title='RSS for Jeff Zych' type='application/rss+xml'>
+    <script src='//use.typekit.net/kbr8kzk.js' type='text/javascript'></script>
+    <script>
+      try{Typekit.load();}catch(e){}
+    </script>
+  </head>
+  <body>
+    <div id='main' role='main'>
+      <header>
+        <h1 class='monogram'>
+                    <a title="Home" href="/"><img alt="JZ" src="/images/monogram.svg?1378005138" />
+          Jeff Zych
+          </a>
+
+        </h1>
+        <nav class='nav-main '>
+          <ul>
+            <li><a title="About Jeff Zych" href="/about">About Me</a></li>
+            <li><a href="/archives">Archives</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class='content'>
+        <article>
+          <time datetime='2016-07-17'>
+            <i>Posted on</i>
+            Jul 17, 2016
+            <i>by</i>
+            Jeff Zych
+          </time>
+          <h1><a href="/2016/07/17/discovery-kanban-at-optimizely/">Discovery Kanban at Optimizely</a></h1>
+          <h2 class='article__subtitle'>How we transformed our Agile process to include research and design</h2>
+          <p><img alt="Discovery work planning meeting" src="/images/2016-07-17-discovery-kanban-at-optimizely/discovery-planning.jpeg?1468818434" />
+          <em>Discovery work planning meeting</em></p>
+          
+          <p>Like most tech startups, Optimizely uses an Agile process to build software. Agile has been great at helping us plan what we’re building, coordinate across teams, and ship iteratively. Agile’s focus, however, is on shipping working software, which meant design and research were awkwardly shoehorned into the process.</p>
+          
+          <iframe width="700" height="393" src="https://www.youtube.com/embed/oyVksFviJVE" frameborder="0" allowfullscreen></iframe>
+          
+          <p><em>Scrum, according to HBO’s Silicon Valley</em></p>
+          
+          <p>Practically speaking, this meant we got into a habit of building a feature while it was being designed. This put pressure on designers to produce mockups of a feature in order to “unblock” engineers, which didn’t give them room to understand the problem and iterate on solutions. And it rarely provided space for our researchers to gather data to understand the problem, or do usability testing.</p>
+          
+          <p>This caused problems on the engineering side, too: since engineers were building a feature while it was being designed, the requirements were shifting as we explored solutions. This slowed down the development process since they would have questions about what to build, and features would have to be rewritten as the designs evolved. This also made it hard to estimate how long it would take to build, which led to missed deadlines, cutting corners (such as not writing unit tests and or doing formal QA), and low morale.</p>
+          
+          <p>In short, our process didn’t have high velocity or produce high quality solutions.</p>
+          
+          <p>To improve this situation, we split our product development process into two phases: <strong>Discovery</strong> and <strong>Delivery</strong>. In the Discovery phase, the goal is to understand and solve our customer’s problems. The output is <strong>finished designs</strong> that solve for all use cases. After designs are done, work moves into the Delivery phase. The goal of this phase is to ship the finished solution to customers, and uses our standard Agile process to manage and plan the work.</p>
+          
+          <p>The key to this system is that design and research are an <strong>explicit part of the process</strong>, and there is acceptance criteria that must be met before engineers write any code.</p>
+          
+          <p><img alt="Diagram of Optimizely’s product development process" src="/images/2016-07-17-discovery-kanban-at-optimizely/discovery-system.jpeg?1468818434" />
+          <em>Diagram of Optimizely’s product development process</em></p>
+          
+          <p>To help with organizational buy-in and planning, Discovery work is tracked on a physical kanban board in our office. The board is split into two parts: <strong>Problem Understanding (Research)</strong>, and <strong>Solution Exploration (Design)</strong>. In the Problem Understanding phase we gather data to help us understand and frame the problem. Data includes both qualitative and quantitative data, such as customer interviews, surveys, support tickets, sales call feedback, product usage, and NPS feedback. That data either becomes general company knowledge, such as our user personas, or feeds directly into the Solution Exploration phase.</p>
+          
+          <p>In Solution Exploration, designers use the data gathered during Problem Understanding to frame the problem to be solved. Designers explicitly write down what the problem is, use cases, target users, and anything that’s out of scope. After getting buy-in from the PM and team, they explore solutions by creating sketches, wireframes, and prototypes. Engineers are looped in to provide feedback on technical feasibility. Researchers do usability testing in this phase as well. Finally, the output is finished designs that are fully thought through. This means there are no open questions about what a feature does that would slow down an engineer during development.</p>
+          
+          <p><img alt="Optimizely’s Discovery kanban board" src="/images/2016-07-17-discovery-kanban-at-optimizely/board.jpeg?1468818434" />
+          <em>Optimizely’s Discovery kanban board</em></p>
+          
+          <h2 id="is-this-waterfall">Is this waterfall?</h2>
+          
+          <p>This process is more structured than our previous Agile process, but not as rigid as a typical waterfall process. We don’t “throw work over the wall” to each other, stop requirements from changing, or rely on documentation to communicate across teams.</p>
+          
+          <p>Additionally, designers still sit with scrum teams and attend standups. This keeps whole team involved throughout the entire process. Although engineers aren’t building anything during the Discovery phase, they are aware of what problem we’re solving, why we’re solving it, and proposed solutions. And designers are included in the Delivery phase to make sure the finished feature matches what they designed.</p>
+          
+          <hr>
+          
+          <p>Since rolling out this system across our scrum teams, our design and development process has been much smoother. Researchers have a stronger voice in product development, designers have space to iterate, and engineers are shipping faster. By giving designers and researchers an explicit place in our product development process, we’ve improved our planning, increased coordination and alignment across teams, and upped our velocity and quality.</p>
+          
+          <h2 id="further-reading">Further Reading</h2>
+          
+          <p>These posts all informed my thinking for why I implemented Discovery Kanban at Optimizely:</p>
+          
+          <ul>
+          <li><a href="http://johnpeltier.com/blog/2015/07/12/dual-track-agile-better-products-faster/">Dual Track Agile: Better Products, Faster</a> by John Peltier</li>
+          <li><a href="http://svpg.com/dual-track-scrum/">Dual Track Scrum</a> by Marty Cagan</li>
+          <li><a href="http://jpattonassociates.com/common-agile-isnt-for-startups/">Common Agile Practice isn’t for Startups</a> by Jeff Patton</li>
+          </ul>
+          
+          <hr>
+          
+          <p><em>This article originally appeared on <a href="https://medium.com/design-optimizely/discovery-kanban-at-optimizely-7b3025066d54#.3iadc9q4l">Medium</a></em></p>
+          <p class='follow-me'>
+            Thoughts? Reply
+            <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
+          </p>
+          <footer class='tags text-uppercase text-small'>
+            Tags:
+            <span class='tag'>process</span>
+            <span class='tag'>kanban</span>
+            <span class='tag'>design</span>
+          </footer>
+        </article>
+        <div class='article-links'>
+          <div>
+            <span class='article-link-label text-uppercase text-small'>Previous article:</span>
+            <a href="/2016/07/02/a-look-back-at-my-early-web-design-work/">&laquo; A Look Back at My Early Web Design Work</a>
+          </div>
+        </div>
+      </div>
+      <footer id='site-footer'>
+        <p>
+          &copy; 2010&ndash;2016 Jeff Zych
+          &bull; Hand-crafted with
+          <a href="http://middlemanapp.com/">Middleman</a>
+        </p>
+        <a style="display: none;" href="http://plus.google.com/+JeffZych?rel=author">Google+ profile</a>
+      </footer>
+    </div>
+    <!-- Google Analytics tracking -->
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-21389659-1']);
+      _gaq.push(['_trackPageview']);
+      
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
+

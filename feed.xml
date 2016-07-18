@@ -5,10 +5,73 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2016-07-02T21:41:00Z</updated>
+  <updated>2016-07-18T04:47:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>Discovery Kanban at Optimizely</title>
+    <link rel="alternate" href="/2016/07/17/discovery-kanban-at-optimizely/"/>
+    <id>/2016/07/17/discovery-kanban-at-optimizely/</id>
+    <published>2016-07-18T04:47:00Z</published>
+    <updated>2016-07-18T04:47:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img alt="Discovery work planning meeting" src="/images/2016-07-17-discovery-kanban-at-optimizely/discovery-planning.jpeg?1468818434" /&gt;
+&lt;em&gt;Discovery work planning meeting&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Like most tech startups, Optimizely uses an Agile process to build software. Agile has been great at helping us plan what we’re building, coordinate across teams, and ship iteratively. Agile’s focus, however, is on shipping working software, which meant design and research were awkwardly shoehorned into the process.&lt;/p&gt;
+
+&lt;iframe width="700" height="393" src="https://www.youtube.com/embed/oyVksFviJVE" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;em&gt;Scrum, according to HBO’s Silicon Valley&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Practically speaking, this meant we got into a habit of building a feature while it was being designed. This put pressure on designers to produce mockups of a feature in order to “unblock” engineers, which didn’t give them room to understand the problem and iterate on solutions. And it rarely provided space for our researchers to gather data to understand the problem, or do usability testing.&lt;/p&gt;
+
+&lt;p&gt;This caused problems on the engineering side, too: since engineers were building a feature while it was being designed, the requirements were shifting as we explored solutions. This slowed down the development process since they would have questions about what to build, and features would have to be rewritten as the designs evolved. This also made it hard to estimate how long it would take to build, which led to missed deadlines, cutting corners (such as not writing unit tests and or doing formal QA), and low morale.&lt;/p&gt;
+
+&lt;p&gt;In short, our process didn’t have high velocity or produce high quality solutions.&lt;/p&gt;
+
+&lt;p&gt;To improve this situation, we split our product development process into two phases: &lt;strong&gt;Discovery&lt;/strong&gt; and &lt;strong&gt;Delivery&lt;/strong&gt;. In the Discovery phase, the goal is to understand and solve our customer’s problems. The output is &lt;strong&gt;finished designs&lt;/strong&gt; that solve for all use cases. After designs are done, work moves into the Delivery phase. The goal of this phase is to ship the finished solution to customers, and uses our standard Agile process to manage and plan the work.&lt;/p&gt;
+
+&lt;p&gt;The key to this system is that design and research are an &lt;strong&gt;explicit part of the process&lt;/strong&gt;, and there is acceptance criteria that must be met before engineers write any code.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Diagram of Optimizely’s product development process" src="/images/2016-07-17-discovery-kanban-at-optimizely/discovery-system.jpeg?1468818434" /&gt;
+&lt;em&gt;Diagram of Optimizely’s product development process&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;To help with organizational buy-in and planning, Discovery work is tracked on a physical kanban board in our office. The board is split into two parts: &lt;strong&gt;Problem Understanding (Research)&lt;/strong&gt;, and &lt;strong&gt;Solution Exploration (Design)&lt;/strong&gt;. In the Problem Understanding phase we gather data to help us understand and frame the problem. Data includes both qualitative and quantitative data, such as customer interviews, surveys, support tickets, sales call feedback, product usage, and NPS feedback. That data either becomes general company knowledge, such as our user personas, or feeds directly into the Solution Exploration phase.&lt;/p&gt;
+
+&lt;p&gt;In Solution Exploration, designers use the data gathered during Problem Understanding to frame the problem to be solved. Designers explicitly write down what the problem is, use cases, target users, and anything that’s out of scope. After getting buy-in from the PM and team, they explore solutions by creating sketches, wireframes, and prototypes. Engineers are looped in to provide feedback on technical feasibility. Researchers do usability testing in this phase as well. Finally, the output is finished designs that are fully thought through. This means there are no open questions about what a feature does that would slow down an engineer during development.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Optimizely’s Discovery kanban board" src="/images/2016-07-17-discovery-kanban-at-optimizely/board.jpeg?1468818434" /&gt;
+&lt;em&gt;Optimizely’s Discovery kanban board&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id="is-this-waterfall"&gt;Is this waterfall?&lt;/h2&gt;
+
+&lt;p&gt;This process is more structured than our previous Agile process, but not as rigid as a typical waterfall process. We don’t “throw work over the wall” to each other, stop requirements from changing, or rely on documentation to communicate across teams.&lt;/p&gt;
+
+&lt;p&gt;Additionally, designers still sit with scrum teams and attend standups. This keeps whole team involved throughout the entire process. Although engineers aren’t building anything during the Discovery phase, they are aware of what problem we’re solving, why we’re solving it, and proposed solutions. And designers are included in the Delivery phase to make sure the finished feature matches what they designed.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Since rolling out this system across our scrum teams, our design and development process has been much smoother. Researchers have a stronger voice in product development, designers have space to iterate, and engineers are shipping faster. By giving designers and researchers an explicit place in our product development process, we’ve improved our planning, increased coordination and alignment across teams, and upped our velocity and quality.&lt;/p&gt;
+
+&lt;h2 id="further-reading"&gt;Further Reading&lt;/h2&gt;
+
+&lt;p&gt;These posts all informed my thinking for why I implemented Discovery Kanban at Optimizely:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://johnpeltier.com/blog/2015/07/12/dual-track-agile-better-products-faster/"&gt;Dual Track Agile: Better Products, Faster&lt;/a&gt; by John Peltier&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://svpg.com/dual-track-scrum/"&gt;Dual Track Scrum&lt;/a&gt; by Marty Cagan&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://jpattonassociates.com/common-agile-isnt-for-startups/"&gt;Common Agile Practice isn’t for Startups&lt;/a&gt; by Jeff Patton&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;em&gt;This article originally appeared on &lt;a href="https://medium.com/design-optimizely/discovery-kanban-at-optimizely-7b3025066d54#.3iadc9q4l"&gt;Medium&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>A Look Back at My Early Web Design Work</title>
     <link rel="alternate" href="/2016/07/02/a-look-back-at-my-early-web-design-work/"/>
@@ -232,58 +295,6 @@
 &lt;p&gt;&lt;a href="https://dl.dropboxusercontent.com/u/13747810/ColorSaver.saver.zip"&gt;Download Color Saver from Dropbox.&lt;/a&gt; &lt;em&gt;Note: I didn&amp;rsquo;t code sign the screensaver, so when you double-click to install it you&amp;rsquo;ll get a warning that it&amp;rsquo;s from an untrusted source. You&amp;rsquo;ll have to make an exception in the &amp;ldquo;Security &amp;amp; Privacy&amp;rdquo; section of System Preferences to install it.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Feel free to check out the &lt;a href="https://github.com/jlzych/ColorSaver"&gt;source code on Github&lt;/a&gt;.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Things I Learned in 2015</title>
-    <link rel="alternate" href="/2015/12/29/things-i-learned-in-2015/"/>
-    <id>/2015/12/29/things-i-learned-in-2015/</id>
-    <published>2015-12-29T22:52:00Z</published>
-    <updated>2015-12-29T22:52:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;I learned that writing helps clarify my thoughts. It makes me much more articulate. It forces me to engage with a topic and wrestle it to the ground so that I understand it much more deeply than I did when I started.&lt;/p&gt;
-
-&lt;p&gt;I learned that writing is hard. But like design and code and tennis, it’s a skill that can be practiced and learned.&lt;/p&gt;
-
-&lt;p&gt;I learned that blogging consistently is hard. Coming up with ideas and pushing them out into the world takes work, and takes practice to form into a habit. I learned that I’d rather focus on quality and writing about what I think is interesting, even if that means I don’t publish as often.&lt;/p&gt;
-
-&lt;p&gt;I learned that even when I have a lot of ideas to write about, not all of them are worth working on. I’m okay with letting ideas go rather than trying to force myself to work on them. I’ve learned this is a good litmus test for knowing what’s worth spending my time on. The most interesting topics will naturally drive me to work on them.&lt;/p&gt;
-
-&lt;p&gt;I learned that it’s just as much work, often more, to promote your writing, as it is to do the writing itself. I learned what it feels like to have a post at the top of Designer News. And I learned what it feels like when people misinterpret what I was trying to communicate.&lt;/p&gt;
-
-&lt;p&gt;Just like writing, I learned that dating takes a lot of time and energy (even when it’s online). I learned that I can’t put in that time and energy unless I’m attracted (both mentally and physically) to a woman. I can’t force it. I learned that even with online dating, or because of it, it will take a lot of dates before finding someone who feels “right.”&lt;/p&gt;
-
-&lt;p&gt;I learned that most single people of my generation, both men and women, are frustrated to some degree by dating. Online dating has made it easier than ever to meet people, but the increase in quantity has not increased the quality.&lt;/p&gt;
-
-&lt;p&gt;I learned that an abundance of choice — in products to buy, shows to watch, people to date, articles and books to read, etc. — increases the pressure of making the “right” choice. There’s always a nagging question of, “Is there something better?”&lt;/p&gt;
-
-&lt;p&gt;But I also learned that perfect is the enemy of done. There is no perfect. I need to continue practicing making a decision and moving on, without stressing about whether or not it was the “best” choice. There will always be a better choice, despite my best efforts.&lt;/p&gt;
-
-&lt;p&gt;I learned I enjoy management, more than I expected. Including the people management part (career development, promotions/raises, etc.). I learned transparency, candor, and empathy go a long way towards quelling people’s anxieties, especially amongst organizational change. And especially when delivering “bad” news, or giving critical feedback. This is as true for personal relationships as it is work relationships.&lt;/p&gt;
-
-&lt;p&gt;I learned that providing context, the “why,” behind a decision is more important than the decision itself. It helps people understand it, and accept it, even if they don’t agree with it. And it engenders trust.&lt;/p&gt;
-
-&lt;p&gt;I learned that I don’t miss designing and coding much since becoming a manager. The bits and pieces I get to do here and there, in and out of work, is usually enough.&lt;/p&gt;
-
-&lt;p&gt;I learned that just telling someone a lesson you’ve learned through experience is not likely to change their thoughts or behavior. Experience is the best teacher. This can be painful when you see someone making a mistake you could have prevented, but I&amp;rsquo;ve learned to accept this. (This is a good lesson to know if I ever have kids 👪 ).&lt;/p&gt;
-
-&lt;p&gt;Similarly, I learned that giving people information in an effort to increase their knowledge, or change their behavior, isn’t the most effective way of achieving this goal. It’s much more effective, albeit harder, to ask questions that lead a person to “earn” this knowledge themselves. By getting someone to come to their own conclusions, they’re more likely to internalize and act on that new knowledge. And they can apply the framework for gaining that knowledge to new situations. This is an art as much as it is a skill, and takes practice.&lt;/p&gt;
-
-&lt;p&gt;I learned that my top 5 strengths, according to the &lt;a href="http://www.strengthsfinder.com/"&gt;Clifton StrengthsFinder&lt;/a&gt;, are: 1. &lt;strong&gt;Learner&lt;/strong&gt;; 2. &lt;strong&gt;Intellection&lt;/strong&gt;; 3. &lt;strong&gt;Achiever&lt;/strong&gt;; 4. &lt;strong&gt;Individualization&lt;/strong&gt;; and 5. &lt;strong&gt;Analytical&lt;/strong&gt;. Nothing too surprising, but cool to see nonetheless.&lt;/p&gt;
-
-&lt;p&gt;I learned that product development is hard, even when a person’s been doing it for a long time. Especially with teams, and as a company grows. I learned that as clueless as I might feel about how to run a team or build products, no one seems to have it completely figured out (even if they’re experienced and, from the outside, seem to know what they’re doing).&lt;/p&gt;
-
-&lt;p&gt;I learned that I like having physical books over eBooks. I display them on my shelves, which makes me much more likely to re-engage with a book after I’ve finished reading it. By seeing it, I’ll think about it more, and pick it up and flip through it. I don’t do this when a book is trapped in software. The same is generally true with music and movies, too.&lt;/p&gt;
-
-&lt;p&gt;I learned that underlining passages in books helps me focus on the core ideas being communicated, helps me stay engaged, helps me retain the information better, and makes it easy for me to flip through a book later and remember the key parts.&lt;/p&gt;
-
-&lt;p&gt;I learned that everything I spend time on has an opportunity cost. So I&amp;rsquo;m learning to get comfortable focusing on the things I most enjoy (such as writing), and accepting the cost of not doing other things (such as playing guitar).&lt;/p&gt;
-
-&lt;p&gt;I learned that with sustained effort over time I could be good at almost anything (art, music, programming, sports, etc.). But as my &amp;ldquo;opportunity cost&amp;rdquo; lesson indicates, I can’t be good at everything. I have to choose what to spend time on, and thus what to be good at. And with enough effort, perhaps I&amp;rsquo;ll even become great at something. 😄&lt;/p&gt;
-
-&lt;p&gt;Finally, I learned that I can&amp;rsquo;t possibly document everything I&amp;rsquo;ve learned in a year. There were too many lessons, big and small. Here&amp;rsquo;s looking forward to another year of learning in 2016!&lt;/p&gt;
 </content>
   </entry>
 </feed>
