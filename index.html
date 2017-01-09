@@ -46,6 +46,66 @@
       </header>
       <div class='content'>
         <article>
+          <time datetime='2017-01-08'>
+            <i>Posted on</i>
+            Jan  8, 2017
+            <i>by</i>
+            Jeff Zych
+          </time>
+          <h1><a href="/2017/01/08/sol-lewitt-wall-drawing-273/">Sol LeWitt - Wall Drawing</a></h1>
+          <p>I recently saw <a href="https://en.wikipedia.org/wiki/Sol_LeWitt">Sol LeWitt&rsquo;s</a> Wall Drawing #273 at the <a href="https://www.sfmoma.org/">SF MOMA</a>, which really stayed with me after leaving the museum. In particular, I like that it wasn&rsquo;t drawn by the artist himself, but rather he wrote instructions for draftspeople to draw this piece directly on the walls of the museum, thus embracing some amount of variability. From the museum&rsquo;s description:</p>
+          
+          <blockquote>
+          <p>As his works are executed over and over again in different locations, they expand or contract according to the dimensions of the space in which they are displayed and respond to ambient light and the surfaces on which they are drawn. In some instances, as in this work, those involved in the installation make decisions impacting the final composition.</p>
+          </blockquote>
+          
+          <p><img alt="Sol LeWitt's Wall Drawing #273" src="/images/2017-01-08-sol-lewitt-wall-drawing-273/wall7.jpg?1483921148" />
+          <em>Sol LeWitt&rsquo;s Wall Drawing #273</em></p>
+          
+          <p>This embrace of variability reminds me of the web. People browse the web on different devices that have different sizes and capabilities. We can&rsquo;t control how people will experience our websites. Since LeWitt left instructions for creating his pieces, I realized I could translate those instructions into code, and embrace the variability of the web in the process. The result is <a href="http://codepen.io/jlzych/full/rjVoby/">this CodePen</a>.</p>
+          
+          <p data-height="465" data-theme-id="0" data-slug-hash="rjVoby" data-default-tab="result" data-user="jlzych" data-embed-version="2" data-pen-title="Sol LeWitt – Wall Drawing #273" class="codepen">See the Pen <a href="http://codepen.io/jlzych/pen/rjVoby/">Sol LeWitt – Wall Drawing #273</a> by Jeff (<a href="http://codepen.io/jlzych">@jlzych</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+          
+          <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+          
+          <p>LeWitt left the following instructions:</p>
+          
+          <blockquote>
+          <p>A six-inch (15 cm) grid covering the walls. Lines from corners, sides, and center of the walls to random points on the grid.</p>
+          
+          <p>1st wall: Red lines from the midpoints of four sides;</p>
+          
+          <p>2nd wall: Blue lines from four corners;</p>
+          
+          <p>3rd wall: Yellow lines from the center;</p>
+          
+          <p>4th wall: Red lines from the midpoints of four sides, blue lines from four corners;</p>
+          
+          <p>5th wall: Red lines from the midpoints of four sides, yellow lines from the center;</p>
+          
+          <p>6th wall: Blue lines from four corners, yellow lines from the center;</p>
+          
+          <p>7th wall: Red lines from the midpoints of four sides, blue lines from four corners, yellow lines from the center.</p>
+          
+          <p>Each wall has an equal number of lines. (The number of lines and their length are determined by the draftsman.)</p>
+          </blockquote>
+          
+          <p>As indicated in the instructions, there are 7 separate walls with an equal number of lines, the number and length of which are determined by the draftsperson. To simulate the decisions the draftspeople make, I included controls to let people set how many lines should be drawn, and toggle which walls to see. I let each color be toggleable, as opposed listing out walls 1-7, since each wall is just different combinations of the red, blue, and yellow lines.</p>
+          
+          <p>The end result fits right in with how <a href="https://www.google.com/search?q=wall+drawing+273&amp;tbm=isch&amp;tbo=u&amp;source=univ&amp;sa=X&amp;ved=0ahUKEwjV6Jub4LPRAhUD1mMKHclqAr4QsAQIIQ&amp;biw=1438&amp;bih=780">human draftspeople</a> have turned these instructions into art. The most notable difference I see between a human and a program is the degree of randomness in the final drawing. From comparing the output of the program to versions done by people, the ones drawn by people seem less &ldquo;random.&rdquo; I get the sense that people have a tendency to more evenly distribute the lines to points throughout the grid, whereas the program can create clusters and lines that are really close to each other which a person would consider unappealing and not draw.</p>
+          
+          <p>It makes me wonder how LeWitt would respond to programmatic versions of his art. Is he okay with computers making art? Were his instructions specifically for people, or would he have embraced using machines to generate his work had the technology existed in his time? How &ldquo;random&rdquo; did he want people make these drawings? Does he like that a program is more &ldquo;random,&rdquo; or did he expect and want people to make his wall drawings in a way that they would find visually pleasing? We&rsquo;ll never know, but it was fun to interpret his work through the lens of today&rsquo;s technology.</p>
+          <p class='follow-me'>
+            Thoughts? Reply
+            <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
+          </p>
+          <footer class='tags text-uppercase text-small'>
+            Tags:
+            <span class='tag'>Sol LeWitt</span>
+            <span class='tag'>art</span>
+          </footer>
+        </article>
+        <article>
           <time datetime='2017-01-03'>
             <i>Posted on</i>
             Jan  3, 2017
@@ -377,119 +437,6 @@
             <span class='tag'>process</span>
             <span class='tag'>kanban</span>
             <span class='tag'>design</span>
-          </footer>
-        </article>
-        <article>
-          <time datetime='2016-07-02'>
-            <i>Posted on</i>
-            Jul  2, 2016
-            <i>by</i>
-            Jeff Zych
-          </time>
-          <h1><a href="/2016/07/02/a-look-back-at-my-early-web-design-work/">A Look Back at My Early Web Design Work</a></h1>
-          <p>In the spirit of <a href="/2015/08/30/get-comfortable-sharing-shitty-work/">sharing my work</a>, I thought it would be fun to look back at some early web sites I designed and built.</p>
-          
-          <h2 id="first-site-ced-ventura">First site: CED Ventura</h2>
-          
-          <p>I built this site while I was in high school in 2000 or 2001 for my dad, who manages the Ventura branch of <a href="http://www.cedcareers.com/">CED</a>. It was the first full site I designed and built. I built it as the final project of a web design class I took in high school, and it went live shortly after that (you can still see it on the <a href="https://web.archive.org/web/20020123140629/http://www.cedventura.com/">Wayback Machine</a>). Prior to this I had been experimenting with HTML and made some sample sites, but had never made a full site.</p>
-          
-          <p><img alt="CED Ventura" src="/images/2016-07-02-a-look-back-at-my-early-web-design-work/1-ced.png?1467509653" /></p>
-          
-          <p>Fun facts about this project:</p>
-          
-          <ul>
-          <li><strong>No CSS</strong>. CSS barely existed back then and didn&rsquo;t become practical to use until the mid-2000s. I had never even heard of CSS when I made this site. All styling comes from HTML tags like <code>&lt;font&gt;</code>, images, and some style attributes like <code>valign</code>.</li>
-          <li><strong>Frames</strong>. The whole site is built in a <code>&lt;frameset&gt;</code> — one for the top logo area, another for the navigation, and a third for the content. Back then that was the best way to reuse content across pages, since static site generators didn&rsquo;t exist and I didn&rsquo;t know anything about server-side programming at the time.</li>
-          <li><strong>Tables for positioning</strong>. Since I knew nothing about CSS back then, and it wasn&rsquo;t a viable option anyway, I used tables to position everything.</li>
-          <li><strong>Spacer gifs</strong>! In addition to using tables for positioning, I also sprinkled spacer gifs throughout the site to position elements.</li>
-          <li><strong>Hand-coded</strong>. Yep, the whole site was coded by hand, before that became a retro, throwback badge of honor. I seem to recall using Dreamweaver to build the site, but was somehow already experienced enough to know the code it generated was shit, so I primarily lived in the code view.</li>
-          <li><strong>Animated gifs</strong>. You can&rsquo;t tell from this static screenshot, but the homepage had not 1, but <strong>2</strong> animated gifs on it: the logo in the top left that says &ldquo;CED Consolidated Electrical Distributors,&rdquo; which fades in one letter at a time over the excruciatingly long period of about 10 seconds (longer than your typical Snapchat); and the map, which features each dot lighting up to emphasize how many locations CED has nationwide. I thought I was <em>the shit</em> for making each of these animated gifs. Once again, the <a href="https://web.archive.org/web/20020123140629/http://www.cedventura.com/">Wayback Machine</a> will let you experience these gifs in all their glory.</li>
-          <li><strong>1,300px wide top banner</strong>. At the time, a 1,300 pixel wide image for the banner seemed <em>absurdly</em> wide and I didn&rsquo;t think there&rsquo;d ever be a monitor large enough to display it. Boy was I wrong. When viewed on any computer today the image will start to repeat.</li>
-          </ul>
-          
-          <h2 id="the-local-oafs">The Local Oafs</h2>
-          
-          <p>This is the second full website I designed and built. In true American tradition, I made this site for my closest friends&rsquo; band, The Local Oafs (named after a <a href="https://youtu.be/Lsnc5FFI5Dw?t=454">Simpsons reference</a>, if you were wondering). I&rsquo;m not sure it was ever on the public internet, but if so it was probably hosted on Geocities.</p>
-          
-          <p><img alt="Local Oafs splash page" src="/images/2016-07-02-a-look-back-at-my-early-web-design-work/2-oafs1.png?1467509653" /></p>
-          
-          <p>For whatever reason, I added a splash page to the site. I guess that was all the rage back then. I also designed the sweet logo with one of the band members. We also printed up stickers of the logo, and stuck it on a shirt.</p>
-          
-          <p><img alt="Local Oafs homepage" src="/images/2016-07-02-a-look-back-at-my-early-web-design-work/2-oafs2.png?1467509653" /></p>
-          
-          <p>Pretty sweet grunge look going on here, which I made in Photoshop. This site also features a table layout, spacer gifs, and no CSS.</p>
-          
-          <p><img alt="Local Oafs bio page" src="/images/2016-07-02-a-look-back-at-my-early-web-design-work/2-oafs3.png?1467509653" /></p>
-          
-          <p>I made bio pages for each band member, adding a different rad Photoshop effect to each bio pic. I really hope we were being ironic, but I fear we probably thought this was actually cool. I was also the band&rsquo;s photographer, and did a photoshoot to populate the site with pictures.</p>
-          
-          <h2 id="anacapa-fine-yarns">Anacapa Fine Yarns</h2>
-          
-          <p>This is the first site I actually got paid for, which was hugely exciting at the time (2004 or 2005, I believe). I think I got a couple hundred bucks, which felt like highway robbery. I built the site for my parents&rsquo; friend who opened this yarn shop in Ventura.</p>
-          
-          <p><img alt="Anacapa Fine Yarns homepage" src="/images/2016-07-02-a-look-back-at-my-early-web-design-work/3-afy.png?1467509653" /></p>
-          
-          <p>Oof those colors. Not sure what I was thinking there. And the nav items are green when hovered 😬. And such centering!</p>
-          
-          <p>For whatever reason I have two versions of the site on my computer. I think I rebuilt the site for her about a year after the initial version. Unfortunately the design updates I made didn&rsquo;t include a better color palette. The biggest update, however, was that I built the site with CSS. This must have been the first real site that I used CSS on. It features great selectors like <code>div#main</code>.</p>
-          
-          <p>The properties are surprisingly well organized, though. I grouped them by position, width/height, typography, and finally visual styles (background, border, etc.). The selectors are all quite flat, and I indented them to indicate the nesting in the HTML. Which seems pretty forward thinking considering pre-processors didn&rsquo;t exist yet and I was pretty new to CSS.</p>
-          
-          <h2 id="hamlet-on-the-moon">Hamlet on the Moon</h2>
-          
-          <p>In college a close friend of mine did an adaption of Hamlet set on the moon, aptly named &ldquo;Hamlet on the Moon.&rdquo; It was actually a full play that was produced and performed at UCSB. It featured Polonius as a robot named &ldquo;Poloniusbot,&rdquo; Ophelia as a cyborg named &ldquo;Opheliatron,&rdquo; and Rosencrantz and Guildenstern as a two-headed monster. I designed and built the website, posters, and program for them.</p>
-          
-          <p><img alt="Hamlet on the Moon homepage" src="/images/2016-07-02-a-look-back-at-my-early-web-design-work/4-hamlet-site.png?1467509653" /></p>
-          
-          <p>Can you tell this play takes place on the moon? You may need to look again to pick up on the space theme. I especially love the NASA-y font for the nav, and that I made it a literal block of text by adjusting the type size to maintain a fixed width. And there&rsquo;s virtually no vertical space between them. I had to do the text with images since web fonts were still years away.</p>
-          
-          <p>And don&rsquo;t miss that great pseudo-drop cap in the first paragraph.</p>
-          
-          <p><img alt="Hamlet on the Moon poster" src="/images/2016-07-02-a-look-back-at-my-early-web-design-work/4-hamlet-poster.png?1467509653" /></p>
-          
-          <p>This is one of two posters I created for them, which I believe they actually printed and put up around campus. The oddest thing about the posters is that neither feature dates, times, location, or the website&rsquo;s URL. I have no idea why we chose to only have the email address on the poster.</p>
-          
-          <p><img alt="Hamlet on the Moon program" src="/images/2016-07-02-a-look-back-at-my-early-web-design-work/4-hamlet-program.png?1467509653" /></p>
-          
-          <p>The program, on the other hand, does include the date, time, and location, even though you&rsquo;d have to be at the play already to be holding one of these. But overall it actually came out pretty decently. I was taking typography and print layout classes at the time and put those skills to use. It&rsquo;s at least a more understated and mature design than the website.</p>
-          
-          <h2 id="pixie">Pixie</h2>
-          
-          <p>Around 2008 or 2009 my close friend (who also did Hamlet on the Moon) started building Pixie, a web-based pixel art editor. I helped out with design and frontend engineering. I also built a couple features, like fill. I believe this was my first exposure to HAML and SASS. Looking back on it, this was the first time I did product design (although I wouldn&rsquo;t have called it that back then).</p>
-          
-          <p><img alt="Pixie pixel editor" src="/images/2016-07-02-a-look-back-at-my-early-web-design-work/5-pixie.png?1467509653" /></p>
-          
-          <p>The design is pretty clean. Probably a little <em>too</em> clean. Those left icons are about to float off the page. And are they even clickable? I kind of like the way the line draws your eye from the top left to bottom right, even though the line itself strangles the page a bit. The left button style and icons are weirdly inconsistent with the top button style and icons. Perhaps I was trying to draw a distinction between image editing tools, like drawing and erasing, and document controls, like &ldquo;Save&rdquo;? And what is that bottom icon supposed to do? The &ldquo;logo&rdquo; is also odd – where did that orange come from? I still hadn&rsquo;t really figured out &ldquo;color palettes.&rdquo;</p>
-          
-          <h2 id="cal-cooking-club">Cal Cooking Club</h2>
-          
-          <p>In 2010 I was in grad school and a member of the Cal Cooking Club, so I made their website. It features web fonts and a clean, modern design! I believe I used this for a class project, too. I think I made a static version of the site first, and then converted it to a Wordpress theme so the officers could update the site themselves.</p>
-          
-          <p><img alt="Cal Cooking Club homepage" src="/images/2016-07-02-a-look-back-at-my-early-web-design-work/6-ccc.png?1467509653" /></p>
-          
-          <p>Not the pinnacle of design, but it at least doesn&rsquo;t make me cringe. The oddest thing about the design is that I tried to keep the site on a grid, which is why the nav items have weird spacing between them. I think I had just read <a href="https://www.subtraction.com/2010/11/05/i-wrote-a-book/">Ordering Disorder</a> by Khoi Vinh and went a bit too far trying to put his principles into practice.</p>
-          
-          <h2 id="privacy-patterns">Privacy Patterns</h2>
-          
-          <p><a href="http://privacypatterns.org">Privacy Patterns</a> is a project spearheaded by one of my grad school professors and a PhD student, with the goal of documenting best practices for building software that supports privacy. I got involved to help them design and build the site.</p>
-          
-          <p><img alt="Privacy Patterns homepage" src="/images/2016-07-02-a-look-back-at-my-early-web-design-work/7-privacy1.png?1467509653" /></p>
-          
-          <p>We built the site using <a href="http://hyde.github.io/">Hyde</a>, a static site generator. All the content was stored in Markdown for ease of authoring and portability. I believe it&rsquo;s the first statically-generated site I built (with the help of a fellow grad student). Surprisingly I didn&rsquo;t use SASS, even though I had at least experimented with it at this point. If I had to guess, it was probably because Hyde is built in Python, and SASS in Ruby.</p>
-          
-          <p><img alt="Privacy Patterns article" src="/images/2016-07-02-a-look-back-at-my-early-web-design-work/7-privacy2.png?1467509653" /></p>
-          
-          <p>Overall the site isn&rsquo;t too bad. Clean design, no weird colors, and good type hierarchy.</p>
-          
-          <hr>
-          
-          <p>It&rsquo;s humbling to look back at where I started and reflect on how far I&rsquo;ve come since. Best practices, technologies, and design trends all shaped my work, and have changed a lot over the years. It will be fascinating to look back at the work I&rsquo;m doing now and marvel at the misguided decisions that seemed so right at the time.</p>
-          <p class='follow-me'>
-            Thoughts? Reply
-            <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
-          </p>
-          <footer class='tags text-uppercase text-small'>
-            Tags:
           </footer>
         </article>
         <a class="view-all-link" href="/archives">View all posts &raquo;</a>

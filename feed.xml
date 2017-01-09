@@ -5,10 +5,63 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2017-01-04T05:08:00Z</updated>
+  <updated>2017-01-08T23:10:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>Sol LeWitt - Wall Drawing</title>
+    <link rel="alternate" href="/2017/01/08/sol-lewitt-wall-drawing-273/"/>
+    <id>/2017/01/08/sol-lewitt-wall-drawing-273/</id>
+    <published>2017-01-08T23:10:00Z</published>
+    <updated>2017-01-08T23:10:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;I recently saw &lt;a href="https://en.wikipedia.org/wiki/Sol_LeWitt"&gt;Sol LeWitt&amp;rsquo;s&lt;/a&gt; Wall Drawing #273 at the &lt;a href="https://www.sfmoma.org/"&gt;SF MOMA&lt;/a&gt;, which really stayed with me after leaving the museum. In particular, I like that it wasn&amp;rsquo;t drawn by the artist himself, but rather he wrote instructions for draftspeople to draw this piece directly on the walls of the museum, thus embracing some amount of variability. From the museum&amp;rsquo;s description:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;As his works are executed over and over again in different locations, they expand or contract according to the dimensions of the space in which they are displayed and respond to ambient light and the surfaces on which they are drawn. In some instances, as in this work, those involved in the installation make decisions impacting the final composition.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img alt="Sol LeWitt's Wall Drawing #273" src="/images/2017-01-08-sol-lewitt-wall-drawing-273/wall7.jpg?1483921148" /&gt;
+&lt;em&gt;Sol LeWitt&amp;rsquo;s Wall Drawing #273&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This embrace of variability reminds me of the web. People browse the web on different devices that have different sizes and capabilities. We can&amp;rsquo;t control how people will experience our websites. Since LeWitt left instructions for creating his pieces, I realized I could translate those instructions into code, and embrace the variability of the web in the process. The result is &lt;a href="http://codepen.io/jlzych/full/rjVoby/"&gt;this CodePen&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p data-height="465" data-theme-id="0" data-slug-hash="rjVoby" data-default-tab="result" data-user="jlzych" data-embed-version="2" data-pen-title="Sol LeWitt – Wall Drawing #273" class="codepen"&gt;See the Pen &lt;a href="http://codepen.io/jlzych/pen/rjVoby/"&gt;Sol LeWitt – Wall Drawing #273&lt;/a&gt; by Jeff (&lt;a href="http://codepen.io/jlzych"&gt;@jlzych&lt;/a&gt;) on &lt;a href="http://codepen.io"&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+
+&lt;script async src="https://production-assets.codepen.io/assets/embed/ei.js"&gt;&lt;/script&gt;
+
+&lt;p&gt;LeWitt left the following instructions:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;A six-inch (15 cm) grid covering the walls. Lines from corners, sides, and center of the walls to random points on the grid.&lt;/p&gt;
+
+&lt;p&gt;1st wall: Red lines from the midpoints of four sides;&lt;/p&gt;
+
+&lt;p&gt;2nd wall: Blue lines from four corners;&lt;/p&gt;
+
+&lt;p&gt;3rd wall: Yellow lines from the center;&lt;/p&gt;
+
+&lt;p&gt;4th wall: Red lines from the midpoints of four sides, blue lines from four corners;&lt;/p&gt;
+
+&lt;p&gt;5th wall: Red lines from the midpoints of four sides, yellow lines from the center;&lt;/p&gt;
+
+&lt;p&gt;6th wall: Blue lines from four corners, yellow lines from the center;&lt;/p&gt;
+
+&lt;p&gt;7th wall: Red lines from the midpoints of four sides, blue lines from four corners, yellow lines from the center.&lt;/p&gt;
+
+&lt;p&gt;Each wall has an equal number of lines. (The number of lines and their length are determined by the draftsman.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;As indicated in the instructions, there are 7 separate walls with an equal number of lines, the number and length of which are determined by the draftsperson. To simulate the decisions the draftspeople make, I included controls to let people set how many lines should be drawn, and toggle which walls to see. I let each color be toggleable, as opposed listing out walls 1-7, since each wall is just different combinations of the red, blue, and yellow lines.&lt;/p&gt;
+
+&lt;p&gt;The end result fits right in with how &lt;a href="https://www.google.com/search?q=wall+drawing+273&amp;amp;tbm=isch&amp;amp;tbo=u&amp;amp;source=univ&amp;amp;sa=X&amp;amp;ved=0ahUKEwjV6Jub4LPRAhUD1mMKHclqAr4QsAQIIQ&amp;amp;biw=1438&amp;amp;bih=780"&gt;human draftspeople&lt;/a&gt; have turned these instructions into art. The most notable difference I see between a human and a program is the degree of randomness in the final drawing. From comparing the output of the program to versions done by people, the ones drawn by people seem less &amp;ldquo;random.&amp;rdquo; I get the sense that people have a tendency to more evenly distribute the lines to points throughout the grid, whereas the program can create clusters and lines that are really close to each other which a person would consider unappealing and not draw.&lt;/p&gt;
+
+&lt;p&gt;It makes me wonder how LeWitt would respond to programmatic versions of his art. Is he okay with computers making art? Were his instructions specifically for people, or would he have embraced using machines to generate his work had the technology existed in his time? How &amp;ldquo;random&amp;rdquo; did he want people make these drawings? Does he like that a program is more &amp;ldquo;random,&amp;rdquo; or did he expect and want people to make his wall drawings in a way that they would find visually pleasing? We&amp;rsquo;ll never know, but it was fun to interpret his work through the lens of today&amp;rsquo;s technology.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Books I Read in 2016</title>
     <link rel="alternate" href="/2017/01/03/books-i-read-in-2016/"/>
@@ -420,27 +473,6 @@
 &lt;hr&gt;
 
 &lt;p&gt;It&amp;rsquo;s humbling to look back at where I started and reflect on how far I&amp;rsquo;ve come since. Best practices, technologies, and design trends all shaped my work, and have changed a lot over the years. It will be fascinating to look back at the work I&amp;rsquo;m doing now and marvel at the misguided decisions that seemed so right at the time.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Icons are the Acronyms of Design</title>
-    <link rel="alternate" href="/2016/03/27/icons-are-the-acronyms-of-design/"/>
-    <id>/2016/03/27/icons-are-the-acronyms-of-design/</id>
-    <published>2016-03-27T23:21:00Z</published>
-    <updated>2016-03-27T23:21:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;In &lt;em&gt;The Elements of Style&lt;/em&gt;, the seminal writing and grammar book by Strunk and White, the authors have a style rule that states, &amp;ldquo;Do not take shortcuts at the cost of clarity.&amp;rdquo; This rule advises writers to spell out acronyms in full unless they&amp;rsquo;re readily understood. For example, not everyone knows that &lt;span class="text-small-caps"&gt;madd&lt;/span&gt; is Mothers Against Drunk Driving.&lt;/p&gt;
-
-&lt;p&gt;Acronyms come at the cost of clarity. &amp;ldquo;Many shortcuts are self-defeating,&amp;rdquo; the authors say, &amp;ldquo;they waste the reader&amp;rsquo;s time instead of conserving it.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;Icons are the acronyms of design. Designers often rely on them to communicate what an action or object does, instead of simply stating what the action or object is. Unless you&amp;rsquo;re using universally-recognized icons (&lt;a href="https://www.nngroup.com/articles/icon-usability/"&gt;which are rare&lt;/a&gt;), you&amp;rsquo;re more likely to harm the usability of an interface.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Do you know what the icons on the left mean?" src="/images/2016-03-27-icons-are-the-acronyms-of-design/icons.png?1459122545" /&gt;
-&lt;em&gt;Do you know what the icons on the left mean?&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;So as Strunk and White advise, don&amp;rsquo;t take shortcuts at the cost of clarity. &amp;ldquo;The longest way round is usually the shortest way home.&amp;rdquo;&lt;/p&gt;
 </content>
   </entry>
 </feed>
