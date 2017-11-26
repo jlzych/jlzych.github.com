@@ -5,10 +5,28 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2017-10-30T04:21:00Z</updated>
+  <updated>2017-11-26T22:57:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>My Talk at Lean Kanban Central Europe 2017</title>
+    <link rel="alternate" href="/2017/11/26/my-talk-at-lean-kanban-central-europe-2017/"/>
+    <id>/2017/11/26/my-talk-at-lean-kanban-central-europe-2017/</id>
+    <published>2017-11-26T22:57:00Z</published>
+    <updated>2017-11-26T22:57:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;On a chilly fall day a few weeks back, I gave a talk at the cozy &lt;a href="http://www.leankanbance.com/"&gt;Lean Kanban Central Europe&lt;/a&gt; in Hamburg, Germany. I was honored to be invited to give a reprise of the &lt;a href="https://www.youtube.com/watch?v=y8Ns5bdg0oo&amp;amp;list=PLVsUnwOzPqiSz8D0WYoUkKxZzzbmM0pPY&amp;amp;index=14"&gt;talk I gave with Keith&lt;/a&gt; earlier this year at Lean Kanban North America.&lt;/p&gt;
+
+&lt;p&gt;I spoke about Optimizely&amp;rsquo;s software development process, and how we&amp;rsquo;ve used ideas from Lean Kanban and ESP (Enterprise Service Planning) to help us ship faster, with higher quality, to better meet customer needs. Overall it went well, but I had too much content and rushed at the end. If I do this talk again, I would cut some slides and make the presentation more focused and concise. Watch the talk below.&lt;/p&gt;
+
+&lt;iframe src="https://player.vimeo.com/video/243651831" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/243651831"&gt;Jeff Zych - From 20/20 Hindsight to ESP at Optimizely @ LKCE17&lt;/a&gt; from &lt;a href="https://vimeo.com/lkce"&gt;Lean Kanban Central Europe&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>My Progress with Hand Lettering</title>
     <link rel="alternate" href="/2017/10/29/my-progress-with-hand-lettering/"/>
@@ -182,56 +200,6 @@ without grounding the argument in the reality of whether it was higher priority 
 &lt;p&gt;The end result fits right in with how &lt;a href="https://www.google.com/search?q=wall+drawing+273&amp;amp;tbm=isch&amp;amp;tbo=u&amp;amp;source=univ&amp;amp;sa=X&amp;amp;ved=0ahUKEwjV6Jub4LPRAhUD1mMKHclqAr4QsAQIIQ&amp;amp;biw=1438&amp;amp;bih=780"&gt;human draftspeople&lt;/a&gt; have turned these instructions into art. The most notable difference I see between a human and a program is the degree of randomness in the final drawing. From comparing the output of the program to versions done by people, the ones drawn by people seem less &amp;ldquo;random.&amp;rdquo; I get the sense that people have a tendency to more evenly distribute the lines to points throughout the grid, whereas the program can create clusters and lines that are really close to each other which a person would consider unappealing and not draw.&lt;/p&gt;
 
 &lt;p&gt;It makes me wonder how LeWitt would respond to programmatic versions of his art. Is he okay with computers making art? Were his instructions specifically for people, or would he have embraced using machines to generate his work had the technology existed in his time? How &amp;ldquo;random&amp;rdquo; did he want people make these drawings? Does he like that a program is more &amp;ldquo;random,&amp;rdquo; or did he expect and want people to make his wall drawings in a way that they would find visually pleasing? We&amp;rsquo;ll never know, but it was fun to interpret his work through the lens of today&amp;rsquo;s technology.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Books I Read in 2016</title>
-    <link rel="alternate" href="/2017/01/03/books-i-read-in-2016/"/>
-    <id>/2017/01/03/books-i-read-in-2016/</id>
-    <published>2017-01-04T05:08:00Z</published>
-    <updated>2017-01-04T05:08:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;In 2016, I read 22 books. Only 3 of those 22 were fiction. I had a consistent clip of 1-3 per month, and managed to finish at least one book each month.&lt;/p&gt;
-
-&lt;p&gt;Highlights include:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;The Laws of Simplicity&lt;/em&gt; by John Maeda: the first book I read this year was super interesting. In it, Maeda offers 10 laws for for balancing simplicity and complexity in business, technology, and design. By the end, he simplifies the book down to one law: &amp;ldquo;Simplicity is about subtracting the obvious, and adding the meaningful.&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;David Whitaker Painting&lt;/em&gt; by Matthew Sturgis: I had never heard of the artist &lt;a href="https://en.wikipedia.org/wiki/David_Whitaker_(artist)"&gt;David Whitaker&lt;/a&gt; until I stumbled on this book at Half Price Books in Berkeley. He makes abstract paintings that combine lines and colors and gradients in fantastic ways. The cover sucked me in, and after flipping through a few pages I fell in love with his work and immediately bought the book. Check out his work on &lt;a href="http://www.davidwhitakerpaintings.com/portfolio_home.htm"&gt;his portfolio&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Libra&lt;/em&gt; by Don DeLillo: a fascinating account of all the forces (including internal ones) that pushed Lee Harvey Oswald into assassinating JFK. The book is fiction and includes plenty of embellishments from the author (especially internal dialog), but is based on real facts from Oswald&amp;rsquo;s life and the assassination.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;NOFX: The Hepatitis Bathtub and Other Stories&lt;/em&gt; by NOFX: a thoroughly entertaining history of the SoCal pop-punk band NOFX as told through various ridiculous stories from the members of the band themselves. It was perfect poolside reading in Cabo.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;&lt;a href="https://orgdesignfordesignorgs.com/"&gt;Org Design for Design Orgs&lt;/a&gt;&lt;/em&gt; by Peter Merholz &amp;amp; Kristin Skinner: This is basically a handbook for what I should be doing as the Head of Design at Optimizely. I can&amp;rsquo;t overstate how useful this has been to me in my job. If you&amp;rsquo;re doing any type of design leadership, I highly recommend it.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;The Gift&lt;/em&gt;, by Lewis Hyde: a very thought-provoking read about creativity and the tension between art and commerce. So thought-provoking that it provoked me into writing down my thoughts in my &lt;a href="/2016/12/31/thoughts-on-the-gift/"&gt;last blog post&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id="full-list-of-books-read"&gt;Full List of Books Read&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;The Laws of Simplicity&lt;/em&gt; by John Maeda (1/3/16)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Although of Course You End up Becoming Yourself&lt;/em&gt; by David Lipsky (1/24/16)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Practical Empathy&lt;/em&gt; by Indi Young (2/1/16)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Time Out&lt;/em&gt; of Joint by Philip K. Dick (2/8/16)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;A Wild Sheep Chase&lt;/em&gt; by Haruki Murakami (3/5/16)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Radical Focus: Achieving Your Most Important Goals with Objectives and Key Results&lt;/em&gt; by Christina Wodtke (3/21/16)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;The Elements of Style&lt;/em&gt; by William Strunk Jr. and E.B. White (3/23/16)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Sprint: How to solve big problems and test new ideas in just 5 days&lt;/em&gt; by Jake Knapp, with John Zeratsky &amp;amp; Braden Kowitz (4/8/16)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;David Whitaker Painting&lt;/em&gt; by Matthew Sturgis (4/18/16)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Show Your Work&lt;/em&gt; by Austin Kleon (5/8/16)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Nicely Said&lt;/em&gt; by Kate Kiefer Lee and Nicole Fenton (6/5/16)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;The Unsplash Book&lt;/em&gt; by Jory MacKay (6/27/16)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Words Without Music: A Memoir&lt;/em&gt; by Philip Glass (July)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Libra&lt;/em&gt; by Don DeLillo (8/21/16)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;How To Visit an Art Museum&lt;/em&gt; by Johan Idema (8/23/16)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;101 Things I Learned in Architecture School&lt;/em&gt; by Matthew Frederick (9/5/16)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Intercom on Jobs-to-be-Done&lt;/em&gt; by Intercom (9/17/16)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Org Design for Design Orgs&lt;/em&gt; by Peter Merholz &amp;amp; Kristin Skinner (9/26/16)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;NOFX: The Hepatitis Bathtub and Other Stories&lt;/em&gt; by NOFX with Jeff Alulis (10/23/16)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;The User&amp;rsquo;s Journey: Storymapping Products That People Love&lt;/em&gt; by Donna Lichaw (11/10/16)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Sharpie Art Workshop Book&lt;/em&gt; by Timothy Goodman (11/13/16)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;The Gift&lt;/em&gt; by Lewis Hyde (12/29/16)&lt;/li&gt;
-&lt;/ul&gt;
 </content>
   </entry>
 </feed>
