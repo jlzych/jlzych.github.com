@@ -5,10 +5,87 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2017-11-26T22:57:00Z</updated>
+  <updated>2017-12-31T22:39:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>Books Read in 2017</title>
+    <link rel="alternate" href="/2017/12/31/books-read-in-2017/"/>
+    <id>/2017/12/31/books-read-in-2017/</id>
+    <published>2017-12-31T22:39:00Z</published>
+    <updated>2017-12-31T22:39:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img alt="Books Read 2017 banner" src="/images/books-read-2017.jpg?1514859906" /&gt;&lt;/p&gt;
+
+&lt;p&gt;This year I read 14 books, which is 8 fewer than the 22 I read last year (&lt;a href="/2017/01/03/books-i-read-in-2016/"&gt;view last year&amp;rsquo;s list here&lt;/a&gt;). Lower than I was hoping, but it at least averages out to more than 1 per month. I&amp;rsquo;m not too surprised, though, since I traveled a lot and was busier socially this year. Once again, I was heavy on the non-fiction — I only read 2 fiction books this year. Just 2! I need to up that number in 2018.&lt;/p&gt;
+
+&lt;h2 id="highlights"&gt;Highlights&lt;/h2&gt;
+
+&lt;h3 id="service-design-from-insight-to-implementation"&gt;&lt;a href="http://amzn.to/2C2RVm2"&gt;Service Design: From Insight to Implementation&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;by Andy Polaine, Lavrans Løvlie, and Ben Reason&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This book really opened my eyes to the world of service design and thinking about a person&amp;rsquo;s experience beyond just the confines of the screen. Using the product is just one part of a person&amp;rsquo;s overall experience accomplishing their goal. This book is a great primer on the subject.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://amzn.to/2C2RVm2"&gt;View on Amazon&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id="sol-lewitt-the-well-tempered-grid"&gt;&lt;a href="http://amzn.to/2CrvESa"&gt;Sol LeWitt: The Well-Tempered Grid&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;by Charles Haxthausen, Christianna Bonin, and Erica Dibenedetto&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve been quite taken by Sol LeWitt&amp;rsquo;s work after seeing his art at various museums, such as the SF MOMA. I finally bought a book to learn more about his work and approach to art. This inspired me to &lt;a href="http://codepen.io/jlzych/full/rjVoby/"&gt;re-create his work programmatically&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://amzn.to/2CrvESa"&gt;View on Amazon&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id="the-corrections"&gt;&lt;a href="http://amzn.to/2End9wl"&gt;The Corrections&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;by Jonathan Franzen&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This is the first Franzen book I&amp;rsquo;ve read, and I thoroughly enjoyed it. I&amp;rsquo;ve been interested in him for a long time because David Foster Wallace is a fan of his. A well-written, engaging tale of a family&amp;rsquo;s troubles, anxieties, and the &amp;ldquo;corrections&amp;rdquo; they need to make to keep their lives intact.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://amzn.to/2End9wl"&gt;View on Amazon&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id="radical-candor"&gt;&lt;a href="http://amzn.to/2CuEXhN"&gt;Radical Candor&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;by Kim Scott&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Great book on managing people. Highly recommended for anyone who manages or is interested in managing. Even if you&amp;rsquo;re an individual contributor it&amp;rsquo;s worth reading because it will help you be a better employee and have a better relationship with your boss.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://amzn.to/2CuEXhN"&gt;View on Amazon&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id="emotional-design"&gt;&lt;a href="http://amzn.to/2lyxGFN"&gt;Emotional Design&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;by Don Norman&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This companion to Norman&amp;rsquo;s &lt;em&gt;The Design of Everyday Things&lt;/em&gt; is just as good as its better-known sibling. In this book he focuses on the &lt;em&gt;emotional&lt;/em&gt; and &lt;em&gt;aesthetic&lt;/em&gt; side of design, and why those elements are an important part of designing a successful product. He goes beyond fluffy, surface-level explanations, though, and explains the &lt;em&gt;why&lt;/em&gt; behind these phenomenon using science, psychology, and biology. This makes for a convincing argument behind the importance of this aspect of design, which can often be written off as &amp;ldquo;nice-to-have&amp;rdquo; or self-indulgent.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://amzn.to/2lyxGFN"&gt;View on Amazon&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id="full-list-of-books-read"&gt;Full List of Books Read&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;a href="http://amzn.to/2C2RVm2"&gt;Service Design: From Insight to Implementation&lt;/a&gt;&lt;/em&gt; by Andy Polaine, Lavrans Løvlie, and Ben Reason (1/8/17)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;a href="http://amzn.to/2CrvESa"&gt;Sol LeWitt: The Well-tempered Grid&lt;/a&gt;&lt;/em&gt; by Charles Haxthausen, Christianna Bonin, and Erica Dibenedetto (1/13/17)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;a href="http://amzn.to/2EnidRq"&gt;Redesigning Leadership&lt;/a&gt;&lt;/em&gt; by John Maeda (2/22/17)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;a href="http://amzn.to/2C0CBGp"&gt;Draplin Design Co.: Pretty Much Everything&lt;/a&gt;&lt;/em&gt; by Aaron James Draplin (3/14/17)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;a href="http://amzn.to/2End9wl"&gt;The Corrections&lt;/a&gt;&lt;/em&gt; by Jonathan Franzen (3/15/17)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;a href="http://amzn.to/2CqVvd5"&gt;Practical Design Discovery&lt;/a&gt;&lt;/em&gt; by Dan Brown (3/20/17)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;a href="http://amzn.to/2DGE7y7"&gt;Mapping Experiences&lt;/a&gt;&lt;/em&gt; by Jim Kalbach (4/18/17)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;a href="http://amzn.to/2lxBo2B"&gt;How to See: Visual Adventures in a World God Never Made&lt;/a&gt;&lt;/em&gt; by George Nelson (6/9/17)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;a href="http://amzn.to/2C28E9b"&gt;The Elephant Vanishes&lt;/a&gt;&lt;/em&gt; by Haruki Murakami (7/9/17)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;a href="http://amzn.to/2Er2xNi"&gt;Cultivating a Creative Culture&lt;/a&gt;&lt;/em&gt; by Justin Dauer (8/8/17)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;a href="http://amzn.to/2DFFgpJ"&gt;Liminal Thinking&lt;/a&gt;&lt;/em&gt; by Dave Gray (10/26/17)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;a href="http://amzn.to/2CuEXhN"&gt;Radical Candor&lt;/a&gt;&lt;/em&gt; by Kim Scott (11/26/17)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;a href="http://amzn.to/2lyxGFN"&gt;Emotional Design&lt;/a&gt;&lt;/em&gt; by Don Norman (12/5/17)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;a href="http://amzn.to/2DEitKG"&gt;Bauhaus&lt;/a&gt;&lt;/em&gt; by Magdalena Droste (12/28/17)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;All links are Amazon affiliate links.&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>My Talk at Lean Kanban Central Europe 2017</title>
     <link rel="alternate" href="/2017/11/26/my-talk-at-lean-kanban-central-europe-2017/"/>
@@ -167,59 +244,6 @@ without grounding the argument in the reality of whether it was higher priority 
 &lt;li&gt;Experience Mapping Guide, by Adaptive Path: &lt;a href="http://mappingexperiences.com/"&gt;http://mappingexperiences.com/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Guide to Service Blueprinting, by Adaptive Path: &lt;a href="https://medium.com/capitalonedesign/download-our-guide-to-service-blueprinting-d70bb2717ddf#.c16es9oce"&gt;https://medium.com/capitalonedesign/download-our-guide-to-service-blueprinting-d70bb2717ddf#.c16es9oce&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Sol LeWitt - Wall Drawing</title>
-    <link rel="alternate" href="/2017/01/08/sol-lewitt-wall-drawing-273/"/>
-    <id>/2017/01/08/sol-lewitt-wall-drawing-273/</id>
-    <published>2017-01-08T23:10:00Z</published>
-    <updated>2017-01-08T23:10:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;I recently saw &lt;a href="https://en.wikipedia.org/wiki/Sol_LeWitt"&gt;Sol LeWitt&amp;rsquo;s&lt;/a&gt; Wall Drawing #273 at the &lt;a href="https://www.sfmoma.org/"&gt;SF MOMA&lt;/a&gt;, which really stayed with me after leaving the museum. In particular, I like that it wasn&amp;rsquo;t drawn by the artist himself, but rather he wrote instructions for draftspeople to draw this piece directly on the walls of the museum, thus embracing some amount of variability. From the museum&amp;rsquo;s description:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;As his works are executed over and over again in different locations, they expand or contract according to the dimensions of the space in which they are displayed and respond to ambient light and the surfaces on which they are drawn. In some instances, as in this work, those involved in the installation make decisions impacting the final composition.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;img alt="Sol LeWitt's Wall Drawing #273" src="/images/2017-01-08-sol-lewitt-wall-drawing-273/wall7.jpg?1483921148" /&gt;
-&lt;em&gt;Sol LeWitt&amp;rsquo;s Wall Drawing #273&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;This embrace of variability reminds me of the web. People browse the web on different devices that have different sizes and capabilities. We can&amp;rsquo;t control how people will experience our websites. Since LeWitt left instructions for creating his pieces, I realized I could translate those instructions into code, and embrace the variability of the web in the process. The result is &lt;a href="http://codepen.io/jlzych/full/rjVoby/"&gt;this CodePen&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p data-height="465" data-theme-id="0" data-slug-hash="rjVoby" data-default-tab="result" data-user="jlzych" data-embed-version="2" data-pen-title="Sol LeWitt – Wall Drawing #273" class="codepen"&gt;See the Pen &lt;a href="http://codepen.io/jlzych/pen/rjVoby/"&gt;Sol LeWitt – Wall Drawing #273&lt;/a&gt; by Jeff (&lt;a href="http://codepen.io/jlzych"&gt;@jlzych&lt;/a&gt;) on &lt;a href="http://codepen.io"&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
-
-&lt;script async src="https://production-assets.codepen.io/assets/embed/ei.js"&gt;&lt;/script&gt;
-
-&lt;p&gt;LeWitt left the following instructions:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;A six-inch (15 cm) grid covering the walls. Lines from corners, sides, and center of the walls to random points on the grid.&lt;/p&gt;
-
-&lt;p&gt;1st wall: Red lines from the midpoints of four sides;&lt;/p&gt;
-
-&lt;p&gt;2nd wall: Blue lines from four corners;&lt;/p&gt;
-
-&lt;p&gt;3rd wall: Yellow lines from the center;&lt;/p&gt;
-
-&lt;p&gt;4th wall: Red lines from the midpoints of four sides, blue lines from four corners;&lt;/p&gt;
-
-&lt;p&gt;5th wall: Red lines from the midpoints of four sides, yellow lines from the center;&lt;/p&gt;
-
-&lt;p&gt;6th wall: Blue lines from four corners, yellow lines from the center;&lt;/p&gt;
-
-&lt;p&gt;7th wall: Red lines from the midpoints of four sides, blue lines from four corners, yellow lines from the center.&lt;/p&gt;
-
-&lt;p&gt;Each wall has an equal number of lines. (The number of lines and their length are determined by the draftsman.)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;As indicated in the instructions, there are 7 separate walls with an equal number of lines, the number and length of which are determined by the draftsperson. To simulate the decisions the draftspeople make, I included controls to let people set how many lines should be drawn, and toggle which walls to see. I let each color be toggleable, as opposed listing out walls 1-7, since each wall is just different combinations of the red, blue, and yellow lines.&lt;/p&gt;
-
-&lt;p&gt;The end result fits right in with how &lt;a href="https://www.google.com/search?q=wall+drawing+273&amp;amp;tbm=isch&amp;amp;tbo=u&amp;amp;source=univ&amp;amp;sa=X&amp;amp;ved=0ahUKEwjV6Jub4LPRAhUD1mMKHclqAr4QsAQIIQ&amp;amp;biw=1438&amp;amp;bih=780"&gt;human draftspeople&lt;/a&gt; have turned these instructions into art. The most notable difference I see between a human and a program is the degree of randomness in the final drawing. From comparing the output of the program to versions done by people, the ones drawn by people seem less &amp;ldquo;random.&amp;rdquo; I get the sense that people have a tendency to more evenly distribute the lines to points throughout the grid, whereas the program can create clusters and lines that are really close to each other which a person would consider unappealing and not draw.&lt;/p&gt;
-
-&lt;p&gt;It makes me wonder how LeWitt would respond to programmatic versions of his art. Is he okay with computers making art? Were his instructions specifically for people, or would he have embraced using machines to generate his work had the technology existed in his time? How &amp;ldquo;random&amp;rdquo; did he want people make these drawings? Does he like that a program is more &amp;ldquo;random,&amp;rdquo; or did he expect and want people to make his wall drawings in a way that they would find visually pleasing? We&amp;rsquo;ll never know, but it was fun to interpret his work through the lens of today&amp;rsquo;s technology.&lt;/p&gt;
 </content>
   </entry>
 </feed>
