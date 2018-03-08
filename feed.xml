@@ -5,10 +5,36 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2018-02-26T01:29:00Z</updated>
+  <updated>2018-03-08T22:18:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>Why I Blog</title>
+    <link rel="alternate" href="/2018/03/08/why-i-blog/"/>
+    <id>/2018/03/08/why-i-blog/</id>
+    <published>2018-03-08T22:18:00Z</published>
+    <updated>2018-03-08T22:18:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;The fable of the millipede and the songbird is a story about the difference between instinct and knowledge. It goes like this:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;High above the forest floor, a millipede strolled along the branch of a tree, her thousand pairs of legs swinging in an easy gait. From the tree top, song birds looked down, fascinated by the synchronization of the millipede’s stride. “That’s an amazing talent,” chirped the songbirds. “You have more limbs than we can count. How do you do it?” And for the first time in her life the millipede thought about this. “Yes,” she wondered, “how do I do what I do?” As she turned to look back, her bristling legs suddenly ran into one another and tangled like vines of ivy. The songbirds laughed as the millipede, in a panic of confusion, twisted herself in a knot and fell to earth below.&lt;/p&gt;
+
+&lt;p&gt;On the forest floor, the millipede, realizing that only her pride was hurt, slowly, carefully, limb by limb, unraveled herself. With patience and hard work, she studied and flexed and tested her appendages, until she was able to stand and walk. What was once instinct became knowledge. She realized she didn’t have to move at her old, slow, rote pace. She could amble, strut, prance, even run and jump. Then, as never before, she listened to the symphony of the songbirds and let music touch her heart. Now in perfect command of thousands of talented legs, she gathered courage, and, with a style of her own, danced and danced a dazzling dance that astonished all the creatures of her world. [1]&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The lesson here is that conscious reflection of an unconscious action will impair your ability to do that action. But after you introspect and really study &lt;em&gt;how&lt;/em&gt; you do what you do, it will transform into knowledge and you will have greater command of that skill.&lt;/p&gt;
+
+&lt;p&gt;That, in a nutshell, is why I blog. The act of introspection — of turning abstract thoughts into concrete words — strengthens my knowledge of that subject and enables me to dance a dazzling dance.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;em&gt;[1] I got this version of the fable from the book &lt;a href="http://amzn.to/2G8D24u"&gt;Story: Substance, Structure, Style and the Principles of Screenwriting&lt;/a&gt; by Robert McKee, but can’t find the original version of it anywhere (it’s uncredited in his book). The closest I can find is &lt;a href="https://en.wikipedia.org/wiki/The_Centipede%27s_Dilemma"&gt;The Centipede’s Dilemma&lt;/a&gt;, but that version lacks the second half of the fable.&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>On Mastery</title>
     <link rel="alternate" href="/2018/02/25/on-mastery/"/>
@@ -213,28 +239,6 @@
 &lt;em&gt;Better spacing, and fairly consistent thicks, thins, and letter shapes. I like drawing &amp;ldquo;aluminum&amp;rdquo; because it has a lot of repeating letters and shapes that require consistent strokes and spacing.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;I still have a lot of room to improve, but compared to a year ago I&amp;rsquo;ve made a lot of progress. You can see all of my work at &lt;a href="/scribbles"&gt;http://jlzych.com/scribbles&lt;/a&gt;.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>How to Say No to Your CEO Without Saying No</title>
-    <link rel="alternate" href="/2017/06/14/how-to-say-no-to-your-ceo-without-saying-no/"/>
-    <id>/2017/06/14/how-to-say-no-to-your-ceo-without-saying-no/</id>
-    <published>2017-06-15T05:19:00Z</published>
-    <updated>2017-06-15T05:19:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;Shortly after I rolled out &lt;a href="/2016/07/17/discovery-kanban-at-optimizely/"&gt;Optimizely&amp;rsquo;s Discovery kanban process&lt;/a&gt; last year, one of its benefits became immediately obvious: using it as a tool to say No.&lt;/p&gt;
-
-&lt;p&gt;This is best illustrated with a story. One day, I was at my desk, minding my own business 🙃, when our CEO came up to me and asked, &amp;ldquo;Hey, is there a designer who could work on &amp;lt;insert special CEO pet project&amp;gt;?&amp;rdquo; In my head, I knew it wasn&amp;rsquo;t a priority. Telling him that directly, though, would have led to us arguing over why we &lt;em&gt;thought&lt;/em&gt; the project was or was not important,
-without grounding the argument in the reality of whether it was higher priority than current work-in-progress. And since he&amp;rsquo;s the CEO, I would have lost that argument.&lt;/p&gt;
-
-&lt;p&gt;So instead of doing that, I took him to our Discovery kanban board and said, &amp;ldquo;Let&amp;rsquo;s review what each person is doing and see if there&amp;rsquo;s anything we should stop doing to work on your project.&amp;rdquo; I pointed to each card on the board and said why we were doing it: &amp;ldquo;We&amp;rsquo;re doing this to reach company goal X&amp;hellip; that&amp;rsquo;s important for customer Y,&amp;rdquo; and so on.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="&amp;quot;Optimizely's Discovery kanban board in action&amp;quot;" src="/images/2017-06-14-how-to-say-no-to-your-ceo-without-saying-no/kanban-board.jpg?1497508226" /&gt;
-&lt;em&gt;Optimizely&amp;rsquo;s Discovery kanban board in action&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;When we got to the end of the board, he admitted, &amp;ldquo;Yeah, those are all the right things to be doing,&amp;rdquo; and walked away. I never heard about the project again. And just like that, I said No to our CEO without saying No.&lt;/p&gt;
 </content>
   </entry>
 </feed>
