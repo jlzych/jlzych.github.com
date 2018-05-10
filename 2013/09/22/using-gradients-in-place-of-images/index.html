@@ -23,7 +23,7 @@
     <link href='/favicon.png' rel='icon' type='image/png'>
     <link href='touch-icon-iphone.png' rel='apple-touch-icon'>
     <script src='//cdn.optimizely.com/js/1111070510.js'></script>
-    <link href="/stylesheets/application.css?1525983455" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/application.css?1525992441" media="screen" rel="stylesheet" type="text/css" />
     <link href='/feed.xml' rel='alternate' title='RSS for Jeff Zych' type='application/rss+xml'>
     <script src='//use.typekit.net/kbr8kzk.js' type='text/javascript'></script>
     <script>
@@ -48,13 +48,13 @@
       </header>
       <div class='content'>
         <article>
-          <time datetime='2013-09-22'>
+          <time class='article__date' datetime='2013-09-22'>
             <i>Posted on</i>
             Sep 22, 2013
             <i>by</i>
             Jeff Zych
           </time>
-          <h1><a href="/2013/09/22/using-gradients-in-place-of-images/">Using Gradients In Place of Images</a></h1>
+          <h1 class='article__title'><a href="/2013/09/22/using-gradients-in-place-of-images/">Using Gradients In Place of Images</a></h1>
           <p>Recently at <a href="https://www.optimizely.com">Optimizely</a>, I needed to create ribbons as part of the design of our <a href="https://www.optimizely.com/ecommerce-ab-testing">Summertime Christmas</a> campaign (see image below). The easy way would have been to throw a repeating background image on some <code>div</code>s, but then I remembered CSS3 gradients can be used to create some pretty interesting patterns (for example, see <a href="http://lea.verou.me/">Lea Verou</a>&rsquo;s <a href="http://lea.verou.me/css3patterns/">CSS3 patterns gallery</a>). Besides being a novel use of gradients, it also makes my markup more semantic (no empty container <code>div</code>s required), and makes the design more flexible (everything is generated programmatically, and thus easily changeable, unlike images).</p>
           
           <p><img alt="Summertime Christmas campaign with ribbon background" src="http://jlzych.com/images/2013-09-22-using-gradients-in-place-of-images/summertime-xmas.png" /></p>
@@ -96,14 +96,9 @@
           <h2 id="conclusion">Conclusion</h2>
           
           <p>This technique is handy for avoiding image creation, which improves page performance (by avoiding HTTP requests and reducing bandwidth usage), and makes the design easier to modify (no need to fire up Photoshop to make changes!). This example is just scratching the surface of novel ways gradients can be used to draw images in the browser.</p>
-          <p class='follow-me'>
+          <footer class='article__footer'>
             Thoughts? Reply
             <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
-          </p>
-          <footer class='tags text-uppercase text-small'>
-            Tags:
-            <span class='tag'>css3</span>
-            <span class='tag'>gradients</span>
           </footer>
         </article>
         <div class='article-links'>
