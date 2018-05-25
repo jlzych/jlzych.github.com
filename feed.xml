@@ -5,10 +5,46 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2018-03-23T21:50:00Z</updated>
+  <updated>2018-05-25T20:27:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>Where do you get ideas for blog posts?</title>
+    <link rel="alternate" href="/2018/05/25/where-do-you-get-ideas-for-blog-posts/"/>
+    <id>/2018/05/25/where-do-you-get-ideas-for-blog-posts/</id>
+    <published>2018-05-25T20:27:00Z</published>
+    <updated>2018-05-25T20:27:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img alt="A picture of a dam by Anthony Da Cruz on Unsplash" src="/images/2018-05-25-where-do-you-get-ideas-for-blog-posts/dam.jpg?1527281184" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;A dam, blocking all of your great ideas &amp;ndash; Photo by &lt;a href="https://unsplash.com/photos/DMfSpSrhF-k?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText"&gt;Anthony Da Cruz&lt;/a&gt; on &lt;a href="https://unsplash.com/?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;People often ask me, “Where do you get ideas for blog posts?” I have many sources, but my most effective one is simple: pay attention to the questions people ask you.&lt;/p&gt;
+
+&lt;p&gt;When a person asks you a question, it means they’re seeking your advice or expertise to fill a gap in their knowledge. Take your answer, and write it down.&lt;/p&gt;
+
+&lt;p&gt;This technique works so well because it overcomes the two biggest barriers to blogging: “What should I write about?” and, “Does anyone care what I have to say?”&lt;/p&gt;
+
+&lt;p&gt;It overcomes the first barrier by giving you a specific topic to write about. Our minds contain a lifetime of experiences to draw from, but when you try to find something specific to write about you’re blank. All that accumulated knowledge is locked up in your head, as if trapped behind a dam. A question cracks the dam and starts the flow of ideas.&lt;/p&gt;
+
+&lt;p&gt;It overcomes the second barrier (“will anyone care?”) because you already have your first reader: the question asker. Congratulations! You just infinitely increased your reader base. And chances are they aren’t the only person who’s ever asked this question, or ever will ask it. When this question comes up in the future, you’ll be more articulate when responding, and you can keep building your audience by sharing your post.&lt;/p&gt;
+
+&lt;p&gt;Having at least one reader has another benefit: you now have a specific person to write for. A leading cause of poorly written blog posts is that the author doesn’t know who they’re writing for (trust me, I’ve made this mistake plenty). This leads them to try to write for everyone. Which means their writing connects with no one. The resulting article is a Frankenstein’s monster of ideas bolted together that aimlessly stumbles around mumbling and groaning and scaring away the villagers.&lt;/p&gt;
+
+&lt;p&gt;Instead, you can avoid this fate by conjuring up the question asker in your mind, and write your response as if you’re talking to them. Instead of creating a monster, your post will sound like a polished, engaging TED speaker.&lt;/p&gt;
+
+&lt;p&gt;A final benefit to answering a specific question is that it keeps your post &lt;strong&gt;focused&lt;/strong&gt;. Just answer the question, and call it a day. No more, no less. Another leading cause of Frankenstein’s monster blog posts is that they don’t have a specific point they’re trying to make. So the post tries to say everything there is to say about a subject, or deviates down side roads, or doesn’t say anything remarkable, or is just plain confusing. Answering a specific question keeps these temptations at bay.&lt;/p&gt;
+
+&lt;p&gt;So the next time you’re wondering where to get started blogging, start by paying attention to the questions people ask you. Then write down your answers.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;p.s. Yes, I applied the advice in this post to the post itself :)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;p.p.s. If you&amp;rsquo;d like more writing advice, I created a page to house all of the tips and tricks I&amp;rsquo;ve picked up from books and articles over the years. Check it out at &lt;a href="/writing"&gt;jlzych.com/writing&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Discovery Kanban 101: My Newest Skillshare Class</title>
     <link rel="alternate" href="/2018/03/23/discovery-kanban-101-my-newest-skillshare-class/"/>
@@ -216,44 +252,6 @@
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;em&gt;All links are Amazon affiliate links.&lt;/em&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>My Talk at Lean Kanban Central Europe 2017</title>
-    <link rel="alternate" href="/2017/11/26/my-talk-at-lean-kanban-central-europe-2017/"/>
-    <id>/2017/11/26/my-talk-at-lean-kanban-central-europe-2017/</id>
-    <published>2017-11-26T22:57:00Z</published>
-    <updated>2017-11-26T22:57:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;On a chilly fall day a few weeks back, I gave a talk at the cozy &lt;a href="http://www.leankanbance.com/"&gt;Lean Kanban Central Europe&lt;/a&gt; in Hamburg, Germany. I was honored to be invited to give a reprise of the &lt;a href="https://www.youtube.com/watch?v=y8Ns5bdg0oo&amp;amp;list=PLVsUnwOzPqiSz8D0WYoUkKxZzzbmM0pPY&amp;amp;index=14"&gt;talk I gave with Keith&lt;/a&gt; earlier this year at Lean Kanban North America.&lt;/p&gt;
-
-&lt;p&gt;I spoke about Optimizely&amp;rsquo;s software development process, and how we&amp;rsquo;ve used ideas from Lean Kanban and ESP (Enterprise Service Planning) to help us ship faster, with higher quality, to better meet customer needs. Overall it went well, but I had too much content and rushed at the end. If I do this talk again, I would cut some slides and make the presentation more focused and concise. Watch the talk below.&lt;/p&gt;
-
-&lt;iframe src="https://player.vimeo.com/video/243651831" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="https://vimeo.com/243651831"&gt;Jeff Zych - From 20/20 Hindsight to ESP at Optimizely @ LKCE17&lt;/a&gt; from &lt;a href="https://vimeo.com/lkce"&gt;Lean Kanban Central Europe&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id="epilogue"&gt;Epilogue&lt;/h2&gt;
-
-&lt;p&gt;One of the cool things this conference does is give the audience green, yellow, and red index cards they can use to give feedback to the speakers. Green indicates you liked the talk, red means you didn&amp;rsquo;t like it, and yellow is neutral.&lt;/p&gt;
-
-&lt;p&gt;I got just one red card, with the comment, &amp;ldquo;topic title not accurate (this is not ESP?!).&amp;rdquo; In retrospect, I realized this person is correct — my talk really doesn&amp;rsquo;t talk about ESP much. I touch on it, but that was what Keith covered. Since he dropped out, I mostly cut those sections of the presentation since I can&amp;rsquo;t speak as confidently about them. If I did this talk solo again, I would probably change the title. So thank you, anonymous commenter 🙏&lt;/p&gt;
-
-&lt;p&gt;I also got two positive comments on green cards:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Thanks for sharing. Some useful insights + good to see it used in industry. - Thanks.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;And:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Thank you! Great examples, (maybe less slides next time?) but this was inspiring&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I also got some good tweets, like &lt;a href="https://twitter.com/ofinker/status/928256477667708928"&gt;this&lt;/a&gt; and &lt;a href="https://twitter.com/leankanbance/status/928252318566535169"&gt;this&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
 </feed>
