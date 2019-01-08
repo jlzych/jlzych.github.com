@@ -5,10 +5,33 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2019-01-04T00:26:00Z</updated>
+  <updated>2019-01-08T20:22:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>My Yardstick for Empathy</title>
+    <link rel="alternate" href="/2019/01/08/my-yardstick-for-empathy/"/>
+    <id>/2019/01/08/my-yardstick-for-empathy/</id>
+    <published>2019-01-08T20:22:00Z</published>
+    <updated>2019-01-08T20:22:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img alt="A different perspective by Jamie Street on Unsplash" src="/images/2019-01-08-my-yardstick-for-empathy/cover.jpg?1546980459" /&gt;
+&lt;em&gt;A different perspective. Photo by &lt;a href="https://unsplash.com/photos/OAKFk5_pVWY?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText"&gt;Jamie Street&lt;/a&gt; on &lt;a href="https://unsplash.com/?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Empathy is defined as &amp;ldquo;the ability to understand and share the feelings of another&amp;rdquo; (&lt;a href="https://en.oxforddictionaries.com/definition/empathy"&gt;New Oxford American Dictionary&lt;/a&gt;). While this is a good definition, it&amp;rsquo;s not particularly useful. How do you know if you&amp;rsquo;re being empathetic? This is important to understand in my chosen field of design, but can also help anyone improve their interactions with other people.&lt;/p&gt;
+
+&lt;p&gt;My yardstick for being empathetic is &lt;strong&gt;imagining myself make the same decisions, in the same situation&lt;/strong&gt;, that another person made.&lt;/p&gt;
+
+&lt;p&gt;If I look at someone&amp;rsquo;s behavior and think, &amp;ldquo;That doesn&amp;rsquo;t make sense,&amp;rdquo; or &amp;ldquo;Why did they do that?!&amp;rdquo; then I&amp;rsquo;m not being empathetic. I&amp;rsquo;m missing a piece of context — about their knowledge, experiences, skills, emotional state, environment, etc. — that led them to do what they did. When I feel that way, I push myself to keep searching for the missing piece that will make their actions become the &lt;em&gt;only&lt;/em&gt; rational ones to take.&lt;/p&gt;
+
+&lt;p&gt;Is this always possible? No. Even armed with the same knowledge, operating in the same environment, and possessing the same skills as another person, I will occasionally make different decisions than them. Every individual is unique, and interpret and act on stimuli differently.&lt;/p&gt;
+
+&lt;p&gt;Even so, imagining myself behave the same as another person is what I strive for. That&amp;rsquo;s my yardstick for empathy.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Books Read 2018</title>
     <link rel="alternate" href="/2019/01/03/books-read-2018/"/>
@@ -428,28 +451,6 @@
 &lt;p&gt;&lt;em&gt;p.s. Yes, I applied the advice in this post to the post itself :)&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;p.p.s. If you&amp;rsquo;d like more writing advice, I created a page to house all of the tips and tricks I&amp;rsquo;ve picked up from books and articles over the years. Check it out at &lt;a href="/writing"&gt;jlzych.com/writing&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Discovery Kanban 101: My Newest Skillshare Class</title>
-    <link rel="alternate" href="/2018/03/23/discovery-kanban-101-my-newest-skillshare-class/"/>
-    <id>/2018/03/23/discovery-kanban-101-my-newest-skillshare-class/</id>
-    <published>2018-03-23T21:50:00Z</published>
-    <updated>2018-03-23T21:50:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;I just published my first Skillshare class — &lt;a href="https://www.skillshare.com/classes/Discovery-Kanban-101-How-to-Integrate-User-Centered-Design-with-Agile/677077315?teacherRef=748023&amp;amp;via=teacher-referral&amp;amp;utm_campaign=teacher-referral&amp;amp;utm_source=ShortUrl&amp;amp;utm_medium=teacher-referral"&gt;Discovery Kanban 101: How to Integrate User-Centered Design with Agile&lt;/a&gt;. From the class description:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Learn how to make space for designers and researchers to do user-centered design in an Agile/scrum engineering environment. By creating an explicit Discovery process to focus on customer needs before committing engineers to shipping code, you will unlock design’s potential to deliver &lt;strong&gt;great user experiences&lt;/strong&gt; to your customers.&lt;/p&gt;
-
-&lt;p&gt;By the end of this class, you will have built a Discovery Kanban board and learned how to use it to plan and manage the work of your team.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;While I was at Optimizely, I implemented a Discovery kanban process to improve the effectiveness of my design team (which I blogged about previously &lt;a href="/2016/07/17/discovery-kanban-at-optimizely/"&gt;here&lt;/a&gt; and &lt;a href="/2016/09/20/managing-design-work-with-discovery-kanban-at-optimizely/"&gt;here&lt;/a&gt;, and spoke about &lt;a href="/2017/11/26/my-talk-at-lean-kanban-central-europe-2017/"&gt;here&lt;/a&gt;). I took the lessons I learned from doing that and turned them into a class on Skillshare to help any design leader implement an explicit Discovery process at their organization.&lt;/p&gt;
-
-&lt;p&gt;Whether you&amp;rsquo;re a design manager, a product designer, a program manager, a product manager, or just someone who&amp;rsquo;s interested in user-centered design, I hope you find this course valuable. If you have any thoughts or questions, don&amp;rsquo;t hesitate to reach out: &lt;a href="https://twitter.com/jlzych"&gt;@jlzych&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>
 </feed>
