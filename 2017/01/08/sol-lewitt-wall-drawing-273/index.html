@@ -22,7 +22,7 @@
     <link href='/favicon.png' rel='icon' type='image/png'>
     <link href='touch-icon-iphone.png' rel='apple-touch-icon'>
     <script src='//cdn.optimizely.com/js/1111070510.js'></script>
-    <link href="/stylesheets/application.css?1543874692" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/application.css?1547447553" media="screen" rel="stylesheet" type="text/css" />
     <link href='/feed.xml' rel='alternate' title='RSS for Jeff Zych' type='application/rss+xml'>
     <script src='//use.typekit.net/kbr8kzk.js' type='text/javascript'></script>
     <script>
@@ -30,97 +30,99 @@
     </script>
   </head>
   <body>
-    <div id='main' role='main'>
-      <header>
-        <h1 class='monogram'>
-              <a title="Home" href="/"><img alt="JZ" src="/images/monogram.svg?1522103966" />
-          Jeff Zych
-          </a>
-      
-        </h1>
-        <nav class='nav-main'>
-          <ul>
-            <li><a title="About Jeff Zych" href="/about">About Me</a></li>
-            <li><a href="/archives">Archives</a></li>
-          </ul>
-        </nav>
-      </header>
-      <div class='content'>
-        <article>
-          <time class='article__date' datetime='2017-01-08'>
-            <i>Posted on</i>
-            Jan  8, 2017
-            <i>by</i>
+    <div class='container'>
+      <div id='main' role='main'>
+        <header>
+          <h1 class='monogram'>
+                <a title="Home" href="/"><img alt="JZ" src="/images/monogram.svg?1522103966" />
             Jeff Zych
-          </time>
-          <h1 class='article__title'><a href="/2017/01/08/sol-lewitt-wall-drawing-273/">Sol LeWitt - Wall Drawing</a></h1>
-          <p>I recently saw <a href="https://en.wikipedia.org/wiki/Sol_LeWitt">Sol LeWitt&rsquo;s</a> Wall Drawing #273 at the <a href="https://www.sfmoma.org/">SF MOMA</a>, which really stayed with me after leaving the museum. In particular, I like that it wasn&rsquo;t drawn by the artist himself, but rather he wrote instructions for draftspeople to draw this piece directly on the walls of the museum, thus embracing some amount of variability. From the museum&rsquo;s description:</p>
-          
-          <blockquote>
-          <p>As his works are executed over and over again in different locations, they expand or contract according to the dimensions of the space in which they are displayed and respond to ambient light and the surfaces on which they are drawn. In some instances, as in this work, those involved in the installation make decisions impacting the final composition.</p>
-          </blockquote>
-          
-          <p><img alt="Sol LeWitt's Wall Drawing #273" src="/images/2017-01-08-sol-lewitt-wall-drawing-273/wall7.jpg?1483921148" />
-          <em>Sol LeWitt&rsquo;s Wall Drawing #273</em></p>
-          
-          <p>This embrace of variability reminds me of the web. People browse the web on different devices that have different sizes and capabilities. We can&rsquo;t control how people will experience our websites. Since LeWitt left instructions for creating his pieces, I realized I could translate those instructions into code, and embrace the variability of the web in the process. The result is <a href="http://codepen.io/jlzych/full/rjVoby/">this CodePen</a>.</p>
-          
-          <p data-height="465" data-theme-id="0" data-slug-hash="rjVoby" data-default-tab="result" data-user="jlzych" data-embed-version="2" data-pen-title="Sol LeWitt – Wall Drawing #273" class="codepen">See the Pen <a href="http://codepen.io/jlzych/pen/rjVoby/">Sol LeWitt – Wall Drawing #273</a> by Jeff (<a href="http://codepen.io/jlzych">@jlzych</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-          
-          <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-          
-          <p>LeWitt left the following instructions:</p>
-          
-          <blockquote>
-          <p>A six-inch (15 cm) grid covering the walls. Lines from corners, sides, and center of the walls to random points on the grid.</p>
-          
-          <p>1st wall: Red lines from the midpoints of four sides;</p>
-          
-          <p>2nd wall: Blue lines from four corners;</p>
-          
-          <p>3rd wall: Yellow lines from the center;</p>
-          
-          <p>4th wall: Red lines from the midpoints of four sides, blue lines from four corners;</p>
-          
-          <p>5th wall: Red lines from the midpoints of four sides, yellow lines from the center;</p>
-          
-          <p>6th wall: Blue lines from four corners, yellow lines from the center;</p>
-          
-          <p>7th wall: Red lines from the midpoints of four sides, blue lines from four corners, yellow lines from the center.</p>
-          
-          <p>Each wall has an equal number of lines. (The number of lines and their length are determined by the draftsman.)</p>
-          </blockquote>
-          
-          <p>As indicated in the instructions, there are 7 separate walls with an equal number of lines, the number and length of which are determined by the draftsperson. To simulate the decisions the draftspeople make, I included controls to let people set how many lines should be drawn, and toggle which walls to see. I let each color be toggleable, as opposed listing out walls 1-7, since each wall is just different combinations of the red, blue, and yellow lines.</p>
-          
-          <p>The end result fits right in with how <a href="https://www.google.com/search?q=wall+drawing+273&amp;tbm=isch&amp;tbo=u&amp;source=univ&amp;sa=X&amp;ved=0ahUKEwjV6Jub4LPRAhUD1mMKHclqAr4QsAQIIQ&amp;biw=1438&amp;bih=780">human draftspeople</a> have turned these instructions into art. The most notable difference I see between a human and a program is the degree of randomness in the final drawing. From comparing the output of the program to versions done by people, the ones drawn by people seem less &ldquo;random.&rdquo; I get the sense that people have a tendency to more evenly distribute the lines to points throughout the grid, whereas the program can create clusters and lines that are really close to each other which a person would consider unappealing and not draw.</p>
-          
-          <p>It makes me wonder how LeWitt would respond to programmatic versions of his art. Is he okay with computers making art? Were his instructions specifically for people, or would he have embraced using machines to generate his work had the technology existed in his time? How &ldquo;random&rdquo; did he want people make these drawings? Does he like that a program is more &ldquo;random,&rdquo; or did he expect and want people to make his wall drawings in a way that they would find visually pleasing? We&rsquo;ll never know, but it was fun to interpret his work through the lens of today&rsquo;s technology.</p>
-          <footer class='article__footer'>
-            Thoughts? Reply
-            <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
-          </footer>
-        </article>
-        <div class='article-links'>
-          <div>
-            <span class='article-link-label text-uppercase text-small'>Previous article:</span>
-            <a href="/2017/01/03/books-i-read-in-2016/">&laquo; Books I Read in 2016</a>
-          </div>
-          <div>
-            <span class='article-link-label text-uppercase text-small'>Next article:</span>
-            <a href="/2017/01/29/shifting-from-a-product-centric-to-a-service-centric-mindset/">Shifting from a Product-centric to a Service-centric Mindset &raquo;</a>
+            </a>
+        
+          </h1>
+          <nav class='nav-main'>
+            <ul>
+              <li><a title="About Jeff Zych" href="/about">About Me</a></li>
+              <li><a href="/archives">Archives</a></li>
+            </ul>
+          </nav>
+        </header>
+        <div class='content'>
+          <article>
+            <time class='article__date' datetime='2017-01-08'>
+              <i>Posted on</i>
+              Jan  8, 2017
+              <i>by</i>
+              Jeff Zych
+            </time>
+            <h1 class='article__title'><a href="/2017/01/08/sol-lewitt-wall-drawing-273/">Sol LeWitt - Wall Drawing</a></h1>
+            <p>I recently saw <a href="https://en.wikipedia.org/wiki/Sol_LeWitt">Sol LeWitt&rsquo;s</a> Wall Drawing #273 at the <a href="https://www.sfmoma.org/">SF MOMA</a>, which really stayed with me after leaving the museum. In particular, I like that it wasn&rsquo;t drawn by the artist himself, but rather he wrote instructions for draftspeople to draw this piece directly on the walls of the museum, thus embracing some amount of variability. From the museum&rsquo;s description:</p>
+            
+            <blockquote>
+            <p>As his works are executed over and over again in different locations, they expand or contract according to the dimensions of the space in which they are displayed and respond to ambient light and the surfaces on which they are drawn. In some instances, as in this work, those involved in the installation make decisions impacting the final composition.</p>
+            </blockquote>
+            
+            <p><img alt="Sol LeWitt's Wall Drawing #273" src="/images/2017-01-08-sol-lewitt-wall-drawing-273/wall7.jpg?1483921148" />
+            <em>Sol LeWitt&rsquo;s Wall Drawing #273</em></p>
+            
+            <p>This embrace of variability reminds me of the web. People browse the web on different devices that have different sizes and capabilities. We can&rsquo;t control how people will experience our websites. Since LeWitt left instructions for creating his pieces, I realized I could translate those instructions into code, and embrace the variability of the web in the process. The result is <a href="http://codepen.io/jlzych/full/rjVoby/">this CodePen</a>.</p>
+            
+            <p data-height="465" data-theme-id="0" data-slug-hash="rjVoby" data-default-tab="result" data-user="jlzych" data-embed-version="2" data-pen-title="Sol LeWitt – Wall Drawing #273" class="codepen">See the Pen <a href="http://codepen.io/jlzych/pen/rjVoby/">Sol LeWitt – Wall Drawing #273</a> by Jeff (<a href="http://codepen.io/jlzych">@jlzych</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            
+            <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+            
+            <p>LeWitt left the following instructions:</p>
+            
+            <blockquote>
+            <p>A six-inch (15 cm) grid covering the walls. Lines from corners, sides, and center of the walls to random points on the grid.</p>
+            
+            <p>1st wall: Red lines from the midpoints of four sides;</p>
+            
+            <p>2nd wall: Blue lines from four corners;</p>
+            
+            <p>3rd wall: Yellow lines from the center;</p>
+            
+            <p>4th wall: Red lines from the midpoints of four sides, blue lines from four corners;</p>
+            
+            <p>5th wall: Red lines from the midpoints of four sides, yellow lines from the center;</p>
+            
+            <p>6th wall: Blue lines from four corners, yellow lines from the center;</p>
+            
+            <p>7th wall: Red lines from the midpoints of four sides, blue lines from four corners, yellow lines from the center.</p>
+            
+            <p>Each wall has an equal number of lines. (The number of lines and their length are determined by the draftsman.)</p>
+            </blockquote>
+            
+            <p>As indicated in the instructions, there are 7 separate walls with an equal number of lines, the number and length of which are determined by the draftsperson. To simulate the decisions the draftspeople make, I included controls to let people set how many lines should be drawn, and toggle which walls to see. I let each color be toggleable, as opposed listing out walls 1-7, since each wall is just different combinations of the red, blue, and yellow lines.</p>
+            
+            <p>The end result fits right in with how <a href="https://www.google.com/search?q=wall+drawing+273&amp;tbm=isch&amp;tbo=u&amp;source=univ&amp;sa=X&amp;ved=0ahUKEwjV6Jub4LPRAhUD1mMKHclqAr4QsAQIIQ&amp;biw=1438&amp;bih=780">human draftspeople</a> have turned these instructions into art. The most notable difference I see between a human and a program is the degree of randomness in the final drawing. From comparing the output of the program to versions done by people, the ones drawn by people seem less &ldquo;random.&rdquo; I get the sense that people have a tendency to more evenly distribute the lines to points throughout the grid, whereas the program can create clusters and lines that are really close to each other which a person would consider unappealing and not draw.</p>
+            
+            <p>It makes me wonder how LeWitt would respond to programmatic versions of his art. Is he okay with computers making art? Were his instructions specifically for people, or would he have embraced using machines to generate his work had the technology existed in his time? How &ldquo;random&rdquo; did he want people make these drawings? Does he like that a program is more &ldquo;random,&rdquo; or did he expect and want people to make his wall drawings in a way that they would find visually pleasing? We&rsquo;ll never know, but it was fun to interpret his work through the lens of today&rsquo;s technology.</p>
+            <footer class='article__footer'>
+              Thoughts? Reply
+              <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
+            </footer>
+          </article>
+          <div class='article-links'>
+            <div>
+              <span class='article-link-label text-uppercase text-small'>Previous article:</span>
+              <a href="/2017/01/03/books-i-read-in-2016/">&laquo; Books I Read in 2016</a>
+            </div>
+            <div>
+              <span class='article-link-label text-uppercase text-small'>Next article:</span>
+              <a href="/2017/01/29/shifting-from-a-product-centric-to-a-service-centric-mindset/">Shifting from a Product-centric to a Service-centric Mindset &raquo;</a>
+            </div>
           </div>
         </div>
       </div>
-      <footer id='site-footer'>
-        <p>
-          &copy; 2010&ndash;2019 Jeff Zych
-          &bull; Hand-crafted with
-          <a href="http://middlemanapp.com/">Middleman</a>
-        </p>
-        <a style="display: none;" href="http://plus.google.com/+JeffZych?rel=author">Google+ profile</a>
-      </footer>
     </div>
+    <footer id='site-footer'>
+      <p>
+        &copy; 2010&ndash;2019 Jeff Zych
+        &bull; Hand-crafted with
+        <a href="http://middlemanapp.com/">Middleman</a>
+      </p>
+      <a style="display: none;" href="http://plus.google.com/+JeffZych?rel=author">Google+ profile</a>
+    </footer>
     <!-- Google Analytics tracking -->
     <script>
       var _gaq = _gaq || [];
