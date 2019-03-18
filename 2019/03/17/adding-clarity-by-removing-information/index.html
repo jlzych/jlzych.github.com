@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Adding clarity by removing information by Jeff Zych</title>
+    <meta content='width=device-width, initial-scale=1.0, user-scalable=yes' name='viewport'>
+    <meta content='black' name='apple-mobile-web-app-status-bar-style'>
+    <meta content='yes' name='apple-mobile-web-app-capable'>
+    <meta content="“Where’s the clipboard?” A customer wrote this in to our support team after using our “Copy with cite” feature. But who doesn't know where the clipboard is?" name='description'>
+    <meta content='Jeff Zych' name='author'>
+    <!-- FB Open Graph meta tags -->
+    <meta content='blog' property='og:type'>
+    <meta content="Jeff Zych's Corner of the Internet" property='og:site_name'>
+    <meta content='Adding clarity by removing information by Jeff Zych' property='og:title'>
+    <meta content="“Where’s the clipboard?” A customer wrote this in to our support team after using our “Copy with cite” feature. But who doesn't know where the clipboard is?" property='og:description'>
+    <meta content='http://jlzych.com/images/2019-03-17-adding-clarity-by-removing-information/1-copied-to-clipboard.png' property='og:image'>
+    <meta content='http://jlzych.com/2019/03/17/adding-clarity-by-removing-information/' property='og:url'>
+    <!-- Additional Twitter tags - additive with og: tags -->
+    <meta content='summary_large_image' name='twitter:card'>
+    <meta name='twitter:creator' value='@jlzych'>
+    <link href="/favicon.ico?v=2" rel="icon" type="image/ico?v=2" />
+    <link href='/favicon.png' rel='icon' type='image/png'>
+    <link href='touch-icon-iphone.png' rel='apple-touch-icon'>
+    <script src='//cdn.optimizely.com/js/1111070510.js'></script>
+    <link href="/stylesheets/application.css?1552878862" media="screen" rel="stylesheet" type="text/css" />
+    <link href='/feed.xml' rel='alternate' title='RSS for Jeff Zych' type='application/rss+xml'>
+    <script src='//use.typekit.net/kbr8kzk.js' type='text/javascript'></script>
+    <script>
+      try{Typekit.load();}catch(e){}
+    </script>
+  </head>
+  <body>
+    <div class='container'>
+      <div id='main' role='main'>
+        <header>
+          <h1 class='monogram'>
+                <a title="Home" href="/"><img alt="JZ" src="/images/monogram.svg?1522103966" />
+            Jeff Zych
+            </a>
+        
+          </h1>
+          <nav class='nav-main'>
+            <ul>
+              <li><a title="About Jeff Zych" href="/about">About Me</a></li>
+              <li><a href="/archives">Archives</a></li>
+            </ul>
+          </nav>
+        </header>
+        <div class='content'>
+          <article>
+            <time class='article__date' datetime='2019-03-17'>
+              <i>Posted on</i>
+              Mar 17, 2019
+              <i>by</i>
+              Jeff Zych
+            </time>
+            <h1 class='article__title'><a href="/2019/03/17/adding-clarity-by-removing-information/">Adding clarity by removing information</a></h1>
+            <p>“Where’s the clipboard?”</p>
+            
+            <p>A customer wrote this in to our support team after using our <em>Copy with cite</em> feature. This feature allows customers to copy snippets of text from a court case, and paste them into the document they’re writing with the case’s citation appended to the end. It’s a huge time saver for lawyers when writing legal documents, and is Casetext’s most heavily used feature.</p>
+            
+            <p>When I first saw this feedback, I assumed it was an anomaly. The success message says “Copied to clipboard,” but who doesn’t know what the clipboard is? How much clearer could we make the success message?</p>
+            
+            <p>But then it came in again, and again, and again, until eventually the pattern was undeniable. It was only a small percentage of users overall who were writing in, but it was happening regularly enough that we knew we had to fix it.</p>
+            
+            <p><img alt="The original, confusing toast message that pops up after the user clicks, “Copy with cite.”" src="/images/2019-03-17-adding-clarity-by-removing-information/1-copied-to-clipboard.png?1552878860" />
+            <em>The original, confusing toast message that pops up after the user clicks, “Copy with cite.”</em></p>
+            
+            <p>To debug this issue, I opened Fullstory (a service that lets you watch back user sessions, among other things) so I could observe the people who wrote in actually use the product. After watching a few sessions, a pattern emerged. People would click “Copy with cite,” zig-zag their mouse around the screen, opening and closing menus, then write in to support to ask, “Where’s the clipboard?” (or some variation thereof).</p>
+            
+            <p>At first I didn’t understand why they were frantically throwing their cursor around the screen. What were they looking for? After watching many sessions, I finally realized what they were doing: they were looking for the clipboard in Casetext! They thought the “clipboard” was a feature in our product, as opposed to the clipboard on their OS.</p>
+            
+            <p>Now that I understood the problem, the next challenge was how to fix it. How do we communicate that the clipboard we’re referring to is the system’s clipboard? I started rewriting the text, with options like, “Copied to clipboard. Press ctrl + V to paste.” “Copied to your system’s clipboard.” “Copied to <em>your</em> clipboard” [emphasis added].</p>
+            
+            <p>But none of these options felt right. They were either too wordy, too technical, or just more confusing. I took a step back and re-examined the problem. The word “clipboard” is what was tripping people up. What if we just removed that word altogether? Could we get away with just saying “Copied” instead? For the people having trouble with this feature it may prevent them from thinking the clipboard is a feature we offer. For people who aren’t getting confused in the first place, this is should be just as clear as saying “Copied to clipboard.”</p>
+            
+            <p><img alt="The refined toast message." src="/images/2019-03-17-adding-clarity-by-removing-information/2-copied.png?1552878860" />
+            <em>The refined toast message.</em></p>
+            
+            <p>The change felt a little risky, but at the same time it felt right. To validate this would work, I decided to just make the change and see what happens. An A/B test and usability testing would both be correct methods to test my hypothesis, but in this case neither tool was the right fit. An A/B test would have taken too long to get statistically valid results, since the conversion event of “failing” to use the feature was very low. It’s also a difficult conversion event to measure. And a usability test would have been more time-consuming and costly than just shipping the change.</p>
+            
+            <p>Since the solution was easy to implement (the code change was just removing 13 characters), and the impact if I was wrong was low (the change was unlikely to be worse, and it was easy to reverse course if it was), learning by making a change to the working product was the fastest, cheapest way to go.</p>
+            
+            <p>After shipping the fix I kept an eye on the support messages coming in. In the following 2 months, only one person was confused about what to do after clicking “Copy with cite,” as compared to the 8 people who had written in in the previous 2 months. Not a perfect record, but an improvement nonetheless!</p>
+            
+            <p>In this case, the best way to improve the clarity of the UI was to provide <em>less</em> information.</p>
+            <footer class='article__footer'>
+              Thoughts? Reply
+              <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
+            </footer>
+          </article>
+          <div class='article-links'>
+            <div>
+              <span class='article-link-label text-uppercase text-small'>Previous article:</span>
+              <a href="/2019/01/08/my-yardstick-for-empathy/">&laquo; My Yardstick for Empathy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id='site-footer'>
+      <p>
+        &copy; 2010&ndash;2019 Jeff Zych
+        &bull; Hand-crafted with
+        <a href="http://middlemanapp.com/">Middleman</a>
+      </p>
+      <a style="display: none;" href="http://plus.google.com/+JeffZych?rel=author">Google+ profile</a>
+    </footer>
+    <!-- Google Analytics tracking -->
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-21389659-1']);
+      _gaq.push(['_trackPageview']);
+      
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
+

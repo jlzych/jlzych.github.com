@@ -5,10 +5,50 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2019-01-08T20:22:00Z</updated>
+  <updated>2019-03-18T02:54:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>Adding clarity by removing information</title>
+    <link rel="alternate" href="/2019/03/17/adding-clarity-by-removing-information/"/>
+    <id>/2019/03/17/adding-clarity-by-removing-information/</id>
+    <published>2019-03-18T02:54:00Z</published>
+    <updated>2019-03-18T02:54:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;“Where’s the clipboard?”&lt;/p&gt;
+
+&lt;p&gt;A customer wrote this in to our support team after using our &lt;em&gt;Copy with cite&lt;/em&gt; feature. This feature allows customers to copy snippets of text from a court case, and paste them into the document they’re writing with the case’s citation appended to the end. It’s a huge time saver for lawyers when writing legal documents, and is Casetext’s most heavily used feature.&lt;/p&gt;
+
+&lt;p&gt;When I first saw this feedback, I assumed it was an anomaly. The success message says “Copied to clipboard,” but who doesn’t know what the clipboard is? How much clearer could we make the success message?&lt;/p&gt;
+
+&lt;p&gt;But then it came in again, and again, and again, until eventually the pattern was undeniable. It was only a small percentage of users overall who were writing in, but it was happening regularly enough that we knew we had to fix it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="The original, confusing toast message that pops up after the user clicks, “Copy with cite.”" src="/images/2019-03-17-adding-clarity-by-removing-information/1-copied-to-clipboard.png?1552878860" /&gt;
+&lt;em&gt;The original, confusing toast message that pops up after the user clicks, “Copy with cite.”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;To debug this issue, I opened Fullstory (a service that lets you watch back user sessions, among other things) so I could observe the people who wrote in actually use the product. After watching a few sessions, a pattern emerged. People would click “Copy with cite,” zig-zag their mouse around the screen, opening and closing menus, then write in to support to ask, “Where’s the clipboard?” (or some variation thereof).&lt;/p&gt;
+
+&lt;p&gt;At first I didn’t understand why they were frantically throwing their cursor around the screen. What were they looking for? After watching many sessions, I finally realized what they were doing: they were looking for the clipboard in Casetext! They thought the “clipboard” was a feature in our product, as opposed to the clipboard on their OS.&lt;/p&gt;
+
+&lt;p&gt;Now that I understood the problem, the next challenge was how to fix it. How do we communicate that the clipboard we’re referring to is the system’s clipboard? I started rewriting the text, with options like, “Copied to clipboard. Press ctrl + V to paste.” “Copied to your system’s clipboard.” “Copied to &lt;em&gt;your&lt;/em&gt; clipboard” [emphasis added].&lt;/p&gt;
+
+&lt;p&gt;But none of these options felt right. They were either too wordy, too technical, or just more confusing. I took a step back and re-examined the problem. The word “clipboard” is what was tripping people up. What if we just removed that word altogether? Could we get away with just saying “Copied” instead? For the people having trouble with this feature it may prevent them from thinking the clipboard is a feature we offer. For people who aren’t getting confused in the first place, this is should be just as clear as saying “Copied to clipboard.”&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="The refined toast message." src="/images/2019-03-17-adding-clarity-by-removing-information/2-copied.png?1552878860" /&gt;
+&lt;em&gt;The refined toast message.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The change felt a little risky, but at the same time it felt right. To validate this would work, I decided to just make the change and see what happens. An A/B test and usability testing would both be correct methods to test my hypothesis, but in this case neither tool was the right fit. An A/B test would have taken too long to get statistically valid results, since the conversion event of “failing” to use the feature was very low. It’s also a difficult conversion event to measure. And a usability test would have been more time-consuming and costly than just shipping the change.&lt;/p&gt;
+
+&lt;p&gt;Since the solution was easy to implement (the code change was just removing 13 characters), and the impact if I was wrong was low (the change was unlikely to be worse, and it was easy to reverse course if it was), learning by making a change to the working product was the fastest, cheapest way to go.&lt;/p&gt;
+
+&lt;p&gt;After shipping the fix I kept an eye on the support messages coming in. In the following 2 months, only one person was confused about what to do after clicking “Copy with cite,” as compared to the 8 people who had written in in the previous 2 months. Not a perfect record, but an improvement nonetheless!&lt;/p&gt;
+
+&lt;p&gt;In this case, the best way to improve the clarity of the UI was to provide &lt;em&gt;less&lt;/em&gt; information.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>My Yardstick for Empathy</title>
     <link rel="alternate" href="/2019/01/08/my-yardstick-for-empathy/"/>
@@ -420,41 +460,6 @@
 &lt;hr&gt;
 
 &lt;p&gt;&lt;em&gt;If you enjoyed this post (and I’m assuming you did if you made it this far), then I highly recommend reading &lt;a href="https://amzn.to/2yY7tdV"&gt;the book&lt;/a&gt; yourself. I only covered the highlights here, and the book goes into a lot more depth on all of these topics. Enjoy!&lt;/em&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Where do you get ideas for blog posts?</title>
-    <link rel="alternate" href="/2018/05/25/where-do-you-get-ideas-for-blog-posts/"/>
-    <id>/2018/05/25/where-do-you-get-ideas-for-blog-posts/</id>
-    <published>2018-05-25T20:27:00Z</published>
-    <updated>2018-05-25T20:27:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;&lt;img alt="A picture of a dam by Anthony Da Cruz on Unsplash" src="/images/2018-05-25-where-do-you-get-ideas-for-blog-posts/dam.jpg?1527281184" /&gt;
-&lt;em&gt;A dam, blocking all of your great ideas &amp;ndash; Photo by &lt;a href="https://unsplash.com/photos/DMfSpSrhF-k?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText"&gt;Anthony Da Cruz&lt;/a&gt; on &lt;a href="https://unsplash.com/?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;People often ask me, “Where do you get ideas for blog posts?” I have many sources, but my most effective one is simple: pay attention to the questions people ask you.&lt;/p&gt;
-
-&lt;p&gt;When a person asks you a question, it means they’re seeking your advice or expertise to fill a gap in their knowledge. Take your answer, and write it down.&lt;/p&gt;
-
-&lt;p&gt;This technique works so well because it overcomes the two biggest barriers to blogging: “What should I write about?” and, “Does anyone care what I have to say?”&lt;/p&gt;
-
-&lt;p&gt;It overcomes the first barrier by giving you a specific topic to write about. Our minds contain a lifetime of experiences to draw from, but when you try to find something specific to write about you’re blank. All that accumulated knowledge is locked up in your head, as if trapped behind a dam. A question cracks the dam and starts the flow of ideas.&lt;/p&gt;
-
-&lt;p&gt;It overcomes the second barrier (“will anyone care?”) because you already have your first reader: the question asker. Congratulations! You just infinitely increased your reader base. And chances are they aren’t the only person who’s ever asked this question, or ever will ask it. When this question comes up in the future, you’ll be more articulate when responding, and you can keep building your audience by sharing your post.&lt;/p&gt;
-
-&lt;p&gt;Having at least one reader has another benefit: you now have a specific person to write for. A leading cause of poorly written blog posts is that the author doesn’t know who they’re writing for (trust me, I’ve made this mistake plenty). This leads them to try to write for everyone. Which means their writing connects with no one. The resulting article is a Frankenstein’s monster of ideas bolted together that aimlessly stumbles around mumbling and groaning and scaring away the villagers.&lt;/p&gt;
-
-&lt;p&gt;Instead, you can avoid this fate by conjuring up the question asker in your mind, and write your response as if you’re talking to them. Instead of creating a monster, your post will sound like a polished, engaging TED speaker.&lt;/p&gt;
-
-&lt;p&gt;A final benefit to answering a specific question is that it keeps your post &lt;strong&gt;focused&lt;/strong&gt;. Just answer the question, and call it a day. No more, no less. Another leading cause of Frankenstein’s monster blog posts is that they don’t have a specific point they’re trying to make. So the post tries to say everything there is to say about a subject, or deviates down side roads, or doesn’t say anything remarkable, or is just plain confusing. Answering a specific question keeps these temptations at bay.&lt;/p&gt;
-
-&lt;p&gt;So the next time you’re wondering where to get started blogging, start by paying attention to the questions people ask you. Then write down your answers.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;p.s. Yes, I applied the advice in this post to the post itself :)&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;p.p.s. If you&amp;rsquo;d like more writing advice, I created a page to house all of the tips and tricks I&amp;rsquo;ve picked up from books and articles over the years. Check it out at &lt;a href="/writing"&gt;jlzych.com/writing&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 </content>
   </entry>
 </feed>
