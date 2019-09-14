@@ -5,10 +5,32 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2019-06-01T23:03:00Z</updated>
+  <updated>2019-09-14T01:38:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>User Research Interview Tip: Shut. Up.</title>
+    <link rel="alternate" href="/2019/09/13/user-research-interview-tip-shut-up/"/>
+    <id>/2019/09/13/user-research-interview-tip-shut-up/</id>
+    <published>2019-09-14T01:38:00Z</published>
+    <updated>2019-09-14T01:38:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;If you were to look at Robert Caro&amp;rsquo;s notebook, you would see lots of &amp;ldquo;SU”s, short for “Shut Up!&amp;rdquo;, scattered throughout his interview notes. The Pulitzer-prize winning author of &lt;em&gt;The Power Broker&lt;/em&gt;, among other mammoth books, uses this trick to keep himself silent while interviewing subjects. About this, &lt;a href="https://www.newyorker.com/magazine/2019/01/28/the-secrets-of-lyndon-johnsons-archives"&gt;he writes&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;In interviews, silence is the weapon, silence and people’s need to fill it—as long as the person isn’t you, the interviewer. Two of fiction’s greatest interviewers—Georges Simenon’s Inspector Maigret and John le Carré’s George Smiley—have little devices they use to keep themselves from talking and to let silence do its work. Maigret cleans his ever-present pipe, tapping it gently on his desk and then scraping it out until the witness breaks down and talks. Smiley takes off his eyeglasses and polishes them with the thick end of his necktie. As for me, I have less class. When I’m waiting for the person I’m interviewing to break a silence by giving me a piece of information I want, I write “SU” (for Shut Up!) in my notebook. If anyone were ever to look through my notebooks, he would find a lot of “SU”s.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is a fantastic trick to use during user research interviews, too. Remaining silent after a person&amp;rsquo;s initial response often leads them to elaborate more, revealing an additional nuance, or an exception to the &amp;ldquo;typical&amp;rdquo; use case they just described.&lt;/p&gt;
+
+&lt;p&gt;I take longhand notes on paper for this reason. My note taking never keeps pace with the speaker, so I&amp;rsquo;m always catching up after they stop talking, which forces me to shut up.&lt;/p&gt;
+
+&lt;p&gt;When you&amp;rsquo;re interviewing users, find your own eyeglass polishing or &amp;ldquo;SU.&amp;rdquo;&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Interface Lovers Interview</title>
     <link rel="alternate" href="/2019/06/01/interface-lovers-interview/"/>
@@ -236,41 +258,6 @@
 &lt;li&gt;&lt;em&gt;How to Change Your Mind&lt;/em&gt; by Michael Pollan (10/27/18)&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;Ogilvy on Advertising&lt;/em&gt; by David Ogilvy (11/11/18)&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;Draft No. 4. On the writing process&lt;/em&gt; by John McPhee (11/14/18)&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-  </entry>
-  <entry>
-    <title>My Beliefs About Design</title>
-    <link rel="alternate" href="/2018/12/03/my-beliefs-about-design/"/>
-    <id>/2018/12/03/my-beliefs-about-design/</id>
-    <published>2018-12-03T21:12:00Z</published>
-    <updated>2018-12-03T21:12:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;&lt;img alt="Trees by Spencer Backman on Unsplash" src="/images/2018-12-03-my-beliefs-about-design/trees.jpg?1543874691" /&gt;
-&lt;em&gt;Photo by &lt;a href="https://unsplash.com/@spencerbackman"&gt;Spencer Backman&lt;/a&gt; on &lt;a href="https://unsplash.com/?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Design doesn&amp;rsquo;t own the customer experience. A great customer experience is the emergent outcome of the contributions of every department.&lt;/li&gt;
-&lt;li&gt;Design is not the center of the universe. Design is one function of many at an organization.&lt;/li&gt;
-&lt;li&gt;Other departments have more customer contact than you. Listen to them.&lt;/li&gt;
-&lt;li&gt;Don&amp;rsquo;t hand your work down from on high and expect everyone to worship its genius. You need to bring people along for the ride so that they see how you got to your solution, and can get there themselves.&lt;/li&gt;
-&lt;li&gt;Everyone can improve the customer&amp;rsquo;s experience, not just designers. Foster an environment where everyone applies a user-centered mindset to their work.&lt;/li&gt;
-&lt;li&gt;There&amp;rsquo;s no perfect, one-size-fits-all design process. Skilled designers have a variety of tools in their tool belt, and know when to use each one.&lt;/li&gt;
-&lt;li&gt;Done is better than perfect.&lt;/li&gt;
-&lt;li&gt;No design is perfect. Always be iterating.&lt;/li&gt;
-&lt;li&gt;Don&amp;rsquo;t fall in love with your designs. Be willing to kill your darlings.&lt;/li&gt;
-&lt;li&gt;You should always feel a little uncomfortable showing your work to peers. If you don&amp;rsquo;t, you&amp;rsquo;ve waited too long.&lt;/li&gt;
-&lt;li&gt;The only thing that matters to customers is what ships. Not your prototypes, wireframes, user journeys, or any other artifact of the design process.&lt;/li&gt;
-&lt;li&gt;The only true measure of your design&amp;rsquo;s success is the response from customers.&lt;/li&gt;
-&lt;li&gt;Stay curious. Regularly seek out new ideas, experiences, and perspectives.&lt;/li&gt;
-&lt;li&gt;Stay &lt;a href="https://www.youtube.com/watch?v=tvTRZJ-4EyI"&gt;humble&lt;/a&gt;. You don&amp;rsquo;t know what&amp;rsquo;s best just because the word &amp;ldquo;designer&amp;rdquo; is in your title.&lt;/li&gt;
-&lt;li&gt;Don&amp;rsquo;t hide behind jargon and the cloak of the &amp;ldquo;creative.&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Great design is rooted in empathy. Empathy not just for the end user, but also for your coworkers, company, and society.&lt;/li&gt;
-&lt;li&gt;Having empathy for your customers means actually talking to them.&lt;/li&gt;
-&lt;li&gt;Don&amp;rsquo;t automatically ignore someone&amp;rsquo;s feedback because they&amp;rsquo;re more junior than you, or don&amp;rsquo;t have &amp;ldquo;designer&amp;rdquo; in their title. Don&amp;rsquo;t automatically listen to someone&amp;rsquo;s feedback because they&amp;rsquo;re more senior than you.&lt;/li&gt;
-&lt;li&gt;Design needs to be aligned to the needs of the business, and deliver measurable business value. Don&amp;rsquo;t design for design&amp;rsquo;s sake.&lt;/li&gt;
 &lt;/ul&gt;
 </content>
   </entry>
