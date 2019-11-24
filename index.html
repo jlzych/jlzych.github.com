@@ -28,7 +28,7 @@
     <meta name="msapplication-TileColor" content="#fffef6">
     <meta name="theme-color" content="#ffffff">
     <script src='//cdn.optimizely.com/js/1111070510.js'></script>
-    <link href="/stylesheets/application.css?1574039727" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/application.css?1574555791" media="screen" rel="stylesheet" type="text/css" />
     <link href='/feed.xml' rel='alternate' title='RSS for Jeff Zych' type='application/rss+xml'>
     <script src='//use.typekit.net/okn2nfu.js' type='text/javascript'></script>
     <script>
@@ -51,6 +51,30 @@
           </ul>
         </nav>
         <div class='content'>
+          <article>
+            <time class='article__date' datetime='2019-11-23'>
+              <i>Posted on</i>
+              Nov 23, 2019
+              <i>by</i>
+              Jeff Zych
+            </time>
+            <h1 class='article__title'><a href="/2019/11/23/a-story-about-the-importance-of-designing-every-screen/">A story about the importance of designing every screen</a></h1>
+            <p>&ldquo;What does the &lsquo;Archived&rsquo; tab look like?&rdquo;</p>
+            
+            <p>I was walking the engineers through the final designs of some admin screens when they asked me this. The page is just a table of objects, with a tab showing the active ones, and another tab showing archived ones.</p>
+            
+            <p>I hadn&rsquo;t explicitly designed the &ldquo;Archived&rdquo; tab since it was the same basic design as the accompanying active tab – a table. But I told the engineers I would mock it up.</p>
+            
+            <p>I expected mocking it up to take a few minutes. Boy was I naive! As I mocked it up I discovered a bunch of complexity that I hadn’t anticipated (and the engineers hadn’t anticipated either). What’s the un-archive flow? These objects can be nested inside of each other (like folders), so does un-archiving a parent un-archive all of its descendants? If a child is nested, but the parent is active, how do we display that in the table (on the active tab, children are visually shown underneath and indented from parents, but if the parent isn’t archived the child will be &ldquo;orphaned&rdquo; on the archived tab)? If a parent and its children are archived, can you un-archive just a child? If so, where does it appear in the active hierarchy (it will once again be &ldquo;orphaned&rdquo;)?</p>
+            
+            <p>I mocked up these flows and made some product and design decisions to address the above complexity based on what the user would expect in these situations, and what I believe is technically possible based on my understanding of how the feature is being built. I shared it with the engineers and luckily they agreed with my decisions, so we had a happy ending (for now, at least — more unforeseen complexity may pop up while they code it).</p>
+            
+            <p>The lesson here is that you should always <strong>design every screen</strong>, even if you assume it will look the same as another similar screen. Engineers appreciate you being explicit, and in the worst case (or best case, depending on your perspective), you’ll discover open questions that need to be addressed.</p>
+            <footer class='article__footer'>
+              Thoughts? Reply
+              <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
+            </footer>
+          </article>
           <article>
             <time class='article__date' datetime='2019-09-13'>
               <i>Posted on</i>
@@ -191,35 +215,6 @@
             <p>After shipping the fix I kept an eye on the support messages coming in. In the following 2 months, only one person was confused about what to do after clicking “Copy with cite,” as compared to the 8 people who had written in in the previous 2 months. Not a perfect record, but an improvement nonetheless!</p>
             
             <p>In this case, the best way to improve the clarity of the UI was to provide <em>less</em> information.</p>
-            <footer class='article__footer'>
-              Thoughts? Reply
-              <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
-            </footer>
-          </article>
-          <article>
-            <time class='article__date' datetime='2019-01-08'>
-              <i>Posted on</i>
-              Jan  8, 2019
-              <i>by</i>
-              Jeff Zych
-            </time>
-            <h1 class='article__title'><a href="/2019/01/08/my-yardstick-for-empathy/">My Yardstick for Empathy</a></h1>
-            <p><img alt="A different perspective by Jamie Street on Unsplash" src="/images/2019-01-08-my-yardstick-for-empathy/cover.jpg?1546980459" />
-            <em>A different perspective. Photo by <a href="https://unsplash.com/photos/OAKFk5_pVWY?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jamie Street</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></em></p>
-            
-            <p>How do you know if you&rsquo;re being empathetic? It&rsquo;s easy to throw the term around, but difficult to actually apply. This is important to understand in my chosen field of design, but can also help anyone improve their interactions with other people.</p>
-            
-            <p>My yardstick for being empathetic is <strong>imagining myself make the same decisions, in the same situation</strong>, that another person made.</p>
-            
-            <p>If I look at someone&rsquo;s behavior and think, &ldquo;That doesn&rsquo;t make sense,&rdquo; or &ldquo;Why did they do that?!&rdquo; then I&rsquo;m not being empathetic. I&rsquo;m missing a piece of context — about their knowledge, experiences, skills, emotional state, environment, etc. — that led them to do what they did. When I feel that way, I push myself to keep searching for the missing piece that will make their actions become the <em>only</em> rational ones to take.</p>
-            
-            <p>Is this always possible? No. Even armed with the same knowledge, operating in the same environment, and possessing the same skills as another person, I will occasionally make different decisions than them. Every individual is unique, and interpret and act on stimuli differently.</p>
-            
-            <p>Even so, imagining myself behave the same as another person is what I strive for. That&rsquo;s my yardstick for empathy.</p>
-            
-            <hr>
-            
-            <p><em>If you want to learn more about empathy and how to apply it to your work and personal life, I highly recommend</em> <a href="https://rosenfeldmedia.com/books/practical-empathy/">Practical Empathy</a> <em>by <a href="https://indiyoung.com/">Indi Young</a>.</em></p>
             <footer class='article__footer'>
               Thoughts? Reply
               <a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>

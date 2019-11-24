@@ -5,10 +5,32 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2019-09-14T01:38:00Z</updated>
+  <updated>2019-11-24T00:27:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>A story about the importance of designing every screen</title>
+    <link rel="alternate" href="/2019/11/23/a-story-about-the-importance-of-designing-every-screen/"/>
+    <id>/2019/11/23/a-story-about-the-importance-of-designing-every-screen/</id>
+    <published>2019-11-24T00:27:00Z</published>
+    <updated>2019-11-24T00:27:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;&amp;ldquo;What does the &amp;lsquo;Archived&amp;rsquo; tab look like?&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;I was walking the engineers through the final designs of some admin screens when they asked me this. The page is just a table of objects, with a tab showing the active ones, and another tab showing archived ones.&lt;/p&gt;
+
+&lt;p&gt;I hadn&amp;rsquo;t explicitly designed the &amp;ldquo;Archived&amp;rdquo; tab since it was the same basic design as the accompanying active tab – a table. But I told the engineers I would mock it up.&lt;/p&gt;
+
+&lt;p&gt;I expected mocking it up to take a few minutes. Boy was I naive! As I mocked it up I discovered a bunch of complexity that I hadn’t anticipated (and the engineers hadn’t anticipated either). What’s the un-archive flow? These objects can be nested inside of each other (like folders), so does un-archiving a parent un-archive all of its descendants? If a child is nested, but the parent is active, how do we display that in the table (on the active tab, children are visually shown underneath and indented from parents, but if the parent isn’t archived the child will be &amp;ldquo;orphaned&amp;rdquo; on the archived tab)? If a parent and its children are archived, can you un-archive just a child? If so, where does it appear in the active hierarchy (it will once again be &amp;ldquo;orphaned&amp;rdquo;)?&lt;/p&gt;
+
+&lt;p&gt;I mocked up these flows and made some product and design decisions to address the above complexity based on what the user would expect in these situations, and what I believe is technically possible based on my understanding of how the feature is being built. I shared it with the engineers and luckily they agreed with my decisions, so we had a happy ending (for now, at least — more unforeseen complexity may pop up while they code it).&lt;/p&gt;
+
+&lt;p&gt;The lesson here is that you should always &lt;strong&gt;design every screen&lt;/strong&gt;, even if you assume it will look the same as another similar screen. Engineers appreciate you being explicit, and in the worst case (or best case, depending on your perspective), you’ll discover open questions that need to be addressed.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>User Research Interview Tip: Shut. Up.</title>
     <link rel="alternate" href="/2019/09/13/user-research-interview-tip-shut-up/"/>
@@ -171,94 +193,6 @@
 &lt;hr&gt;
 
 &lt;p&gt;&lt;em&gt;If you want to learn more about empathy and how to apply it to your work and personal life, I highly recommend&lt;/em&gt; &lt;a href="https://rosenfeldmedia.com/books/practical-empathy/"&gt;Practical Empathy&lt;/a&gt; &lt;em&gt;by &lt;a href="https://indiyoung.com/"&gt;Indi Young&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Books Read 2018</title>
-    <link rel="alternate" href="/2019/01/03/books-read-2018/"/>
-    <id>/2019/01/03/books-read-2018/</id>
-    <published>2019-01-04T00:26:00Z</published>
-    <updated>2019-01-04T00:26:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;In 2018 I read 23 books, which is a solid 9 more than &lt;a href="/2017/12/31/books-read-in-2017/"&gt;last year&amp;rsquo;s paltry 14&lt;/a&gt;, and 1 more than &lt;a href="/2017/01/03/books-i-read-in-2016/"&gt;2016&lt;/a&gt;). I credit the improvement to the 4-month sabbatical I took in the spring. Not working really frees up time 😄&lt;/p&gt;
-
-&lt;p&gt;For the last 2 years I said I needed to read more fiction since I only read 3 in 2016 and 2 in 2017. So how did I do? I&amp;rsquo;m proud to say I managed to read 7 fiction books this year (if you can count &lt;em&gt;My Dad Wrote a Porno&lt;/em&gt; as &amp;ldquo;fiction&amp;rdquo;&amp;hellip;). My reading still skews heavily to non-fiction, and specifically  design, but that&amp;rsquo;s what I&amp;rsquo;m passionate about and it helps me professionally, so I&amp;rsquo;m ok with it.&lt;/p&gt;
-
-&lt;p&gt;I also apparently didn&amp;rsquo;t finish any books in January or February. I thought this might have been a mistake at first, but when I looked back on that time I realized it&amp;rsquo;s because I was wrapping things up at Optimizely, and reading both &lt;em&gt;Quicksilver&lt;/em&gt; by Neal Stephenson and &lt;em&gt;Story&lt;/em&gt; by Robert McKee at the same time, which are long books that took awhile to work through.&lt;/p&gt;
-
-&lt;h2 id="highlights"&gt;Highlights&lt;/h2&gt;
-
-&lt;h3 id="story-substance-structure-style-and-the-principles-of-screenwriting"&gt;Story: Substance, Structure, Style, and the Principles of Screenwriting&lt;/h3&gt;
-
-&lt;p&gt;&lt;em&gt;by Robert McKee&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve read next to nothing about writing stories before, but Robert McKee&amp;rsquo;s primer on the subject is excellent. Even though I&amp;rsquo;m not a fiction author, I found his principles for writing compelling narratives valuable beyond just the domain of screenwriting.&lt;/p&gt;
-
-&lt;h3 id="handstyle-lettering"&gt;Handstyle Lettering&lt;/h3&gt;
-
-&lt;p&gt;&lt;em&gt;Published and edited by Victionary&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;There wasn&amp;rsquo;t much to &amp;ldquo;read&amp;rdquo; in this book, but it was full of beautiful hand-lettered pieces that continue to inspire me to be a better letterer.&lt;/p&gt;
-
-&lt;h3 id="the-baroque-cycle"&gt;The Baroque Cycle&lt;/h3&gt;
-
-&lt;p&gt;&lt;em&gt;by Neal Stephenson&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Neal Stephenson&amp;rsquo;s Baroque Cycle is a broad, staggering, 3-volume and 2,500+ page opus of historical science fiction, making it no small feat to complete (I read the first 2 this year, and am almost done with the 3rd volume). It takes place during the scientific revolution of the 17th and 18th centuries when the world transitioned out of feudal rule towards a more rational and merit-based society that we would recognize as modern. It weaves together a story between fictional and non-fictional characters, including Newton, Leibniz, Hooke, Wren, royalty, and other persons-of-quality. Although the series can be slow and byzantine at times, Stephenson makes up for it with his attention to detail and the sheer amount of research and effort he put into accurately capturing the time period and bringing the story to life. Even just having the audacity to put yourself in Newton&amp;rsquo;s head to speak from his perspective, much less to do so &lt;em&gt;convincingly&lt;/em&gt;, makes the series worth the effort.&lt;/p&gt;
-
-&lt;h3 id="good-strategy-bad-strategy"&gt;Good Strategy, Bad Strategy&lt;/h3&gt;
-
-&lt;p&gt;&lt;em&gt;by Richard P. Rumelt&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Strategy is a fuzzy concept, but Rumelt makes it concrete and approachable with many examples of good and bad strategy. &lt;a href="/2018/06/27/notes-from-good-strategy-bad-strategy/"&gt;Read my full notes here&lt;/a&gt;. Highly recommended.&lt;/p&gt;
-
-&lt;h3 id="bird-by-bird-some-instructions-on-writing-and-life"&gt;Bird by Bird: Some Instructions on Writing and Life&lt;/h3&gt;
-
-&lt;p&gt;&lt;em&gt;by Anne Lamott&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;A great little meditation on the writing process (and life!), sprinkled with useful tips and tricks throughout.&lt;/p&gt;
-
-&lt;h3 id="creative-selection-inside-apple-39-s-design-process"&gt;Creative Selection: Inside Apple&amp;rsquo;s design process&lt;/h3&gt;
-
-&lt;p&gt;&lt;em&gt;by Ken Kocienda&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Ken Kocienda was a software engineer during the &amp;ldquo;golden age of Steve Jobs,&amp;rdquo; and provides a fascinating insight into the company&amp;rsquo;s design process. I&amp;rsquo;m still chewing on what I read (and hope to publish more thoughts soon), but it&amp;rsquo;s striking how different it is from any process I&amp;rsquo;ve ever seen at any company, and different from best practices written about in books. It&amp;rsquo;s basically all built around Steve Jobs&amp;rsquo; exacting taste, with designers and developers demoing their work to Steve with the hope of earning his approval. Very difficult to replicate, but the results speak for themselves.&lt;/p&gt;
-
-&lt;h3 id="ogilvy-on-advertising"&gt;Ogilvy on Advertising&lt;/h3&gt;
-
-&lt;p&gt;&lt;em&gt;by David Ogilvy&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;I hadn&amp;rsquo;t read much about advertising before, but Ogilvy&amp;rsquo;s book on the subject is great. It&amp;rsquo;s full of practical advice on how to write compelling headlines and ads that sell. &lt;a href="/2018/11/12/how-to-write-effective-advertisements-according-to-david-ogilvy/"&gt;Read my notes here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id="full-list-of-books-read"&gt;Full List of Books Read&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Story: Substance, Structure, Style, and the Principles of Screenwriting&lt;/em&gt; by Robert McKee (3/7/18)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;The Color of Pixar&lt;/em&gt; by Tia Kratter (3/18/18)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Conversational Design&lt;/em&gt; by Erika Hall (3/27/18)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Quicksilver&lt;/em&gt; by Neal Stephenson (4/3/18)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Handstyle Lettering&lt;/em&gt; published and edited by Victionary (4/24/18)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Bimimicry: Innovation Inspired by Nature&lt;/em&gt; by Janine M. Benyus (5/4/18)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Design is Storytelling&lt;/em&gt; by Ellen Lupton (5/11/18)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Trip&lt;/em&gt; by Tao Lin (5/20/18)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Good Strategy, Bad Strategy: The Difference and Why it Matters&lt;/em&gt; by Richard P. Rumelt (5/27/18)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Bird by Bird: Some Instructions on Writing and Life&lt;/em&gt; by Anne Lamott (6/10/18)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;The Inmates are Running the Asylum&lt;/em&gt; by Alan Cooper (6/13/18)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;It Chooses You&lt;/em&gt; by Miranda July (6/13/18)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;String Theory&lt;/em&gt; by David Foster Wallace (6/22/18)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Invisible Cities&lt;/em&gt; by Italo Calvino (6/28/18)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;My Dad Wrote a Porno&lt;/em&gt; by Jamie Morton, James Cooper, Alice Levine, and Rocky Flintstone (7/1/18)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;The User Experience Team of One&lt;/em&gt; by Leah Buley (7/8/18)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Change by Design&lt;/em&gt; by Tim Brown (9/3/18)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Darkness at Noon&lt;/em&gt; by Arthur Koestler (9/16/2018)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Creative Selection: Inside Apple’s design process during the golden age of Steve Jobs&lt;/em&gt; by Ken Kocienda (9/20/18)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;The Confusion&lt;/em&gt; by Neal Stephenson (9/26/18)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;How to Change Your Mind&lt;/em&gt; by Michael Pollan (10/27/18)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Ogilvy on Advertising&lt;/em&gt; by David Ogilvy (11/11/18)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Draft No. 4. On the writing process&lt;/em&gt; by John McPhee (11/14/18)&lt;/li&gt;
-&lt;/ul&gt;
 </content>
   </entry>
 </feed>
