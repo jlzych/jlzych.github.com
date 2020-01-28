@@ -5,10 +5,62 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2020-01-23T05:49:00Z</updated>
+  <updated>2020-01-28T06:22:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>Site Redesign I: The Guiding Concept</title>
+    <link rel="alternate" href="/2020/01/27/site-redesign-i-the-guiding-concept/"/>
+    <id>/2020/01/27/site-redesign-i-the-guiding-concept/</id>
+    <published>2020-01-28T06:22:00Z</published>
+    <updated>2020-01-28T06:22:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;As some of you may have noticed, I (semi-)recently gave my site a visual overhaul. It&amp;rsquo;s far more opinionated than before, so I want to document my decision making process over the next couple of posts.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="/images/2020-redesign/before-after.png"&gt;&lt;img alt="Screenshot of my site before and after the redesign" src="/images/2020-redesign/before-after.png?1580194146" /&gt;&lt;/a&gt;
+&lt;em&gt;Before (left): a dull gray background. Minion typeface throughout. After (right): much warmer. More engaging. More personality.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;First up is the concept that drove the visual design of the site. The concept took a long time to come into focus, but is the most important (and hardest) part of the redesign.&lt;/p&gt;
+
+&lt;p&gt;When I transitioned my site from a portfolio to a blog (circa 2012, after graudating from grad school), there was no concept behind it. I just wanted a site that &amp;ldquo;didn&amp;rsquo;t look bad&amp;rdquo; and was easy to read (it was a &lt;em&gt;blog&lt;/em&gt;, remember?). That meant safe, overused typeface (Minion). Minimal color. No ornamentation. Nothing flashy or special at all, really. Just text on a page.&lt;/p&gt;
+
+&lt;p&gt;The &lt;em&gt;JZ&lt;/em&gt; monogram was just the letters set in a nice font, cut out of a box. I designed it like that because I thought it looked cool. The image came to me one day, so I whipped it up in Illustrator. I chose the blue-kissed green because it looked nice and was neither flashy nor boring. Not exactly the strongest reasoning.&lt;/p&gt;
+
+&lt;p&gt;So I ended up with a site that looked fine, and avoided making mistakes, but that was it. It wasn&amp;rsquo;t special or unique or interesting.&lt;/p&gt;
+
+&lt;p&gt;And that&amp;rsquo;s how my site was for many years. It did its job. But as the site kept evolving, I wanted the design to be more opinionated and memorable.&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s when I started looking for a stronger point of view to express. A feeling to evoke. A guiding concept to build around.&lt;/p&gt;
+
+&lt;p&gt;My starting point was just to make my site feel more personal. It&amp;rsquo;s my site. A blog. Not a corporate site. Not a product page. Not a publication. So I should express myself more. That led me to swap my knocked-out JZ with a hand-lettered monogram a couple of years back. I also added a better photo and a hand-lettered &amp;ldquo;Hello!&amp;rdquo; on my about page.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="/images/2020-redesign/about-before-after.png"&gt;&lt;img alt="Screenshot of my about page before and after the redesign" src="/images/2020-redesign/about-before-after.png?1580194146" /&gt;&lt;/a&gt;
+&lt;em&gt;Before (left 2): I don&amp;rsquo;t have a screenshot of the original about page, but the leftmost image is an unstyled version of the page from the Wayback Machine, and isn&amp;rsquo;t far off from how it looked. The middle one is a revamped page from some number of years ago. After (right): how it looks at the time of this post. It doesn&amp;rsquo;t fully live up to the new concept, but is the best yet.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;While these all undoubtedly improved my site, the concept wasn&amp;rsquo;t strong enough to stand on its own two legs.&lt;/p&gt;
+
+&lt;p&gt;I pushed myself to go deeper. &amp;ldquo;What does more personal mean? What makes a website &amp;lsquo;personal&amp;rsquo; anyway?&amp;rdquo; I didn&amp;rsquo;t have answers, but they were good provocations to keep in the back of my mind.&lt;/p&gt;
+
+&lt;p&gt;While I let those questions marinate (for more than a year, probably — it&amp;rsquo;s hard to remember, exactly), I read &lt;em&gt;Conversational Design&lt;/em&gt; by Erika Hall, who recommends thinking of a website (or app, or any touchpoint) as a person as a way to create a memorable design (which I also read about many years ago in &lt;em&gt;Well Designed&lt;/em&gt; by Jon Kolko and forgot about). How would that person talk? Act? Dress?&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s when all these disparate ideas — making my site &amp;ldquo;more personal;&amp;rdquo; the website as extension of self; touchpoints as people — fused into one: my site should be an extension of me! When people interact with my site, it should feel like interacting with me IRL (that&amp;rsquo;s &lt;em&gt;in real life&lt;/em&gt; for the older crowd).&lt;/p&gt;
+
+&lt;p&gt;The concept immediately connected with me. There was just one problem: how do I do that? What does it mean to translate myself into a digital medium? How does a website &amp;ldquo;feel&amp;rdquo; like me? What feelings do people get when they see me, or think of me? How would my friends describe me?&lt;/p&gt;
+
+&lt;p&gt;It got very existential very quickly. 😳 Who am I? What defines me? Shorts? T-shirts? Owls? Bravo reality TV?&lt;/p&gt;
+
+&lt;p&gt;Once again, I wasn&amp;rsquo;t sure how to answer. And once again, I let this idea marinate in the back of my brain.&lt;/p&gt;
+
+&lt;p&gt;After many months (at least), I was in the kitchen at work wearing my customary shorts and owl t-shirt, when my coworker reacted with surprise at my outfit (it was winter), and said, &amp;ldquo;It&amp;rsquo;s like you always bring summer with you wherever you go!&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;BOOM! 💥 That was the underlying concept I was looking for! Summer, warm, friendly, beach-y, So Cal vibes. Those were feelings I could evoke on the screen with visual design.&lt;/p&gt;
+
+&lt;p&gt;Next up, I&amp;rsquo;ll write about how I turned those into the color and font choices you&amp;rsquo;re seeing now (unless you&amp;rsquo;re from the future).&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Books Read 2019</title>
     <link rel="alternate" href="/2020/01/22/books-read-2019/"/>
@@ -199,46 +251,6 @@
 &lt;li&gt;I trust you to make good decisions, get your work done, and use your time wisely. I trust you to not abuse our unlimited vacation policy and to take time off when you need it. If you haven&amp;rsquo;t taken any time off in awhile, I&amp;rsquo;ll probably encourage you to take a vacation :) I&amp;rsquo;m not particularly worried about what hours you work, or where you work, as long as you&amp;rsquo;re getting your work done (and aren&amp;rsquo;t working too much).&lt;/li&gt;
 &lt;li&gt;Finally, here&amp;rsquo;s a &lt;a href="http://jlzych.com/2018/12/03/my-beliefs-about-design/"&gt;list of my beliefs about design&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Adding clarity by removing information</title>
-    <link rel="alternate" href="/2019/03/17/adding-clarity-by-removing-information/"/>
-    <id>/2019/03/17/adding-clarity-by-removing-information/</id>
-    <published>2019-03-18T02:54:00Z</published>
-    <updated>2019-03-18T02:54:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;“Where’s the clipboard?”&lt;/p&gt;
-
-&lt;p&gt;A customer wrote this in to our support team after using our &lt;em&gt;Copy with cite&lt;/em&gt; feature. This feature allows customers to copy snippets of text from a court case, and paste them into the document they’re writing with the case’s citation appended to the end. It’s a huge time saver for lawyers when writing legal documents, and is Casetext’s most heavily used feature.&lt;/p&gt;
-
-&lt;p&gt;When I first saw this feedback, I assumed it was an anomaly. The success message says “Copied to clipboard,” but who doesn’t know what the clipboard is? How much clearer could we make the success message?&lt;/p&gt;
-
-&lt;p&gt;But then it came in again, and again, and again, until eventually the pattern was undeniable. It was only a small percentage of users overall who were writing in, but it was happening regularly enough that we knew we had to fix it.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="The original, confusing toast message that pops up after the user clicks, “Copy with cite.”" src="/images/2019-03-17-adding-clarity-by-removing-information/1-copied-to-clipboard.png?1552878860" /&gt;
-&lt;em&gt;The original, confusing toast message that pops up after the user clicks, “Copy with cite.”&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;To debug this issue, I opened Fullstory (a service that lets you watch back user sessions, among other things) so I could observe the people who wrote in actually use the product. After watching a few sessions, a pattern emerged. People would click “Copy with cite,” zig-zag their mouse around the screen, opening and closing menus, then write in to support to ask, “Where’s the clipboard?” (or some variation thereof).&lt;/p&gt;
-
-&lt;p&gt;At first I didn’t understand why they were frantically throwing their cursor around the screen. What were they looking for? After watching many sessions, I finally realized what they were doing: they were looking for the clipboard in Casetext! They thought the “clipboard” was a feature in our product, as opposed to the clipboard on their OS.&lt;/p&gt;
-
-&lt;p&gt;Now that I understood the problem, the next challenge was how to fix it. How do we communicate that the clipboard we’re referring to is the system’s clipboard? I started rewriting the text, with options like, “Copied to clipboard. Press ctrl + V to paste.” “Copied to your system’s clipboard.” “Copied to &lt;em&gt;your&lt;/em&gt; clipboard” [emphasis added].&lt;/p&gt;
-
-&lt;p&gt;But none of these options felt right. They were either too wordy, too technical, or just more confusing. I took a step back and re-examined the problem. The word “clipboard” is what was tripping people up. What if we just removed that word altogether? Could we get away with just saying “Copied” instead? For the people having trouble with this feature it may prevent them from thinking the clipboard is a feature we offer. For people who aren’t getting confused in the first place, this is should be just as clear as saying “Copied to clipboard.”&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="The refined toast message." src="/images/2019-03-17-adding-clarity-by-removing-information/2-copied.png?1552878860" /&gt;
-&lt;em&gt;The refined toast message.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;The change felt a little risky, but at the same time it felt right. To validate this would work, I decided to just make the change and see what happens. An A/B test and usability testing would both be correct methods to test my hypothesis, but in this case neither tool was the right fit. An A/B test would have taken too long to get statistically valid results, since the conversion event of “failing” to use the feature was very low. It’s also a difficult conversion event to measure. And a usability test would have been more time-consuming and costly than just shipping the change.&lt;/p&gt;
-
-&lt;p&gt;Since the solution was easy to implement (the code change was just removing 13 characters), and the impact if I was wrong was low (the change was unlikely to be worse, and it was easy to reverse course if it was), learning by making a change to the working product was the fastest, cheapest way to go.&lt;/p&gt;
-
-&lt;p&gt;After shipping the fix I kept an eye on the support messages coming in. In the following 2 months, only one person was confused about what to do after clicking “Copy with cite,” as compared to the 8 people who had written in in the previous 2 months. Not a perfect record, but an improvement nonetheless!&lt;/p&gt;
-
-&lt;p&gt;In this case, the best way to improve the clarity of the UI was to provide &lt;em&gt;less&lt;/em&gt; information.&lt;/p&gt;
 </content>
   </entry>
 </feed>
