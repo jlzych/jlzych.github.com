@@ -5,10 +5,44 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2020-01-28T06:22:00Z</updated>
+  <updated>2020-02-11T05:53:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>Site Redesign II: Inspiration</title>
+    <link rel="alternate" href="/2020/02/10/site-redesign-ii-inspiration/"/>
+    <id>/2020/02/10/site-redesign-ii-inspiration/</id>
+    <published>2020-02-11T05:53:00Z</published>
+    <updated>2020-02-11T05:53:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;Having found my guiding concept in my &lt;a href="/2020/01/27/site-redesign-i-the-guiding-concept/"&gt;last post&lt;/a&gt; (tl;dr is it should feel like me, but on the internet, as expressed through SoCal summer vibes), I started gathering inspiration for how to translate that into colors, fonts, and an overall site design.&lt;/p&gt;
+
+&lt;p&gt;Right off the bat I had a couple of shirts and posters in mind that had the exact vibe I wanted. They said &amp;ldquo;California&amp;rdquo; (literally and figuratively), warmth, and summer to me.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="/images/2020-redesign/inspo-1.png"&gt;&lt;img alt="Shirts and posters that immediately inspired me" src="/images/2020-redesign/inspo-1.png?1581401423" /&gt;&lt;/a&gt;
+&lt;em&gt;Shirts and posters that immediately inspired me. I own the shirts in the top left.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;From there, I kept my eyes peeled while browsing Instagram, reading my daily dose of design blogs, and experiencing the world. I screenshotted my favorites and photographed sunsets (specifically the time right when the sun is getting at or below the horizon, which has beautiful oranges, yellows, and a warm blue sky).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="/images/2020-redesign/sunset-photos.png"&gt;&lt;img alt="Pictures of sunsets that inspired me" src="/images/2020-redesign/sunset-photos.png?1581401423" /&gt;&lt;/a&gt;
+&lt;em&gt;Pictures of sunsets that inspired me&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Over the months (I wasn&amp;rsquo;t in a hurry, and this work was mostly passive), I got pulled towards 60s/70s styles, which often have a warm color palette, rounded serifs (like Cooper), and repeating lines and shapes.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="/images/2020-redesign/60s-70s.png"&gt;&lt;img alt="60s and 70s graphics I was diggin" src="/images/2020-redesign/60s-70s.png?1581401423" /&gt;&lt;/a&gt;
+&lt;em&gt;60s and 70s graphics I was diggin&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;For the site itself, I was inspired by a &lt;a href="https://twitter.com/julesforrest/status/1163185120456531968"&gt;tweet I saw from Jules Forrest&lt;/a&gt; praising the site design of &lt;a href="https://iheanyi.com/"&gt;Iheanyi Ekechukwu&lt;/a&gt;. I loved the gradient border/background, and the otherwise simple layout with its focus on the content. An image immediately snapped into my head of this layout and gradient, but with my 60s/70s summer color palette.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="/images/2020-redesign/iheanyi.jpeg"&gt;&lt;img alt="Screenshot of Iheanyi's website" src="/images/2020-redesign/iheanyi.jpeg?1581401424" /&gt;&lt;/a&gt;
+&lt;em&gt;Screenshot of Iheanyi&amp;rsquo;s website that Jules posted&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This gave me enough direction to start choosing typography and a color palette for the site, which I&amp;rsquo;ll describe in my next posts. In the meantime, check out my &lt;a href="https://www.figma.com/c/file/808494599049531462/jlzych.com-site-explorations-2019"&gt;Figma file that I published&lt;/a&gt; on their community page (which contains spoilers for the actual site design).&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Site Redesign I: The Guiding Concept</title>
     <link rel="alternate" href="/2020/01/27/site-redesign-i-the-guiding-concept/"/>
@@ -20,7 +54,7 @@
     </author>
     <content type="html">&lt;p&gt;As some of you may have noticed, I (semi-)recently gave my site a visual overhaul. It&amp;rsquo;s far more opinionated than before, so I want to document my decision making process over the next couple of posts.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href="/images/2020-redesign/before-after.png"&gt;&lt;img alt="Screenshot of my site before and after the redesign" src="/images/2020-redesign/before-after.png?1580194146" /&gt;&lt;/a&gt;
+&lt;p&gt;&lt;a href="/images/2020-redesign/before-after.png"&gt;&lt;img alt="Screenshot of my site before and after the redesign" src="/images/2020-redesign/before-after.png?1581401423" /&gt;&lt;/a&gt;
 &lt;em&gt;Before (left): a dull gray background. Minion typeface throughout. After (right): much warmer. More engaging. More personality.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;First up is the concept that drove the visual design of the site. The concept took a long time to come into focus, but is the most important (and hardest) part of the redesign.&lt;/p&gt;
@@ -37,7 +71,7 @@
 
 &lt;p&gt;My starting point was just to make my site feel more personal. It&amp;rsquo;s my site. A blog. Not a corporate site. Not a product page. Not a publication. So I should express myself more. That led me to swap my knocked-out JZ with a hand-lettered monogram a couple of years back. I also added a better photo and a hand-lettered &amp;ldquo;Hello!&amp;rdquo; on my about page.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href="/images/2020-redesign/about-before-after.png"&gt;&lt;img alt="Screenshot of my about page before and after the redesign" src="/images/2020-redesign/about-before-after.png?1580194146" /&gt;&lt;/a&gt;
+&lt;p&gt;&lt;a href="/images/2020-redesign/about-before-after.png"&gt;&lt;img alt="Screenshot of my about page before and after the redesign" src="/images/2020-redesign/about-before-after.png?1581401423" /&gt;&lt;/a&gt;
 &lt;em&gt;Before (left 2): I don&amp;rsquo;t have a screenshot of the original about page, but the leftmost image is an unstyled version of the page from the Wayback Machine, and isn&amp;rsquo;t far off from how it looked. The middle one is a revamped page from some number of years ago. After (right): how it looks at the time of this post. It doesn&amp;rsquo;t fully live up to the new concept, but is the best yet.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;While these all undoubtedly improved my site, the concept wasn&amp;rsquo;t strong enough to stand on its own two legs.&lt;/p&gt;
@@ -216,41 +250,6 @@
 &lt;p&gt;After a few months, it wasn’t the right fit, so now I’m at Gladly managing their product design team. It feels great to be in management again, working cross-functionally to deliver great experiences to our customers, while growing and nurturing the talents of my team.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Read the full interview on &lt;a href="https://interfacelovers.com/interviews/jeff-zych"&gt;Interface Lovers&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>What to Expect if I'm Your Manager</title>
-    <link rel="alternate" href="/2019/05/19/what-to-expect-if-i-m-your-manager/"/>
-    <id>/2019/05/19/what-to-expect-if-i-m-your-manager/</id>
-    <published>2019-05-19T23:46:00Z</published>
-    <updated>2019-05-19T23:46:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;This past January I started my new gig at &lt;a href="https://www.gladly.com"&gt;Gladly&lt;/a&gt;, managing the product design team. Unlike at Optimizely, where I transitioned into managing people I already worked with, at Gladly I inherited a team who didn&amp;rsquo;t know me at all. Inspired by my new boss who did the same thing, I wrote a document to describe what my new team could expect from me as their manager. I decided to re-publish that document here. Enjoy.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;This doc is an accelerator in building our relationship. It will take a little while for us to find our rhythm, but we can try to short-circuit the storming phase and get some things on the table from the get go. I look forward to learning similar things about you — at your time.&lt;/p&gt;
-
-&lt;p&gt;Some of these bullet points are aspirational. They are standards of behavior that I&amp;rsquo;m trying to hold myself accountable to. If you ever believe I&amp;rsquo;m falling short, please tell me.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;My goal is to provide an environment where you can do your best work.&lt;/li&gt;
-&lt;li&gt;I will support and encourage you in doing your best work, not tell you what to do. I want each of you to be autonomous and to make your own decisions. This means you may occasionally make mistakes, which is perfectly fine. I&amp;rsquo;ll be there to help you pick up the pieces.&lt;/li&gt;
-&lt;li&gt;In supporting you doing your best work, I will help remove roadblocks that are getting in your way.&lt;/li&gt;
-&lt;li&gt;I like to listen and gather context, data, and understanding before making decisions or passing judgement. This means I may ask you a lot of questions to build my knowledge. It also means I will sometimes stay quiet and hold the space for you to keep speaking. It doesn&amp;rsquo;t mean I&amp;rsquo;m questioning you, your abilities, or your choices.&lt;/li&gt;
-&lt;li&gt;I don&amp;rsquo;t like to waste my time, and I don&amp;rsquo;t want to waste yours. If you ever feel like a meeting, project, etc., isn&amp;rsquo;t a good use of your time, please tell me.&lt;/li&gt;
-&lt;li&gt;I take a lot of notes, and write a lot of documents to codify conversations.&lt;/li&gt;
-&lt;li&gt;I&amp;rsquo;m biased towards action and shipping over perfection and analysis paralysis. There&amp;rsquo;s no better test of a product or feature than getting it in the hands of real users, then iterating and refining.&lt;/li&gt;
-&lt;li&gt;I will try to give you small, frequent feedback (positive and negative) in the moment, when it&amp;rsquo;s fresh, and in person. I don&amp;rsquo;t like batching up feedback for 1:1s or performance reviews, which turns those into dreadful affairs that no one enjoys, and leads to stale, ineffective feedback. If you have a preferred way of receiving feedback, please tell me.&lt;/li&gt;
-&lt;li&gt;My goal is to give you more positive feedback than critical feedback. There&amp;rsquo;s always positive feedback to give. And positive feedback helps tell you what you&amp;rsquo;re doing well, and to keep doing it. If you feel like I haven&amp;rsquo;t given you positive feedback recently, please tell me.&lt;/li&gt;
-&lt;li&gt;I like feedback to be a 2-way street, so if there&amp;rsquo;s anything I&amp;rsquo;m doing that you don&amp;rsquo;t like, annoys you, etc., please let me know. If there&amp;rsquo;s things that I&amp;rsquo;m doing well that you want me to keep doing, also let me know! Feel free to pull me aside, or tell me in our 1:1s.&lt;/li&gt;
-&lt;li&gt;1:1s are your meetings. You own the agenda. They can be as structured or unstructured as you want. I will occasionally have topics to discuss, but most of the time your items come first.&lt;/li&gt;
-&lt;li&gt;You own your career growth. I am there to support and encourage you and to help you find opportunities for growth, but ultimately you&amp;rsquo;re in control of your career.&lt;/li&gt;
-&lt;li&gt;I trust you to make good decisions, get your work done, and use your time wisely. I trust you to not abuse our unlimited vacation policy and to take time off when you need it. If you haven&amp;rsquo;t taken any time off in awhile, I&amp;rsquo;ll probably encourage you to take a vacation :) I&amp;rsquo;m not particularly worried about what hours you work, or where you work, as long as you&amp;rsquo;re getting your work done (and aren&amp;rsquo;t working too much).&lt;/li&gt;
-&lt;li&gt;Finally, here&amp;rsquo;s a &lt;a href="http://jlzych.com/2018/12/03/my-beliefs-about-design/"&gt;list of my beliefs about design&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
 </content>
   </entry>
 </feed>
