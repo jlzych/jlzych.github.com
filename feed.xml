@@ -5,10 +5,83 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2020-03-15T23:43:00Z</updated>
+  <updated>2020-03-30T00:09:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>Site Redesign IV: Color, Layout, &amp; Logo</title>
+    <link rel="alternate" href="/2020/03/29/site-redesign-iv-color-layout-logo/"/>
+    <id>/2020/03/29/site-redesign-iv-color-layout-logo/</id>
+    <published>2020-03-30T00:09:00Z</published>
+    <updated>2020-03-30T00:09:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;While I was exploring the &lt;a href="/2020/03/15/site-redesign-iii-typography/"&gt;world of typography&lt;/a&gt; to match my &lt;a href="/2020/01/27/site-redesign-i-the-guiding-concept/"&gt;guiding concept&lt;/a&gt;, I was also exploring ideas for the color, layout, and logo (some of which you saw in the &lt;a href="/2020/03/15/site-redesign-iii-typography/"&gt;previous post&lt;/a&gt;). I explored all 3 of these together because they were all interrelated. The placement of the logo and navigation dictated their color and style, so I was changing each variable simultaneously.&lt;/p&gt;
+
+&lt;p&gt;My starting point was summer and beach — blue skies and water, warm sun, yellow sand, and so on. These ended up being both too cool-toned, and like I was getting fried on the beach under the bright mid-day sun. They were too literal. But hey, you have to start somewhere.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="/images/2020-redesign/color-layout/1-blues.png"&gt;&lt;img alt="Screenshot of exploring blue skies and water, warm sun, and yellow sand." src="/images/2020-redesign/color-layout/1-blues.png?1585533231" /&gt;&lt;/a&gt;
+&lt;em&gt;Exploring blue skies and water, warm sun, and yellow sand.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;I switched to a warmer palette, and using fat bands of solid color that I pulled from my mood board.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="/images/2020-redesign/color-layout/2-oranges.png"&gt;&lt;img alt="Screenshot of warmer palettes with fat bands of color." src="/images/2020-redesign/color-layout/2-oranges.png?1585533231" /&gt;&lt;/a&gt;
+&lt;em&gt;Warmer palettes with fat bands of color.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;I also tried out a &amp;ldquo;watercolored&amp;rdquo; (it was done in Procreate) header, and while the colors were nice, the aesthetic felt too artistic.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="/images/2020-redesign/color-layout/3-watercolors.png"&gt;&lt;img alt="Screenshot of watercolor header." src="/images/2020-redesign/color-layout/3-watercolors.png?1585533231" /&gt;&lt;/a&gt;
+&lt;em&gt;Watercolor header.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;While none of these were working as is, the colors were moving in the right direction. These explorations also helped me refine the aesthetic towards a 60s/70s California summer vibe (as described in the &lt;a href="/2020/02/10/site-redesign-ii-inspiration/"&gt;inspiration post&lt;/a&gt;). That pushed me to notice sunsets more. Specifically the time right when the sun is setting and the sky is a warm blue and the horizon is orange. That palette had just the right tones. The blues of my previous exploration were too bright and cool-toned, but this blue felt warm and comforting. And the orange paired with it perfectly (you can&amp;rsquo;t go wrong taking inspiration from nature, y&amp;#39;all).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="/images/2020-redesign/sunset-photos.png"&gt;&lt;img alt="Pictures of sunsets that inspired me" src="/images/2020-redesign/sunset-photos.png?1581401423" /&gt;&lt;/a&gt;
+&lt;em&gt;Pictures of sunsets that inspired me.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Not too long after this (or maybe before, the timeline is impossible to keep track of) I saw the site design of &lt;a href="https://iheanyi.com/"&gt;Iheanyi Ekechukwu&lt;/a&gt; via &lt;a href="https://twitter.com/julesforrest/status/1163185120456531968"&gt;Jules Forrest&amp;rsquo;s tweet&lt;/a&gt;. I combined his site layout with my sunset-inspired gradient, and violà! I had the basic frame for my site. I gave the content a warm, off-white background, and made the text a warm brown-ish orange, and the main content&amp;rsquo;s style snapped into place.&lt;/p&gt;
+
+&lt;h2 id="navigation-amp-logo"&gt;Navigation &amp;amp; Logo&lt;/h2&gt;
+
+&lt;p&gt;Even though I was heavily influenced by &lt;a href="https://iheanyi.com/"&gt;Iheanyi Ekechukwu&amp;rsquo;s site&lt;/a&gt;, my navigation and logo were different from his, so I still needed to figure out where to place them, and how to style them.&lt;/p&gt;
+
+&lt;p&gt;I tried them both inside and outside the main content area, in various blues, oranges, whites, and blacks. I didn&amp;rsquo;t fall in love with any option, and eventually settled on a temporary location of the navigation being dark blue and sitting above the main content while I tried out various type options.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="/images/2020-redesign/color-layout/5-nav-logo.png"&gt;&lt;img alt="Screenshot of logo and navigation above content." src="/images/2020-redesign/color-layout/5-nav-logo.png?1585533231" /&gt;&lt;/a&gt;
+&lt;em&gt;Logo and navigation above content.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;I was also struggling with the JZ monogram. The hand drawn warmth of it still fit with the site&amp;rsquo;s new guiding light, but where do I put it? How do I style it? This took awhile to nail down. Like the navigation, I settled on the logo sitting above the content area in a light orange while I played with type (see image above), but that option never felt right.&lt;/p&gt;
+
+&lt;p&gt;After I set the type, I revisited these temporary decisions. I hit reset and started over with the design of Iheanyi Ekechuku&amp;rsquo;s site. The thinner outside gradient, combined with everything inside the white content area, felt cleaner, lighter, and put the emphasis on the content while having just enough color to make the site visually interesting and pull your eyes down the page.&lt;/p&gt;
+
+&lt;p&gt;I made the navigation dark blue so it would be of secondary importance to the content, and placed it in the top left corner, and that felt about right. At the last minute I switched it to a lighter brown color because I decided the blue was actually calling too much attention to itself. I must have done this in code because I couldn&amp;rsquo;t find it in Figma.&lt;/p&gt;
+
+&lt;p&gt;Now I was left with the logo, and let me tell you — this was a struggle. I converged on its placement pretty quickly (left side of the content, top-aligned with it), but couldn&amp;rsquo;t find any color or style that fit with the guiding concept.&lt;/p&gt;
+
+&lt;p&gt;I churned out dozens of variations, of which a good 20 or so survived in Figma. I tried strokes, shadows, different colors and backgrounds, and more. I tried a bunch of tricks I learned from doing hand lettering, and was confident I had a style somewhere in my tool belt that would work. Alas, nothing stuck.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="/images/2020-redesign/color-layout/6-monograms1.png"&gt;&lt;img alt="Screenshot of monogram variations." src="/images/2020-redesign/color-layout/6-monograms1.png?1585533231" /&gt;&lt;/a&gt;
+&lt;em&gt;A subset of monogram variations.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;I eventually hit a wall, so I sought out more inspiration. I scoured &lt;a href="https://www.fontsinuse.com"&gt;Fonts in Use&lt;/a&gt; posts, Google image searched for retro posters, and browsed 60s/70s lettering. I eventually found a hand-lettered style of big, chunky type that was duplicated and offset many times in different colors (inspiration that I apparently never saved anywhere).&lt;/p&gt;
+
+&lt;p&gt;I tried that out and could tell I was in the right ballpark (see image below). I played around with the offest colors, sizes, and directions until landing on what you see today (see them all in my &lt;a href="https://www.figma.com/c/file/808494599049531462/jlzych.com-site-explorations-2019"&gt;Figma Community file&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="/images/2020-redesign/color-layout/7-monograms2.png"&gt;&lt;img alt="Screenshot of monogram explorations in the right ballpark." src="/images/2020-redesign/color-layout/7-monograms2.png?1585533231" /&gt;&lt;/a&gt;
+&lt;em&gt;Monogram explorations in the right ballpark.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m pretty happy with the final result, although I find the colors a little too bright (especially in contexts off the site, like the favicon and Twitter), so I need to desaturate it and tweak the colors a bit more.&lt;/p&gt;
+
+&lt;p&gt;The last thing I did, mostly in code, was the link style. I knew I wanted a link style that didn&amp;rsquo;t call too much attention to itself, but at the same time they were an opportunity to give the text some visual flair. I can&amp;rsquo;t remember exactly what I tried, but when I saw the bright blue underline style, I knew that was it. I decided to make the underline &amp;ldquo;grow&amp;rdquo; on hover as a nice way to do something different and surprise readers.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;And that, my friends, sums up my journey of how I redesigned this site. It took multiple years of off-and-on bursts of activity going back all the way to when I started adding hand lettering to the site, but the end result is a massive leap forward. I will continue tweaking it, but I&amp;rsquo;m confident the core aesthetic will serve me for years to come.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://www.figma.com/c/file/808494599049531462/jlzych.com-site-explorations-2019"&gt;&lt;em&gt;If you want to see all the iterations and gory detail of how I got to the site as you see it today, I published my work on Figma Community.&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Site Redesign III: Typography</title>
     <link rel="alternate" href="/2020/03/15/site-redesign-iii-typography/"/>
@@ -287,28 +360,6 @@
 &lt;p&gt;I mocked up these flows and made some product and design decisions to address the above complexity based on what the user would expect in these situations, and what I believe is technically possible based on my understanding of how the feature is being built. I shared it with the engineers and luckily they agreed with my decisions, so we had a happy ending (for now, at least — more unforeseen complexity may pop up while they code it).&lt;/p&gt;
 
 &lt;p&gt;The lesson here is that you should always &lt;strong&gt;design every screen&lt;/strong&gt;, even if you assume it will look the same as another similar screen. Engineers appreciate you being explicit, and in the worst case (or best case, depending on your perspective), you’ll discover open questions that need to be addressed.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>User Research Interview Tip: Shut. Up.</title>
-    <link rel="alternate" href="/2019/09/13/user-research-interview-tip-shut-up/"/>
-    <id>/2019/09/13/user-research-interview-tip-shut-up/</id>
-    <published>2019-09-14T01:38:00Z</published>
-    <updated>2019-09-14T01:38:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;If you were to look at Robert Caro&amp;rsquo;s notebook, you would see lots of &amp;ldquo;SU”s, short for “Shut Up!&amp;rdquo;, scattered throughout his interview notes. The Pulitzer-prize winning author of &lt;em&gt;The Power Broker&lt;/em&gt;, among other mammoth books, uses this trick to keep himself silent while interviewing subjects. About this, &lt;a href="https://www.newyorker.com/magazine/2019/01/28/the-secrets-of-lyndon-johnsons-archives"&gt;he writes&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;In interviews, silence is the weapon, silence and people’s need to fill it—as long as the person isn’t you, the interviewer. Two of fiction’s greatest interviewers—Georges Simenon’s Inspector Maigret and John le Carré’s George Smiley—have little devices they use to keep themselves from talking and to let silence do its work. Maigret cleans his ever-present pipe, tapping it gently on his desk and then scraping it out until the witness breaks down and talks. Smiley takes off his eyeglasses and polishes them with the thick end of his necktie. As for me, I have less class. When I’m waiting for the person I’m interviewing to break a silence by giving me a piece of information I want, I write “SU” (for Shut Up!) in my notebook. If anyone were ever to look through my notebooks, he would find a lot of “SU”s.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;This is a fantastic trick to use during user research interviews, too. Remaining silent after a person&amp;rsquo;s initial response often leads them to elaborate more, revealing an additional nuance, or an exception to the &amp;ldquo;typical&amp;rdquo; use case they just described.&lt;/p&gt;
-
-&lt;p&gt;I take longhand notes on paper for this reason. My note taking never keeps pace with the speaker, so I&amp;rsquo;m always catching up after they stop talking, which forces me to shut up.&lt;/p&gt;
-
-&lt;p&gt;When you&amp;rsquo;re interviewing users, find your own eyeglass polishing or &amp;ldquo;SU.&amp;rdquo;&lt;/p&gt;
 </content>
   </entry>
 </feed>
