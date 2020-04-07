@@ -5,10 +5,33 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2020-03-30T00:09:00Z</updated>
+  <updated>2020-04-07T18:53:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>The Power of Low-Fidelity</title>
+    <link rel="alternate" href="/2020/04/07/the-power-of-low-fidelity/"/>
+    <id>/2020/04/07/the-power-of-low-fidelity/</id>
+    <published>2020-04-07T18:53:00Z</published>
+    <updated>2020-04-07T18:53:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;&amp;ldquo;I know you&amp;rsquo;re not there yet, but&amp;hellip;&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;This was how our brand designer began his feedback to one of my product designers in design critique. The product designer presented early designs for a feature he was working on. Most importantly, his work was low-fidelity. It used simple black-and-white components and a casual, hand-written font.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Screenshot of a low-fidelity modal component" src="/images/2020-04-lo-fi/lo-fi-modal.png?1586286798" /&gt;
+&lt;em&gt;An example of a low-fidelity modal component. Not what the designer showed.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;His designs were still early, and subject to change. He needed feedback on high-level flows and interactions, not colors or fonts or spacing. Exploring those design details, and getting feedback on that, would have been a waste of time. The fidelity of his work matched the fidelity of his thinking.&lt;/p&gt;
+
+&lt;p&gt;The brand designer ended that statement with some general visual design advice for when he moves into high-fidelity. It took less than a minute. He didn&amp;rsquo;t rabbit-hole on a detailed, point-by-point critique of the entire design. How could he? There was no visual design. His feedback matched the fidelity of what was shown. The product designer got the feedback he needed, and the brand designer gave feedback that played to his strengths.&lt;/p&gt;
+
+&lt;p&gt;That simple interaction demonstrated the power of showing low-fidelity work.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Site Redesign IV: Color, Layout, &amp; Logo</title>
     <link rel="alternate" href="/2020/03/29/site-redesign-iv-color-layout-logo/"/>
@@ -80,6 +103,16 @@
 &lt;p&gt;And that, my friends, sums up my journey of how I redesigned this site. It took multiple years of off-and-on bursts of activity going back all the way to when I started adding hand lettering to the site, but the end result is a massive leap forward. I will continue tweaking it, but I&amp;rsquo;m confident the core aesthetic will serve me for years to come.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href="https://www.figma.com/c/file/808494599049531462/jlzych.com-site-explorations-2019"&gt;&lt;em&gt;If you want to see all the iterations and gory detail of how I got to the site as you see it today, I published my work on Figma Community.&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;em&gt;The rest of the site redesign posts&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/2020/01/27/site-redesign-i-the-guiding-concept/"&gt;Site Redesign I: The Guiding Concept&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/2020/02/10/site-redesign-ii-inspiration/"&gt;Site Redesign II: Inspiration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/2020/03/15/site-redesign-iii-typography/"&gt;Site Redesign III: Typography&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content>
   </entry>
   <entry>
@@ -179,6 +212,16 @@
 &lt;p&gt;It wasn&amp;rsquo;t an easy process, and the road was far from straight, but in the end I&amp;rsquo;m really happy with how it turned out.&lt;/p&gt;
 
 &lt;p&gt;Next up is the site layout and color palette.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;em&gt;The rest of the site redesign posts&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/2020/01/27/site-redesign-i-the-guiding-concept/"&gt;Site Redesign I: The Guiding Concept&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/2020/02/10/site-redesign-ii-inspiration/"&gt;Site Redesign II: Inspiration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/2020/03/29/site-redesign-iv-color-layout-logo/"&gt;Site Redesign IV: Color, Layout, and Logo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content>
   </entry>
   <entry>
@@ -213,6 +256,16 @@
 &lt;em&gt;Screenshot of Iheanyi&amp;rsquo;s website that Jules posted&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;This gave me enough direction to start choosing typography and a color palette for the site, which I&amp;rsquo;ll describe in my next posts. In the meantime, check out my &lt;a href="https://www.figma.com/c/file/808494599049531462/jlzych.com-site-explorations-2019"&gt;Figma file that I published&lt;/a&gt; on their community page (which contains spoilers for the actual site design).&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;em&gt;The rest of the site redesign posts&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/2020/01/27/site-redesign-i-the-guiding-concept/"&gt;Site Redesign I: The Guiding Concept&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/2020/03/15/site-redesign-iii-typography/"&gt;Site Redesign III: Typography&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/2020/03/29/site-redesign-iv-color-layout-logo/"&gt;Site Redesign IV: Color, Layout, and Logo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content>
   </entry>
   <entry>
@@ -265,6 +318,16 @@
 &lt;p&gt;BOOM! 💥 That was the underlying concept I was looking for! Summer, warm, friendly, beach-y, So Cal vibes. Those were feelings I could evoke on the screen with visual design.&lt;/p&gt;
 
 &lt;p&gt;Next up, I&amp;rsquo;ll write about how I turned those into the color and font choices you&amp;rsquo;re seeing now (unless you&amp;rsquo;re from the future).&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;em&gt;The rest of the site redesign posts&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/2020/02/10/site-redesign-ii-inspiration/"&gt;Site Redesign II: Inspiration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/2020/03/15/site-redesign-iii-typography/"&gt;Site Redesign III: Typography&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/2020/03/29/site-redesign-iv-color-layout-logo/"&gt;Site Redesign IV: Color, Layout, and Logo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content>
   </entry>
   <entry>
@@ -338,28 +401,6 @@
 &lt;li&gt;&lt;em&gt;Ways of Seeing&lt;/em&gt; by John Berger (11/28/19)&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;Solar Lottery&lt;/em&gt; by Philip K. Dick (12/12/19)&lt;/li&gt;
 &lt;/ul&gt;
-</content>
-  </entry>
-  <entry>
-    <title>A cautionary tale about the importance of designing every screen</title>
-    <link rel="alternate" href="/2019/11/23/a-story-about-the-importance-of-designing-every-screen/"/>
-    <id>/2019/11/23/a-story-about-the-importance-of-designing-every-screen/</id>
-    <published>2019-11-24T00:27:00Z</published>
-    <updated>2019-11-24T00:27:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;&amp;ldquo;What does the &amp;lsquo;Archived&amp;rsquo; tab look like?&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;I was walking the engineers through the final designs of some admin screens when they asked me this. The page is just a table of objects, with a tab showing the active ones, and another tab showing archived ones.&lt;/p&gt;
-
-&lt;p&gt;I hadn&amp;rsquo;t explicitly designed the &amp;ldquo;Archived&amp;rdquo; tab since it was the same basic design as the accompanying active tab – a table. But I told the engineers I would mock it up.&lt;/p&gt;
-
-&lt;p&gt;I expected mocking it up to take a few minutes. Boy was I naive! As I mocked it up I discovered a bunch of complexity that I hadn’t anticipated (and the engineers hadn’t anticipated either). What’s the un-archive flow? These objects can be nested inside of each other (like folders), so does un-archiving a parent un-archive all of its descendants? If a child is nested, but the parent is active, how do we display that in the table (on the active tab, children are visually shown underneath and indented from parents, but if the parent isn’t archived the child will be &amp;ldquo;orphaned&amp;rdquo; on the archived tab)? If a parent and its children are archived, can you un-archive just a child? If so, where does it appear in the active hierarchy (it will once again be &amp;ldquo;orphaned&amp;rdquo;)?&lt;/p&gt;
-
-&lt;p&gt;I mocked up these flows and made some product and design decisions to address the above complexity based on what the user would expect in these situations, and what I believe is technically possible based on my understanding of how the feature is being built. I shared it with the engineers and luckily they agreed with my decisions, so we had a happy ending (for now, at least — more unforeseen complexity may pop up while they code it).&lt;/p&gt;
-
-&lt;p&gt;The lesson here is that you should always &lt;strong&gt;design every screen&lt;/strong&gt;, even if you assume it will look the same as another similar screen. Engineers appreciate you being explicit, and in the worst case (or best case, depending on your perspective), you’ll discover open questions that need to be addressed.&lt;/p&gt;
 </content>
   </entry>
 </feed>
