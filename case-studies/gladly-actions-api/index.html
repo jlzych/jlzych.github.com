@@ -2,19 +2,19 @@
 <html>
   <head>
     <meta charset='utf-8'>
-    <title>Implementing a Discovery process at Optimizely</title>
+    <title>Gladly’s Actions API</title>
     <meta content='width=device-width, initial-scale=1.0, user-scalable=yes' name='viewport'>
     <meta content='black' name='apple-mobile-web-app-status-bar-style'>
     <meta content='yes' name='apple-mobile-web-app-capable'>
-    <meta content='I implemented a new way of building product that included an explicit discovery phase that made space for customer development, problem understanding, and solution exploration, before jumping into code. It doubled velocity, improved product quality and team morale, and increased revenue while decreasing costs.' name='description'>
+    <meta content='Designing a way for developers to bring actions directly into Gladly' name='description'>
     <meta content='Jeff Zych' name='author'>
     <!-- FB Open Graph meta tags -->
     <meta content='blog' property='og:type'>
     <meta content="Jeff Zych's Corner of the Internet" property='og:site_name'>
-    <meta content='Implementing a Discovery process at Optimizely' property='og:title'>
-    <meta content='I implemented a new way of building product that included an explicit discovery phase that made space for customer development, problem understanding, and solution exploration, before jumping into code. It doubled velocity, improved product quality and team morale, and increased revenue while decreasing costs.' property='og:description'>
-    <meta content='http://jlzych.com/images/case-studies/optimizely-discovery-kanban/4-fullwall.jpg' property='og:image'>
-    <meta content='http://jlzych.com/case-studies/optimizely-discovery-kanban/' property='og:url'>
+    <meta content='Gladly’s Actions API' property='og:title'>
+    <meta content='Designing a way for developers to bring actions directly into Gladly' property='og:description'>
+    <meta content='http://jlzych.com/images/case-studies/gladly-actions-api/1-final-cancel-markedup.png' property='og:image'>
+    <meta content='http://jlzych.com/case-studies/gladly-actions-api/' property='og:url'>
     <!-- Additional Twitter tags - additive with og: tags -->
     <meta content='summary_large_image' name='twitter:card'>
     <meta name='twitter:creator' value='@jlzych'>
@@ -51,132 +51,143 @@
           </ul>
         </nav>
         <div class='content'>
-          <h1 class='article__title'>Implementing a Discovery process at Optimizely</h1>
-          <h2 class='article__subtitle'>How I reduced cost, increased revenue, and improved product quality by creating an explicit Discovery phase</h2>
-          <!-- :markdown -->
-          <!-- > **Short on time? Key takeaways** -->
-          <!-- > -->
-          <!-- > - Implemented a new way of building product that included an explicit discovery phase that made space for customer development, problem understanding, and solution exploration, before jumping into code. -->
-          <!-- > - Doubled design and engineering velocity -->
-          <!-- > - Increased product quality (fewer bugs, more UI polish) -->
-          <!-- > - Increased revenue -->
-          <!-- > - Decreased development costs -->
-          <!-- > - Decreased churn -->
-          <p>It was October of 2015, and we just launched Optimizely&rsquo;s newest product. The one that was supposed to transform us into a multi-product company, diversify our income stream, and rocket us to the next echelon of success.</p>
+          <h1 class='article__title'>Gladly’s Actions API</h1>
+          <h2 class='article__subtitle'>Designing a way for developers to bring actions directly into Gladly</h2>
+          <p>Gladly just inked a contract for our software to power all of Ulta Beauty&rsquo;s contact centers — over 1,000 agents in all. At the time, it was the second biggest deal in the company&rsquo;s history. We cinched the deal on the promise that our product would get them to their vision of a &ldquo;single pane of glass,&rdquo; meaning agents never have to leave Gladly to help customers. Cancelling and refunding orders, adding loyalty points, update shipping address, and more, could all be done within Gladly&rsquo;s UI.</p>
           
-          <p>Instead, the product launched behind schedule, with bugs and feature gaps, and struggled to gain traction in the market. Less than 6 months later, there were company-wide layoffs.</p>
+          <p>Currently, agents had a dozen different systems to jump between to complete a customer request (we learned this while shadowing agents during the sales process). They used a mix of off-the-shelf software (like IBM Sterling) and homegrown solutions, stitched together by their IT team, which slowed down agents and hurt customer satisfaction scores (commonly called CSAT). By providing all this functionality within Gladly – and with a consumer-grade user experience to boot – agent productivity would increase, as would customer satisfaction.</p>
           
-          <p><img alt="Discovery kanban board in its final, full board form, tracking work from dreams through delivery" src="/images/case-studies/optimizely-discovery-kanban/4-fullwall.jpg?1591227336" />
-          <em>The final discovery kanban board that helped us stay focused on customer needs by tracking work from dreams through delivery</em></p>
+          <p>There was just one problem: we hadn&rsquo;t built it yet. And we didn&rsquo;t know how.</p>
           
-          <h2 id="how-did-we-get-here">How did we get here?</h2>
+          <p><a href="/images/case-studies/gladly-actions-api/1-final-cancel-markedup.png"><img alt="Screenshot of final agent experience for cancelling and refunding orders within Gladly" src="/images/case-studies/gladly-actions-api/1-final-cancel-markedup.png?1592617351" /></a>
+          <em>The main screen agents use when helping customers, showing the full timeline of conversations with that customer in the middle, and information about the customer on the left. We added &ldquo;Cancel &amp; Refund&rdquo; and &ldquo;Refund&rdquo; buttons to the order card, which agents can click to issue a refund and cancel the order, all without leaving Gladly. Behind those buttons lays a lot of technical wizardry we had to figure out.</em></p>
           
-          <p>Optimizely was founded in 2009, and grew to over 400 people by the end of 2014. Design, engineering, and product were around 120 people, split into &ldquo;squads&rdquo; who owned a product area and ran their own flavor of scrum.</p>
+          <h2 id="the-challenge">The Challenge</h2>
           
-          <p>Design and research was awkwardly shoehorned into each team&rsquo;s scrum process. Scrum is a process designed to enable engineers to ship code reliably with high quality, not to enable designers to do their best work. As a result, designers were typically assigned to projects in sprint planning when engineers were ready to build. If they were lucky, they&rsquo;d have a &ldquo;sprint 0&rdquo; to do some research to understand the problem they&rsquo;re supposed to be solving, but often this wasn&rsquo;t happening. They were given little space to explore solutions, or test them with customers. Their impact was confined to pushing pixels.</p>
+          <p>Making agents more efficient by letting them perform common tasks with Gladly wasn&rsquo;t a new idea. We had been hearing about it for months from other prospects and current customers. Ulta was just the first deal that closed that put it in the contract.</p>
           
-          <p>Engineers often complained that they were &ldquo;blocked on design&rdquo; (a phrase I hate). When they did get designs, there were often open product and design questions, which slowed down implementation, increased bugs, and reduced UI quality.</p>
+          <p><img alt="Early mockups and technical proposal we showed Ulta" src="/images/case-studies/gladly-actions-api/2-sales-mock.png?1592617351" />
+          <em>Early mockups and technical proposal we showed Ulta</em></p>
           
-          <p>Product managers had little time to do customer development to inform the team&rsquo;s vision, strategy, and roadmap. They were too busy managing engineering schedules and performing scrum rituals.</p>
-          
-          <p>All told, we were shipping features that weren&rsquo;t rooted in the needs of our customers. We operated as a <a href="https://svpg.com/product-vs-feature-teams/">feature factory</a>.</p>
-          
-          <h2 id="let-39-s-build-a-new-product">Let&rsquo;s build a new product!</h2>
-          
-          <p>We rolled into 2015 building product this way. Now we were asked to build a brand new product from scratch. Oh, and we threw a team of 10 engineers, 3 designers, and 3 PMs on it before doing any product discovery or design work.</p>
-          
-          <p>We tried our best to do understand the needs of our potential customers and launch a viable product, but we were fighting against the inertia of engineers already writing code. The fact that we got any customers before the end of the year is a minor miracle.</p>
-          
-          <p>As the manager of the designers and researchers on this project, I had a front row seat to the spectacle. I knew this wasn&rsquo;t the way to build a product people loved, and that the impact of design and research was severely hampered in this system, but I had been unable to make any headway on changing how we build product since we were so under the gun to launch a new product.</p>
-          
-          <h2 id="designing-the-machine-that-designs-the-machines">Designing the machine that designs the machines</h2>
-          
-          <p>A wise man once said: Never waste a good crisis.</p>
-          
-          <p>This was a crisis visible to the whole company. It was clear from the executive team down to the front-line staff that the way we built product wasn&rsquo;t working. This was my opportunity to design a new operating model that supported researchers and designers doing their best work. A system that&hellip;</p>
+          <p>We closed Ulta on the strength of a polished mockup of the agent&rsquo;s experience, and a hand-wave-y technical diagram (pictured above). We knew it was technically possible, but we didn&rsquo;t know specifically how. The challenge was to build a solution that:</p>
           
           <ul>
-          <li>Was driven by the needs of customer, rather than solutions looking for a problem.</li>
-          <li>Validated what we were building was valuable, usable, and feasible, before we wrote any code.</li>
-          <li>Didn&rsquo;t decide what to build that sprint and then ask, &ldquo;Do we have designs for this?&rdquo; but instead had research and design pushing work into sprints.</li>
-          <li>Wasn&rsquo;t overly prescriptive of which UX methods to use, but rather was descriptive of high level phases and suggested methods. It also shouldn&rsquo;t prescribe <em>who</em> was doing the work. Everyone can and should contribute to the process, regardless of title. What&rsquo;s important is that the work is being done each step of the way.</li>
-          <li>Was understandable to non-designers. The design process shouldn&rsquo;t be a mystery. If it is, everyone will be questioning what we&rsquo;re doing and when we&rsquo;ll be done. Making it understandable to all also elevates the design maturity of the org, while communicating out how far along projects are.</li>
+          <li>Worked with any system our prospects and customers threw at us. Like Ulta, they used a mix of off-the-shelf software like Shopify and IBM Sterling, and homegrown systems</li>
+          <li>Wouldn&rsquo;t require our customers&rsquo; IT teams months or even weeks of building piping to integrate with us.</li>
+          <li>Was a high-quality agent experience that matched Gladly&rsquo;s UX, so that we didn&rsquo;t slow down agents and they didn&rsquo;t have to know or care which systems it was connected to on the backend. It just worked.</li>
           </ul>
           
-          <p>To design this system, I drew on what I learned in grad school, my hands-on knowledge from working as a product designer, my experience managing designers and guiding their work, and my reading about dual track scrum, continuous discovery, and how other teams build product.</p>
+          <p>The agent experience was easy. It&rsquo;s just buttons and forms. The hard part was what happens when those buttons are clicked and the form was submitted? How would we know what data to collect from agents, and where to send it once submitted? It would be easy to build one-off solutions that required little to no work on our customer&rsquo;s end, but across all of our target customers there were endless combinations of systems to build against, making that option intractable.</p>
           
-          <p>After talking through options with the design team and PMs, and trying on some models with projects that went well (and not so well), we aligned on the <strong>double diamond model of design.</strong></p>
+          <h2 id="three-potential-paths">Three Potential Paths</h2>
           
-          <p><img alt="Diagram of the double diamond model of design, courtesy the UK Design Council" src="/images/case-studies/optimizely-discovery-kanban/1-double-diamond.png?1591227334" />
-          <em>Double Diamond model of design, courtesy the <a href="https://www.designcouncil.org.uk/news-opinion/what-framework-innovation-design-councils-evolved-double-diamond">UK Design Council</a></em></p>
-          
-          <p>This was created by the <a href="https://www.designcouncil.org.uk/news-opinion/what-framework-innovation-design-councils-evolved-double-diamond">UK Design Council</a> to model the design process. It&rsquo;s not overly prescriptive, but has enough structure to both guide the team&rsquo;s work while communicating what work is being done at each stage.</p>
-          
-          <p>It splits the process into two phases: <strong>problem understanding</strong>, and <strong>solution exploration</strong>. The goal of problem understanding it to define what problem you&rsquo;re solving, who it&rsquo;s a problem for, and use cases that are in and out of scope.</p>
-          
-          <p>Solution exploration&rsquo;s goal is to find the best solution to the problem by exploring potential options, testing them with customers, and vetting their technical feasibility.</p>
-          
-          <p>Each phase is a diamond because it has two halves, which represent <strong>divergent</strong> and <strong>convergent</strong> thinking. Divergent means going broad to gather lots of information and ideas, whereas convergent means whittling those down to the most promising ones. These two modes of thinking personally helped me become a better designer by telling me when I should turn on the generative part of my brain, and when I should turn on the evaluative part of my brain.</p>
-          
-          <p>Once the work has gone through this process, it&rsquo;s ready to be built and can be prioritized in a sprint. By this point we should have high confidence that the solutions are valuable, usable, and feasible. I called the system <strong>Discovery Kanban</strong>.</p>
-          
-          <h2 id="roll-out">Roll out</h2>
-          
-          <p>Now that we had a new proposal for how to work, I started using it with one team who&rsquo;s designer and PM were ready to try a new way of working and smoothing out the kinks. We made the kanban board on a whiteboard, put their current and upcoming work on it, and started reviewing it in sprint planning.</p>
-          
-          <p><img alt="First prototype of the Discovery kanban board" src="/images/case-studies/optimizely-discovery-kanban/2-proto-board.jpg?1591227336" />
-          <em>First prototype of the Discovery kanban board</em></p>
-          
-          <p>There were a couple of quick improvements to make, such as adding a column for problem definitions that were done but not being worked on by a designer yet, but otherwise the system was accurately modeling reality and increasing the visibility of the team&rsquo;s work.</p>
-          
-          <p>After a few weeks, the early results were positive. We were explicit about which projects needed more research, and which didn&rsquo;t. Designers had more space to explore potential solutions. Finished designs were flowing smoothly into engineering. Their estimates were more accurate, there were fewer questions during the implementation phase to slow them down, fewer bugs at launch, and more room for UI polish.</p>
-          
-          <h2 id="expanding-to-more-teams">Expanding to more teams</h2>
-          
-          <p>Once it was working for one team, I expanded team by team until all the squads were using this system. Doing it this way helped me get buy-in for this new way of working, explain the design process, and address any confusion.</p>
-          
-          <p><img alt="Next iteration of the Discovery kanban board" src="/images/case-studies/optimizely-discovery-kanban/3-board2.jpg?1591227336" />
-          <em>Next iteration of the Discovery kanban board</em></p>
-          
-          <p>I also started a weekly planning meeting with the designers, researchers, and PMs to review all the work in flight, and prioritize new work. This ensured we were working on the most impactful projects that were aligned to our product strategy and vision, helped us choose which projects were most in need of research across teams, improved coordination between teams, and reduced the number of meetings of &ldquo;work about the work&rdquo; (i.e. who is doing what, and when). Put simply, it <strong>aligned design&rsquo;s efforts to business outcomes</strong>.</p>
-          
-          <p>While I was doing this, our Engineering Development Director was improving how we tracked and coordinated engineering work across teams. I stayed in sync with him, and we moved all the work onto a huge physical wall that tracked everything the product, design, and eng teams were working on, from vague ideas through discovery to shipped code.</p>
-          
-          <p><img alt="Discovery kanban board in its final, full board form, tracking work from dreams through delivery" src="/images/case-studies/optimizely-discovery-kanban/4-fullwall.jpg?1591227336" />
-          <em>Discovery kanban board in its final, full board form, tracking work from dreams through delivery</em></p>
-          
-          <p>We also expanded my weekly planning meeting to include engineering and product leadership, and to review all work in flight, from what engineers were building back to the exploratory research. This greatly increased visibility into what everyone was doing, what customer pain points and opportunities most needed research, and what cross-team prioritization and trade-offs we needed to make.</p>
-          
-          <p><img alt="Meeting to review the whole board, expanded to include engineering and product leadership" src="/images/case-studies/optimizely-discovery-kanban/5-moped.jpg?1591227334" />
-          <em>Meeting to review the whole board, expanded to include engineering and product leadership</em></p>
-          
-          <h2 id="impact">Impact</h2>
-          
-          <p>All of these changes are great, but what was the impact of this new system on the company? I&rsquo;m glad you asked:</p>
+          <p>To make this agent experience a reality, the PM, engineering lead, and myself got in a room to review the mockup and whiteboard potential ways of building it. We came up with 3 that were viable (and 1 that was technically viable, but didn&rsquo;t meet our goal of a great agent UX):</p>
           
           <ul>
-          <li><strong>Doubled velocity</strong>: We were shipping twice as many roadmap items (features, UI improvements, and so on) as the year-ago quarter, across all squads, while keeping headcount flat. We were finishing twice as many research and design projects, with a smaller team. The system provided better coordination across teams (no more 2 designers working on the same project, for example), and reduced the number of meetings need to talk about &ldquo;work about the work,&rdquo; i.e. deciding who was doing what, and when they were doing it.</li>
-          <li><strong>Improved quality</strong>: There were fewer bugs with new feature launches, there were fewer code yellows and reds, and we were doing more UI polish for features. This is largely attributable to engineering not starting to code until the designs were ready and fully thought through. This meant work flowed smoothly through the system, estimates were more accurate, and people weren&rsquo;t rushing to ship.</li>
-          <li><strong>Higher morale</strong>: Designers and researchers were happier and felt like the process supported them doing their best work. Engineers weren&rsquo;t stretched as thin, have stopped saying they&rsquo;re &ldquo;blocked on design.&rdquo; They&rsquo;re also involved in discovery work which helps them understand the &ldquo;why&rdquo; behind their work better. PMs also had more space to do customer development.</li>
+          <li>A UI builder in our admin page. This would let admins build forms to collect data from agents, and provide a URL to submit the form to.</li>
+          <li>We already had an API called the &ldquo;Lookup API&rdquo; that customers used to lookup customer data, and pipe it into Gladly, such as order history and loyalty points. We could extend that by adding an <code>actions</code> JSON blob to the response, which would let developers declaratively attach &ldquo;actions&rdquo; to their customer info, specify what data they needed, and where to send it when agents submitted the form. This would also work with out of the box solutions, like Shopify.</li>
+          <li>Similar to the above, we could extend the Lookup API with a custom Javascript UI library that would let developers build a UI inside Gladly. We&rsquo;d still control the look-and-feel of the UI, but they could build just about any functionality they wanted.</li>
+          <li>Give developers an iFrame to put any UI into. We knew this was technically viable and would work with any system, but we were strongly opposed to it because the agent experience would be terrible. That being said, at least one customer said, &ldquo;Just give me an iFrame,&rdquo; so we needed to consider it.</li>
           </ul>
           
-          <p>Those are all great measure of the output, but what about impact to the bottom line and your customers?</p>
+          <p>I did lo-fi mock-ups of each of these options to ensure the team was aligned on what each of them were, and also to show customers to aid us in research.</p>
+          
+          <p><a href="/images/case-studies/gladly-actions-api/3-lo-fi-3-paths.jpg"><img alt="Lo-fi mockups of the 3 paths we were considering" src="/images/case-studies/gladly-actions-api/3-lo-fi-3-paths.jpg?1592617353" /></a>
+          <em>Lo-fi mockups of the 3 paths we were considering</em></p>
+          
+          <p>So which was best? Each had tradeoffs, both for us and customers. Would developers want to build UIs within Gladly? Would they want to learn how to build custom UIs with our JS library? Would an <code>actions</code> JSON blob be expressive enough to perform any action customers threw at us?</p>
+          
+          <h2 id="more-customer-discovery">More Customer Discovery</h2>
+          
+          <p>We reviewed these approaches with developers at our current customers who had already built integrations using the Lookup API. After talking to 3 customers (we wanted to talk to more but finding representative developers who were interested in this feature on a short timeframe was difficult), a pattern emerged:</p>
           
           <ul>
-          <li><strong>Increased revenue</strong>: Remember that failed product we launched? Well we kept iterating on it, and grew it to over $2MM in annual recurring revenue within the first year. Our process made sure the team was staying close to customers, and understanding their needs first, before jumping into solutions and code.</li>
-          <li><strong>Increased Cost Savings</strong>: A back-of-the-napkin cost calculation puts the cost to build our new product at a conservative $6.25MM (~250K per person per year fully loaded, * 15 people, * 10/12 years). (That doesn&rsquo;t include additional engineers we added later, or the cost of training sales and support, or the cost of launch marketing. Nor does it include opportunity cost of launching late, and not gaining customers at launch). Under this new system, we would have started with a smaller team (a researcher, designer, and PM, let&rsquo;s say), figured out the customer need to serve first, and tested solutions until we were confident in the value of investing more time and people into launching a product.</li>
-          <li><p><strong>Reduced churn</strong>: We spent most of 2016 iterating on the new product, and starved our original product of resources. As a result, customers were fed up with longstanding bugs and feature requests that weren&rsquo;t being acted on, and churn was a serious problem.</p>
-          
-          <p>To solve our churn problem, our CFO/COO led an effort to build a <em>current reality tree</em> to identify all the issues — product-related or otherwise — that contributed to churn. Getting them all out in the open helped us prioritize them and assign owners. In that exercise, <strong>210 product issues</strong> were identified (a lot more non-product ones were identified, too, like poor handoff between sales and success). These ranged from missing features to bugs to UX problems.</p>
-          
-          <p>Throughout the rest of 2017 we took them on, and were able to cross <strong>152 items</strong> off the list — while shipping additional new features. By the end of that year, churn finally started decreasing. This was a testament to the strength of our system that it didn&rsquo;t buckle under the weight of all these problems to solve, and ensured we took the time to understand our customer&rsquo;s pain points, and tackle the most impactful ones, instead of rushing into building half-baked solution.</p></li>
+          <li>Admin UI builder was cumbersome to use. They write code for a living, and don&rsquo;t want to build UIs in an admin interface. Plus, they&rsquo;d still have to build backend systems to receive the response from any UI they built in Gladly.</li>
+          <li>Similar problem with the custom JS UI library – they&rsquo;d have to learn a new arbitrary syntax to build a UI. And it pushed our customers, especially the developers, to be designers, which they didn&rsquo;t want to do, and risked degrading the agent experience.</li>
+          <li>iFrames sucked for everyone. They all agreed it was painful to build and maintain, and previous iFrame solutions they had used would break. Cue sigh of relief from us.</li>
           </ul>
           
-          <h2 id="fin">Fin</h2>
+          <p>The winner, then, was adding an <code>actions</code> JSON blob to the Lookup API to declaratively create a UI out of a limited palette of building blocks. This was also great for us because it was less to design and build – no complicated admin UI to figure out, and no JS UI library to build.</p>
           
-          <p>The way we worked in 2015 wasn&rsquo;t working. By the end of 2016, we had transformed the way we built product, resulting in increased velocity, increased quality, increased revenue and decreased cost. And in 2017 these new habits became our default way of working. We started with the needs of customers, and then figured out how to solve them, rather than the other way around. Whenever I would hear the CEO ask, &ldquo;Do we understand the problem well enough yet, or do we need more research?&rdquo; I knew I had achieved the shift in mindset we needed. Seeing the design team&rsquo;s work flourish under this new system was a highlight of my career.</p>
+          <h2 id="pushing-the-ux-forward">Pushing the UX forward</h2>
           
-          <p><em>Want to transform the way your team works? Get in touch at <a href="mailto:jlzych@gmail.com">jlzych@gmail.com</a></em></p>
+          <p>Up to this point, I had stayed lo-fi on purpose. We weren&rsquo;t sure how we were going to build it, and the architecture would impact the experience for both developers and agents. Going hi-fi too early would have been a waste of effort. I would have been polishing details that were likely to be thrown out. Plus, staying lo-fi helps us stay nimble and quickly throw out options that aren&rsquo;t working without a second thought. (<a href="/2020/04/07/the-power-of-low-fidelity/">Read more about my take on staying lo-fi</a>).</p>
+          
+          <p>Now that the technical piece was sorted out, I could push the UX into mid-fi. My whole approach to this project was to have the UX take a step, then engineering, then UX, then engineering, each time moving into higher fidelity.</p>
+          
+          <p><a href="/images/case-studies/gladly-actions-api/4-mid-fi-with-errors.jpg"><img alt="Screenshot of my Figma file of mid-fi mockups" src="/images/case-studies/gladly-actions-api/4-mid-fi-with-errors.jpg?1592617353" /></a>
+          <em>Screenshot of my Figma file of mid-fi mockups</em></p>
+          
+          <h2 id="executive-input">Executive Input</h2>
+          
+          <p>Now that we were confident in our path, we wanted to get final input and sign off from our executive team before going full-steam ahead on development. Plus, Ulta wanted specs to build against, so we were flying to them to review the Actions API, collaborate with their IT team on how they&rsquo;d build their &ldquo;single pane of glass,&rdquo; and build the personal relationships to make our partnership a success. Whatever we showed Ulta we needed to show our executive team first.</p>
+          
+          <p>The executive team&rsquo;s feedback was very positive – the project was on track, would make Ulta successful, was general enough to work for other customers, and was a good experience for both agents and developers. Just one piece was lacking: <strong>I hadn&rsquo;t explored enough options for the agent experience</strong>.</p>
+          
+          <p>I showed agents completing actions through a modal flow, but the CEO pointed out that this would stop agents from being able to see information about the customer and the conversation history, which may include details necessary to complete the action (like the reason they&rsquo;re cancelling an order, for example).</p>
+          
+          <p>I got so caught up in the technical constraints and staying in lock-step with engineers that I didn&rsquo;t spend enough time exploring options for the agent UX. This piece felt &ldquo;simple&rdquo;, so I focused on the hard bits. But I didn&rsquo;t come back to re-visit the initial decision we had made in the sales mock. I quickly made a mockup of actions in the context of the bottom panel, where agents write emails and notes, to show Ulta. Lesson learned for the future: make sure to explore a wide variety of options for every piece of the experience.</p>
+          
+          <h2 id="visiting-ulta">Visiting Ulta</h2>
+          
+          <p>We flew out to Chicago the following week, and the meeting was a resounding success. The Ulta team was happy with the API we had fleshed out since the sales process. We whiteboarded hwo they would build against, and the only road blocks were on their side. Their technology stack was a miasma of various technology vendors and homegrown systems, most of which lacked APIs to integrate with us. Thankfully that wasn&rsquo;t a knock against us – it was a knock against their other technology vendors. They would have to work through that on their side, and with their leadership team.</p>
+          
+          <h2 id="finalizing-the-agent-experience">Finalizing the agent experience</h2>
+          
+          <p>Upon returning from the Ulta meeting I passed the work off to another designer. There were a few reasons for this:</p>
+          
+          <ul>
+          <li>He&rsquo;s the designer on Team Agent, which owns the agent experience. It was always my plan to get him involved.</li>
+          <li>My primary responsibility is managing and leading the team, so I needed the help of another designer to get it over the finish line. I wanted to shape the work and guide it, but finalizing every UI state and working with engineers on all the final details is best handled by a member of my team.</li>
+          </ul>
+          
+          <p>I filled him in on all the research and the feedback from the CEO, and he explored more ways of how agents could perform actions.</p>
+          
+          <p><a href="/images/case-studies/gladly-actions-api/5-darrells-explorations.jpg"><img alt="Darrell's broad explorations of the agent experience" src="/images/case-studies/gladly-actions-api/5-darrells-explorations.jpg?1592617352" /></a>
+          <em>Darrell&rsquo;s broad explorations of the agent experience</em></p>
+          
+          <p>He did an amazing job of exploring a wide variety of options (something I expect from all of my designers, making it even more egregious that I failed to do so myself) in a short period of time. We reviewed them, along with my boss (VP of Product and Design), and agreed on a right panel approach. However, this view is very important to the CEO, and he believed all agent work should happen at the bottom panel.</p>
+          
+          <p>Normally we would have done usability testing to get more data on how agents would use this feature, but the Ulta go-live date was barely 2 months away, with the holidays in the middle, so engineering had to start building immediately.</p>
+          
+          <p>We decided to go with the CEO&rsquo;s preferred option, but built it in a way that gave us the option to move it to a side panel in the future.</p>
+          
+          <p>The designer quickly polished up the designs, while engineering set out building everything we promised Ulta. They hustled to get it done by the date we agreed to with Ulta, which showed amazing dedication and resiliance from the engineers.</p>
+          
+          <h2 id="launch">Launch</h2>
+          
+          <p>Engineering hustled hard to hit our agreed upon go-live date with Ulta, and then&hellip; Ulta wasn&rsquo;t ready in time. In my experience this isn&rsquo;t uncommon when building product for enterprise customers, but can be disheartening.</p>
+          
+          <p>In this case, though, we closed another customer on the strength of the upcoming Actions API, so they were champing at the bit when we shipped.</p>
+          
+          <p><a href="/images/case-studies/gladly-actions-api/1-final-cancel-markedup.png"><img alt="Screenshot of final agent experience for cancelling and refunding orders within Gladly" src="/images/case-studies/gladly-actions-api/1-final-cancel-markedup.png?1592617351" /></a>
+          <em>The final agent experience we shipped</em></p>
+          
+          <p>We turned it on for them and wish I could say it was an immediate hit, but&hellip; it wasn&rsquo;t. It got some usage, but not a lot.</p>
+          
+          <p>Why? We did weekly check-in calls with the customer to get to the bottom of it, in which we learned 2 things:</p>
+          
+          <ul>
+          <li>There were a couple of small bugs that made the experience confusing for agents (like orders with 0 dollars that could still be &ldquo;refunded&rdquo;), which made them not trust the feature.</li>
+          <li>The company had a previous policy that agents weren&rsquo;t allowed to issue refunds, so they didn&rsquo;t think they were allowed to use the feature. This was further backed up when we looked at FullStory and saw people escalating refunds to their manager. Good for them for following the rules! But when our point-of-contact told us that, they realized they needed to re-train their agents to use this feature.</li>
+          </ul>
+          
+          <p>After fixing the bugs and doing re-training, usage didn&rsquo;t immediately spike, but it did grow steadily week over week. Behavior is slow to change, even with training, and especially when the actions are as serious as cancelling orders and issuing refunds (actions that agents want to make sure they&rsquo;re doing properly).</p>
+          
+          <p>Even so, the first customer loved the feature, and agents had positive feedback once they got used to using it. I wish I had numbers on the time saved or increase in CSAT, but sadly I was laid off due to COVID before we had enough data to get those numbers.</p>
+          
+          <p>After the feature launched, it became the darling of the sales team. Prospects loved making agents more efficient by not having to leave Gladly, and it helped close several customers while I was still there.</p>
+          
+          <h2 id="lessons-learned">Lessons learned</h2>
+          
+          <ul>
+          <li>Stay lo-fi</li>
+          <li>Work in lock-step with engineering. Don&rsquo;t let the UX get too far ahead of what&rsquo;s technically possible. The UX should be pushing things forward, but regularly reviewing with engineering to ask, &ldquo;How might we build this? What other options do you see?&rdquo; Then reacting to their feedback, and making their options real.</li>
+          <li>Always explore a variety of options! &ldquo;Look for the edges of the solution space,&rdquo; I always say, meaning, go broad exploring many options before going deep on any one of them. I didn&rsquo;t explore enough and got complacent with the initial sales mock we showed customers</li>
+          <li>Enterprise features don&rsquo;t get adopted immediately. People have busy work lives, they have certain habits they&rsquo;ve built, and have been trained to do and not do certain things. A feature not getting adopted doesn&rsquo;t mean it isn&rsquo;t valuable or usable, it may mean there&rsquo;s organizational policies that need to change. Always stay close to customers to understand these things. Data you can measure on your side doesn&rsquo;t tell the whole story.</li>
+          </ul>
+          
+          <p>All-in-all this was a fun and challenging project that customers and prospects love, and was a great building block to new cool functionality.</p>
         </div>
       </div>
     </div>
