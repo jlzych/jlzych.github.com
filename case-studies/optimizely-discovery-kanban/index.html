@@ -1,204 +1,209 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <title>Implementing a Discovery process at Optimizely</title>
-    <meta content='width=device-width, initial-scale=1.0, user-scalable=yes' name='viewport'>
-    <meta content='black' name='apple-mobile-web-app-status-bar-style'>
-    <meta content='yes' name='apple-mobile-web-app-capable'>
-    <meta content='I implemented a new way of building product that included an explicit discovery phase that made space for customer development, problem understanding, and solution exploration, before jumping into code. It doubled velocity, improved product quality and team morale, and increased revenue while decreasing costs.' name='description'>
-    <meta content='Jeff Zych' name='author'>
-    <!-- FB Open Graph meta tags -->
-    <meta content='blog' property='og:type'>
-    <meta content="Jeff Zych's Corner of the Internet" property='og:site_name'>
-    <meta content='Implementing a Discovery process at Optimizely' property='og:title'>
-    <meta content='I implemented a new way of building product that included an explicit discovery phase that made space for customer development, problem understanding, and solution exploration, before jumping into code. It doubled velocity, improved product quality and team morale, and increased revenue while decreasing costs.' property='og:description'>
-    <meta content='http://jlzych.com/images/case-studies/optimizely-discovery-kanban/4-fullwall.jpg' property='og:image'>
-    <meta content='http://jlzych.com/case-studies/optimizely-discovery-kanban/' property='og:url'>
-    <!-- Additional Twitter tags - additive with og: tags -->
-    <meta content='summary_large_image' name='twitter:card'>
-    <meta name='twitter:creator' value='@jlzych'>
-    <!-- From https://realfavicongenerator.net/ -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=XBbjm0yjQ3">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=XBbjm0yjQ3">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=XBbjm0yjQ3">
-    <link rel="manifest" href="/site.webmanifest?v=XBbjm0yjQ3">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=XBbjm0yjQ3" color="#adebef">
-    <link rel="shortcut icon" href="/favicon.ico?v=XBbjm0yjQ3">
-    <meta name="msapplication-TileColor" content="#fffef6">
-    <meta name="theme-color" content="#ffffff">
-    <script src='//cdn.optimizely.com/js/1111070510.js'></script>
-    <link href="/stylesheets/application.css?1592778554" media="screen" rel="stylesheet" type="text/css" />
-    <link href='/feed.xml' rel='alternate' title='RSS for Jeff Zych' type='application/rss+xml'>
-    <script src='//use.typekit.net/okn2nfu.js' type='text/javascript'></script>
-    <script>
-      try{Typekit.load();}catch(e){}
-    </script>
-  </head>
-  <body>
-    <div class='container'>
-      <div class='grid' role='main'>
-        <h1 class='monogram'>
-            <a title="Home" href="/"><svg width="152" height="147" viewBox="0 0 152 147" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116.06 45.562l-5.492-.445 1.278 5.36c.806 3.376.767 9.739-1.222 16.344-.787 2.612-1.85 5.17-3.222 7.534-1.883-3.464-4.151-6.144-6.619-8.203-3.495-2.917-7.174-4.388-10.186-5.154l.041-.058c2.152-3.057 4.554-7.338 4.554-11.802 0-4.418-2.017-8.23-4.783-10.883-2.732-2.621-6.462-4.368-10.308-4.368-1.227 0-2.394.184-3.437.426.003-.139.005-.277.005-.415 0-2.724-.662-5.28-2.424-7.162-1.8-1.924-4.138-2.501-6.116-2.501-3.189 0-5.205 2.142-6.208 4.12-.99 1.946-1.37 4.302-1.37 6.571 0 2.57.684 5.25 2.012 7.426-1.505 2.49-3.51 5.268-5.905 8.26-3.32 4.151-7.276 8.576-11.46 13.043C42.935 55 40.92 46.677 40.092 39.076c-.214-1.961-.82-4.704-3.322-6.163-1.198-.699-2.421-.842-3.361-.828-.913.014-1.8.18-2.514.338-1.617.357-3.634 1.053-5.035 2.822-1.476 1.862-1.606 4.047-1.41 5.823 1.263 11.46 5.117 21.826 8.736 31.561.315.848.629 1.691.939 2.53l-1.444 1.465c-5.608 5.685-11.38 11.538-15.944 17.664C11.152 101.786 7 110.162 7 119.925c0 5.271 1.642 10.572 5.448 14.586 3.852 4.063 9.518 6.382 16.71 6.382 7.52 0 13.89-3.083 18.226-9.204 4.203-5.933 6.24-14.344 6.24-24.693 0-9.248-2.285-19.698-4.925-30.024 6.2-6.497 12.311-13.262 17.196-19.722 2.685-3.55 5.055-7.081 6.88-10.49 1.416-.237 2.574-.642 3.494-.963l.091-.031c1.404-.49 2.218-.751 3.32-.751-.027 0-.024 0 .002.01.1.032.541.177 1.084.815.606.71 1.123 1.826 1.123 3.298 0 2.345-1.021 5.16-2.613 7.844-1.594 2.687-3.411 4.659-4.337 5.366-1.259.961-2.211 2.301-2.518 3.933a5.872 5.872 0 00.858 4.298c1.437 2.204 4.919 3.853 8.085 1.608 1.376-.976 2.169-1.184 2.858-1.184.703 0 3.992.61 7.13 3.927 1.89 1.998 3.839 5.11 5.036 9.919-2.562 1.55-5.014 2.985-7.37 4.364a829.64 829.64 0 00-3.955 2.325c-4.228 2.505-8.141 4.931-11.446 7.506-6.761 5.268-11.36 11.49-11.36 20.881 0 11.881 10.481 19.741 20.023 19.741 14.506 0 30.466-14.74 30.466-39.577 0-4.384-.307-8.306-.868-11.811a61.256 61.256 0 007.278-7.918c4.494-5.868 8.139-13.006 8.151-19.909.007-3.758-.801-7.27-2.708-10.014-1.987-2.861-4.974-4.587-8.539-4.875zM96.897 98.117l.627-.327c-.3 11.525-2.834 19.182-5.882 23.895-3.256 5.033-6.942 6.559-9.362 6.559-1.486 0-3.858-.601-5.776-2.029-1.77-1.316-3.098-3.267-3.098-6.29 0-5.054 3.695-9.613 10.096-14.077 3.092-2.157 6.555-4.111 10.003-5.948a457.19 457.19 0 013.392-1.783zm-69.892 2.28c3.441-4.507 7.453-8.799 11.356-12.81 1.904 6.443 3.182 12.887 3.182 19.709 0 10.918-2.616 16.349-5.111 19.039-2.465 2.657-5.362 3.229-7.273 3.229-6.021 0-10.694-3.802-10.694-9.639 0-6.095 3.334-12.709 8.54-19.528z" fill="#FED874" stroke="#FED874" stroke-width="8"/><path d="M38.709 24.084c0-2.583-1.34-4.632-2.83-5.921C34.405 16.89 32.391 16 30.266 16c-1.823 0-3.858.561-5.451 2.12-1.621 1.586-2.308 3.735-2.308 5.964 0 2.038.51 4.237 2.012 5.986 1.579 1.838 3.796 2.648 6.088 2.648 2.65 0 4.8-1.222 6.192-2.984 1.32-1.67 1.909-3.734 1.909-5.65z" fill="#FED874" stroke="#FED874" stroke-width="8"/><path d="M122.06 42.562l-5.492-.445 1.278 5.36c.806 3.376.767 9.739-1.222 16.344-.787 2.612-1.85 5.17-3.222 7.534-1.883-3.464-4.151-6.144-6.619-8.203-3.495-2.917-7.174-4.388-10.186-5.154l.041-.058c2.152-3.057 4.554-7.338 4.554-11.802 0-4.418-2.017-8.23-4.783-10.883-2.732-2.621-6.462-4.368-10.308-4.368-1.227 0-2.394.184-3.437.426.003-.139.005-.277.005-.415 0-2.724-.662-5.28-2.424-7.162-1.8-1.924-4.138-2.501-6.116-2.501-3.189 0-5.205 2.142-6.208 4.12-.99 1.946-1.37 4.302-1.37 6.571 0 2.57.684 5.25 2.013 7.426-1.506 2.49-3.512 5.268-5.906 8.26-3.32 4.151-7.276 8.576-11.46 13.043C48.935 52 46.92 43.677 46.092 36.076c-.214-1.961-.82-4.704-3.322-6.163-1.198-.699-2.421-.842-3.361-.828-.913.014-1.8.18-2.514.338-1.617.357-3.634 1.053-5.035 2.822-1.476 1.862-1.606 4.047-1.41 5.823 1.263 11.46 5.117 21.826 8.736 31.561.315.848.629 1.691.939 2.53l-1.444 1.465c-5.608 5.685-11.38 11.538-15.944 17.664C17.152 98.786 13 107.162 13 116.925c0 5.271 1.642 10.572 5.448 14.586 3.852 4.063 9.518 6.382 16.71 6.382 7.52 0 13.89-3.083 18.226-9.205 4.203-5.932 6.24-14.343 6.24-24.692 0-9.248-2.285-19.698-4.925-30.024 6.2-6.497 12.311-13.262 17.196-19.722 2.685-3.55 5.055-7.081 6.88-10.49 1.416-.237 2.574-.642 3.494-.963l.091-.031c1.404-.49 2.218-.751 3.32-.751-.027 0-.024 0 .002.01.1.032.541.177 1.084.815.606.71 1.123 1.826 1.123 3.298 0 2.345-1.021 5.16-2.613 7.844-1.594 2.687-3.411 4.659-4.337 5.366-1.259.961-2.211 2.301-2.518 3.933a5.872 5.872 0 00.858 4.298c1.437 2.204 4.919 3.853 8.085 1.608 1.376-.976 2.169-1.184 2.858-1.184.703 0 3.992.61 7.13 3.927 1.89 1.998 3.839 5.11 5.036 9.919a569.87 569.87 0 01-7.37 4.364c-1.349.79-2.666 1.56-3.955 2.325-4.228 2.505-8.141 4.931-11.446 7.506-6.761 5.268-11.36 11.49-11.36 20.881 0 11.88 10.481 19.741 20.023 19.741 14.506 0 30.466-14.74 30.466-39.577 0-4.384-.307-8.306-.868-11.811a61.256 61.256 0 007.278-7.918c4.494-5.868 8.139-13.006 8.151-19.909.007-3.758-.801-7.27-2.708-10.014-1.987-2.861-4.974-4.587-8.539-4.875zm-19.163 52.555l.627-.327c-.301 11.525-2.834 19.182-5.882 23.895-3.256 5.033-6.942 6.559-9.362 6.559-1.486 0-3.858-.601-5.776-2.029-1.77-1.316-3.098-3.267-3.098-6.29 0-5.054 3.695-9.613 10.096-14.077 3.092-2.157 6.555-4.11 10.003-5.948a453.23 453.23 0 013.392-1.783zm-69.892 2.28c3.441-4.507 7.453-8.799 11.356-12.81 1.904 6.443 3.182 12.887 3.182 19.708 0 10.919-2.616 16.35-5.111 19.04-2.465 2.657-5.362 3.229-7.273 3.229-6.021 0-10.694-3.802-10.694-9.639 0-6.095 3.334-12.709 8.54-19.528z" fill="#FCF398" stroke="#FCF398" stroke-width="8"/><path d="M44.709 21.084c0-2.583-1.34-4.632-2.83-5.921C40.405 13.89 38.391 13 36.266 13c-1.823 0-3.858.562-5.451 2.12-1.621 1.586-2.308 3.735-2.308 5.964 0 2.038.51 4.237 2.012 5.986 1.579 1.838 3.796 2.648 6.088 2.648 2.65 0 4.8-1.222 6.193-2.984 1.32-1.67 1.908-3.734 1.908-5.65z" fill="#FCF398" stroke="#FCF398" stroke-width="8"/><path d="M128.06 39.562l-5.492-.445 1.278 5.36c.806 3.376.767 9.739-1.222 16.344-.787 2.613-1.85 5.17-3.222 7.534-1.883-3.464-4.151-6.144-6.619-8.203-3.495-2.917-7.174-4.388-10.186-5.154l.041-.058c2.152-3.057 4.554-7.338 4.554-11.802 0-4.418-2.017-8.23-4.783-10.883-2.732-2.621-6.462-4.368-10.308-4.368-1.227 0-2.394.184-3.437.426.003-.139.005-.277.005-.415 0-2.724-.662-5.28-2.424-7.162-1.8-1.924-4.138-2.501-6.116-2.501-3.189 0-5.205 2.142-6.208 4.12-.99 1.946-1.37 4.302-1.37 6.571 0 2.57.684 5.25 2.013 7.426-1.506 2.49-3.512 5.268-5.906 8.26-3.32 4.151-7.276 8.576-11.46 13.043C54.935 49 52.92 40.677 52.092 33.076c-.214-1.961-.82-4.704-3.322-6.163-1.198-.699-2.421-.842-3.361-.828-.913.014-1.8.18-2.514.338-1.617.357-3.634 1.053-5.035 2.822-1.476 1.862-1.606 4.047-1.41 5.823 1.263 11.46 5.117 21.826 8.736 31.561.315.848.629 1.691.939 2.53l-1.444 1.465c-5.608 5.685-11.38 11.538-15.944 17.664C23.152 95.786 19 104.162 19 113.925c0 5.271 1.642 10.572 5.448 14.586 3.852 4.063 9.518 6.382 16.71 6.382 7.52 0 13.89-3.083 18.226-9.205 4.203-5.932 6.24-14.343 6.24-24.692 0-9.248-2.285-19.698-4.925-30.024 6.2-6.497 12.311-13.262 17.196-19.722 2.685-3.55 5.055-7.081 6.88-10.49 1.416-.237 2.574-.642 3.494-.963l.091-.031c1.404-.49 2.218-.751 3.32-.751-.027 0-.024 0 .002.01.1.032.541.177 1.084.815.606.71 1.123 1.826 1.123 3.298 0 2.345-1.021 5.16-2.613 7.844-1.594 2.687-3.411 4.659-4.337 5.366-1.259.961-2.211 2.301-2.518 3.933a5.873 5.873 0 00.858 4.298c1.437 2.204 4.919 3.853 8.085 1.608 1.376-.976 2.169-1.184 2.858-1.184.703 0 3.992.61 7.13 3.927 1.889 1.998 3.839 5.11 5.036 9.919a570.345 570.345 0 01-7.37 4.364c-1.349.79-2.666 1.56-3.955 2.325-4.228 2.505-8.141 4.931-11.446 7.506-6.761 5.268-11.36 11.49-11.36 20.881 0 11.88 10.481 19.741 20.023 19.741 14.506 0 30.466-14.74 30.466-39.577 0-4.384-.307-8.306-.868-11.811a61.256 61.256 0 007.278-7.918c4.494-5.868 8.139-13.006 8.151-19.909.007-3.758-.801-7.27-2.708-10.014-1.987-2.861-4.974-4.587-8.539-4.875zm-19.163 52.555l.627-.327c-.301 11.525-2.834 19.182-5.882 23.895-3.256 5.033-6.942 6.559-9.362 6.559-1.486 0-3.858-.601-5.776-2.029-1.77-1.316-3.098-3.267-3.098-6.29 0-5.054 3.695-9.613 10.096-14.077 3.092-2.157 6.555-4.11 10.003-5.948a451.265 451.265 0 013.392-1.783zm-69.892 2.28c3.441-4.507 7.453-8.799 11.356-12.81 1.904 6.443 3.182 12.887 3.182 19.708 0 10.919-2.616 16.35-5.111 19.04-2.465 2.657-5.362 3.229-7.273 3.229-6.021 0-10.694-3.802-10.694-9.639 0-6.095 3.334-12.709 8.54-19.528z" fill="#CCF7AA" stroke="#CCF7AA" stroke-width="8"/><path d="M50.709 18.084c0-2.583-1.34-4.632-2.83-5.921C46.405 10.89 44.391 10 42.266 10c-1.823 0-3.858.562-5.451 2.12-1.621 1.586-2.308 3.735-2.308 5.964 0 2.038.51 4.237 2.012 5.986 1.579 1.838 3.796 2.648 6.088 2.648 2.65 0 4.8-1.222 6.193-2.984 1.32-1.67 1.908-3.734 1.908-5.65z" fill="#CCF7AA" stroke="#CCF7AA" stroke-width="8"/><path d="M134.06 36.562l-5.492-.445 1.278 5.36c.806 3.376.767 9.739-1.222 16.344-.787 2.613-1.85 5.17-3.222 7.534-1.883-3.464-4.151-6.144-6.619-8.203-3.495-2.917-7.174-4.388-10.186-5.154l.041-.058c2.152-3.057 4.554-7.338 4.554-11.802 0-4.418-2.017-8.23-4.783-10.883-2.732-2.621-6.462-4.368-10.308-4.368-1.227 0-2.394.184-3.437.426.003-.139.005-.277.005-.415 0-2.724-.662-5.28-2.424-7.162-1.8-1.924-4.138-2.501-6.116-2.501-3.189 0-5.205 2.142-6.208 4.12-.99 1.946-1.37 4.302-1.37 6.571 0 2.57.684 5.25 2.013 7.426-1.506 2.49-3.512 5.268-5.906 8.26-3.32 4.151-7.276 8.576-11.46 13.043C60.935 46 58.92 37.677 58.092 30.076c-.214-1.961-.82-4.704-3.322-6.163-1.198-.699-2.421-.842-3.361-.828-.913.014-1.8.18-2.514.338-1.617.357-3.634 1.053-5.035 2.822-1.476 1.862-1.606 4.047-1.41 5.823 1.263 11.46 5.117 21.826 8.736 31.561.315.848.629 1.691.939 2.53l-1.444 1.465c-5.608 5.685-11.38 11.538-15.944 17.664C29.152 92.786 25 101.162 25 110.925c0 5.271 1.642 10.572 5.448 14.586 3.852 4.063 9.518 6.382 16.71 6.382 7.52 0 13.89-3.083 18.226-9.205 4.203-5.932 6.24-14.343 6.24-24.692 0-9.248-2.285-19.698-4.925-30.024 6.2-6.497 12.311-13.262 17.196-19.722 2.685-3.55 5.055-7.081 6.88-10.49 1.416-.237 2.574-.642 3.494-.963l.091-.031c1.404-.49 2.218-.751 3.32-.751-.027 0-.024 0 .002.01.1.032.541.177 1.084.815.606.71 1.123 1.826 1.123 3.298 0 2.345-1.021 5.16-2.613 7.844-1.594 2.687-3.411 4.659-4.337 5.366-1.259.961-2.211 2.301-2.518 3.933a5.873 5.873 0 00.858 4.298c1.437 2.204 4.919 3.853 8.085 1.608 1.376-.976 2.169-1.184 2.858-1.184.703 0 3.992.61 7.13 3.927 1.889 1.998 3.839 5.11 5.036 9.919a570.345 570.345 0 01-7.37 4.364c-1.349.79-2.666 1.56-3.955 2.325-4.228 2.505-8.141 4.931-11.446 7.506-6.761 5.268-11.36 11.49-11.36 20.881 0 11.88 10.481 19.741 20.023 19.741 14.506 0 30.466-14.74 30.466-39.577 0-4.384-.307-8.306-.868-11.811a61.256 61.256 0 007.278-7.918c4.494-5.868 8.139-13.006 8.151-19.909.007-3.758-.801-7.27-2.708-10.014-1.987-2.861-4.974-4.587-8.539-4.875zm-19.163 52.555l.627-.327c-.301 11.525-2.834 19.182-5.882 23.895-3.256 5.033-6.942 6.559-9.362 6.559-1.486 0-3.858-.601-5.776-2.029-1.77-1.316-3.098-3.267-3.098-6.29 0-5.054 3.695-9.613 10.096-14.077 3.092-2.157 6.555-4.11 10.003-5.948a451.265 451.265 0 013.392-1.783zm-69.892 2.28c3.441-4.507 7.453-8.799 11.356-12.81 1.904 6.443 3.182 12.887 3.182 19.709 0 10.918-2.616 16.349-5.111 19.039-2.465 2.657-5.362 3.229-7.273 3.229-6.021 0-10.694-3.802-10.694-9.639 0-6.095 3.334-12.709 8.54-19.528z" fill="#ADEBEF" stroke="#ADEBEF" stroke-width="8"/><path d="M56.709 15.085c0-2.584-1.34-4.633-2.83-5.922C52.405 7.89 50.391 7 48.266 7c-1.823 0-3.858.561-5.451 2.12-1.621 1.586-2.308 3.735-2.308 5.965 0 2.037.51 4.236 2.012 5.985 1.579 1.838 3.796 2.648 6.088 2.648 2.65 0 4.8-1.222 6.193-2.984 1.32-1.67 1.908-3.734 1.908-5.65z" fill="#ADEBEF" stroke="#ADEBEF" stroke-width="8"/><g filter="url(#filter0_d)" fill="#FFFFFA" stroke="#FFFFFA" stroke-width="2"><path d="M134.818 38.552l-1.373-.111.32 1.34c.952 3.993.84 10.902-1.268 17.904-1.354 4.495-3.511 8.967-6.681 12.703-2.016-5.58-4.877-9.365-7.955-11.933-5.368-4.48-11.226-5.1-13.795-5.312a47.164 47.164 0 003.119-3.93c2.082-2.957 4.007-6.588 4.007-10.075 0-3.475-1.587-6.538-3.86-8.718-2.264-2.172-5.276-3.533-8.23-3.533-1.84 0-3.564.531-5.067 1.008l-.125.04c-.692.219-1.328.42-1.928.575.445-1.6.687-3.144.687-4.612 0-2.279-.554-3.98-1.614-5.113-1.07-1.143-2.506-1.55-3.926-1.55-1.65 0-2.825 1.082-3.534 2.478-.704 1.387-1.044 3.23-1.044 5.213 0 2.926.982 5.539 2.604 7.193l-.2.366c-1.676 3.022-4.076 6.404-6.954 10.002-4.363 5.452-9.777 11.34-15.328 17.141l-.04-.147c-2.766-10.427-5.51-20.766-6.525-30.08-.199-1.83-.686-3.218-1.85-3.897-.57-.332-1.197-.428-1.806-.419-.602.009-1.251.122-1.912.268-1.394.307-2.576.803-3.33 1.755-.773.975-.935 2.219-.78 3.631 1.221 11.071 4.945 21.095 8.58 30.88a1235.698 1235.698 0 011.584 4.287c-.94.96-1.884 1.919-2.829 2.877-5.604 5.683-11.196 11.354-15.623 17.297C32.757 93.311 29 101.064 29 109.925c0 4.668 1.45 9.175 4.625 12.522 3.185 3.36 8.007 5.446 14.534 5.446 6.609 0 12.038-2.66 15.777-7.939 3.706-5.231 5.688-12.939 5.688-22.958 0-9.321-2.436-20.042-5.247-30.893 6.564-6.833 13.04-13.936 18.126-20.663 2.993-3.959 5.524-7.811 7.31-11.42.01-.023.022-.045.033-.068 1.816-.074 3.224-.565 4.506-1.012l.02-.007c1.399-.488 2.645-.918 4.308-.918.995 0 2.29.612 3.37 1.88 1.059 1.242 1.839 3.044 1.839 5.243 0 3.108-1.309 6.47-3.033 9.375-1.725 2.907-3.777 5.212-5.097 6.22-.771.589-1.242 1.316-1.39 2.102a2.872 2.872 0 00.423 2.106c.738 1.13 2.381 1.831 3.836.799 1.672-1.186 3.066-1.737 4.594-1.737 1.546 0 5.618.962 9.309 4.865 2.593 2.742 5.034 6.977 6.239 13.431-3.256 2.003-6.355 3.817-9.273 5.525-1.34.784-2.643 1.546-3.905 2.294-4.219 2.501-7.989 4.844-11.131 7.293-6.323 4.926-10.204 10.363-10.204 18.514 0 9.963 8.865 16.741 17.023 16.741 12.438 0 27.466-12.953 27.466-36.577 0-4.946-.402-9.232-1.11-12.945a58.276 58.276 0 008.138-8.608c4.335-5.66 7.522-12.154 7.533-18.09.006-3.362-.721-6.21-2.171-8.297-1.471-2.117-3.639-3.38-6.318-3.597zm-20.233 46.866c1.736-.906 3.4-1.775 4.91-2.608.038.858.058 1.745.058 2.662 0 13.206-2.737 22.192-6.392 27.843-3.657 5.653-8.192 7.929-11.881 7.929-2.098 0-5.105-.79-7.567-2.622-2.425-1.804-4.307-4.601-4.307-8.697 0-6.635 4.842-11.978 11.38-16.538 3.242-2.261 6.831-4.282 10.308-6.135 1.179-.627 2.35-1.239 3.491-1.834zM58.389 72.252l.325-.33c2.747 8.184 4.83 16.446 4.83 25.374 0 11.355-2.72 17.638-5.913 21.08-3.185 3.433-6.981 4.188-9.472 4.188-7.234 0-13.694-4.733-13.694-12.639 0-7.113 3.844-14.392 9.156-21.348 4.499-5.894 9.95-11.43 14.768-16.325zM54.709 14.085c0-1.5-.78-2.778-1.793-3.653C51.91 9.563 50.573 9 49.267 9c-1.23 0-2.444.375-3.353 1.265-.917.896-1.406 2.2-1.406 3.82 0 1.571.394 2.99 1.288 4.03.912 1.063 2.236 1.603 3.812 1.603 1.667 0 2.973-.748 3.839-1.844.847-1.073 1.262-2.457 1.262-3.79z"/></g><defs><filter id="filter0_d" x="28" y="8" width="117.307" height="121.893" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1" dy="1"/><feColorMatrix values="0 0 0 0 0.239216 0 0 0 0 0.733333 0 0 0 0 0.827451 0 0 0 1 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow"/><feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/></filter></defs></svg>
-          <span class='name'>Jeff Zych</span>
-          </a>
-        
-        </h1>
-        <nav class='nav-main'>
-          <ul>
-            <li><a title="About Jeff Zych" href="/about">About Me</a></li>
-            <li><a href="/archives">Archives</a></li>
-          </ul>
-        </nav>
-        <div class='content'>
-          <h1 class='article__title'>Implementing a Discovery process at Optimizely</h1>
-          <h2 class='article__subtitle'>How I reduced cost, increased revenue, and improved product quality by creating an explicit Discovery phase</h2>
-          <!-- :markdown -->
-          <!-- > **Short on time? Key takeaways** -->
-          <!-- > -->
-          <!-- > - Implemented a new way of building product that included an explicit discovery phase that made space for customer development, problem understanding, and solution exploration, before jumping into code. -->
-          <!-- > - Doubled design and engineering velocity -->
-          <!-- > - Increased product quality (fewer bugs, more UI polish) -->
-          <!-- > - Increased revenue -->
-          <!-- > - Decreased development costs -->
-          <!-- > - Decreased churn -->
-          <p>It was October of 2015, and we just launched Optimizely&rsquo;s newest product. The one that was supposed to transform us into a multi-product company, diversify our income stream, and rocket us to the next echelon of success.</p>
-          
-          <p>Instead, the product launched behind schedule, with bugs and feature gaps, and struggled to gain traction in the market. Less than 6 months later, there were company-wide layoffs.</p>
-          
-          <p><img alt="Discovery kanban board in its final, full board form, tracking work from dreams through delivery" src="/images/case-studies/optimizely-discovery-kanban/4-fullwall.jpg?1591227336" />
-          <em>The final discovery kanban board that helped us stay focused on customer needs by tracking work from dreams through delivery</em></p>
-          
-          <h2 id="how-did-we-get-here">How did we get here?</h2>
-          
-          <p>Optimizely was founded in 2009, and grew to over 400 people by the end of 2014. Design, engineering, and product were around 120 people, split into &ldquo;squads&rdquo; who owned a product area and ran their own flavor of scrum.</p>
-          
-          <p>Design and research was awkwardly shoehorned into each team&rsquo;s scrum process. Scrum is a process designed to enable engineers to ship code reliably with high quality, not to enable designers to do their best work. As a result, designers were typically assigned to projects in sprint planning when engineers were ready to build. If they were lucky, they&rsquo;d have a &ldquo;sprint 0&rdquo; to do some research to understand the problem they&rsquo;re supposed to be solving, but often this wasn&rsquo;t happening. They were given little space to explore solutions, or test them with customers. Their impact was confined to pushing pixels.</p>
-          
-          <p>Engineers often complained that they were &ldquo;blocked on design&rdquo; (a phrase I hate). When they did get designs, there were often open product and design questions, which slowed down implementation, increased bugs, and reduced UI quality.</p>
-          
-          <p>Product managers had little time to do customer development to inform the team&rsquo;s vision, strategy, and roadmap. They were too busy managing engineering schedules and performing scrum rituals.</p>
-          
-          <p>All told, we were shipping features that weren&rsquo;t rooted in the needs of our customers. We operated as a <a href="https://svpg.com/product-vs-feature-teams/">feature factory</a>.</p>
-          
-          <h2 id="let-39-s-build-a-new-product">Let&rsquo;s build a new product!</h2>
-          
-          <p>We rolled into 2015 building product this way. Now we were asked to build a brand new product from scratch. Oh, and we threw a team of 10 engineers, 3 designers, and 3 PMs on it before doing any product discovery or design work.</p>
-          
-          <p>We tried our best to do understand the needs of our potential customers and launch a viable product, but we were fighting against the inertia of engineers already writing code. The fact that we got any customers before the end of the year is a minor miracle.</p>
-          
-          <p>As the manager of the designers and researchers on this project, I had a front row seat to the spectacle. I knew this wasn&rsquo;t the way to build a product people loved, and that the impact of design and research was severely hampered in this system, but I had been unable to make any headway on changing how we build product since we were so under the gun to launch a new product.</p>
-          
-          <h2 id="designing-the-machine-that-designs-the-machines">Designing the machine that designs the machines</h2>
-          
-          <p>A wise man once said: Never waste a good crisis.</p>
-          
-          <p>This was a crisis visible to the whole company. It was clear from the executive team down to the front-line staff that the way we built product wasn&rsquo;t working. This was my opportunity to design a new operating model that supported researchers and designers doing their best work. A system that&hellip;</p>
-          
-          <ul>
-          <li>Was driven by the needs of customer, rather than solutions looking for a problem.</li>
-          <li>Validated what we were building was valuable, usable, and feasible, before we wrote any code.</li>
-          <li>Didn&rsquo;t decide what to build that sprint and then ask, &ldquo;Do we have designs for this?&rdquo; but instead had research and design pushing work into sprints.</li>
-          <li>Wasn&rsquo;t overly prescriptive of which UX methods to use, but rather was descriptive of high level phases and suggested methods. It also shouldn&rsquo;t prescribe <em>who</em> was doing the work. Everyone can and should contribute to the process, regardless of title. What&rsquo;s important is that the work is being done each step of the way.</li>
-          <li>Was understandable to non-designers. The design process shouldn&rsquo;t be a mystery. If it is, everyone will be questioning what we&rsquo;re doing and when we&rsquo;ll be done. Making it understandable to all also elevates the design maturity of the org, while communicating out how far along projects are.</li>
-          </ul>
-          
-          <p>To design this system, I drew on what I learned in grad school, my hands-on knowledge from working as a product designer, my experience managing designers and guiding their work, and my reading about dual track scrum, continuous discovery, and how other teams build product.</p>
-          
-          <p>After talking through options with the design team and PMs, and trying on some models with projects that went well (and not so well), we aligned on the <strong>double diamond model of design.</strong></p>
-          
-          <p><img alt="Diagram of the double diamond model of design, courtesy the UK Design Council" src="/images/case-studies/optimizely-discovery-kanban/1-double-diamond.png?1591227334" />
-          <em>Double Diamond model of design, courtesy the <a href="https://www.designcouncil.org.uk/news-opinion/what-framework-innovation-design-councils-evolved-double-diamond">UK Design Council</a></em></p>
-          
-          <p>This was created by the <a href="https://www.designcouncil.org.uk/news-opinion/what-framework-innovation-design-councils-evolved-double-diamond">UK Design Council</a> to model the design process. It&rsquo;s not overly prescriptive, but has enough structure to both guide the team&rsquo;s work while communicating what work is being done at each stage.</p>
-          
-          <p>It splits the process into two phases: <strong>problem understanding</strong>, and <strong>solution exploration</strong>. The goal of problem understanding it to define what problem you&rsquo;re solving, who it&rsquo;s a problem for, and use cases that are in and out of scope.</p>
-          
-          <p>Solution exploration&rsquo;s goal is to find the best solution to the problem by exploring potential options, testing them with customers, and vetting their technical feasibility.</p>
-          
-          <p>Each phase is a diamond because it has two halves, which represent <strong>divergent</strong> and <strong>convergent</strong> thinking. Divergent means going broad to gather lots of information and ideas, whereas convergent means whittling those down to the most promising ones. These two modes of thinking personally helped me become a better designer by telling me when I should turn on the generative part of my brain, and when I should turn on the evaluative part of my brain.</p>
-          
-          <p>Once the work has gone through this process, it&rsquo;s ready to be built and can be prioritized in a sprint. By this point we should have high confidence that the solutions are valuable, usable, and feasible. I called the system <strong>Discovery Kanban</strong>.</p>
-          
-          <h2 id="roll-out">Roll out</h2>
-          
-          <p>Now that we had a new proposal for how to work, I started using it with one team who&rsquo;s designer and PM were ready to try a new way of working and smoothing out the kinks. We made the kanban board on a whiteboard, put their current and upcoming work on it, and started reviewing it in sprint planning.</p>
-          
-          <p><img alt="First prototype of the Discovery kanban board" src="/images/case-studies/optimizely-discovery-kanban/2-proto-board.jpg?1591227336" />
-          <em>First prototype of the Discovery kanban board</em></p>
-          
-          <p>There were a couple of quick improvements to make, such as adding a column for problem definitions that were done but not being worked on by a designer yet, but otherwise the system was accurately modeling reality and increasing the visibility of the team&rsquo;s work.</p>
-          
-          <p>After a few weeks, the early results were positive. We were explicit about which projects needed more research, and which didn&rsquo;t. Designers had more space to explore potential solutions. Finished designs were flowing smoothly into engineering. Their estimates were more accurate, there were fewer questions during the implementation phase to slow them down, fewer bugs at launch, and more room for UI polish.</p>
-          
-          <h2 id="expanding-to-more-teams">Expanding to more teams</h2>
-          
-          <p>Once it was working for one team, I expanded team by team until all the squads were using this system. Doing it this way helped me get buy-in for this new way of working, explain the design process, and address any confusion.</p>
-          
-          <p><img alt="Next iteration of the Discovery kanban board" src="/images/case-studies/optimizely-discovery-kanban/3-board2.jpg?1591227336" />
-          <em>Next iteration of the Discovery kanban board</em></p>
-          
-          <p>I also started a weekly planning meeting with the designers, researchers, and PMs to review all the work in flight, and prioritize new work. This ensured we were working on the most impactful projects that were aligned to our product strategy and vision, helped us choose which projects were most in need of research across teams, improved coordination between teams, and reduced the number of meetings of &ldquo;work about the work&rdquo; (i.e. who is doing what, and when). Put simply, it <strong>aligned design&rsquo;s efforts to business outcomes</strong>.</p>
-          
-          <p>While I was doing this, our Engineering Development Director was improving how we tracked and coordinated engineering work across teams. I stayed in sync with him, and we moved all the work onto a huge physical wall that tracked everything the product, design, and eng teams were working on, from vague ideas through discovery to shipped code.</p>
-          
-          <p><img alt="Discovery kanban board in its final, full board form, tracking work from dreams through delivery" src="/images/case-studies/optimizely-discovery-kanban/4-fullwall.jpg?1591227336" />
-          <em>Discovery kanban board in its final, full board form, tracking work from dreams through delivery</em></p>
-          
-          <p>We also expanded my weekly planning meeting to include engineering and product leadership, and to review all work in flight, from what engineers were building back to the exploratory research. This greatly increased visibility into what everyone was doing, what customer pain points and opportunities most needed research, and what cross-team prioritization and trade-offs we needed to make.</p>
-          
-          <p><img alt="Meeting to review the whole board, expanded to include engineering and product leadership" src="/images/case-studies/optimizely-discovery-kanban/5-moped.jpg?1591227334" />
-          <em>Meeting to review the whole board, expanded to include engineering and product leadership</em></p>
-          
-          <h2 id="impact">Impact</h2>
-          
-          <p>All of these changes are great, but what was the impact of this new system on the company? I&rsquo;m glad you asked:</p>
-          
-          <ul>
-          <li><strong>Doubled velocity</strong>: We were shipping twice as many roadmap items (features, UI improvements, and so on) as the year-ago quarter, across all squads, while keeping headcount flat. We were finishing twice as many research and design projects, with a smaller team. The system provided better coordination across teams (no more 2 designers working on the same project, for example), and reduced the number of meetings need to talk about &ldquo;work about the work,&rdquo; i.e. deciding who was doing what, and when they were doing it.</li>
-          <li><strong>Improved quality</strong>: There were fewer bugs with new feature launches, there were fewer code yellows and reds, and we were doing more UI polish for features. This is largely attributable to engineering not starting to code until the designs were ready and fully thought through. This meant work flowed smoothly through the system, estimates were more accurate, and people weren&rsquo;t rushing to ship.</li>
-          <li><strong>Higher morale</strong>: Designers and researchers were happier and felt like the process supported them doing their best work. Engineers weren&rsquo;t stretched as thin, have stopped saying they&rsquo;re &ldquo;blocked on design.&rdquo; They&rsquo;re also involved in discovery work which helps them understand the &ldquo;why&rdquo; behind their work better. PMs also had more space to do customer development.</li>
-          </ul>
-          
-          <p>Those are all great measure of the output, but what about impact to the bottom line and your customers?</p>
-          
-          <ul>
-          <li><strong>Increased revenue</strong>: Remember that failed product we launched? Well we kept iterating on it, and grew it to over $2MM in annual recurring revenue within the first year. Our process made sure the team was staying close to customers, and understanding their needs first, before jumping into solutions and code.</li>
-          <li><strong>Increased Cost Savings</strong>: A back-of-the-napkin cost calculation puts the cost to build our new product at a conservative $6.25MM (~250K per person per year fully loaded, * 15 people, * 10/12 years). (That doesn&rsquo;t include additional engineers we added later, or the cost of training sales and support, or the cost of launch marketing. Nor does it include opportunity cost of launching late, and not gaining customers at launch). Under this new system, we would have started with a smaller team (a researcher, designer, and PM, let&rsquo;s say), figured out the customer need to serve first, and tested solutions until we were confident in the value of investing more time and people into launching a product.</li>
-          <li><p><strong>Reduced churn</strong>: We spent most of 2016 iterating on the new product, and starved our original product of resources. As a result, customers were fed up with longstanding bugs and feature requests that weren&rsquo;t being acted on, and churn was a serious problem.</p>
-          
-          <p>To solve our churn problem, our CFO/COO led an effort to build a <em>current reality tree</em> to identify all the issues — product-related or otherwise — that contributed to churn. Getting them all out in the open helped us prioritize them and assign owners. In that exercise, <strong>210 product issues</strong> were identified (a lot more non-product ones were identified, too, like poor handoff between sales and success). These ranged from missing features to bugs to UX problems.</p>
-          
-          <p>Throughout the rest of 2017 we took them on, and were able to cross <strong>152 items</strong> off the list — while shipping additional new features. By the end of that year, churn finally started decreasing. This was a testament to the strength of our system that it didn&rsquo;t buckle under the weight of all these problems to solve, and ensured we took the time to understand our customer&rsquo;s pain points, and tackle the most impactful ones, instead of rushing into building half-baked solution.</p></li>
-          </ul>
-          
-          <h2 id="fin">Fin</h2>
-          
-          <p>The way we worked in 2015 wasn&rsquo;t working. By the end of 2016, we had transformed the way we built product, resulting in increased velocity, increased quality, increased revenue and decreased cost. And in 2017 these new habits became our default way of working. We started with the needs of customers, and then figured out how to solve them, rather than the other way around. Whenever I would hear the CEO ask, &ldquo;Do we understand the problem well enough yet, or do we need more research?&rdquo; I knew I had achieved the shift in mindset we needed. Seeing the design team&rsquo;s work flourish under this new system was a highlight of my career.</p>
-          
-          <p><em>Want to transform the way your team works? Get in touch at <a href="mailto:jlzych@gmail.com">jlzych@gmail.com</a></em></p>
-        </div>
-      </div>
-    </div>
-    <footer id='site-footer'>
-      <p>
-        &copy; 2010&ndash;2020 Jeff Zych
-        &bull; Hand-crafted with
-        <a href="http://middlemanapp.com/">Middleman</a>
-      </p>
-      <a style="display: none;" href="http://plus.google.com/+JeffZych?rel=author">Google+ profile</a>
-    </footer>
-    <!-- Google Analytics tracking -->
-    <script>
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-21389659-1']);
-      _gaq.push(['_trackPageview']);
-      
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
-  </body>
+<head>
+<meta charset='utf-8'>
+<title>Implementing a Discovery process at Optimizely</title>
+<meta content='width=device-width, initial-scale=1.0, user-scalable=yes' name='viewport'>
+<meta content='black' name='apple-mobile-web-app-status-bar-style'>
+<meta content='yes' name='apple-mobile-web-app-capable'>
+<meta content='I implemented a new way of building product that included an explicit discovery phase that made space for customer development, problem understanding, and solution exploration, before jumping into code. It doubled velocity, improved product quality and team morale, and increased revenue while decreasing costs.' name='description'>
+<meta content='Jeff Zych' name='author'>
+<!-- FB Open Graph meta tags -->
+<meta content='blog' property='og:type'>
+<meta content='Jeff Zych&#x27;s Corner of the Internet' property='og:site_name'>
+<meta content='Implementing a Discovery process at Optimizely' property='og:title'>
+<meta content='I implemented a new way of building product that included an explicit discovery phase that made space for customer development, problem understanding, and solution exploration, before jumping into code. It doubled velocity, improved product quality and team morale, and increased revenue while decreasing costs.' property='og:description'>
+<meta content='http://jlzych.com/images/case-studies/optimizely-discovery-kanban/4-fullwall.jpg' property='og:image'>
+<meta content='http://jlzych.com/case-studies/optimizely-discovery-kanban/' property='og:url'>
+<!-- Additional Twitter tags - additive with og: tags -->
+<meta content='summary_large_image' name='twitter:card'>
+<meta name='twitter:creator' value='@jlzych'>
+<!-- From https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=XBbjm0yjQ3">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=XBbjm0yjQ3">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=XBbjm0yjQ3">
+<link rel="manifest" href="/site.webmanifest?v=XBbjm0yjQ3">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=XBbjm0yjQ3" color="#adebef">
+<link rel="shortcut icon" href="/favicon.ico?v=XBbjm0yjQ3">
+<meta name="msapplication-TileColor" content="#fffef6">
+<meta name="theme-color" content="#ffffff">
+<script src='//cdn.optimizely.com/js/1111070510.js'></script>
+<link href="/stylesheets/application.css?1592778554" media="screen" rel="stylesheet" type="text/css" />
+<link href='/feed.xml' rel='alternate' title='RSS for Jeff Zych' type='application/rss+xml'>
+<script src='//use.typekit.net/okn2nfu.js' type='text/javascript'></script>
+<script>
+  try{Typekit.load();}catch(e){}
+</script>
+</head>
+<body>
+<div class='container'>
+<div class='grid' role='main'>
+<h1 class='monogram'>
+<a title="Home" href="/"><svg width="152" height="147" viewBox="0 0 152 147" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116.06 45.562l-5.492-.445 1.278 5.36c.806 3.376.767 9.739-1.222 16.344-.787 2.612-1.85 5.17-3.222 7.534-1.883-3.464-4.151-6.144-6.619-8.203-3.495-2.917-7.174-4.388-10.186-5.154l.041-.058c2.152-3.057 4.554-7.338 4.554-11.802 0-4.418-2.017-8.23-4.783-10.883-2.732-2.621-6.462-4.368-10.308-4.368-1.227 0-2.394.184-3.437.426.003-.139.005-.277.005-.415 0-2.724-.662-5.28-2.424-7.162-1.8-1.924-4.138-2.501-6.116-2.501-3.189 0-5.205 2.142-6.208 4.12-.99 1.946-1.37 4.302-1.37 6.571 0 2.57.684 5.25 2.012 7.426-1.505 2.49-3.51 5.268-5.905 8.26-3.32 4.151-7.276 8.576-11.46 13.043C42.935 55 40.92 46.677 40.092 39.076c-.214-1.961-.82-4.704-3.322-6.163-1.198-.699-2.421-.842-3.361-.828-.913.014-1.8.18-2.514.338-1.617.357-3.634 1.053-5.035 2.822-1.476 1.862-1.606 4.047-1.41 5.823 1.263 11.46 5.117 21.826 8.736 31.561.315.848.629 1.691.939 2.53l-1.444 1.465c-5.608 5.685-11.38 11.538-15.944 17.664C11.152 101.786 7 110.162 7 119.925c0 5.271 1.642 10.572 5.448 14.586 3.852 4.063 9.518 6.382 16.71 6.382 7.52 0 13.89-3.083 18.226-9.204 4.203-5.933 6.24-14.344 6.24-24.693 0-9.248-2.285-19.698-4.925-30.024 6.2-6.497 12.311-13.262 17.196-19.722 2.685-3.55 5.055-7.081 6.88-10.49 1.416-.237 2.574-.642 3.494-.963l.091-.031c1.404-.49 2.218-.751 3.32-.751-.027 0-.024 0 .002.01.1.032.541.177 1.084.815.606.71 1.123 1.826 1.123 3.298 0 2.345-1.021 5.16-2.613 7.844-1.594 2.687-3.411 4.659-4.337 5.366-1.259.961-2.211 2.301-2.518 3.933a5.872 5.872 0 00.858 4.298c1.437 2.204 4.919 3.853 8.085 1.608 1.376-.976 2.169-1.184 2.858-1.184.703 0 3.992.61 7.13 3.927 1.89 1.998 3.839 5.11 5.036 9.919-2.562 1.55-5.014 2.985-7.37 4.364a829.64 829.64 0 00-3.955 2.325c-4.228 2.505-8.141 4.931-11.446 7.506-6.761 5.268-11.36 11.49-11.36 20.881 0 11.881 10.481 19.741 20.023 19.741 14.506 0 30.466-14.74 30.466-39.577 0-4.384-.307-8.306-.868-11.811a61.256 61.256 0 007.278-7.918c4.494-5.868 8.139-13.006 8.151-19.909.007-3.758-.801-7.27-2.708-10.014-1.987-2.861-4.974-4.587-8.539-4.875zM96.897 98.117l.627-.327c-.3 11.525-2.834 19.182-5.882 23.895-3.256 5.033-6.942 6.559-9.362 6.559-1.486 0-3.858-.601-5.776-2.029-1.77-1.316-3.098-3.267-3.098-6.29 0-5.054 3.695-9.613 10.096-14.077 3.092-2.157 6.555-4.111 10.003-5.948a457.19 457.19 0 013.392-1.783zm-69.892 2.28c3.441-4.507 7.453-8.799 11.356-12.81 1.904 6.443 3.182 12.887 3.182 19.709 0 10.918-2.616 16.349-5.111 19.039-2.465 2.657-5.362 3.229-7.273 3.229-6.021 0-10.694-3.802-10.694-9.639 0-6.095 3.334-12.709 8.54-19.528z" fill="#FED874" stroke="#FED874" stroke-width="8"/><path d="M38.709 24.084c0-2.583-1.34-4.632-2.83-5.921C34.405 16.89 32.391 16 30.266 16c-1.823 0-3.858.561-5.451 2.12-1.621 1.586-2.308 3.735-2.308 5.964 0 2.038.51 4.237 2.012 5.986 1.579 1.838 3.796 2.648 6.088 2.648 2.65 0 4.8-1.222 6.192-2.984 1.32-1.67 1.909-3.734 1.909-5.65z" fill="#FED874" stroke="#FED874" stroke-width="8"/><path d="M122.06 42.562l-5.492-.445 1.278 5.36c.806 3.376.767 9.739-1.222 16.344-.787 2.612-1.85 5.17-3.222 7.534-1.883-3.464-4.151-6.144-6.619-8.203-3.495-2.917-7.174-4.388-10.186-5.154l.041-.058c2.152-3.057 4.554-7.338 4.554-11.802 0-4.418-2.017-8.23-4.783-10.883-2.732-2.621-6.462-4.368-10.308-4.368-1.227 0-2.394.184-3.437.426.003-.139.005-.277.005-.415 0-2.724-.662-5.28-2.424-7.162-1.8-1.924-4.138-2.501-6.116-2.501-3.189 0-5.205 2.142-6.208 4.12-.99 1.946-1.37 4.302-1.37 6.571 0 2.57.684 5.25 2.013 7.426-1.506 2.49-3.512 5.268-5.906 8.26-3.32 4.151-7.276 8.576-11.46 13.043C48.935 52 46.92 43.677 46.092 36.076c-.214-1.961-.82-4.704-3.322-6.163-1.198-.699-2.421-.842-3.361-.828-.913.014-1.8.18-2.514.338-1.617.357-3.634 1.053-5.035 2.822-1.476 1.862-1.606 4.047-1.41 5.823 1.263 11.46 5.117 21.826 8.736 31.561.315.848.629 1.691.939 2.53l-1.444 1.465c-5.608 5.685-11.38 11.538-15.944 17.664C17.152 98.786 13 107.162 13 116.925c0 5.271 1.642 10.572 5.448 14.586 3.852 4.063 9.518 6.382 16.71 6.382 7.52 0 13.89-3.083 18.226-9.205 4.203-5.932 6.24-14.343 6.24-24.692 0-9.248-2.285-19.698-4.925-30.024 6.2-6.497 12.311-13.262 17.196-19.722 2.685-3.55 5.055-7.081 6.88-10.49 1.416-.237 2.574-.642 3.494-.963l.091-.031c1.404-.49 2.218-.751 3.32-.751-.027 0-.024 0 .002.01.1.032.541.177 1.084.815.606.71 1.123 1.826 1.123 3.298 0 2.345-1.021 5.16-2.613 7.844-1.594 2.687-3.411 4.659-4.337 5.366-1.259.961-2.211 2.301-2.518 3.933a5.872 5.872 0 00.858 4.298c1.437 2.204 4.919 3.853 8.085 1.608 1.376-.976 2.169-1.184 2.858-1.184.703 0 3.992.61 7.13 3.927 1.89 1.998 3.839 5.11 5.036 9.919a569.87 569.87 0 01-7.37 4.364c-1.349.79-2.666 1.56-3.955 2.325-4.228 2.505-8.141 4.931-11.446 7.506-6.761 5.268-11.36 11.49-11.36 20.881 0 11.88 10.481 19.741 20.023 19.741 14.506 0 30.466-14.74 30.466-39.577 0-4.384-.307-8.306-.868-11.811a61.256 61.256 0 007.278-7.918c4.494-5.868 8.139-13.006 8.151-19.909.007-3.758-.801-7.27-2.708-10.014-1.987-2.861-4.974-4.587-8.539-4.875zm-19.163 52.555l.627-.327c-.301 11.525-2.834 19.182-5.882 23.895-3.256 5.033-6.942 6.559-9.362 6.559-1.486 0-3.858-.601-5.776-2.029-1.77-1.316-3.098-3.267-3.098-6.29 0-5.054 3.695-9.613 10.096-14.077 3.092-2.157 6.555-4.11 10.003-5.948a453.23 453.23 0 013.392-1.783zm-69.892 2.28c3.441-4.507 7.453-8.799 11.356-12.81 1.904 6.443 3.182 12.887 3.182 19.708 0 10.919-2.616 16.35-5.111 19.04-2.465 2.657-5.362 3.229-7.273 3.229-6.021 0-10.694-3.802-10.694-9.639 0-6.095 3.334-12.709 8.54-19.528z" fill="#FCF398" stroke="#FCF398" stroke-width="8"/><path d="M44.709 21.084c0-2.583-1.34-4.632-2.83-5.921C40.405 13.89 38.391 13 36.266 13c-1.823 0-3.858.562-5.451 2.12-1.621 1.586-2.308 3.735-2.308 5.964 0 2.038.51 4.237 2.012 5.986 1.579 1.838 3.796 2.648 6.088 2.648 2.65 0 4.8-1.222 6.193-2.984 1.32-1.67 1.908-3.734 1.908-5.65z" fill="#FCF398" stroke="#FCF398" stroke-width="8"/><path d="M128.06 39.562l-5.492-.445 1.278 5.36c.806 3.376.767 9.739-1.222 16.344-.787 2.613-1.85 5.17-3.222 7.534-1.883-3.464-4.151-6.144-6.619-8.203-3.495-2.917-7.174-4.388-10.186-5.154l.041-.058c2.152-3.057 4.554-7.338 4.554-11.802 0-4.418-2.017-8.23-4.783-10.883-2.732-2.621-6.462-4.368-10.308-4.368-1.227 0-2.394.184-3.437.426.003-.139.005-.277.005-.415 0-2.724-.662-5.28-2.424-7.162-1.8-1.924-4.138-2.501-6.116-2.501-3.189 0-5.205 2.142-6.208 4.12-.99 1.946-1.37 4.302-1.37 6.571 0 2.57.684 5.25 2.013 7.426-1.506 2.49-3.512 5.268-5.906 8.26-3.32 4.151-7.276 8.576-11.46 13.043C54.935 49 52.92 40.677 52.092 33.076c-.214-1.961-.82-4.704-3.322-6.163-1.198-.699-2.421-.842-3.361-.828-.913.014-1.8.18-2.514.338-1.617.357-3.634 1.053-5.035 2.822-1.476 1.862-1.606 4.047-1.41 5.823 1.263 11.46 5.117 21.826 8.736 31.561.315.848.629 1.691.939 2.53l-1.444 1.465c-5.608 5.685-11.38 11.538-15.944 17.664C23.152 95.786 19 104.162 19 113.925c0 5.271 1.642 10.572 5.448 14.586 3.852 4.063 9.518 6.382 16.71 6.382 7.52 0 13.89-3.083 18.226-9.205 4.203-5.932 6.24-14.343 6.24-24.692 0-9.248-2.285-19.698-4.925-30.024 6.2-6.497 12.311-13.262 17.196-19.722 2.685-3.55 5.055-7.081 6.88-10.49 1.416-.237 2.574-.642 3.494-.963l.091-.031c1.404-.49 2.218-.751 3.32-.751-.027 0-.024 0 .002.01.1.032.541.177 1.084.815.606.71 1.123 1.826 1.123 3.298 0 2.345-1.021 5.16-2.613 7.844-1.594 2.687-3.411 4.659-4.337 5.366-1.259.961-2.211 2.301-2.518 3.933a5.873 5.873 0 00.858 4.298c1.437 2.204 4.919 3.853 8.085 1.608 1.376-.976 2.169-1.184 2.858-1.184.703 0 3.992.61 7.13 3.927 1.889 1.998 3.839 5.11 5.036 9.919a570.345 570.345 0 01-7.37 4.364c-1.349.79-2.666 1.56-3.955 2.325-4.228 2.505-8.141 4.931-11.446 7.506-6.761 5.268-11.36 11.49-11.36 20.881 0 11.88 10.481 19.741 20.023 19.741 14.506 0 30.466-14.74 30.466-39.577 0-4.384-.307-8.306-.868-11.811a61.256 61.256 0 007.278-7.918c4.494-5.868 8.139-13.006 8.151-19.909.007-3.758-.801-7.27-2.708-10.014-1.987-2.861-4.974-4.587-8.539-4.875zm-19.163 52.555l.627-.327c-.301 11.525-2.834 19.182-5.882 23.895-3.256 5.033-6.942 6.559-9.362 6.559-1.486 0-3.858-.601-5.776-2.029-1.77-1.316-3.098-3.267-3.098-6.29 0-5.054 3.695-9.613 10.096-14.077 3.092-2.157 6.555-4.11 10.003-5.948a451.265 451.265 0 013.392-1.783zm-69.892 2.28c3.441-4.507 7.453-8.799 11.356-12.81 1.904 6.443 3.182 12.887 3.182 19.708 0 10.919-2.616 16.35-5.111 19.04-2.465 2.657-5.362 3.229-7.273 3.229-6.021 0-10.694-3.802-10.694-9.639 0-6.095 3.334-12.709 8.54-19.528z" fill="#CCF7AA" stroke="#CCF7AA" stroke-width="8"/><path d="M50.709 18.084c0-2.583-1.34-4.632-2.83-5.921C46.405 10.89 44.391 10 42.266 10c-1.823 0-3.858.562-5.451 2.12-1.621 1.586-2.308 3.735-2.308 5.964 0 2.038.51 4.237 2.012 5.986 1.579 1.838 3.796 2.648 6.088 2.648 2.65 0 4.8-1.222 6.193-2.984 1.32-1.67 1.908-3.734 1.908-5.65z" fill="#CCF7AA" stroke="#CCF7AA" stroke-width="8"/><path d="M134.06 36.562l-5.492-.445 1.278 5.36c.806 3.376.767 9.739-1.222 16.344-.787 2.613-1.85 5.17-3.222 7.534-1.883-3.464-4.151-6.144-6.619-8.203-3.495-2.917-7.174-4.388-10.186-5.154l.041-.058c2.152-3.057 4.554-7.338 4.554-11.802 0-4.418-2.017-8.23-4.783-10.883-2.732-2.621-6.462-4.368-10.308-4.368-1.227 0-2.394.184-3.437.426.003-.139.005-.277.005-.415 0-2.724-.662-5.28-2.424-7.162-1.8-1.924-4.138-2.501-6.116-2.501-3.189 0-5.205 2.142-6.208 4.12-.99 1.946-1.37 4.302-1.37 6.571 0 2.57.684 5.25 2.013 7.426-1.506 2.49-3.512 5.268-5.906 8.26-3.32 4.151-7.276 8.576-11.46 13.043C60.935 46 58.92 37.677 58.092 30.076c-.214-1.961-.82-4.704-3.322-6.163-1.198-.699-2.421-.842-3.361-.828-.913.014-1.8.18-2.514.338-1.617.357-3.634 1.053-5.035 2.822-1.476 1.862-1.606 4.047-1.41 5.823 1.263 11.46 5.117 21.826 8.736 31.561.315.848.629 1.691.939 2.53l-1.444 1.465c-5.608 5.685-11.38 11.538-15.944 17.664C29.152 92.786 25 101.162 25 110.925c0 5.271 1.642 10.572 5.448 14.586 3.852 4.063 9.518 6.382 16.71 6.382 7.52 0 13.89-3.083 18.226-9.205 4.203-5.932 6.24-14.343 6.24-24.692 0-9.248-2.285-19.698-4.925-30.024 6.2-6.497 12.311-13.262 17.196-19.722 2.685-3.55 5.055-7.081 6.88-10.49 1.416-.237 2.574-.642 3.494-.963l.091-.031c1.404-.49 2.218-.751 3.32-.751-.027 0-.024 0 .002.01.1.032.541.177 1.084.815.606.71 1.123 1.826 1.123 3.298 0 2.345-1.021 5.16-2.613 7.844-1.594 2.687-3.411 4.659-4.337 5.366-1.259.961-2.211 2.301-2.518 3.933a5.873 5.873 0 00.858 4.298c1.437 2.204 4.919 3.853 8.085 1.608 1.376-.976 2.169-1.184 2.858-1.184.703 0 3.992.61 7.13 3.927 1.889 1.998 3.839 5.11 5.036 9.919a570.345 570.345 0 01-7.37 4.364c-1.349.79-2.666 1.56-3.955 2.325-4.228 2.505-8.141 4.931-11.446 7.506-6.761 5.268-11.36 11.49-11.36 20.881 0 11.88 10.481 19.741 20.023 19.741 14.506 0 30.466-14.74 30.466-39.577 0-4.384-.307-8.306-.868-11.811a61.256 61.256 0 007.278-7.918c4.494-5.868 8.139-13.006 8.151-19.909.007-3.758-.801-7.27-2.708-10.014-1.987-2.861-4.974-4.587-8.539-4.875zm-19.163 52.555l.627-.327c-.301 11.525-2.834 19.182-5.882 23.895-3.256 5.033-6.942 6.559-9.362 6.559-1.486 0-3.858-.601-5.776-2.029-1.77-1.316-3.098-3.267-3.098-6.29 0-5.054 3.695-9.613 10.096-14.077 3.092-2.157 6.555-4.11 10.003-5.948a451.265 451.265 0 013.392-1.783zm-69.892 2.28c3.441-4.507 7.453-8.799 11.356-12.81 1.904 6.443 3.182 12.887 3.182 19.709 0 10.918-2.616 16.349-5.111 19.039-2.465 2.657-5.362 3.229-7.273 3.229-6.021 0-10.694-3.802-10.694-9.639 0-6.095 3.334-12.709 8.54-19.528z" fill="#ADEBEF" stroke="#ADEBEF" stroke-width="8"/><path d="M56.709 15.085c0-2.584-1.34-4.633-2.83-5.922C52.405 7.89 50.391 7 48.266 7c-1.823 0-3.858.561-5.451 2.12-1.621 1.586-2.308 3.735-2.308 5.965 0 2.037.51 4.236 2.012 5.985 1.579 1.838 3.796 2.648 6.088 2.648 2.65 0 4.8-1.222 6.193-2.984 1.32-1.67 1.908-3.734 1.908-5.65z" fill="#ADEBEF" stroke="#ADEBEF" stroke-width="8"/><g filter="url(#filter0_d)" fill="#FFFFFA" stroke="#FFFFFA" stroke-width="2"><path d="M134.818 38.552l-1.373-.111.32 1.34c.952 3.993.84 10.902-1.268 17.904-1.354 4.495-3.511 8.967-6.681 12.703-2.016-5.58-4.877-9.365-7.955-11.933-5.368-4.48-11.226-5.1-13.795-5.312a47.164 47.164 0 003.119-3.93c2.082-2.957 4.007-6.588 4.007-10.075 0-3.475-1.587-6.538-3.86-8.718-2.264-2.172-5.276-3.533-8.23-3.533-1.84 0-3.564.531-5.067 1.008l-.125.04c-.692.219-1.328.42-1.928.575.445-1.6.687-3.144.687-4.612 0-2.279-.554-3.98-1.614-5.113-1.07-1.143-2.506-1.55-3.926-1.55-1.65 0-2.825 1.082-3.534 2.478-.704 1.387-1.044 3.23-1.044 5.213 0 2.926.982 5.539 2.604 7.193l-.2.366c-1.676 3.022-4.076 6.404-6.954 10.002-4.363 5.452-9.777 11.34-15.328 17.141l-.04-.147c-2.766-10.427-5.51-20.766-6.525-30.08-.199-1.83-.686-3.218-1.85-3.897-.57-.332-1.197-.428-1.806-.419-.602.009-1.251.122-1.912.268-1.394.307-2.576.803-3.33 1.755-.773.975-.935 2.219-.78 3.631 1.221 11.071 4.945 21.095 8.58 30.88a1235.698 1235.698 0 011.584 4.287c-.94.96-1.884 1.919-2.829 2.877-5.604 5.683-11.196 11.354-15.623 17.297C32.757 93.311 29 101.064 29 109.925c0 4.668 1.45 9.175 4.625 12.522 3.185 3.36 8.007 5.446 14.534 5.446 6.609 0 12.038-2.66 15.777-7.939 3.706-5.231 5.688-12.939 5.688-22.958 0-9.321-2.436-20.042-5.247-30.893 6.564-6.833 13.04-13.936 18.126-20.663 2.993-3.959 5.524-7.811 7.31-11.42.01-.023.022-.045.033-.068 1.816-.074 3.224-.565 4.506-1.012l.02-.007c1.399-.488 2.645-.918 4.308-.918.995 0 2.29.612 3.37 1.88 1.059 1.242 1.839 3.044 1.839 5.243 0 3.108-1.309 6.47-3.033 9.375-1.725 2.907-3.777 5.212-5.097 6.22-.771.589-1.242 1.316-1.39 2.102a2.872 2.872 0 00.423 2.106c.738 1.13 2.381 1.831 3.836.799 1.672-1.186 3.066-1.737 4.594-1.737 1.546 0 5.618.962 9.309 4.865 2.593 2.742 5.034 6.977 6.239 13.431-3.256 2.003-6.355 3.817-9.273 5.525-1.34.784-2.643 1.546-3.905 2.294-4.219 2.501-7.989 4.844-11.131 7.293-6.323 4.926-10.204 10.363-10.204 18.514 0 9.963 8.865 16.741 17.023 16.741 12.438 0 27.466-12.953 27.466-36.577 0-4.946-.402-9.232-1.11-12.945a58.276 58.276 0 008.138-8.608c4.335-5.66 7.522-12.154 7.533-18.09.006-3.362-.721-6.21-2.171-8.297-1.471-2.117-3.639-3.38-6.318-3.597zm-20.233 46.866c1.736-.906 3.4-1.775 4.91-2.608.038.858.058 1.745.058 2.662 0 13.206-2.737 22.192-6.392 27.843-3.657 5.653-8.192 7.929-11.881 7.929-2.098 0-5.105-.79-7.567-2.622-2.425-1.804-4.307-4.601-4.307-8.697 0-6.635 4.842-11.978 11.38-16.538 3.242-2.261 6.831-4.282 10.308-6.135 1.179-.627 2.35-1.239 3.491-1.834zM58.389 72.252l.325-.33c2.747 8.184 4.83 16.446 4.83 25.374 0 11.355-2.72 17.638-5.913 21.08-3.185 3.433-6.981 4.188-9.472 4.188-7.234 0-13.694-4.733-13.694-12.639 0-7.113 3.844-14.392 9.156-21.348 4.499-5.894 9.95-11.43 14.768-16.325zM54.709 14.085c0-1.5-.78-2.778-1.793-3.653C51.91 9.563 50.573 9 49.267 9c-1.23 0-2.444.375-3.353 1.265-.917.896-1.406 2.2-1.406 3.82 0 1.571.394 2.99 1.288 4.03.912 1.063 2.236 1.603 3.812 1.603 1.667 0 2.973-.748 3.839-1.844.847-1.073 1.262-2.457 1.262-3.79z"/></g><defs><filter id="filter0_d" x="28" y="8" width="117.307" height="121.893" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1" dy="1"/><feColorMatrix values="0 0 0 0 0.239216 0 0 0 0 0.733333 0 0 0 0 0.827451 0 0 0 1 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow"/><feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/></filter></defs></svg>
+
+<span class='name'>Jeff Zych</span>
+</a>
+</h1>
+<nav class='nav-main'>
+<ul>
+<li><a title="About Jeff Zych" href="/about">About Me</a></li>
+<li><a href="/archives">Archives</a></li>
+</ul>
+</nav>
+
+<div class='content'>
+<h1 class='article__title'>Implementing a Discovery process at Optimizely</h1>
+<h2 class='article__subtitle'>How I reduced cost, increased revenue, and improved product quality by creating an explicit Discovery phase</h2>
+<!-- :markdown -->
+<!-- > **Short on time? Key takeaways** -->
+<!-- > -->
+<!-- > - Implemented a new way of building product that included an explicit discovery phase that made space for customer development, problem understanding, and solution exploration, before jumping into code. -->
+<!-- > - Doubled design and engineering velocity -->
+<!-- > - Increased product quality (fewer bugs, more UI polish) -->
+<!-- > - Increased revenue -->
+<!-- > - Decreased development costs -->
+<!-- > - Decreased churn -->
+<p>It was October of 2015, and we just launched Optimizely&rsquo;s newest product. The one that was supposed to transform us into a multi-product company, diversify our income stream, and rocket us to the next echelon of success.</p>
+
+<p>Instead, the product launched behind schedule, with bugs and feature gaps, and struggled to gain traction in the market. Less than 6 months later, there were company-wide layoffs.</p>
+
+<p><img alt="Discovery kanban board in its final, full board form, tracking work from dreams through delivery" src="/images/case-studies/optimizely-discovery-kanban/4-fullwall.jpg?1591227336" />
+<em>The final discovery kanban board that helped us stay focused on customer needs by tracking work from dreams through delivery</em></p>
+
+<h2 id="how-did-we-get-here">How did we get here?</h2>
+
+<p>Optimizely was founded in 2009, and grew to over 400 people by the end of 2014. Design, engineering, and product were around 120 people, split into &ldquo;squads&rdquo; who owned a product area and ran their own flavor of scrum.</p>
+
+<p>Design and research was awkwardly shoehorned into each team&rsquo;s scrum process. Scrum is a process designed to enable engineers to ship code reliably with high quality, not to enable designers to do their best work. As a result, designers were typically assigned to projects in sprint planning when engineers were ready to build. If they were lucky, they&rsquo;d have a &ldquo;sprint 0&rdquo; to do some research to understand the problem they&rsquo;re supposed to be solving, but often this wasn&rsquo;t happening. They were given little space to explore solutions, or test them with customers. Their impact was confined to pushing pixels.</p>
+
+<p>Engineers often complained that they were &ldquo;blocked on design&rdquo; (a phrase I hate). When they did get designs, there were often open product and design questions, which slowed down implementation, increased bugs, and reduced UI quality.</p>
+
+<p>Product managers had little time to do customer development to inform the team&rsquo;s vision, strategy, and roadmap. They were too busy managing engineering schedules and performing scrum rituals.</p>
+
+<p>All told, we were shipping features that weren&rsquo;t rooted in the needs of our customers. We operated as a <a href="https://svpg.com/product-vs-feature-teams/">feature factory</a>.</p>
+
+<h2 id="lets-build-a-new-product">Let&rsquo;s build a new product!</h2>
+
+<p>We rolled into 2015 building product this way. Now we were asked to build a brand new product from scratch. Oh, and we threw a team of 10 engineers, 3 designers, and 3 PMs on it before doing any product discovery or design work.</p>
+
+<p>We tried our best to do understand the needs of our potential customers and launch a viable product, but we were fighting against the inertia of engineers already writing code. The fact that we got any customers before the end of the year is a minor miracle.</p>
+
+<p>As the manager of the designers and researchers on this project, I had a front row seat to the spectacle. I knew this wasn&rsquo;t the way to build a product people loved, and that the impact of design and research was severely hampered in this system, but I had been unable to make any headway on changing how we build product since we were so under the gun to launch a new product.</p>
+
+<h2 id="designing-the-machine-that-designs-the-machines">Designing the machine that designs the machines</h2>
+
+<p>A wise man once said: Never waste a good crisis.</p>
+
+<p>This was a crisis visible to the whole company. It was clear from the executive team down to the front-line staff that the way we built product wasn&rsquo;t working. This was my opportunity to design a new operating model that supported researchers and designers doing their best work. A system that&hellip;</p>
+
+<ul>
+<li>Was driven by the needs of customer, rather than solutions looking for a problem.</li>
+<li>Validated what we were building was valuable, usable, and feasible, before we wrote any code.</li>
+<li>Didn&rsquo;t decide what to build that sprint and then ask, &ldquo;Do we have designs for this?&rdquo; but instead had research and design pushing work into sprints.</li>
+<li>Wasn&rsquo;t overly prescriptive of which UX methods to use, but rather was descriptive of high level phases and suggested methods. It also shouldn&rsquo;t prescribe <em>who</em> was doing the work. Everyone can and should contribute to the process, regardless of title. What&rsquo;s important is that the work is being done each step of the way.</li>
+<li>Was understandable to non-designers. The design process shouldn&rsquo;t be a mystery. If it is, everyone will be questioning what we&rsquo;re doing and when we&rsquo;ll be done. Making it understandable to all also elevates the design maturity of the org, while communicating out how far along projects are.</li>
+</ul>
+
+<p>To design this system, I drew on what I learned in grad school, my hands-on knowledge from working as a product designer, my experience managing designers and guiding their work, and my reading about dual track scrum, continuous discovery, and how other teams build product.</p>
+
+<p>After talking through options with the design team and PMs, and trying on some models with projects that went well (and not so well), we aligned on the <strong>double diamond model of design.</strong></p>
+
+<p><img alt="Diagram of the double diamond model of design, courtesy the UK Design Council" src="/images/case-studies/optimizely-discovery-kanban/1-double-diamond.png?1591227334" />
+<em>Double Diamond model of design, courtesy the <a href="https://www.designcouncil.org.uk/news-opinion/what-framework-innovation-design-councils-evolved-double-diamond">UK Design Council</a></em></p>
+
+<p>This was created by the <a href="https://www.designcouncil.org.uk/news-opinion/what-framework-innovation-design-councils-evolved-double-diamond">UK Design Council</a> to model the design process. It&rsquo;s not overly prescriptive, but has enough structure to both guide the team&rsquo;s work while communicating what work is being done at each stage.</p>
+
+<p>It splits the process into two phases: <strong>problem understanding</strong>, and <strong>solution exploration</strong>. The goal of problem understanding it to define what problem you&rsquo;re solving, who it&rsquo;s a problem for, and use cases that are in and out of scope.</p>
+
+<p>Solution exploration&rsquo;s goal is to find the best solution to the problem by exploring potential options, testing them with customers, and vetting their technical feasibility.</p>
+
+<p>Each phase is a diamond because it has two halves, which represent <strong>divergent</strong> and <strong>convergent</strong> thinking. Divergent means going broad to gather lots of information and ideas, whereas convergent means whittling those down to the most promising ones. These two modes of thinking personally helped me become a better designer by telling me when I should turn on the generative part of my brain, and when I should turn on the evaluative part of my brain.</p>
+
+<p>Once the work has gone through this process, it&rsquo;s ready to be built and can be prioritized in a sprint. By this point we should have high confidence that the solutions are valuable, usable, and feasible. I called the system <strong>Discovery Kanban</strong>.</p>
+
+<h2 id="roll-out">Roll out</h2>
+
+<p>Now that we had a new proposal for how to work, I started using it with one team who&rsquo;s designer and PM were ready to try a new way of working and smoothing out the kinks. We made the kanban board on a whiteboard, put their current and upcoming work on it, and started reviewing it in sprint planning.</p>
+
+<p><img alt="First prototype of the Discovery kanban board" src="/images/case-studies/optimizely-discovery-kanban/2-proto-board.jpg?1591227336" />
+<em>First prototype of the Discovery kanban board</em></p>
+
+<p>There were a couple of quick improvements to make, such as adding a column for problem definitions that were done but not being worked on by a designer yet, but otherwise the system was accurately modeling reality and increasing the visibility of the team&rsquo;s work.</p>
+
+<p>After a few weeks, the early results were positive. We were explicit about which projects needed more research, and which didn&rsquo;t. Designers had more space to explore potential solutions. Finished designs were flowing smoothly into engineering. Their estimates were more accurate, there were fewer questions during the implementation phase to slow them down, fewer bugs at launch, and more room for UI polish.</p>
+
+<h2 id="expanding-to-more-teams">Expanding to more teams</h2>
+
+<p>Once it was working for one team, I expanded team by team until all the squads were using this system. Doing it this way helped me get buy-in for this new way of working, explain the design process, and address any confusion.</p>
+
+<p><img alt="Next iteration of the Discovery kanban board" src="/images/case-studies/optimizely-discovery-kanban/3-board2.jpg?1591227336" />
+<em>Next iteration of the Discovery kanban board</em></p>
+
+<p>I also started a weekly planning meeting with the designers, researchers, and PMs to review all the work in flight, and prioritize new work. This ensured we were working on the most impactful projects that were aligned to our product strategy and vision, helped us choose which projects were most in need of research across teams, improved coordination between teams, and reduced the number of meetings of &ldquo;work about the work&rdquo; (i.e. who is doing what, and when). Put simply, it <strong>aligned design&rsquo;s efforts to business outcomes</strong>.</p>
+
+<p>While I was doing this, our Engineering Development Director was improving how we tracked and coordinated engineering work across teams. I stayed in sync with him, and we moved all the work onto a huge physical wall that tracked everything the product, design, and eng teams were working on, from vague ideas through discovery to shipped code.</p>
+
+<p><img alt="Discovery kanban board in its final, full board form, tracking work from dreams through delivery" src="/images/case-studies/optimizely-discovery-kanban/4-fullwall.jpg?1591227336" />
+<em>Discovery kanban board in its final, full board form, tracking work from dreams through delivery</em></p>
+
+<p>We also expanded my weekly planning meeting to include engineering and product leadership, and to review all work in flight, from what engineers were building back to the exploratory research. This greatly increased visibility into what everyone was doing, what customer pain points and opportunities most needed research, and what cross-team prioritization and trade-offs we needed to make.</p>
+
+<p><img alt="Meeting to review the whole board, expanded to include engineering and product leadership" src="/images/case-studies/optimizely-discovery-kanban/5-moped.jpg?1591227334" />
+<em>Meeting to review the whole board, expanded to include engineering and product leadership</em></p>
+
+<h2 id="impact">Impact</h2>
+
+<p>All of these changes are great, but what was the impact of this new system on the company? I&rsquo;m glad you asked:</p>
+
+<ul>
+<li><strong>Doubled velocity</strong>: We were shipping twice as many roadmap items (features, UI improvements, and so on) as the year-ago quarter, across all squads, while keeping headcount flat. We were finishing twice as many research and design projects, with a smaller team. The system provided better coordination across teams (no more 2 designers working on the same project, for example), and reduced the number of meetings need to talk about &ldquo;work about the work,&rdquo; i.e. deciding who was doing what, and when they were doing it.</li>
+<li><strong>Improved quality</strong>: There were fewer bugs with new feature launches, there were fewer code yellows and reds, and we were doing more UI polish for features. This is largely attributable to engineering not starting to code until the designs were ready and fully thought through. This meant work flowed smoothly through the system, estimates were more accurate, and people weren&rsquo;t rushing to ship.</li>
+<li><strong>Higher morale</strong>: Designers and researchers were happier and felt like the process supported them doing their best work. Engineers weren&rsquo;t stretched as thin, have stopped saying they&rsquo;re &ldquo;blocked on design.&rdquo; They&rsquo;re also involved in discovery work which helps them understand the &ldquo;why&rdquo; behind their work better. PMs also had more space to do customer development.</li>
+</ul>
+
+<p>Those are all great measure of the output, but what about impact to the bottom line and your customers?</p>
+
+<ul>
+<li><strong>Increased revenue</strong>: Remember that failed product we launched? Well we kept iterating on it, and grew it to over $2MM in annual recurring revenue within the first year. Our process made sure the team was staying close to customers, and understanding their needs first, before jumping into solutions and code.</li>
+<li><strong>Increased Cost Savings</strong>: A back-of-the-napkin cost calculation puts the cost to build our new product at a conservative $6.25MM (~250K per person per year fully loaded, * 15 people, * 10/12 years). (That doesn&rsquo;t include additional engineers we added later, or the cost of training sales and support, or the cost of launch marketing. Nor does it include opportunity cost of launching late, and not gaining customers at launch). Under this new system, we would have started with a smaller team (a researcher, designer, and PM, let&rsquo;s say), figured out the customer need to serve first, and tested solutions until we were confident in the value of investing more time and people into launching a product.</li>
+<li><p><strong>Reduced churn</strong>: We spent most of 2016 iterating on the new product, and starved our original product of resources. As a result, customers were fed up with longstanding bugs and feature requests that weren&rsquo;t being acted on, and churn was a serious problem.</p>
+
+<p>To solve our churn problem, our CFO/COO led an effort to build a <em>current reality tree</em> to identify all the issues — product-related or otherwise — that contributed to churn. Getting them all out in the open helped us prioritize them and assign owners. In that exercise, <strong>210 product issues</strong> were identified (a lot more non-product ones were identified, too, like poor handoff between sales and success). These ranged from missing features to bugs to UX problems.</p>
+
+<p>Throughout the rest of 2017 we took them on, and were able to cross <strong>152 items</strong> off the list — while shipping additional new features. By the end of that year, churn finally started decreasing. This was a testament to the strength of our system that it didn&rsquo;t buckle under the weight of all these problems to solve, and ensured we took the time to understand our customer&rsquo;s pain points, and tackle the most impactful ones, instead of rushing into building half-baked solution.</p></li>
+</ul>
+
+<h2 id="fin">Fin</h2>
+
+<p>The way we worked in 2015 wasn&rsquo;t working. By the end of 2016, we had transformed the way we built product, resulting in increased velocity, increased quality, increased revenue and decreased cost. And in 2017 these new habits became our default way of working. We started with the needs of customers, and then figured out how to solve them, rather than the other way around. Whenever I would hear the CEO ask, &ldquo;Do we understand the problem well enough yet, or do we need more research?&rdquo; I knew I had achieved the shift in mindset we needed. Seeing the design team&rsquo;s work flourish under this new system was a highlight of my career.</p>
+
+<p><em>Want to transform the way your team works? Get in touch at <a href="mailto:jlzych@gmail.com">jlzych@gmail.com</a></em></p>
+
+
+</div>
+</div>
+</div>
+<footer id='site-footer'>
+<p>
+&copy; 2010&ndash;2020 Jeff Zych
+&bull; Hand-crafted with
+<a href="http://middlemanapp.com/">Middleman</a>
+</p>
+<a style="display: none;" href="http://plus.google.com/+JeffZych?rel=author">Google+ profile</a>
+</footer>
+
+<!-- Google Analytics tracking -->
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21389659-1']);
+  _gaq.push(['_trackPageview']);
+  
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body>
 </html>

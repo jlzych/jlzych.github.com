@@ -1,225 +1,230 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <title>Gladly’s Actions API</title>
-    <meta content='width=device-width, initial-scale=1.0, user-scalable=yes' name='viewport'>
-    <meta content='black' name='apple-mobile-web-app-status-bar-style'>
-    <meta content='yes' name='apple-mobile-web-app-capable'>
-    <meta content='Designing a way for agents to trigger actions in external systems, without leaving Gladly' name='description'>
-    <meta content='Jeff Zych' name='author'>
-    <!-- FB Open Graph meta tags -->
-    <meta content='blog' property='og:type'>
-    <meta content="Jeff Zych's Corner of the Internet" property='og:site_name'>
-    <meta content='Gladly’s Actions API' property='og:title'>
-    <meta content='Designing a way for agents to trigger actions in external systems, without leaving Gladly' property='og:description'>
-    <meta content='http://jlzych.com/images/case-studies/gladly-actions-api/4-mid-fi-with-errors.jpg' property='og:image'>
-    <meta content='http://jlzych.com/case-studies/gladly-actions-api/' property='og:url'>
-    <!-- Additional Twitter tags - additive with og: tags -->
-    <meta content='summary_large_image' name='twitter:card'>
-    <meta name='twitter:creator' value='@jlzych'>
-    <!-- From https://realfavicongenerator.net/ -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=XBbjm0yjQ3">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=XBbjm0yjQ3">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=XBbjm0yjQ3">
-    <link rel="manifest" href="/site.webmanifest?v=XBbjm0yjQ3">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=XBbjm0yjQ3" color="#adebef">
-    <link rel="shortcut icon" href="/favicon.ico?v=XBbjm0yjQ3">
-    <meta name="msapplication-TileColor" content="#fffef6">
-    <meta name="theme-color" content="#ffffff">
-    <script src='//cdn.optimizely.com/js/1111070510.js'></script>
-    <link href="/stylesheets/application.css?1592778554" media="screen" rel="stylesheet" type="text/css" />
-    <link href='/feed.xml' rel='alternate' title='RSS for Jeff Zych' type='application/rss+xml'>
-    <script src='//use.typekit.net/okn2nfu.js' type='text/javascript'></script>
-    <script>
-      try{Typekit.load();}catch(e){}
-    </script>
-  </head>
-  <body>
-    <div class='container'>
-      <div class='grid' role='main'>
-        <h1 class='monogram'>
-            <a title="Home" href="/"><svg width="152" height="147" viewBox="0 0 152 147" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116.06 45.562l-5.492-.445 1.278 5.36c.806 3.376.767 9.739-1.222 16.344-.787 2.612-1.85 5.17-3.222 7.534-1.883-3.464-4.151-6.144-6.619-8.203-3.495-2.917-7.174-4.388-10.186-5.154l.041-.058c2.152-3.057 4.554-7.338 4.554-11.802 0-4.418-2.017-8.23-4.783-10.883-2.732-2.621-6.462-4.368-10.308-4.368-1.227 0-2.394.184-3.437.426.003-.139.005-.277.005-.415 0-2.724-.662-5.28-2.424-7.162-1.8-1.924-4.138-2.501-6.116-2.501-3.189 0-5.205 2.142-6.208 4.12-.99 1.946-1.37 4.302-1.37 6.571 0 2.57.684 5.25 2.012 7.426-1.505 2.49-3.51 5.268-5.905 8.26-3.32 4.151-7.276 8.576-11.46 13.043C42.935 55 40.92 46.677 40.092 39.076c-.214-1.961-.82-4.704-3.322-6.163-1.198-.699-2.421-.842-3.361-.828-.913.014-1.8.18-2.514.338-1.617.357-3.634 1.053-5.035 2.822-1.476 1.862-1.606 4.047-1.41 5.823 1.263 11.46 5.117 21.826 8.736 31.561.315.848.629 1.691.939 2.53l-1.444 1.465c-5.608 5.685-11.38 11.538-15.944 17.664C11.152 101.786 7 110.162 7 119.925c0 5.271 1.642 10.572 5.448 14.586 3.852 4.063 9.518 6.382 16.71 6.382 7.52 0 13.89-3.083 18.226-9.204 4.203-5.933 6.24-14.344 6.24-24.693 0-9.248-2.285-19.698-4.925-30.024 6.2-6.497 12.311-13.262 17.196-19.722 2.685-3.55 5.055-7.081 6.88-10.49 1.416-.237 2.574-.642 3.494-.963l.091-.031c1.404-.49 2.218-.751 3.32-.751-.027 0-.024 0 .002.01.1.032.541.177 1.084.815.606.71 1.123 1.826 1.123 3.298 0 2.345-1.021 5.16-2.613 7.844-1.594 2.687-3.411 4.659-4.337 5.366-1.259.961-2.211 2.301-2.518 3.933a5.872 5.872 0 00.858 4.298c1.437 2.204 4.919 3.853 8.085 1.608 1.376-.976 2.169-1.184 2.858-1.184.703 0 3.992.61 7.13 3.927 1.89 1.998 3.839 5.11 5.036 9.919-2.562 1.55-5.014 2.985-7.37 4.364a829.64 829.64 0 00-3.955 2.325c-4.228 2.505-8.141 4.931-11.446 7.506-6.761 5.268-11.36 11.49-11.36 20.881 0 11.881 10.481 19.741 20.023 19.741 14.506 0 30.466-14.74 30.466-39.577 0-4.384-.307-8.306-.868-11.811a61.256 61.256 0 007.278-7.918c4.494-5.868 8.139-13.006 8.151-19.909.007-3.758-.801-7.27-2.708-10.014-1.987-2.861-4.974-4.587-8.539-4.875zM96.897 98.117l.627-.327c-.3 11.525-2.834 19.182-5.882 23.895-3.256 5.033-6.942 6.559-9.362 6.559-1.486 0-3.858-.601-5.776-2.029-1.77-1.316-3.098-3.267-3.098-6.29 0-5.054 3.695-9.613 10.096-14.077 3.092-2.157 6.555-4.111 10.003-5.948a457.19 457.19 0 013.392-1.783zm-69.892 2.28c3.441-4.507 7.453-8.799 11.356-12.81 1.904 6.443 3.182 12.887 3.182 19.709 0 10.918-2.616 16.349-5.111 19.039-2.465 2.657-5.362 3.229-7.273 3.229-6.021 0-10.694-3.802-10.694-9.639 0-6.095 3.334-12.709 8.54-19.528z" fill="#FED874" stroke="#FED874" stroke-width="8"/><path d="M38.709 24.084c0-2.583-1.34-4.632-2.83-5.921C34.405 16.89 32.391 16 30.266 16c-1.823 0-3.858.561-5.451 2.12-1.621 1.586-2.308 3.735-2.308 5.964 0 2.038.51 4.237 2.012 5.986 1.579 1.838 3.796 2.648 6.088 2.648 2.65 0 4.8-1.222 6.192-2.984 1.32-1.67 1.909-3.734 1.909-5.65z" fill="#FED874" stroke="#FED874" stroke-width="8"/><path d="M122.06 42.562l-5.492-.445 1.278 5.36c.806 3.376.767 9.739-1.222 16.344-.787 2.612-1.85 5.17-3.222 7.534-1.883-3.464-4.151-6.144-6.619-8.203-3.495-2.917-7.174-4.388-10.186-5.154l.041-.058c2.152-3.057 4.554-7.338 4.554-11.802 0-4.418-2.017-8.23-4.783-10.883-2.732-2.621-6.462-4.368-10.308-4.368-1.227 0-2.394.184-3.437.426.003-.139.005-.277.005-.415 0-2.724-.662-5.28-2.424-7.162-1.8-1.924-4.138-2.501-6.116-2.501-3.189 0-5.205 2.142-6.208 4.12-.99 1.946-1.37 4.302-1.37 6.571 0 2.57.684 5.25 2.013 7.426-1.506 2.49-3.512 5.268-5.906 8.26-3.32 4.151-7.276 8.576-11.46 13.043C48.935 52 46.92 43.677 46.092 36.076c-.214-1.961-.82-4.704-3.322-6.163-1.198-.699-2.421-.842-3.361-.828-.913.014-1.8.18-2.514.338-1.617.357-3.634 1.053-5.035 2.822-1.476 1.862-1.606 4.047-1.41 5.823 1.263 11.46 5.117 21.826 8.736 31.561.315.848.629 1.691.939 2.53l-1.444 1.465c-5.608 5.685-11.38 11.538-15.944 17.664C17.152 98.786 13 107.162 13 116.925c0 5.271 1.642 10.572 5.448 14.586 3.852 4.063 9.518 6.382 16.71 6.382 7.52 0 13.89-3.083 18.226-9.205 4.203-5.932 6.24-14.343 6.24-24.692 0-9.248-2.285-19.698-4.925-30.024 6.2-6.497 12.311-13.262 17.196-19.722 2.685-3.55 5.055-7.081 6.88-10.49 1.416-.237 2.574-.642 3.494-.963l.091-.031c1.404-.49 2.218-.751 3.32-.751-.027 0-.024 0 .002.01.1.032.541.177 1.084.815.606.71 1.123 1.826 1.123 3.298 0 2.345-1.021 5.16-2.613 7.844-1.594 2.687-3.411 4.659-4.337 5.366-1.259.961-2.211 2.301-2.518 3.933a5.872 5.872 0 00.858 4.298c1.437 2.204 4.919 3.853 8.085 1.608 1.376-.976 2.169-1.184 2.858-1.184.703 0 3.992.61 7.13 3.927 1.89 1.998 3.839 5.11 5.036 9.919a569.87 569.87 0 01-7.37 4.364c-1.349.79-2.666 1.56-3.955 2.325-4.228 2.505-8.141 4.931-11.446 7.506-6.761 5.268-11.36 11.49-11.36 20.881 0 11.88 10.481 19.741 20.023 19.741 14.506 0 30.466-14.74 30.466-39.577 0-4.384-.307-8.306-.868-11.811a61.256 61.256 0 007.278-7.918c4.494-5.868 8.139-13.006 8.151-19.909.007-3.758-.801-7.27-2.708-10.014-1.987-2.861-4.974-4.587-8.539-4.875zm-19.163 52.555l.627-.327c-.301 11.525-2.834 19.182-5.882 23.895-3.256 5.033-6.942 6.559-9.362 6.559-1.486 0-3.858-.601-5.776-2.029-1.77-1.316-3.098-3.267-3.098-6.29 0-5.054 3.695-9.613 10.096-14.077 3.092-2.157 6.555-4.11 10.003-5.948a453.23 453.23 0 013.392-1.783zm-69.892 2.28c3.441-4.507 7.453-8.799 11.356-12.81 1.904 6.443 3.182 12.887 3.182 19.708 0 10.919-2.616 16.35-5.111 19.04-2.465 2.657-5.362 3.229-7.273 3.229-6.021 0-10.694-3.802-10.694-9.639 0-6.095 3.334-12.709 8.54-19.528z" fill="#FCF398" stroke="#FCF398" stroke-width="8"/><path d="M44.709 21.084c0-2.583-1.34-4.632-2.83-5.921C40.405 13.89 38.391 13 36.266 13c-1.823 0-3.858.562-5.451 2.12-1.621 1.586-2.308 3.735-2.308 5.964 0 2.038.51 4.237 2.012 5.986 1.579 1.838 3.796 2.648 6.088 2.648 2.65 0 4.8-1.222 6.193-2.984 1.32-1.67 1.908-3.734 1.908-5.65z" fill="#FCF398" stroke="#FCF398" stroke-width="8"/><path d="M128.06 39.562l-5.492-.445 1.278 5.36c.806 3.376.767 9.739-1.222 16.344-.787 2.613-1.85 5.17-3.222 7.534-1.883-3.464-4.151-6.144-6.619-8.203-3.495-2.917-7.174-4.388-10.186-5.154l.041-.058c2.152-3.057 4.554-7.338 4.554-11.802 0-4.418-2.017-8.23-4.783-10.883-2.732-2.621-6.462-4.368-10.308-4.368-1.227 0-2.394.184-3.437.426.003-.139.005-.277.005-.415 0-2.724-.662-5.28-2.424-7.162-1.8-1.924-4.138-2.501-6.116-2.501-3.189 0-5.205 2.142-6.208 4.12-.99 1.946-1.37 4.302-1.37 6.571 0 2.57.684 5.25 2.013 7.426-1.506 2.49-3.512 5.268-5.906 8.26-3.32 4.151-7.276 8.576-11.46 13.043C54.935 49 52.92 40.677 52.092 33.076c-.214-1.961-.82-4.704-3.322-6.163-1.198-.699-2.421-.842-3.361-.828-.913.014-1.8.18-2.514.338-1.617.357-3.634 1.053-5.035 2.822-1.476 1.862-1.606 4.047-1.41 5.823 1.263 11.46 5.117 21.826 8.736 31.561.315.848.629 1.691.939 2.53l-1.444 1.465c-5.608 5.685-11.38 11.538-15.944 17.664C23.152 95.786 19 104.162 19 113.925c0 5.271 1.642 10.572 5.448 14.586 3.852 4.063 9.518 6.382 16.71 6.382 7.52 0 13.89-3.083 18.226-9.205 4.203-5.932 6.24-14.343 6.24-24.692 0-9.248-2.285-19.698-4.925-30.024 6.2-6.497 12.311-13.262 17.196-19.722 2.685-3.55 5.055-7.081 6.88-10.49 1.416-.237 2.574-.642 3.494-.963l.091-.031c1.404-.49 2.218-.751 3.32-.751-.027 0-.024 0 .002.01.1.032.541.177 1.084.815.606.71 1.123 1.826 1.123 3.298 0 2.345-1.021 5.16-2.613 7.844-1.594 2.687-3.411 4.659-4.337 5.366-1.259.961-2.211 2.301-2.518 3.933a5.873 5.873 0 00.858 4.298c1.437 2.204 4.919 3.853 8.085 1.608 1.376-.976 2.169-1.184 2.858-1.184.703 0 3.992.61 7.13 3.927 1.889 1.998 3.839 5.11 5.036 9.919a570.345 570.345 0 01-7.37 4.364c-1.349.79-2.666 1.56-3.955 2.325-4.228 2.505-8.141 4.931-11.446 7.506-6.761 5.268-11.36 11.49-11.36 20.881 0 11.88 10.481 19.741 20.023 19.741 14.506 0 30.466-14.74 30.466-39.577 0-4.384-.307-8.306-.868-11.811a61.256 61.256 0 007.278-7.918c4.494-5.868 8.139-13.006 8.151-19.909.007-3.758-.801-7.27-2.708-10.014-1.987-2.861-4.974-4.587-8.539-4.875zm-19.163 52.555l.627-.327c-.301 11.525-2.834 19.182-5.882 23.895-3.256 5.033-6.942 6.559-9.362 6.559-1.486 0-3.858-.601-5.776-2.029-1.77-1.316-3.098-3.267-3.098-6.29 0-5.054 3.695-9.613 10.096-14.077 3.092-2.157 6.555-4.11 10.003-5.948a451.265 451.265 0 013.392-1.783zm-69.892 2.28c3.441-4.507 7.453-8.799 11.356-12.81 1.904 6.443 3.182 12.887 3.182 19.708 0 10.919-2.616 16.35-5.111 19.04-2.465 2.657-5.362 3.229-7.273 3.229-6.021 0-10.694-3.802-10.694-9.639 0-6.095 3.334-12.709 8.54-19.528z" fill="#CCF7AA" stroke="#CCF7AA" stroke-width="8"/><path d="M50.709 18.084c0-2.583-1.34-4.632-2.83-5.921C46.405 10.89 44.391 10 42.266 10c-1.823 0-3.858.562-5.451 2.12-1.621 1.586-2.308 3.735-2.308 5.964 0 2.038.51 4.237 2.012 5.986 1.579 1.838 3.796 2.648 6.088 2.648 2.65 0 4.8-1.222 6.193-2.984 1.32-1.67 1.908-3.734 1.908-5.65z" fill="#CCF7AA" stroke="#CCF7AA" stroke-width="8"/><path d="M134.06 36.562l-5.492-.445 1.278 5.36c.806 3.376.767 9.739-1.222 16.344-.787 2.613-1.85 5.17-3.222 7.534-1.883-3.464-4.151-6.144-6.619-8.203-3.495-2.917-7.174-4.388-10.186-5.154l.041-.058c2.152-3.057 4.554-7.338 4.554-11.802 0-4.418-2.017-8.23-4.783-10.883-2.732-2.621-6.462-4.368-10.308-4.368-1.227 0-2.394.184-3.437.426.003-.139.005-.277.005-.415 0-2.724-.662-5.28-2.424-7.162-1.8-1.924-4.138-2.501-6.116-2.501-3.189 0-5.205 2.142-6.208 4.12-.99 1.946-1.37 4.302-1.37 6.571 0 2.57.684 5.25 2.013 7.426-1.506 2.49-3.512 5.268-5.906 8.26-3.32 4.151-7.276 8.576-11.46 13.043C60.935 46 58.92 37.677 58.092 30.076c-.214-1.961-.82-4.704-3.322-6.163-1.198-.699-2.421-.842-3.361-.828-.913.014-1.8.18-2.514.338-1.617.357-3.634 1.053-5.035 2.822-1.476 1.862-1.606 4.047-1.41 5.823 1.263 11.46 5.117 21.826 8.736 31.561.315.848.629 1.691.939 2.53l-1.444 1.465c-5.608 5.685-11.38 11.538-15.944 17.664C29.152 92.786 25 101.162 25 110.925c0 5.271 1.642 10.572 5.448 14.586 3.852 4.063 9.518 6.382 16.71 6.382 7.52 0 13.89-3.083 18.226-9.205 4.203-5.932 6.24-14.343 6.24-24.692 0-9.248-2.285-19.698-4.925-30.024 6.2-6.497 12.311-13.262 17.196-19.722 2.685-3.55 5.055-7.081 6.88-10.49 1.416-.237 2.574-.642 3.494-.963l.091-.031c1.404-.49 2.218-.751 3.32-.751-.027 0-.024 0 .002.01.1.032.541.177 1.084.815.606.71 1.123 1.826 1.123 3.298 0 2.345-1.021 5.16-2.613 7.844-1.594 2.687-3.411 4.659-4.337 5.366-1.259.961-2.211 2.301-2.518 3.933a5.873 5.873 0 00.858 4.298c1.437 2.204 4.919 3.853 8.085 1.608 1.376-.976 2.169-1.184 2.858-1.184.703 0 3.992.61 7.13 3.927 1.889 1.998 3.839 5.11 5.036 9.919a570.345 570.345 0 01-7.37 4.364c-1.349.79-2.666 1.56-3.955 2.325-4.228 2.505-8.141 4.931-11.446 7.506-6.761 5.268-11.36 11.49-11.36 20.881 0 11.88 10.481 19.741 20.023 19.741 14.506 0 30.466-14.74 30.466-39.577 0-4.384-.307-8.306-.868-11.811a61.256 61.256 0 007.278-7.918c4.494-5.868 8.139-13.006 8.151-19.909.007-3.758-.801-7.27-2.708-10.014-1.987-2.861-4.974-4.587-8.539-4.875zm-19.163 52.555l.627-.327c-.301 11.525-2.834 19.182-5.882 23.895-3.256 5.033-6.942 6.559-9.362 6.559-1.486 0-3.858-.601-5.776-2.029-1.77-1.316-3.098-3.267-3.098-6.29 0-5.054 3.695-9.613 10.096-14.077 3.092-2.157 6.555-4.11 10.003-5.948a451.265 451.265 0 013.392-1.783zm-69.892 2.28c3.441-4.507 7.453-8.799 11.356-12.81 1.904 6.443 3.182 12.887 3.182 19.709 0 10.918-2.616 16.349-5.111 19.039-2.465 2.657-5.362 3.229-7.273 3.229-6.021 0-10.694-3.802-10.694-9.639 0-6.095 3.334-12.709 8.54-19.528z" fill="#ADEBEF" stroke="#ADEBEF" stroke-width="8"/><path d="M56.709 15.085c0-2.584-1.34-4.633-2.83-5.922C52.405 7.89 50.391 7 48.266 7c-1.823 0-3.858.561-5.451 2.12-1.621 1.586-2.308 3.735-2.308 5.965 0 2.037.51 4.236 2.012 5.985 1.579 1.838 3.796 2.648 6.088 2.648 2.65 0 4.8-1.222 6.193-2.984 1.32-1.67 1.908-3.734 1.908-5.65z" fill="#ADEBEF" stroke="#ADEBEF" stroke-width="8"/><g filter="url(#filter0_d)" fill="#FFFFFA" stroke="#FFFFFA" stroke-width="2"><path d="M134.818 38.552l-1.373-.111.32 1.34c.952 3.993.84 10.902-1.268 17.904-1.354 4.495-3.511 8.967-6.681 12.703-2.016-5.58-4.877-9.365-7.955-11.933-5.368-4.48-11.226-5.1-13.795-5.312a47.164 47.164 0 003.119-3.93c2.082-2.957 4.007-6.588 4.007-10.075 0-3.475-1.587-6.538-3.86-8.718-2.264-2.172-5.276-3.533-8.23-3.533-1.84 0-3.564.531-5.067 1.008l-.125.04c-.692.219-1.328.42-1.928.575.445-1.6.687-3.144.687-4.612 0-2.279-.554-3.98-1.614-5.113-1.07-1.143-2.506-1.55-3.926-1.55-1.65 0-2.825 1.082-3.534 2.478-.704 1.387-1.044 3.23-1.044 5.213 0 2.926.982 5.539 2.604 7.193l-.2.366c-1.676 3.022-4.076 6.404-6.954 10.002-4.363 5.452-9.777 11.34-15.328 17.141l-.04-.147c-2.766-10.427-5.51-20.766-6.525-30.08-.199-1.83-.686-3.218-1.85-3.897-.57-.332-1.197-.428-1.806-.419-.602.009-1.251.122-1.912.268-1.394.307-2.576.803-3.33 1.755-.773.975-.935 2.219-.78 3.631 1.221 11.071 4.945 21.095 8.58 30.88a1235.698 1235.698 0 011.584 4.287c-.94.96-1.884 1.919-2.829 2.877-5.604 5.683-11.196 11.354-15.623 17.297C32.757 93.311 29 101.064 29 109.925c0 4.668 1.45 9.175 4.625 12.522 3.185 3.36 8.007 5.446 14.534 5.446 6.609 0 12.038-2.66 15.777-7.939 3.706-5.231 5.688-12.939 5.688-22.958 0-9.321-2.436-20.042-5.247-30.893 6.564-6.833 13.04-13.936 18.126-20.663 2.993-3.959 5.524-7.811 7.31-11.42.01-.023.022-.045.033-.068 1.816-.074 3.224-.565 4.506-1.012l.02-.007c1.399-.488 2.645-.918 4.308-.918.995 0 2.29.612 3.37 1.88 1.059 1.242 1.839 3.044 1.839 5.243 0 3.108-1.309 6.47-3.033 9.375-1.725 2.907-3.777 5.212-5.097 6.22-.771.589-1.242 1.316-1.39 2.102a2.872 2.872 0 00.423 2.106c.738 1.13 2.381 1.831 3.836.799 1.672-1.186 3.066-1.737 4.594-1.737 1.546 0 5.618.962 9.309 4.865 2.593 2.742 5.034 6.977 6.239 13.431-3.256 2.003-6.355 3.817-9.273 5.525-1.34.784-2.643 1.546-3.905 2.294-4.219 2.501-7.989 4.844-11.131 7.293-6.323 4.926-10.204 10.363-10.204 18.514 0 9.963 8.865 16.741 17.023 16.741 12.438 0 27.466-12.953 27.466-36.577 0-4.946-.402-9.232-1.11-12.945a58.276 58.276 0 008.138-8.608c4.335-5.66 7.522-12.154 7.533-18.09.006-3.362-.721-6.21-2.171-8.297-1.471-2.117-3.639-3.38-6.318-3.597zm-20.233 46.866c1.736-.906 3.4-1.775 4.91-2.608.038.858.058 1.745.058 2.662 0 13.206-2.737 22.192-6.392 27.843-3.657 5.653-8.192 7.929-11.881 7.929-2.098 0-5.105-.79-7.567-2.622-2.425-1.804-4.307-4.601-4.307-8.697 0-6.635 4.842-11.978 11.38-16.538 3.242-2.261 6.831-4.282 10.308-6.135 1.179-.627 2.35-1.239 3.491-1.834zM58.389 72.252l.325-.33c2.747 8.184 4.83 16.446 4.83 25.374 0 11.355-2.72 17.638-5.913 21.08-3.185 3.433-6.981 4.188-9.472 4.188-7.234 0-13.694-4.733-13.694-12.639 0-7.113 3.844-14.392 9.156-21.348 4.499-5.894 9.95-11.43 14.768-16.325zM54.709 14.085c0-1.5-.78-2.778-1.793-3.653C51.91 9.563 50.573 9 49.267 9c-1.23 0-2.444.375-3.353 1.265-.917.896-1.406 2.2-1.406 3.82 0 1.571.394 2.99 1.288 4.03.912 1.063 2.236 1.603 3.812 1.603 1.667 0 2.973-.748 3.839-1.844.847-1.073 1.262-2.457 1.262-3.79z"/></g><defs><filter id="filter0_d" x="28" y="8" width="117.307" height="121.893" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1" dy="1"/><feColorMatrix values="0 0 0 0 0.239216 0 0 0 0 0.733333 0 0 0 0 0.827451 0 0 0 1 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow"/><feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/></filter></defs></svg>
-          <span class='name'>Jeff Zych</span>
-          </a>
-        
-        </h1>
-        <nav class='nav-main'>
-          <ul>
-            <li><a title="About Jeff Zych" href="/about">About Me</a></li>
-            <li><a href="/archives">Archives</a></li>
-          </ul>
-        </nav>
-        <div class='content'>
-          <h1 class='article__title'>Gladly’s Actions API</h1>
-          <h2 class='article__subtitle'>Designing a way for agents to trigger actions in external systems, without leaving Gladly</h2>
-          <p>Ulta Beauty just signed a contract to have Gladly&rsquo;s customer support software power all of their contact centers — over 1,000 agents in all. At the time, it was the second biggest deal in the company&rsquo;s history. We closed them on the promise of giving their support team a <strong>&ldquo;single pane of glass,&rdquo;</strong> meaning agents would <strong>never have to leave Gladly to help customers</strong>. Cancelling and refunding orders, adding loyalty points, update shipping address, and more, could all be done within Gladly&rsquo;s UI.</p>
-          
-          <p>Currently, agents had a <strong>dozen different systems</strong> to jump between to complete a customer request (we learned this while shadowing agents during the sales process). They used a mix of off-the-shelf software and homegrown solutions, stitched together by their IT team, which <strong>slowed down agents</strong> and <strong>hurt customer satisfaction scores</strong> (commonly called CSAT). By providing all this functionality within Gladly – and with a <strong>consumer-grade user experience</strong> to boot – <strong>agent productivity would increase</strong>, as would <strong>customer satisfaction</strong>.</p>
-          
-          <p>There was just one problem: <strong>we hadn&rsquo;t built it yet</strong>. And we didn&rsquo;t know how.</p>
-          
-          <p><a href="/images/case-studies/gladly-actions-api/1-final-cancel-markedup.png"><img alt="Screenshot of final agent experience for cancelling and refunding orders within Gladly" src="/images/case-studies/gladly-actions-api/1-final-cancel-markedup.png?1592617351" /></a>
-          <em>The main screen agents use when helping customers, showing the full timeline of conversations with that customer in the middle, and information about the customer on the left. We added &ldquo;Cancel &amp; Refund&rdquo; and &ldquo;Refund&rdquo; buttons to the order card, which agents can click to issue a refund and cancel the order, all without leaving Gladly. Behind those buttons lays a lot of technical wizardry we had to figure out.</em></p>
-          
-          <h2 id="the-challenge">The Challenge</h2>
-          
-          <p>Making agents more efficient by letting them perform common tasks with Gladly wasn&rsquo;t a new idea. We had been hearing about it for months from other prospects and customers. Ulta was just the first deal that closed that put it in the contract.</p>
-          
-          <p><img alt="Early mockups and technical proposal we showed Ulta" src="/images/case-studies/gladly-actions-api/2-sales-mock.png?1592617351" />
-          <em>Early mockups and technical proposal we showed Ulta</em></p>
-          
-          <p>We sold Ulta on the strength of a polished mockup of the agent&rsquo;s experience, and a hand-wave-y technical diagram (pictured above). We knew it was technically possible, but we didn&rsquo;t know specifically how. The challenge was to build a solution that:</p>
-          
-          <ul>
-          <li><strong>Worked with any system</strong> our prospects and customers could throw at us. Like Ulta, they used a mix of off-the-shelf software and homegrown systems.</li>
-          <li><strong>Wouldn&rsquo;t require months</strong> of IT&rsquo;s time to build the piping into Gladly.</li>
-          <li>Was a <strong>high-quality agent experience</strong> that matched Gladly&rsquo;s UX, so that we didn&rsquo;t slow down agents and they didn&rsquo;t have to know or care which systems it was connected to on the backend. It just worked.</li>
-          </ul>
-          
-          <p>The agent experience was easy. It&rsquo;s just buttons and forms. The hard part was <strong>what happens when those buttons are clicked and the form was submitted</strong>? How would we know what data to collect from agents, and where to send it once submitted? It would be easy to build one-off solutions that required little to no work on our customer&rsquo;s end, but across all of our target customers there were endless combinations of systems to build against, making that option intractable.</p>
-          
-          <h2 id="three-potential-paths">Three Potential Paths</h2>
-          
-          <p>To make this agent experience a reality, the PM, engineering lead, and myself got in a room to <strong>review the mockup</strong> and <strong>whiteboard potential ways of building it</strong>. We came up with 3 that were viable (and 1 that was technically viable, but didn&rsquo;t meet our UX goal):</p>
-          
-          <ul>
-          <li><strong>Form Builder</strong>: We could build an admin page for customers to build forms in. When agents clicked &ldquo;Cancel&rdquo;, for example, it would show the form they built, and would send data to their systems when agents submit it. No code for them to write, but a large lift on our end to build the admin page.</li>
-          <li><strong>Extend the Lookup API</strong>: We already had an API called the <em>Lookup API</em> that customers used to lookup customer data, like order history and loyalty points, and pipe it into Gladly. We could extend that by adding an <code>actions</code> JSON blob to the response, which would let developers declaratively attach &ldquo;actions&rdquo; to their customer info, specify what data they needed, and where to send it when agents submitted the form. Simple for developers, but would it be expressive enough to do any action customers could throw at us?</li>
-          <li><strong>Gladly UI Library</strong>: Similar to the above, we could extend the Lookup API with a custom Javascript UI library that would let developers build mini applications for agents to perform actions in. We&rsquo;d still control the look-and-feel of the UI, but they could build just about any functionality they wanted.</li>
-          <li><strong>iFrame</strong>: Give developers an iFrame that would load any URL they specify. We knew this was technically viable and would work with any system, but we were strongly opposed to it because the agent experience would be terrible. That being said, at least one customer said, &ldquo;Just give me an iFrame,&rdquo; so we needed to consider it.</li>
-          </ul>
-          
-          <p>I did lo-fi mock-ups of each of these options to ensure we were all talking about the same thing, and to review with customers.</p>
-          
-          <p><a href="/images/case-studies/gladly-actions-api/3-lo-fi-3-paths.jpg"><img alt="Lo-fi mockups of the 3 paths we were considering" src="/images/case-studies/gladly-actions-api/3-lo-fi-3-paths.jpg?1592617353" /></a>
-          <em>Lo-fi mockups of the 3 paths we were considering</em></p>
-          
-          <p>So which was best? Each had tradeoffs, both for us, and for customers. Would developers want to build UIs within Gladly? Would they want to learn how to build custom UIs with our JS library? Would an <code>actions</code> JSON blob be expressive enough to perform any action customers threw at us?</p>
-          
-          <h2 id="more-customer-discovery">More Customer Discovery</h2>
-          
-          <p>We reviewed these approaches with developers who were already using our Lookup API. After talking to 3 customers (we wanted to talk to more but finding representative developers who were interested in this feature on a short timeframe was difficult), a pattern emerged:</p>
-          
-          <ul>
-          <li>The form builder was <strong>cumbersome to use</strong>. Developers write code for a living, and don&rsquo;t want to build UIs in an admin interface. Plus, they&rsquo;d still have to build backend systems to receive the response from any UI they built in Gladly, so moving between code and our admin pages was a clunky developer experience.</li>
-          <li>The Gladly UI library had similar problems. They&rsquo;d have to learn a new arbitrary syntax to build a UI, and it forced our customers to be designers, which neither of us wanted and risked degrading the agent experience.</li>
-          <li>iFrames sucked for everyone. They all agreed it was painful to build and maintain, and other tools that offered this solution didn&rsquo;t work well. Cue sigh of relief from us.</li>
-          </ul>
-          
-          <p>The winner, then, was adding an <code>actions</code> JSON blob to the Lookup API to declaratively create a UI out of a limited palette of building blocks. After getting feedback from customers, this felt like the obvious choice. But at the outset, that wasn&rsquo;t so clear. That&rsquo;s why it&rsquo;s crucial to <strong>stay close to your customers when designing new features</strong>.</p>
-          
-          <p>Extending the Lookup API was less for us to build (compared to the other options), easy for developers to learn, just expressive enough to do almost anything without giving developers enough rope to hang themselves with.</p>
-          
-          <h2 id="pushing-the-ux-forward">Pushing the UX Forward</h2>
-          
-          <p>Up to this point, I had stayed lo-fi on purpose. We weren&rsquo;t sure how we were going to build it, and the architecture would impact the experience for both developers and agents, so going hi-fi too early would have been a waste of effort. I would have been <strong>polishing details that were likely to be thrown out</strong>. Plus, staying lo-fi lets us <strong>stay nimble and quickly throw out options</strong> that aren&rsquo;t working without a second thought. (<a href="/2020/04/07/the-power-of-low-fidelity/">Read more about my take on staying lo-fi</a>).</p>
-          
-          <p>My whole strategy for this project was to have the UX take a step, then engineering, then UX, then engineering, and so on, each time moving into higher fidelity. Now that we felt confident in the underlying architecture, I moved into mid-fi and fleshed out each screen, error states, and confirmations (screenshot below).</p>
-          
-          <p><a href="/images/case-studies/gladly-actions-api/4-mid-fi-with-errors.jpg"><img alt="Screenshot of my Figma file of mid-fi mockups" src="/images/case-studies/gladly-actions-api/4-mid-fi-with-errors.jpg?1592617353" /></a>
-          <em>Screenshot of my Figma file of mid-fi mockups</em></p>
-          
-          <h2 id="executive-input">Executive Input</h2>
-          
-          <p>Now that we had line of sight on what we were shipping, we wanted to get final input and sign-off from our executive team. Plus, Ulta wanted specs to build against, so we needed to keep the execs in the loop on what we&rsquo;d be showing them the following week, when we were flying out there.</p>
-          
-          <p>The executive team&rsquo;s feedback was very positive – the project was on track, would make Ulta successful, was general enough to work for other customers, and was a good experience for both agents and developers. Just one piece was lacking: <strong>I hadn&rsquo;t explored enough options for the agent experience</strong>.</p>
-          
-          <p>I showed agents completing actions through a modal flow, but the CEO pointed out that this would stop agents from being able to see information about the customer and the conversation history, which may include details necessary to complete the action (like the reason they&rsquo;re cancelling an order, for example).</p>
-          
-          <p>I got so caught up in the <strong>technical constraints and staying in lock-step with engineers that I didn&rsquo;t spend enough time exploring options for the agent UX</strong>. This piece felt &ldquo;simple&rdquo;, so I focused on the hard bits. But I didn&rsquo;t come back to re-visit the initial decision we had made in the sales mock. Lesson learned for the future: <strong>explore a wide variety of options for every piece of the experience</strong>.</p>
-          
-          <h2 id="visiting-ulta">Visiting Ulta</h2>
-          
-          <p>We flew out to Chicago the following week, and the meeting was a resounding success. The Ulta team was happy with the fleshed-out API spec. We whiteboarded what they would have to build to get this working, and the only roadblocks were on their side. Their technology stack was a mishmash of various technology vendors and homegrown systems, most of which lacked APIs to integrate with us. Thankfully that wasn&rsquo;t a knock against our solution – it was a knock against their other technology vendors. They would have to work through that on their side. For us, it meant we had <strong>the all clear to start building</strong>.</p>
-          
-          <p><img alt="Picture of us huddled outside Wendy's trying to get food the night before our meeting" src="/images/case-studies/gladly-actions-api/wendys.jpg?1594510009" />
-          <em>The team huddled outside Wendy&rsquo;s trying to get food the night before our meeting. Everything was closed, including the inside of Wendy&rsquo;s, so we had to walk through the drive-thru.</em></p>
-          
-          <h2 id="finalizing-the-agent-experience">Finalizing the Agent Experience</h2>
-          
-          <p>Upon returning from the Ulta meeting I passed off the work to another designer. There were a few reasons for this:</p>
-          
-          <ul>
-          <li>He&rsquo;s the designer on Team Agent, which owns the agent experience. It was always my plan to get him involved.</li>
-          <li>My primary responsibility is <strong>managing and leading the team</strong>. With the trip to Ulta and all the prep that required, it took time away from my managerial duties. I needed the help of another designer to get it over the finish line. It was worthwhile for me to shape the work in the early stages, since <strong>a technical project like this needed a technical designer like myself</strong> to guide it, but finalizing every UI state and working with engineers on all the final details is best handled by a member of my team.</li>
-          <li>We needed to <strong>rapidly explore more options for the agent experience</strong>, but as stated above, I needed to return my focus to my managerial duties.</li>
-          </ul>
-          
-          <p>I filled him in on all the research and the feedback from the CEO, and <strong>asked him to explore a wide variety of options</strong> so we could choose the best one for agents. Even crazy, out there ideas that may not seem feasible!</p>
-          
-          <p><a href="/images/case-studies/gladly-actions-api/5-darrells-explorations.jpg"><img alt="Darrell's broad explorations of the agent experience" src="/images/case-studies/gladly-actions-api/5-darrells-explorations.jpg?1592617352" /></a>
-          <em>Darrell&rsquo;s broad explorations of the agent experience</em></p>
-          
-          <p>He did an amazing job of doing this, including some pretty experimental stuff that wouldn&rsquo;t work for the initial launch but would be worth re-visiting later (that&rsquo;s the yellow box in the screenshot above). I expect this from all of my designers, making it even more egregious that I failed to do so myself.</p>
-          
-          <p>We narrowed down the options to a handful that were feasible to build in time for the go-live. Each were usable, and had pros and cons, but none were a stand out winner. Normally we&rsquo;d do some <strong>user testing</strong> to learn which was best, but that wasn&rsquo;t an option in this case. The engineers needed to start building immediately to have any hope of hitting the launch date, so we went with the CEO&rsquo;s preferred option, but made sure the engineers would build it in a way that would let us change it in the future after we got feedback from agents using it in the wild (which would be more accurate feedback anyway).</p>
-          
-          <h2 id="launch">Launch</h2>
-          
-          <p>The designer quickly polished up the designs, while engineering started coding. They hustled hard and shipped it in time for the go-live date.</p>
-          
-          <p><a href="/images/case-studies/gladly-actions-api/1-final-cancel-markedup.png"><img alt="Screenshot of final agent experience for cancelling and refunding orders within Gladly" src="/images/case-studies/gladly-actions-api/1-final-cancel-markedup.png?1592617351" /></a>
-          <em>The final agent experience we shipped</em></p>
-          
-          <p>All systems were go for Ulta and then&hellip; they had to push back the date. In my experience this isn&rsquo;t uncommon when building product for enterprise customers, but it&rsquo;s still disheartening.</p>
-          
-          <p>In this case, though, while we were building the Actions API we signed another customer who was eager to use it. In fact, the demo of this feature is what pushed them over the finish line.</p>
-          
-          <h2 id="first-customer-go-live">First Customer Go Live!</h2>
-          
-          <p>We turned it on for them and I wish I could say it was an immediate hit, but&hellip; it wasn&rsquo;t. It only got a trickle of usage.</p>
-          
-          <p>Why? We set-up weekly check-in calls with the customer to get to the bottom of it, in which we learned 2 things:</p>
-          
-          <ul>
-          <li>There were a <strong>couple of small bugs</strong> that caused the agents to <strong>not trust the feature</strong>, like orders with 0 dollars that could still be &ldquo;refunded.&rdquo;</li>
-          <li>The company had an old policy that <strong>agents weren&rsquo;t allowed to issue refunds</strong>, so they didn&rsquo;t think they were allowed to use the feature. This was further backed up when we looked at FullStory and saw people escalating refunds to their manager. Good for them for following the rules! But when our point-of-contact told us that, they realized they needed to <strong>re-train their agents to use this feature</strong>.</li>
-          </ul>
-          
-          <p>After fixing the bugs and doing re-training, usage steadily grew week over week. Behavior is slow to change, even with training, and especially when the actions are as serious as cancelling orders and issuing refunds — actions that agents want to make sure they&rsquo;re doing properly.</p>
-          
-          <p>Even so, the <strong>first customer loved the feature</strong>, and <strong>agents had positive feedback</strong> once they got comfortable with it. I wish I had numbers on the time saved or increase in CSAT, but sadly the company had COVID-induced layoffs, so I left before we had enough data to get those numbers.</p>
-          
-          <p>While the feature was just taking off as my time there wound down, it was a <strong>hit in sales demos</strong>. Prospects loved making agents more efficient by not having to leave Gladly, and it was the reason several customers signed with us while I was there.</p>
-          
-          <h2 id="lessons-learned">Lessons Learned</h2>
-          
-          <p>Overall the project was a huge success. It closed deals and broke new ground in customer support software, while setting us up for a bunch of new innovative features down the line (like exposing these actions directly to consumers, so agents wouldn&rsquo;t have to be involved at all).</p>
-          
-          <p>Even so, there are always lessons to be learned from every project.</p>
-          
-          <ul>
-          <li><strong>Stay lo-fi as long as possible</strong>. It lets you move fast and change direction quickly without throwing out extra work.</li>
-          <li><strong>Work in lock-step with engineering</strong>. Don&rsquo;t let the UX get too far ahead of what&rsquo;s technically possible. Don&rsquo;t polish details that may change depending on the underlying technical architecture. The UX should be pushing things forward, but regularly reviewing with engineering to ask, &ldquo;How might we build this? What other options do you see?&rdquo;</li>
-          <li><strong>Always explore a wide variety of options!</strong> &ldquo;Look for the edges of the solution space,&rdquo; I always say, meaning, push designs outside the bounds of what is possible to find what&rsquo;s over the line, then reign it back in. Do so quickly and cheaply, and review with engineering and PM, before moving into higher fidelity.</li>
-          <li><strong>Behavior change is hard, and enterprise features don&rsquo;t see immediate adoption</strong>. Understanding this, and tempering your expectations, is crucial for measuring success of features. People&rsquo;s livelihoods are on the line with business software. Mistakes can cost them their jobs. They have certain habits they&rsquo;ve built, and have been trained to do and not do certain things. A feature not getting adopted doesn&rsquo;t mean it isn&rsquo;t valuable or usable, it may mean there&rsquo;s organizational policies that need to change, or that people need time to get used to a new way of working. <strong>Always stay close to your customers to learn if this is the case or not</strong>. The data you measure on your side doesn&rsquo;t tell the whole story.</li>
-          </ul>
-          
-          <p>All said, the project was a ton of fun to work on, challenging, and hugely valuable for our customers.</p>
-        </div>
-      </div>
-    </div>
-    <footer id='site-footer'>
-      <p>
-        &copy; 2010&ndash;2020 Jeff Zych
-        &bull; Hand-crafted with
-        <a href="http://middlemanapp.com/">Middleman</a>
-      </p>
-      <a style="display: none;" href="http://plus.google.com/+JeffZych?rel=author">Google+ profile</a>
-    </footer>
-    <!-- Google Analytics tracking -->
-    <script>
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-21389659-1']);
-      _gaq.push(['_trackPageview']);
-      
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
-  </body>
+<head>
+<meta charset='utf-8'>
+<title>Gladly’s Actions API</title>
+<meta content='width=device-width, initial-scale=1.0, user-scalable=yes' name='viewport'>
+<meta content='black' name='apple-mobile-web-app-status-bar-style'>
+<meta content='yes' name='apple-mobile-web-app-capable'>
+<meta content='Designing a way for agents to trigger actions in external systems, without leaving Gladly' name='description'>
+<meta content='Jeff Zych' name='author'>
+<!-- FB Open Graph meta tags -->
+<meta content='blog' property='og:type'>
+<meta content='Jeff Zych&#x27;s Corner of the Internet' property='og:site_name'>
+<meta content='Gladly’s Actions API' property='og:title'>
+<meta content='Designing a way for agents to trigger actions in external systems, without leaving Gladly' property='og:description'>
+<meta content='http://jlzych.com/images/case-studies/gladly-actions-api/4-mid-fi-with-errors.jpg' property='og:image'>
+<meta content='http://jlzych.com/case-studies/gladly-actions-api/' property='og:url'>
+<!-- Additional Twitter tags - additive with og: tags -->
+<meta content='summary_large_image' name='twitter:card'>
+<meta name='twitter:creator' value='@jlzych'>
+<!-- From https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=XBbjm0yjQ3">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=XBbjm0yjQ3">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=XBbjm0yjQ3">
+<link rel="manifest" href="/site.webmanifest?v=XBbjm0yjQ3">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=XBbjm0yjQ3" color="#adebef">
+<link rel="shortcut icon" href="/favicon.ico?v=XBbjm0yjQ3">
+<meta name="msapplication-TileColor" content="#fffef6">
+<meta name="theme-color" content="#ffffff">
+<script src='//cdn.optimizely.com/js/1111070510.js'></script>
+<link href="/stylesheets/application.css?1592778554" media="screen" rel="stylesheet" type="text/css" />
+<link href='/feed.xml' rel='alternate' title='RSS for Jeff Zych' type='application/rss+xml'>
+<script src='//use.typekit.net/okn2nfu.js' type='text/javascript'></script>
+<script>
+  try{Typekit.load();}catch(e){}
+</script>
+</head>
+<body>
+<div class='container'>
+<div class='grid' role='main'>
+<h1 class='monogram'>
+<a title="Home" href="/"><svg width="152" height="147" viewBox="0 0 152 147" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116.06 45.562l-5.492-.445 1.278 5.36c.806 3.376.767 9.739-1.222 16.344-.787 2.612-1.85 5.17-3.222 7.534-1.883-3.464-4.151-6.144-6.619-8.203-3.495-2.917-7.174-4.388-10.186-5.154l.041-.058c2.152-3.057 4.554-7.338 4.554-11.802 0-4.418-2.017-8.23-4.783-10.883-2.732-2.621-6.462-4.368-10.308-4.368-1.227 0-2.394.184-3.437.426.003-.139.005-.277.005-.415 0-2.724-.662-5.28-2.424-7.162-1.8-1.924-4.138-2.501-6.116-2.501-3.189 0-5.205 2.142-6.208 4.12-.99 1.946-1.37 4.302-1.37 6.571 0 2.57.684 5.25 2.012 7.426-1.505 2.49-3.51 5.268-5.905 8.26-3.32 4.151-7.276 8.576-11.46 13.043C42.935 55 40.92 46.677 40.092 39.076c-.214-1.961-.82-4.704-3.322-6.163-1.198-.699-2.421-.842-3.361-.828-.913.014-1.8.18-2.514.338-1.617.357-3.634 1.053-5.035 2.822-1.476 1.862-1.606 4.047-1.41 5.823 1.263 11.46 5.117 21.826 8.736 31.561.315.848.629 1.691.939 2.53l-1.444 1.465c-5.608 5.685-11.38 11.538-15.944 17.664C11.152 101.786 7 110.162 7 119.925c0 5.271 1.642 10.572 5.448 14.586 3.852 4.063 9.518 6.382 16.71 6.382 7.52 0 13.89-3.083 18.226-9.204 4.203-5.933 6.24-14.344 6.24-24.693 0-9.248-2.285-19.698-4.925-30.024 6.2-6.497 12.311-13.262 17.196-19.722 2.685-3.55 5.055-7.081 6.88-10.49 1.416-.237 2.574-.642 3.494-.963l.091-.031c1.404-.49 2.218-.751 3.32-.751-.027 0-.024 0 .002.01.1.032.541.177 1.084.815.606.71 1.123 1.826 1.123 3.298 0 2.345-1.021 5.16-2.613 7.844-1.594 2.687-3.411 4.659-4.337 5.366-1.259.961-2.211 2.301-2.518 3.933a5.872 5.872 0 00.858 4.298c1.437 2.204 4.919 3.853 8.085 1.608 1.376-.976 2.169-1.184 2.858-1.184.703 0 3.992.61 7.13 3.927 1.89 1.998 3.839 5.11 5.036 9.919-2.562 1.55-5.014 2.985-7.37 4.364a829.64 829.64 0 00-3.955 2.325c-4.228 2.505-8.141 4.931-11.446 7.506-6.761 5.268-11.36 11.49-11.36 20.881 0 11.881 10.481 19.741 20.023 19.741 14.506 0 30.466-14.74 30.466-39.577 0-4.384-.307-8.306-.868-11.811a61.256 61.256 0 007.278-7.918c4.494-5.868 8.139-13.006 8.151-19.909.007-3.758-.801-7.27-2.708-10.014-1.987-2.861-4.974-4.587-8.539-4.875zM96.897 98.117l.627-.327c-.3 11.525-2.834 19.182-5.882 23.895-3.256 5.033-6.942 6.559-9.362 6.559-1.486 0-3.858-.601-5.776-2.029-1.77-1.316-3.098-3.267-3.098-6.29 0-5.054 3.695-9.613 10.096-14.077 3.092-2.157 6.555-4.111 10.003-5.948a457.19 457.19 0 013.392-1.783zm-69.892 2.28c3.441-4.507 7.453-8.799 11.356-12.81 1.904 6.443 3.182 12.887 3.182 19.709 0 10.918-2.616 16.349-5.111 19.039-2.465 2.657-5.362 3.229-7.273 3.229-6.021 0-10.694-3.802-10.694-9.639 0-6.095 3.334-12.709 8.54-19.528z" fill="#FED874" stroke="#FED874" stroke-width="8"/><path d="M38.709 24.084c0-2.583-1.34-4.632-2.83-5.921C34.405 16.89 32.391 16 30.266 16c-1.823 0-3.858.561-5.451 2.12-1.621 1.586-2.308 3.735-2.308 5.964 0 2.038.51 4.237 2.012 5.986 1.579 1.838 3.796 2.648 6.088 2.648 2.65 0 4.8-1.222 6.192-2.984 1.32-1.67 1.909-3.734 1.909-5.65z" fill="#FED874" stroke="#FED874" stroke-width="8"/><path d="M122.06 42.562l-5.492-.445 1.278 5.36c.806 3.376.767 9.739-1.222 16.344-.787 2.612-1.85 5.17-3.222 7.534-1.883-3.464-4.151-6.144-6.619-8.203-3.495-2.917-7.174-4.388-10.186-5.154l.041-.058c2.152-3.057 4.554-7.338 4.554-11.802 0-4.418-2.017-8.23-4.783-10.883-2.732-2.621-6.462-4.368-10.308-4.368-1.227 0-2.394.184-3.437.426.003-.139.005-.277.005-.415 0-2.724-.662-5.28-2.424-7.162-1.8-1.924-4.138-2.501-6.116-2.501-3.189 0-5.205 2.142-6.208 4.12-.99 1.946-1.37 4.302-1.37 6.571 0 2.57.684 5.25 2.013 7.426-1.506 2.49-3.512 5.268-5.906 8.26-3.32 4.151-7.276 8.576-11.46 13.043C48.935 52 46.92 43.677 46.092 36.076c-.214-1.961-.82-4.704-3.322-6.163-1.198-.699-2.421-.842-3.361-.828-.913.014-1.8.18-2.514.338-1.617.357-3.634 1.053-5.035 2.822-1.476 1.862-1.606 4.047-1.41 5.823 1.263 11.46 5.117 21.826 8.736 31.561.315.848.629 1.691.939 2.53l-1.444 1.465c-5.608 5.685-11.38 11.538-15.944 17.664C17.152 98.786 13 107.162 13 116.925c0 5.271 1.642 10.572 5.448 14.586 3.852 4.063 9.518 6.382 16.71 6.382 7.52 0 13.89-3.083 18.226-9.205 4.203-5.932 6.24-14.343 6.24-24.692 0-9.248-2.285-19.698-4.925-30.024 6.2-6.497 12.311-13.262 17.196-19.722 2.685-3.55 5.055-7.081 6.88-10.49 1.416-.237 2.574-.642 3.494-.963l.091-.031c1.404-.49 2.218-.751 3.32-.751-.027 0-.024 0 .002.01.1.032.541.177 1.084.815.606.71 1.123 1.826 1.123 3.298 0 2.345-1.021 5.16-2.613 7.844-1.594 2.687-3.411 4.659-4.337 5.366-1.259.961-2.211 2.301-2.518 3.933a5.872 5.872 0 00.858 4.298c1.437 2.204 4.919 3.853 8.085 1.608 1.376-.976 2.169-1.184 2.858-1.184.703 0 3.992.61 7.13 3.927 1.89 1.998 3.839 5.11 5.036 9.919a569.87 569.87 0 01-7.37 4.364c-1.349.79-2.666 1.56-3.955 2.325-4.228 2.505-8.141 4.931-11.446 7.506-6.761 5.268-11.36 11.49-11.36 20.881 0 11.88 10.481 19.741 20.023 19.741 14.506 0 30.466-14.74 30.466-39.577 0-4.384-.307-8.306-.868-11.811a61.256 61.256 0 007.278-7.918c4.494-5.868 8.139-13.006 8.151-19.909.007-3.758-.801-7.27-2.708-10.014-1.987-2.861-4.974-4.587-8.539-4.875zm-19.163 52.555l.627-.327c-.301 11.525-2.834 19.182-5.882 23.895-3.256 5.033-6.942 6.559-9.362 6.559-1.486 0-3.858-.601-5.776-2.029-1.77-1.316-3.098-3.267-3.098-6.29 0-5.054 3.695-9.613 10.096-14.077 3.092-2.157 6.555-4.11 10.003-5.948a453.23 453.23 0 013.392-1.783zm-69.892 2.28c3.441-4.507 7.453-8.799 11.356-12.81 1.904 6.443 3.182 12.887 3.182 19.708 0 10.919-2.616 16.35-5.111 19.04-2.465 2.657-5.362 3.229-7.273 3.229-6.021 0-10.694-3.802-10.694-9.639 0-6.095 3.334-12.709 8.54-19.528z" fill="#FCF398" stroke="#FCF398" stroke-width="8"/><path d="M44.709 21.084c0-2.583-1.34-4.632-2.83-5.921C40.405 13.89 38.391 13 36.266 13c-1.823 0-3.858.562-5.451 2.12-1.621 1.586-2.308 3.735-2.308 5.964 0 2.038.51 4.237 2.012 5.986 1.579 1.838 3.796 2.648 6.088 2.648 2.65 0 4.8-1.222 6.193-2.984 1.32-1.67 1.908-3.734 1.908-5.65z" fill="#FCF398" stroke="#FCF398" stroke-width="8"/><path d="M128.06 39.562l-5.492-.445 1.278 5.36c.806 3.376.767 9.739-1.222 16.344-.787 2.613-1.85 5.17-3.222 7.534-1.883-3.464-4.151-6.144-6.619-8.203-3.495-2.917-7.174-4.388-10.186-5.154l.041-.058c2.152-3.057 4.554-7.338 4.554-11.802 0-4.418-2.017-8.23-4.783-10.883-2.732-2.621-6.462-4.368-10.308-4.368-1.227 0-2.394.184-3.437.426.003-.139.005-.277.005-.415 0-2.724-.662-5.28-2.424-7.162-1.8-1.924-4.138-2.501-6.116-2.501-3.189 0-5.205 2.142-6.208 4.12-.99 1.946-1.37 4.302-1.37 6.571 0 2.57.684 5.25 2.013 7.426-1.506 2.49-3.512 5.268-5.906 8.26-3.32 4.151-7.276 8.576-11.46 13.043C54.935 49 52.92 40.677 52.092 33.076c-.214-1.961-.82-4.704-3.322-6.163-1.198-.699-2.421-.842-3.361-.828-.913.014-1.8.18-2.514.338-1.617.357-3.634 1.053-5.035 2.822-1.476 1.862-1.606 4.047-1.41 5.823 1.263 11.46 5.117 21.826 8.736 31.561.315.848.629 1.691.939 2.53l-1.444 1.465c-5.608 5.685-11.38 11.538-15.944 17.664C23.152 95.786 19 104.162 19 113.925c0 5.271 1.642 10.572 5.448 14.586 3.852 4.063 9.518 6.382 16.71 6.382 7.52 0 13.89-3.083 18.226-9.205 4.203-5.932 6.24-14.343 6.24-24.692 0-9.248-2.285-19.698-4.925-30.024 6.2-6.497 12.311-13.262 17.196-19.722 2.685-3.55 5.055-7.081 6.88-10.49 1.416-.237 2.574-.642 3.494-.963l.091-.031c1.404-.49 2.218-.751 3.32-.751-.027 0-.024 0 .002.01.1.032.541.177 1.084.815.606.71 1.123 1.826 1.123 3.298 0 2.345-1.021 5.16-2.613 7.844-1.594 2.687-3.411 4.659-4.337 5.366-1.259.961-2.211 2.301-2.518 3.933a5.873 5.873 0 00.858 4.298c1.437 2.204 4.919 3.853 8.085 1.608 1.376-.976 2.169-1.184 2.858-1.184.703 0 3.992.61 7.13 3.927 1.889 1.998 3.839 5.11 5.036 9.919a570.345 570.345 0 01-7.37 4.364c-1.349.79-2.666 1.56-3.955 2.325-4.228 2.505-8.141 4.931-11.446 7.506-6.761 5.268-11.36 11.49-11.36 20.881 0 11.88 10.481 19.741 20.023 19.741 14.506 0 30.466-14.74 30.466-39.577 0-4.384-.307-8.306-.868-11.811a61.256 61.256 0 007.278-7.918c4.494-5.868 8.139-13.006 8.151-19.909.007-3.758-.801-7.27-2.708-10.014-1.987-2.861-4.974-4.587-8.539-4.875zm-19.163 52.555l.627-.327c-.301 11.525-2.834 19.182-5.882 23.895-3.256 5.033-6.942 6.559-9.362 6.559-1.486 0-3.858-.601-5.776-2.029-1.77-1.316-3.098-3.267-3.098-6.29 0-5.054 3.695-9.613 10.096-14.077 3.092-2.157 6.555-4.11 10.003-5.948a451.265 451.265 0 013.392-1.783zm-69.892 2.28c3.441-4.507 7.453-8.799 11.356-12.81 1.904 6.443 3.182 12.887 3.182 19.708 0 10.919-2.616 16.35-5.111 19.04-2.465 2.657-5.362 3.229-7.273 3.229-6.021 0-10.694-3.802-10.694-9.639 0-6.095 3.334-12.709 8.54-19.528z" fill="#CCF7AA" stroke="#CCF7AA" stroke-width="8"/><path d="M50.709 18.084c0-2.583-1.34-4.632-2.83-5.921C46.405 10.89 44.391 10 42.266 10c-1.823 0-3.858.562-5.451 2.12-1.621 1.586-2.308 3.735-2.308 5.964 0 2.038.51 4.237 2.012 5.986 1.579 1.838 3.796 2.648 6.088 2.648 2.65 0 4.8-1.222 6.193-2.984 1.32-1.67 1.908-3.734 1.908-5.65z" fill="#CCF7AA" stroke="#CCF7AA" stroke-width="8"/><path d="M134.06 36.562l-5.492-.445 1.278 5.36c.806 3.376.767 9.739-1.222 16.344-.787 2.613-1.85 5.17-3.222 7.534-1.883-3.464-4.151-6.144-6.619-8.203-3.495-2.917-7.174-4.388-10.186-5.154l.041-.058c2.152-3.057 4.554-7.338 4.554-11.802 0-4.418-2.017-8.23-4.783-10.883-2.732-2.621-6.462-4.368-10.308-4.368-1.227 0-2.394.184-3.437.426.003-.139.005-.277.005-.415 0-2.724-.662-5.28-2.424-7.162-1.8-1.924-4.138-2.501-6.116-2.501-3.189 0-5.205 2.142-6.208 4.12-.99 1.946-1.37 4.302-1.37 6.571 0 2.57.684 5.25 2.013 7.426-1.506 2.49-3.512 5.268-5.906 8.26-3.32 4.151-7.276 8.576-11.46 13.043C60.935 46 58.92 37.677 58.092 30.076c-.214-1.961-.82-4.704-3.322-6.163-1.198-.699-2.421-.842-3.361-.828-.913.014-1.8.18-2.514.338-1.617.357-3.634 1.053-5.035 2.822-1.476 1.862-1.606 4.047-1.41 5.823 1.263 11.46 5.117 21.826 8.736 31.561.315.848.629 1.691.939 2.53l-1.444 1.465c-5.608 5.685-11.38 11.538-15.944 17.664C29.152 92.786 25 101.162 25 110.925c0 5.271 1.642 10.572 5.448 14.586 3.852 4.063 9.518 6.382 16.71 6.382 7.52 0 13.89-3.083 18.226-9.205 4.203-5.932 6.24-14.343 6.24-24.692 0-9.248-2.285-19.698-4.925-30.024 6.2-6.497 12.311-13.262 17.196-19.722 2.685-3.55 5.055-7.081 6.88-10.49 1.416-.237 2.574-.642 3.494-.963l.091-.031c1.404-.49 2.218-.751 3.32-.751-.027 0-.024 0 .002.01.1.032.541.177 1.084.815.606.71 1.123 1.826 1.123 3.298 0 2.345-1.021 5.16-2.613 7.844-1.594 2.687-3.411 4.659-4.337 5.366-1.259.961-2.211 2.301-2.518 3.933a5.873 5.873 0 00.858 4.298c1.437 2.204 4.919 3.853 8.085 1.608 1.376-.976 2.169-1.184 2.858-1.184.703 0 3.992.61 7.13 3.927 1.889 1.998 3.839 5.11 5.036 9.919a570.345 570.345 0 01-7.37 4.364c-1.349.79-2.666 1.56-3.955 2.325-4.228 2.505-8.141 4.931-11.446 7.506-6.761 5.268-11.36 11.49-11.36 20.881 0 11.88 10.481 19.741 20.023 19.741 14.506 0 30.466-14.74 30.466-39.577 0-4.384-.307-8.306-.868-11.811a61.256 61.256 0 007.278-7.918c4.494-5.868 8.139-13.006 8.151-19.909.007-3.758-.801-7.27-2.708-10.014-1.987-2.861-4.974-4.587-8.539-4.875zm-19.163 52.555l.627-.327c-.301 11.525-2.834 19.182-5.882 23.895-3.256 5.033-6.942 6.559-9.362 6.559-1.486 0-3.858-.601-5.776-2.029-1.77-1.316-3.098-3.267-3.098-6.29 0-5.054 3.695-9.613 10.096-14.077 3.092-2.157 6.555-4.11 10.003-5.948a451.265 451.265 0 013.392-1.783zm-69.892 2.28c3.441-4.507 7.453-8.799 11.356-12.81 1.904 6.443 3.182 12.887 3.182 19.709 0 10.918-2.616 16.349-5.111 19.039-2.465 2.657-5.362 3.229-7.273 3.229-6.021 0-10.694-3.802-10.694-9.639 0-6.095 3.334-12.709 8.54-19.528z" fill="#ADEBEF" stroke="#ADEBEF" stroke-width="8"/><path d="M56.709 15.085c0-2.584-1.34-4.633-2.83-5.922C52.405 7.89 50.391 7 48.266 7c-1.823 0-3.858.561-5.451 2.12-1.621 1.586-2.308 3.735-2.308 5.965 0 2.037.51 4.236 2.012 5.985 1.579 1.838 3.796 2.648 6.088 2.648 2.65 0 4.8-1.222 6.193-2.984 1.32-1.67 1.908-3.734 1.908-5.65z" fill="#ADEBEF" stroke="#ADEBEF" stroke-width="8"/><g filter="url(#filter0_d)" fill="#FFFFFA" stroke="#FFFFFA" stroke-width="2"><path d="M134.818 38.552l-1.373-.111.32 1.34c.952 3.993.84 10.902-1.268 17.904-1.354 4.495-3.511 8.967-6.681 12.703-2.016-5.58-4.877-9.365-7.955-11.933-5.368-4.48-11.226-5.1-13.795-5.312a47.164 47.164 0 003.119-3.93c2.082-2.957 4.007-6.588 4.007-10.075 0-3.475-1.587-6.538-3.86-8.718-2.264-2.172-5.276-3.533-8.23-3.533-1.84 0-3.564.531-5.067 1.008l-.125.04c-.692.219-1.328.42-1.928.575.445-1.6.687-3.144.687-4.612 0-2.279-.554-3.98-1.614-5.113-1.07-1.143-2.506-1.55-3.926-1.55-1.65 0-2.825 1.082-3.534 2.478-.704 1.387-1.044 3.23-1.044 5.213 0 2.926.982 5.539 2.604 7.193l-.2.366c-1.676 3.022-4.076 6.404-6.954 10.002-4.363 5.452-9.777 11.34-15.328 17.141l-.04-.147c-2.766-10.427-5.51-20.766-6.525-30.08-.199-1.83-.686-3.218-1.85-3.897-.57-.332-1.197-.428-1.806-.419-.602.009-1.251.122-1.912.268-1.394.307-2.576.803-3.33 1.755-.773.975-.935 2.219-.78 3.631 1.221 11.071 4.945 21.095 8.58 30.88a1235.698 1235.698 0 011.584 4.287c-.94.96-1.884 1.919-2.829 2.877-5.604 5.683-11.196 11.354-15.623 17.297C32.757 93.311 29 101.064 29 109.925c0 4.668 1.45 9.175 4.625 12.522 3.185 3.36 8.007 5.446 14.534 5.446 6.609 0 12.038-2.66 15.777-7.939 3.706-5.231 5.688-12.939 5.688-22.958 0-9.321-2.436-20.042-5.247-30.893 6.564-6.833 13.04-13.936 18.126-20.663 2.993-3.959 5.524-7.811 7.31-11.42.01-.023.022-.045.033-.068 1.816-.074 3.224-.565 4.506-1.012l.02-.007c1.399-.488 2.645-.918 4.308-.918.995 0 2.29.612 3.37 1.88 1.059 1.242 1.839 3.044 1.839 5.243 0 3.108-1.309 6.47-3.033 9.375-1.725 2.907-3.777 5.212-5.097 6.22-.771.589-1.242 1.316-1.39 2.102a2.872 2.872 0 00.423 2.106c.738 1.13 2.381 1.831 3.836.799 1.672-1.186 3.066-1.737 4.594-1.737 1.546 0 5.618.962 9.309 4.865 2.593 2.742 5.034 6.977 6.239 13.431-3.256 2.003-6.355 3.817-9.273 5.525-1.34.784-2.643 1.546-3.905 2.294-4.219 2.501-7.989 4.844-11.131 7.293-6.323 4.926-10.204 10.363-10.204 18.514 0 9.963 8.865 16.741 17.023 16.741 12.438 0 27.466-12.953 27.466-36.577 0-4.946-.402-9.232-1.11-12.945a58.276 58.276 0 008.138-8.608c4.335-5.66 7.522-12.154 7.533-18.09.006-3.362-.721-6.21-2.171-8.297-1.471-2.117-3.639-3.38-6.318-3.597zm-20.233 46.866c1.736-.906 3.4-1.775 4.91-2.608.038.858.058 1.745.058 2.662 0 13.206-2.737 22.192-6.392 27.843-3.657 5.653-8.192 7.929-11.881 7.929-2.098 0-5.105-.79-7.567-2.622-2.425-1.804-4.307-4.601-4.307-8.697 0-6.635 4.842-11.978 11.38-16.538 3.242-2.261 6.831-4.282 10.308-6.135 1.179-.627 2.35-1.239 3.491-1.834zM58.389 72.252l.325-.33c2.747 8.184 4.83 16.446 4.83 25.374 0 11.355-2.72 17.638-5.913 21.08-3.185 3.433-6.981 4.188-9.472 4.188-7.234 0-13.694-4.733-13.694-12.639 0-7.113 3.844-14.392 9.156-21.348 4.499-5.894 9.95-11.43 14.768-16.325zM54.709 14.085c0-1.5-.78-2.778-1.793-3.653C51.91 9.563 50.573 9 49.267 9c-1.23 0-2.444.375-3.353 1.265-.917.896-1.406 2.2-1.406 3.82 0 1.571.394 2.99 1.288 4.03.912 1.063 2.236 1.603 3.812 1.603 1.667 0 2.973-.748 3.839-1.844.847-1.073 1.262-2.457 1.262-3.79z"/></g><defs><filter id="filter0_d" x="28" y="8" width="117.307" height="121.893" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1" dy="1"/><feColorMatrix values="0 0 0 0 0.239216 0 0 0 0 0.733333 0 0 0 0 0.827451 0 0 0 1 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow"/><feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/></filter></defs></svg>
+
+<span class='name'>Jeff Zych</span>
+</a>
+</h1>
+<nav class='nav-main'>
+<ul>
+<li><a title="About Jeff Zych" href="/about">About Me</a></li>
+<li><a href="/archives">Archives</a></li>
+</ul>
+</nav>
+
+<div class='content'>
+<h1 class='article__title'>Gladly’s Actions API</h1>
+<h2 class='article__subtitle'>Designing a way for agents to trigger actions in external systems, without leaving Gladly</h2>
+<p>Ulta Beauty just signed a contract to have Gladly&rsquo;s customer support software power all of their contact centers — over 1,000 agents in all. At the time, it was the second biggest deal in the company&rsquo;s history. We closed them on the promise of giving their support team a <strong>&ldquo;single pane of glass,&rdquo;</strong> meaning agents would <strong>never have to leave Gladly to help customers</strong>. Cancelling and refunding orders, adding loyalty points, update shipping address, and more, could all be done within Gladly&rsquo;s UI.</p>
+
+<p>Currently, agents had a <strong>dozen different systems</strong> to jump between to complete a customer request (we learned this while shadowing agents during the sales process). They used a mix of off-the-shelf software and homegrown solutions, stitched together by their IT team, which <strong>slowed down agents</strong> and <strong>hurt customer satisfaction scores</strong> (commonly called CSAT). By providing all this functionality within Gladly – and with a <strong>consumer-grade user experience</strong> to boot – <strong>agent productivity would increase</strong>, as would <strong>customer satisfaction</strong>.</p>
+
+<p>There was just one problem: <strong>we hadn&rsquo;t built it yet</strong>. And we didn&rsquo;t know how.</p>
+
+<p><a href="/images/case-studies/gladly-actions-api/1-final-cancel-markedup.png"><img alt="Screenshot of final agent experience for cancelling and refunding orders within Gladly" src="/images/case-studies/gladly-actions-api/1-final-cancel-markedup.png?1592617351" /></a>
+<em>The main screen agents use when helping customers, showing the full timeline of conversations with that customer in the middle, and information about the customer on the left. We added &ldquo;Cancel &amp; Refund&rdquo; and &ldquo;Refund&rdquo; buttons to the order card, which agents can click to issue a refund and cancel the order, all without leaving Gladly. Behind those buttons lays a lot of technical wizardry we had to figure out.</em></p>
+
+<h2 id="the-challenge">The Challenge</h2>
+
+<p>Making agents more efficient by letting them perform common tasks with Gladly wasn&rsquo;t a new idea. We had been hearing about it for months from other prospects and customers. Ulta was just the first deal that closed that put it in the contract.</p>
+
+<p><img alt="Early mockups and technical proposal we showed Ulta" src="/images/case-studies/gladly-actions-api/2-sales-mock.png?1592617351" />
+<em>Early mockups and technical proposal we showed Ulta</em></p>
+
+<p>We sold Ulta on the strength of a polished mockup of the agent&rsquo;s experience, and a hand-wave-y technical diagram (pictured above). We knew it was technically possible, but we didn&rsquo;t know specifically how. The challenge was to build a solution that:</p>
+
+<ul>
+<li><strong>Worked with any system</strong> our prospects and customers could throw at us. Like Ulta, they used a mix of off-the-shelf software and homegrown systems.</li>
+<li><strong>Wouldn&rsquo;t require months</strong> of IT&rsquo;s time to build the piping into Gladly.</li>
+<li>Was a <strong>high-quality agent experience</strong> that matched Gladly&rsquo;s UX, so that we didn&rsquo;t slow down agents and they didn&rsquo;t have to know or care which systems it was connected to on the backend. It just worked.</li>
+</ul>
+
+<p>The agent experience was easy. It&rsquo;s just buttons and forms. The hard part was <strong>what happens when those buttons are clicked and the form was submitted</strong>? How would we know what data to collect from agents, and where to send it once submitted? It would be easy to build one-off solutions that required little to no work on our customer&rsquo;s end, but across all of our target customers there were endless combinations of systems to build against, making that option intractable.</p>
+
+<h2 id="three-potential-paths">Three Potential Paths</h2>
+
+<p>To make this agent experience a reality, the PM, engineering lead, and myself got in a room to <strong>review the mockup</strong> and <strong>whiteboard potential ways of building it</strong>. We came up with 3 that were viable (and 1 that was technically viable, but didn&rsquo;t meet our UX goal):</p>
+
+<ul>
+<li><strong>Form Builder</strong>: We could build an admin page for customers to build forms in. When agents clicked &ldquo;Cancel&rdquo;, for example, it would show the form they built, and would send data to their systems when agents submit it. No code for them to write, but a large lift on our end to build the admin page.</li>
+<li><strong>Extend the Lookup API</strong>: We already had an API called the <em>Lookup API</em> that customers used to lookup customer data, like order history and loyalty points, and pipe it into Gladly. We could extend that by adding an <code>actions</code> JSON blob to the response, which would let developers declaratively attach &ldquo;actions&rdquo; to their customer info, specify what data they needed, and where to send it when agents submitted the form. Simple for developers, but would it be expressive enough to do any action customers could throw at us?</li>
+<li><strong>Gladly UI Library</strong>: Similar to the above, we could extend the Lookup API with a custom Javascript UI library that would let developers build mini applications for agents to perform actions in. We&rsquo;d still control the look-and-feel of the UI, but they could build just about any functionality they wanted.</li>
+<li><strong>iFrame</strong>: Give developers an iFrame that would load any URL they specify. We knew this was technically viable and would work with any system, but we were strongly opposed to it because the agent experience would be terrible. That being said, at least one customer said, &ldquo;Just give me an iFrame,&rdquo; so we needed to consider it.</li>
+</ul>
+
+<p>I did lo-fi mock-ups of each of these options to ensure we were all talking about the same thing, and to review with customers.</p>
+
+<p><a href="/images/case-studies/gladly-actions-api/3-lo-fi-3-paths.jpg"><img alt="Lo-fi mockups of the 3 paths we were considering" src="/images/case-studies/gladly-actions-api/3-lo-fi-3-paths.jpg?1592617353" /></a>
+<em>Lo-fi mockups of the 3 paths we were considering</em></p>
+
+<p>So which was best? Each had tradeoffs, both for us, and for customers. Would developers want to build UIs within Gladly? Would they want to learn how to build custom UIs with our JS library? Would an <code>actions</code> JSON blob be expressive enough to perform any action customers threw at us?</p>
+
+<h2 id="more-customer-discovery">More Customer Discovery</h2>
+
+<p>We reviewed these approaches with developers who were already using our Lookup API. After talking to 3 customers (we wanted to talk to more but finding representative developers who were interested in this feature on a short timeframe was difficult), a pattern emerged:</p>
+
+<ul>
+<li>The form builder was <strong>cumbersome to use</strong>. Developers write code for a living, and don&rsquo;t want to build UIs in an admin interface. Plus, they&rsquo;d still have to build backend systems to receive the response from any UI they built in Gladly, so moving between code and our admin pages was a clunky developer experience.</li>
+<li>The Gladly UI library had similar problems. They&rsquo;d have to learn a new arbitrary syntax to build a UI, and it forced our customers to be designers, which neither of us wanted and risked degrading the agent experience.</li>
+<li>iFrames sucked for everyone. They all agreed it was painful to build and maintain, and other tools that offered this solution didn&rsquo;t work well. Cue sigh of relief from us.</li>
+</ul>
+
+<p>The winner, then, was adding an <code>actions</code> JSON blob to the Lookup API to declaratively create a UI out of a limited palette of building blocks. After getting feedback from customers, this felt like the obvious choice. But at the outset, that wasn&rsquo;t so clear. That&rsquo;s why it&rsquo;s crucial to <strong>stay close to your customers when designing new features</strong>.</p>
+
+<p>Extending the Lookup API was less for us to build (compared to the other options), easy for developers to learn, just expressive enough to do almost anything without giving developers enough rope to hang themselves with.</p>
+
+<h2 id="pushing-the-ux-forward">Pushing the UX Forward</h2>
+
+<p>Up to this point, I had stayed lo-fi on purpose. We weren&rsquo;t sure how we were going to build it, and the architecture would impact the experience for both developers and agents, so going hi-fi too early would have been a waste of effort. I would have been <strong>polishing details that were likely to be thrown out</strong>. Plus, staying lo-fi lets us <strong>stay nimble and quickly throw out options</strong> that aren&rsquo;t working without a second thought. (<a href="/2020/04/07/the-power-of-low-fidelity/">Read more about my take on staying lo-fi</a>).</p>
+
+<p>My whole strategy for this project was to have the UX take a step, then engineering, then UX, then engineering, and so on, each time moving into higher fidelity. Now that we felt confident in the underlying architecture, I moved into mid-fi and fleshed out each screen, error states, and confirmations (screenshot below).</p>
+
+<p><a href="/images/case-studies/gladly-actions-api/4-mid-fi-with-errors.jpg"><img alt="Screenshot of my Figma file of mid-fi mockups" src="/images/case-studies/gladly-actions-api/4-mid-fi-with-errors.jpg?1592617353" /></a>
+<em>Screenshot of my Figma file of mid-fi mockups</em></p>
+
+<h2 id="executive-input">Executive Input</h2>
+
+<p>Now that we had line of sight on what we were shipping, we wanted to get final input and sign-off from our executive team. Plus, Ulta wanted specs to build against, so we needed to keep the execs in the loop on what we&rsquo;d be showing them the following week, when we were flying out there.</p>
+
+<p>The executive team&rsquo;s feedback was very positive – the project was on track, would make Ulta successful, was general enough to work for other customers, and was a good experience for both agents and developers. Just one piece was lacking: <strong>I hadn&rsquo;t explored enough options for the agent experience</strong>.</p>
+
+<p>I showed agents completing actions through a modal flow, but the CEO pointed out that this would stop agents from being able to see information about the customer and the conversation history, which may include details necessary to complete the action (like the reason they&rsquo;re cancelling an order, for example).</p>
+
+<p>I got so caught up in the <strong>technical constraints and staying in lock-step with engineers that I didn&rsquo;t spend enough time exploring options for the agent UX</strong>. This piece felt &ldquo;simple&rdquo;, so I focused on the hard bits. But I didn&rsquo;t come back to re-visit the initial decision we had made in the sales mock. Lesson learned for the future: <strong>explore a wide variety of options for every piece of the experience</strong>.</p>
+
+<h2 id="visiting-ulta">Visiting Ulta</h2>
+
+<p>We flew out to Chicago the following week, and the meeting was a resounding success. The Ulta team was happy with the fleshed-out API spec. We whiteboarded what they would have to build to get this working, and the only roadblocks were on their side. Their technology stack was a mishmash of various technology vendors and homegrown systems, most of which lacked APIs to integrate with us. Thankfully that wasn&rsquo;t a knock against our solution – it was a knock against their other technology vendors. They would have to work through that on their side. For us, it meant we had <strong>the all clear to start building</strong>.</p>
+
+<p><img alt="Picture of us huddled outside Wendy's trying to get food the night before our meeting" src="/images/case-studies/gladly-actions-api/wendys.jpg?1594510009" />
+<em>The team huddled outside Wendy&rsquo;s trying to get food the night before our meeting. Everything was closed, including the inside of Wendy&rsquo;s, so we had to walk through the drive-thru.</em></p>
+
+<h2 id="finalizing-the-agent-experience">Finalizing the Agent Experience</h2>
+
+<p>Upon returning from the Ulta meeting I passed off the work to another designer. There were a few reasons for this:</p>
+
+<ul>
+<li>He&rsquo;s the designer on Team Agent, which owns the agent experience. It was always my plan to get him involved.</li>
+<li>My primary responsibility is <strong>managing and leading the team</strong>. With the trip to Ulta and all the prep that required, it took time away from my managerial duties. I needed the help of another designer to get it over the finish line. It was worthwhile for me to shape the work in the early stages, since <strong>a technical project like this needed a technical designer like myself</strong> to guide it, but finalizing every UI state and working with engineers on all the final details is best handled by a member of my team.</li>
+<li>We needed to <strong>rapidly explore more options for the agent experience</strong>, but as stated above, I needed to return my focus to my managerial duties.</li>
+</ul>
+
+<p>I filled him in on all the research and the feedback from the CEO, and <strong>asked him to explore a wide variety of options</strong> so we could choose the best one for agents. Even crazy, out there ideas that may not seem feasible!</p>
+
+<p><a href="/images/case-studies/gladly-actions-api/5-darrells-explorations.jpg"><img alt="Darrell's broad explorations of the agent experience" src="/images/case-studies/gladly-actions-api/5-darrells-explorations.jpg?1592617352" /></a>
+<em>Darrell&rsquo;s broad explorations of the agent experience</em></p>
+
+<p>He did an amazing job of doing this, including some pretty experimental stuff that wouldn&rsquo;t work for the initial launch but would be worth re-visiting later (that&rsquo;s the yellow box in the screenshot above). I expect this from all of my designers, making it even more egregious that I failed to do so myself.</p>
+
+<p>We narrowed down the options to a handful that were feasible to build in time for the go-live. Each were usable, and had pros and cons, but none were a stand out winner. Normally we&rsquo;d do some <strong>user testing</strong> to learn which was best, but that wasn&rsquo;t an option in this case. The engineers needed to start building immediately to have any hope of hitting the launch date, so we went with the CEO&rsquo;s preferred option, but made sure the engineers would build it in a way that would let us change it in the future after we got feedback from agents using it in the wild (which would be more accurate feedback anyway).</p>
+
+<h2 id="launch">Launch</h2>
+
+<p>The designer quickly polished up the designs, while engineering started coding. They hustled hard and shipped it in time for the go-live date.</p>
+
+<p><a href="/images/case-studies/gladly-actions-api/1-final-cancel-markedup.png"><img alt="Screenshot of final agent experience for cancelling and refunding orders within Gladly" src="/images/case-studies/gladly-actions-api/1-final-cancel-markedup.png?1592617351" /></a>
+<em>The final agent experience we shipped</em></p>
+
+<p>All systems were go for Ulta and then&hellip; they had to push back the date. In my experience this isn&rsquo;t uncommon when building product for enterprise customers, but it&rsquo;s still disheartening.</p>
+
+<p>In this case, though, while we were building the Actions API we signed another customer who was eager to use it. In fact, the demo of this feature is what pushed them over the finish line.</p>
+
+<h2 id="first-customer-go-live">First Customer Go Live!</h2>
+
+<p>We turned it on for them and I wish I could say it was an immediate hit, but&hellip; it wasn&rsquo;t. It only got a trickle of usage.</p>
+
+<p>Why? We set-up weekly check-in calls with the customer to get to the bottom of it, in which we learned 2 things:</p>
+
+<ul>
+<li>There were a <strong>couple of small bugs</strong> that caused the agents to <strong>not trust the feature</strong>, like orders with 0 dollars that could still be &ldquo;refunded.&rdquo;</li>
+<li>The company had an old policy that <strong>agents weren&rsquo;t allowed to issue refunds</strong>, so they didn&rsquo;t think they were allowed to use the feature. This was further backed up when we looked at FullStory and saw people escalating refunds to their manager. Good for them for following the rules! But when our point-of-contact told us that, they realized they needed to <strong>re-train their agents to use this feature</strong>.</li>
+</ul>
+
+<p>After fixing the bugs and doing re-training, usage steadily grew week over week. Behavior is slow to change, even with training, and especially when the actions are as serious as cancelling orders and issuing refunds — actions that agents want to make sure they&rsquo;re doing properly.</p>
+
+<p>Even so, the <strong>first customer loved the feature</strong>, and <strong>agents had positive feedback</strong> once they got comfortable with it. I wish I had numbers on the time saved or increase in CSAT, but sadly the company had COVID-induced layoffs, so I left before we had enough data to get those numbers.</p>
+
+<p>While the feature was just taking off as my time there wound down, it was a <strong>hit in sales demos</strong>. Prospects loved making agents more efficient by not having to leave Gladly, and it was the reason several customers signed with us while I was there.</p>
+
+<h2 id="lessons-learned">Lessons Learned</h2>
+
+<p>Overall the project was a huge success. It closed deals and broke new ground in customer support software, while setting us up for a bunch of new innovative features down the line (like exposing these actions directly to consumers, so agents wouldn&rsquo;t have to be involved at all).</p>
+
+<p>Even so, there are always lessons to be learned from every project.</p>
+
+<ul>
+<li><strong>Stay lo-fi as long as possible</strong>. It lets you move fast and change direction quickly without throwing out extra work.</li>
+<li><strong>Work in lock-step with engineering</strong>. Don&rsquo;t let the UX get too far ahead of what&rsquo;s technically possible. Don&rsquo;t polish details that may change depending on the underlying technical architecture. The UX should be pushing things forward, but regularly reviewing with engineering to ask, &ldquo;How might we build this? What other options do you see?&rdquo;</li>
+<li><strong>Always explore a wide variety of options!</strong> &ldquo;Look for the edges of the solution space,&rdquo; I always say, meaning, push designs outside the bounds of what is possible to find what&rsquo;s over the line, then reign it back in. Do so quickly and cheaply, and review with engineering and PM, before moving into higher fidelity.</li>
+<li><strong>Behavior change is hard, and enterprise features don&rsquo;t see immediate adoption</strong>. Understanding this, and tempering your expectations, is crucial for measuring success of features. People&rsquo;s livelihoods are on the line with business software. Mistakes can cost them their jobs. They have certain habits they&rsquo;ve built, and have been trained to do and not do certain things. A feature not getting adopted doesn&rsquo;t mean it isn&rsquo;t valuable or usable, it may mean there&rsquo;s organizational policies that need to change, or that people need time to get used to a new way of working. <strong>Always stay close to your customers to learn if this is the case or not</strong>. The data you measure on your side doesn&rsquo;t tell the whole story.</li>
+</ul>
+
+<p>All said, the project was a ton of fun to work on, challenging, and hugely valuable for our customers.</p>
+
+
+</div>
+</div>
+</div>
+<footer id='site-footer'>
+<p>
+&copy; 2010&ndash;2020 Jeff Zych
+&bull; Hand-crafted with
+<a href="http://middlemanapp.com/">Middleman</a>
+</p>
+<a style="display: none;" href="http://plus.google.com/+JeffZych?rel=author">Google+ profile</a>
+</footer>
+
+<!-- Google Analytics tracking -->
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21389659-1']);
+  _gaq.push(['_trackPageview']);
+  
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body>
 </html>
