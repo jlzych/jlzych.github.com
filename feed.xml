@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Jeff Zych</title>
-  <subtitle></subtitle>
+  <title>Jeff Zych's Internet Nook</title>
+  <subtitle>Jeff is a product design leader, coder, writer, and letterer. He writes about design, books, technology, creativity, and any other topics that interest him.</subtitle>
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
@@ -11,8 +11,8 @@
   </author>
   <entry>
     <title>Lessons in Creativity from Leonardo</title>
-    <link rel="alternate" href="/2020/05/05/lessons-in-creativity-from-leonardo/"/>
-    <id>/2020/05/05/lessons-in-creativity-from-leonardo/</id>
+    <link rel="alternate" href="http://jlzych.com/2020/05/05/lessons-in-creativity-from-leonardo/"/>
+    <id>http://jlzych.com/2020/05/05/lessons-in-creativity-from-leonardo/</id>
     <published>2020-05-06T00:06:00Z</published>
     <updated>2020-05-06T00:06:00Z</updated>
     <author>
@@ -47,8 +47,8 @@
   </entry>
   <entry>
     <title>Exercises from &lt;em&gt;Interaction of Color&lt;/em&gt; by Josef Albers</title>
-    <link rel="alternate" href="/2020/04/29/exercises-from-interactions-of-color-by-josef-albers/"/>
-    <id>/2020/04/29/exercises-from-interactions-of-color-by-josef-albers/</id>
+    <link rel="alternate" href="http://jlzych.com/2020/04/29/exercises-from-interactions-of-color-by-josef-albers/"/>
+    <id>http://jlzych.com/2020/04/29/exercises-from-interactions-of-color-by-josef-albers/</id>
     <published>2020-04-29T17:33:00Z</published>
     <updated>2020-04-29T17:33:00Z</updated>
     <author>
@@ -403,8 +403,8 @@
   </entry>
   <entry>
     <title>Dear Designer: You Don't Need to Have All the Answers</title>
-    <link rel="alternate" href="/2020/04/10/dear-designer-you-don-t-need-to-have-all-the-answers/"/>
-    <id>/2020/04/10/dear-designer-you-don-t-need-to-have-all-the-answers/</id>
+    <link rel="alternate" href="http://jlzych.com/2020/04/10/dear-designer-you-don-t-need-to-have-all-the-answers/"/>
+    <id>http://jlzych.com/2020/04/10/dear-designer-you-don-t-need-to-have-all-the-answers/</id>
     <published>2020-04-10T20:10:00Z</published>
     <updated>2020-04-10T20:10:00Z</updated>
     <author>
@@ -452,8 +452,8 @@
   </entry>
   <entry>
     <title>The Power of Low-Fidelity</title>
-    <link rel="alternate" href="/2020/04/07/the-power-of-low-fidelity/"/>
-    <id>/2020/04/07/the-power-of-low-fidelity/</id>
+    <link rel="alternate" href="http://jlzych.com/2020/04/07/the-power-of-low-fidelity/"/>
+    <id>http://jlzych.com/2020/04/07/the-power-of-low-fidelity/</id>
     <published>2020-04-07T18:53:00Z</published>
     <updated>2020-04-07T18:53:00Z</updated>
     <author>
@@ -475,8 +475,8 @@
   </entry>
   <entry>
     <title>Site Redesign IV: Color, Layout, &amp; Logo</title>
-    <link rel="alternate" href="/2020/03/29/site-redesign-iv-color-layout-logo/"/>
-    <id>/2020/03/29/site-redesign-iv-color-layout-logo/</id>
+    <link rel="alternate" href="http://jlzych.com/2020/03/29/site-redesign-iv-color-layout-logo/"/>
+    <id>http://jlzych.com/2020/03/29/site-redesign-iv-color-layout-logo/</id>
     <published>2020-03-30T00:09:00Z</published>
     <updated>2020-03-30T00:09:00Z</updated>
     <author>
@@ -558,8 +558,8 @@
   </entry>
   <entry>
     <title>Site Redesign III: Typography</title>
-    <link rel="alternate" href="/2020/03/15/site-redesign-iii-typography/"/>
-    <id>/2020/03/15/site-redesign-iii-typography/</id>
+    <link rel="alternate" href="http://jlzych.com/2020/03/15/site-redesign-iii-typography/"/>
+    <id>http://jlzych.com/2020/03/15/site-redesign-iii-typography/</id>
     <published>2020-03-15T23:43:00Z</published>
     <updated>2020-03-15T23:43:00Z</updated>
     <author>
