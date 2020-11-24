@@ -5,10 +5,37 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2020-11-20T00:12:00Z</updated>
+  <updated>2020-11-24T05:21:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>Learning the True Power of Artist Dates</title>
+    <link rel="alternate" href="http://jlzych.com/2020/11/23/learning-the-true-power-of-artist-dates/"/>
+    <id>http://jlzych.com/2020/11/23/learning-the-true-power-of-artist-dates/</id>
+    <published>2020-11-24T05:21:00Z</published>
+    <updated>2020-11-24T05:21:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;I saw a color palette I liked recently, and wanted to use it on something, but I had no project for it. I decided to just make some fake card UIs (plus I got to use some fonts I had been itching to use for awhile). There was no point to it other than playing with some colors and fonts. No one else saw it (until now). It will never be built. It won&amp;rsquo;t win any design awards.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Screenshot of my card UIs that won't win any design awards and had no purpose..." src="/images/2020-artist-dates/cards.jpg?1606195757" /&gt;
+&lt;em&gt;Some card UIs that won&amp;rsquo;t win any design awards and had no purpose&amp;hellip;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Afterward, I felt more creative energy coursing through my veins. I felt more creatively &lt;em&gt;attuned&lt;/em&gt;.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;When I first did &lt;a href="/2020/09/14/my-experience-with-the-artist-s-way/"&gt;The Artists Way&lt;/a&gt;, I thought &amp;ldquo;&lt;a href="https://juliacameronlive.com/basic-tools/artists-dates/"&gt;artist dates&lt;/a&gt;&amp;rdquo; were mostly about filling the tank with inspiration. That&amp;rsquo;s partly true, but their true power revealed themselves to me when I took a break to move. I had a few weeks of ignoring my inner artist, so when my ears finally perked up again I learned why artist dates are so powerful: You practice listening to your artist. Their voice gets stronger. Your ear is more attuned to it.&lt;/p&gt;
+
+&lt;p&gt;Over time the voice gets drowned out by society, your inner critic, fears, doubts, societal expectations, your idea of who you think you are, or should be. But the voice never goes away. It&amp;rsquo;s always there.&lt;/p&gt;
+
+&lt;p&gt;Think back to when you were a kid and you just made stuff for the fun of it. It didn&amp;rsquo;t matter if it was good or not. There was no point to it. You didn&amp;rsquo;t worry about calling yourself an artist or changing your identity. Listening to your inner artist gets you back to that place.&lt;/p&gt;
+
+&lt;p&gt;The artist&amp;rsquo;s way shows you how to turn down the dial on your inner critic, and turn up the dial on your inner artist. You&amp;rsquo;ll strengthen your creative muscle and enjoy your creativity like a kid again.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Notes from "Vernacular Eloquence"</title>
     <link rel="alternate" href="http://jlzych.com/2020/11/19/notes-from-vernacular-eloquence/"/>
@@ -675,29 +702,6 @@
 &lt;hr&gt;
 
 &lt;p&gt;&lt;em&gt;See also the &lt;a href="https://articles.uie.com/ssh-dont-tell-them-theres-no-magic-in-design-thinking/"&gt;story of stone soup&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>The Power of Low-Fidelity</title>
-    <link rel="alternate" href="http://jlzych.com/2020/04/07/the-power-of-low-fidelity/"/>
-    <id>http://jlzych.com/2020/04/07/the-power-of-low-fidelity/</id>
-    <published>2020-04-07T18:53:00Z</published>
-    <updated>2020-04-07T18:53:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;&amp;ldquo;I know you&amp;rsquo;re not there yet, but&amp;hellip;&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;This was how our brand designer began his feedback to one of my product designers in design critique. The product designer presented early designs for a feature he was working on. Most importantly, his work was low-fidelity. It used simple black-and-white components and a casual, hand-written font.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Screenshot of a low-fidelity modal component" src="/images/2020-04-lo-fi/lo-fi-modal.png?1586286798" /&gt;
-&lt;em&gt;An example of a low-fidelity modal component. Not what the designer showed.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;His designs were still early, and subject to change. He needed feedback on high-level flows and interactions, not colors or fonts or spacing. Exploring those design details, and getting feedback on that, would have been a waste of time. The fidelity of his work matched the fidelity of his thinking.&lt;/p&gt;
-
-&lt;p&gt;The brand designer ended that statement with some general visual design advice for when he moves into high-fidelity. It took less than a minute. He didn&amp;rsquo;t rabbit-hole on a detailed, point-by-point critique of the entire design. How could he? There was no visual design. His feedback matched the fidelity of what was shown. The product designer got the feedback he needed, and the brand designer gave feedback that played to his strengths.&lt;/p&gt;
-
-&lt;p&gt;That simple interaction demonstrated the power of showing low-fidelity work.&lt;/p&gt;
 </content>
   </entry>
 </feed>
