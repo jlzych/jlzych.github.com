@@ -5,10 +5,115 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2020-11-24T05:21:00Z</updated>
+  <updated>2020-12-13T01:29:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>Product Manager and Product Designer: Who Does What?</title>
+    <link rel="alternate" href="http://jlzych.com/2020/12/12/product-manager-and-product-designer-who-does-what/"/>
+    <id>http://jlzych.com/2020/12/12/product-manager-and-product-designer-who-does-what/</id>
+    <published>2020-12-13T01:29:00Z</published>
+    <updated>2020-12-13T01:29:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;I recently noticed that my team of Product Designers at &lt;a href="https://launchdarkly.com"&gt;LaunchDarkly&lt;/a&gt; (p.s. &lt;a href="https://boards.greenhouse.io/launchdarkly/jobs/4194121003"&gt;I&amp;rsquo;m hiring&lt;/a&gt;) was having trouble navigating the overlap of Product &lt;em&gt;Design&lt;/em&gt; and Product &lt;em&gt;Management&lt;/em&gt;. No one said it explicitly, but after hearing some frustrations in 1:1s and team meetings I connected the dots that this issue was the common variable across a variety of complaints.&lt;/p&gt;
+
+&lt;p&gt;I was hearing things like, &amp;ldquo;I&amp;rsquo;m supposed to own the user experience, but the PM keeps cutting scope from my designs!&amp;rdquo; And, &amp;ldquo;Am I expected to run team whiteboarding sessions?&amp;rdquo; There was also confusion around the fact that sometimes they do customer interviews, and other times PMs do.&lt;/p&gt;
+
+&lt;p&gt;Product Managers also had some struggles with navigating this gray area. They want to shape the final product (as they should), but were unsure how best to provide input without stepping on the toes of designers. If I sketch out my ideas, am I doing the designer&amp;rsquo;s job for them? Is it ok to ask designers to do customer outreach and development? If the designs I&amp;rsquo;m seeing are missing the mark, how do I give that feedback without telling them their work stinks?&lt;/p&gt;
+
+&lt;p&gt;To clarify expectations for both sides, I wrote the doc below. It doesn&amp;rsquo;t try to draw a distinct line between the two roles, but instead explicitly states the area of overlap and provides guidance on how to navigate it. I also give advice for leaning on each other, such as asking PMs for scope, or asking designers for more iterations.&lt;/p&gt;
+
+&lt;p&gt;So far this doc has alleviated some confusion on both sides, and empowered my team to speak up when they need more from their peers.&lt;/p&gt;
+
+&lt;p&gt;If you or your team is struggling with this as well, I hope this doc will help.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;The roles of Product Designer and Product Manager have a significant amount of overlap (they both have “product” in their title, after all). So who does what? Having overlap and redundancy is healthy and makes sure multiple people are thinking about the big picture. But fuzzy roles and unclear decision makers leads to people spinning their wheels and unproductive power struggles. This doc aims to clarify who does what by explicitly laying out roles, the overlap, and how to navigate the ambiguity.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Venn diagram of the overlap between Product Managers and Product Designers" src="/images/2020-pd-pm-overlap/overlap.png?1607826488" /&gt;&lt;/p&gt;
+
+&lt;h2 id="product-designers"&gt;Product Designers&lt;/h2&gt;
+
+&lt;p&gt;Product Designers are responsible for creating &lt;strong&gt;great user experiences&lt;/strong&gt;. What does that mean, though? Don’t we all own the user experience? In a sense, yes – everything the triad does will impact the final experience. Sales, support, and marketing all impact the customer’s experience, too. But in the context of the triad, the designer should be pushing for the best experience that meets business and customer goals, with the project constraints (scope, technical tradeoffs, what’s available in the design system, and so on). If the proposed design doesn’t meet the customer’s needs, or is hard to use, or unpolished, or doesn’t follow our patterns, that’s on the designer. They do this by owning:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Final visual design&lt;/li&gt;
+&lt;li&gt;Interaction design&lt;/li&gt;
+&lt;li&gt;Prototyping&lt;/li&gt;
+&lt;li&gt;Usability testing&lt;/li&gt;
+&lt;li&gt;Personas&lt;/li&gt;
+&lt;li&gt;Journey mapping&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;And more, this list isn’t exhaustive&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="product-managers"&gt;Product Managers&lt;/h2&gt;
+
+&lt;p&gt;Product Managers are accountable for the &lt;strong&gt;business value&lt;/strong&gt; of their team’s output. If a project isn’t valuable to customers or LaunchDarkly, has unclear or incorrect scope, fuzzy use cases, takes too long to build relative to the value, or the team doesn’t understand what problem they’re solving or why, that’s on the PM. They do this by owning:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Roadmap prioritization&lt;/li&gt;
+&lt;li&gt;Team goals &amp;amp; strategy&lt;/li&gt;
+&lt;li&gt;Project scope&lt;/li&gt;
+&lt;li&gt;Project goals and success criteria&lt;/li&gt;
+&lt;li&gt;Data analysis&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;And more, this list isn’t exhaustive&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="the-overlap"&gt;The overlap&lt;/h2&gt;
+
+&lt;p&gt;This still leaves a healthy amount of overlap between the two roles. Both do:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;User research&lt;/li&gt;
+&lt;li&gt;User scenarios&lt;/li&gt;
+&lt;li&gt;Use cases&lt;/li&gt;
+&lt;li&gt;Lo-fi sketching and flows&lt;/li&gt;
+&lt;li&gt;Team workshops &amp;amp; whiteboarding&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;And even more, this list isn’t exhaustive, either&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So who owns these activities? The answer is &lt;strong&gt;both&lt;/strong&gt;. The best projects will have designers and PMs collaborating on these. But sometimes a designer takes the lead on research, or the PM will lead whiteboarding activities. It will depend on who has the time, skills, and interest, among other factors. When things are unclear, they should discuss who is doing what.&lt;/p&gt;
+
+&lt;p&gt;Additionally, being &lt;em&gt;accountable&lt;/em&gt; for an outcome doesn’t mean you’re on the hook for doing all the work to achieve it. Nor does it mean you can’t contribute to what someone else is accountable for. Designers should contribute to use cases and scope. Engineers and PMs should contribute design ideas. Everyone should contribute to the roadmap. But at the end of the day, the person accountable for the final result has final decision making power.&lt;/p&gt;
+
+&lt;p&gt;Even so, this won’t prevent disagreements. You may not agree with the final scope, technical architecture, or user flows. Voice your concerns, have a healthy (but respectful) debate about the tradeoffs, and try to reach consensus or a set of next steps to resolve the tension. But at the end of the day, recognize who is accountable for the outcome, and thus the final decision maker, and &lt;em&gt;disagree and commit&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id="lean-on-each-other"&gt;Lean on each other&lt;/h2&gt;
+
+&lt;p&gt;Knowing who’s accountable for what gives you someone to lean on when things are ambiguous. Use this to your advantage.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;For Product Designers&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Lean on your PM if you don’t understand the project’s goals, use cases, scope, or value. You can and should have an opinion on these, and shape them with your work, but it’s a fool’s errand to try to finalize a design if these aren’t crisp.&lt;/li&gt;
+&lt;li&gt;If you’re not sure about the technical tradeoffs of your design decisions, lean on your engineering counterpart.&lt;/li&gt;
+&lt;li&gt;If the PM or engineers have an idea for a solution, listen to it and make it real, even if you’re not sure it will work. Design’s super power is giving form to abstract ideas. Discussing a cheap throwaway mockup you’ve made can shortcut weeks of debate. &lt;a href="http://jlzych.com/2020/04/10/dear-designer-you-don-t-need-to-have-all-the-answers/"&gt;I wrote a longer article about this&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;You are expected to push for shipping the best user experience you can. Sometimes this increases the scope of a project. Sometimes this increases the technical complexity. You should discuss tradeoffs with your triad and reach consensus together. Don’t assume what’s easy or hard. Then make the best damn designs you can within the scope and constraints agreed upon.&lt;/li&gt;
+&lt;li&gt;Scope, use cases, and goals can and will change as projects move through discovery. Seeing real designs and getting user feedback changes your understanding of the opportunity space, so you should update the product spec accordingly.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;For Product Managers&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Lean on designers to help you with scope and use case decisions by cheaply exploring ideas together.&lt;/li&gt;
+&lt;li&gt;If you have an idea for a solution, get it out of your head and share it with your designer. But acknowledge it’s just an idea and the designer owns the final designs.&lt;/li&gt;
+&lt;li&gt;You see an area of opportunity that needs more research but don’t have time, ask your designer if they can lead customer calls.&lt;/li&gt;
+&lt;li&gt;If the solutions the designer is proposing are missing the mark, ask them to explore more ideas. Or whiteboard together if you’re seeing paths the designer’s not going down. You don’t need to be an expert in design and pinpoint exactly what isn’t working, but you can always ask for more options.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="create-greatness-together"&gt;Create greatness together&lt;/h2&gt;
+
+&lt;p&gt;Tension and overlap is healthy when roles and expectations are clear. This doc is a starting point and guide, but it takes practice to successfully navigate points of conflict. But when done right, you’ll ship solutions better than you would have alone.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;em&gt;Sound like the type of team you want to work on? &lt;a href="https://boards.greenhouse.io/launchdarkly/jobs/4194121003"&gt;I&amp;rsquo;m hiring&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Learning the True Power of Artist Dates</title>
     <link rel="alternate" href="http://jlzych.com/2020/11/23/learning-the-true-power-of-artist-dates/"/>
@@ -653,55 +758,6 @@
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;em&gt;Links above are Amazon Affiliate links.&lt;/em&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Dear Designer: You Don't Need to Have All the Answers</title>
-    <link rel="alternate" href="http://jlzych.com/2020/04/10/dear-designer-you-don-t-need-to-have-all-the-answers/"/>
-    <id>http://jlzych.com/2020/04/10/dear-designer-you-don-t-need-to-have-all-the-answers/</id>
-    <published>2020-04-10T20:10:00Z</published>
-    <updated>2020-04-10T20:10:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;Dear Designer,&lt;/p&gt;
-
-&lt;p&gt;You&amp;rsquo;re working on a project and the team is aligned on the customer problem to be solved, the business value, and success criteria. The project has moved into the &lt;a href="/2016/07/17/discovery-kanban-at-optimizely/"&gt;solution exploration&lt;/a&gt; phase, and now the ball is firmly in your court. The whole team is looking to you to come up with a solution. A stroke of genius the likes of which the world has never seen! The success of this entire project rests on your shoulders. In the words of Ru Paul, &lt;a href="https://www.youtube.com/watch?v=i_Y44nJh3ps"&gt;&lt;em&gt;Don&amp;rsquo;t&lt;/em&gt; fuck it up!&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Feeling the pressure? I bet you are. Well I&amp;rsquo;m here to let you in on a little secret. Ready? Come closer so it&amp;rsquo;s just you and me&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;You don&amp;rsquo;t need to have all the answers.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;That&amp;rsquo;s right. You don&amp;rsquo;t need to answer every question that comes up during the design process. A little known secret about design is that it&amp;rsquo;s a team sport. You&amp;rsquo;re going to face a million decision points along the way. Decisions that impact not only the user experience, but also the data model, backend and frontend architecture, customer adoption, project timelines, marketing messaging, sales demos, support docs, and more. Decisions that you can&amp;rsquo;t possibly have all the information or expertise to make alone.&lt;/p&gt;
-
-&lt;p&gt;If you aren&amp;rsquo;t answering all of these questions, then what are you doing here? Why are you even on the team?&lt;/p&gt;
-
-&lt;p&gt;Don&amp;rsquo;t despair. Your role is to guide the team to the best answer, together. Draw out knowledge and ideas from all of your cross-functional peers.&lt;/p&gt;
-
-&lt;p&gt;Take those ideas and give them form. It doesn&amp;rsquo;t matter if you came up with the idea or not. It doesn&amp;rsquo;t even matter if you &lt;em&gt;like&lt;/em&gt; the idea. Put your ego aside. You&amp;rsquo;re not a bad designer if someone else has a better idea than you. Make them all real as quickly and cheaply as possible. That may be &lt;a href="/2020/04/07/the-power-of-low-fidelity/"&gt;lo-fi mockups&lt;/a&gt;, written scenarios, flowcharts, clickthrough prototypes, boxes and arrows, or something else. The method you choose doesn&amp;rsquo;t matter. Just give them form, quickly and cheaply.&lt;/p&gt;
-
-&lt;p&gt;That last part is the true super-power of designers: &lt;em&gt;giving concrete form to abstract ideas&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;When you talk about ideas in the abstract, everyone will have a different image in their head of what that is. There&amp;rsquo;s a lot of room for misunderstanding and ambiguity.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Illustration of people in a meeting with different ideas in their heads of what's being discussed" src="/images/2020-04-dear-designer/team-misunderstanding.png?1586558068" /&gt;
-&lt;em&gt;She&amp;rsquo;s describing one thing, but everyone is imagining something different. Illustrations from &lt;a href="http://www.fresh-folk.com"&gt;fresh-folk.com&lt;/a&gt;, created by &lt;a href="http://www.lenikauffman.com/"&gt;Leni Kauffman&lt;/a&gt;. Composition, speech and thought bubbles added by me.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;By giving concrete form to abstract ideas, you ensure everyone is talking about the same thing. The good, the bad, and the ugly is all laid bare. It shines a light on all the gaps in knowledge and assumptions that were lurking in the shadows.&lt;/p&gt;
-
-&lt;p&gt;I was recently in a team meeting where a designer presented the first round of &lt;a href="/2020/04/07/the-power-of-low-fidelity/"&gt;lo-fi work&lt;/a&gt; for a project. It was full of holes and open questions and unknowns. He certainly didn&amp;rsquo;t have all the answers. But he was open about gaps in his own knowledge and the questions this was raising for him. There were technical questions that he couldn&amp;rsquo;t answer on his own. Questions about the customer&amp;rsquo;s workflow that hadn&amp;rsquo;t surfaced. It highlighted that the team hadn&amp;rsquo;t even agreed on the conceptual model for how this feature should work yet!&lt;/p&gt;
-
-&lt;p&gt;He laid it all out on the table. The group had a productive discussion about what was working, what wasn&amp;rsquo;t working, and open questions for each person to answer. At the end of the meeting, the lead engineer remarked, &amp;ldquo;It was very helpful to have something concrete to look at.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;So, designer, I&amp;rsquo;m here to tell you that we don&amp;rsquo;t expect you to have all the answers. We expect you to guide the team to the best answer.&lt;/p&gt;
-
-&lt;p&gt;Now get out there and lead your teams to success! 💪&lt;/p&gt;
-
-&lt;p&gt;-Jeff&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;&lt;em&gt;See also the &lt;a href="https://articles.uie.com/ssh-dont-tell-them-theres-no-magic-in-design-thinking/"&gt;story of stone soup&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 </content>
   </entry>
 </feed>

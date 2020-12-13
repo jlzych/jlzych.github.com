@@ -2,19 +2,19 @@
 <html>
 <head>
 <meta charset='utf-8'>
-<title>Learning the True Power of Artist Dates by Jeff Zych</title>
+<title>Product Manager and Product Designer: Who Does What? by Jeff Zych</title>
 <meta content='width=device-width, initial-scale=1.0, user-scalable=yes' name='viewport'>
 <meta content='black' name='apple-mobile-web-app-status-bar-style'>
 <meta content='yes' name='apple-mobile-web-app-capable'>
-<meta content='I saw a color palette I liked recently, and wanted to use it on something, but I had no project for it. I decided to just make some fake card UIs (plus I got to use some fonts I had been itching to use for awhile). There was no point to it other than playing with some colors and fonts. No one else saw it (until now). It will never be built. It won&#x27;t win any design awards.' name='description'>
+<meta content='I recently noticed that my team of Product Designers at LaunchDarkly was having trouble navigating the overlap of Product Design and Product Management. No one said it explicitly, but after hearing some frustrations in 1:1s and team meetings I connected the dots that this issue was the common variable across a variety of complaints.' name='description'>
 <meta content='Jeff Zych' name='author'>
 <!-- FB Open Graph meta tags -->
 <meta content='blog' property='og:type'>
 <meta content='Jeff Zych&#x27;s Internet Nook' property='og:site_name'>
-<meta content='Learning the True Power of Artist Dates by Jeff Zych' property='og:title'>
-<meta content='I saw a color palette I liked recently, and wanted to use it on something, but I had no project for it. I decided to just make some fake card UIs (plus I got to use some fonts I had been itching to use for awhile). There was no point to it other than playing with some colors and fonts. No one else saw it (until now). It will never be built. It won&#x27;t win any design awards.' property='og:description'>
-<meta content='http://jlzych.com/images/2020-artist-dates/cards.jpg' property='og:image'>
-<meta content='http://jlzych.com/2020/11/23/learning-the-true-power-of-artist-dates/' property='og:url'>
+<meta content='Product Manager and Product Designer: Who Does What? by Jeff Zych' property='og:title'>
+<meta content='I recently noticed that my team of Product Designers at LaunchDarkly was having trouble navigating the overlap of Product Design and Product Management. No one said it explicitly, but after hearing some frustrations in 1:1s and team meetings I connected the dots that this issue was the common variable across a variety of complaints.' property='og:description'>
+<meta content='http://jlzych.com/images/2020-pd-pm-overlap/overlap.png' property='og:image'>
+<meta content='http://jlzych.com/2020/12/12/product-manager-and-product-designer-who-does-what/' property='og:url'>
 <!-- Additional Twitter tags - additive with og: tags -->
 <meta content='summary_large_image' name='twitter:card'>
 <meta name='twitter:creator' value='@jlzych'>
@@ -53,28 +53,106 @@
 
 <div class='content'>
 <article>
-<time class='article__date' datetime='2020-11-23'>
+<time class='article__date' datetime='2020-12-12'>
 Posted on
-Nov 23, 2020
+Dec 12, 2020
 by Jeff Zych
 </time>
-<h1 class='article__title'><a href="/2020/11/23/learning-the-true-power-of-artist-dates/">Learning the True Power of Artist Dates</a></h1>
-<p>I saw a color palette I liked recently, and wanted to use it on something, but I had no project for it. I decided to just make some fake card UIs (plus I got to use some fonts I had been itching to use for awhile). There was no point to it other than playing with some colors and fonts. No one else saw it (until now). It will never be built. It won&rsquo;t win any design awards.</p>
+<h1 class='article__title'><a href="/2020/12/12/product-manager-and-product-designer-who-does-what/">Product Manager and Product Designer: Who Does What?</a></h1>
+<p>I recently noticed that my team of Product Designers at <a href="https://launchdarkly.com">LaunchDarkly</a> (p.s. <a href="https://boards.greenhouse.io/launchdarkly/jobs/4194121003">I&rsquo;m hiring</a>) was having trouble navigating the overlap of Product <em>Design</em> and Product <em>Management</em>. No one said it explicitly, but after hearing some frustrations in 1:1s and team meetings I connected the dots that this issue was the common variable across a variety of complaints.</p>
 
-<p><img alt="Screenshot of my card UIs that won't win any design awards and had no purpose..." src="/images/2020-artist-dates/cards.jpg?1606195757" />
-<em>Some card UIs that won&rsquo;t win any design awards and had no purpose&hellip;</em></p>
+<p>I was hearing things like, &ldquo;I&rsquo;m supposed to own the user experience, but the PM keeps cutting scope from my designs!&rdquo; And, &ldquo;Am I expected to run team whiteboarding sessions?&rdquo; There was also confusion around the fact that sometimes they do customer interviews, and other times PMs do.</p>
 
-<p>Afterward, I felt more creative energy coursing through my veins. I felt more creatively <em>attuned</em>.</p>
+<p>Product Managers also had some struggles with navigating this gray area. They want to shape the final product (as they should), but were unsure how best to provide input without stepping on the toes of designers. If I sketch out my ideas, am I doing the designer&rsquo;s job for them? Is it ok to ask designers to do customer outreach and development? If the designs I&rsquo;m seeing are missing the mark, how do I give that feedback without telling them their work stinks?</p>
+
+<p>To clarify expectations for both sides, I wrote the doc below. It doesn&rsquo;t try to draw a distinct line between the two roles, but instead explicitly states the area of overlap and provides guidance on how to navigate it. I also give advice for leaning on each other, such as asking PMs for scope, or asking designers for more iterations.</p>
+
+<p>So far this doc has alleviated some confusion on both sides, and empowered my team to speak up when they need more from their peers.</p>
+
+<p>If you or your team is struggling with this as well, I hope this doc will help.</p>
 
 <hr>
 
-<p>When I first did <a href="/2020/09/14/my-experience-with-the-artist-s-way/">The Artists Way</a>, I thought &ldquo;<a href="https://juliacameronlive.com/basic-tools/artists-dates/">artist dates</a>&rdquo; were mostly about filling the tank with inspiration. That&rsquo;s partly true, but their true power revealed themselves to me when I took a break to move. I had a few weeks of ignoring my inner artist, so when my ears finally perked up again I learned why artist dates are so powerful: You practice listening to your artist. Their voice gets stronger. Your ear is more attuned to it.</p>
+<p>The roles of Product Designer and Product Manager have a significant amount of overlap (they both have “product” in their title, after all). So who does what? Having overlap and redundancy is healthy and makes sure multiple people are thinking about the big picture. But fuzzy roles and unclear decision makers leads to people spinning their wheels and unproductive power struggles. This doc aims to clarify who does what by explicitly laying out roles, the overlap, and how to navigate the ambiguity.</p>
 
-<p>Over time the voice gets drowned out by society, your inner critic, fears, doubts, societal expectations, your idea of who you think you are, or should be. But the voice never goes away. It&rsquo;s always there.</p>
+<p><img alt="Venn diagram of the overlap between Product Managers and Product Designers" src="/images/2020-pd-pm-overlap/overlap.png?1607826488" /></p>
 
-<p>Think back to when you were a kid and you just made stuff for the fun of it. It didn&rsquo;t matter if it was good or not. There was no point to it. You didn&rsquo;t worry about calling yourself an artist or changing your identity. Listening to your inner artist gets you back to that place.</p>
+<h2 id="product-designers">Product Designers</h2>
 
-<p>The artist&rsquo;s way shows you how to turn down the dial on your inner critic, and turn up the dial on your inner artist. You&rsquo;ll strengthen your creative muscle and enjoy your creativity like a kid again.</p>
+<p>Product Designers are responsible for creating <strong>great user experiences</strong>. What does that mean, though? Don’t we all own the user experience? In a sense, yes – everything the triad does will impact the final experience. Sales, support, and marketing all impact the customer’s experience, too. But in the context of the triad, the designer should be pushing for the best experience that meets business and customer goals, with the project constraints (scope, technical tradeoffs, what’s available in the design system, and so on). If the proposed design doesn’t meet the customer’s needs, or is hard to use, or unpolished, or doesn’t follow our patterns, that’s on the designer. They do this by owning:</p>
+
+<ul>
+<li>Final visual design</li>
+<li>Interaction design</li>
+<li>Prototyping</li>
+<li>Usability testing</li>
+<li>Personas</li>
+<li>Journey mapping</li>
+<li><em>And more, this list isn’t exhaustive</em></li>
+</ul>
+
+<h2 id="product-managers">Product Managers</h2>
+
+<p>Product Managers are accountable for the <strong>business value</strong> of their team’s output. If a project isn’t valuable to customers or LaunchDarkly, has unclear or incorrect scope, fuzzy use cases, takes too long to build relative to the value, or the team doesn’t understand what problem they’re solving or why, that’s on the PM. They do this by owning:</p>
+
+<ul>
+<li>Roadmap prioritization</li>
+<li>Team goals &amp; strategy</li>
+<li>Project scope</li>
+<li>Project goals and success criteria</li>
+<li>Data analysis</li>
+<li><em>And more, this list isn’t exhaustive</em></li>
+</ul>
+
+<h2 id="the-overlap">The overlap</h2>
+
+<p>This still leaves a healthy amount of overlap between the two roles. Both do:</p>
+
+<ul>
+<li>User research</li>
+<li>User scenarios</li>
+<li>Use cases</li>
+<li>Lo-fi sketching and flows</li>
+<li>Team workshops &amp; whiteboarding</li>
+<li><em>And even more, this list isn’t exhaustive, either</em></li>
+</ul>
+
+<p>So who owns these activities? The answer is <strong>both</strong>. The best projects will have designers and PMs collaborating on these. But sometimes a designer takes the lead on research, or the PM will lead whiteboarding activities. It will depend on who has the time, skills, and interest, among other factors. When things are unclear, they should discuss who is doing what.</p>
+
+<p>Additionally, being <em>accountable</em> for an outcome doesn’t mean you’re on the hook for doing all the work to achieve it. Nor does it mean you can’t contribute to what someone else is accountable for. Designers should contribute to use cases and scope. Engineers and PMs should contribute design ideas. Everyone should contribute to the roadmap. But at the end of the day, the person accountable for the final result has final decision making power.</p>
+
+<p>Even so, this won’t prevent disagreements. You may not agree with the final scope, technical architecture, or user flows. Voice your concerns, have a healthy (but respectful) debate about the tradeoffs, and try to reach consensus or a set of next steps to resolve the tension. But at the end of the day, recognize who is accountable for the outcome, and thus the final decision maker, and <em>disagree and commit</em>.</p>
+
+<h2 id="lean-on-each-other">Lean on each other</h2>
+
+<p>Knowing who’s accountable for what gives you someone to lean on when things are ambiguous. Use this to your advantage.</p>
+
+<p><strong>For Product Designers</strong></p>
+
+<ul>
+<li>Lean on your PM if you don’t understand the project’s goals, use cases, scope, or value. You can and should have an opinion on these, and shape them with your work, but it’s a fool’s errand to try to finalize a design if these aren’t crisp.</li>
+<li>If you’re not sure about the technical tradeoffs of your design decisions, lean on your engineering counterpart.</li>
+<li>If the PM or engineers have an idea for a solution, listen to it and make it real, even if you’re not sure it will work. Design’s super power is giving form to abstract ideas. Discussing a cheap throwaway mockup you’ve made can shortcut weeks of debate. <a href="http://jlzych.com/2020/04/10/dear-designer-you-don-t-need-to-have-all-the-answers/">I wrote a longer article about this</a>.</li>
+<li>You are expected to push for shipping the best user experience you can. Sometimes this increases the scope of a project. Sometimes this increases the technical complexity. You should discuss tradeoffs with your triad and reach consensus together. Don’t assume what’s easy or hard. Then make the best damn designs you can within the scope and constraints agreed upon.</li>
+<li>Scope, use cases, and goals can and will change as projects move through discovery. Seeing real designs and getting user feedback changes your understanding of the opportunity space, so you should update the product spec accordingly.</li>
+</ul>
+
+<p><strong>For Product Managers</strong></p>
+
+<ul>
+<li>Lean on designers to help you with scope and use case decisions by cheaply exploring ideas together.</li>
+<li>If you have an idea for a solution, get it out of your head and share it with your designer. But acknowledge it’s just an idea and the designer owns the final designs.</li>
+<li>You see an area of opportunity that needs more research but don’t have time, ask your designer if they can lead customer calls.</li>
+<li>If the solutions the designer is proposing are missing the mark, ask them to explore more ideas. Or whiteboard together if you’re seeing paths the designer’s not going down. You don’t need to be an expert in design and pinpoint exactly what isn’t working, but you can always ask for more options.</li>
+</ul>
+
+<h2 id="create-greatness-together">Create greatness together</h2>
+
+<p>Tension and overlap is healthy when roles and expectations are clear. This doc is a starting point and guide, but it takes practice to successfully navigate points of conflict. But when done right, you’ll ship solutions better than you would have alone.</p>
+
+<hr>
+
+<p><em>Sound like the type of team you want to work on? <a href="https://boards.greenhouse.io/launchdarkly/jobs/4194121003">I&rsquo;m hiring</a>.</em></p>
 
 <footer class='article__footer'>
 Thoughts? Reply
@@ -85,11 +163,7 @@ Thoughts? Reply
 <div class='article-links'>
 <div>
 <span class='article-link-label text-uppercase text-small'>Previous article:</span>
-<a href="/2020/11/19/notes-from-vernacular-eloquence/">&laquo; Notes from "Vernacular Eloquence"</a>
-</div>
-<div>
-<span class='article-link-label text-uppercase text-small'>Next article:</span>
-<a href="/2020/12/12/product-manager-and-product-designer-who-does-what/">Product Manager and Product Designer: Who Does What? &raquo;</a>
+<a href="/2020/11/23/learning-the-true-power-of-artist-dates/">&laquo; Learning the True Power of Artist Dates</a>
 </div>
 </div>
 
