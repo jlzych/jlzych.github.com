@@ -5,10 +5,160 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2021-02-15T18:10:00Z</updated>
+  <updated>2021-04-18T18:19:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>Reminiscing on the magic of Optimizely’s early days</title>
+    <link rel="alternate" href="http://jlzych.com/2021/04/18/reminiscing-on-the-magic-of-optimizely-s-early-days/"/>
+    <id>http://jlzych.com/2021/04/18/reminiscing-on-the-magic-of-optimizely-s-early-days/</id>
+    <published>2021-04-18T18:19:00Z</published>
+    <updated>2021-04-18T18:19:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;Last fall, Optimizely was acquired by Episerver, signaling the official end of Optimizely as I knew it. I&amp;rsquo;ve been re-connecting with old Optinauts and reminiscing on the magic of those early days.&lt;/p&gt;
+
+&lt;p&gt;I joined the company in 2012 as employee 29. It was pre-series A, everyone fit in 1 office in downtown SF, and the average age of employees was about 27. Not too long after joining we had the 4th highest valuation of all YCombinator-backed companies (behind AirBnB, Dropbox, and Stripe). There was a ton of energy and momentum behind us. We were all young and hungry and full of ideas and eager to prove ourselves. We had lot of freedom to try out ideas, fail, learn, and grow. It launched the careers of most of the people who were there, including mine.&lt;/p&gt;
+
+&lt;p&gt;What follows are a collection of my most cherished memories.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Every Friday afternoon was Show-and-Tell. We were small enough for everyone to gather together around a couple of couches, grab beers, and plug in our laptops to show what we&amp;rsquo;d worked on that week. Engineering, design, marketing, sales, success — everyone just showed stuff. There wasn&amp;rsquo;t a format or agenda, really. It was just show-and-tell :)&lt;/p&gt;
+
+&lt;p&gt;That would transition into more beers and people hanging out and playing ping pong, Starcraft, poker, whatever. It would just turn into a party. That would often transition into ordering food or going to bars. The company was young and unencumbered with responsibility, plus a lot of people were new to SF, so the conditions were right for our work lives and social lives to blend together.&lt;/p&gt;
+
+&lt;p&gt;I remember the week I joined, we had a happy hour at House of Shields, the bar on the ground floor of the office. A candidate was interviewing for a Solutions Architect role, so we invited them to join us for the happy hour. Dan, the CEO, convinced them to sign our offer on the bar. Literally, on the bar.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;A couple of months after I joined, we had our first company retreat to Santa Cruz. There were maybe 40 of us total. We stayed at the Dream Inn, right on the beach. The bus ride down was a party, with everyone drinking and enjoying each other&amp;rsquo;s company. We had some sessions about plans for the coming year, but most of it was just having fun. I can remember everyone getting sloshed at the company dinner, then getting more drinks at a bar, trying to break into the jacuzzi long after it had closed, running out to the beach instead, getting yelled at from the balcony of a room which turned out to be the after-after party in the CEOs room, which we then joined to keep drinking. I was still quite new and just amazed at how fun the people and culture were.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Drunken photo of us in Santa Cruz" src="/images/2021-optimizely/1-sc.jpeg?1618776259" /&gt;
+&lt;em&gt;Drunken photo of us in Santa Cruz&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;On the Sunday we were returning, most people (including me) were tired and hungover and slept on the ride home. But not the CEO. He got a 30 pack of Coors and kept drinking with the sales team the whole ride home.&lt;/p&gt;
+
+&lt;p&gt;The following year we had our second (and I believe final) company retreat to Tahoe. It felt just as fun and collegiate as the first. My main memory from that trip was one person broke their back skiing (same person who signed their offer on the bar at House of Shields). He had to be airlifted to a hospital in Reno. One of the co-founders stayed with him until his parents arrived.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;At some point we ran out of room of that first office. I can remember squeezing desks into every corner of the office and there being just enough space to walk past each other. Eventually we rented a second office nearby and moved sales there temporarily. (Which I seem to recall turned into a frat house).&lt;/p&gt;
+
+&lt;p&gt;When we finally did find a new office space big enough to re-unite the company (the space on Howard that Optimizely was most well known for), we were all so excited to move in. It had tons of space. Downstairs was dedicated to lunch, show-and-tell, 3 kegs, a speakeasy (which ended up not getting built), and games (we had 2 ping pong tables, a ping pong robot, and a foosball table). No desks or conference rooms. The first floor was sales, marketing, and success, and the mezzanine area was for product, engineering, and design. We quickly expanded into the 3rd, 4th, and 5th floors. (Although I don&amp;rsquo;t think we ever occupied all of them at the same time).&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="My wife and I in front of the new Optimizely office" src="/images/2021-optimizely/2-office.jpeg?1618776259" /&gt;
+&lt;em&gt;My wife and I in front of the new Optimizely office (this is from our engagement shoot)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;I can remember going to the office on a Saturday to help set it up for our first day that Monday. Getting desks ready, organizing the kitchen, that type stuff. We made little welcome gifts for everyone that included an Optimizely branded pint glass, some swag, candy, and a few other things. It all felt very exciting and like we were on an unstoppable growth trajectory. (I still have the pint glass).&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;In April of 2014, we had our first annual user conference, Opticon. It was on the top floor of the Metreon, in a cluster of small conference rooms. Only a few hundred people attended, which felt huge at the time. It was so electrifying. The whole company worked hard to pull it off — planning and marketing the event, booking speakers, building features to announce, and so on. It was only one day, but the whole week felt like a big celebration. Customers were jazzed. We were jazzed. I remember going back and forth between there and the office and just having a ball hanging out with customers and coworkers.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Countdown to the first Opticon" src="/images/2021-optimizely/3-opticon1.jpeg?1618776259" /&gt;
+&lt;em&gt;Countdown to the first Opticon&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The next Opticon was at the cruise ship terminal, and expanded to two days and closer to a thousand people (I think. I&amp;rsquo;m going off of memory here). It was everything the first one was, but bigger and better. We were firing on all cylinders — the product was doing great, customers loved us, and revenue was strong.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Opticon's main stage, where we announced Personalization" src="/images/2021-optimizely/4-opticon2.jpeg?1618776259" /&gt;
+&lt;em&gt;Opticon&amp;rsquo;s main stage, where we announced Personalization&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Some sweet chalk art that greeted attendees" src="/images/2021-optimizely/5-opticon3.jpeg?1618776259" /&gt;
+&lt;em&gt;Some sweet chalk art that greeted attendees&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This was the era of trying crazy ideas like, &lt;a href="https://blog.optimizely.com/2013/12/02/feeling-like-a-blimp-fear-not-so-am-i/"&gt;let&amp;rsquo;s rent a blimp and fly it over AT&amp;amp;T park during Dreamforce&amp;rsquo;s closing concert&lt;/a&gt; (headlined by Green Day). Or rent a billboard that says, &amp;ldquo;Billboard advertising doesn&amp;rsquo;t work. A/B testing does.&amp;rdquo; (They wouldn&amp;rsquo;t let us advertise that).&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;That early design team also had a magic about it that I haven&amp;rsquo;t been able to re-create since. When I joined, there was one full time designer, and one contract designer who worked full-time hours. I wasn&amp;rsquo;t technically on the design team (I started as a frontend engineer), but I spent all my time with the 2 designers.&lt;/p&gt;
+
+&lt;p&gt;Then we expanded by hiring a researcher. I suggested this, and the full-time designer got the req opened (I don&amp;rsquo;t remember there being any push back). In retrospect, it was way too early for a researcher. But somehow we found a great one with a ton of experience from Salesforce. Why she decided to join this rag-tag group of young, inexperienced designers is a mystery to me, but we were all thrilled she did.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="The original D-team 4" src="/images/2021-optimizely/6-dteam4.jpeg?1618776259" /&gt;
+&lt;em&gt;The original D-team 4&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;I remember shortly after we hired her there were a couple of designers we were considering making offers to. She asked (and remember, she came from Salesforce and, thus, was the most experienced member of the team), &amp;ldquo;How much headcount do we have?&amp;rdquo; And the full-time design/design manager responded, &amp;ldquo;We don&amp;rsquo;t have a fixed headcount. We just hire good people on a rolling basis.&amp;rdquo; Which is just insane! But at the time I didn&amp;rsquo;t see anything wrong with it. Looking back, it&amp;rsquo;s not a smart way to run a business. The company of course grew in lopsided ways and added roles that we didn&amp;rsquo;t need long term, and had layoffs a couple of years later, but at the time I thought it was incredible.&lt;/p&gt;
+
+&lt;p&gt;From there we tried to hire more product designers, but it was really hard. We interviewed a ton of people and a lot weren&amp;rsquo;t any good, and then the first few we made offers to all declined us. At the time I thought they were crazy, but looking back it&amp;rsquo;s clear why: we were all super inexperienced and had no idea what we were doing, which is obvious to anyone who&amp;rsquo;s worked at a more established team.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Early design team lunch" src="/images/2021-optimizely/7-dteam-lunch.jpeg?1618776259" /&gt;
+&lt;em&gt;Early design team lunch&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;But once we got going, we hired a killer team. We ballooned to 20 product designers, UI engineers, communication designers, and researchers within about 2 years. That early design team had an inexplicable camaraderie and joy and closeness to it. A lot of them came to my wedding.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m not sure what made it such a close knit team. Obviously we all got along, but I think more than that we were all young and eager to learn, believed in the mission, and had free reign to try stuff out and fail and learn and try again. There wasn&amp;rsquo;t much process or oversight or anything. It was a feeling of, let&amp;rsquo;s just build cool shit together.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Some of us at another designer's wedding" src="/images/2021-optimizely/8-wedding.jpeg?1618776259" /&gt;
+&lt;em&gt;Some of us at another designer&amp;rsquo;s wedding&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;In August of 2016, we decided we should have an offsite. And not like, a one day team building event. No, we should rent a cabin in Tahoe for a few days. For what purpose? In truth we just thought it would be fun, but we rationalized it by saying we&amp;rsquo;d build design.optimizely.com (now defunct) to house our design system, brand assets, and info about the team. (Which we did build, and it came out great).&lt;/p&gt;
+
+&lt;p&gt;Somehow my boss scraped together enough budget by combining 2 quarters worth of our regular &amp;ldquo;team bonding&amp;rdquo; budget, and combined that with some of our education budget and some other funds floating around. We found a cabin that could house all 18 or so of us (I can&amp;rsquo;t remember exactly how big we were then), and spent 2 or 3 nights building our little sub-site.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="The team gathered around the table at our cabin in Tahoe" src="/images/2021-optimizely/9-offsite.jpeg?1618776259" /&gt;
+&lt;em&gt;The team gathered around the table at our cabin in Tahoe&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;It was a great success in that we had a great site at the end, and had a ton of fun doing it. We rotated cooking meals for each other. Everyone had different chores assigned. And we had a lot of fun playing ping pong, going to the lake, and gambling in Nevada.&lt;/p&gt;
+
+&lt;p&gt;While we saw the value in it, the rest of the company was like, &amp;ldquo;Why is the design team doing this big offsite?&amp;rdquo; My boss&amp;rsquo;s boss, the VP of Product, was upset with my boss that he cobbled together this budget for a  &amp;ldquo;frivolous&amp;rdquo; offsite.&lt;/p&gt;
+
+&lt;p&gt;At the time, we couldn&amp;rsquo;t have cared less. We enjoyed ourselves, became even closer as a team, and I&amp;rsquo;m still proud of the site we built to represent ourselves to the world (and in fact, it did become a valuable resource that the whole company used to find product and brand resources. If I could find screenshots I&amp;rsquo;d include them, but alas I couldn&amp;rsquo;t find any).&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Hack Weeks were a mainstay of Optimizely&amp;rsquo;s culture during this time. One of the designers decided to make a &amp;ldquo;UX Bar.&amp;rdquo; In other words, a physical wooden kiosk we could push around the office to do user testing, help people with design questions, and so on. I immediately joined him to help out. We bought wood, screws, wheels, a flag pole (all on the company&amp;rsquo;s dime), and constructed a physical bar. We even added rails to hold wine glasses. And painted the top with whiteboard paint so we could draw on it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Our finished UX bar, built in this weird dead space in the office that was going to be built out as a kitchen but ended up never being used for anything" src="/images/2021-optimizely/10-uxbar.jpeg?1618776259" /&gt;
+&lt;em&gt;Our finished UX bar, built in this weird dead space in the office that was going to be built out as a kitchen but ended up never being used for anything&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;It actually came out really great. It was at the office for years. I would use it to hold office hours during my tenure there. I can&amp;rsquo;t recall what happened to it. Between moving from floor to floor it eventually disappeared.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;One year, the design team had a Secret Santa gift exchange. We each drew a name out of a hat, got that person a gift, dressed up in pajamas and exchanged our presents in the office. Reliving that now, it was such a goofy thing to do. But we had a ball.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Us dressed in our PJs, exchanging gifts with each other" src="/images/2021-optimizely/11-secret-santa.jpeg?1618776259" /&gt;
+&lt;em&gt;Us dressed in our PJs, exchanging gifts with each other&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This was also the era during which we would take a team &amp;ldquo;holiday photo&amp;rdquo; and send it to other design teams in the tech community. Why? I dunno, it was just a fun thing to do.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Our team's holiday photo, right after the PJ gift exchange" src="/images/2021-optimizely/12-holiday-photo.jpeg?1618776259" /&gt;
+&lt;em&gt;Our team&amp;rsquo;s holiday photo, right after the PJ gift exchange&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;So much of what we did in those days feels so random and silly now, but felt completely natural at the time.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;The most enduring reason Optimizely will always hold a special place in my heart though, by far, is because I met my wife there. We met at Wine Thursday, which was one of those organic, employee organized cultural staples where people gathered on Thursday evenings to drink wine (which actually started as Wine Wednesday, a much catchier name, but was moved to Thursday once to accommodate someone who had a date that night and then it just stuck on Thursday). We eventually expanded it to include cocktails as well.&lt;/p&gt;
+
+&lt;p&gt;It was at one of those that I met my wife, Becca. She had some complaints about — no joke — the documentation of the CSS of our design system, which my team was in charge of. I already had my eye on her, but hadn&amp;rsquo;t had an opportunity to talk to her (read: I was too shy 😰), so when I heard this I knew I had my in. I chatted her up (yes, about CSS documentation), and we immediately hit it off.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="My wife and I, holding a sign of the original Optimizely logo" src="/images/2021-optimizely/13-wifey.jpeg?1618776259" /&gt;
+&lt;em&gt;My wife and I, holding a sign of the original Optimizely logo&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The next wine Thursday was an &amp;ldquo;end of the quarter&amp;rdquo; one (which we somehow convinced leadership to give us money for), so we decided we should dress up and do a wine tasting at CB2 (yes, the furniture store. For some reason they held a joint event with Winc). It was supposed to be a group thing, but only Becca and I dressed up. The fact that I put in that &amp;ldquo;extra effort&amp;rdquo; (which was really just wearing a bow tie) won her over 🥰.&lt;/p&gt;
+
+&lt;p&gt;Since this wine tasting was at a CB2, there was a large painting of Abraham Lincoln in a space helmet shooting a lazer gun for sale. Since our company theme was rocketships and space, we thought it would look great in the office. One of our entry-level engineers convinced everyone to chip in 20 bucks to buy it. At the next show-and-tell, he got in front of the whole company and drunkenly told everyone how we bought this as a gift to the company. It remained in the office until they closed it earlier this year.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="An engagement photo of us under Opti-Abe" src="/images/2021-optimizely/14-opti-abe.jpeg?1618776259" /&gt;
+&lt;em&gt;An engagement photo of us under Opti-Abe&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;A group of us went to Mikeller&amp;rsquo;s after that to keep drinking. As the night wore on people slowly peeled off. I was hoping it would winnow down to just me and Becca, but alas one of the engineers wasn&amp;rsquo;t taking the hint and kept hanging around until eventually all 3 of us left. We started officially dating shortly after this. We consider the Opti-abe night our &amp;ldquo;zero-eth&amp;rdquo; date.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Optimizely was my first real tech job, which is why the experience is so special to me. We were tech darlings, on track to be a unicorn, and felt like the world was ours for the taking. I learned and grew more than I ever imagined I would. I was able to move from frontend engineering to product design to management to leading the whole product design team. All of which happened because we needed people in those roles, so when I asked to move into them the response was, &amp;ldquo;Sure, sounds great!&amp;rdquo; No other interviewing or trial period or anything. Which is just unthinkable to me now.&lt;/p&gt;
+
+&lt;p&gt;The conditions that made Optimizely so special are hard to pinpoint. Most of it is the people, of course. We hired really smart, ambitious people who were early in their careers and eager to prove themselves.&lt;/p&gt;
+
+&lt;p&gt;We were also well-funded and had a ton of momentum from positive press and hockey-stick revenue. We didn&amp;rsquo;t have much oversight and had a lot of space to just try out crazy ideas, fail, and try again.&lt;/p&gt;
+
+&lt;p&gt;But it&amp;rsquo;s more than that. There was an ineffable alchemy that created the conditions for the best place I&amp;rsquo;ve ever worked.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>2020</title>
     <link rel="alternate" href="http://jlzych.com/2021/02/15/2020/"/>
@@ -467,54 +617,6 @@
 &lt;p&gt;The book can be academic and long-winded at times, which I simultaneously enjoyed and felt bogged down by. He would often make an argument and then write out all of the counter arguments and then counter-counter argue those, to which I would sigh, &amp;ldquo;I was convinced 5 pages ago. You don&amp;rsquo;t need to convince me anymore!&amp;rdquo; But it was also fun to see his logic unfold. He&amp;rsquo;s good at calling out sections that are skippable and largely academic, so they&amp;rsquo;re easy to skip over if you don&amp;rsquo;t want to go down long academic rabbit holes. He also includes historical explanations of how the current system of &amp;ldquo;correct&amp;rdquo; writing is just as arbitrary as any other form of &amp;ldquo;incorrect&amp;rdquo; writing (tl;dr the people in power make the rules).&lt;/p&gt;
 
 &lt;p&gt;&lt;a href="https://amzn.to/3puZye3"&gt;Buy it now&lt;/a&gt; if you want to improve your writing &lt;em&gt;(this is an Amazon Affiliate link that I get a small kickback from)&lt;/em&gt;.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>My Experience with "The Artist's Way"</title>
-    <link rel="alternate" href="http://jlzych.com/2020/09/14/my-experience-with-the-artist-s-way/"/>
-    <id>http://jlzych.com/2020/09/14/my-experience-with-the-artist-s-way/</id>
-    <published>2020-09-14T19:00:00Z</published>
-    <updated>2020-09-14T19:00:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;Creativity is an innate gift we all possess. And it&amp;rsquo;s part of our nature to use that creativity. I firmly believe this, and so does &lt;em&gt;&lt;a href="https://amzn.to/3hDdwpj"&gt;The Artist&amp;rsquo;s Way&lt;/a&gt;&lt;/em&gt; author, Julia Cameron. Unfortunately, for most of us, it&amp;rsquo;s stamped out at an early age by education, society, friends, family, and other cultural norms. A lucky few get encouragement at a young age, or have enough creative energy to push through those headwinds, but the rest of us are left thinking we aren&amp;rsquo;t &amp;ldquo;creative.&amp;rdquo; Fortunately, Julia is here to undo that damage.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Picture of The Artist's Way" src="/images/2020-artists-way/book.jpeg?1600111285" /&gt;&lt;/p&gt;
-
-&lt;p&gt;As one of my quarantine activities I read this book, and boy am I glad I did. And by &amp;ldquo;read&amp;rdquo; I mean I surrendered myself to the 12 week program, which is structured as a weekly essay followed by a few exercises. I left it feeling not only more creative, but also more confident in my creativity. It broke down mental blocks I had put up over my whole life. Society telling us why we can&amp;rsquo;t follow our passions. The voices telling us no. The inner critic that says your work isn&amp;rsquo;t good enough.&lt;/p&gt;
-
-&lt;p&gt;Now I&amp;rsquo;m less afraid of following my creative urges. Instead of worrying about it being &amp;ldquo;good&amp;rdquo; or asking what the &amp;ldquo;point&amp;rdquo; of it is, I can jump into it. Feel like writing some short fiction? Go for it. Want to paint a drug-fueled hallucination on your iPad? Sure man. I&amp;rsquo;ll just do it, even if it has no immediate purpose beyond indulging my inner artist.&lt;/p&gt;
-
-&lt;p&gt;To get there, you do two key activities throughout the program: &lt;strong&gt;daily morning pages&lt;/strong&gt;, and &lt;strong&gt;weekly artist dates&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;The morning pages are a simple, yet surprisingly powerful tool. You write 3 pages of whatever thoughts come to mind. Without stopping. Every morning. By doing so, you empty your head of all the random thoughts you have swirling around. The lingering doubts, the worries, your to-do list, whatever is weighing you down. You&amp;rsquo;re quieting the voices in your head so that your creative voice can come through loud and clear.&lt;/p&gt;
-
-&lt;p&gt;I regularly find myself exploring ideas on the page, like the visual design of an app, or a blog post I&amp;rsquo;m writing, or a problem I&amp;rsquo;m wrestling with at work. It helps me develop these ideas, which I then draw on later in the day.&lt;/p&gt;
-
-&lt;p&gt;The morning pages also make me feel calmer. Fears, worries, concerns, and anything else bopping around feels more like a passing cloud now. I&amp;rsquo;m more aware of the transient nature of my thoughts.&lt;/p&gt;
-
-&lt;p&gt;While the morning pages gets stuff &lt;em&gt;out&lt;/em&gt; of your head, the artists dates gets stuff &lt;em&gt;into&lt;/em&gt; your head. They &amp;ldquo;fill up the creative tank,&amp;rdquo; as she says. The idea is to indulge whatever creative impulses or curiosities you have by going to museums, buying that book on typography you&amp;rsquo;ve been eyeing, taking that figure drawing class you&amp;rsquo;ve always been curious about, and so on. You&amp;rsquo;re both gathering inspiration and learning to listen to your inner artist&amp;rsquo;s desires.&lt;/p&gt;
-
-&lt;p&gt;While you do those two activities throughout the program, you also do weekly exercises to explore specific aspects of your creativity and what&amp;rsquo;s holding you back. They include things like blurting all your fears and doubts onto a page, gathering imagery of how you envision your life in the future, writing letters to yourself from age 8 and 80, and more. None of them on their own are profound, but taken together, over 12 weeks, they transform you.&lt;/p&gt;
-
-&lt;p&gt;One exercise that did stick with me is affirmations. You write down statements of belief and encouragement (such as &amp;ldquo;I am a great writer&amp;rdquo;), then read them after your morning pages. It sounds hokey and woo woo, but actually does help silence your inner critic and build up your confidence.&lt;/p&gt;
-
-&lt;p&gt;All of these activities attuned my ear to what my creativity is telling me. I&amp;rsquo;m more driven by intuition, rather than by what other people expect of me, or society deems &amp;ldquo;good,&amp;rdquo; or will impress people. It&amp;rsquo;s very freeing.&lt;/p&gt;
-
-&lt;p&gt;They also got me back to the childlike place of approaching ideas with a sense of play and fun. I can get caught up making something &amp;ldquo;perfect,&amp;rdquo; or needing it to serve a purpose like posting on social media to get a million likes (that&amp;rsquo;s never actually happened before, btw). But now I feel more comfortable just indulging in my creativity without worrying about it being &amp;ldquo;good&amp;rdquo; or &amp;ldquo;shareable&amp;rdquo; or having any point other than scratching my own creative itch.&lt;/p&gt;
-
-&lt;p&gt;Even in my job as the head of a product design team I feel more confident. I more readily pursue the course of action that feels right to me, with less worry about whether it&amp;rsquo;s objectively &amp;ldquo;right&amp;rdquo; or &amp;ldquo;wrong.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;On that topic, I used to be a &lt;em&gt;lot&lt;/em&gt; more concerned whether something was &amp;ldquo;right&amp;rdquo; or not (which school stamps into us), rather than accepting that there isn&amp;rsquo;t one &amp;ldquo;right&amp;rdquo; and everyone has their own style. It doesn&amp;rsquo;t matter if someone else dislikes it, as long as it&amp;rsquo;s true to me. (I&amp;rsquo;m still working on internalizing this).&lt;/p&gt;
-
-&lt;p&gt;I didn&amp;rsquo;t feel markedly different or more creative after any particular week or exercise, but when I look back at where I had been I can see there has been a big internal shift. Even now it&amp;rsquo;s tough to pinpoint and describe, but I know something&amp;rsquo;s different.&lt;/p&gt;
-
-&lt;p&gt;For anyone who&amp;rsquo;s felt the inner tug to create more (and be honest, that includes you), I couldn&amp;rsquo;t recommend &lt;a href="https://amzn.to/3hDdwpj"&gt;this book&lt;/a&gt; enough. Whatever you&amp;rsquo;re interested in — painting, writing, strategy, music, law, finance — this book will help you find your inner artist&amp;rsquo;s voice and live more in tune with your true creative self.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;&lt;a href="https://amzn.to/3hDdwpj"&gt;Buy The Artist&amp;rsquo;s Way on Amazon&lt;/a&gt; &lt;em&gt;(affiliate link)&lt;/em&gt;&lt;/p&gt;
 </content>
   </entry>
 </feed>
