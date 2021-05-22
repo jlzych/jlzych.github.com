@@ -5,10 +5,44 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2021-04-18T18:19:00Z</updated>
+  <updated>2021-05-22T22:51:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>When in the design process should I use components in my design system?</title>
+    <link rel="alternate" href="http://jlzych.com/2021/05/22/when-in-the-design-process-should-i-use-components-in-my-design-system/"/>
+    <id>http://jlzych.com/2021/05/22/when-in-the-design-process-should-i-use-components-in-my-design-system/</id>
+    <published>2021-05-22T22:51:00Z</published>
+    <updated>2021-05-22T22:51:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;A common mistake I see product designers make is that they start the solution exploration phase by cobbling together UIs out of the components and patterns in their design system (often skipping &lt;a href="/2020/04/07/the-power-of-low-fidelity/"&gt;lo-fi, broad explorations&lt;/a&gt;, which is a separate rant [and one that Figma makes far too tempting with its shared libraries &lt;code&gt;#endrant&lt;/code&gt;]).&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;But I want to be consistent with the rest of our product! Shouldn&amp;rsquo;t I be using existing components and patterns? Why is that bad?&amp;rdquo; I hear you protesting.&lt;/p&gt;
+
+&lt;p&gt;I applaud your instinct 👏 It&amp;rsquo;s coming from a good place. But don&amp;rsquo;t do it. You&amp;rsquo;re artificially constraining the solution space before you&amp;rsquo;ve found the best design for the specific problem you&amp;rsquo;re trying to solve. You&amp;rsquo;re potentially overlooking better options by only using what currently exists.&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;So what do I do? Ignore the design system altogether?&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;No, that would make the design system pointless, wouldn&amp;rsquo;t it? But actually, yes — kind of. The proper time to reach for the components in your design system at the &lt;em&gt;end&lt;/em&gt; of solution exploration, when you&amp;rsquo;ve nailed down the interactions and flows, have validated it with customers, and your team is ready for you to create the final hi-fi designs for engineers to build.&lt;/p&gt;
+
+&lt;p&gt;At that point you can take what you have (which should be mid-fi at most), and seek out the components that most closely match what&amp;rsquo;s in your designs. A mature, robust design system should have components for the majority of the UIs you create. There may be some things that you did slightly differently than the standard component, and you can adjust your design to fit what exists with little to no impact to the usability of your feature.&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;But what if there is no component that meets my need?&amp;rdquo; Now this is where things get interesting. In this case, you should go to your design systems team to get their input on your designs.&lt;/p&gt;
+
+&lt;p&gt;First, confirm that you didn&amp;rsquo;t overlook or misunderstand anything in the system. It&amp;rsquo;s possible there&amp;rsquo;s a component you should use, which the team can educate you on.&lt;/p&gt;
+
+&lt;p&gt;Assuming there is no component you can use, you can now work with the team to determine next steps. There are 2 options here: either your thing is a snowflake (i.e. it isn&amp;rsquo;t a generalizable component that can be used elsewhere), in which case your team can build it as part of the feature; or, the design system needs to be extended.&lt;/p&gt;
+
+&lt;p&gt;If it&amp;rsquo;s the latter, congratulations! You have a contribution to the design system. You have a specific use case for a component or pattern for a feature that&amp;rsquo;s been validated with real users, and no known equivalent in the existing system. You can work with the design systems team to flesh it out into a generalized pattern.&lt;/p&gt;
+
+&lt;p&gt;Design systems are meant to be living systems that grow and change as products grow and change (in my opinion. Some people may think they&amp;rsquo;re a tightly controlled system that everyone should conform to, but those people are wrong). The best way for them to grow is &lt;em&gt;organically&lt;/em&gt; — meaning through contributions from specific features that identify gaps in the current system. Not from hypothetical, &amp;ldquo;I saw this pattern in Material Design and thought it would be cool to add to our system&amp;hellip;&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;So there you have it! Next time you&amp;rsquo;re entering the solution exploration phase and you feel the instinct to reach for your Figma component library, STOP! 🛑 ✋ 🙅. Do not pass go. Do not collect $200. Start with as few constraints as possible and explore broadly before honing in on the best solution. Only then should you translate what you have into the design language provided by your design system.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Reminiscing on the magic of Optimizely’s early days</title>
     <link rel="alternate" href="http://jlzych.com/2021/04/18/reminiscing-on-the-magic-of-optimizely-s-early-days/"/>
@@ -20,7 +54,7 @@
     </author>
     <content type="html">&lt;p&gt;Last fall, Optimizely was acquired by Episerver, signaling the official end of Optimizely as I knew it. I&amp;rsquo;ve been re-connecting with old Optinauts and reminiscing on the magic of those early days.&lt;/p&gt;
 
-&lt;p&gt;I joined the company in 2012 as employee 29. It was pre-series A, everyone fit in 1 office in downtown SF, and the average age of employees was about 27. Not too long after joining we had the 4th highest valuation of all YCombinator-backed companies (behind AirBnB, Dropbox, and Stripe). There was a ton of energy and momentum behind us. We were all young and hungry and full of ideas and eager to prove ourselves. We had lot of freedom to try out ideas, fail, learn, and grow. It launched the careers of most of the people who were there, including mine.&lt;/p&gt;
+&lt;p&gt;I joined the company in 2012 as employee 29. It was pre-series A, everyone fit in 1 office in downtown SF, and the average age of employees was about 27. Not too long after joining we had the 4th highest valuation of all YCombinator-backed companies (behind AirBnB, Dropbox, and Stripe). There was a ton of energy and momentum behind us. We were all young and hungry and full of ideas and eager to prove ourselves. We had a lot of freedom to try out ideas, fail, learn, and grow. It launched the careers of most of the people who were there, including mine.&lt;/p&gt;
 
 &lt;p&gt;What follows are a collection of my most cherished memories.&lt;/p&gt;
 
@@ -438,185 +472,6 @@
 &lt;p&gt;Think back to when you were a kid and you just made stuff for the fun of it. It didn&amp;rsquo;t matter if it was good or not. There was no point to it. You didn&amp;rsquo;t worry about calling yourself an artist or changing your identity. Listening to your inner artist gets you back to that place.&lt;/p&gt;
 
 &lt;p&gt;The artist&amp;rsquo;s way shows you how to turn down the dial on your inner critic, and turn up the dial on your inner artist. You&amp;rsquo;ll strengthen your creative muscle and enjoy your creativity like a kid again.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Notes from "Vernacular Eloquence"</title>
-    <link rel="alternate" href="http://jlzych.com/2020/11/19/notes-from-vernacular-eloquence/"/>
-    <id>http://jlzych.com/2020/11/19/notes-from-vernacular-eloquence/</id>
-    <published>2020-11-20T00:12:00Z</published>
-    <updated>2020-11-20T00:12:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;How can speech improve your writing? Your initial reaction is probably, &lt;em&gt;not at all&lt;/em&gt;. But it turns out there&amp;rsquo;s a lot that speech can offer writing, and that&amp;rsquo;s what Peter Elbow&amp;rsquo;s &lt;em&gt;&lt;a href="https://amzn.to/3puZye3"&gt;Vernacular Eloquence&lt;/a&gt;&lt;/em&gt; (Amazon Affiliate link that I get a small kickback from) is all about. It&amp;rsquo;s full of practical advice for harnessing the power of speech to improve your writing, so I wrote them down here for future reference.&lt;/p&gt;
-
-&lt;h1 id="the-writing-process"&gt;The writing process&lt;/h1&gt;
-
-&lt;p&gt;To oversimplify, the writing process can be split into 2 phases: first, getting words down on the page; then, editing those words into a finished piece that&amp;rsquo;s consumable by other people. &lt;em&gt;Vernacular Eloquence&lt;/em&gt; contains techniques for both phases of the writing process.&lt;/p&gt;
-
-&lt;h2 id="capturing-raw-thoughts"&gt;Capturing raw thoughts&lt;/h2&gt;
-
-&lt;h3 id="freewriting"&gt;Freewriting&lt;/h3&gt;
-
-&lt;p&gt;Overcome the fear of the blank page with &lt;strong&gt;freewriting&lt;/strong&gt;. The method is simple: just write continuously for a set amount of time, usually 10 minutes, without stopping. If you don&amp;rsquo;t have anything to say, just write that. &amp;ldquo;I have nothing to say I have nothing to say I have nothing to say.&amp;rdquo; Or &amp;ldquo;I hate this I hate this I hate this.&amp;rdquo; Anything. Just don&amp;rsquo;t stop.&lt;/p&gt;
-
-&lt;p&gt;Don&amp;rsquo;t worry about form, grammar, sentence structure, spelling, or even if it&amp;rsquo;s any good at all. Freewriting is just for &lt;em&gt;you&lt;/em&gt;. No one else needs to read it. Self-editing as you go and worrying about perfect grammar and spelling is the best way to go nowhere fast. You&amp;rsquo;ll return to spelling and grammar later in the editing phase.&lt;/p&gt;
-
-&lt;p&gt;A few tips:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&amp;ldquo;Without stopping&amp;rdquo; doesn&amp;rsquo;t mean rushed. You can take a minute to breathe deeply, un-tense your muscles, or let a thought develop.&lt;/li&gt;
-&lt;li&gt;It&amp;rsquo;s private. Not to be showed or read by anyone else. You&amp;rsquo;re speaking, but with the added safety of not having any listeners. This psychological safety will help you be messy and unrefined and just get thoughts down.&lt;/li&gt;
-&lt;li&gt;You can freewrite about a topic, or you can just write whatever comes to mind. During quarantine I started the habit of doing &lt;em&gt;&lt;a href="https://juliacameronlive.com/basic-tools/morning-pages/"&gt;morning pages&lt;/a&gt;&lt;/em&gt; (hat tip to the &lt;em&gt;&lt;a href="http://jlzych.com/2020/09/14/my-experience-with-the-artist-s-way/"&gt;Artist&amp;rsquo;s Way&lt;/a&gt;&lt;/em&gt;) every day, which is just writing 3 straight pages of whatever thoughts come to mind.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The structure usually isn&amp;rsquo;t usable as is. It will likely jump around too much and be meandering. But there are usually sentences or multiple paragraphs that are perfectly readable. The next section on the editing process will give you tools to make sense of this mess.&lt;/p&gt;
-
-&lt;h3 id="invisible-writing"&gt;Invisible writing&lt;/h3&gt;
-
-&lt;p&gt;A specific form of freewriting is &lt;em&gt;invisible writing&lt;/em&gt;. It&amp;rsquo;s writing without seeing what you&amp;rsquo;re writing, like the name implies. Most writing is actually &lt;em&gt;reading and writing&lt;/em&gt;, since you&amp;rsquo;re reading back what you wrote and editing it at the same time. This slows down your writing, and gets in the way of developing your ideas. It&amp;rsquo;s like if you set out to carve the statue of David and obsessed over getting the pinky perfect before realizing you bought the wrong type of marble. Oh, and the slab is too small.&lt;/p&gt;
-
-&lt;p&gt;Since invisible writing prevents you from reading as you go, you can only add more words and focus on developing your line of thinking. You can do this by making the text color the same as the background color, turn your monitor&amp;rsquo;s brightness down, or use an editor I built called &lt;a href="http://jlzych.com/ii"&gt;Invisible Ink&lt;/a&gt; that blurs out your text and doesn&amp;rsquo;t let you edit.&lt;/p&gt;
-
-&lt;p&gt;This is a more opinionated form of freewriting. In the 70s, Sheridan Blau studied people writing invisibly (using empty ballpoint pens and carbon paper) and observed it &amp;ldquo;enhanced their fluency and spurred their creativity. The invisibility of the text seemed to force them to give more concentrated and sustained attention to their emerging thoughts than they usually gave when writing.&amp;rdquo; (p. 162). In other words, it improved their thinking. As Elbow puts it: &amp;ldquo;What it helps is &lt;em&gt;productive&lt;/em&gt; thinking — the ability to come up with lots of ideas and to explore them in creative and fruitful ways.&amp;rdquo; (p. 163). I have found myself exploring more ideas from writing invisibly.&lt;/p&gt;
-
-&lt;h2 id="why-freewriting-and-invisible-writing-work"&gt;Why freewriting and invisible writing work&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Since they&amp;rsquo;re private and disposable, they help you overcome the biggest impediment to writing — getting started — by giving you psychological safety to write messy, unreadable, worthless prose.&lt;/li&gt;
-&lt;li&gt;Since they force you to just keep producing words, &amp;ldquo;it pushes most of us into our mental speaking gear where we can&amp;rsquo;t plan or rehearse words before uttering them.&amp;rdquo; (p. 149). Your thoughts naturally connect to each other, as they would if you were speaking to another person. You don&amp;rsquo;t have gaps in logic, which you often see in poor writing. This helps the reader follow your train of thought. Reading is actually more similar to listening than we give it credit for, hence writing that follows the cues of speaking is easier to read.&lt;/li&gt;
-&lt;li&gt;By shifting into that mental speaking gear, you&amp;rsquo;ll write with livelier and more natural language.&lt;/li&gt;
-&lt;li&gt;It quiets the internal editor who&amp;rsquo;s telling us everything we create is awful, worthless drivel.&lt;/li&gt;
-&lt;li&gt;It gives your unconscious mind space to take over. Your conscious mind is busy focusing on the words you&amp;rsquo;re putting on paper, and in the process your unconscious mind can get to work and serve you up new and sometimes surprising thoughts. You&amp;rsquo;re tapping into the same phenomenon that leads you to getting your best ideas in the shower.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Using these techniques, I&amp;rsquo;ve been surprised at the number of times I&amp;rsquo;ll start down one line of thinking, then switch tracks, then double back on that and end up somewhere totally unexpected. It often feels like arguing with myself, which helps me develop stronger ideas.&lt;/p&gt;
-
-&lt;h1 id="the-editing-process"&gt;The editing process&lt;/h1&gt;
-
-&lt;p&gt;Now that you&amp;rsquo;ve gotten your raw thoughts down, how do you make sense of that messy, incoherent, meandering blob of text? Elbow describes two methods, which are poles on a spectrum: &lt;strong&gt;collage&lt;/strong&gt; and &lt;strong&gt;essay.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id="collage"&gt;Collage&lt;/h2&gt;
-
-&lt;p&gt;In this technique, you grab the best phrases, sentences, paragraphs, etc., and string them together, separated by lines or asterisks (or not, up to you). This method lets us avoid:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Revising weak passages. Just throw them out instead.&lt;/li&gt;
-&lt;li&gt;Figuring out the main point. It can function as a series of vignettes, moods, impressions, and so on.&lt;/li&gt;
-&lt;li&gt;Figuring out the best logical order. Just use an order that feels right or intriguing.&lt;/li&gt;
-&lt;li&gt;Making good transitions. Just stop when you&amp;rsquo;re done with a section, and start the next one.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="steps"&gt;Steps&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Look through the rough writing, and choose the bits you like the most (phrases, sentences, whole pages, etc.)&lt;/li&gt;
-&lt;li&gt;Lay them out in front of you (physically, or in a tool like Notion [my preferred tool of choice, especially since you can just drag and drop whole paragraphs and sections around. You can also put bits of text side-by-side.]), then read through them — slowly, respectively, meditatively.&lt;/li&gt;
-&lt;li&gt;Arrange them in an order that feels pleasing or compelling or logically makes sense or just intuitively feels right. It doesn&amp;rsquo;t really matter; listen to what the piece wants to be.&lt;/li&gt;
-&lt;li&gt;At this, you may see some missing bits: missing thoughts or ideas or stories to add. Maybe you see your core idea now and can state it with clarity and can write a reflection on it. Maybe you remember a badly written bit that you see now is needed. Or maybe you see a good way to write an opening or closing bit. Remember, however, that good collages can get along without openings and closings: you simply need a bit that works as a way to &amp;ldquo;jump into&amp;rdquo; your piece and another to &amp;ldquo;close the door&amp;rdquo; at the end.&lt;/li&gt;
-&lt;li&gt;Revise it. But do so with a &amp;ldquo;negative&amp;rdquo; approach. See how much you can do by just leaving out words, phrases, sentences, paragraphs, etc. Omission usually adds energy; addition saps it. Some rephrasing is fine, but see how far you can get without heavy re-writing. &lt;strong&gt;Reading your words aloud&lt;/strong&gt; is best for this process (more on that below).&lt;/li&gt;
-&lt;li&gt;Instead of trying to make nice connections or transitions, just use asterisks or dingbats.&lt;/li&gt;
-&lt;li&gt;Do a final copy edit if you want to finish it (for style, clarity, and grammar).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;You can start with a collage, and revise it in the direction of an essay.&lt;/p&gt;
-
-&lt;h2 id="essay"&gt;Essay&lt;/h2&gt;
-
-&lt;p&gt;An essay has more of a narrative than a collage. The process is to find the &amp;ldquo;stray bones&amp;rdquo; laying around, and gradually build them into a strong, coherent &amp;ldquo;skeleton&amp;rdquo; that&amp;rsquo;s alive.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Find promising passages&lt;/strong&gt;. Read slowly and grab the good bits — phrases, passages, whole pages. Some will be important because they contain &lt;em&gt;stories or examples&lt;/em&gt;, not just a thought or idea or point.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Create bones&lt;/strong&gt;. For each important passage, create a tiny summary &lt;em&gt;germ sentence&lt;/em&gt;. Make it as brief and pithy as you can. Summarize it with verbs as the point you&amp;rsquo;re trying to make, rather than a description of what it is. For example, not just &amp;ldquo;The ad for Coca-Cola,&amp;rdquo; but instead &amp;ldquo;The Coke ad implies that Coke will improve your health.&amp;rdquo;
-
-&lt;ul&gt;
-&lt;li&gt;Why do you want to summarize with verbs over single words or phrases? Because this strongarms you into thinking. You&amp;rsquo;re creating ingredients that will later help you see the logic of your thinking. A little sentence says something and has conceptual semantic energy that helps you get from one idea to the next.&lt;/li&gt;
-&lt;li&gt;Germ sentences might well be questions.&lt;/li&gt;
-&lt;li&gt;If a passage of rough fast writing feels important in some way for the topic you are writing about, force it to yield a germ sentence.&lt;/li&gt;
-&lt;li&gt;Germ sentences will help you later when you are trying to figure out a sequence or organization.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Figure out a main idea&lt;/strong&gt;. Look through the list of germ sentences and mark the ones that feel important or central. Look at the marked ones and figure out your main idea.
-
-&lt;ul&gt;
-&lt;li&gt;Maybe there&amp;rsquo;s a felt but absent main idea here. An idea trying to hold all this interesting material together. Figure it out. Write it out. Do more freewriting around this implied idea. Or talk it through with someone.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Build the skeleton.&lt;/strong&gt; In other words, a sequence. Begin to work out a good sequence for your bones.
-
-&lt;ul&gt;
-&lt;li&gt;Start with the main idea and the germ sentences you marked as most important. This forms a &lt;em&gt;story outline&lt;/em&gt; – it tells a story of thinking that feels coherent and sensible. It&amp;rsquo;s an outline of thoughts, not just single words or phrases that point to mere topics or areas. Try to build a good sequence of sentences where each point follows the previous one naturally, where the sequence is going somewhere and has felt shape.&lt;/li&gt;
-&lt;li&gt;There are lots of ways to tell a story. They can start at the end and you tell how you got there, or at the beginning, or middle with some random interesting anecdote.&lt;/li&gt;
-&lt;li&gt;You may find there are gaps now. If so, fill them in. Return to freewriting to capture more raw thoughts that you can revise into coherent points.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Revise&lt;/strong&gt; this into a readable draft.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Do final revisions&lt;/strong&gt; by reading aloud (more on that below).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id="revising-by-reading-aloud"&gt;Revising by reading aloud&lt;/h2&gt;
-
-&lt;p&gt;Once we have a draft down, we can start making the final revisions that has correct grammar, spelling, punctuation, and style. The editing process is the hardest and longest part of writing (assuming you can get over the fear of the blank page in the first place). The process is slow, and you&amp;rsquo;re often bogged down by word choice, sentence structure, grammar, and all the fiddly bits of writing that we learn in school.&lt;/p&gt;
-
-&lt;p&gt;While much of this process is mechanical and following rules, speech can still help us write final, grammatically correct sentences.&lt;/p&gt;
-
-&lt;h3 id="the-technique"&gt;The technique&lt;/h3&gt;
-
-&lt;p&gt;This technique is pretty much what it sounds like: read your writing aloud. But as you do so, pay attention to how it feels in the mouth, and how it sounds to your ear. Where do you stumble? When does the kinesthetic feeling of physically moving your mouth and tongue feel off? When is it grating in the ear?&lt;/p&gt;
-
-&lt;p&gt;Consciously thinking about what is wrong with a sentence is much tougher to spot and fix problems then just saying it aloud and feeling how it sounds. This doesn&amp;rsquo;t usually point to a solution, but it will point to problems.&lt;/p&gt;
-
-&lt;p&gt;This method helps solve:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Bureaucratic prose that sounds stilted and dry&lt;/li&gt;
-&lt;li&gt;Roundabout or long-winded language&lt;/li&gt;
-&lt;li&gt;Repetition and clang (conversely, it will help you hear when repetition is good)&lt;/li&gt;
-&lt;li&gt;Interruptions that break the flow of a thought or sentence&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Punctuation and emphasis&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;You can think of reading aloud as helping people &lt;em&gt;hear&lt;/em&gt; your writing like you&amp;rsquo;re &lt;em&gt;speaking&lt;/em&gt; it. When you speak, you put emphasis on certain words, pause in certain places, and modulate your volume and rhythm. Try to punctuate and format the text to achieve this. Where is there a longer pause, and where should the words just flow? Where do you want to signal a shift in tone?&lt;/p&gt;
-
-&lt;p&gt;For example, consider the phrase, &amp;ldquo;I didn&amp;rsquo;t steal the book.&amp;rdquo; Think of all the different ways you could say it:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&amp;ldquo;&lt;em&gt;I&lt;/em&gt; didn&amp;rsquo;t steal the book.&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;&amp;ldquo;I didn&amp;rsquo;t &lt;em&gt;steal&lt;/em&gt; the book.&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;&amp;ldquo;I didn&amp;rsquo;t steal &lt;em&gt;the book&lt;/em&gt;.&amp;rdquo;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Each of these has a very different meaning. Which will the reader hear when they read it? Punctuation and formatting can ensure they read it the way you intend, and revising by reading aloud will help you identify &lt;em&gt;how&lt;/em&gt; they should read it.&lt;/p&gt;
-
-&lt;p&gt;In Elbow&amp;rsquo;s words, &amp;ldquo;It&amp;rsquo;s the marriage of sound and &lt;em&gt;meaning&lt;/em&gt; that we seek with reading aloud — and that punctuation is meant to convey. We are looking for the out loud performance that best &lt;em&gt;matches&lt;/em&gt; the meaning — that &lt;em&gt;is&lt;/em&gt; or &lt;em&gt;enacts&lt;/em&gt; the meaning.&amp;rdquo; (p. 279)&lt;/p&gt;
-
-&lt;p&gt;The author provides a few additional pieces of specific grammatical advice:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;About commas&lt;/strong&gt;: When in doubt, leave it out. Careful reading aloud will help us avoid most of the extra commas that come from the pauses in casual speech, but some will creep in.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Stick to periods, commas, and question marks&lt;/strong&gt;. These minimize chances for grammar infractions, yet they&amp;rsquo;re all we need for excellent writing. The most realistic goal for punctuation is the same one for spelling: &lt;em&gt;not&lt;/em&gt; to be noticed.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Never use which&lt;/strong&gt;. Most that/which tickets are issued for illegal &lt;em&gt;which&lt;/em&gt;s. The workaday &lt;em&gt;that&lt;/em&gt; is fine for most of what we normally write.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;And then there are dashes&lt;/strong&gt;. When you&amp;rsquo;re perplexed about what to use, use a dash. A dash is never wrong from a strictly legal point of view if you use it in any spot where you pause in careful reading aloud.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Does it lead to perfect grammar every time? No. But grammar is full of ambiguity, and good writers break the rules regularly. It will lead to proper grammar enough of the time to not make your writing more confusing.&lt;/p&gt;
-
-&lt;h2 id="some-other-advice"&gt;Some other advice&lt;/h2&gt;
-
-&lt;p&gt;Elbow sprinkles some other pearls of wisdom throughout the book, so here they are in a grab bag &amp;ldquo;collage&amp;rdquo; format 😄&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;On starting: &amp;ldquo;If we don&amp;rsquo;t have an actual story to drive our essay, the most obvious way to create a &amp;quot;story of thinking&amp;rdquo; is to start with an itch: not a claim or a policy but &lt;em&gt;a question of problem or perplexity.&lt;/em&gt; &amp;ldquo; p. 309 (emphasis added). You may remember this from the opening to this post&amp;hellip;&lt;/li&gt;
-&lt;li&gt;&amp;quot;Good orators often consciously startle an audience with something that seems wrong or even &lt;em&gt;is&lt;/em&gt; wrong.&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;&amp;ldquo;One of the best ways to help readers understand a complex idea is to start with an oversimplification. A simple claim is easily stated and easily grasped; complications and qualifications can be added later. This strategy can function not just in sentences but in paragraphs or even whole essays.&amp;rdquo; (p. 312). When we build in all the qualifications our sentences are too complicated, and boring, and have no energy or pull.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;I highly recommend Elbow&amp;rsquo;s book if you want to become a better writer. It&amp;rsquo;s one of the few (only?) books I&amp;rsquo;ve read that improve your writing by showing you how to develop &lt;em&gt;better ideas&lt;/em&gt; and &lt;em&gt;arguments&lt;/em&gt;, instead of teaching you rules of grammar and style. The techniques above are the most concrete takeaways from the book, but it&amp;rsquo;s full of longer explanations about why speech leads to better writing, with studies and practical teaching experience to back up his arguments.&lt;/p&gt;
-
-&lt;p&gt;The book can be academic and long-winded at times, which I simultaneously enjoyed and felt bogged down by. He would often make an argument and then write out all of the counter arguments and then counter-counter argue those, to which I would sigh, &amp;ldquo;I was convinced 5 pages ago. You don&amp;rsquo;t need to convince me anymore!&amp;rdquo; But it was also fun to see his logic unfold. He&amp;rsquo;s good at calling out sections that are skippable and largely academic, so they&amp;rsquo;re easy to skip over if you don&amp;rsquo;t want to go down long academic rabbit holes. He also includes historical explanations of how the current system of &amp;ldquo;correct&amp;rdquo; writing is just as arbitrary as any other form of &amp;ldquo;incorrect&amp;rdquo; writing (tl;dr the people in power make the rules).&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="https://amzn.to/3puZye3"&gt;Buy it now&lt;/a&gt; if you want to improve your writing &lt;em&gt;(this is an Amazon Affiliate link that I get a small kickback from)&lt;/em&gt;.&lt;/p&gt;
 </content>
   </entry>
 </feed>

@@ -28,7 +28,7 @@
 <meta name="msapplication-TileColor" content="#fffef6">
 <meta name="theme-color" content="#ffffff">
 <script src='//cdn.optimizely.com/js/1111070510.js'></script>
-<link href="/stylesheets/application.css?1592778554" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/application.css?1621724518" media="screen" rel="stylesheet" type="text/css" />
 <link href='/feed.xml' rel='alternate' title='RSS for Jeff Zych' type='application/rss+xml'>
 <script src='//use.typekit.net/okn2nfu.js' type='text/javascript'></script>
 <script>
@@ -53,6 +53,43 @@
 
 <div class='content'>
 <article>
+<time class='article__date' datetime='2021-05-22'>
+Posted on
+May 22, 2021
+by Jeff Zych
+</time>
+<h1 class='article__title'><a href="/2021/05/22/when-in-the-design-process-should-i-use-components-in-my-design-system/">When in the design process should I use components in my design system?</a></h1>
+<p>A common mistake I see product designers make is that they start the solution exploration phase by cobbling together UIs out of the components and patterns in their design system (often skipping <a href="/2020/04/07/the-power-of-low-fidelity/">lo-fi, broad explorations</a>, which is a separate rant [and one that Figma makes far too tempting with its shared libraries <code>#endrant</code>]).</p>
+
+<p>&ldquo;But I want to be consistent with the rest of our product! Shouldn&rsquo;t I be using existing components and patterns? Why is that bad?&rdquo; I hear you protesting.</p>
+
+<p>I applaud your instinct 👏 It&rsquo;s coming from a good place. But don&rsquo;t do it. You&rsquo;re artificially constraining the solution space before you&rsquo;ve found the best design for the specific problem you&rsquo;re trying to solve. You&rsquo;re potentially overlooking better options by only using what currently exists.</p>
+
+<p>&ldquo;So what do I do? Ignore the design system altogether?&rdquo;</p>
+
+<p>No, that would make the design system pointless, wouldn&rsquo;t it? But actually, yes — kind of. The proper time to reach for the components in your design system at the <em>end</em> of solution exploration, when you&rsquo;ve nailed down the interactions and flows, have validated it with customers, and your team is ready for you to create the final hi-fi designs for engineers to build.</p>
+
+<p>At that point you can take what you have (which should be mid-fi at most), and seek out the components that most closely match what&rsquo;s in your designs. A mature, robust design system should have components for the majority of the UIs you create. There may be some things that you did slightly differently than the standard component, and you can adjust your design to fit what exists with little to no impact to the usability of your feature.</p>
+
+<p>&ldquo;But what if there is no component that meets my need?&rdquo; Now this is where things get interesting. In this case, you should go to your design systems team to get their input on your designs.</p>
+
+<p>First, confirm that you didn&rsquo;t overlook or misunderstand anything in the system. It&rsquo;s possible there&rsquo;s a component you should use, which the team can educate you on.</p>
+
+<p>Assuming there is no component you can use, you can now work with the team to determine next steps. There are 2 options here: either your thing is a snowflake (i.e. it isn&rsquo;t a generalizable component that can be used elsewhere), in which case your team can build it as part of the feature; or, the design system needs to be extended.</p>
+
+<p>If it&rsquo;s the latter, congratulations! You have a contribution to the design system. You have a specific use case for a component or pattern for a feature that&rsquo;s been validated with real users, and no known equivalent in the existing system. You can work with the design systems team to flesh it out into a generalized pattern.</p>
+
+<p>Design systems are meant to be living systems that grow and change as products grow and change (in my opinion. Some people may think they&rsquo;re a tightly controlled system that everyone should conform to, but those people are wrong). The best way for them to grow is <em>organically</em> — meaning through contributions from specific features that identify gaps in the current system. Not from hypothetical, &ldquo;I saw this pattern in Material Design and thought it would be cool to add to our system&hellip;&rdquo;</p>
+
+<p>So there you have it! Next time you&rsquo;re entering the solution exploration phase and you feel the instinct to reach for your Figma component library, STOP! 🛑 ✋ 🙅. Do not pass go. Do not collect $200. Start with as few constraints as possible and explore broadly before honing in on the best solution. Only then should you translate what you have into the design language provided by your design system.</p>
+
+<footer class='article__footer'>
+Thoughts? Reply
+<a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
+</footer>
+</article>
+
+<article>
 <time class='article__date' datetime='2021-04-18'>
 Posted on
 Apr 18, 2021
@@ -61,7 +98,7 @@ by Jeff Zych
 <h1 class='article__title'><a href="/2021/04/18/reminiscing-on-the-magic-of-optimizely-s-early-days/">Reminiscing on the magic of Optimizely’s early days</a></h1>
 <p>Last fall, Optimizely was acquired by Episerver, signaling the official end of Optimizely as I knew it. I&rsquo;ve been re-connecting with old Optinauts and reminiscing on the magic of those early days.</p>
 
-<p>I joined the company in 2012 as employee 29. It was pre-series A, everyone fit in 1 office in downtown SF, and the average age of employees was about 27. Not too long after joining we had the 4th highest valuation of all YCombinator-backed companies (behind AirBnB, Dropbox, and Stripe). There was a ton of energy and momentum behind us. We were all young and hungry and full of ideas and eager to prove ourselves. We had lot of freedom to try out ideas, fail, learn, and grow. It launched the careers of most of the people who were there, including mine.</p>
+<p>I joined the company in 2012 as employee 29. It was pre-series A, everyone fit in 1 office in downtown SF, and the average age of employees was about 27. Not too long after joining we had the 4th highest valuation of all YCombinator-backed companies (behind AirBnB, Dropbox, and Stripe). There was a ton of energy and momentum behind us. We were all young and hungry and full of ideas and eager to prove ourselves. We had a lot of freedom to try out ideas, fail, learn, and grow. It launched the careers of most of the people who were there, including mine.</p>
 
 <p>What follows are a collection of my most cherished memories.</p>
 
@@ -461,36 +498,6 @@ by Jeff Zych
 <hr>
 
 <p><em>Sound like the type of team you want to work on? <a href="https://boards.greenhouse.io/launchdarkly/jobs/4194121003">I&rsquo;m hiring</a>.</em></p>
-
-<footer class='article__footer'>
-Thoughts? Reply
-<a href="https://twitter.com/intent/tweet?screen_name=jlzych">@jlzych</a>
-</footer>
-</article>
-
-<article>
-<time class='article__date' datetime='2020-11-23'>
-Posted on
-Nov 23, 2020
-by Jeff Zych
-</time>
-<h1 class='article__title'><a href="/2020/11/23/learning-the-true-power-of-artist-dates/">Learning the True Power of Artist Dates</a></h1>
-<p>I saw a color palette I liked recently, and wanted to use it on something, but I had no project for it. I decided to just make some fake card UIs (plus I got to use some fonts I had been itching to use for awhile). There was no point to it other than playing with some colors and fonts. No one else saw it (until now). It will never be built. It won&rsquo;t win any design awards.</p>
-
-<p><img alt="Screenshot of my card UIs that won't win any design awards and had no purpose..." src="/images/2020-artist-dates/cards.jpg?1606195757" />
-<em>Some card UIs that won&rsquo;t win any design awards and had no purpose&hellip;</em></p>
-
-<p>Afterward, I felt more creative energy coursing through my veins. I felt more creatively <em>attuned</em>.</p>
-
-<hr>
-
-<p>When I first did <a href="/2020/09/14/my-experience-with-the-artist-s-way/">The Artists Way</a>, I thought &ldquo;<a href="https://juliacameronlive.com/basic-tools/artists-dates/">artist dates</a>&rdquo; were mostly about filling the tank with inspiration. That&rsquo;s partly true, but their true power revealed themselves to me when I took a break to move. I had a few weeks of ignoring my inner artist, so when my ears finally perked up again I learned why artist dates are so powerful: You practice listening to your artist. Their voice gets stronger. Your ear is more attuned to it.</p>
-
-<p>Over time the voice gets drowned out by society, your inner critic, fears, doubts, societal expectations, your idea of who you think you are, or should be. But the voice never goes away. It&rsquo;s always there.</p>
-
-<p>Think back to when you were a kid and you just made stuff for the fun of it. It didn&rsquo;t matter if it was good or not. There was no point to it. You didn&rsquo;t worry about calling yourself an artist or changing your identity. Listening to your inner artist gets you back to that place.</p>
-
-<p>The artist&rsquo;s way shows you how to turn down the dial on your inner critic, and turn up the dial on your inner artist. You&rsquo;ll strengthen your creative muscle and enjoy your creativity like a kid again.</p>
 
 <footer class='article__footer'>
 Thoughts? Reply
