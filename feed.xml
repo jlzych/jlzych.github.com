@@ -5,10 +5,105 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2022-01-03T20:29:00Z</updated>
+  <updated>2022-04-10T18:57:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>How I unknowingly upped my visual design game</title>
+    <link rel="alternate" href="http://jlzych.com/2022/04/10/how-i-unknowingly-upped-my-visual-design-game/"/>
+    <id>http://jlzych.com/2022/04/10/how-i-unknowingly-upped-my-visual-design-game/</id>
+    <published>2022-04-10T18:57:00Z</published>
+    <updated>2022-04-10T18:57:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;As I’ve been building out the team at LaunchDarkly, I realized my eye for visual design details had gotten a lot sharper. I was seeing rough edges and ways to improve UIs that I wouldn’t have caught a few years prior. This was cropping up in the UI work I was doing myself as well. I hadn’t explicitly tried to improve my visual design skills, and professionally have spent more time in management than IC work, so how had this happened?&lt;/p&gt;
+
+&lt;p&gt;Looking back on the past few years, I realized some independent threads had come together to improve my visual design skills without me noticing. I thought it would be fun to document those, and to be a resource for others who are looking to improve their designs (spoiler alert: there’s no silver bullet here, just deliberately and consistently putting in the work).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="/images/2016-07-02-a-look-back-at-my-early-web-design-work/2-oafs2.png"&gt;&lt;img alt="One of the first websites I designed back in high school for my friends’ band, The Local Oafs, circa 2002 (roughly). It’s actually kinda dope, in an amateur-ish, grunge aesthetic way." src="/images/2016-07-02-a-look-back-at-my-early-web-design-work/2-oafs2.png?1467509653" /&gt;&lt;/a&gt;
+&lt;em&gt;One of the first websites I designed back in high school for my friends’ band, The Local Oafs, circa 2002 (roughly). It’s actually kinda dope, in an amateur-ish, grunge aesthetic way.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id="lettering"&gt;Lettering&lt;/h2&gt;
+
+&lt;p&gt;The first thread is hand lettering. (&lt;a href="/scribbles/"&gt;See my journey here&lt;/a&gt;). Back in 2017 a couple of Optimizely designers and I hung out after work, ordered some Pizza Hut, drank beer and doodled with a bunch of pens and brushes. I started messing around with a brush pen and fell in love with the thick and thin strokes and the overall feeling of making marks with it. I had always admired hand-lettering and sign painting, so I got my own brush pens and started drawing letters. I copied a bunch of Instagram artists to start, and then got some books to help me improve even more. I kept practicing ever since, expanding into drawing letters with a pen &amp;amp; pencil, laying out phrases, and doing calligraphy (which I actually did as a kid also).&lt;/p&gt;
+
+&lt;p&gt;I started doing this just for fun, and to get back to analog creative activities that didn’t require a computer, not to get better at design. But hand lettering helped me develop my eye for typography, to see the subtle curves that define a character’s personality, and just general layout and details and color. I now have much stronger opinions about fonts and all the small details that define their mood and character.&lt;/p&gt;
+
+&lt;p&gt;Some books that helped me the most:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;House Industries Lettering Manual&lt;/em&gt; by Ken Barber&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;The ABC of Lettering&lt;/em&gt; by Ivan Castro&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;In Progress&lt;/em&gt; by Jessica Hisch&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Handstyle Lettering&lt;/em&gt; published and edited by Victionary (a great visual reference, but won’t teach you how to draw letters).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href="/images/2014-02-11-re-designing-optimizely-s-preview-tool/preview-final.png"&gt;&lt;img alt="Optimizely’s preview tool, which I redesigned back in 2013. This is what shipped, but to my eyes today this looks like a first round wireframe." src="/images/2014-02-11-re-designing-optimizely-s-preview-tool/preview-final.png?1392147052" /&gt;&lt;/a&gt;
+&lt;em&gt;Optimizely’s preview tool, which I redesigned back in 2013. This is what shipped, but to my eyes today this looks like a first round wireframe.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id="type-color-branding"&gt;Type &amp;amp; Color &amp;amp; Branding&lt;/h2&gt;
+
+&lt;p&gt;I also read a lot about typography, color, and branding over the past few years. The type books further trained my eye and attuned me to the subtleties of every character and how that lends personality and uniqueness to each font, making typefaces that previously looked almost identical look vastly different now.&lt;/p&gt;
+
+&lt;p&gt;On the color front, I kept buying palette books for inspiration. Inspiration for what, exactly? I don’t know because I didn’t have any projects that needed them. I just &lt;em&gt;liked&lt;/em&gt; them.&lt;/p&gt;
+
+&lt;p&gt;The palettes also developed my eye, but by far the biggest book that changed how I see color is &lt;em&gt;Interactions of Color&lt;/em&gt;, by Josef Albers. This book is a series of exercises that trains your eye to see how color will look different depending on the circumstance, how they interact, and how they influence each other. I couldn’t recommend this book more if you want to get better at using color. Read about the exercises and my experience with the book in &lt;a href="/2020/04/29/exercises-from-interactions-of-color-by-josef-albers/"&gt;this blog post&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I also got a lot more interested in branding during this time. I read some books on branding, but the bigger influence has been subscribing to Armin Vit’s brand review site, &lt;a href="https://www.underconsideration.com/brandnew/"&gt;Brand New&lt;/a&gt;. It further  honed my eye for branding, typography, and color.&lt;/p&gt;
+
+&lt;p&gt;Some of my favorite books on color, type, and branding:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Logo Design Love&lt;/em&gt; by David Airey&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;The Designer’s Dictionary of Color&lt;/em&gt; by Sean Adams&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Sagmeister &amp;amp; Walsh: Beauty&lt;/em&gt; by Stefan Sagmeister and Jessica Walsh&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Thinking with Type: A Critical Guide for Designers, Writers, Editors, and Students&lt;/em&gt; by Ellen Lupton&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;The Secret Lives of Color&lt;/em&gt; by Kassia St. Clair&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;The Designer’s Dictionary of Type&lt;/em&gt; by Sean Adams&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Palette Perfect&lt;/em&gt; by Lauren Wager&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Draplin Design Co.: Pretty Much Everything&lt;/em&gt; by Aaron James Draplin&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href="/images/2020-redesign/before-after.png"&gt;&lt;img alt="My original website, circa 2012, compared to my refreshed website, circa 2019. The old one was fairly bland and safe and avoided making mistakes, whereas the new one has a lot more personality, bolder font choices, and a more evocative color palette." src="/images/2020-redesign/before-after.png?1581401423" /&gt;&lt;/a&gt;
+&lt;em&gt;My original website, circa 2012, compared to my refreshed website, circa 2019. The old one was fairly bland and safe and avoided making mistakes, whereas the new one has a lot more personality, bolder font choices, and a more evocative color palette. &lt;a href="https://jlzych.com/2020/01/27/site-redesign-i-the-guiding-concept/"&gt;Read about the design process here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id="ui-resources"&gt;UI resources&lt;/h2&gt;
+
+&lt;p&gt;Even though I said I didn’t set out to improve my UI design skills, I did read two UI focused resources: &lt;a href="https://www.refactoringui.com/"&gt;Refactoring UI&lt;/a&gt;, and &lt;a href="https://learnui.design/blog/"&gt;Learn UI Design&lt;/a&gt; (not a book, but a website &amp;amp; blog &amp;amp; course [I did not take the course]). These are both very practical resources that focus on actual techniques to use when designing UIs, as opposed to theory which I have found leaves a gaping chasm between itself and how it applies to actual UI design. So these were great for both developing my eye for details, and also giving me specific tips and tricks to to use in UI design.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="/images/2022-upping-visual-design/Center-before-and-after.png"&gt;&lt;img alt="Before and after comparison of a side project I worked on in 2020/21 called Center." src="/images/2022-upping-visual-design/Center-before-and-after.png?1649618812" /&gt;&lt;/a&gt;
+&lt;em&gt;Before and after comparison of a side project I worked on in 2020/21 called Center.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id="creativity"&gt;Creativity&lt;/h2&gt;
+
+&lt;p&gt;The final thread is general creativity. I’ve always been fascinated by the creative process, and love reading how people from other creative disciplines do what they do. These have helped me think more about how I work, and given me techniques to try from other disciplines to break through creative obstacles or find novel solutions.&lt;/p&gt;
+
+&lt;p&gt;By far the most impactful book I’ve read in this category is &lt;em&gt;The Artist&amp;rsquo;s Way&lt;/em&gt; by Julia Cameron. Saying I “read” it does it a disservice. It&amp;rsquo;s a 12-week program that shows you how to shed your inhibitions and find your inner artist. You can read more about my &lt;a href="/2020/09/14/my-experience-with-the-artist-s-way/"&gt;general experience with the book here&lt;/a&gt;, and a follow-up post about &lt;a href="/2020/11/23/learning-the-true-power-of-artist-dates/"&gt;artist dates here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Creativity books I recommend:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;The Artist’s Way&lt;/em&gt; by Julia Cameron&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Making Music: 74 Creative Strategies for Electronic Producers&lt;/em&gt; by Dennis DeSantis&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Working&lt;/em&gt; by Robert Caro&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;On Writing&lt;/em&gt; by Stephen King&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Keep Going&lt;/em&gt; and &lt;em&gt;Steal Like an Artist&lt;/em&gt; by Austin Kleon&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Bird by Bird: Some Instructions on Writing and Life&lt;/em&gt; by Anne Lamott&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Draft No. 4. On the writing process&lt;/em&gt; by John McPhee&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;The Gift&lt;/em&gt; by Lewis Hyde&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Understanding Comics&lt;/em&gt; by Scott McCloud&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href="/images/2022-upping-visual-design/wfb.png"&gt;&lt;img alt="LaunchDarkly’s workflow builder, circa 2021 (worked on in collaboration with other designers &amp; PMs)." src="/images/2022-upping-visual-design/wfb.png?1649618812" /&gt;&lt;/a&gt;
+&lt;em&gt;LaunchDarkly’s workflow builder, circa 2021 (worked on in collaboration with other designers &amp;amp; PMs).&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;So that’s it! Now you know all my secrets: just read a ton of books and put in consistent practice to an artistic pursuit like lettering for years. Easy, right?&lt;/p&gt;
+
+&lt;p&gt;But seriously though, all of this did help me become a stronger visual designer without me explicitly setting out to do so. And one of the biggest changes between now and 5 or 6 years ago is how much I’ve developed my eye. I didn’t appreciate how important it is to tune your eye to all the small details that really elevate design work. There’s no shortcuts, but anyone can do it as long as you’re willing to put in the work.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>2021 Reading List</title>
     <link rel="alternate" href="http://jlzych.com/2022/01/03/2021-reading-list/"/>
@@ -403,111 +498,6 @@
 &lt;li&gt;&lt;em&gt;Writing is Designing&lt;/em&gt; by Michael J. Metts and Andy Welfle (Feb 6, 2020) 👍&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;Moonwalking with Einstein&lt;/em&gt; by Josh Foer (Jan 19, 2020)&lt;/li&gt;
 &lt;/ul&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Product Manager and Product Designer: Who Does What?</title>
-    <link rel="alternate" href="http://jlzych.com/2020/12/12/product-manager-and-product-designer-who-does-what/"/>
-    <id>http://jlzych.com/2020/12/12/product-manager-and-product-designer-who-does-what/</id>
-    <published>2020-12-13T01:29:00Z</published>
-    <updated>2020-12-13T01:29:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;I recently noticed that my team of Product Designers at &lt;a href="https://launchdarkly.com"&gt;LaunchDarkly&lt;/a&gt; (p.s. &lt;a href="https://boards.greenhouse.io/launchdarkly/jobs/4194121003"&gt;I&amp;rsquo;m hiring&lt;/a&gt;) was having trouble navigating the overlap of Product &lt;em&gt;Design&lt;/em&gt; and Product &lt;em&gt;Management&lt;/em&gt;. No one said it explicitly, but after hearing some frustrations in 1:1s and team meetings I connected the dots that this issue was the common variable across a variety of complaints.&lt;/p&gt;
-
-&lt;p&gt;I was hearing things like, &amp;ldquo;I&amp;rsquo;m supposed to own the user experience, but the PM keeps cutting scope from my designs!&amp;rdquo; And, &amp;ldquo;Am I expected to run team whiteboarding sessions?&amp;rdquo; There was also confusion around the fact that sometimes they do customer interviews, and other times PMs do.&lt;/p&gt;
-
-&lt;p&gt;Product Managers also had some struggles with navigating this gray area. They want to shape the final product (as they should), but were unsure how best to provide input without stepping on the toes of designers. If I sketch out my ideas, am I doing the designer&amp;rsquo;s job for them? Is it ok to ask designers to do customer outreach and development? If the designs I&amp;rsquo;m seeing are missing the mark, how do I give that feedback without telling them their work stinks?&lt;/p&gt;
-
-&lt;p&gt;To clarify expectations for both sides, I wrote the doc below. It doesn&amp;rsquo;t try to draw a distinct line between the two roles, but instead explicitly states the area of overlap and provides guidance on how to navigate it. I also give advice for leaning on each other, such as asking PMs for scope, or asking designers for more iterations.&lt;/p&gt;
-
-&lt;p&gt;So far this doc has alleviated some confusion on both sides, and empowered my team to speak up when they need more from their peers.&lt;/p&gt;
-
-&lt;p&gt;If you or your team is struggling with this as well, I hope this doc will help.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;The roles of Product Designer and Product Manager have a significant amount of overlap (they both have “product” in their title, after all). So who does what? Having overlap and redundancy is healthy and makes sure multiple people are thinking about the big picture. But fuzzy roles and unclear decision makers leads to people spinning their wheels and unproductive power struggles. This doc aims to clarify who does what by explicitly laying out roles, the overlap, and how to navigate the ambiguity.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Venn diagram of the overlap between Product Managers and Product Designers" src="/images/2020-pd-pm-overlap/overlap.png?1607826488" /&gt;&lt;/p&gt;
-
-&lt;h2 id="product-designers"&gt;Product Designers&lt;/h2&gt;
-
-&lt;p&gt;Product Designers are responsible for creating &lt;strong&gt;great user experiences&lt;/strong&gt;. What does that mean, though? Don’t we all own the user experience? In a sense, yes – everything the triad does will impact the final experience. Sales, support, and marketing all impact the customer’s experience, too. But in the context of the triad, the designer should be pushing for the best experience that meets business and customer goals, with the project constraints (scope, technical tradeoffs, what’s available in the design system, and so on). If the proposed design doesn’t meet the customer’s needs, or is hard to use, or unpolished, or doesn’t follow our patterns, that’s on the designer. They do this by owning:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Final visual design&lt;/li&gt;
-&lt;li&gt;Interaction design&lt;/li&gt;
-&lt;li&gt;Prototyping&lt;/li&gt;
-&lt;li&gt;Usability testing&lt;/li&gt;
-&lt;li&gt;Personas&lt;/li&gt;
-&lt;li&gt;Journey mapping&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;And more, this list isn’t exhaustive&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id="product-managers"&gt;Product Managers&lt;/h2&gt;
-
-&lt;p&gt;Product Managers are accountable for the &lt;strong&gt;business value&lt;/strong&gt; of their team’s output. If a project isn’t valuable to customers or LaunchDarkly, has unclear or incorrect scope, fuzzy use cases, takes too long to build relative to the value, or the team doesn’t understand what problem they’re solving or why, that’s on the PM. They do this by owning:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Roadmap prioritization&lt;/li&gt;
-&lt;li&gt;Team goals &amp;amp; strategy&lt;/li&gt;
-&lt;li&gt;Project scope&lt;/li&gt;
-&lt;li&gt;Project goals and success criteria&lt;/li&gt;
-&lt;li&gt;Data analysis&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;And more, this list isn’t exhaustive&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id="the-overlap"&gt;The overlap&lt;/h2&gt;
-
-&lt;p&gt;This still leaves a healthy amount of overlap between the two roles. Both do:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;User research&lt;/li&gt;
-&lt;li&gt;User scenarios&lt;/li&gt;
-&lt;li&gt;Use cases&lt;/li&gt;
-&lt;li&gt;Lo-fi sketching and flows&lt;/li&gt;
-&lt;li&gt;Team workshops &amp;amp; whiteboarding&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;And even more, this list isn’t exhaustive, either&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;So who owns these activities? The answer is &lt;strong&gt;both&lt;/strong&gt;. The best projects will have designers and PMs collaborating on these. But sometimes a designer takes the lead on research, or the PM will lead whiteboarding activities. It will depend on who has the time, skills, and interest, among other factors. When things are unclear, they should discuss who is doing what.&lt;/p&gt;
-
-&lt;p&gt;Additionally, being &lt;em&gt;accountable&lt;/em&gt; for an outcome doesn’t mean you’re on the hook for doing all the work to achieve it. Nor does it mean you can’t contribute to what someone else is accountable for. Designers should contribute to use cases and scope. Engineers and PMs should contribute design ideas. Everyone should contribute to the roadmap. But at the end of the day, the person accountable for the final result has final decision making power.&lt;/p&gt;
-
-&lt;p&gt;Even so, this won’t prevent disagreements. You may not agree with the final scope, technical architecture, or user flows. Voice your concerns, have a healthy (but respectful) debate about the tradeoffs, and try to reach consensus or a set of next steps to resolve the tension. But at the end of the day, recognize who is accountable for the outcome, and thus the final decision maker, and &lt;em&gt;disagree and commit&lt;/em&gt;.&lt;/p&gt;
-
-&lt;h2 id="lean-on-each-other"&gt;Lean on each other&lt;/h2&gt;
-
-&lt;p&gt;Knowing who’s accountable for what gives you someone to lean on when things are ambiguous. Use this to your advantage.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;For Product Designers&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Lean on your PM if you don’t understand the project’s goals, use cases, scope, or value. You can and should have an opinion on these, and shape them with your work, but it’s a fool’s errand to try to finalize a design if these aren’t crisp.&lt;/li&gt;
-&lt;li&gt;If you’re not sure about the technical tradeoffs of your design decisions, lean on your engineering counterpart.&lt;/li&gt;
-&lt;li&gt;If the PM or engineers have an idea for a solution, listen to it and make it real, even if you’re not sure it will work. Design’s super power is giving form to abstract ideas. Discussing a cheap throwaway mockup you’ve made can shortcut weeks of debate. &lt;a href="http://jlzych.com/2020/04/10/dear-designer-you-don-t-need-to-have-all-the-answers/"&gt;I wrote a longer article about this&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;You are expected to push for shipping the best user experience you can. Sometimes this increases the scope of a project. Sometimes this increases the technical complexity. You should discuss tradeoffs with your triad and reach consensus together. Don’t assume what’s easy or hard. Then make the best damn designs you can within the scope and constraints agreed upon.&lt;/li&gt;
-&lt;li&gt;Scope, use cases, and goals can and will change as projects move through discovery. Seeing real designs and getting user feedback changes your understanding of the opportunity space, so you should update the product spec accordingly.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;For Product Managers&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Lean on designers to help you with scope and use case decisions by cheaply exploring ideas together.&lt;/li&gt;
-&lt;li&gt;If you have an idea for a solution, get it out of your head and share it with your designer. But acknowledge it’s just an idea and the designer owns the final designs.&lt;/li&gt;
-&lt;li&gt;You see an area of opportunity that needs more research but don’t have time, ask your designer if they can lead customer calls.&lt;/li&gt;
-&lt;li&gt;If the solutions the designer is proposing are missing the mark, ask them to explore more ideas. Or whiteboard together if you’re seeing paths the designer’s not going down. You don’t need to be an expert in design and pinpoint exactly what isn’t working, but you can always ask for more options.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id="create-greatness-together"&gt;Create greatness together&lt;/h2&gt;
-
-&lt;p&gt;Tension and overlap is healthy when roles and expectations are clear. This doc is a starting point and guide, but it takes practice to successfully navigate points of conflict. But when done right, you’ll ship solutions better than you would have alone.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;&lt;em&gt;Sound like the type of team you want to work on? &lt;a href="https://boards.greenhouse.io/launchdarkly/jobs/4194121003"&gt;I&amp;rsquo;m hiring&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 </content>
   </entry>
 </feed>
