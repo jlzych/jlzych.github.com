@@ -5,10 +5,95 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2022-04-10T18:57:00Z</updated>
+  <updated>2022-04-24T22:01:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>Good North Star, Bad North Star</title>
+    <link rel="alternate" href="http://jlzych.com/2022/04/24/good-north-star-bad-north-star/"/>
+    <id>http://jlzych.com/2022/04/24/good-north-star-bad-north-star/</id>
+    <published>2022-04-24T22:01:00Z</published>
+    <updated>2022-04-24T22:01:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;&amp;ldquo;We need a North Star.&amp;rdquo; Most product designers have been asked for one at some point, and it usually causes us to internally groan and roll our eyes (if not externally, too). We&amp;rsquo;ve all worked on North Stars that are a frustrating waste of time and served no purpose, and where the sole burden was on us to &amp;ldquo;come up with the vision.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;But many of us have also created ones that painted an inspiring vision, getting a team excited about the road ahead and keeping them on track to deliver that vision.&lt;/p&gt;
+
+&lt;p&gt;I led a discussion in a product design meeting at LaunchDarkly to learn about the team&amp;rsquo;s experiences with North Stars. What made for good ones, and what made for bad ones? What follows are some takeaways from that discussion.&lt;/p&gt;
+
+&lt;h2 id="what-is-a-north-star"&gt;What is a “North Star”?&lt;/h2&gt;
+
+&lt;p&gt;Julie Zhou, former VP of Design at Facebook, &lt;a href="https://medium.com/the-year-of-the-looking-glass/designs-north-star-d469193063c5"&gt;defines a “North Star” as&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;A design “North Star” is a visual output (commonly a video, although it can also be a storyboard, a series of hi-fidelity designs, etc.) that explains the high-level narrative of why an idea or concept will improve people’s lives.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;They should be inspiring, get people on the same page and excited about a vision, but still be realistic.&lt;/p&gt;
+
+&lt;p&gt;It’s &lt;em&gt;not&lt;/em&gt; a roadmap, a spec, a detailed design mock, nor does it answer every question about how an upcoming product or feature should work. What eventually gets built won’t be exactly like the North Star.&lt;/p&gt;
+
+&lt;p&gt;They can be used for projects as big as a whole new product or service, or as small as individual features.&lt;/p&gt;
+
+&lt;p&gt;Julie talks about North Stars as very future forward, and primarily videos, but myself and the team have created ones for individual features, and the output was just static screenshots. I&amp;rsquo;ve also called them &amp;ldquo;hero shots&amp;rdquo; and &amp;ldquo;concept mocks.&amp;rdquo; You could argue these aren&amp;rsquo;t &amp;ldquo;North Stars,&amp;rdquo; but spiritually they&amp;rsquo;re the same: get people excited about the future they&amp;rsquo;re building.&lt;/p&gt;
+
+&lt;h2 id="do-s-and-don-ts-for-north-stars"&gt;Do’s and Don’ts for North Stars&lt;/h2&gt;
+
+&lt;p&gt;Simply put, good North Stars distill complex concepts to their essence, and get people excited about the future they’re building towards. These “Dos” and “Don’ts” will guide you to successful North Stars.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Don’t&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Design for an unspecified time in the future&lt;/li&gt;
+&lt;li&gt;Redesign every screen or specify every interaction and design detail&lt;/li&gt;
+&lt;li&gt;Put all the work on the designer&lt;/li&gt;
+&lt;li&gt;Have too many cooks in the kitchen&lt;/li&gt;
+&lt;li&gt;Spend multiple quarters making one&lt;/li&gt;
+&lt;li&gt;Do it “for fun”, or because someone said you’re not “innovating enough”, or because you’re bored with the current experience&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Do&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Set a target timeframe for when this could be achieved. In my experience at high-growth startups, a timescale of 6–24 months is best for most features or products, but it will depend on your project and needs.&lt;/li&gt;
+&lt;li&gt;Scope it aggressively to 1-2 screens, a handful of use cases, a persona — something to set the focus on the most important aspect of a future product or feature. You’re trying to sell a vision, not answer every question. Good North Stars should tell a story in just a couple of screens.&lt;/li&gt;
+&lt;li&gt;North Stars should be a cross-functional effort, like any product work. Expecting the designer to “come up with the vision” without input from engineering, PM, and other stakeholders is doomed to fail.&lt;/li&gt;
+&lt;li&gt;Conversely to the above, too many people involved slows down the process, leads to too many opinions, and takes too long to get to consensus. The triad (design/eng/PM) is usually the right group size.&lt;/li&gt;
+&lt;li&gt;A north star should take somewhere between days and weeks to create (maybe months if it’s a multi-year vision with filming and editing to do), depending on the time frame and scope of the future vision you’re trying to communicate.&lt;/li&gt;
+&lt;li&gt;North Stars need to be tied to concrete initiatives that are actually going to be built. Doing them speculatively will be a frustrating waste of time for everyone involved.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="north-stars-that-worked"&gt;North Stars That Worked&lt;/h2&gt;
+
+&lt;p&gt;At both &lt;a href="https://www.launchdarkly.com"&gt;LaunchDarkly&lt;/a&gt; and my former company, &lt;a href="https://www.gladly.com"&gt;Gladly&lt;/a&gt;, we’d make “hero shots” of features we’re planning to build for roadmap presentations and sales decks. They’re a single screen that communicated the feature to prospects. We’d usually spend a few hours designing this 1 screen to represent a whole concept. It forced us to distill complex features down to their essence. When design and development actually kicked off, they kept our focus on the purist version of the idea. There were a few times when features were getting too complex, or we were over-optimizing for edge cases, and the “hero shots” reoriented the team back to the essence of the concept.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Hero shot for LaunchDarkly's &amp;quot;global search&amp;quot;" src="/images/2022-north-stars/ld-global-search.png?1650839464" /&gt;
+&lt;em&gt;Hero shot for LaunchDarkly’s “global search”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Hero shot for approvals in LaunchDarkly" src="/images/2022-north-stars/ld-approvals.png?1650839464" /&gt;
+&lt;em&gt;Hero shot for approvals in LaunchDarkly&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id="north-stars-that-didn-t-work"&gt;North Stars That Didn’t Work&lt;/h1&gt;
+
+&lt;p&gt;While at Optimizely, myself and a couple of other designers worked on a “North Star” (which we called a “concept car”) to envision what the product would do in some far off future (we didn’t have a specific time frame in mind). We were tapped by the co-founder to do this as a way of getting the company excited about the future of the product, get investors bought into our vision, and to sell candidates on joining the company. It was &lt;em&gt;not&lt;/em&gt; tied to any product initiatives, nor did it feed into product strategy.&lt;/p&gt;
+
+&lt;p&gt;We spent months speculating on a bunch of cool new features, redesigning the UI, and rethinking the core flows. The end result looked awesome and was packed full of new stuff that solved existing pain points. The company was excited about this potential future we could build.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Optimizely's &amp;quot;concept car&amp;quot;" src="/images/2022-north-stars/optimizely-concept-car.png?1650839464" /&gt;
+&lt;em&gt;Optimizely&amp;rsquo;s &amp;ldquo;concept car&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;But it went nowhere. It was shared with the company, shown to some investors and candidates, but ultimately none of it was built. It was way too broad in scope, had a non-specific time horizon that was too long, wasn’t tied to any product initiatives, wasn’t an input to product strategy, didn’t tell a story, and wasn’t cross-functional. Basically, we did everything wrong.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://medium.com/design-optimizely/the-product-designer-s-concept-car-24868ce8792"&gt;Here’s an article about the project&lt;/a&gt;. It sounds amazing, but in reality the concept car had no wheels.&lt;/p&gt;
+
+&lt;h2 id="in-closing"&gt;In Closing&lt;/h2&gt;
+
+&lt;p&gt;When used properly, North Stars can be a fantastic tool to accelerate projects and sell a vision. But when used incorrectly, they’re a frustrating waste of time. Hopefully now you have some guidance on when and how to do North Stars.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>How I unknowingly upped my visual design game</title>
     <link rel="alternate" href="http://jlzych.com/2022/04/10/how-i-unknowingly-upped-my-visual-design-game/"/>
@@ -415,89 +500,6 @@
 &lt;hr&gt;
 
 &lt;p&gt;So ya. 2020, I won&amp;rsquo;t miss ya. But your hardships pushed me to grow. Now here&amp;rsquo;s the door.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Books Read 2020</title>
-    <link rel="alternate" href="http://jlzych.com/2021/01/03/books-read-2020/"/>
-    <id>http://jlzych.com/2021/01/03/books-read-2020/</id>
-    <published>2021-01-03T21:30:00Z</published>
-    <updated>2021-01-03T21:30:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;2020. A year of isolation and social distancing and quarantining. Sounds like it should be a great year for reading, right? Well, not as much as I would have guessed. I read 28 books this year, which is less than last year (only by 2), but still significantly more than the previous 2 years. So not bad, but not as great as I would have expected.&lt;/p&gt;
-
-&lt;p&gt;I shifted more of my leisure/quarantine time to side projects and artist dates, which have been very fulfilling, so no regrets there. Also, I read 4 books that were over 1,000 pages, so all in all I consider 2020 a solid year for reading.&lt;/p&gt;
-
-&lt;p&gt;A few other things of note:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;I read 5 fiction books, which is still low but what can I say, fact is stranger than fiction. And books like Robert Caro&amp;rsquo;s Lyndon Johnson biography and Matthew Desmond&amp;rsquo;s &lt;em&gt;Evicted&lt;/em&gt; read like fiction, and to me are more compelling because they&amp;rsquo;re recounting events that actually happened. Even so, the right fiction can be a nice form of escapism, so I do want to dial up the fiction more in the coming year (don&amp;rsquo;t I say this every year?).&lt;/li&gt;
-&lt;li&gt;Design, color, typography, and lettering books once again make up a significant portion of my reading list (about a third). I can&amp;rsquo;t stop, won&amp;rsquo;t stop reading them. They help me grow professionally and fulfill me creatively.&lt;/li&gt;
-&lt;li&gt;8 books were written by women, and 5 by people of color (3 being both). This is a fairly low, but not abysmal, percentage overall, so I should try to dial this up in 2021.&lt;/li&gt;
-&lt;li&gt;I moved my reading list to Notion! Which makes it easier to keep track of counts, dates, authors, filter, sort, etc. &lt;a href="https://www.notion.so/42711b1983f74be698cdeac8c9bb3da2"&gt;Check it out here&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Links below are Amazon Affiliate links, which earn me a small kickback.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id="favorite-books-of-the-year"&gt;Favorite books of the year&lt;/h1&gt;
-
-&lt;h2 id="path-to-power-and-means-of-ascent-by-robert-caro"&gt;&lt;em&gt;Path to Power&lt;/em&gt; and &lt;em&gt;Means of Ascent&lt;/em&gt; by Robert Caro&lt;/h2&gt;
-
-&lt;p&gt;I kicked off the year with &lt;em&gt;&lt;a href="https://amzn.to/2X5H9aH"&gt;Path to Power&lt;/a&gt;&lt;/em&gt;, volume 1 of 5 (potentially more? He&amp;rsquo;s still writing it) of Robert Caro&amp;rsquo;s Lyndon B. Johnson biography. I read most of it during our honeymoon, trekking through Patagonia for 5 days with this 1,000+ page beast in my pack (#worthit). I picked up volume 2, &lt;em&gt;&lt;a href="https://amzn.to/2KWpwI1"&gt;Means of Ascent&lt;/a&gt;&lt;/em&gt;, later in the year, and while slower than volume 1, was still excellent. Caro is by far the best political writer there is. The depth of his research, and the way he makes what should be dry political maneuverings into Shakespearian drama is incredible. It inspires me to be better in my craft.&lt;/p&gt;
-
-&lt;p&gt;Beyond just being well-written, the content resonated in these polarizing political times because a large chunk of &lt;em&gt;Means of Ascent&lt;/em&gt; is about how Lyndon stole the 1948 senatorial race by buying votes from counties and unregistered voters, and cemented his win with legal maneuvering. Sound familiar? Knowing all this transpired previously made me very concerned that it could happen again this year. Thankfully it didn&amp;rsquo;t, and fraudulent votes didn&amp;rsquo;t seem to be an issue, but even so it&amp;rsquo;s wild to read about how he stole a senatorial election, concealed it, and went on to become president.&lt;/p&gt;
-
-&lt;h2 id="the-artists-way-by-julia-cameron"&gt;&lt;em&gt;The Artist&amp;rsquo;s Way&lt;/em&gt; by Julia Cameron&lt;/h2&gt;
-
-&lt;p&gt;I wrote a &lt;a href="/2020/09/14/my-experience-with-the-artist-s-way/"&gt;whole post about this book&lt;/a&gt;, so I don&amp;rsquo;t have much to add and you should just go read that instead. I will say, though, that I continue to use the techniques in this book and have made morning pages (and to a lesser extent, &lt;a href="/2020/11/23/learning-the-true-power-of-artist-dates/"&gt;artist dates&lt;/a&gt;) a part of my regular routine. I can&amp;rsquo;t recommend &lt;a href="https://amzn.to/3hDdwpj"&gt;this book&lt;/a&gt; highly enough to anyone who wants to tap into their true creative potential (hence the star rating 🌟).&lt;/p&gt;
-
-&lt;h2 id="vernacular-eloquence-by-peter-elbow"&gt;&lt;em&gt;Vernacular Eloquence&lt;/em&gt; by Peter Elbow&lt;/h2&gt;
-
-&lt;p&gt;Another book that I wrote an &lt;a href="/2020/11/19/notes-from-vernacular-eloquence/"&gt;entire post&lt;/a&gt; on, so just go read that. Definitely the most impactful book I&amp;rsquo;ve read in terms of making me a better writer. It also highlights lots of failures in our school system, racial and systemic biases perpetuated through education and reading and writing. Reading this during the George Floyd protests made those sections especially impactful. I&amp;rsquo;m still thinking about that stuff today.&lt;/p&gt;
-
-&lt;h2 id="interactions-of-color-by-josef-albers"&gt;&lt;em&gt;Interactions of Color&lt;/em&gt; by Josef Albers&lt;/h2&gt;
-
-&lt;p&gt;The third book that I wrote &lt;a href="/2020/04/29/exercises-from-interactions-of-color-by-josef-albers/"&gt;an entire post&lt;/a&gt; on. This book took me about 5 years to get through, with many fits and starts in between. I&amp;rsquo;m really glad I read the book and, more crucially, did all the exercises. Reading it without doing the exercises is a waste of time. The whole point of this book is the exercises. It completely changed the way I look at color, and has made me much more attuned to the characteristics of colors and, more importantly, the interactions between colors. Wholly recommended if you want to be a better designer or artist.&lt;/p&gt;
-
-&lt;h2 id="colorless-tsukuru-tazaki-and-his-years-of-pilgrimage-by-haruki-murakami"&gt;&lt;em&gt;Colorless Tsukuru Tazaki and his Years of Pilgrimage&lt;/em&gt; by Haruki Murakami&lt;/h2&gt;
-
-&lt;p&gt;I picked &lt;a href="https://amzn.to/356t2X9"&gt;this book&lt;/a&gt; up on whim when I saw it in the recommended section at &lt;a href="https://www.greenapplebooks.com/"&gt;Green Apple Books&lt;/a&gt;. I had somehow never heard of it before, despite being a Murakami fan, and ended up thoroughly enjoying it. It resonated during the pandemic since it&amp;rsquo;s about isolation and loss and discovering who you are.&lt;/p&gt;
-
-&lt;h2 id="full-reading-list"&gt;Full reading list&lt;/h2&gt;
-
-&lt;p&gt;Also in &lt;a href="https://www.notion.so/42711b1983f74be698cdeac8c9bb3da2?v=f79b71426fbb4416be9eafbb32432f7a"&gt;Notion&lt;/a&gt;, which I keep up-to-date with what I&amp;rsquo;m currently reading, and includes previous lists.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Colorless Tsukuru Tagalog and His Years of Pilgrimage&lt;/em&gt; by Haruki Murakami (Dec 9, 2020) Recommended? 👍&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;The 99% Invisible City&lt;/em&gt; by Roman Mars and Kirk Kohlstedt (Dec 26, 2020) 👍&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;11/21/63&lt;/em&gt; by Stephen King (Nov 9, 2020)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Bluest Eyes&lt;/em&gt; by Toni Morrison (Sep 21, 2020)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Someone who will love you in all your damaged glory&lt;/em&gt; by Raphael Bob-Waksberg (Sep 10, 2020) 👍&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;The Color of Law&lt;/em&gt; by Richard Rothstein (Aug 31, 2020) 👍&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;The Designer’s Dictionary of Color&lt;/em&gt; by Sean Adams (Aug 1, 2020) 👍&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Means of Ascent&lt;/em&gt; by Robert Caro (Aug 26, 2020) 👍👍&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;The Multi-hyphenate Life&lt;/em&gt; by Emma Gannon (Jul 16, 2020)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;How to be an Antiracist&lt;/em&gt; by Ibram X. Kendi (Jul 13, 2020) 🙌&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;My Year I’d Rest and Relaxation&lt;/em&gt; by Otessa Moshfegh (Jun 25, 2020) 👍&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Why Have Kids&lt;/em&gt; by Jessica Valenti (Jun 7, 2020)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;The Artist&amp;rsquo;s Way: A Spiritual Path to Higher Creativity&lt;/em&gt; by Julia Cameron (Aug 28, 2020) 🌟&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Vernacular Eloquence: What Speech Can Bring to Writing&lt;/em&gt; by Peter Elbow (Sep 7, 2020) 👍👍&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;How to do Nothing&lt;/em&gt; by Jenny Odell (May 26, 2020) 👍&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Range: Why Generalists Triumph in a Specialized World&lt;/em&gt; by David Epstein (May 13, 2020)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Vintage Hand Lettering&lt;/em&gt; by Lisa Quine (Apr 26, 2020) 👍&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Leonardo da Vinci&lt;/em&gt; by Walter Isaacson (Apr 24, 2020)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Emotional Design&lt;/em&gt; by Aaron Walter (Apr 12, 2020) 👍&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;The Stroke: Theory of Writing&lt;/em&gt; by Gerri Noordzij (Apr 5, 2020) 👍&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Interactions of Color&lt;/em&gt; by Josef Albers (Mar 21, 2020) 🙌 (started sometime in 2015)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Design as Art&lt;/em&gt; by Bruno Munari (Mar 16, 2020)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Creative Spaces&lt;/em&gt; by Ted Vadakan and Angie Myung (Mar 16, 2020)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Evicted&lt;/em&gt; by Matthew Desmond (Mar 8, 2020)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Wabi Sabi&lt;/em&gt; by Leonard Koren (Feb 15, 2020)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Path to Power&lt;/em&gt; by Robert Caro (Feb 12, 2020) 👍👍&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Writing is Designing&lt;/em&gt; by Michael J. Metts and Andy Welfle (Feb 6, 2020) 👍&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Moonwalking with Einstein&lt;/em&gt; by Josh Foer (Jan 19, 2020)&lt;/li&gt;
-&lt;/ul&gt;
 </content>
   </entry>
 </feed>
