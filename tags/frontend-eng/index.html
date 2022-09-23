@@ -28,7 +28,7 @@
 <meta name="msapplication-TileColor" content="#fffef6">
 <meta name="theme-color" content="#ffffff">
 <script src='//cdn.optimizely.com/js/1111070510.js'></script>
-<link href="/stylesheets/application.css?1655329497" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/application.css?1663952973" media="screen" rel="stylesheet" type="text/css" />
 <link href='/feed.xml' rel='alternate' title='RSS for Jeff Zych' type='application/rss+xml'>
 <script src='//use.typekit.net/okn2nfu.js' type='text/javascript'></script>
 <script>
@@ -76,6 +76,19 @@ This Happy Cog article by Stephen Caver perfectly encapsulates why we hire UI En
 </div>
 </div>
 </div>
+<svg viewBox='0 0 100% 100%' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg' id='noiseSvg'>
+  <filter id='noiseFilter'>
+    <feTurbulence
+      type='fractalNoise'
+      baseFrequency='.75'
+      numOctaves='2'
+      stitchTiles='stitch'/>
+  </filter>
+
+  <rect id='noise' width='100%' height='100%' filter='url(#noiseFilter)'/>
+  <rect id='noiseContrastIncreaser' width='100%' height='100%' fill='black'>
+</svg>
+
 <footer id='site-footer'>
 <p>
 &copy; 2010&ndash;2022 Jeff Zych
