@@ -37,7 +37,7 @@
 <meta name="msapplication-TileColor" content="#fffef6">
 <meta name="theme-color" content="#ffffff">
 <script src='//cdn.optimizely.com/js/1111070510.js'></script>
-<link href="/stylesheets/application.css?1664231602" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/application.css?1668725563" media="screen" rel="stylesheet" type="text/css" />
 <link href='/feed.xml' rel='alternate' title='RSS for Jeff Zych' type='application/rss+xml'>
 <script src='//use.typekit.net/okn2nfu.js' type='text/javascript'></script>
 <script>
@@ -61,6 +61,164 @@
 </nav>
 
 <div class='content'>
+<article>
+<time class='article__date' datetime='2022-11-17'>
+Posted on
+Nov 17, 2022
+by Jeff Zych
+</time>
+<h1 class='article__title'><a href="/2022/11/17/experimenting-with-layering-filtering-and-masking-in-css/">Experimenting with layering, filtering, and masking in CSS</a></h1>
+<p>I’ve recently been doing some experiments with layering, filtering, and masking in CSS. The language has come a long way in the past few years, with properties like <code>filter</code>, <code>mask-image</code>, <code>mix-blend-mode</code>, additional gradient types like <code>radial-gradient</code>, and more, opening the door for Photoshop-like effects that weren’t possible before.</p>
+
+<p>I did these in CSS, as opposed to Figma or Photoshop (where they are usually trivial), partly to see if I could, and partly because CSS provides a lot of advantages over graphics programs: they can scale and be responsive to browser/device sizes, dark and light modes can be controlled via CSS variables (which I didn’t do but it’s possible), they can respond to mouse movement (which I also didn’t experiment with but it’s possible), and they can have scroll effects like perspective scrolling (which I did experiment with).</p>
+
+<p>I followed some tutorials and tweets (which I’ll link to), and pushed some of those in new directions.</p>
+
+<h2 id="adding-noise-via-svg-filters">Adding noise via SVG filters</h2>
+
+<p>I was inspired by <a href="https://twitter.com/FonsMans/status/1569708218351247366?s=20&amp;t=K2ImmxsO7p0NhVwAUwXEdg">this Tweet</a> by <a href="https://twitter.com/FonsMans">Fons Mans</a>, where he suggests adding noise to gradients to give them an extra level of polish and pop. This got me wondering how I could do this on the web, and I remembered seeing a tutorial on CSS-Tricks ages ago about how to add noise to backgrounds programmatically via SVG filters. Actually it turned out it was two articles: <a href="https://css-tricks.com/grainy-gradients/">Grainy gradients</a> by <a href="https://twitter.com/jimmmy">@jimmmy</a>, and <a href="https://css-tricks.com/creating-patterns-with-svg-filters/">Creating patterns with SVG filters</a> by <a href="https://twitter.com/finnhvman">@finnhvman</a>.</p>
+
+<p>I decided to add some noise to a couple of gradients on <a href="http://jlzych.com">my site</a>
+ — the background of the main layout, and the header of the <a href="http://jlzych.com/writing">writing page</a>. It’s subtle, but interesting.</p>
+
+<p><img alt="Before and after images of my site's background gradient" src="/images/2022-css-layering/bg-gradient-before-after.png" /></p>
+
+<p><img alt="Before and after images of my writing page's header gradient" src="/images/2022-css-layering/writing-before-after.png?1668725562" /></p>
+
+<p>It was a fun project to figure out how to do it in code. The tl;dr is I generated a noise filter with SVG, and applied it to an <code>:after</code> element and set <code>mix-blend-mode</code> to <code>overlay</code>.</p>
+
+<h3 id="blobby-background-gradients-with-noise">Blobby background gradients with noise</h3>
+
+<p>Fons’ tweet also shows how to layer, blur, and blend elements together to make interesting background gradients in Figma, which I also did in CSS:</p>
+
+<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="gOzoymY" data-user="jlzych" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<span>See the Pen <a href="https://codepen.io/jlzych/pen/gOzoymY">
+Background gradient blobs with noise</a> by Jeff (<a href="https://codepen.io/jlzych">@jlzych</a>)
+on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+<p>I also created these stage lights in CSS from a picture I saw in the NY Times:</p>
+
+<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="dyemxrQ" data-user="jlzych" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<span>See the Pen <a href="https://codepen.io/jlzych/pen/dyemxrQ">
+Stage lights</a> by Jeff (<a href="https://codepen.io/jlzych">@jlzych</a>)
+on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+<p>One last one inspired by the design on one of my wife’s purses:</p>
+
+<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="NWzPyJE" data-user="jlzych" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<span>See the Pen <a href="https://codepen.io/jlzych/pen/NWzPyJE">
+Blobby gradient background</a> by Jeff (<a href="https://codepen.io/jlzych">@jlzych</a>)
+on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+<h2 id="halftone-patterns">Halftone patterns</h2>
+
+<p>I saw this cool tutorial on creating <a href="https://css-irl.info/css-halftone-patterns/">halftone patterns in CSS</a> alone, so I followed that tutorial first to create this:</p>
+
+<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="zYaONyJ" data-user="jlzych" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<span>See the Pen <a href="https://codepen.io/jlzych/pen/zYaONyJ">
+CSS Halftone pattern</a> by Jeff (<a href="https://codepen.io/jlzych">@jlzych</a>)
+on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+<p>Then I extended that idea to do scan lines:</p>
+
+<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="vYrBpEO" data-user="jlzych" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<span>See the Pen <a href="https://codepen.io/jlzych/pen/vYrBpEO">
+CSS Scan Lines pattern</a> by Jeff (<a href="https://codepen.io/jlzych">@jlzych</a>)
+on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+<p>Then I extended <em>that</em> idea to do circles radiating out of Frank Zappa’s eye (which was inspired by a photo in the record <em>Absolutely Free</em>:</p>
+
+<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="JjZjGNq" data-user="jlzych" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<span>See the Pen <a href="https://codepen.io/jlzych/pen/JjZjGNq">
+Radiating circles overlay</a> by Jeff (<a href="https://codepen.io/jlzych">@jlzych</a>)
+on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+<p><img alt="Zoomed in picture of radial gradient on Zappa's eye in Absolutely Free" src="/images/2022-css-layering/Zappa-eye-zoom-in.jpg" /></p>
+
+<p>All of those inspired me to do a motion blur type pattern by blurring SVG noise in one direction, and layering that on top of some stripes. It didn’t quite come out how I had envisioned (I wanted to get it to look more like putting some paint on a canvas and scraping it down), but it’s kinda cool in its own way:</p>
+
+<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="qBKBJej" data-user="jlzych" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<span>See the Pen <a href="https://codepen.io/jlzych/pen/qBKBJej">
+Motion blur experiment</a> by Jeff (<a href="https://codepen.io/jlzych">@jlzych</a>)
+on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+<h2 id="trippy-pop-art">Trippy pop art</h2>
+
+<p>All of those led me to create some trippy pop art that uses layering and blending to get different colors, and perspective for different scroll speeds so each layer moves across each other at different rates. Scroll within each of these Codepen embeds to see what I mean.</p>
+
+<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="mdKJdJX" data-user="jlzych" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<span>See the Pen <a href="https://codepen.io/jlzych/pen/mdKJdJX">
+Trippy pop art stuff</a> by Jeff (<a href="https://codepen.io/jlzych">@jlzych</a>)
+on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="XWYbYOv" data-user="jlzych" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<span>See the Pen <a href="https://codepen.io/jlzych/pen/XWYbYOv">
+Trippy pop art with fade</a> by Jeff (<a href="https://codepen.io/jlzych">@jlzych</a>)
+on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="yLENQyr" data-user="jlzych" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<span>See the Pen <a href="https://codepen.io/jlzych/pen/yLENQyr">
+Trippy pop art waves</a> by Jeff (<a href="https://codepen.io/jlzych">@jlzych</a>)
+on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+<p>This one’s my favorite 😄</p>
+
+<h2 id="card-with-fancy-border">Card with fancy border</h2>
+
+<p>The last thing I did was create this card with a fancy gradient border, inspired by a design I saw somewhere else (I can&rsquo;t remember exactly where), which uses some layering and blending techniques from above but isn’t nearly as experimental or “out there” as some of the previous stuff.</p>
+
+<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="JjZbKbB" data-user="jlzych" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<span>See the Pen <a href="https://codepen.io/jlzych/pen/JjZbKbB">
+Card with fancy border</a> by Jeff (<a href="https://codepen.io/jlzych">@jlzych</a>)
+on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+<h2 id="fin">Fin</h2>
+
+<p>That’s all I’ve got for now. They’re fun to make, and I feel like I could make a lot more of these since each one inspires new ideas. Plus I’m a lot more attuned to seeing gradients and layers in the world now – lights, shadows, clothing, purses, etc. – which makes me want to figure out how to recreate them in CSS.</p>
+
+<p>Bon appétit!</p>
+
+<footer class='article__footer'>
+<div class='tags'>
+<a class="tag" title="Articles tagged #frontend dev" href="/tags/frontend-dev/">#frontend dev</a>
+<a class="tag" title="Articles tagged #visual design" href="/tags/visual-design/">#visual design</a>
+</div>
+</footer>
+</article>
+
 <article>
 <time class='article__date' datetime='2022-10-24'>
 Posted on
@@ -427,74 +585,6 @@ by Jeff Zych
 <div class='tags'>
 <a class="tag" title="Articles tagged #product design" href="/tags/product-design/">#product design</a>
 <a class="tag" title="Articles tagged #visual design" href="/tags/visual-design/">#visual design</a>
-</div>
-</footer>
-</article>
-
-<article>
-<time class='article__date' datetime='2022-01-03'>
-Posted on
-Jan  3, 2022
-by Jeff Zych
-</time>
-<h1 class='article__title'><a href="/2022/01/03/2021-reading-list/">2021 Reading List</a></h1>
-<p>2021 felt like a slow year for reading for me, what with vaccinations and my social life and work life picking up. In actuality, I only read 4 fewer books than last year (24 compared to 28). Not as bad of an outing as I was expecting.</p>
-
-<p>Some interesting stats:</p>
-
-<ul>
-<li>2 books were over 1,000 pages (<em><a href="https://amzn.to/3JymKCd">Master of the Senate</a></em> by Robert Caro and <em>Antkind</em> by Charlie Kaufman)</li>
-<li>Only 3 were fiction</li>
-<li>21 were non-fiction</li>
-<li>10 of those non-fiction were art and design books (still my favorite category, obvs)</li>
-<li>Only 4 were by a person of color, and 6 were by women. I tried to continue my anti-racist reading, and reading perspectives of under-represented peoples, which I did, but this wasn’t a huge improvement over the previous year. It also highlights that my most dominant category, non-fiction (and specifically art and design) are primarily white and male.</li>
-</ul>
-
-<p>Some of my faves (all links are Amazon affiliate links):</p>
-
-<ul>
-<li><a href="https://amzn.to/31iyvLK">House Industries Lettering Manual</a> (Ken Barber) — Amazing lettering book with tons of great techniques, styles, and lessons to up your lettering game. Highly recommended for anyone who wants to letter, or even just admires the art form.</li>
-<li><a href="https://amzn.to/3ENX2WR">The Vanishing Half</a> (Brit Bennett) — Great story of light-skinned black twins who take divergent paths in their adult lives — one passes herself off as white and leaves behind her black heritage, the other remains in black society. An illuminating tale on the arbitrariness of race. (Also, this book has a great cover).</li>
-<li><a href="https://amzn.to/3zh2dNT">The New Jim Crow</a> (Michelle Alexander) — A damning case for how we’ve used the war on drugs and the prison system to systematically keep black people in the lowest social caste in America. These programs don’t specifically target any races the way they’re written, so they don’t <em>technically</em> violate the Civil Rights Act of 1964, but the implementation of these systems target black Americans (and other communities of color). This makes fixing this broken system really difficult since it’s not <em>explicit</em> like the Jim Crow laws were.</li>
-<li><a href="https://amzn.to/3JymKCd">Master of the Senate</a> (Robert Caro) — Caro’s fourth volume of the Lyndon B. Johnson biography does not disappoint. This was a fascinating look at the inner workings of the Senate, its storied history, and how LBJ was able to pass bills despite the institution being designed such that “the rights of a minority must be protected against the tyranny of the majority” (as Caro put it [and in different words, the founding fathers]). Very interesting to read through the lens of today’s political climate as it really highlights why it’s so difficult for any bills of real change to pass and why the Senate is broken. I’d be curious to hear Caro’s perspective on the functioning of today’s Senate given all of his research.</li>
-<li><a href="https://amzn.to/3pNRbN2">This Is Your Mind on Plants</a> (Michael Pollan) — Pollan’s next foray into the effects of chemicals on our brains and consciousness is just as interesting as his previous book. He focuses on just 3 drugs: an upper (caffeine), and downer (opium), and an “outer” (mescaline). He includes their history and a trip report for each (or in caffeine’s place, an <em>anti</em>-trip), which was especially interesting for mescaline since I didn’t know much about that drug (it’s the active chemical in <em>peyote</em>).</li>
-</ul>
-
-<h2 id="full-reading-list">Full reading list</h2>
-
-<p>As always, you can view the full list (past or present) in <a href="https://www.notion.so/42711b1983f74be698cdeac8c9bb3da2">Notion</a>.</p>
-
-<ul>
-<li><em>Validating Product Ideas</em> by Tomer Sharon (finished December 31, 2021)</li>
-<li><em>In pursuit of inspiration</em> by Rae Dunn (finished December 20, 2021)</li>
-<li><em>This is your mind on plants</em> by Michael Pollan 👍 (December 19, 2021)</li>
-<li><em>The typography idea book</em> by Steven Heller &amp; Gail Anderson (December 12, 2021)</li>
-<li><em>Master of the Senate</em> by Robert Caro 👍 (November 25, 2021)</li>
-<li><em>River Days, River Nights</em> by Mark Abramson (October 24, 2021)</li>
-<li><em>Twenty Bits I Learned About Making Fonts</em> by Dan Cederholm 👍 (September 25, 2021)</li>
-<li><em>Twenty Bits I Learned About Design, Business, &amp; Community</em> by Dan Cederholm (September 21, 2021)</li>
-<li><em>Logo Design Love</em> by David Airey 👍 (September 19, 2021)</li>
-<li><em>The Art of Letters</em> by Kris Sowersby (September 14, 2021)</li>
-<li><em>The Cuckoo’s Egg</em> by Cliff Stoll 👍 (August 22, 2021)</li>
-<li><em>The New Jim Crow</em> by Michelle Alexander 👍 (August 14, 2021)</li>
-<li><em>The Wreckage of my Presence</em> by Casey Wilson 😆 (July 19, 2021)</li>
-<li><em>The Outdoor Kitchen</em> by Eric Werner (July 18, 2021)</li>
-<li><em>A Field Guide to Whisky</em> by Hans Offringa (June 12, 2021)</li>
-<li><em>Uncanny Valley</em> by Anna Weiner 👍 (May 4, 2021)</li>
-<li><em>Cubed: The Puzzle of us All</em> by Ernö Rubik (April 18, 2021)</li>
-<li><em>Making Music: 74 Creative Strategies for Electronic Producers</em> by Dennis DeSantis (April 17, 2021)</li>
-<li><em>The Vanishing Half</em> by Brit Bennett 👍 (April 3, 2021)</li>
-<li><em>Eat a Peach</em> by David Chang (February 28, 2021)</li>
-<li><em>Demand-side Sales</em> by Bob Moesta with Greg Engle (February 15, 2021)</li>
-<li><em>Antkind</em> by Charlie Kaufman (February 12, 2021)</li>
-<li><em>Sign Painters</em> by Faythe Levine and Sam Macon (February 1, 2021)</li>
-<li><em>House Industries Lettering Manual</em> by Ken Barber 👍 (January 11, 2021)</li>
-</ul>
-
-<footer class='article__footer'>
-<div class='tags'>
-<a class="tag" title="Articles tagged #books" href="/tags/books/">#books</a>
-<a class="tag" title="Articles tagged #reading list" href="/tags/reading-list/">#reading list</a>
 </div>
 </footer>
 </article>
