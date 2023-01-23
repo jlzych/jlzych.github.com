@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>LaunchDarkly Workflow Builder</title>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QFVVB7QHJP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  
+  gtag('config', 'G-QFVVB7QHJP');
+</script>
+<meta content='width=device-width, initial-scale=1.0, user-scalable=yes' name='viewport'>
+<meta content='black' name='apple-mobile-web-app-status-bar-style'>
+<meta content='yes' name='apple-mobile-web-app-capable'>
+<meta content='TK' name='description'>
+<meta content='Jeff Zych' name='author'>
+<!-- FB Open Graph meta tags -->
+<meta content='blog' property='og:type'>
+<meta content='Jeff Zych&#x27;s Internet Nook' property='og:site_name'>
+<meta content='LaunchDarkly Workflow Builder' property='og:title'>
+<meta content='TK' property='og:description'>
+<meta content='http://jlzych.com/images/case-studies/workflow-builder/1-finished-wfb.png' property='og:image'>
+<meta content='http://jlzych.com/case-studies/launchdarkly-workflow-builder/' property='og:url'>
+<!-- Additional Twitter tags - additive with og: tags -->
+<meta content='summary_large_image' name='twitter:card'>
+<meta name='twitter:creator' value='@jlzych'>
+<!-- From https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=XBbjm0yjQ3">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=XBbjm0yjQ3">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=XBbjm0yjQ3">
+<link rel="manifest" href="/site.webmanifest?v=XBbjm0yjQ3">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=XBbjm0yjQ3" color="#adebef">
+<link rel="shortcut icon" href="/favicon.ico?v=XBbjm0yjQ3">
+<meta name="msapplication-TileColor" content="#fffef6">
+<meta name="theme-color" content="#ffffff">
+<script src='//cdn.optimizely.com/js/1111070510.js'></script>
+<link href="/stylesheets/application.css?1674450361" media="screen" rel="stylesheet" type="text/css" />
+<link href='/feed.xml' rel='alternate' title='RSS for Jeff Zych' type='application/rss+xml'>
+<script src='//use.typekit.net/okn2nfu.js' type='text/javascript'></script>
+<script>
+  try{Typekit.load();}catch(e){}
+</script>
+</head>
+<body>
+<div class='container'>
+<div class='grid' role='main'>
+<h1 class='monogram'>
+<a title="Home" href="/"><svg width="152" height="147" viewBox="0 0 152 147" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116.06 45.562l-5.492-.445 1.278 5.36c.806 3.376.767 9.739-1.222 16.344-.787 2.612-1.85 5.17-3.222 7.534-1.883-3.464-4.151-6.144-6.619-8.203-3.495-2.917-7.174-4.388-10.186-5.154l.041-.058c2.152-3.057 4.554-7.338 4.554-11.802 0-4.418-2.017-8.23-4.783-10.883-2.732-2.621-6.462-4.368-10.308-4.368-1.227 0-2.394.184-3.437.426.003-.139.005-.277.005-.415 0-2.724-.662-5.28-2.424-7.162-1.8-1.924-4.138-2.501-6.116-2.501-3.189 0-5.205 2.142-6.208 4.12-.99 1.946-1.37 4.302-1.37 6.571 0 2.57.684 5.25 2.012 7.426-1.505 2.49-3.51 5.268-5.905 8.26-3.32 4.151-7.276 8.576-11.46 13.043C42.935 55 40.92 46.677 40.092 39.076c-.214-1.961-.82-4.704-3.322-6.163-1.198-.699-2.421-.842-3.361-.828-.913.014-1.8.18-2.514.338-1.617.357-3.634 1.053-5.035 2.822-1.476 1.862-1.606 4.047-1.41 5.823 1.263 11.46 5.117 21.826 8.736 31.561.315.848.629 1.691.939 2.53l-1.444 1.465c-5.608 5.685-11.38 11.538-15.944 17.664C11.152 101.786 7 110.162 7 119.925c0 5.271 1.642 10.572 5.448 14.586 3.852 4.063 9.518 6.382 16.71 6.382 7.52 0 13.89-3.083 18.226-9.204 4.203-5.933 6.24-14.344 6.24-24.693 0-9.248-2.285-19.698-4.925-30.024 6.2-6.497 12.311-13.262 17.196-19.722 2.685-3.55 5.055-7.081 6.88-10.49 1.416-.237 2.574-.642 3.494-.963l.091-.031c1.404-.49 2.218-.751 3.32-.751-.027 0-.024 0 .002.01.1.032.541.177 1.084.815.606.71 1.123 1.826 1.123 3.298 0 2.345-1.021 5.16-2.613 7.844-1.594 2.687-3.411 4.659-4.337 5.366-1.259.961-2.211 2.301-2.518 3.933a5.872 5.872 0 00.858 4.298c1.437 2.204 4.919 3.853 8.085 1.608 1.376-.976 2.169-1.184 2.858-1.184.703 0 3.992.61 7.13 3.927 1.89 1.998 3.839 5.11 5.036 9.919-2.562 1.55-5.014 2.985-7.37 4.364a829.64 829.64 0 00-3.955 2.325c-4.228 2.505-8.141 4.931-11.446 7.506-6.761 5.268-11.36 11.49-11.36 20.881 0 11.881 10.481 19.741 20.023 19.741 14.506 0 30.466-14.74 30.466-39.577 0-4.384-.307-8.306-.868-11.811a61.256 61.256 0 007.278-7.918c4.494-5.868 8.139-13.006 8.151-19.909.007-3.758-.801-7.27-2.708-10.014-1.987-2.861-4.974-4.587-8.539-4.875zM96.897 98.117l.627-.327c-.3 11.525-2.834 19.182-5.882 23.895-3.256 5.033-6.942 6.559-9.362 6.559-1.486 0-3.858-.601-5.776-2.029-1.77-1.316-3.098-3.267-3.098-6.29 0-5.054 3.695-9.613 10.096-14.077 3.092-2.157 6.555-4.111 10.003-5.948a457.19 457.19 0 013.392-1.783zm-69.892 2.28c3.441-4.507 7.453-8.799 11.356-12.81 1.904 6.443 3.182 12.887 3.182 19.709 0 10.918-2.616 16.349-5.111 19.039-2.465 2.657-5.362 3.229-7.273 3.229-6.021 0-10.694-3.802-10.694-9.639 0-6.095 3.334-12.709 8.54-19.528z" fill="#FED874" stroke="#FED874" stroke-width="8"/><path d="M38.709 24.084c0-2.583-1.34-4.632-2.83-5.921C34.405 16.89 32.391 16 30.266 16c-1.823 0-3.858.561-5.451 2.12-1.621 1.586-2.308 3.735-2.308 5.964 0 2.038.51 4.237 2.012 5.986 1.579 1.838 3.796 2.648 6.088 2.648 2.65 0 4.8-1.222 6.192-2.984 1.32-1.67 1.909-3.734 1.909-5.65z" fill="#FED874" stroke="#FED874" stroke-width="8"/><path d="M122.06 42.562l-5.492-.445 1.278 5.36c.806 3.376.767 9.739-1.222 16.344-.787 2.612-1.85 5.17-3.222 7.534-1.883-3.464-4.151-6.144-6.619-8.203-3.495-2.917-7.174-4.388-10.186-5.154l.041-.058c2.152-3.057 4.554-7.338 4.554-11.802 0-4.418-2.017-8.23-4.783-10.883-2.732-2.621-6.462-4.368-10.308-4.368-1.227 0-2.394.184-3.437.426.003-.139.005-.277.005-.415 0-2.724-.662-5.28-2.424-7.162-1.8-1.924-4.138-2.501-6.116-2.501-3.189 0-5.205 2.142-6.208 4.12-.99 1.946-1.37 4.302-1.37 6.571 0 2.57.684 5.25 2.013 7.426-1.506 2.49-3.512 5.268-5.906 8.26-3.32 4.151-7.276 8.576-11.46 13.043C48.935 52 46.92 43.677 46.092 36.076c-.214-1.961-.82-4.704-3.322-6.163-1.198-.699-2.421-.842-3.361-.828-.913.014-1.8.18-2.514.338-1.617.357-3.634 1.053-5.035 2.822-1.476 1.862-1.606 4.047-1.41 5.823 1.263 11.46 5.117 21.826 8.736 31.561.315.848.629 1.691.939 2.53l-1.444 1.465c-5.608 5.685-11.38 11.538-15.944 17.664C17.152 98.786 13 107.162 13 116.925c0 5.271 1.642 10.572 5.448 14.586 3.852 4.063 9.518 6.382 16.71 6.382 7.52 0 13.89-3.083 18.226-9.205 4.203-5.932 6.24-14.343 6.24-24.692 0-9.248-2.285-19.698-4.925-30.024 6.2-6.497 12.311-13.262 17.196-19.722 2.685-3.55 5.055-7.081 6.88-10.49 1.416-.237 2.574-.642 3.494-.963l.091-.031c1.404-.49 2.218-.751 3.32-.751-.027 0-.024 0 .002.01.1.032.541.177 1.084.815.606.71 1.123 1.826 1.123 3.298 0 2.345-1.021 5.16-2.613 7.844-1.594 2.687-3.411 4.659-4.337 5.366-1.259.961-2.211 2.301-2.518 3.933a5.872 5.872 0 00.858 4.298c1.437 2.204 4.919 3.853 8.085 1.608 1.376-.976 2.169-1.184 2.858-1.184.703 0 3.992.61 7.13 3.927 1.89 1.998 3.839 5.11 5.036 9.919a569.87 569.87 0 01-7.37 4.364c-1.349.79-2.666 1.56-3.955 2.325-4.228 2.505-8.141 4.931-11.446 7.506-6.761 5.268-11.36 11.49-11.36 20.881 0 11.88 10.481 19.741 20.023 19.741 14.506 0 30.466-14.74 30.466-39.577 0-4.384-.307-8.306-.868-11.811a61.256 61.256 0 007.278-7.918c4.494-5.868 8.139-13.006 8.151-19.909.007-3.758-.801-7.27-2.708-10.014-1.987-2.861-4.974-4.587-8.539-4.875zm-19.163 52.555l.627-.327c-.301 11.525-2.834 19.182-5.882 23.895-3.256 5.033-6.942 6.559-9.362 6.559-1.486 0-3.858-.601-5.776-2.029-1.77-1.316-3.098-3.267-3.098-6.29 0-5.054 3.695-9.613 10.096-14.077 3.092-2.157 6.555-4.11 10.003-5.948a453.23 453.23 0 013.392-1.783zm-69.892 2.28c3.441-4.507 7.453-8.799 11.356-12.81 1.904 6.443 3.182 12.887 3.182 19.708 0 10.919-2.616 16.35-5.111 19.04-2.465 2.657-5.362 3.229-7.273 3.229-6.021 0-10.694-3.802-10.694-9.639 0-6.095 3.334-12.709 8.54-19.528z" fill="#FCF398" stroke="#FCF398" stroke-width="8"/><path d="M44.709 21.084c0-2.583-1.34-4.632-2.83-5.921C40.405 13.89 38.391 13 36.266 13c-1.823 0-3.858.562-5.451 2.12-1.621 1.586-2.308 3.735-2.308 5.964 0 2.038.51 4.237 2.012 5.986 1.579 1.838 3.796 2.648 6.088 2.648 2.65 0 4.8-1.222 6.193-2.984 1.32-1.67 1.908-3.734 1.908-5.65z" fill="#FCF398" stroke="#FCF398" stroke-width="8"/><path d="M128.06 39.562l-5.492-.445 1.278 5.36c.806 3.376.767 9.739-1.222 16.344-.787 2.613-1.85 5.17-3.222 7.534-1.883-3.464-4.151-6.144-6.619-8.203-3.495-2.917-7.174-4.388-10.186-5.154l.041-.058c2.152-3.057 4.554-7.338 4.554-11.802 0-4.418-2.017-8.23-4.783-10.883-2.732-2.621-6.462-4.368-10.308-4.368-1.227 0-2.394.184-3.437.426.003-.139.005-.277.005-.415 0-2.724-.662-5.28-2.424-7.162-1.8-1.924-4.138-2.501-6.116-2.501-3.189 0-5.205 2.142-6.208 4.12-.99 1.946-1.37 4.302-1.37 6.571 0 2.57.684 5.25 2.013 7.426-1.506 2.49-3.512 5.268-5.906 8.26-3.32 4.151-7.276 8.576-11.46 13.043C54.935 49 52.92 40.677 52.092 33.076c-.214-1.961-.82-4.704-3.322-6.163-1.198-.699-2.421-.842-3.361-.828-.913.014-1.8.18-2.514.338-1.617.357-3.634 1.053-5.035 2.822-1.476 1.862-1.606 4.047-1.41 5.823 1.263 11.46 5.117 21.826 8.736 31.561.315.848.629 1.691.939 2.53l-1.444 1.465c-5.608 5.685-11.38 11.538-15.944 17.664C23.152 95.786 19 104.162 19 113.925c0 5.271 1.642 10.572 5.448 14.586 3.852 4.063 9.518 6.382 16.71 6.382 7.52 0 13.89-3.083 18.226-9.205 4.203-5.932 6.24-14.343 6.24-24.692 0-9.248-2.285-19.698-4.925-30.024 6.2-6.497 12.311-13.262 17.196-19.722 2.685-3.55 5.055-7.081 6.88-10.49 1.416-.237 2.574-.642 3.494-.963l.091-.031c1.404-.49 2.218-.751 3.32-.751-.027 0-.024 0 .002.01.1.032.541.177 1.084.815.606.71 1.123 1.826 1.123 3.298 0 2.345-1.021 5.16-2.613 7.844-1.594 2.687-3.411 4.659-4.337 5.366-1.259.961-2.211 2.301-2.518 3.933a5.873 5.873 0 00.858 4.298c1.437 2.204 4.919 3.853 8.085 1.608 1.376-.976 2.169-1.184 2.858-1.184.703 0 3.992.61 7.13 3.927 1.889 1.998 3.839 5.11 5.036 9.919a570.345 570.345 0 01-7.37 4.364c-1.349.79-2.666 1.56-3.955 2.325-4.228 2.505-8.141 4.931-11.446 7.506-6.761 5.268-11.36 11.49-11.36 20.881 0 11.88 10.481 19.741 20.023 19.741 14.506 0 30.466-14.74 30.466-39.577 0-4.384-.307-8.306-.868-11.811a61.256 61.256 0 007.278-7.918c4.494-5.868 8.139-13.006 8.151-19.909.007-3.758-.801-7.27-2.708-10.014-1.987-2.861-4.974-4.587-8.539-4.875zm-19.163 52.555l.627-.327c-.301 11.525-2.834 19.182-5.882 23.895-3.256 5.033-6.942 6.559-9.362 6.559-1.486 0-3.858-.601-5.776-2.029-1.77-1.316-3.098-3.267-3.098-6.29 0-5.054 3.695-9.613 10.096-14.077 3.092-2.157 6.555-4.11 10.003-5.948a451.265 451.265 0 013.392-1.783zm-69.892 2.28c3.441-4.507 7.453-8.799 11.356-12.81 1.904 6.443 3.182 12.887 3.182 19.708 0 10.919-2.616 16.35-5.111 19.04-2.465 2.657-5.362 3.229-7.273 3.229-6.021 0-10.694-3.802-10.694-9.639 0-6.095 3.334-12.709 8.54-19.528z" fill="#CCF7AA" stroke="#CCF7AA" stroke-width="8"/><path d="M50.709 18.084c0-2.583-1.34-4.632-2.83-5.921C46.405 10.89 44.391 10 42.266 10c-1.823 0-3.858.562-5.451 2.12-1.621 1.586-2.308 3.735-2.308 5.964 0 2.038.51 4.237 2.012 5.986 1.579 1.838 3.796 2.648 6.088 2.648 2.65 0 4.8-1.222 6.193-2.984 1.32-1.67 1.908-3.734 1.908-5.65z" fill="#CCF7AA" stroke="#CCF7AA" stroke-width="8"/><path d="M134.06 36.562l-5.492-.445 1.278 5.36c.806 3.376.767 9.739-1.222 16.344-.787 2.613-1.85 5.17-3.222 7.534-1.883-3.464-4.151-6.144-6.619-8.203-3.495-2.917-7.174-4.388-10.186-5.154l.041-.058c2.152-3.057 4.554-7.338 4.554-11.802 0-4.418-2.017-8.23-4.783-10.883-2.732-2.621-6.462-4.368-10.308-4.368-1.227 0-2.394.184-3.437.426.003-.139.005-.277.005-.415 0-2.724-.662-5.28-2.424-7.162-1.8-1.924-4.138-2.501-6.116-2.501-3.189 0-5.205 2.142-6.208 4.12-.99 1.946-1.37 4.302-1.37 6.571 0 2.57.684 5.25 2.013 7.426-1.506 2.49-3.512 5.268-5.906 8.26-3.32 4.151-7.276 8.576-11.46 13.043C60.935 46 58.92 37.677 58.092 30.076c-.214-1.961-.82-4.704-3.322-6.163-1.198-.699-2.421-.842-3.361-.828-.913.014-1.8.18-2.514.338-1.617.357-3.634 1.053-5.035 2.822-1.476 1.862-1.606 4.047-1.41 5.823 1.263 11.46 5.117 21.826 8.736 31.561.315.848.629 1.691.939 2.53l-1.444 1.465c-5.608 5.685-11.38 11.538-15.944 17.664C29.152 92.786 25 101.162 25 110.925c0 5.271 1.642 10.572 5.448 14.586 3.852 4.063 9.518 6.382 16.71 6.382 7.52 0 13.89-3.083 18.226-9.205 4.203-5.932 6.24-14.343 6.24-24.692 0-9.248-2.285-19.698-4.925-30.024 6.2-6.497 12.311-13.262 17.196-19.722 2.685-3.55 5.055-7.081 6.88-10.49 1.416-.237 2.574-.642 3.494-.963l.091-.031c1.404-.49 2.218-.751 3.32-.751-.027 0-.024 0 .002.01.1.032.541.177 1.084.815.606.71 1.123 1.826 1.123 3.298 0 2.345-1.021 5.16-2.613 7.844-1.594 2.687-3.411 4.659-4.337 5.366-1.259.961-2.211 2.301-2.518 3.933a5.873 5.873 0 00.858 4.298c1.437 2.204 4.919 3.853 8.085 1.608 1.376-.976 2.169-1.184 2.858-1.184.703 0 3.992.61 7.13 3.927 1.889 1.998 3.839 5.11 5.036 9.919a570.345 570.345 0 01-7.37 4.364c-1.349.79-2.666 1.56-3.955 2.325-4.228 2.505-8.141 4.931-11.446 7.506-6.761 5.268-11.36 11.49-11.36 20.881 0 11.88 10.481 19.741 20.023 19.741 14.506 0 30.466-14.74 30.466-39.577 0-4.384-.307-8.306-.868-11.811a61.256 61.256 0 007.278-7.918c4.494-5.868 8.139-13.006 8.151-19.909.007-3.758-.801-7.27-2.708-10.014-1.987-2.861-4.974-4.587-8.539-4.875zm-19.163 52.555l.627-.327c-.301 11.525-2.834 19.182-5.882 23.895-3.256 5.033-6.942 6.559-9.362 6.559-1.486 0-3.858-.601-5.776-2.029-1.77-1.316-3.098-3.267-3.098-6.29 0-5.054 3.695-9.613 10.096-14.077 3.092-2.157 6.555-4.11 10.003-5.948a451.265 451.265 0 013.392-1.783zm-69.892 2.28c3.441-4.507 7.453-8.799 11.356-12.81 1.904 6.443 3.182 12.887 3.182 19.709 0 10.918-2.616 16.349-5.111 19.039-2.465 2.657-5.362 3.229-7.273 3.229-6.021 0-10.694-3.802-10.694-9.639 0-6.095 3.334-12.709 8.54-19.528z" fill="#ADEBEF" stroke="#ADEBEF" stroke-width="8"/><path d="M56.709 15.085c0-2.584-1.34-4.633-2.83-5.922C52.405 7.89 50.391 7 48.266 7c-1.823 0-3.858.561-5.451 2.12-1.621 1.586-2.308 3.735-2.308 5.965 0 2.037.51 4.236 2.012 5.985 1.579 1.838 3.796 2.648 6.088 2.648 2.65 0 4.8-1.222 6.193-2.984 1.32-1.67 1.908-3.734 1.908-5.65z" fill="#ADEBEF" stroke="#ADEBEF" stroke-width="8"/><g filter="url(#filter0_d)" fill="#FFFFFA" stroke="#FFFFFA" stroke-width="2"><path d="M134.818 38.552l-1.373-.111.32 1.34c.952 3.993.84 10.902-1.268 17.904-1.354 4.495-3.511 8.967-6.681 12.703-2.016-5.58-4.877-9.365-7.955-11.933-5.368-4.48-11.226-5.1-13.795-5.312a47.164 47.164 0 003.119-3.93c2.082-2.957 4.007-6.588 4.007-10.075 0-3.475-1.587-6.538-3.86-8.718-2.264-2.172-5.276-3.533-8.23-3.533-1.84 0-3.564.531-5.067 1.008l-.125.04c-.692.219-1.328.42-1.928.575.445-1.6.687-3.144.687-4.612 0-2.279-.554-3.98-1.614-5.113-1.07-1.143-2.506-1.55-3.926-1.55-1.65 0-2.825 1.082-3.534 2.478-.704 1.387-1.044 3.23-1.044 5.213 0 2.926.982 5.539 2.604 7.193l-.2.366c-1.676 3.022-4.076 6.404-6.954 10.002-4.363 5.452-9.777 11.34-15.328 17.141l-.04-.147c-2.766-10.427-5.51-20.766-6.525-30.08-.199-1.83-.686-3.218-1.85-3.897-.57-.332-1.197-.428-1.806-.419-.602.009-1.251.122-1.912.268-1.394.307-2.576.803-3.33 1.755-.773.975-.935 2.219-.78 3.631 1.221 11.071 4.945 21.095 8.58 30.88a1235.698 1235.698 0 011.584 4.287c-.94.96-1.884 1.919-2.829 2.877-5.604 5.683-11.196 11.354-15.623 17.297C32.757 93.311 29 101.064 29 109.925c0 4.668 1.45 9.175 4.625 12.522 3.185 3.36 8.007 5.446 14.534 5.446 6.609 0 12.038-2.66 15.777-7.939 3.706-5.231 5.688-12.939 5.688-22.958 0-9.321-2.436-20.042-5.247-30.893 6.564-6.833 13.04-13.936 18.126-20.663 2.993-3.959 5.524-7.811 7.31-11.42.01-.023.022-.045.033-.068 1.816-.074 3.224-.565 4.506-1.012l.02-.007c1.399-.488 2.645-.918 4.308-.918.995 0 2.29.612 3.37 1.88 1.059 1.242 1.839 3.044 1.839 5.243 0 3.108-1.309 6.47-3.033 9.375-1.725 2.907-3.777 5.212-5.097 6.22-.771.589-1.242 1.316-1.39 2.102a2.872 2.872 0 00.423 2.106c.738 1.13 2.381 1.831 3.836.799 1.672-1.186 3.066-1.737 4.594-1.737 1.546 0 5.618.962 9.309 4.865 2.593 2.742 5.034 6.977 6.239 13.431-3.256 2.003-6.355 3.817-9.273 5.525-1.34.784-2.643 1.546-3.905 2.294-4.219 2.501-7.989 4.844-11.131 7.293-6.323 4.926-10.204 10.363-10.204 18.514 0 9.963 8.865 16.741 17.023 16.741 12.438 0 27.466-12.953 27.466-36.577 0-4.946-.402-9.232-1.11-12.945a58.276 58.276 0 008.138-8.608c4.335-5.66 7.522-12.154 7.533-18.09.006-3.362-.721-6.21-2.171-8.297-1.471-2.117-3.639-3.38-6.318-3.597zm-20.233 46.866c1.736-.906 3.4-1.775 4.91-2.608.038.858.058 1.745.058 2.662 0 13.206-2.737 22.192-6.392 27.843-3.657 5.653-8.192 7.929-11.881 7.929-2.098 0-5.105-.79-7.567-2.622-2.425-1.804-4.307-4.601-4.307-8.697 0-6.635 4.842-11.978 11.38-16.538 3.242-2.261 6.831-4.282 10.308-6.135 1.179-.627 2.35-1.239 3.491-1.834zM58.389 72.252l.325-.33c2.747 8.184 4.83 16.446 4.83 25.374 0 11.355-2.72 17.638-5.913 21.08-3.185 3.433-6.981 4.188-9.472 4.188-7.234 0-13.694-4.733-13.694-12.639 0-7.113 3.844-14.392 9.156-21.348 4.499-5.894 9.95-11.43 14.768-16.325zM54.709 14.085c0-1.5-.78-2.778-1.793-3.653C51.91 9.563 50.573 9 49.267 9c-1.23 0-2.444.375-3.353 1.265-.917.896-1.406 2.2-1.406 3.82 0 1.571.394 2.99 1.288 4.03.912 1.063 2.236 1.603 3.812 1.603 1.667 0 2.973-.748 3.839-1.844.847-1.073 1.262-2.457 1.262-3.79z"/></g><defs><filter id="filter0_d" x="28" y="8" width="117.307" height="121.893" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1" dy="1"/><feColorMatrix values="0 0 0 0 0.239216 0 0 0 0 0.733333 0 0 0 0 0.827451 0 0 0 1 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow"/><feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/></filter></defs></svg>
+
+<span class='name'>Jeff Zych</span>
+</a>
+</h1>
+<nav class='nav-main'>
+<ul>
+<li><a title="About Jeff Zych" href="/about">About Me</a></li>
+<li><a href="/archives">Archives</a></li>
+</ul>
+</nav>
+
+<div class='content'>
+<h1 class='article__title'>LaunchDarkly Workflow Builder</h1>
+<h2 class='article__subtitle'>How I translated a founder's vision into reality</h2>
+<p>It’s 4am. Your alarm’s going off. You’re bleary-eyed and tired but have to log into LaunchDarkly to rollout your new feature to 5% of your audience. Then you’ll have to do that again the next day to another 5%. And again the next day. And so on until it’s rolled out to 100% of your users.</p>
+
+<aside class="callout callout-right">
+  <h4>Project at-a-glance</h4>
+
+  <p>
+    <strong>My role</strong><br />
+    Shaping and directing the work as the Head of Product Design (at start), then the sole Product Designer (for GA launch)
+  </p>
+
+  <p>
+    <strong>Company</strong><br />
+    LaunchDarkly, the #1 platform for managing feature flags
+  </p>
+
+  <p>
+    <strong>Target customer</strong><br />
+    Developers & release managers
+  </p>
+  <ul>
+    <li>My role: Shaping and directing the work as the Head of Product Design (at start), then the sole Product Designer (for GA launch).
+    <li>Company: LaunchDarkly, the #1 platform for managing feature flags
+    <li>Target customer: Developers & release managers
+    <li>Team: I worked with the leadership team (Co-founder/CTO, SVP Eng/Product) to shape the solution, then a product manager, product designer, engineering manager, and 5 engineers to build and release from early access program (EAP) through a full launch to all Enterprise customers.
+    <li>Timeline: Aug. 2021 to Jan. 2022 (launch to all Enterprise customers), with an early access program starting in Nov. 2021 (EAP start)
+    <li>Impact
+    <ul>
+      <li>Steady adoption from EAP through GA, resulting in some of our biggest accounts relying on it for feature launches.
+      <li>Customer quote: “Feature Workflows saves my team time, helps us to avoid mistakes, and enables us to stage automatic rollouts.” —James Pipe, Head of Product at DroneDeploy
+      <li>Key part of the demo to prospects
+    </ul>
+    <li>Skills used in this project
+      <ul>
+        <li>Led a workshop with product leadership to shape the project by translating the co-founders vision into whiteboarded sketches and lo-fi user flows
+        <li>Directed the work of a product designer
+        <li>Led customer interviews during EAP
+        <li>Visual design and polish of hi-fidelity screens
+      </ul>
+  </ul>
+</aside>
+
+<p>These are the hoops we made our customers (and ourselves) jump through every time they launched a new feature. It was a painful, manual, and occasionally error-prone process. It was an obvious pain point that we should solve, and one that no competitor had a solution to, either.</p>
+
+<p>Our solution was the <strong>Workflow Builder</strong>: a visual way to automate feature launches in LaunchDarkly.</p>
+
+<p><img alt="Screenshot of the finished workflow builder" src="/images/case-studies/workflow-builder/1-finished-wfb.png?1674450361" />
+<em>Screenshot of the finished workflow builder</em></p>
+
+<h2 id="how-d-we-get-to-the-workflow-builder">How’d we get to the workflow builder?</h2>
+
+<p>The pain I described above was well-known to the co-founder — both from experiencing it firsthand, and from talking to customers. As such, he had already had a vision in mind: most software launches are a repeatable process, so we should let customers automate that in LaunchDarkly. Not only would it save time, toil, and prevent errors, but it would be a competitive differentiator to further cement our place as the market leader.</p>
+
+<p>To turn this vision into reality, myself and the PM ran a day-long <strong>workshop</strong> with the co-founder and VP of Engineering &amp; Product.</p>
+
+<p>The first half of the day was <strong>opportunity framing</strong>: what pain points do customers currently have, what are their release processes, and how have other products solved similar challenges (we didn’t look at direct competitors, since they didn’t have anything like this, but rather automation products like Zapier).</p>
+
+<p>The second half of the day was <strong>solution exploration</strong>: whiteboarding all the pieces of the finished solution. We started high-level going through all the screens we’ll need and the places in the product that we’ll need to update, then dove into fleshing those out with more sketches.</p>
+
+<p><img alt="Workshop" src="/images/case-studies/workflow-builder/workshop1.jpg?1674450361" /></p>
+
+<p><img alt="Workshop 2" src="/images/case-studies/workflow-builder/workshop2.jpg?1674450361" /></p>
+
+<p><img alt="Workshop 3" src="/images/case-studies/workflow-builder/workshop3.jpg?1674450361" /></p>
+
+<p>Some of the key challenges we had to solve were:</p>
+
+<ul>
+<li>Release processes all have similar contours, but the specifics are unique for every organization. Building common launches into LaunchDarkly (like a progressive rollout, or alpha → beta → GA launches) would make for a really easy-to-use feature, but it wouldn’t be flexible enough to do it the exact way each customer does it. So our main challenge was: how do we create a solution that’s flexible enough to support any process, while not being overwhelming or confusing to set up?</li>
+<li>Where do you access this feature? The main feature flag page is already bursting at the seams, so we needed to balance discoverability with not disrupting existing core user flows.</li>
+<li>When a workflow is running, how would a user know that when viewing a feature flag? This was especially important because <em>teams</em> build software, not individuals, so if person A starts a workflow, person B may not be aware of that when making changes to the flag (which could lead to errors, like the wrong end users seeing a feature still in development).</li>
+<li>How do I manage workflows? Where can I see all that exist, stop them, modify them, etc.? Can I re-use them? If so, how?</li>
+</ul>
+
+<p>The bulk of the afternoon was spent whiteboarding solutions to these challenges, and poking holes in each other’s ideas to ensure we were thinking through the problems from every angle. By the end of the day we had a sketch of the overall system, the primary screens that would need to be built, and some foundational product and design decisions that underlie the whole system and would guide the team as they fleshed out the details.</p>
+
+<h3 id="foundational-product-and-design-decisions">Foundational product and design decisions</h3>
+
+<ul>
+<li><strong>Workflows should be visualized from top to bottom</strong>: Rationale: top-to-bottom is common in other workflow products (like Zapier), and visually represents the idea of a timeline well. It allows space for long, complex workflows (like some of our customers have), while making it easy to build.</li>
+<li><strong>Workflows should be built one step at a time</strong>: some customers have have long, complex release processes, so to make that manageable they should add a step at a time, and we’ll provide relevant, valid options rather than presenting everything you could do with a flag and asking them to sort through the options.</li>
+<li><strong>Use intelligent default values, and make them easy to change</strong>: Using intelligent defaults (like filling in the first step to start “Now” and having a blank action ready to be filled so that people feel a sense of progress and aren’t facing down a blank page), will guide people through the process, and make it less overwhelming and daunting.</li>
+<li><strong>Each step of the workflow should be directly manipulable</strong>: Editing steps directly inline, rather than opening modals or drawers, will help people get in a flow of creating a workflow, and be less UI to learn.</li>
+<li><strong>Stages should be implicit and optional</strong>: The feature has a concept called “stages” that group sets of actions together. For example, customers frequently do make multiple changes to a flag at one time, but think of them as one “set” of changes. We decided to support this by grouping sets of changes into “stages”, but we decided that we should do this implicitly and make it optional for users to set this themselves, in order to simplify the creation of workflows.</li>
+<li><strong>Visualize workflows as a summarized timeline</strong>: We want to show workflows in various places in the product, so a summarized timeline view will give us a compact, visual component to use in various places.</li>
+</ul>
+
+<h2 id="upping-the-fidelity">Upping the fidelity</h2>
+
+<p>At the end of the workshop we felt pretty confident in the overall solution. It didn’t answer every question (nor should it – that was the team’s job), but it was a solid base to start from. The next day I turned our whiteboard sketches into lo-fi mockups. I did this to:</p>
+
+<ul>
+<li>Make sure there were no gaps in our reasoning</li>
+<li>Confirm with the leadership team that this matched what we discussed (turning sketches into even slightly-higher-fidelity mocks can expose if we each had different pictures in our heads)</li>
+<li>Have artifacts to hand off to the team who would build this (that were clearer than whiteboard sketches)</li>
+</ul>
+
+<p>Urgency was important here because we wanted to launch an early access program (EAP) in November at our annual user conference, and it was already August, so I spent about a day doing quick-and-dirty mocks. I didn’t get bogged down in the details and just focused on the core screens and flows we had discussed the previous day.</p>
+
+<p><img alt="Lo-fi system sketch" src="/images/case-studies/workflow-builder/lo-fi-system-sketch.png?1674450361" /></p>
+
+<p><img alt="Lo-fi 1" src="/images/case-studies/workflow-builder/lo-fi-flow1.png?1674450361" /></p>
+
+<p><img alt="Lo-fi 2" src="/images/case-studies/workflow-builder/lo-fi-flow2.png?1674450361" /></p>
+
+<p><img alt="Lo-fi 3" src="/images/case-studies/workflow-builder/lo-fi-flow3.png?1674450361" /></p>
+
+<p><img alt="Lo-fi 4" src="/images/case-studies/workflow-builder/lo-fi-flow4.png?1674450361" /></p>
+
+<p><img alt="Lo-fi 1" src="/images/case-studies/workflow-builder/lo-fi-otherscreens.png?1674450361" /></p>
+
+<p>I got a quick thumbs up from leadership that everything matched what we discussed, and from there we reviewed these mocks with the team who was going to build it. Overall everything was clear, and the questions were mostly about specific details that we were leaving up to the team to fill in. No questions they raised upended any of our original thinking.</p>
+
+<p>My role transitioned into <strong>overseeing the work of the designer</strong> to make sure his finished designs matched our vision.</p>
+
+<h3 id="usability-testing">Usability testing</h3>
+
+<p>After the product designer fleshed out our lo-fi mocks, he ran usability tests with about 7 people — a mix of internal users and customers. Learnings:</p>
+
+<ul>
+<li>Overall usability was good. Everyone was able to set up workflows successfully, and understood what was being shown to them on the screen. ~~The vertical layout, and directly manipulable steps (two of our guiding principles) were intuitive to use.~~</li>
+<li>People really liked seeing active workflows when looking at a feature flag, confirming our intuition that surfacing upcoming changes would be important.</li>
+<li>We got feature requests around wanting more types of flag targeting changes in the workflow builder.
+
+<ul>
+<li>We originally started with a small subset of changes you could make in order to 1. Simplify the builder (not every type of action made sense in the context of setting up a release process), and 2. Reduce scope to the minimum useful feature set to turn on for select customers in the EAP. It wasn’t surprising that people asked for more during testing, but it was validating that the feature as a whole is useful (they want more of it!), and it helped us prioritize which targeting changes to add next.</li>
+</ul></li>
+<li>Got at least one feature request for saving these workflows as templates, which was functionality we discussed in the workshop but didn’t spend time sketching. We had a strong hunch that people would want to re-use workflows, so it was validating to get this feature request.</li>
+<li>As with all usability testing there were details to polish, like unclear wording, confusing iconography, the state of current vs upcoming workflows, and so on, which we updated before the EAP.</li>
+</ul>
+
+<h3 id="early-access-program">Early Access Program</h3>
+
+<p>In mid-November (just over 3 months after the workshop) we launched the Early Access Program to let select customers use the feature and give us feedback before we launched to all Enterprise customers.</p>
+
+<p>About this time the designer working on this project left, so I took over primary design responsibilities. Myself and the PM did follow up conversations with EAP users and watched FullStory sessions to learn what needed to be improved before launch.</p>
+
+<p>Most of the feedback matched what we heard in the usability testing: the feature was broadly useful and valuable, but people wanted to use more flag targeting changes, and wanted to save workflows as templates.</p>
+
+<p>We discovered one important gap to fill: workflows that required approval didn’t link to the page where you could approve or deny that request. Users would have to leave the workflow and navigate through the rest of the product to get to the approval request page, creating unnecessary friction that could easily be solved by linking directly to this page (approval requests are like pull requests in GitHub, and we weren’t linking to it). The fix was relatively simple: add a button to view the approval request.</p>
+
+<p><a href="/images/case-studies/workflow-builder/add-approval-request-button.png">
+  <img src="/images/case-studies/workflow-builder/add-approval-request-button.png">
+</a></p>
+
+<p>I like this story because it highlights the importance of early access programs for big launches like this: it was an obvious gap once a customer pointed it out, but we hadn’t thought of it upfront or caught it in usability testing. It’s the type of enhancement you find only through real-world usage.</p>
+
+<p><img alt="EAP 1" src="/images/case-studies/workflow-builder/eap-builder.png?1674450361" /></p>
+
+<p><img alt="EAP WF bubbles" src="/images/case-studies/workflow-builder/eap-wf-bubbles.png?1674450361" /></p>
+
+<p><img alt="EAP WF tab" src="/images/case-studies/workflow-builder/eap-wf-tab.png?1674450361" /></p>
+
+<h2 id="preparing-for-launch">Preparing for launch</h2>
+
+<p>In addition to the feedback we got during the EAP, there was some functionality we had already planned to build for the full launch: adding our first built-in workflow of a progressive rollout (this is the scenario described at the beginning), upsells for non-Enterprise accounts, and a read-only view of workflows past, present, and future.</p>
+
+<p><img alt="Progressive rollout" src="/images/case-studies/workflow-builder/progressive-rollout.png?1674450361" /></p>
+
+<aside class="callout">
+  <h4>Sidebar: A deep-dive into workflow builder read-only view</h4>
+
+  <p>An enhancement we added for GA was the ability to view in-progress and completed workflows in a read-only view. This view needed to:</p>
+
+  <ul>
+    <li>Show the steps of the workflow without letting people edit them
+    <li>Make it clear what had already ran, what was currently running, and what had yet to run
+  </ul>
+
+  <p>The team and I discussed three options of increasing complexity and effort: crawl (just show the workflow builder with disabled fields, no distinguishing completed steps from incomplete. Least effort), walk (show which stages had completed, but not individual steps. Medium effort), and run (use iconography and color to distinguish completed steps and stages from incomplete ones).</p>
+
+  <p>The next day I shared quick-and-dirty mockups with the team. The purpose of these mocks was to more concretely discuss level of effort, appetite, and user experience tradeoffs. They were not intended as finished mocks to build, hence I prioritized speed over quality.</p>
+
+  <a href="/images/case-studies/workflow-builder/wfb-read-only-artboard1.png">
+    <img src="/images/case-studies/workflow-builder/wfb-read-only-artboard1.png">
+  </a>
+
+  <p>After reviewing them we decided the “run” approach wasn’t that much additional effort, and it was a much better experience, so I got to work finalizing that path.</p>
+
+  <p>The main detail I wanted to get right was clearly distinguishing which steps had already run from those which hadn’t run. Those that hadn’t run could be in one of two states: it’s either the step we’re currently on, or it will run at a future time. So each step could be in one of three states: already ran, currently running, and will run. The screenshot below shows the Figma artboard of all the explorations I did.</p>
+
+  <a href="/images/case-studies/workflow-builder/wfb-read-only-whole-artboard.png">
+    <img src="/images/case-studies/workflow-builder/wfb-read-only-whole-artboard.png">
+  </a>
+
+  <p>Since each step could be in 1 of 3 states, I needed to choose a *visual hierarchy* to focus your attention on the right places. Without that, the page will be a jumble that’s hard to make sense of. When viewing this page, the most urgent thing to know is what’s currently running, followed by future steps (since these two states represent what will happen to your flag’s targeting in the future, and if those are incorrect you can stop the workflow), and least important is the steps that have already ran.</p>
+
+  <p>To get these states visually and hierarchically correct, I played with iconography, color, and shadow. I made past steps recede by graying them out and removing the shadow, current steps jump out by being white and having a drop shadow, and future steps are just white with no shadow.</p>
+
+  <p>Past steps also got a check mark to communicate they successfully ran. Future steps got no icon, and the current step got an “in-progress” icon.</p>
+
+  <p>I spent the bulk of my time on the iconography. The variables I played with were position (in the step? outside? in the corner? just on the stage?), color & background (did grayscale suffice? how bright? Should it be in a background circle or just a naked icon? Color the background or the icon?), and size (it should be big enough to be easily noticeable, but not big enough to overwhelm the step or throw off the visual balance). Below is a closeup of a section of the Figma artboard showing some of these explorations.</p>
+
+  <p>Additionally, choosing the right “in-progress” icon was a challenge. An icon for something that is complete is well-worn territory: a check mark. But what about in progress? I tried just an amber circle, an amber ring, an hourglass, a watch, and a few others, but none were immediately clear that they meant “current” or “in progress”.</p>
+
+  <p>Our design system uses Material Icons, which doesn’t include any kind of “in-progress” icon by default, so I searched [Material Design Icons](https://materialdesignicons.com/), which is a community site where people upload icons they made in the style of Material Icons to fill in the gaps in the official library. I found an in progress indicator that was a ring with one half a solid stroke, and the other half a dashed line. I put it on an amber background, reviewed it with the design team, and decided it did the best job of communicating in progress of any of the options.</p>
+
+  <a href="/images/case-studies/workflow-builder/wfb-read-only-icon-closeup.png">
+    <img src="/images/case-studies/workflow-builder/wfb-read-only-icon-closeup.png">
+  </a>
+
+  <p>This is the final design I landed on, marked up for the engineers to make sure they got all the details right for each stage (also included is the flow to delete a workflow).</p>
+
+  <a href="/images/case-studies/workflow-builder/wfb-read-only-final.png">
+    <img src="/images/case-studies/workflow-builder/wfb-read-only-final.png">
+  </a>
+</aside>
+
+<h2 id="wrap-up-or-something">Wrap up or something</h2>
+
+<aside class="callout callout-right">
+  <h3>Impact</h3>
+
+  <ul>
+    <li><strong>70+ workflows</strong> were ran by <strong>30+ users</strong> in the 2 month EAP period. These numbers represent the majority of people in the EAP ran at least one workflow, and many ran multiple, validating the feature’s value.
+    <li><strong>Usage steadily grew after GA</strong>, with almost <strong>300 workflows</strong> being run within 3 months of launch. Some of our biggest customers became regular users of the feature (I’d tell you who but that’s confidential 🤫).
+    <li>Customer quote: “Feature Workflows saves my team time, helps us to avoid mistakes, and enables us to stage automatic rollouts.” —James Pipe, Head of Product at DroneDeploy
+    <li>We didn’t track sales influenced by this feature, but it’s part of the demo to prospects, and anecdotally it <strong>sells well to release managers and engineering leaders</strong> for the time it can save teams.
+    <li>A <strong>customer gave a talk</strong> at Trajectory (our annual user conference) about using LaunchDarkly Workflows to automate progressive delivery
+    <li><a href="https://launchdarkly.com/blog/easy-feature-releases-with-workflows/">Blog post announcing the feature</a>
+  </ul>
+</aside>
+
+<p>We set out to automate release process, and reduce the toil and pain of doing it manually. No more 5am wakeups. So how well did we do?</p>
+
+<p>The co-founder had a vision of how he wanted this solved, an ahead of the GA launch he said, “This is a strong opening salvo.” (This may not sound like much, but if you knew him you’d know this was high praise).</p>
+
+<p>But more importantly, what was the customer impact? In the 3 months after launch, 300 workflows had been run, and some of our biggest customers had begun automating their releases. In the words of James Pipe, Head of Product at DroneDeploy, “Feature Workflows saves my team time, helps us to avoid mistakes, and enables us to stage automatic rollouts.”</p>
+
+<p>That’s exactly what we set out to achieve, and hearing that from one of our customers was extremely gratifying.</p>
+
+
+</div>
+</div>
+</div>
+<footer id='site-footer'>
+<p>
+&copy; 2010&ndash;2023 Jeff Zych
+&bull; Hand-crafted with
+<a href="http://middlemanapp.com/">Middleman</a>
+</p>
+<a style="display: none;" href="http://plus.google.com/+JeffZych?rel=author">Google+ profile</a>
+</footer>
+
+<svg viewBox='0 0 500 500' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg' style='display: none;'>
+  <filter id='noiseFilter'>
+    <feTurbulence
+      type='fractalNoise'
+      baseFrequency='.75'
+      numOctaves='2'
+      stitchTiles='stitch'/>
+  </filter>
+</svg>
+
+</body>
+</html>
