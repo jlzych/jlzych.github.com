@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>LaunchDarkly's Accelerate</title>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QFVVB7QHJP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  
+  gtag('config', 'G-QFVVB7QHJP');
+</script>
+<meta content='width=device-width, initial-scale=1.0, user-scalable=yes' name='viewport'>
+<meta content='black' name='apple-mobile-web-app-status-bar-style'>
+<meta content='yes' name='apple-mobile-web-app-capable'>
+<meta content='TK' name='description'>
+<meta content='Jeff Zych' name='author'>
+<!-- FB Open Graph meta tags -->
+<meta content='blog' property='og:type'>
+<meta content='Jeff Zych&#x27;s Internet Nook' property='og:site_name'>
+<meta content='LaunchDarkly&#x27;s Accelerate' property='og:title'>
+<meta content='TK' property='og:description'>
+<meta content='http://jlzych.com/images/case-studies/accelerate/1-accelerate-final.png' property='og:image'>
+<meta content='http://jlzych.com/case-studies/accelerate/' property='og:url'>
+<!-- Additional Twitter tags - additive with og: tags -->
+<meta content='summary_large_image' name='twitter:card'>
+<meta name='twitter:creator' value='@jlzych'>
+<!-- From https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=XBbjm0yjQ3">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=XBbjm0yjQ3">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=XBbjm0yjQ3">
+<link rel="manifest" href="/site.webmanifest?v=XBbjm0yjQ3">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=XBbjm0yjQ3" color="#adebef">
+<link rel="shortcut icon" href="/favicon.ico?v=XBbjm0yjQ3">
+<meta name="msapplication-TileColor" content="#fffef6">
+<meta name="theme-color" content="#ffffff">
+<script src='//cdn.optimizely.com/js/1111070510.js'></script>
+<link href="/stylesheets/application.css?1680406855" media="screen" rel="stylesheet" type="text/css" />
+<link href='/feed.xml' rel='alternate' title='RSS for Jeff Zych' type='application/rss+xml'>
+<script src='//use.typekit.net/okn2nfu.js' type='text/javascript'></script>
+<script>
+  try{Typekit.load();}catch(e){}
+</script>
+</head>
+<body>
+<div class='container'>
+<div class='grid' role='main'>
+<h1 class='monogram'>
+<a title="Home" href="/"><svg width="152" height="147" viewBox="0 0 152 147" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116.06 45.562l-5.492-.445 1.278 5.36c.806 3.376.767 9.739-1.222 16.344-.787 2.612-1.85 5.17-3.222 7.534-1.883-3.464-4.151-6.144-6.619-8.203-3.495-2.917-7.174-4.388-10.186-5.154l.041-.058c2.152-3.057 4.554-7.338 4.554-11.802 0-4.418-2.017-8.23-4.783-10.883-2.732-2.621-6.462-4.368-10.308-4.368-1.227 0-2.394.184-3.437.426.003-.139.005-.277.005-.415 0-2.724-.662-5.28-2.424-7.162-1.8-1.924-4.138-2.501-6.116-2.501-3.189 0-5.205 2.142-6.208 4.12-.99 1.946-1.37 4.302-1.37 6.571 0 2.57.684 5.25 2.012 7.426-1.505 2.49-3.51 5.268-5.905 8.26-3.32 4.151-7.276 8.576-11.46 13.043C42.935 55 40.92 46.677 40.092 39.076c-.214-1.961-.82-4.704-3.322-6.163-1.198-.699-2.421-.842-3.361-.828-.913.014-1.8.18-2.514.338-1.617.357-3.634 1.053-5.035 2.822-1.476 1.862-1.606 4.047-1.41 5.823 1.263 11.46 5.117 21.826 8.736 31.561.315.848.629 1.691.939 2.53l-1.444 1.465c-5.608 5.685-11.38 11.538-15.944 17.664C11.152 101.786 7 110.162 7 119.925c0 5.271 1.642 10.572 5.448 14.586 3.852 4.063 9.518 6.382 16.71 6.382 7.52 0 13.89-3.083 18.226-9.204 4.203-5.933 6.24-14.344 6.24-24.693 0-9.248-2.285-19.698-4.925-30.024 6.2-6.497 12.311-13.262 17.196-19.722 2.685-3.55 5.055-7.081 6.88-10.49 1.416-.237 2.574-.642 3.494-.963l.091-.031c1.404-.49 2.218-.751 3.32-.751-.027 0-.024 0 .002.01.1.032.541.177 1.084.815.606.71 1.123 1.826 1.123 3.298 0 2.345-1.021 5.16-2.613 7.844-1.594 2.687-3.411 4.659-4.337 5.366-1.259.961-2.211 2.301-2.518 3.933a5.872 5.872 0 00.858 4.298c1.437 2.204 4.919 3.853 8.085 1.608 1.376-.976 2.169-1.184 2.858-1.184.703 0 3.992.61 7.13 3.927 1.89 1.998 3.839 5.11 5.036 9.919-2.562 1.55-5.014 2.985-7.37 4.364a829.64 829.64 0 00-3.955 2.325c-4.228 2.505-8.141 4.931-11.446 7.506-6.761 5.268-11.36 11.49-11.36 20.881 0 11.881 10.481 19.741 20.023 19.741 14.506 0 30.466-14.74 30.466-39.577 0-4.384-.307-8.306-.868-11.811a61.256 61.256 0 007.278-7.918c4.494-5.868 8.139-13.006 8.151-19.909.007-3.758-.801-7.27-2.708-10.014-1.987-2.861-4.974-4.587-8.539-4.875zM96.897 98.117l.627-.327c-.3 11.525-2.834 19.182-5.882 23.895-3.256 5.033-6.942 6.559-9.362 6.559-1.486 0-3.858-.601-5.776-2.029-1.77-1.316-3.098-3.267-3.098-6.29 0-5.054 3.695-9.613 10.096-14.077 3.092-2.157 6.555-4.111 10.003-5.948a457.19 457.19 0 013.392-1.783zm-69.892 2.28c3.441-4.507 7.453-8.799 11.356-12.81 1.904 6.443 3.182 12.887 3.182 19.709 0 10.918-2.616 16.349-5.111 19.039-2.465 2.657-5.362 3.229-7.273 3.229-6.021 0-10.694-3.802-10.694-9.639 0-6.095 3.334-12.709 8.54-19.528z" fill="#FED874" stroke="#FED874" stroke-width="8"/><path d="M38.709 24.084c0-2.583-1.34-4.632-2.83-5.921C34.405 16.89 32.391 16 30.266 16c-1.823 0-3.858.561-5.451 2.12-1.621 1.586-2.308 3.735-2.308 5.964 0 2.038.51 4.237 2.012 5.986 1.579 1.838 3.796 2.648 6.088 2.648 2.65 0 4.8-1.222 6.192-2.984 1.32-1.67 1.909-3.734 1.909-5.65z" fill="#FED874" stroke="#FED874" stroke-width="8"/><path d="M122.06 42.562l-5.492-.445 1.278 5.36c.806 3.376.767 9.739-1.222 16.344-.787 2.612-1.85 5.17-3.222 7.534-1.883-3.464-4.151-6.144-6.619-8.203-3.495-2.917-7.174-4.388-10.186-5.154l.041-.058c2.152-3.057 4.554-7.338 4.554-11.802 0-4.418-2.017-8.23-4.783-10.883-2.732-2.621-6.462-4.368-10.308-4.368-1.227 0-2.394.184-3.437.426.003-.139.005-.277.005-.415 0-2.724-.662-5.28-2.424-7.162-1.8-1.924-4.138-2.501-6.116-2.501-3.189 0-5.205 2.142-6.208 4.12-.99 1.946-1.37 4.302-1.37 6.571 0 2.57.684 5.25 2.013 7.426-1.506 2.49-3.512 5.268-5.906 8.26-3.32 4.151-7.276 8.576-11.46 13.043C48.935 52 46.92 43.677 46.092 36.076c-.214-1.961-.82-4.704-3.322-6.163-1.198-.699-2.421-.842-3.361-.828-.913.014-1.8.18-2.514.338-1.617.357-3.634 1.053-5.035 2.822-1.476 1.862-1.606 4.047-1.41 5.823 1.263 11.46 5.117 21.826 8.736 31.561.315.848.629 1.691.939 2.53l-1.444 1.465c-5.608 5.685-11.38 11.538-15.944 17.664C17.152 98.786 13 107.162 13 116.925c0 5.271 1.642 10.572 5.448 14.586 3.852 4.063 9.518 6.382 16.71 6.382 7.52 0 13.89-3.083 18.226-9.205 4.203-5.932 6.24-14.343 6.24-24.692 0-9.248-2.285-19.698-4.925-30.024 6.2-6.497 12.311-13.262 17.196-19.722 2.685-3.55 5.055-7.081 6.88-10.49 1.416-.237 2.574-.642 3.494-.963l.091-.031c1.404-.49 2.218-.751 3.32-.751-.027 0-.024 0 .002.01.1.032.541.177 1.084.815.606.71 1.123 1.826 1.123 3.298 0 2.345-1.021 5.16-2.613 7.844-1.594 2.687-3.411 4.659-4.337 5.366-1.259.961-2.211 2.301-2.518 3.933a5.872 5.872 0 00.858 4.298c1.437 2.204 4.919 3.853 8.085 1.608 1.376-.976 2.169-1.184 2.858-1.184.703 0 3.992.61 7.13 3.927 1.89 1.998 3.839 5.11 5.036 9.919a569.87 569.87 0 01-7.37 4.364c-1.349.79-2.666 1.56-3.955 2.325-4.228 2.505-8.141 4.931-11.446 7.506-6.761 5.268-11.36 11.49-11.36 20.881 0 11.88 10.481 19.741 20.023 19.741 14.506 0 30.466-14.74 30.466-39.577 0-4.384-.307-8.306-.868-11.811a61.256 61.256 0 007.278-7.918c4.494-5.868 8.139-13.006 8.151-19.909.007-3.758-.801-7.27-2.708-10.014-1.987-2.861-4.974-4.587-8.539-4.875zm-19.163 52.555l.627-.327c-.301 11.525-2.834 19.182-5.882 23.895-3.256 5.033-6.942 6.559-9.362 6.559-1.486 0-3.858-.601-5.776-2.029-1.77-1.316-3.098-3.267-3.098-6.29 0-5.054 3.695-9.613 10.096-14.077 3.092-2.157 6.555-4.11 10.003-5.948a453.23 453.23 0 013.392-1.783zm-69.892 2.28c3.441-4.507 7.453-8.799 11.356-12.81 1.904 6.443 3.182 12.887 3.182 19.708 0 10.919-2.616 16.35-5.111 19.04-2.465 2.657-5.362 3.229-7.273 3.229-6.021 0-10.694-3.802-10.694-9.639 0-6.095 3.334-12.709 8.54-19.528z" fill="#FCF398" stroke="#FCF398" stroke-width="8"/><path d="M44.709 21.084c0-2.583-1.34-4.632-2.83-5.921C40.405 13.89 38.391 13 36.266 13c-1.823 0-3.858.562-5.451 2.12-1.621 1.586-2.308 3.735-2.308 5.964 0 2.038.51 4.237 2.012 5.986 1.579 1.838 3.796 2.648 6.088 2.648 2.65 0 4.8-1.222 6.193-2.984 1.32-1.67 1.908-3.734 1.908-5.65z" fill="#FCF398" stroke="#FCF398" stroke-width="8"/><path d="M128.06 39.562l-5.492-.445 1.278 5.36c.806 3.376.767 9.739-1.222 16.344-.787 2.613-1.85 5.17-3.222 7.534-1.883-3.464-4.151-6.144-6.619-8.203-3.495-2.917-7.174-4.388-10.186-5.154l.041-.058c2.152-3.057 4.554-7.338 4.554-11.802 0-4.418-2.017-8.23-4.783-10.883-2.732-2.621-6.462-4.368-10.308-4.368-1.227 0-2.394.184-3.437.426.003-.139.005-.277.005-.415 0-2.724-.662-5.28-2.424-7.162-1.8-1.924-4.138-2.501-6.116-2.501-3.189 0-5.205 2.142-6.208 4.12-.99 1.946-1.37 4.302-1.37 6.571 0 2.57.684 5.25 2.013 7.426-1.506 2.49-3.512 5.268-5.906 8.26-3.32 4.151-7.276 8.576-11.46 13.043C54.935 49 52.92 40.677 52.092 33.076c-.214-1.961-.82-4.704-3.322-6.163-1.198-.699-2.421-.842-3.361-.828-.913.014-1.8.18-2.514.338-1.617.357-3.634 1.053-5.035 2.822-1.476 1.862-1.606 4.047-1.41 5.823 1.263 11.46 5.117 21.826 8.736 31.561.315.848.629 1.691.939 2.53l-1.444 1.465c-5.608 5.685-11.38 11.538-15.944 17.664C23.152 95.786 19 104.162 19 113.925c0 5.271 1.642 10.572 5.448 14.586 3.852 4.063 9.518 6.382 16.71 6.382 7.52 0 13.89-3.083 18.226-9.205 4.203-5.932 6.24-14.343 6.24-24.692 0-9.248-2.285-19.698-4.925-30.024 6.2-6.497 12.311-13.262 17.196-19.722 2.685-3.55 5.055-7.081 6.88-10.49 1.416-.237 2.574-.642 3.494-.963l.091-.031c1.404-.49 2.218-.751 3.32-.751-.027 0-.024 0 .002.01.1.032.541.177 1.084.815.606.71 1.123 1.826 1.123 3.298 0 2.345-1.021 5.16-2.613 7.844-1.594 2.687-3.411 4.659-4.337 5.366-1.259.961-2.211 2.301-2.518 3.933a5.873 5.873 0 00.858 4.298c1.437 2.204 4.919 3.853 8.085 1.608 1.376-.976 2.169-1.184 2.858-1.184.703 0 3.992.61 7.13 3.927 1.889 1.998 3.839 5.11 5.036 9.919a570.345 570.345 0 01-7.37 4.364c-1.349.79-2.666 1.56-3.955 2.325-4.228 2.505-8.141 4.931-11.446 7.506-6.761 5.268-11.36 11.49-11.36 20.881 0 11.88 10.481 19.741 20.023 19.741 14.506 0 30.466-14.74 30.466-39.577 0-4.384-.307-8.306-.868-11.811a61.256 61.256 0 007.278-7.918c4.494-5.868 8.139-13.006 8.151-19.909.007-3.758-.801-7.27-2.708-10.014-1.987-2.861-4.974-4.587-8.539-4.875zm-19.163 52.555l.627-.327c-.301 11.525-2.834 19.182-5.882 23.895-3.256 5.033-6.942 6.559-9.362 6.559-1.486 0-3.858-.601-5.776-2.029-1.77-1.316-3.098-3.267-3.098-6.29 0-5.054 3.695-9.613 10.096-14.077 3.092-2.157 6.555-4.11 10.003-5.948a451.265 451.265 0 013.392-1.783zm-69.892 2.28c3.441-4.507 7.453-8.799 11.356-12.81 1.904 6.443 3.182 12.887 3.182 19.708 0 10.919-2.616 16.35-5.111 19.04-2.465 2.657-5.362 3.229-7.273 3.229-6.021 0-10.694-3.802-10.694-9.639 0-6.095 3.334-12.709 8.54-19.528z" fill="#CCF7AA" stroke="#CCF7AA" stroke-width="8"/><path d="M50.709 18.084c0-2.583-1.34-4.632-2.83-5.921C46.405 10.89 44.391 10 42.266 10c-1.823 0-3.858.562-5.451 2.12-1.621 1.586-2.308 3.735-2.308 5.964 0 2.038.51 4.237 2.012 5.986 1.579 1.838 3.796 2.648 6.088 2.648 2.65 0 4.8-1.222 6.193-2.984 1.32-1.67 1.908-3.734 1.908-5.65z" fill="#CCF7AA" stroke="#CCF7AA" stroke-width="8"/><path d="M134.06 36.562l-5.492-.445 1.278 5.36c.806 3.376.767 9.739-1.222 16.344-.787 2.613-1.85 5.17-3.222 7.534-1.883-3.464-4.151-6.144-6.619-8.203-3.495-2.917-7.174-4.388-10.186-5.154l.041-.058c2.152-3.057 4.554-7.338 4.554-11.802 0-4.418-2.017-8.23-4.783-10.883-2.732-2.621-6.462-4.368-10.308-4.368-1.227 0-2.394.184-3.437.426.003-.139.005-.277.005-.415 0-2.724-.662-5.28-2.424-7.162-1.8-1.924-4.138-2.501-6.116-2.501-3.189 0-5.205 2.142-6.208 4.12-.99 1.946-1.37 4.302-1.37 6.571 0 2.57.684 5.25 2.013 7.426-1.506 2.49-3.512 5.268-5.906 8.26-3.32 4.151-7.276 8.576-11.46 13.043C60.935 46 58.92 37.677 58.092 30.076c-.214-1.961-.82-4.704-3.322-6.163-1.198-.699-2.421-.842-3.361-.828-.913.014-1.8.18-2.514.338-1.617.357-3.634 1.053-5.035 2.822-1.476 1.862-1.606 4.047-1.41 5.823 1.263 11.46 5.117 21.826 8.736 31.561.315.848.629 1.691.939 2.53l-1.444 1.465c-5.608 5.685-11.38 11.538-15.944 17.664C29.152 92.786 25 101.162 25 110.925c0 5.271 1.642 10.572 5.448 14.586 3.852 4.063 9.518 6.382 16.71 6.382 7.52 0 13.89-3.083 18.226-9.205 4.203-5.932 6.24-14.343 6.24-24.692 0-9.248-2.285-19.698-4.925-30.024 6.2-6.497 12.311-13.262 17.196-19.722 2.685-3.55 5.055-7.081 6.88-10.49 1.416-.237 2.574-.642 3.494-.963l.091-.031c1.404-.49 2.218-.751 3.32-.751-.027 0-.024 0 .002.01.1.032.541.177 1.084.815.606.71 1.123 1.826 1.123 3.298 0 2.345-1.021 5.16-2.613 7.844-1.594 2.687-3.411 4.659-4.337 5.366-1.259.961-2.211 2.301-2.518 3.933a5.873 5.873 0 00.858 4.298c1.437 2.204 4.919 3.853 8.085 1.608 1.376-.976 2.169-1.184 2.858-1.184.703 0 3.992.61 7.13 3.927 1.889 1.998 3.839 5.11 5.036 9.919a570.345 570.345 0 01-7.37 4.364c-1.349.79-2.666 1.56-3.955 2.325-4.228 2.505-8.141 4.931-11.446 7.506-6.761 5.268-11.36 11.49-11.36 20.881 0 11.88 10.481 19.741 20.023 19.741 14.506 0 30.466-14.74 30.466-39.577 0-4.384-.307-8.306-.868-11.811a61.256 61.256 0 007.278-7.918c4.494-5.868 8.139-13.006 8.151-19.909.007-3.758-.801-7.27-2.708-10.014-1.987-2.861-4.974-4.587-8.539-4.875zm-19.163 52.555l.627-.327c-.301 11.525-2.834 19.182-5.882 23.895-3.256 5.033-6.942 6.559-9.362 6.559-1.486 0-3.858-.601-5.776-2.029-1.77-1.316-3.098-3.267-3.098-6.29 0-5.054 3.695-9.613 10.096-14.077 3.092-2.157 6.555-4.11 10.003-5.948a451.265 451.265 0 013.392-1.783zm-69.892 2.28c3.441-4.507 7.453-8.799 11.356-12.81 1.904 6.443 3.182 12.887 3.182 19.709 0 10.918-2.616 16.349-5.111 19.039-2.465 2.657-5.362 3.229-7.273 3.229-6.021 0-10.694-3.802-10.694-9.639 0-6.095 3.334-12.709 8.54-19.528z" fill="#ADEBEF" stroke="#ADEBEF" stroke-width="8"/><path d="M56.709 15.085c0-2.584-1.34-4.633-2.83-5.922C52.405 7.89 50.391 7 48.266 7c-1.823 0-3.858.561-5.451 2.12-1.621 1.586-2.308 3.735-2.308 5.965 0 2.037.51 4.236 2.012 5.985 1.579 1.838 3.796 2.648 6.088 2.648 2.65 0 4.8-1.222 6.193-2.984 1.32-1.67 1.908-3.734 1.908-5.65z" fill="#ADEBEF" stroke="#ADEBEF" stroke-width="8"/><g filter="url(#filter0_d)" fill="#FFFFFA" stroke="#FFFFFA" stroke-width="2"><path d="M134.818 38.552l-1.373-.111.32 1.34c.952 3.993.84 10.902-1.268 17.904-1.354 4.495-3.511 8.967-6.681 12.703-2.016-5.58-4.877-9.365-7.955-11.933-5.368-4.48-11.226-5.1-13.795-5.312a47.164 47.164 0 003.119-3.93c2.082-2.957 4.007-6.588 4.007-10.075 0-3.475-1.587-6.538-3.86-8.718-2.264-2.172-5.276-3.533-8.23-3.533-1.84 0-3.564.531-5.067 1.008l-.125.04c-.692.219-1.328.42-1.928.575.445-1.6.687-3.144.687-4.612 0-2.279-.554-3.98-1.614-5.113-1.07-1.143-2.506-1.55-3.926-1.55-1.65 0-2.825 1.082-3.534 2.478-.704 1.387-1.044 3.23-1.044 5.213 0 2.926.982 5.539 2.604 7.193l-.2.366c-1.676 3.022-4.076 6.404-6.954 10.002-4.363 5.452-9.777 11.34-15.328 17.141l-.04-.147c-2.766-10.427-5.51-20.766-6.525-30.08-.199-1.83-.686-3.218-1.85-3.897-.57-.332-1.197-.428-1.806-.419-.602.009-1.251.122-1.912.268-1.394.307-2.576.803-3.33 1.755-.773.975-.935 2.219-.78 3.631 1.221 11.071 4.945 21.095 8.58 30.88a1235.698 1235.698 0 011.584 4.287c-.94.96-1.884 1.919-2.829 2.877-5.604 5.683-11.196 11.354-15.623 17.297C32.757 93.311 29 101.064 29 109.925c0 4.668 1.45 9.175 4.625 12.522 3.185 3.36 8.007 5.446 14.534 5.446 6.609 0 12.038-2.66 15.777-7.939 3.706-5.231 5.688-12.939 5.688-22.958 0-9.321-2.436-20.042-5.247-30.893 6.564-6.833 13.04-13.936 18.126-20.663 2.993-3.959 5.524-7.811 7.31-11.42.01-.023.022-.045.033-.068 1.816-.074 3.224-.565 4.506-1.012l.02-.007c1.399-.488 2.645-.918 4.308-.918.995 0 2.29.612 3.37 1.88 1.059 1.242 1.839 3.044 1.839 5.243 0 3.108-1.309 6.47-3.033 9.375-1.725 2.907-3.777 5.212-5.097 6.22-.771.589-1.242 1.316-1.39 2.102a2.872 2.872 0 00.423 2.106c.738 1.13 2.381 1.831 3.836.799 1.672-1.186 3.066-1.737 4.594-1.737 1.546 0 5.618.962 9.309 4.865 2.593 2.742 5.034 6.977 6.239 13.431-3.256 2.003-6.355 3.817-9.273 5.525-1.34.784-2.643 1.546-3.905 2.294-4.219 2.501-7.989 4.844-11.131 7.293-6.323 4.926-10.204 10.363-10.204 18.514 0 9.963 8.865 16.741 17.023 16.741 12.438 0 27.466-12.953 27.466-36.577 0-4.946-.402-9.232-1.11-12.945a58.276 58.276 0 008.138-8.608c4.335-5.66 7.522-12.154 7.533-18.09.006-3.362-.721-6.21-2.171-8.297-1.471-2.117-3.639-3.38-6.318-3.597zm-20.233 46.866c1.736-.906 3.4-1.775 4.91-2.608.038.858.058 1.745.058 2.662 0 13.206-2.737 22.192-6.392 27.843-3.657 5.653-8.192 7.929-11.881 7.929-2.098 0-5.105-.79-7.567-2.622-2.425-1.804-4.307-4.601-4.307-8.697 0-6.635 4.842-11.978 11.38-16.538 3.242-2.261 6.831-4.282 10.308-6.135 1.179-.627 2.35-1.239 3.491-1.834zM58.389 72.252l.325-.33c2.747 8.184 4.83 16.446 4.83 25.374 0 11.355-2.72 17.638-5.913 21.08-3.185 3.433-6.981 4.188-9.472 4.188-7.234 0-13.694-4.733-13.694-12.639 0-7.113 3.844-14.392 9.156-21.348 4.499-5.894 9.95-11.43 14.768-16.325zM54.709 14.085c0-1.5-.78-2.778-1.793-3.653C51.91 9.563 50.573 9 49.267 9c-1.23 0-2.444.375-3.353 1.265-.917.896-1.406 2.2-1.406 3.82 0 1.571.394 2.99 1.288 4.03.912 1.063 2.236 1.603 3.812 1.603 1.667 0 2.973-.748 3.839-1.844.847-1.073 1.262-2.457 1.262-3.79z"/></g><defs><filter id="filter0_d" x="28" y="8" width="117.307" height="121.893" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1" dy="1"/><feColorMatrix values="0 0 0 0 0.239216 0 0 0 0 0.733333 0 0 0 0 0.827451 0 0 0 1 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow"/><feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/></filter></defs></svg>
+
+<span class='name'>Jeff Zych</span>
+</a>
+</h1>
+<nav class='nav-main'>
+<ul>
+<li><a title="About Jeff Zych" href="/about">About Me</a></li>
+<li><a href="/archives">Archives</a></li>
+</ul>
+</nav>
+
+<div class='content'>
+<img class='cs-hero-image' src='/images/case-studies/accelerate/1-accelerate-final.png'>
+<h1 class='article__title'>LaunchDarkly's Accelerate</h1>
+<h2 class='article__subtitle'>Designing LaunchDarkly's third product from the ground up</h2>
+<h2 id="the-challenge">The challenge</h2>
+
+<p>LaunchDarkly’s core product is a feature flagging platform for developers. We had good product-market fit and solid revenue and expansion numbers, but we needed a third product offering (the second being our experimentation product) so we would have multiple income streams to shore up the business for an eventual IPO.</p>
+
+<p>In this project, I started as the Head of Product Design and worked with leadership to develop &amp; validate the core idea, then moved into a hands-on role to design the product itself. We put a small team on it to operate as a startup-within-a-startup, moving fast with minimal overhead. I designed the product from the ground up, taking fuzzy, ambiguous problem areas and wrestling them down to concrete designs to build. In my time on the team I…</p>
+
+<ul>
+<li>Created a flexible and scalable information architecture and navigation scheme</li>
+<li>Developed design patterns and components that helped us rapidly spin up new pages and features</li>
+<li>Wrote product and design principles to guide our decision making</li>
+<li>Interviewed customers to hone our target persona, jobs-to-be-done, and value we’re delivering</li>
+<li>Developed and executed a learning plan to drive us to product-market fit</li>
+<li>Designed a light-mode and dark-mode theme</li>
+</ul>
+
+<h2 id="the-solution">The solution</h2>
+
+<p><a href="/images/case-studies/accelerate/1-accelerate-final.png">
+  <img src="/images/case-studies/accelerate/1-accelerate-final.png" />
+  <em>Accelerate’s primary overview page that shows a summary of all your quality and velocity metrics in one place</em>
+</a></p>
+
+<p>Accelerate’s primary overview page that shows a summary of all your quality and velocity metrics in one place</p>
+
+<p>We ended up building <strong>Accelerate</strong>: a product for engineering leaders to track and improve quality and velocity by combining key metrics in one place to highlight bottlenecks and track long-term trends.</p>
+
+<p>The idea came from our customers champions. They would ask us, “We’ve rolled out feature flagging across our engineering department, and want to know if that’s improved our velocity and quality. Can you help us measure that?” We had no answer for them.</p>
+
+<p>By using feature flagging, LaunchDarkly should be improving quality and velocity. The DORA (DevOps Research and Assessment) movement was on the rise, which defines 4 metrics for measuring that: deploy frequency, lead time, change failure rate, and mean-time-to-resolution.</p>
+
+<p>A handful of products were popping up to measure these metrics for engineering teams, but there was a gap in the market: none of them were able to take into account feature flagging’s impact to these metrics. By combining the DORA metrics with flagging data, we could create a truly unique product.</p>
+
+<div class="cs-image-grid">
+  <a href="/images/case-studies/accelerate/2-deploy-freq.png">
+    <img src="/images/case-studies/accelerate/2-deploy-freq.png" />
+    <em>The deployment frequency metric page</em>
+  </a>
+
+  <a href="/images/case-studies/accelerate/3-lead-time.png">
+    <img src="/images/case-studies/accelerate/3-lead-time.png" />
+    <em>The lead time metric page</em>
+  </a>
+
+  <a href="/images/case-studies/accelerate/4-release-frequency.png">
+    <img src="/images/case-studies/accelerate/4-release-frequency.png" />
+    <em>Release frequency metric page</em>
+  </a>
+
+  <a href="/images/case-studies/accelerate/5-flag-health.png">
+    <img src="/images/case-studies/accelerate/5-flag-health.png" />
+    <em>Flag health metric page</em>
+  </a>
+
+  <a href="/images/case-studies/accelerate/6-flag-coverage.png">
+    <img src="/images/case-studies/accelerate/6-flag-coverage.png" />
+    <em>Flag coverage metric page</em>
+  </a>
+</div>
+
+<h2 id="how-we-got-there">How we got there</h2>
+
+<p>We kicked things off with a team of 6: myself as the product designer, a combination Director of Engineering and product owner, and 4 engineers. We were starting with a blank canvas, so the first thing I did was run a workshop for us to review the competitive landscape, and collect screenshots of general charting and data tools that people like (and dislike). This was put into a “competitive and inspiration board” in FigJam that I referred to throughout my time on the team.</p>
+
+<p><a href="/images/case-studies/accelerate/7-competitive-figjam.png">
+  <img src="/images/case-studies/accelerate/7-competitive-figjam.png" />
+  <em>The big FigJam board of competitive screenshots and tools in similar spaces. Also Dribbble shots for pretty inspiration.</em>
+</a></p>
+
+<div class="cs-image-grid">
+  <a href="/images/case-studies/accelerate/8-comp-closeup.png">
+    <img src="/images/case-studies/accelerate/8-comp-closeup.png" />
+    <em>Close-up of competitive screenshots</em>
+  </a>
+
+  <a href="/images/case-studies/accelerate/9-comp-analytics.png">
+    <img src="/images/case-studies/accelerate/9-comp-analytics.png" />
+    <em>Close-up of general analytics screenshots</em>
+  </a>
+</div>
+
+<h3 id="first-metric-screen">First metric screen</h3>
+
+<p>When you have a blank canvas, the hardest part is knowing where to start. We discussed this as a team, and ultimately decided the best starting point was the deployment frequency metric: it was easy to calculate, and easy to get the data. For me, this was an opportunity to set the pattern for how most of the screens in the product would look. The product is primarily metrics, so nailing the first one would make the rest of them faster to design and build.</p>
+
+<p>To do that I drew on all the inspiration we had collected previously, and explored a ton of lo-fi options of different layouts, functionality, and data.</p>
+
+<p>The key thing to emphasize here is that I was working in an environment of high ambiguity with no product specs or technical constraints (yet). To create clarity out of ambiguity, I dove right in and made lots and lots of lo-fi mocks, throwing everything at the wall to see what would stick. I wasn’t afraid to try out crazy ideas, and had no problem throwing stuff out to get to the really great stuff. I regularly shared these with the team, got their feedback on what was working and what wasn’t, and iterated more.</p>
+
+<p><a href="/images/case-studies/accelerate/10-lofi-first-metric.png">
+  <img src="/images/case-studies/accelerate/10-lofi-first-metric.png" />
+  <em>A fraction of the lo-fi options I explored</em>
+</a></p>
+
+<div class="cs-image-grid">
+  <a href="/images/case-studies/accelerate/11-lofi-closeup.png">
+    <img src="/images/case-studies/accelerate/11-lofi-closeup.png" />
+    <em>Close-up of some lo-fi options</em>
+  </a>
+
+  <a href="/images/case-studies/accelerate/12-lofi-closeup2.png">
+    <img src="/images/case-studies/accelerate/12-lofi-closeup2.png" />
+    <em>Another close-up of lo-fi mockups</em>
+  </a>
+</div>
+
+<p>While I was trying out everything, the engineers were building the data models and figuring out how to ingest the data. Our work was informing each other’s – my mocks helped them get a sense of what calculations and functionality we were likely to have, and their data modeling told me what we could build.</p>
+
+<p>After a lot of back and forth we aligned on an initial set of functionality and calculations, which I turned into a polished hi-fi mock. The basic structure was an inverted pyramid: start with high-level summary metrics, then have a graph, then provide more detailed breakdowns and a table of data below that.</p>
+
+<div class="cs-image-grid">
+  <a href="/images/case-studies/accelerate/13-metric1.png">
+    <img src="/images/case-studies/accelerate/13-metric1.png" />
+    <em>Finished mock of our first metric, deployment frequency</em>
+  </a>
+
+  <a href="/images/case-studies/accelerate/14-metric1-redlines.png">
+    <img src="/images/case-studies/accelerate/14-metric1-redlines.png" />
+    <em>The same finished mock, but redlined to ensure the engineers got all the details right</em>
+  </a>
+</div>
+
+<h3 id="information-architecture-and-navigation">Information architecture and navigation</h3>
+
+<p>As we built out the first screen, I worked with the product owner on our information architecture and navigation. We discussed the data models and core concepts of the product, as well as our target users’ mental models, to develop a strong system model to work off of.</p>
+
+<p>The core of it is that we have raw data (deployments, PRs, flags, etc.), which we combine into summary metrics (deploy frequency, change failure rate, etc.), which can be filtered by date, environment, team, and application. We turned this into a conceptual model that we built the IA off of (screenshots below).</p>
+
+<div class="cs-image-grid">
+  <a href="/images/case-studies/accelerate/15-ia-concept-model.png">
+    <img src="/images/case-studies/accelerate/15-ia-concept-model.png" />
+    <em>Our working FigJam board of the conceptual model</em>
+  </a>
+
+  <a href="/images/case-studies/accelerate/16-ia-core-concepts.png">
+    <img src="/images/case-studies/accelerate/16-ia-core-concepts.png" />
+    <em>The final conceptual model that we aligned on</em>
+  </a>
+</div>
+
+<p>Using that system model, I took a similar approach to designing the first screen: I explored a bunch of lo-fi concepts for how to translate the model into a navigation scheme. I built a handful of prototypes to help us assess the “feel” of each model. We tried all the obvious stuff, like a sidebar and top bar and so on, but pushed ourselves to do something more innovative.</p>
+
+<p>We landed on a dashboard experience that eschewed any traditional navigation in favor of showing each metric in cards, and you could click through to the more detailed metrics screens. We did this to put the emphasis on the data itself, and interacting with it, and clicking into and out of it and slicing and dicing it, rather than trying to remember which screen has the number you want.</p>
+
+<p><a href="/images/case-studies/accelerate/1-accelerate-final.png">
+  <img src="/images/case-studies/accelerate/1-accelerate-final.png" />
+  <em>Accelerate&rsquo;s finished nav – no nav! Just cards to navigate by</em>
+</a></p>
+
+<div class="cs-image-grid">
+  <a href="/images/case-studies/accelerate/17-ia-lofi1.png">
+    <img src="/images/case-studies/accelerate/17-ia-lofi1.png"/>
+    <em>Screenshot of a lo-fi mock of a discarded navigation scheme</em>
+  </a>
+
+  <a href="/images/case-studies/accelerate/18-ia-lofi2.png">
+    <img src="/images/case-studies/accelerate/18-ia-lofi2.png" />
+    <em>Screenshot of a lo-fi mock of another discarded navigation scheme</em>
+  </a>
+
+  <a href="/images/case-studies/accelerate/19-ia-prototype.png">
+    <img src="/images/case-studies/accelerate/19-ia-prototype.png" />
+    <em>Prototype of the finished &ldquo;focused experience&rdquo; no-nav navigation</em>
+  </a>
+</div>
+
+<h3 id="design-system">Design system</h3>
+
+<p><a href="/images/case-studies/accelerate/20-design-system-comps.png" class="u-float-right cs-img-halfWidth">
+  <img src="/images/case-studies/accelerate/20-design-system-comps.png" />
+  <em>Some of the components I created in Figma</em>
+</a></p>
+
+<p>As more of the product got built out, I kept creating components and design patterns for us to use throughout the product. This was important because:</p>
+
+<ul>
+<li>It adds consistency to the product, which makes the product easier to learn and use for our customers</li>
+<li>Makes the product faster to both design and build since we could reach for established patterns rather than design and build everything from scratch. I would often just hand lo-fi mocks to engineers to build off of, and they would know what existing components to use.</li>
+<li>Increases product quality since we can focus on making a handful of components great, rather than building everything bespoke.</li>
+</ul>
+
+<h2 id="wrap-up">Wrap up</h2>
+
+<p>All told, it was a lot of work and a lot of fun. I spent a year on this, and when I left we were nearing the end of EAP and getting ready to officially launch. The learning plan uncovered the gaps to close before launching, which the team is cranking away on.</p>
+
+<p>The early signs I saw while I was there were generally positive: our internal platform team was starting to rely on it, we sunsetted our internal use of our main competitor, and we had engaged accounts in the EAP who were getting value out the metrics we had built. And we got regular feedback that people really liked the clean and simple UI (a big advantage over our competitors). There’s a lot more work to be done, but between the persona and jobs-to-be-done, the navigation and IA, and the design patterns, I set a solid foundation for the team to build on for years to come.</p>
+
+<!--
+### Product and design principles
+
+<a href="/images/case-studies/accelerate/21-principles.png" class="u-float-left cs-img-halfWidth">
+  <img src="/images/case-studies/accelerate/21-principles.png" />
+  <em>A screenshot of our product and design principles</em>
+</a>
+
+As we were designing the first few screens and navigation, I realized that myself and the product owner’s decisions were being guided by a few principles that we hadn’t verbalized, but were naturally rallying around. I decided it would be worth it to write those down to make the implicit explicit, and so they could guide the rest of the team.
+
+I can’t share all of them because they’re proprietary information, but a few were “show useful data out of the box”, “contextualize data”, and “encourage exploration.” Each of these came with a short description and rationale, as well as examples of what this principle looks like and doesn’t look like in action.
+
+These helped shortcut a number of conversations, and guided decision making when we had diverging paths to choose from. For example, there were times when we were reviewing mockups and trying to choose between two options, and someone would say, “this one encourages more exploration, so let’s go with that” (and we did).
+
+### Customer development, personas, and jobs-to-be-done
+
+<a href="/images/case-studies/accelerate/22-persona.png" class="cs-img-halfWidth u-float-right">
+  <img src="/images/case-studies/accelerate/22-persona.png" />
+  <em>A screenshot of the persona write-up</em>
+</a>
+
+As we were building the product, the product owner and myself did customer development to get a deeper understanding of what customers wanted out of a product in this space. We had a rough persona in mind from the initial concept – engineering leaders – but we knew we needed to sharpen that. What specifically were they trying to do? What pain points could we solve? Would they be using it themselves, or would one of their lieutenants or a specific team be in charge of it? And so on.
+
+These interviews helped us hone in on our primary user persona of “**Leaders of Engineering Excellence Teams.”** These people report to an engineering leader who cares about these metrics (e.g. a VP of Engineering, or the CTO), and lead a team that’s in charge of improving the efficiency and quality of the overall engineering department.
+
+### EAP Learning Plan
+
+When we started the EAP program, I created a learning plan to focus what we wanted to learn in the EAP, and what questions we would be asking users. We started with the decisions we wanted to make, how we’re measuring EAP success, and what we wanted to learn from customers.
+
+I can’t go into much detail since that information is private and the project is still ongoing, but at a high level we want to know if we’re hitting product-market fit. Accelerate needs to generate revenue for the business, of course, so during the EAP we sought to learn what’s the gap between where we are now and charging for the product? Understanding this would drive our roadmap and shorten time to launch (and thus revenue).
+
+The most immediate strategic decision to make was whether we needed to go deeper on what we had already by making existing metrics and charting better, or go broader by adding more metrics and data sources to give you a fuller picture of engineering quality and velocity.
+
+We generated a lot of interest in the EAP (with the help of sales and customer success orgs) and got almost 60 accounts in the EAP in the first couple of months. This showed us that our vision was resonating with customers, but we weren’t getting as much engagement (i.e. week-over-week usage, telling us there was a gap between the vision and reality.
+
+In the learning plan, we divided our audience between engaged accounts and disengaged accounts. For engaged accounts, we did high touch outreach and created a list of questions to understand what parts of the product they were getting value out of, and what was lacking. For these folks we did a mix of interviews and emails/slacks (some folks we had a warmer relationship with and could just message, others made sense to set up calls).
+
+The big questions to answer were “How disappointed would you be if we took Accelerate away (very, somewhat, not at all?),” and, “Are you willing to pay for Accelerate? Why or why not”. These assess overall product value.
+
+For disengaged customers we created a survey to understand why the product didn’t stick for them. Were we missing metrics? Didn’t integrate with a tool they used? No time to set it up yet?
+
+&ndash;>
+
+
+
+</div>
+</div>
+</div>
+<footer id='site-footer'>
+<p>
+&copy; 2010&ndash;2023 Jeff Zych
+&bull; Hand-crafted with
+<a href="http://middlemanapp.com/">Middleman</a>
+</p>
+<a style="display: none;" href="http://plus.google.com/+JeffZych?rel=author">Google+ profile</a>
+</footer>
+
+<svg viewBox='0 0 500 500' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg' style='display: none;'>
+  <filter id='noiseFilter'>
+    <feTurbulence
+      type='fractalNoise'
+      baseFrequency='.75'
+      numOctaves='2'
+      stitchTiles='stitch'/>
+  </filter>
+</svg>
+
+</body>
+</html>
+
