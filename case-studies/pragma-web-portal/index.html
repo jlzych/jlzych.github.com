@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset='utf-8'>
-<title>Pragma Connect</title>
+<title>Redesigning Pragma's Web Portal</title>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QFVVB7QHJP"></script>
 <script>
@@ -15,15 +15,15 @@
 <meta content='width=device-width, initial-scale=1.0, user-scalable=yes' name='viewport'>
 <meta content='black' name='apple-mobile-web-app-status-bar-style'>
 <meta content='yes' name='apple-mobile-web-app-capable'>
-<meta content='Using strategic research to inform our pivot to Pragma Connect' name='description'>
+<meta content='Redesigning Pragma&#x27;s web portal to improve information architecture and user experience' name='description'>
 <meta content='Jeff Zych' name='author'>
 <!-- FB Open Graph meta tags -->
 <meta content='blog' property='og:type'>
 <meta content='Jeff Zych&#x27;s Internet Nook' property='og:site_name'>
-<meta content='Pragma Connect' property='og:title'>
-<meta content='Using strategic research to inform our pivot to Pragma Connect' property='og:description'>
-<meta content='http://jlzych.com/images/case-studies/pragma-connect/onboarding-3.png' property='og:image'>
-<meta content='http://jlzych.com/case-studies/pragma-connect/' property='og:url'>
+<meta content='Redesigning Pragma&#x27;s Web Portal' property='og:title'>
+<meta content='Redesigning Pragma&#x27;s web portal to improve information architecture and user experience' property='og:description'>
+<meta content='http://jlzych.com/images/case-studies/pragma-web-portal/2-after.png' property='og:image'>
+<meta content='http://jlzych.com/case-studies/pragma-web-portal/' property='og:url'>
 <!-- Additional Twitter tags - additive with og: tags -->
 <meta content='summary_large_image' name='twitter:card'>
 <meta name='twitter:creator' value='@jlzych'>
@@ -61,9 +61,9 @@
 </nav>
 
 <div class='content'>
-<img class='cs-hero-image' src='/images/case-studies/pragma-connect/onboarding-3.png'>
-<h1 class='article__title'>Pragma Connect</h1>
-<h2 class='article__subtitle'>Using Strategic Research to Drive a $500K Product Pivot</h2>
+<img class='cs-hero-image' src='/images/case-studies/pragma-web-portal/2-after.png'>
+<h1 class='article__title'>Redesigning Pragma's Web Portal</h1>
+<h2 class='article__subtitle'>From Hidden Features to a Scalable IA with Modern UI</h2>
 <aside class="callout callout-right">
   <h4>Project at-a-glance</h4>
 
@@ -79,155 +79,189 @@
 
   <p>
     <strong>Team</strong><br />
-    8 people: PM, Engineering Lead, 5 engineers, and myself
+    Myself and an engineer, plus co-founders and leadership as stakeholders
   </p>
 
   <p>
     <strong>Timeline</strong><br />
-    4 months (research to pivot to launch)
-  </p>
-
-  <p>
-    <strong>Impact</strong><br />
-    <ul>
-      <li>Strategic alignment & confidence in where to invest $500k of development effort</li>
-      <li>Immediate market validation in the solution</li>
-    </ul>
+    Just over 2 months
   </p>
 
   <p>
     <strong>Skills used</strong>
     <ul>
-      <li>Strategic Research (Bullseye Customer Research)
-      <li>Design (lo-fi and hi-fi screens & flows)
-      <li>Leading Workshops with leadership
+      <li>IA
+      <li>Prototyping
+      <li>Visual design
+      <li>UX design
+      <li>Component design
+      <li>Alignment workshops with leadership
     </ul>
   </p>
 </aside>
 
-<p>Pragma’s core business, a backend engine for online games, was facing numerous headwinds, and we needed to pivot to a faster growing product that addressed a larger target market. There were several ideas we could pursue, but didn’t know which was the right one. This was, conservatively, a $500k decision that we needed to get right.</p>
+<p>Pragma provides backend infrastructure services for game developers, enabling them to add online features to their game (like cross-platform gameplay, friends lists, messaging, and more). Our web portal serves as the web interface for managing these systems.</p>
 
-<p>In under 4 months, I led the strategic research and design of a completely new product direction called Pragma Connect that converted a years-long prospect into a paying customer and secured strong positive responses across sales demos. More importantly, I helped the company pivot from a slow-growing backend engine to a focused social features product with immediate time-to-value.</p>
+<p>In this project I redesigned Pragma&rsquo;s web portal from the ground up—turning a confusing interface with hidden navigation into a modern, scalable platform that customers started describing as &ldquo;clean and modern&rdquo; and &ldquo;lightyears ahead of the competition.&rdquo;</p>
+
+<p><a href="/images/case-studies/pragma-web-portal/1-before.png">
+  <img src="/images/case-studies/pragma-web-portal/1-before.png" />
+  <em><strong>Before:</strong> A portal where key features were buried behind an easily-missed &ldquo;Services&rdquo; menu, with inconsistent visual design that made Pragma appear less capable than competitors.</em>
+</a></p>
+
+<p><a href="/images/case-studies/pragma-web-portal/2-after.png">
+  <img src="/images/case-studies/pragma-web-portal/2-after.png" />
+  <em><strong>After:</strong> A clean, modern interface with discoverable top-level navigation, consistent design patterns, and an information architecture designed to scale to dozens of future services.</em>
+</a></p>
+
+<h2 id="the-challenge">The Challenge</h2>
+
+<p>As part of Pragma’s backend game engine, we provide customers a web portal for managing these systems. Developers and designers use it to view live game data (like player inventories, currency balances, and item statistics), edit game content and configurations, and managing API keys. Player support teams rely on it daily to investigate and resolve player issues—for example, if a player purchased an item that didn&rsquo;t appear in their account, support staff can view the player&rsquo;s data and make corrections.</p>
+
+<p>When I joined Pragma as their sole product designer, it had been built by a patchwork of engineers and contractors, with no one guiding its overall UX or navigation patterns. As such there were numerous problems holding us and our customers back:</p>
+
+<ul>
+<li><strong>Hidden functionality:</strong> The navigation was buried behind a &ldquo;Services&rdquo; menu that most users missed entirely (it didn&rsquo;t even look clickable)</li>
+<li><strong>Lack of scalability:</strong> We had no clear framework for adding the dozens of new services on our roadmap—every new feature was a navigation puzzle</li>
+<li><strong>Looking outdated:</strong> Our dated design made us appear less sophisticated than competitors in demos and trials</li>
+<li><strong>Development morass:</strong> No standardized patterns meant engineers constantly built one-off solutions, slowing everything down</li>
+</ul>
+
+<p>These problems weren’t so bad for our existing customers, but they were on the cusp of becoming huge problems: we wanted to build a cloud version of our product that anyone could sign up for, and these problems would significantly hinder the success of that offering. Without the white glove support we provided our enterprise customers, self-serve customers would never figure out how to use the product.</p>
 
 <div class="cs-image-grid">
-  <a href="/images/case-studies/pragma-connect/concept-mock-2-cropped.png">
-    <img src="/images/case-studies/pragma-connect/concept-mock-2-cropped.png" />
-    <em>Winning concept mock we showed customers</em>
+  <a href="/images/case-studies/pragma-web-portal/3-before2.png">
+    <img src="/images/case-studies/pragma-web-portal/3-before2.png" />
+    <em>Before screenshot showing items in the game</em>
   </a>
 
-  <a href="/images/case-studies/pragma-connect/onboarding-3.png">
-    <img src="/images/case-studies/pragma-connect/onboarding-3.png" />
-    <em>Screenshot of final product onboarding we shipped</em>
+  <a href="/images/case-studies/pragma-web-portal/4-before3.png">
+    <img src="/images/case-studies/pragma-web-portal/4-before3.png" />
+    <em>Another before screenshot showing item details</em>
   </a>
 </div>
 
-<h2 id="the-challenge-the-engine-business-isnt-working">The Challenge: The Engine Business Isn&rsquo;t Working</h2>
+<p>Therefore, we needed to evolve to achieve these goals:</p>
 
-<p>Pragma’s core product, an online backend engine for games, was in trouble. We were selling to well-funded mid-size studios—game companies that had enough money to pay for our service but weren&rsquo;t large enough to build their own backend infrastructure. The problem? That market consisted of maybe dozens of new studios per year. And many of our prospects were running out of runway before they could even get our product integrated.</p>
+<ul>
+<li>Create a scalable information architecture for 20+ planned services</li>
+<li>Modernize the visual design to match user expectations</li>
+<li>Make sure existing users (especially daily users like player support) could still navigate efficiently</li>
+<li>Establish reusable patterns to accelerate future development</li>
+</ul>
 
-<p>In short, the business model wasn’t mathing out and we’d run out of money in 2 to 3 years.</p>
+<p>Working directly with our co-founder/CTO and head of product, I drove this project from strategy through implementation—including writing the PRDs, conducting user research, and even jumping into the code to help build it.</p>
 
-<p>The product faced numerous headwinds that we kept hearing about in sales calls and from paying customers: the setup and integration was complex, the time-to-value was slow (you don&rsquo;t really experience the benefits until you launch and have scale), and if something went wrong with our service, their entire game would go down (we never had any major launch incidents, but this made it a high-risk decision). And the benefits of scalability and performance came too late in a game’s development cycle to overcome the upfront pain of getting the product working.</p>
+<h2 id="how-i-approached-it">How I Approached It</h2>
 
-<p>We had built something technically impressive but strategically misaligned. Studios <strong>couldn&rsquo;t try before they buy</strong>, <strong>couldn&rsquo;t see immediate value</strong>, and often ended up <strong>cutting online features entirely</strong> when budgets got tight.</p>
+<p>This project was actually 2 related projects I pushed forward in tandem — one was a <strong>new IA and navigation</strong>, and the second was an <strong>updated visual design</strong>.</p>
 
-<h2 id="using-bullseye-customer-research-to-inform-our-pivot">Using Bullseye Customer Research to Inform our Pivot</h2>
+<h3 id="information-architecture">Information Architecture</h3>
 
-<p>The co-founders decided we needed to pivot a large chunk of our engineering team to building a cloud-based product that’s easier-to-use, shows faster time to value, and has a larger TAM (total addressable market).</p>
+<p>For the information architecture piece of the puzzle, the biggest challenge was creating navigation that could scale from our current limited feature set to dozens of planned services. I audited current and planned functionality with leadership, mapping out the full ecosystem of services Pragma would eventually offer (which represented years of work, some of which would never be built, but we needed to be prepared).</p>
 
-<p>There were several core pieces of technology we already had that we could build off of: cross-platform accounts (a huge pain point for studios), monetization and cross-platform stores, matchmaking services, social features with ready-made game UI, server orchestration, player data storage, to name just a few.</p>
+<p>We aligned on a few principles to stick to for the new IA:</p>
 
-<p>Deciding where to invest our limited resources was a big decision: it would cost us roughly $500k for a team of 8 (PM, lead eng, 5 engineers, and myself) to build this over 3-4 months (not including GTM motions, marketing budget, further iteration post-launch, etc.). We couldn’t afford to build the wrong thing.</p>
+<ul>
+<li>Navigate anywhere in 1-2 clicks</li>
+<li>Make features discoverable</li>
+<li>Scale to dozens of potential services</li>
+</ul>
 
-<p>To help us decide what to build, I recommended we use <a href="https://www.learnmorefaster.com/">Bullseye Customer Research</a>, a technique pioneered by Michael Margolis of Google Ventures. The gist of it is to create fake landing pages of different concepts to show your target customer to gauge which is most compelling.</p>
-
-<p>Working with our PM and lead engineer, we scoped out rough feature sets for each idea, as well as lo-fi mockups, to help us decided which seemed like the most promising product.</p>
-
-<p>We ended up with three test concepts:</p>
+<p>I explored numerous organizing schemes, with the 2 primary poles being:</p>
 
 <ol>
-<li><strong>Cross-platform identity and monetization</strong> - solving the authentication nightmare and payment processing headaches across different platforms</li>
-<li><strong>Social backend with drop-in game UI</strong> - friends lists, messaging, presence indicators, all with customizable interfaces that studios could integrate in under an hour</li>
-<li><strong>A competitor comparison</strong> - I used a competitor, Playfab, as our third option to understand how our concepts stacked up against a full-featured alternative</li>
+<li><strong>Put all primary services in the top level nav</strong>: more discoverable, but more nav items overall which can be overwhelming</li>
+<li><strong>Group lesser-used services whose primary use was configuration in a “Game Config” section</strong>, and surface the rest at the top level: this is a cleaner, simpler nav, but more services hidden under one section</li>
 </ol>
 
-<div class="cs-image-grid">
-  <a href="/images/case-studies/pragma-connect/concept-mock-1.png">
-    <img src="/images/case-studies/pragma-connect/concept-mock-1-cropped.png" />
-    <em>First concept mock we showed target customers</em>
-  </a>
+<p>I built prototypes of each for us to try out internally, and to test with customers (using an AI service to run the tests, which easily cut the time to results in half), and ultimately the first option (primary services in the top-level nav) won out: it didn’t feel too overwhelming, and customers didn’t have any issues finding the functionality they were looking for.</p>
 
-  <a href="/images/case-studies/pragma-connect/concept-mock-2.png">
-    <img src="/images/case-studies/pragma-connect/concept-mock-2-cropped.png" />
-    <em>Second concept mock we showed target customers</em>
+<p>After going through this exercise, though, I realized the choice wasn’t really either-or: because we were designing to accommodate future functionality, as opposed to existing functionality, the main need was to develop a flexible organizing scheme and set of UI patterns to accommodate these services as we built them, and we’ll decide which to use and how to group them as we add them to the portal. So essentially we could start with a very flat navigation (option 1) and group services together as it gets too big (option 2).</p>
+
+<h3 id="visual-refresh">Visual refresh</h3>
+
+<p>As I pushed forward the information architecture, I was also developing a new visual style for us to use. Before diving into moodboards &amp; mockups, I knew I needed leadership buy-in on the visual style we wanted. To do this, I facilitated a workshop with our co-founders and leadership to align on our new look.</p>
+
+<p>The workshop used a simple prompt: “Ideally, customers should describe Pragma portal’s UI as…”, and I had 5 scales for everyone to vote on (e.g. traditional → modern, serious → friendly, etc.).</p>
+
+<p><a href="/images/case-studies/pragma-web-portal/5-visual-spectrum.png" class="u-float-left cs-img-halfWidth">
+  <img src="/images/case-studies/pragma-web-portal/5-visual-spectrum.png" />
+  <em>The visual spectrums everyone voted on</em>
+</a></p>
+
+<p>Some scales were really straightforward (e.g. everyone agreed we should feel “modern”), and others stirred up rigorous debate (such as “feature-rich vs simple, clean”). By the end, we had a shared vision:</p>
+
+<ul>
+<li>Modern over traditional (avoiding &ldquo;bad enterprise software&rdquo; associations)</li>
+<li>Serious but approachable (professional tool for professional context)</li>
+<li>Understated over bold (shouldn&rsquo;t distract from core tasks)</li>
+<li>Premium and well-crafted (conveying power and quality)</li>
+</ul>
+
+<p>Additionally, I included screenshots of adjacent products (e.g. Github, Linear, Vercel, etc.) for everyone to vote on what they liked and disliked, which tied specific visual styles and design decisions back to abstract words like “modern” and “bold”. This prompted more rich discussion and helped us align on what we wanted.</p>
+
+<p><a href="/images/case-studies/pragma-web-portal/6-product-screenshots.png" class="u-float-right cs-img-halfWidth">
+  <img src="/images/case-studies/pragma-web-portal/6-product-screenshots.png" />
+  <em>Screenshots of adjacent products everyone voted on</em>
+</a></p>
+
+<p>Having this alignment upfront made later design decisions much less controversial. When someone questioned a choice, I had a strong reason for <em>why</em> I made that choice.</p>
+
+<p>(Sidenote: the output of this actually became something myself and the CEO referred back to many times in other projects, such as refreshing our marketing site and sales assets).</p>
+
+<p><br /></p>
+
+<h3 id="visual-design-explorations">Visual Design Explorations</h3>
+
+<p>Now that we had a shared vision I could dive into visual explorations. I took a couple of the core screens that had different patterns on them (e.g. a table-based page, a text-heavy page, etc.) and applied different visual styles to each (some with different fonts, different types &amp; amounts of color, different information densities, and so on). I explored dozens of ideas, winnowing those down to a few to share with stakeholders for feedback. After three rounds of iteration we landed on a direction we liked. Key decisions that came out of this process:</p>
+
+<ul>
+<li><strong>Typography:</strong> Selected Inter font for its neutrality, availability on Google Fonts, and consistency across design and development tools</li>
+<li><strong>Color strategy:</strong> Minimal color palette to avoid distraction—let the content and data take center stage</li>
+<li><strong>Dark mode only:</strong> A dark theme fits with our overall brand, developers (generally) like dark themes, and rather than try to maintain two themes with our small team, I focused on making one really good experience</li>
+</ul>
+
+<h3 id="quick-user-feedback">Quick user feedback</h3>
+
+<p>As part of the IA testing above, I also asked participants to select words that they would use to describe the look and feel of the UI (e.g. “modern”, “simple”, “powerful”, and so on) to make sure it matched our vision. The results were strong: most people selected “modern” and “simple”, but one person also thought it was “boring”, leading me to do one more revision to add a touch more color.</p>
+
+<h2 id="making-it-real">Making it Real</h2>
+
+<p>I partnered with an engineer to make the bulk of the changes together. He was already upgrading our Ant design version and theming system, which was fortuitous since it dovetailed with the new IA and visual design nicely. The bulk of the work was done in 2-3 weeks, and I contributed a handful of low-priority PRs over the following weeks to get the final changes in.</p>
+
+<p>I actively contributed to implementation with the engineer, doing final polish and design details in code (Vue.js and Ant Design [ugh to both]), which is both faster and leads to higher quality (no handoffs, no back and forth to get it feeling “just right”).</p>
+
+<p><a href="/images/case-studies/pragma-web-portal/7-after2.png">
+  <img src="/images/case-studies/pragma-web-portal/7-after2.png" />
+  <em>After screenshot of items in the game</em>
+</a></p>
+
+<div class="cs-image-grid">
+  <a href="/images/case-studies/pragma-web-portal/2-after.png">
+    <img src="/images/case-studies/pragma-web-portal/2-after.png" />
+    <em>After screenshot of player account details</em>
+  </a>
+  <a href="/images/case-studies/pragma-web-portal/8-after3.png">
+    <img src="/images/case-studies/pragma-web-portal/8-after3.png" />
+    <em>After screenshot of a player&rsquo;s orders</em>
   </a>
 </div>
 
-<h2 id="doing-the-research">Doing the Research</h2>
+<h2 id="post-launch-impact">Post-launch Impact</h2>
 
-<p>Over 3 weeks, the PM and myself conducted research sessions with 6 technical directors and engineering leads at studios that fit our target profile. We interviewed them about their needs and pain points, then we had them look through each concept. I had htem narrate their thoughts aloud as they went in order to judge their reactions and get them talking about what they liked, disliked, and if they’d use it and pay for it or not.</p>
+<p>We didn’t have any hard metrics to measure (our user base is on the small side, making quant metrics hard to measure with statistical certainty; plus the changes were setting us up for the future and improving the aesthetic), but there was immediate impact for users and ourselves:</p>
 
-<p>Both of our concepts tested well, but the social features with game UI was the most compelling. People were really hooked by the idea of having the game UI already built (one person said they would try it just out of curiosity to see if it worked the way we advertised).</p>
-
-<h2 id="from-insights-to-alignment-making-the-500k-decision">From Insights to Alignment: Making the $500K Decision</h2>
-
-<p>Having research insights is one thing. Getting a leadership team to bet half a million dollars on those insights is another.</p>
-
-<p>I organized a synthesis session with our CEO, CTO, VP of Engineering, PM, engineering lead, and general manager. This wasn&rsquo;t a presentation, it was a collaborative decision-making workshop where we had to align on our next major product direction.</p>
-
-<p>I structured the session around <strong>customer jobs</strong> (what are people actually trying to accomplish?), <strong>pain points</strong> (what&rsquo;s getting in their way?), and <strong>gains</strong> (where can we create the most value?). We pulled direct quotes from the research sessions and mapped out which types of studios could use each solution and when in their development cycles we could reach them.</p>
-
-<div class="cs-image-grid">
-  <a href="/images/case-studies/pragma-connect/workshop-overview.png">
-    <img src="/images/case-studies/pragma-connect/workshop-overview.png" />
-    <em>Workshop synthesis Miro board</em>
-  </a>
-
-  <a href="/images/case-studies/pragma-connect/workshop-affinity-diagramming.png">
-    <img src="/images/case-studies/pragma-connect/workshop-affinity-diagramming.png" />
-    <em>Affinity diagramming in Miro</em>
-  </a>
-
-  <a href="/images/case-studies/pragma-connect/workshop-customer-jobs.png">
-    <img src="/images/case-studies/pragma-connect/workshop-customer-jobs.png" />
-    <em>Customer jobs</em>
-  </a>
-</div>
-
-<p>The evidence was pretty compelling. Social features with game UI addressed the strongest pain points while playing to our technical strengths in real-time infrastructure. It also opened up more of the development cycle for sales conversations—instead of needing to catch studios at exactly the right moment, we could be valuable from early prototyping through post-launch updates. It was also a differentiator relative to our competitors.</p>
-
-<p>By the end of that session, we had alignment: we were building social features with game UI.</p>
-
-<h2 id="designing-for-speed-and-impact">Designing for Speed and Impact</h2>
-
-<p>With the direction locked in, we needed to start building immediately. We set a deadline of 3 months, which felt do-able but aggressive.</p>
-
-<p>For most of the project, I stuck with lo-fi wireframes. These were enough to get the engineering team moving on core functionality like friends systems, messaging infrastructure, and data models, and then I could get the details right later in code.</p>
-
-<p>But for critical user-facing moments—like the welcome screen that would be people&rsquo;s first impression of the product, or the onboarding flow that needed to get developers up and running quickly—I invested in high-fidelity designs. These moments would make or break adoption, so they deserved the extra design attention.</p>
-
-<p>As features were built, I jumped into the codebase to handle final UI polish and details. I find it easier to do final polish in code (no translation from Figma to code), and it freed up the engineers to move on to other features. In short, it <strong>increased quality and speed</strong>.</p>
-
-<p>Working with a team of 8 (me, our PM, our engineering lead, and 5 engineers), we <strong>hit our 3-month deadline</strong>. The key was knowing when lo-fi sketches were sufficient versus when high-fidelity designs were essential, and when jumping into code was the fastest path to a polished result.</p>
-
-<p><img alt="First screens 4.png" src="/images/case-studies/pragma-connect/onboarding-2.png?1753916871" />
-<em>The final welcome screen</em></p>
-
-<h2 id="soft-launching-pragma-connect">Soft Launching Pragma Connect</h2>
-
-<p>We hit the 3 month deadline, but during development leadership decided to do a “soft launch” and make a bigger public announcement at GamesCon, one of the largest gaming conferences of the year, where a large segment of our target market would be.</p>
-
-<p>During this period, we also decided to brand the product as &ldquo;Pragma Connect&quot;—a name that captured both the social connectivity features and the seamless integration experience we were delivering.</p>
-
-<p>With the soft launch the product was live and functional, and we started demoing it to prospects. The most concrete result was converting a prospect we&rsquo;d been pursuing for years into a paying customer after they saw a demo of Pragma Connect. This was a studio that had shown interest in our backend engine but never pulled the trigger because of integration complexity and risk concerns. The social features product solved both problems—easier to integrate, lower risk, immediate value.</p>
-
-<p>This was huge! In a market where decision making usually takes months (and sometimes years, like with this prospect), we got someone to make an immediate decision. This surprised everyone (in a good way!), from the CEO down to the team who built it.</p>
-
-<p>Beyond that single conversion, the demo responses were overall very positive, validating that the social features with ready-made UI addressed real pain points in a way that was obvious to technical decision-makers.</p>
+<ul>
+<li><strong>Modern aesthetic:</strong> Some prospects and customers praised the UI, saying it felt &ldquo;clean and modern&rdquo; and was “lightyears ahead of the competition”, without any prompting from us</li>
+<li><strong>Scalable foundation:</strong> The IA framework successfully accommodated new services as they launched (which was the whole point)</li>
+<li><strong>Enhanced discoverability:</strong> Some existing users discovered functionality that was already there due to a persistent top navigation replacing the opaque &ldquo;Services&rdquo; menu</li>
+<li><strong>Development velocity:</strong> A strong organizing system, navigation patterns to support different types of services, and a consistent component library accelerated feature development—we knew exactly what to build and how for new functionality we built</li>
+</ul>
 
 <h2 id="wrapping-up">Wrapping Up</h2>
 
-<p>I love working in high ambiguity, fast-moving environments with smart, motivated people. In those contexts you can achieve big things together. And that was especially true this time. What I especially enjoyed about this project is that we were facing a huge business challenge, and I was able to drive the solution from strategic research through designing and building the solution in a matter of months. I&rsquo;m especially proud that the end result was a product that immediately clicked with customers — something you can only achieve when you deeply empathize with your customers and are working with a smart, motivated team.</p>
+<p>In the end, we transformed our web portal from a future liability into an asset. We had a scalable foundation to support years of product development, wrapped up in a new, modern aesthetic. And when the time came to build our cloud product (see the Pragma Connect case study), we didn’t waste any time debating navigation or page patterns: they already worked perfectly for what we needed. Our existing users barely noticed the transition, while new users and prospects immediately saw us as more professional and capable. We may not have had hard metrics to measure, but nevertheless the impact was obvious and immediate.</p>
 
 
 
