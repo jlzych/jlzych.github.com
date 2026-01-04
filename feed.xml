@@ -5,10 +5,91 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2026-01-01T23:42:00Z</updated>
+  <updated>2026-01-04T23:49:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>My Claude Prompt for Writing Case Studies in Days, Not Weeks</title>
+    <link rel="alternate" href="http://jlzych.com/2026/01/04/my-claude-prompt-for-writing-case-studies-in-days-not-weeks/"/>
+    <id>http://jlzych.com/2026/01/04/my-claude-prompt-for-writing-case-studies-in-days-not-weeks/</id>
+    <published>2026-01-04T23:49:00Z</published>
+    <updated>2026-01-04T23:49:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;I used to spend weeks, sometimes months, writing case studies. Going through notes, screenshots, Figma files, project docs—trying to find a narrative thread and pull together something coherent. Then the writing and editing and refining and eventually publishing something that&amp;rsquo;s probably too long anyway and that hardly anyone reads in full.&lt;/p&gt;
+
+&lt;p&gt;In fairness, I spent too much time on it. Overworked it. Especially for something where people are mostly just looking at the screenshots. But even so, the time it took was a big barrier to me actually publishing work on my website.&lt;/p&gt;
+
+&lt;p&gt;So for some recent projects I enlisted Claude as my writing assistant. The first one took trial and error, but after that I got it down to a solid process that has me finishing case studies in days rather than weeks.&lt;/p&gt;
+
+&lt;h2 id="the-process"&gt;The Process&lt;/h2&gt;
+
+&lt;p&gt;The key is that I’m writing down all my stream of consciousness raw thoughts and having Claude turn that into a written narrative for me. Refining the raw thoughts into a finished product was by far the longest part of the process for me, and this dramatically cuts that down. The key is in having a good prompt (read on!).&lt;/p&gt;
+
+&lt;h3 id="mise-en-place"&gt;Mise-en-place&lt;/h3&gt;
+
+&lt;p&gt;To start, gather all your raw materials. Notes from the project, screenshots, PRDs, anything with relevant context.&lt;/p&gt;
+
+&lt;p&gt;Then, write down all the project context and beats for how the project unfolded. Just go stream-of-consciousness. Don’t worry about formatting or structure or flow. Just write. Claude will sort it all out for you. Include as much context as you can. The project context, state of the business, what prompted the work, how it connects to business goals, who you worked with, how long it took, what you actually did (wireframes, prototypes, research, whatever), major design decisions and why, the impact, and so on.&lt;/p&gt;
+
+&lt;p&gt;One thing I&amp;rsquo;ve learned from working with AI: &lt;strong&gt;the more context you give it, the better output you get&lt;/strong&gt;. Don&amp;rsquo;t be shy about including anything that seems relevant.&lt;/p&gt;
+
+&lt;p&gt;Finally, upload this to Claude, as well as other relevant materials unearthed in step 1, and ask Claude to refine it into a finished case study for you. The key here is a good prompt.&lt;/p&gt;
+
+&lt;h3 id="the-prompt"&gt;The Prompt&lt;/h3&gt;
+
+&lt;p&gt;The most important element is having a good prompt to tell Claude exactly what you want. I spent time refining this to get output that matches my intent, which may not be yours, so you may not want to use it exactly but it should be a good starting point:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;You are an expert writer tasked with writing a polished product design case study meant to appeal to design recruiters and design managers. It should sell the value and skills of me as a product designer. This case study highlights [specific skills for this project—e.g., strategic research, 0-1 product work, etc.]. The length should be 1,000-1,500 words.&lt;/p&gt;
+
+&lt;p&gt;Review all the uploaded screenshots and documents before starting to write. Review my website, [your website here, if you have one], for how I sound and write the case study in my voice. If you&amp;rsquo;re missing details or information, ask me for it.&lt;/p&gt;
+
+&lt;p&gt;Revise the attached outline into a polished case study. Start with the end (the outcome and what I did to achieve it; brief description of the challenge), then go through the outline. Summarize at the end with the outcome again, connected to what I did and what I learned.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Some key aspects of this prompt:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;It gives Claude a role (expert writer)&lt;/li&gt;
+&lt;li&gt;It provides a task (write a polished case study)&lt;/li&gt;
+&lt;li&gt;It says who Claude is writing for (recruiters, design managers)&lt;/li&gt;
+&lt;li&gt;I specify length&lt;/li&gt;
+&lt;li&gt;I explicitly state the skills I want to highlight (this changes per project)&lt;/li&gt;
+&lt;li&gt;I tell it to review uploaded docs and screenshots first&lt;/li&gt;
+&lt;li&gt;I tell it to ask for missing information&lt;/li&gt;
+&lt;li&gt;I specify the structure I want&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I also use Projects in Claude, which I highly recommend. In the project context I include info about my website, writing style, and tone of voice so the output sounds more like me.&lt;/p&gt;
+
+&lt;p&gt;Then I send it off and sip my coffee.&lt;/p&gt;
+
+&lt;p&gt;Claude usually asks clarifying questions back—I ask it to in the prompt, but I also have my personal Claude settings configured to ask for missing information (which I also recommend you do). After answering those, it outputs a pretty solid first draft. Something that would have taken me weeks of writing and editing and refining.&lt;/p&gt;
+
+&lt;h3 id="editing"&gt;Editing&lt;/h3&gt;
+
+&lt;p&gt;I say &amp;ldquo;pretty solid&amp;rdquo; because I don&amp;rsquo;t find it usable as-is. Some sentences still sound like AI-speak at times (hard to define precisely but you know it when you see it). It sometimes makes up details to fill gaps or make the story sound stronger, even if they aren&amp;rsquo;t in the outline or supporting docs. Sometimes there are sections I don&amp;rsquo;t like or phrasing that feels off.&lt;/p&gt;
+
+&lt;p&gt;So the next step is editing. For major stuff I&amp;rsquo;ll ask Claude to revise (e.g., &amp;ldquo;make this section more XYZ,&amp;rdquo; &amp;ldquo;cut this,&amp;rdquo; &amp;ldquo;add that&amp;rdquo;). But most of it is by hand—making it sound less like AI, more like me, making sure the details are accurate and the beats are compelling.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;One More Pass&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally, I start a new chat, upload the draft, and tell Claude to read it as if it were a hiring manager for product designers. I ask for strengths and weaknesses. Does it sound compelling? What would make it stronger? And any other questions specific to this case study, e.g. skills you want highlighted. Just like in design crits, ask specific questions to get good, usable feedback.&lt;/p&gt;
+
+&lt;p&gt;This helps catch missing context I may have cut and adds a final layer of refinement. Sometimes it suggests things that don&amp;rsquo;t exist, like &amp;ldquo;add more business metrics,&amp;rdquo; but even so this is a useful final gut check.&lt;/p&gt;
+
+&lt;p&gt;Then I publish. 🚀&lt;/p&gt;
+
+&lt;p&gt;Feel free to check out some &lt;a href="https://jlzych.com/case-studies/pragma-connect/"&gt;example&lt;/a&gt; &lt;a href="https://www.notion.so/Case-Study-New-IA-visual-design-for-Pragma-Portal-24fbd6e84be98001b881f02cf01bac1d?pvs=21"&gt;case studies&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Using Claude this way has been a game changer and dramatically lowers the bar for me putting more work on my site, which I’m hopeful will translate to sharing more work. If you use any of this process or the prompt yourself, please let me know!&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>2025 Reading List</title>
     <link rel="alternate" href="http://jlzych.com/2026/01/01/2025-reading-list/"/>
@@ -299,38 +380,6 @@ Anyone else out there have a different take? Sound off in the comments! (lol the
 &lt;p&gt;These interactions made me doubt myself. “Am I not looking with a critical enough eye at my team? Am I deluding myself about this person’s abilities?”&lt;/p&gt;
 
 &lt;p&gt;But watching this interview made me realize not having a “kind eye” isn’t a liability; it’s a strength. If it worked for Serena’s coach to lift her to 23 grand slams, then it can work for me.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Don’t let a linear design process snuff out your sparks of inspiration</title>
-    <link rel="alternate" href="http://jlzych.com/2024/04/12/don-t-let-a-linear-design-process-snuff-out-your-sparks-of-inspiration/"/>
-    <id>http://jlzych.com/2024/04/12/don-t-let-a-linear-design-process-snuff-out-your-sparks-of-inspiration/</id>
-    <published>2024-04-12T16:45:00Z</published>
-    <updated>2024-04-12T16:45:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;Earlier in my career, I would follow the &lt;a href="https://www.designcouncil.org.uk/our-resources/framework-for-innovation/"&gt;double diamond design process&lt;/a&gt; as a series of linear steps: define the problem, explore solutions, test &amp;amp; iterate, then build and ship.&lt;/p&gt;
-
-&lt;p&gt;If I had an insight that started with the solution, for example, I would go back to the beginning before following that spark of inspiration.&lt;/p&gt;
-
-&lt;p&gt;But the more times I’ve gone through this cycle, the more I’ve realized that this is a recipe for snuffing out good ideas. The creative process isn’t linear. Ideas can be sparked from anywhere. Any point in the double diamond is a valid onramp to a great idea.&lt;/p&gt;
-
-&lt;p&gt;The key is to make sure you check all the boxes: does it solve a real problem? Is it valuable? Is it usable? Is it technically feasible? Is it desirable?&lt;/p&gt;
-
-&lt;p&gt;You don’t need to check these boxes in any prescribed order (which is how I previously approached projects). They just need to be checked.&lt;/p&gt;
-
-&lt;p&gt;I’m know I’ve squandered a lot of good ideas as a result of getting a flash of inspiration, but then stopping myself from following that thread to go back to the beginning and try to define the problem, goals, constraints, and so on. This just stifles creativity.&lt;/p&gt;
-
-&lt;p&gt;Now I try to follow those sparks whenever they pop up, and loop back to other parts of the process when they’re relevant.&lt;/p&gt;
-
-&lt;p&gt;These ideas don’t always pay off. But that doesn’t matter. Sometimes they inform other projects. Sometimes they dissipate into the ether. At a minimum I will have had fun pursuing an idea I’m excited about and grown in some small way as a result.&lt;/p&gt;
-
-&lt;p&gt;Joel Califa wrote about this awhile back in his blog post, &lt;a href="https://joelcalifa.com/blog/your-work-is-starstuff/"&gt;Your Work is Starstuff&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Ryan Singer also wrote about a similar idea in his post, &lt;a href="https://www.feltpresence.com/small-tools-for-shaping/"&gt;Small Tools for Shaping&lt;/a&gt;. He has various tools to help him shape ideas, and he picks the best one for the job rather than following any prescribed, linear process.&lt;/p&gt;
-
-&lt;p&gt;So that’s my mantra of the moment: grab the sparks of inspiration when they strike. Don’t let a linear process stifle your creativity.&lt;/p&gt;
 </content>
   </entry>
 </feed>
