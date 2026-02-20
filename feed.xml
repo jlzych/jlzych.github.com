@@ -5,10 +5,50 @@
   <id>http://jlzych.com/</id>
   <link href="http://jlzych.com/"/>
   <link href="http://jlzych.com/feed.xml" rel="self"/>
-  <updated>2026-01-04T23:49:00Z</updated>
+  <updated>2026-02-20T18:14:00Z</updated>
   <author>
     <name>Jeff Zych</name>
   </author>
+  <entry>
+    <title>Claude Code is Re-shaping My Design Process</title>
+    <link rel="alternate" href="http://jlzych.com/2026/02/20/claude-code-is-re-shaping-my-design-process/"/>
+    <id>http://jlzych.com/2026/02/20/claude-code-is-re-shaping-my-design-process/</id>
+    <published>2026-02-20T18:14:00Z</published>
+    <updated>2026-02-20T18:14:00Z</updated>
+    <author>
+      <name>Jeff Zych</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img alt="Git commits graph showing increased activity" src="/images/2026-cc-process/git-commits.png?1771613024" /&gt;&lt;/p&gt;
+
+&lt;p&gt;This image tells the story: the uptick in commits is me designing and shipping with Claude Code. I&amp;rsquo;m using it daily. Likewise, my usage of Figma has fallen significantly.&lt;/p&gt;
+
+&lt;p&gt;Claude Code lets me describe the intended user experience — the use cases, expected behavior, how a feature might evolve — and it figures out how to build it. This is basically how I&amp;rsquo;ve always worked with engineers. Only I’m in control of the engineer and they’ll do whatever I say 😄&lt;/p&gt;
+
+&lt;p&gt;Now I skip mid-fi mockups completely and go straight to CC and with some good prompting (which comes easily from spending a career describing intent and giving context). I can get a pretty good version working in a matter of minutes. Then keep shaping it with CC to finalize the functionality and interactions and UI.&lt;/p&gt;
+
+&lt;p&gt;Directly editing a working version of a feature with real data is great because little things that improve the overall UX jump out much more quickly compared to static mockups, or even clickthrough prototypes. Like sorting, or filtering, or when data is too long or too short, and so on.&lt;/p&gt;
+
+&lt;h2 id="my-new-and-still-evolving-process"&gt;My new (and still evolving) process&lt;/h2&gt;
+
+&lt;p&gt;My process has changed significantly over the past few months.&lt;/p&gt;
+
+&lt;p&gt;For minor features — like quality of life improvements, adding a search field to a list, anything using well-worn patterns and existing components — I skip Figma entirely and go straight to Claude Code. No wireframes, no handoff. And Claude does great at using the right components and patterns, especially with the right prompting. (And even sometimes without good prompting; Opus 4.6 is crazy good at understanding the codebase and doing the right thing even when you aren’t explicit about it).&lt;/p&gt;
+
+&lt;p&gt;For bigger features with large solution spaces, I still do upfront discovery work and solution exploration. But even that looks different now. I write out the problem, use cases, the &amp;ldquo;shape&amp;rdquo; of a good solution (for example, “feels fast and frictionless”, “doesn&amp;rsquo;t make the user do extra work”, etc.), and potential approaches. Then I take this to Claude (just regular Claude chat, not CC) and ask for more ideas. It usually has a couple interesting ones I hadn&amp;rsquo;t considered, plus some clunkers that don&amp;rsquo;t fit the context.&lt;/p&gt;
+
+&lt;p&gt;From there I&amp;rsquo;ll have Claude generate interactive artifacts of my favorite directions — these are great for getting a feel for the solution myself, and for sharing the good ones with teammates and getting their input. I&amp;rsquo;ll also do quick lo-fi wireframes in Figma to try out layouts or simple ideas for cases when that’s easier than writing a prompt, waiting for Claude to do its thing, tweak and iterate via more prompting. (Sometimes it’s just faster to move some boxes around yourself).&lt;/p&gt;
+
+&lt;p&gt;After iteration and team discussion and getting user feedback to finalize the approach, I go to Claude Code with a few mockups to build and polish it directly in code — getting all the states just right, tuning the interactions, etc.&lt;/p&gt;
+
+&lt;p&gt;No handoffs. No wasteful artifacts. Just working in the final medium and firing off a PR.&lt;/p&gt;
+
+&lt;p&gt;Figma still wins for visual exploration. Trying color combos, typography options, new components — it&amp;rsquo;s much easier to compare those side by side, zoom in and out, move things around. That kind of exploration in code is painful. But most of my work is in existing products with existing design systems, so that&amp;rsquo;s a smaller slice of the process now.&lt;/p&gt;
+
+&lt;p&gt;What hasn&amp;rsquo;t changed is focusing on users, their needs, understanding the problem, exploring lots of options, iterating, testing, and polishing. But that middle section is primarily in Claude Code now. And I can see that through to actually getting the code in users hands.&lt;/p&gt;
+
+&lt;p&gt;Where will we be in a year? It&amp;rsquo;s impossible to predict. But I&amp;rsquo;m excited to keep trying new tools and ways of working and evolving my process. There&amp;rsquo;s never been a more exciting time to be a designer.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>My Claude Prompt for Writing Case Studies in Days, Not Weeks</title>
     <link rel="alternate" href="http://jlzych.com/2026/01/04/my-claude-prompt-for-writing-case-studies-in-days-not-weeks/"/>
@@ -352,34 +392,6 @@ Anyone else out there have a different take? Sound off in the comments! (lol the
 &lt;li&gt;&lt;em&gt;Infinite Jest&lt;/em&gt; by David Foster Wallace 🎾&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;How to Measure Anything&lt;/em&gt; by Douglas W. Hubbard&lt;/li&gt;
 &lt;/ul&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Kind Eye</title>
-    <link rel="alternate" href="http://jlzych.com/2024/07/14/kind-eye/"/>
-    <id>http://jlzych.com/2024/07/14/kind-eye/</id>
-    <published>2024-07-14T22:34:00Z</published>
-    <updated>2024-07-14T22:34:00Z</updated>
-    <author>
-      <name>Jeff Zych</name>
-    </author>
-    <content type="html">&lt;p&gt;“I look with a kind eye at people.”&lt;/p&gt;
-
-&lt;p&gt;This line from tennis coach Patrick Mouratoglou (Serena Williams’ former coach) in Nick Kyrgios’ &lt;a href="https://www.youtube.com/watch?v=3_LAzJNo2j4"&gt;“Good Trouble” YouTube series&lt;/a&gt; struck a chord with me.&lt;/p&gt;
-
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/3_LAzJNo2j4?si=53Hl6BHaD9qRO7RE&amp;amp;start=202" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Patrick said he always looks for the positives in players. Commentators and the peanut gallery is quick to judge and point out flaws and what they need to improve, rather than looking for the positives.&lt;/p&gt;
-
-&lt;p&gt;It made me realize I’ve always been someone who looks at people with a kind eye as well. Friends, family, coworkers, everyone.&lt;/p&gt;
-
-&lt;p&gt;But it also made me realize that as a manager, the clashes I had with leadership and a company’s culture stemmed from it being a place where they don’t have a kind eye. They take a critical eye to everything and everyone.&lt;/p&gt;
-
-&lt;p&gt;This was in especially sharp relief when doing performance reviews for my team. I would always bring their strengths to the conversation, while my peers and leadership would only see weaknesses.&lt;/p&gt;
-
-&lt;p&gt;These interactions made me doubt myself. “Am I not looking with a critical enough eye at my team? Am I deluding myself about this person’s abilities?”&lt;/p&gt;
-
-&lt;p&gt;But watching this interview made me realize not having a “kind eye” isn’t a liability; it’s a strength. If it worked for Serena’s coach to lift her to 23 grand slams, then it can work for me.&lt;/p&gt;
 </content>
   </entry>
 </feed>
