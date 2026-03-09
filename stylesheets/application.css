@@ -1563,6 +1563,15 @@ img ~ em {
  * Homepage specific styles
  */
 
+/* Portrait: prevent popup overflow from causing document horizontal scroll.
+   Setting overflow-x on :root (html) directly controls the viewport — no intermediate
+   scroll container is created, so animation-timeline: scroll() still uses the document. */
+
+@media only screen and (max-aspect-ratio: 1) {
+  :root:has(.homepage) {
+    overflow-x: hidden;
+  }
+}
 
 .homepage {
   & .container {
@@ -1588,7 +1597,7 @@ img ~ em {
     grid-template-areas: ". . nav";
     grid-template-rows: auto 1fr;
     height: 100dvh;
-    padding: 1.5rem 2rem 0;
+    padding: 1.5rem 0 0;
     grid-column: 1 / -1;
     grid-row: 1;
 
@@ -1596,11 +1605,15 @@ img ~ em {
     @media only screen and (max-width: 600px) {
       grid-template-columns: 1fr;
       grid-template-areas: "nav";
-      padding: 0 1rem;
-      grid-column: 1 / -1;
+      padding: 0;
       grid-row: 2;
       /* Viewport minus body padding (13px top) minus monogram row */
       height: calc(100dvh - 1.5rem - var(--mobile-monogram-height));
+    }
+
+    /* Portrait: prevent min-content size of oversized popup from expanding the grid item */
+    @media only screen and (max-aspect-ratio: 1) {
+      min-width: 0;
     }
   }
 
@@ -1648,9 +1661,11 @@ img ~ em {
     }
   }
 
-  /* Position nav at top right, aligned with monogram */
+  /* Position nav centered at top */
   & .nav-main {
     grid-area: nav;
+    grid-column: 1 / -1;
+    justify-self: center;
     align-self: start;
     z-index: 10;
 
@@ -1691,6 +1706,15 @@ img ~ em {
   width: 100%;
   margin: 0 auto;
   min-height: clamp(0px, 68dvh, 650px);
+
+  @media only screen and (max-aspect-ratio: 1) {
+    min-height: 82dvh;
+    min-width: 0; /* prevent oversized flex child from inflating .hero width */
+  }
+
+  @media only screen and (max-width: 600px) and (max-aspect-ratio: 1) {
+    min-height: unset; /* let grid row control height; 82dvh overflows on small phones */
+  }
 }
 
 .book {
@@ -1706,12 +1730,19 @@ img ~ em {
     padding: 0 1vw;
     width: 100%;
   }
+
+  /* Portrait: clip overflow so popup-scene can exceed viewport width */
+  @media only screen and (max-aspect-ratio: 1) {
+    overflow-x: clip;
+    max-height: none;
+    width: 100%; /* constrain intrinsic size so it doesn't propagate up the DOM */
+  }
 }
 
 .popup-scene {
   width: 95vw;
   max-width: 1280px;
-  max-height: calc(min(100%, 700px));
+  max-height: min(100%, 700px);
   aspect-ratio: 2 / 1;
   position: relative;
   transform-style: preserve-3d;
@@ -1722,14 +1753,23 @@ img ~ em {
   @media only screen and (max-width: 600px) {
     width: 100%;
   }
-}
 
-/* svg {
-  width: 100%;
-  height: auto;
-  overflow: visible;
-  display: block;
-} */
+  /* Portrait: overflow wider than viewport so height fills the screen */
+  @media only screen and (max-aspect-ratio: 1) {
+    width: 140dvh;
+    max-width: none;
+    max-height: none;
+    flex-shrink: 0; /* prevent flex from shrinking the oversized scene */
+  }
+
+  /* Small portrait: constrain height to available space so popup is flush with bottom */
+  @media only screen and (max-width: 600px) and (max-aspect-ratio: 1) {
+    height: calc(
+      100dvh - var(--mobile-monogram-height) - 1.5rem - 150px
+    ); /* 50px ≈ nav height */
+    width: auto; /* aspect-ratio: 2/1 derives width from height */
+  }
+}
 
 /* Tagline text inside inner ring SVG foreignObjects */
 .tagline-fo-outer {
@@ -1742,7 +1782,6 @@ img ~ em {
 }
 
 .tagline-fo-text {
-  /* font-family: "Obviously Demo", "Arial Black", "Helvetica Neue", sans-serif; */
   font-family: var(--sans-serif-font-stack);
   font-weight: 900;
   color: #3d2b1f;
@@ -1759,21 +1798,31 @@ img ~ em {
     line-height: 1.3;
     font-size: 4.5cqw;
   }
+
+  @media only screen and (max-aspect-ratio: 1) {
+    & span {
+      font-size: 1.4vw; /* vw scales text relative to visible viewport width */
+    }
+  }
 }
 
 .curved-text {
-  /* font-family: "Obviously Demo", "Arial Black", "Helvetica Neue", sans-serif; */
   font-family: var(--headline-font-stack);
-  /* text-transform: uppercase; */
   font-weight: 900;
-  /* font-size: clamp(20px, 6vw, 44px); */
   font-size: 44px;
   fill: #3d2b1f;
   letter-spacing: -0.05em;
+
+  @media only screen and (max-aspect-ratio: 1) {
+    font-size: 2.95vw; /* vw scales with visible viewport width */
+  }
 }
 .inner-text {
-  /* font-size: clamp(14px, 4.5vw, 32px); */
   font-size: 32px;
+
+  @media only screen and (max-aspect-ratio: 1) {
+    font-size: 2.5vw;
+  }
 }
 
 /* Pop-up layers - each semicircle split into left/right halves */
@@ -1801,7 +1850,6 @@ img ~ em {
   transform: rotateY(90deg) translateZ(0);
   --start-rotate: 90deg;
   --end-rotate: 90deg;
-  --shadow-x-start: 0px;
 
   & svg {
     margin-left: auto;
@@ -1815,7 +1863,6 @@ img ~ em {
   transform: rotateY(-90deg) translateZ(0);
   --start-rotate: -90deg;
   --end-rotate: -90deg;
-  --shadow-x-start: 0px;
 
   & svg {
     margin-right: auto;
@@ -1831,6 +1878,12 @@ img ~ em {
   transform-origin: bottom right;
   transform: rotate(-90deg);
   z-index: -1;
+
+  @media only screen and (max-aspect-ratio: 1) {
+    right: 0;
+    width: 20dvh;
+    bottom: 44dvh;
+  }
 
   & svg {
     max-width: 100%;
@@ -1854,7 +1907,6 @@ img ~ em {
 /* Phase 1: Time-based fold-out animation on page load */
 .popup-outer {
   animation: foldOut 0.8s ease-out 0.2s forwards;
-  container-type: inline-size;
 }
 .popup-middle {
   animation: foldOut 1.2s ease 0.3s forwards;
@@ -1968,17 +2020,6 @@ img ~ em {
 }
 
 @keyframes shadowFadeIn {
-  to {
-    opacity: 1;
-  }
-}
-
-/* Paper styling */
-.popup-layer svg {
-  display: block;
-}
-
-@keyframes pageShadow {
   to {
     opacity: 1;
   }
