@@ -62,7 +62,7 @@
 
   <script src="//cdn.optimizely.com/js/1111070510.js"></script>
 
-  <link href="/stylesheets/application.css?1773117580" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/application.css?1773178661" media="screen" rel="stylesheet" type="text/css" />
   
 
   <link rel="alternate" type="application/rss+xml" title="RSS for Jeff Zych" href="/feed.xml">
@@ -336,9 +336,16 @@
                   <path d="M 75 250 A 175 175 0 0 1 250 75 L 250 250 Z" fill="#FED874" filter="url(#paperNoise)"/>
                   <!-- Inner highlight - upper portion of arc (top-right edge) -->
                   <path d="M 250 75.25 A 174.75 174.75 0 0 0 75 250" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="0.5" filter="url(#highlightBlur)" style="mix-blend-mode: overlay"/>
-                  <text class="curved-text inner-text">
+                  <!-- Landscape: centered across full semicircle -->
+                  <text class="curved-text inner-text curved-text--landscape">
                     <textPath href="#textArc2" startOffset="52%" text-anchor="middle">
                       Designer &amp; Developer
+                    </textPath>
+                  </text>
+                  <!-- Portrait: centered on left quarter arc only -->
+                  <text class="curved-text inner-text curved-text--portrait">
+                    <textPath href="#textArc2" startOffset="25%" text-anchor="middle">
+                      Design &amp; Dev
                     </textPath>
                   </text>
                 </svg>
@@ -367,12 +374,23 @@
                   <!-- Tagline text - foreignObject spans full 500-unit width; left SVG clips to show left half -->
                   <foreignObject x="0" y="125" width="500" height="125">
                     <div xmlns="http://www.w3.org/1999/xhtml" class="tagline-fo-outer">
-                      <div class="tagline-fo-text">
+                      <!-- Landscape: optimized breaks for full semicircle -->
+                      <div class="tagline-fo-text tagline-fo-text--landscape">
                         <span>I'm a</span>
                         <span>product builder</span>
                         <span>running PB&amp;J Designs, a</span>
                         <span>solo studio doing UX for early</span>
                         <span>stage dev tool startups</span>
+                      </div>
+                      <!-- Portrait: optimized breaks for left-half quarter circle -->
+                      <div class="tagline-fo-text tagline-fo-text--portrait">
+                        <span>I'm a</span>
+                        <span>product</span>
+                        <span>builder running</span>
+                        <span>PB&amp;J Designs, a</span>
+                        <span>solo studio doing</span>
+                        <span>UX for early-stage</span>
+                        <span>dev tool startups</span>
                       </div>
                     </div>
                   </foreignObject>
